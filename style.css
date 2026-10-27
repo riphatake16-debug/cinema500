@@ -19,3 +19,46 @@
 @media(prefers-reduced-motion:reduce){.hero-visual{transition:none}.metric-card:hover,.hero-frame:hover,.card:hover{transform:none}}
 
 .cinema-hero h1{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+
+/* Frosted glass surfaces and soft bubble geometry. */
+:root{--glass-fill:rgba(24,29,45,.58);--glass-glint:rgba(255,255,255,.09);--glass-edge:rgba(223,230,255,.17);--glass-shadow:0 18px 50px rgba(0,0,0,.17),inset 0 1px 0 rgba(255,255,255,.13);--glass-chip:rgba(255,255,255,.065);--muted:#a5adbf;--veil:rgba(9,12,21,.76)}
+html[data-theme=light]{--glass-fill:rgba(255,255,255,.64);--glass-glint:rgba(255,255,255,.65);--glass-edge:rgba(255,255,255,.86);--glass-shadow:0 16px 42px rgba(48,56,91,.09),inset 0 1px 0 rgba(255,255,255,.95);--glass-chip:rgba(255,255,255,.54);--muted:#626b80;--veil:rgba(239,242,249,.76)}
+.ambient-layer.active{opacity:.43;filter:blur(75px) saturate(.95)}
+.ambient-shade{background:linear-gradient(180deg,var(--veil),transparent 30%,var(--veil) 82%),linear-gradient(90deg,var(--veil),transparent 45%,var(--veil))}
+header{background:transparent;border-bottom:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+header .nav{margin-top:16px;margin-bottom:10px;padding:10px 20px;border:1px solid var(--glass-edge);border-radius:999px;background:linear-gradient(135deg,var(--glass-glint),transparent 65%),var(--glass-fill);box-shadow:var(--glass-shadow);backdrop-filter:blur(24px) saturate(130%);-webkit-backdrop-filter:blur(24px) saturate(130%)}
+.card,.metric-card,.discover-card,.discover-small,.advanced-filters,.account-card,.account-import,.recommend-result,.stats-grid>div,.personal-rating,.empty,dialog{background:linear-gradient(135deg,var(--glass-glint),transparent 58%),var(--glass-fill);border:1px solid var(--glass-edge);box-shadow:var(--glass-shadow);backdrop-filter:blur(20px) saturate(125%);-webkit-backdrop-filter:blur(20px) saturate(125%);border-radius:30px}
+.card{border-radius:30px;padding:7px;box-shadow:0 10px 32px #00000013,inset 0 1px 0 #ffffff1c;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.card .poster{border-radius:24px;overflow:hidden}
+.card .card-content{padding:15px 9px 9px}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--glass-edge));box-shadow:0 22px 45px #00000025,inset 0 1px 0 #ffffff30;transform:translateY(-4px)}
+.metric-card,.discover-card,.discover-small{border-radius:30px}
+.metric-icon,.discover-icon{border:1px solid var(--glass-edge);border-radius:50%;background:var(--glass-chip);box-shadow:inset 0 1px 0 #ffffff24}
+.hero.cinema-hero{border-radius:42px;border:1px solid rgba(232,237,255,.25);box-shadow:0 22px 70px #00000025,inset 0 1px 0 #ffffff30}
+.hero-frame{border-radius:15px;border-color:#ffffff48;box-shadow:0 5px 15px #00000020}
+.hero-frame.active{border-color:#ded5ff;box-shadow:0 0 0 3px #d6caff24,0 7px 20px #00000035}
+.searchbox,.genre-label,.filters-toggle,.sort-label,.type-tabs,.advanced-filters select,.recommend-form select{border:1px solid var(--glass-edge);background:linear-gradient(135deg,var(--glass-glint),transparent),var(--glass-fill);box-shadow:inset 0 1px 0 #ffffff20,0 8px 24px #00000008;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:999px}
+.sort-label{padding:0 13px;height:38px;display:flex;align-items:center}
+.type-tabs button,.status-tabs button{border-radius:999px}
+.type-tabs button.active,.status-tabs button.active{background:color-mix(in srgb,var(--accent) 15%,var(--glass-chip));box-shadow:inset 0 1px 0 #ffffff20}
+.status-tabs{gap:6px;flex-wrap:wrap}
+.status-tabs button{padding:7px 13px;border:1px solid transparent}
+.status-tabs button.active{border-color:color-mix(in srgb,var(--accent) 28%,var(--glass-edge))}
+.status-tabs button:after{display:none}
+.account-button,.icon-button,.hero-primary,.hero-save,.hero-shuffle,.outline-button,.accent-button,.seen-btn,.want-btn,.detail-favorite,.rating-picker button,.close-dialog,.filters-toggle,.favorite-btn,.catalog-status button,.imdb-link{border-radius:999px;border:1px solid var(--glass-edge);background:linear-gradient(135deg,var(--glass-glint),transparent),var(--glass-chip);box-shadow:inset 0 1px 0 #ffffff28,0 6px 18px #0000000b;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.hero-primary{background:rgba(246,244,255,.89);border-color:#ffffffbd;color:#171b29;box-shadow:0 8px 30px #0000001a,inset 0 1px 0 #fff}
+.hero-save,.hero-shuffle{background:rgba(255,255,255,.085);border-color:#ffffff32;color:#fff}
+.accent-button{background:color-mix(in srgb,var(--accent) 25%,var(--glass-fill));color:var(--text)}
+.seen-btn.is-seen,.want-btn.active,.favorite-btn.active,.detail-favorite.active,.rating-picker button.active{background:color-mix(in srgb,var(--accent) 22%,var(--glass-fill));border-color:color-mix(in srgb,var(--accent) 52%,var(--glass-edge));color:var(--accent)}
+.rank,.watched-badge,.watchlist-badge,.personal-badge,.hero-imdb,.status-tabs button span{border-radius:999px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.poster-open-icon{border-radius:50%;border:1px solid #ffffff50;background:#ffffff1c;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+dialog{border-radius:38px;background:linear-gradient(145deg,var(--glass-glint),transparent 65%),color-mix(in srgb,var(--bg) 83%,transparent);backdrop-filter:blur(32px) saturate(120%);-webkit-backdrop-filter:blur(32px) saturate(120%);box-shadow:0 35px 130px #00000066,inset 0 1px 0 #ffffff30}
+dialog::backdrop{background:#070c1d80;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+.detail-poster,.recommend-poster{border-radius:24px;overflow:hidden}
+.personal-rating,.account-card,.account-import,.recommend-result{padding:20px}
+.recommend-form select,.advanced-filters select{padding-inline:13px}
+select option{background:var(--surface);color:var(--text)}
+#toast{border-radius:999px;border:1px solid var(--glass-edge);background:var(--glass-fill);box-shadow:var(--glass-shadow);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+:where(button,a,input,select):focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(max-width:700px){header .nav{border-radius:26px;padding:9px 12px;margin-top:10px}.hero.cinema-hero{border-radius:30px}.hero-frame{border-radius:11px}.card{border-radius:25px;padding:5px}.card .poster{border-radius:20px}.card .card-content{padding:11px 7px 7px}.metric-card,.discover-card,.discover-small,.advanced-filters{border-radius:25px}.searchbox,.genre-label,.filters-toggle,.type-tabs{border-radius:999px}.status-tabs{gap:3px;justify-content:flex-start}.status-tabs button{font-size:8px;padding:6px 8px}.sort-label{height:30px;padding:0 10px}.personal-rating,.account-card,.account-import,.recommend-result{padding:15px}dialog{border-radius:29px}.detail-poster,.recommend-poster{border-radius:18px}}
+@media(prefers-reduced-motion:reduce){.card:hover{transform:none}}
