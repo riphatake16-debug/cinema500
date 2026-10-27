@@ -80,6 +80,7 @@ test('Recommendations respect hard filters and explain taste affinity from actua
  api.applyAccount({id:'recommend-test',name:'Recommendations',email:''});api.changePreference('tt0111161',{rating:10,favorite:true});assert.ok(api.tasteGenres().get('Drama')>0);
  const pool=api.recommendPool('movie','',120,'unseen','Comedy');assert.ok(pool.length);assert.ok(pool.every(a=>a.type==='movie'&&a.runtime<=120&&a.genres.includes('Comedy')));
  api.changeState(pool[0].id,'seen');assert.ok(!api.recommendPool('movie','',120,'unseen','Comedy').some(a=>a.id===pool[0].id));
+ assert.ok(api.recommendPool('movie','light',0,'unseen').every(a=>!a.genres.some(g=>['Horror','Thriller','Crime','War'].includes(g))));
  const candidate=ctx.window.CINEMA_CATALOGUE.titles.find(a=>a.id==='tt0120689');const reasons=api.recommendReasons(candidate,{mood:'thoughtful',max:200,selectedGenre:'Drama'});assert.ok(reasons.some(r=>r.includes('امتیازها و محبوب‌هایت')));
  assert.ok([candidate].includes(api.pickForTaste([candidate],.99)));api.applyAccount(null);
 });
