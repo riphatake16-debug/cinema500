@@ -3,7 +3,7 @@
   const enabled = /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(config.supabaseUrl || '') && /^(sb_publishable_|eyJ)/.test(config.supabasePublishableKey || '');
   const listeners = new Set();
   let client, sequence = 0;
-  let state = {enabled, loading: enabled, user: null, error: ''};
+  let state = {syncEnabled: enabled && config.journalSync === true, enabled, loading: enabled, user: null, error: ''};
   const emit = patch => {state = {...state, ...patch}; for (const fn of listeners) fn({...state});};
   window.CinemaAuth = {
     subscribe(fn) {listeners.add(fn); fn({...state}); return () => listeners.delete(fn);},
@@ -14,6 +14,19 @@
         queryParams: {prompt: 'select_account'}
       }});
       if (error) throw error;
+    },
+    async readJournal(owner) {
+      if (!state.syncEnabled || !client || state.user?.id !== owner) throw Error('journal_unavailable');
+      const {data,error} = await client.from('cinema_journal').select('title_id,status,rating,favorite,watched_on,note').eq('user_id',owner).limit(1000);
+      if(error) throw error;
+      return data.map(row=>({id:row.title_id,status:row.status,rating:row.rating,favorite:row.favorite,watchedOn:row.watched_on,note:row.note}));
+    },
+    async writeJournal(owner, rows) {
+      if (!state.syncEnabled || !client || state.user?.id !== owner || rows.length > 500) throw Error('journal_unavailable');
+      const payload=rows.map(row=>({user_id:owner,title_id:row.id,status:row.status,rating:row.rating,favorite:row.favorite,watched_on:row.watchedOn,note:row.note}));
+      if(!payload.length)return;
+      const {error}=await client.from('cinema_journal').upsert(payload,{onConflict:'user_id,title_id'});
+      if(error) throw error;
     },
     async signOut() {
       if (!client) throw Error('auth_unavailable');
