@@ -150,3 +150,6 @@ select option{background:var(--surface);color:var(--text)}
 }
 @media(max-width:360px){.brand-word{font-size:19px}.brand-symbol{display:none}.account-button{padding-inline:10px;font-size:10px}.nav-links a,.nav-links button{font-size:11px}.hero-copy{padding-inline:17px}.hero-primary,.hero-save{font-size:11px;padding:0 11px}.hero-frame{width:32px;height:47px}.hero-frames{gap:6px}.hero-footer{left:17px;right:17px}.metric-card{padding:15px 10px;gap:7px}.metric-label{font-size:10px}.metric-icon{width:25px}.metric-value small{font-size:9px}.card-actions .seen-btn>span{display:none}.card-meta{font-size:9px}.card .card-content{padding-inline:5px}.seen-btn{font-size:9px}.want-btn{width:36px}.card{contain-intrinsic-block-size:auto 365px}.advanced-filters{grid-template-columns:1fr}.personal-rating-head h3{font-size:15px}.detail-poster{width:83px}.detail-head h2{font-size:20px}.recommend-form{grid-template-columns:1fr}}
 @media(hover:none) and (pointer:coarse){.card:hover{transform:none}.card:hover .poster>img{transform:none}.hero-frame:hover{transform:none}}
+
+@media(max-width:700px){.favorite-btn{width:44px;height:44px}.want-btn{width:44px}.card{contain-intrinsic-block-size:auto 405px}}
+@media(max-width:360px){.want-btn{width:44px}.rating-picker{grid-template-columns:repeat(4,minmax(0,1fr))}.card{contain-intrinsic-block-size:auto 375px}}

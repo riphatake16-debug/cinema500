@@ -90,10 +90,10 @@ let heroPaused=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-moti
 function scheduleHeroRotation(){clearTimeout(heroTimer);if(heroPaused)return;heroTimer=setTimeout(()=>{if(document.visibilityState==='hidden'||!heroInView||$('#details').open||heroHovered||heroFocused){scheduleHeroRotation();return}const frames=backdropIds.map(id=>data.find(a=>a.id===id)).filter(Boolean);if(frames.length<2){scheduleHeroRotation();return}const current=frames.findIndex(a=>a.id===selectedId);setAmbient(frames[(current+1)%frames.length])},6000)}
 const heroRegion=$('.cinema-hero');
 if(typeof IntersectionObserver!=='undefined'){const heroObserver=new IntersectionObserver(entries=>{heroInView=entries.some(entry=>entry.isIntersecting);if(heroInView)scheduleHeroRotation()},{threshold:0});heroObserver.observe(heroRegion)}
-heroRegion.addEventListener('mouseenter',()=>{heroHovered=true});
-heroRegion.addEventListener('mouseleave',()=>{heroHovered=false;scheduleHeroRotation()});
-heroRegion.addEventListener('focusin',()=>{heroFocused=true});
-heroRegion.addEventListener('focusout',event=>{heroFocused=!!event.relatedTarget&&heroRegion.contains(event.relatedTarget);if(!heroFocused)scheduleHeroRotation()});
+heroRegion.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')heroHovered=true});
+heroRegion.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'){heroHovered=false;scheduleHeroRotation()}});
+heroRegion.addEventListener('focusin',event=>{heroFocused=!!event.target?.matches?.(':focus-visible')});
+heroRegion.addEventListener('focusout',event=>{heroFocused=!!event.relatedTarget&&heroRegion.contains(event.relatedTarget)&&event.relatedTarget.matches(':focus-visible');if(!heroFocused)scheduleHeroRotation()});
 document.addEventListener('visibilitychange',scheduleHeroRotation);
 
 loadAccount();loadCatalog();
