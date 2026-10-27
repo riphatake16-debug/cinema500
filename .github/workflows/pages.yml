@@ -1,0 +1,51 @@
+name: Publish Cinema500
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble complete static site
+        run: |
+          mkdir -p _site
+          cp index.html app.js catalogue.js style.css favicon.svg .nojekyll _site/
+          unzip -q artwork-1.zip -d _site
+          unzip -q artwork-2.zip -d _site
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          text=Path('_site/catalogue.js').read_text()
+          titles=json.loads(text.split('=',1)[1].rstrip(';\n'))['titles']
+          assert len(titles)==500 and len({a['id'] for a in titles})==500
+          assert sum(a['type']=='movie' for a in titles)==250
+          assert sum(a['type']=='tv' for a in titles)==250
+          for a in titles:
+              assert (Path('_site')/a['poster']).is_file(),a['id']
+          assert len(list(Path('_site/backdrops').glob('*.jpg')))==6
+          print('Verified 500 titles, 500 posters and 6 backdrops')
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish site
+        id: deployment
+        uses: actions/deploy-pages@v4
