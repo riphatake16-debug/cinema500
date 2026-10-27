@@ -10,7 +10,7 @@ let failKey='';
 const ctx=vm.createContext({IntersectionObserver:class{constructor(cb){this.callback=cb;observers.push(this)}observe(){}unobserve(){}},document:{querySelector:get,querySelectorAll:selector=>selector==='#grid > .card'?domCards:[],documentElement:{dataset:{theme:'dark'}},addEventListener(){}},window:{addEventListener(){}},localStorage:{getItem:k=>stored.get(k)??null,setItem(k,v){if(k===failKey){failKey='';throw Error('quota')}stored.set(k,v)},removeItem:k=>stored.delete(k)},setTimeout:(fn,ms)=>{const id=++timerId;timers.set(id,{fn,ms});return id},clearTimeout:id=>timers.delete(id),requestAnimationFrame:fn=>fn(),crypto:webcrypto});
 vm.runInContext(await readFile('catalogue.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
-source=source.replace(/\}\)\(\);\s*$/,`window.test={saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,applyAccount,openDetail,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],accountReady})};})();`);
+source=source.replace(/\}\)\(\);\s*$/,`window.test={saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],accountReady})};})();`);
 vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
@@ -51,21 +51,8 @@ test('All 403 existing summaries are Persian, RTL, and missing summaries stay ex
  for(const a of described){assert.equal(a.summaryLanguage,'fa');assert.match(a.summary,/[آ-ی]/);assert.ok(!a.summary.includes('See full summary'));}
  api.openDetail('tt0903747');assert.ok(get('#dialog-content').innerHTML.includes('lang="fa" dir="rtl"'));assert.ok(get('#dialog-content').innerHTML.includes('معلم شیمی'));
 });
-test('Verified account changes isolate journals, guest data survives, and imports use scoped keys',()=>{
- api.applyAccount(null);api.changeState('tt0111161','seen');const guest=stored.get('cinema-seen');
- api.applyAccount({id:'account-one',name:'Test <user>',email:'one@example.com'});assert.equal(api.snapshot().seen.length,0);
- api.changeState('tt0068646','seen');api.changePreference('tt0068646',{rating:10});assert.ok(stored.get('cinema-seen:user:account-one').includes('tt0068646'));assert.equal(stored.get('cinema-seen'),guest);
- api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0468569',status:'watchlist',rating:8,favorite:true}]});assert.ok(stored.get('cinema-wanted:user:account-one').includes('tt0468569'));
- api.applyAccount({id:'account-two',name:'Other',email:'two@example.com'});assert.equal(api.snapshot().seen.length,0);assert.equal(api.snapshot().preferences.length,0);
- api.applyAccount({id:'account-one',name:'Test',email:'one@example.com'});assert.ok(api.snapshot().seen.includes('tt0068646'));assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0068646').rating,10);
- api.applyAccount(null);assert.equal(JSON.stringify(api.snapshot().seen),JSON.stringify(JSON.parse(guest)));
-});
-test('Unconfigured auth stays honest and never imports the SDK or starts an auth request',async()=>{
- const authSource=await readFile('auth.js','utf8');const authContext=vm.createContext({window:{},setTimeout(){throw Error('unexpected timer')}});vm.runInContext(authSource,authContext);let state;authContext.window.CinemaAuth.subscribe(s=>state=s);assert.equal(state.enabled,false);assert.equal(state.user,null);await assert.rejects(authContext.window.CinemaAuth.signIn(),/auth_unavailable/);
-});
-
 test('Private diary preserves notes across rating changes, dates mark watched, and Persian month grouping works',()=>{
- api.applyAccount({id:'diary-test',name:'Diary',email:''});
+ api.resetJournal();
  api.saveDiary('tt0111161','A memorable story <script>test</script>','2026-10-20');
  let entry=api.snapshot().preferences.find(p=>p.id==='tt0111161');assert.equal(entry.watchedOn,'2026-10-20');assert.ok(api.snapshot().seen.includes('tt0111161'));
  api.changePreference('tt0111161',{rating:9});entry=api.snapshot().preferences.find(p=>p.id==='tt0111161');assert.ok(entry.note.includes('memorable'));assert.equal(entry.watchedOn,'2026-10-20');
@@ -74,13 +61,22 @@ test('Private diary preserves notes across rating changes, dates mark watched, a
  assert.throws(()=>api.saveDiary('tt0111161','x','2026-02-30'));assert.throws(()=>api.saveDiary('tt0111161','x'.repeat(2001),''));
  const before=JSON.stringify(api.snapshot());assert.throws(()=>api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',note:'x',watchedOn:'2026-02-30'}]}));assert.equal(JSON.stringify(api.snapshot()),before);
  api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',note:'Imported note',watchedOn:'2026-09-10'}]});assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0068646').note,'Imported note');
- api.applyAccount(null);
+ api.resetJournal();
 });
 test('Recommendations respect hard filters and explain taste affinity from actual preferences',()=>{
- api.applyAccount({id:'recommend-test',name:'Recommendations',email:''});api.changePreference('tt0111161',{rating:10,favorite:true});assert.ok(api.tasteGenres().get('Drama')>0);
+ api.resetJournal();api.changePreference('tt0111161',{rating:10,favorite:true});assert.ok(api.tasteGenres().get('Drama')>0);
  const pool=api.recommendPool('movie','',120,'unseen','Comedy');assert.ok(pool.length);assert.ok(pool.every(a=>a.type==='movie'&&a.runtime<=120&&a.genres.includes('Comedy')));
  api.changeState(pool[0].id,'seen');assert.ok(!api.recommendPool('movie','',120,'unseen','Comedy').some(a=>a.id===pool[0].id));
  assert.ok(api.recommendPool('movie','light',0,'unseen').every(a=>!a.genres.some(g=>['Horror','Thriller','Crime','War'].includes(g))));
  const candidate=ctx.window.CINEMA_CATALOGUE.titles.find(a=>a.id==='tt0120689');const reasons=api.recommendReasons(candidate,{mood:'thoughtful',max:200,selectedGenre:'Drama'});assert.ok(reasons.some(r=>r.includes('امتیازها و محبوب‌هایت')));
- assert.ok([candidate].includes(api.pickForTaste([candidate],.99)));api.applyAccount(null);
+ assert.ok([candidate].includes(api.pickForTaste([candidate],.99)));api.resetJournal();
+});
+
+test('Browser-only profile exposes backup without any sign-in or cloud dependency',async()=>{
+ const html=await readFile('index.html','utf8');assert.ok(!/auth-config|auth\.js|cloud-sync|supabase/i.test(html));assert.ok(!/CinemaAuth|cloudSync|queueCloud|authStatus/.test(source));
+ api.openAccount();const profile=get('#dialog-content').innerHTML;assert.ok(profile.includes('بدون ثبت‌نام و رمز عبور'));assert.ok(profile.includes('journal-export'));assert.ok(profile.includes('journal-import'));assert.ok(!profile.includes('ورود با گوگل'));
+});
+
+test('Existing browser records survive a fresh initialization with the same storage keys',()=>{
+ const keys=['cinema-seen','cinema-wanted','cinema-preferences'];const before=keys.map(key=>stored.get(key));const snapshot=JSON.stringify(api.snapshot());ctx.window.__cinema500=false;vm.runInContext(source,ctx);assert.equal(JSON.stringify(ctx.window.test.snapshot()),snapshot);assert.deepEqual(keys.map(key=>stored.get(key)),before);
 });
