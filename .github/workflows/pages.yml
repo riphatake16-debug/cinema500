@@ -27,7 +27,7 @@ jobs:
           assert len(titles)==500 and len({a['id'] for a in titles})==500
           assert sum(a['type']=='movie' for a in titles)==250
           assert sum(a['type']=='tv' for a in titles)==250
-          assert sum(bool(a.get('summary')) for a in titles)==403
+          assert sum(bool(a.get('summary')) for a in titles)==500
           assert all(a.get('summaryLanguage')=='fa' for a in titles if a.get('summary'))
           for a in titles:
               assert (Path('_site')/a['poster']).is_file(),a['id']

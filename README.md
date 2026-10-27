@@ -16,7 +16,7 @@
 
 GitHub Actions تصاویر محلی را از دو فایل artwork-1.zip و artwork-2.zip در _site باز می‌کند و سایت را روی GitHub Pages منتشر می‌کند. آزمایش‌های tests/static.test.mjs در همین مسیر اجرا می‌شوند. رتبه‌ها ثابت و متعلق به تاریخ درج‌شده در سایت‌اند. میزبانی تابع شرایط GitHub است.
 
-تمام ۴۰۳ خلاصهٔ موجود فارسی‌اند؛ ۹۷ اثر در دادهٔ اولیه خلاصه نداشته‌اند. منابع مشخصات و تصاویر: IMDb، Cinemeta/Metahub، quantavil/imdb-dataset و alae-touba/imdb-rest-api. نام‌ها و تصاویر متعلق به صاحبان حقوق آن‌ها هستند و سایت وابستگی رسمی به IMDb ندارد.
+هر ۵۰۰ اثر خلاصهٔ فارسی دارد. خلاصه‌های ۹۷ اثرِ تکمیل‌شده، همراه با منبع تطبیق هر عنوان، در content/summary-additions-fa.json ثبت شده‌اند. منابع مشخصات و تصاویر: IMDb، Cinemeta/Metahub، quantavil/imdb-dataset و alae-touba/imdb-rest-api. نام‌ها و تصاویر متعلق به صاحبان حقوق آن‌ها هستند و سایت وابستگی رسمی به IMDb ندارد.
 
 
 ## رتبه و آواتار

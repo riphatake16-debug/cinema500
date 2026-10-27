@@ -46,9 +46,9 @@ test('Touch selection keeps autoplay running, while keyboard focus still pauses 
  region.events.focusin({target:{matches:()=>true}});title=get('#featured-title').textContent;tick();assert.equal(get('#featured-title').textContent,title);region.events.focusout({relatedTarget:null});tick();assert.notEqual(get('#featured-title').textContent,title);
 });
 
-test('All 403 existing summaries are Persian, RTL, and missing summaries stay explicit',()=>{
+test('All 500 titles have Persian summaries rendered with RTL layout',()=>{
  const titles=ctx.window.CINEMA_CATALOGUE.titles,described=titles.filter(a=>a.summary);
- assert.equal(described.length,403);assert.equal(titles.filter(a=>!a.summary).length,97);
+ assert.equal(described.length,500);assert.equal(titles.filter(a=>!a.summary).length,0);
  for(const a of described){assert.equal(a.summaryLanguage,'fa');assert.match(a.summary,/[آ-ی]/);assert.ok(!a.summary.includes('See full summary'));}
  api.openDetail('tt0903747');assert.ok(get('#dialog-content').innerHTML.includes('lang="fa" dir="rtl"'));assert.ok(get('#dialog-content').innerHTML.includes('معلم شیمی'));
 });
