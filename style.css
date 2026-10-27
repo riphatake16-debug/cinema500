@@ -62,3 +62,6 @@ select option{background:var(--surface);color:var(--text)}
 :where(button,a,input,select):focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 @media(max-width:700px){header .nav{border-radius:26px;padding:9px 12px;margin-top:10px}.hero.cinema-hero{border-radius:30px}.hero-frame{border-radius:11px}.card{border-radius:25px;padding:5px}.card .poster{border-radius:20px}.card .card-content{padding:11px 7px 7px}.metric-card,.discover-card,.discover-small,.advanced-filters{border-radius:25px}.searchbox,.genre-label,.filters-toggle,.type-tabs{border-radius:999px}.status-tabs{gap:3px;justify-content:flex-start}.status-tabs button{font-size:8px;padding:6px 8px}.sort-label{height:30px;padding:0 10px}.personal-rating,.account-card,.account-import,.recommend-result{padding:15px}dialog{border-radius:29px}.detail-poster,.recommend-poster{border-radius:18px}}
 @media(prefers-reduced-motion:reduce){.card:hover{transform:none}}
+
+/* Defer offscreen card painting while retaining the glass design. */
+@supports(content-visibility:auto){.card{content-visibility:auto;contain-intrinsic-block-size:auto 460px}@media(max-width:700px){.card{contain-intrinsic-block-size:auto 380px}}@media(max-width:400px){.card{contain-intrinsic-block-size:auto 340px}}}
