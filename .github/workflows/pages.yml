@@ -16,7 +16,7 @@ jobs:
       - name: Assemble complete static site
         run: |
           mkdir -p _site
-          cp index.html app.js catalogue.js ranks.js motion.js style.css favicon.svg .nojekyll mobile-preview.html selects.js _site/
+          cp index.html app.js catalogue.js ranks.js motion.js style.css favicon.svg .nojekyll mobile-preview.html selects.js dates.js _site/
           unzip -q artwork-1.zip -d _site
           unzip -q artwork-2.zip -d _site
           python3 - <<'PY'
