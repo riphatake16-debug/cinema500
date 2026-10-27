@@ -4,7 +4,7 @@
 
 ## انتشار رایگان در GitHub Pages
 
-این پوشه آمادهٔ انتشار است و به نصب یا build نیاز ندارد. محتویاتش را در ریشهٔ یک مخزن عمومی قرار دهید. سپس Settings → Pages → Deploy from a branch → main → /(root) → Save را انتخاب کنید.
+انتشار این مخزن با GitHub Actions انجام می‌شود: در Settings → Pages منبع را GitHub Actions انتخاب کنید. فایل .github/workflows/pages.yml با هر تغییر روی main، فایل‌های سایت و تصاویر را آماده و منتشر می‌کند. تصاویر در artwork-1.zip و artwork-2.zip نگهداری می‌شوند و هنگام انتشار در مسیرهای posters و backdrops باز می‌شوند. فقط فایل‌های نهایی سایت منتشر می‌شوند؛ بسته‌های ZIP وارد خروجی سایت نمی‌شوند.
 
 ## اطلاعات شخصی
 
