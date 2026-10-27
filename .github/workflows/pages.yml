@@ -16,7 +16,8 @@ jobs:
       - name: Assemble complete static site
         run: |
           mkdir -p _site
-          cp index.html app.js catalogue.js style.css favicon.svg .nojekyll mobile-preview.html _site/
+          cp index.html app.js catalogue.js style.css favicon.svg .nojekyll mobile-preview.html auth-config.js auth.js _site/
+          cp -r vendor _site/
           unzip -q artwork-1.zip -d _site
           unzip -q artwork-2.zip -d _site
           python3 - <<'PY'
@@ -27,6 +28,8 @@ jobs:
           assert len(titles)==500 and len({a['id'] for a in titles})==500
           assert sum(a['type']=='movie' for a in titles)==250
           assert sum(a['type']=='tv' for a in titles)==250
+          assert sum(bool(a.get('summary')) for a in titles)==403
+          assert all(a.get('summaryLanguage')=='fa' for a in titles if a.get('summary'))
           for a in titles:
               assert (Path('_site')/a['poster']).is_file(),a['id']
           assert len(list(Path('_site/backdrops').glob('*.jpg')))==6
