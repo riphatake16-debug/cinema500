@@ -99,7 +99,7 @@ test('Hero swipes wrap both ways, ignore vertical scrolls and controls, and rest
  const start=(x=240,y=100,extra={})=>region.events.pointerdown({pointerId:1,pointerType:'touch',isPrimary:true,button:0,clientX:x,clientY:y,timeStamp:stamp,target,...extra});
  const end=(x,y=100)=>{stamp+=200;region.events.pointerup({pointerId:1,clientX:x,clientY:y,timeStamp:stamp});};
  ctx.window.test.setAmbient(ctx.window.CINEMA_CATALOGUE.titles.find(a=>a.id==='tt0816692'));
- start();end(80);assert.equal(title(),'The Shawshank Redemption');assert.ok([...timers.values()].some(t=>t.ms===6000));
+ start();stamp+=1800;end(80);assert.equal(title(),'The Shawshank Redemption');assert.ok([...timers.values()].some(t=>t.ms===6000));
  start(80);end(240);assert.equal(title(),'Interstellar');
  start(80);end(240);assert.equal(title(),'Spirited Away');
  const before=title();start();region.events.pointermove({pointerId:1,clientX:235,clientY:160});end(70,165);assert.equal(title(),before);

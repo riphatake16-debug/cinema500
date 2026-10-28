@@ -103,7 +103,7 @@ heroRegion.addEventListener('focusout',event=>{heroFocused=!!event.relatedTarget
 // Let the browser handle vertical scrolling and pinch zoom. No per-frame DOM writes.
 heroRegion.addEventListener('pointerdown',event=>{if(event.isPrimary===false){heroGesture=null;return;}if(event.button&&event.button!==0||event.target.closest('button,a,input,select,textarea,#featured-frames'))return;heroGesture={id:event.pointerId,x:event.clientX,y:event.clientY,time:event.timeStamp};},{passive:true});
 heroRegion.addEventListener('pointermove',event=>{if(!heroGesture||heroGesture.id!==event.pointerId)return;const dx=Math.abs(event.clientX-heroGesture.x),dy=Math.abs(event.clientY-heroGesture.y);if(dy>12&&dy>dx)heroGesture=null;},{passive:true});
-heroRegion.addEventListener('pointerup',event=>{const gesture=heroGesture;heroGesture=null;if(!gesture||gesture.id!==event.pointerId)return;const dx=event.clientX-gesture.x,dy=event.clientY-gesture.y;if(Math.abs(dx)>=52&&Math.abs(dx)>Math.abs(dy)*1.4&&event.timeStamp-gesture.time<1000){stepHero(dx<0?1:-1);scheduleHeroRotation();}},{passive:true});
+heroRegion.addEventListener('pointerup',event=>{const gesture=heroGesture;heroGesture=null;if(!gesture||gesture.id!==event.pointerId)return;const dx=event.clientX-gesture.x,dy=event.clientY-gesture.y;if(Math.abs(dx)>=52&&Math.abs(dx)>Math.abs(dy)*1.4){stepHero(dx<0?1:-1);scheduleHeroRotation();}},{passive:true});
 heroRegion.addEventListener('pointercancel',()=>{heroGesture=null;},{passive:true});
 heroRegion.addEventListener('keydown',event=>{if(event.target!==heroRegion||!['ArrowLeft','ArrowRight'].includes(event.key))return;event.preventDefault();stepHero(event.key==='ArrowLeft'?1:-1);});
 document.addEventListener('visibilitychange',scheduleHeroRotation);
