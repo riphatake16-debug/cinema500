@@ -37,7 +37,7 @@ test('Changing a rating preserves unrelated poster nodes and the current grid',(
 });
 test('Offscreen hero stops rotating and thumbnail markup stays stable between slides',()=>{
  get('#details').open=false;const tick=()=>{const entry=[...timers].find(([,t])=>t.ms===6000);assert.ok(entry);timers.delete(entry[0]);entry[1].fn()};
- const before=get('#featured-title').textContent,markup=get('#featured-frames').innerHTML;observers[1].callback([{isIntersecting:false}]);tick();assert.equal(get('#featured-title').textContent,before);observers[1].callback([{isIntersecting:true}]);tick();assert.notEqual(get('#featured-title').textContent,before);assert.equal(get('#featured-frames').innerHTML,markup);
+ const before=get('#featured-title').textContent,markup=get('#featured-frames').innerHTML;observers[1].callback([{isIntersecting:false}]);assert.ok(![...timers.values()].some(t=>t.ms===6000));assert.equal(get('#featured-title').textContent,before);observers[1].callback([{isIntersecting:true}]);tick();assert.notEqual(get('#featured-title').textContent,before);assert.equal(get('#featured-frames').innerHTML,markup);
 });
 
 test('Touch selection keeps autoplay running, while keyboard focus still pauses it',()=>{
@@ -90,4 +90,22 @@ test('Only unique watched titles grant XP; toggling and watchlists cannot multip
  api.resetJournal();const ids=ctx.window.CINEMA_CATALOGUE.titles.slice(0,5).map(a=>a.id);for(const id of ids)api.changeState(id,'seen');assert.equal(api.watcherRank().xp,50);assert.equal(api.watcherRank().level,2);assert.ok(get('#rank-upgrade').innerHTML.includes('جویندهٔ داستان'));
  api.changeState(ids[0],'seen');assert.equal(api.watcherRank().xp,50);api.changeState(ids[0],'none');assert.equal(api.watcherRank().xp,40);assert.equal(api.watcherRank().level,1);api.changeState(ids[0],'watchlist');assert.equal(api.watcherRank().xp,40);api.changeState(ids[0],'seen');assert.equal(api.watcherRank().xp,50);
  const xp=api.watcherRank().xp;ctx.window.__cinema500=false;vm.runInContext(source,ctx);assert.equal(ctx.window.test.watcherRank().xp,xp);assert.ok(!get('#account-slot').innerHTML.includes('ورود'));
+});
+
+
+test('Hero swipes wrap both ways, ignore vertical scrolls and controls, and restart autoplay',()=>{
+ const region=get('.cinema-hero'),title=()=>get('#featured-title').textContent;
+ const target={closest:()=>null};let stamp=1000;
+ const start=(x=240,y=100,extra={})=>region.events.pointerdown({pointerId:1,pointerType:'touch',isPrimary:true,button:0,clientX:x,clientY:y,timeStamp:stamp,target,...extra});
+ const end=(x,y=100)=>{stamp+=200;region.events.pointerup({pointerId:1,clientX:x,clientY:y,timeStamp:stamp});};
+ ctx.window.test.setAmbient(ctx.window.CINEMA_CATALOGUE.titles.find(a=>a.id==='tt0816692'));
+ start();end(80);assert.equal(title(),'The Shawshank Redemption');assert.ok([...timers.values()].some(t=>t.ms===6000));
+ start(80);end(240);assert.equal(title(),'Interstellar');
+ start(80);end(240);assert.equal(title(),'Spirited Away');
+ const before=title();start();region.events.pointermove({pointerId:1,clientX:235,clientY:160});end(70,165);assert.equal(title(),before);
+ start();end(225);assert.equal(title(),before);
+ start(240,100,{target:{closest:()=>({})}});end(80);assert.equal(title(),before);
+ start();region.events.pointercancel();end(80);assert.equal(title(),before);
+ start();start(150,100,{pointerId:2,isPrimary:false});end(80);assert.equal(title(),before);
+ region.events.keydown({target:region,key:'ArrowLeft',preventDefault(){}});assert.equal(title(),'Interstellar');
 });

@@ -31,3 +31,10 @@ GitHub Actions تصاویر محلی را از دو فایل artwork-1.zip و ar
 The relative `manifest.webmanifest` keeps app identity, launch URL and scope within the GitHub Pages project. The custom vector mark is in `icons/cinema500.svg`, with 192px/512px PNG icons and a 180px Apple touch icon. The 512px mark stays within the maskable safe circle.
 
 The requested display mode is `fullscreen`, with the browser's standard fallback to `standalone`. iOS home-screen launches use Apple metadata; OS status indicators depend on platform support. Open the HTTPS site and use the browser's **Install app / Add to Home screen** command, then launch its icon. The app still needs a network connection to load. Existing local journals and backup formats are unchanged.
+
+
+### Carousel and rendering
+
+Swipe left/right on the feature scene (or use Left/Right when it has keyboard focus). Vertical drags, tiny movements, cancelled pointers, multi-touch and gestures on buttons or the thumbnail strip do not change films. The six-second timer stops completely while the hero is offscreen or the document is hidden.
+
+Ambient blur remains static during fades. Nested rating/watch buttons reuse their parent glass filtering. Card entrances only fade, detached reveal targets are released, hidden-tab animations cancel, and old feature backdrop image layers are cleared after crossfades. Real-device FPS varies by GPU and browser.
