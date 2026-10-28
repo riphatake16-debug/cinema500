@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "سینما۵۰۰ — دفتر تماشای تو",
+  "short_name": "سینما۵۰۰",
+  "description": "دفتر شخصی ۲۵۰ فیلم و ۲۵۰ سریال برتر؛ ثبت تماشا، امتیاز و یادداشت خصوصی.",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#0b0d13",
+  "theme_color": "#0b0d13",
+  "categories": ["entertainment", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    {"src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
