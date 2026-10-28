@@ -12,9 +12,15 @@
 
 هر اثر یادداشت خصوصی و تاریخ تماشا دارد؛ مرور ماهانه با تقویم فارسی نمایش داده می‌شود. پیشنهاد امشب از ندیده‌ها و بر اساس حال‌وهوا، ژانر، زمان، امتیازها و محبوب‌ها انتخاب می‌کند و دلیل پیشنهاد را نشان می‌دهد. همهٔ این‌ها بدون API یا حساب خارجی کار می‌کنند.
 
+بخش پیشنهادهای صفحهٔ اصلی از ژانرهای انتخابی، نمره‌ها و محبوب‌ها استفاده می‌کند و دیده‌شده‌ها و آثار با نمرهٔ شخصی پایین را کنار می‌گذارد. انتخاب‌های روز در طول همان روز ثابت‌اند و با «انتخاب‌های دیگر» تغییر می‌کنند. محدودیت زمانی فیلم و قسمت سریال جداست. توضیح هر پیشنهاد با دادهٔ واقعی همان مرورگر ساخته می‌شود.
+
+سه مسیر پنج‌فیلمه، پیشرفت را از دیده‌شده‌های دفتر محاسبه می‌کنند. مسیر فعال و ژانرهای انتخابی در کلید `cinema-discovery` ذخیره و در فیلد اختیاری `discovery` به پشتیبان نسخهٔ ۱ اضافه می‌شوند؛ فایل‌های قبلی همچنان قابل ورودند. لیست تماشای مستقل، فیلم‌ها و سریال‌های ذخیره‌شده را کنار هم و با امکان تفکیک نمایش می‌دهد. جزئیات هر اثر چهار پیشنهاد نزدیک از نظر ژانر و سال دارد.
+
+منوی موبایل چهار مقصد با نام کامل دارد: مجموعه آثار، لیست تماشا، آمار تماشا و حساب من. سربرگ همراه صفحه حرکت می‌کند و چسبان نیست. کارت‌های جدید فیلتر تاری جدا ندارند و محاسبهٔ پیشنهادها هنگام تایپ جست‌وجو تکرار نمی‌شود.
+
 ## انتشار
 
-GitHub Actions تصاویر محلی را از دو فایل artwork-1.zip و artwork-2.zip در _site باز می‌کند و سایت را روی GitHub Pages منتشر می‌کند. آزمایش‌های tests/static.test.mjs در همین مسیر اجرا می‌شوند. رتبه‌ها ثابت و متعلق به تاریخ درج‌شده در سایت‌اند. میزبانی تابع شرایط GitHub است.
+GitHub Actions تصاویر محلی را از دو فایل artwork-1.zip و artwork-2.zip در _site باز می‌کند و سایت را روی GitHub Pages منتشر می‌کند. آزمایش‌های `tests/*.test.mjs` در همین مسیر اجرا می‌شوند؛ پیشنهادها، مسیرها، دفتر، انتقال پشتیبان، تقویم، نصب و متادیتا بررسی می‌شوند. رتبه‌ها ثابت و متعلق به تاریخ درج‌شده در سایت‌اند. میزبانی تابع شرایط GitHub است.
 
 هر ۵۰۰ اثر خلاصهٔ فارسی دارد. خلاصه‌های ۹۷ اثرِ تکمیل‌شده، همراه با منبع تطبیق هر عنوان، در content/summary-additions-fa.json ثبت شده‌اند. منابع مشخصات و تصاویر: IMDb، Cinemeta/Metahub، quantavil/imdb-dataset و alae-touba/imdb-rest-api. نام‌ها و تصاویر متعلق به صاحبان حقوق آن‌ها هستند و سایت وابستگی رسمی به IMDb ندارد.
 
@@ -38,3 +44,4 @@ The requested display mode is `fullscreen`, with the browser's standard fallback
 Swipe left/right on the feature scene (or use Left/Right when it has keyboard focus). Vertical drags, tiny movements, cancelled pointers, multi-touch and gestures on buttons or the thumbnail strip do not change films. The six-second timer stops completely while the hero is offscreen or the document is hidden.
 
 Ambient blur remains static during fades. Nested rating/watch buttons reuse their parent glass filtering. Card entrances only fade, detached reveal targets are released, hidden-tab animations cancel, and old feature backdrop image layers are cleared after crossfades. Real-device FPS varies by GPU and browser.
+

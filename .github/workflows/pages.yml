@@ -16,7 +16,7 @@ jobs:
       - name: Assemble complete static site
         run: |
           mkdir -p _site
-          cp index.html app.js catalogue.js ranks.js motion.js style.css favicon.svg .nojekyll mobile-preview.html selects.js dates.js manifest.webmanifest sitemap.xml _site/
+          cp index.html app.js discovery.js catalogue.js ranks.js motion.js style.css favicon.svg .nojekyll mobile-preview.html selects.js dates.js manifest.webmanifest sitemap.xml _site/
           cp -R icons _site/
           unzip -q artwork-1.zip -d _site
           unzip -q artwork-2.zip -d _site
@@ -55,3 +55,4 @@ jobs:
       - name: Publish site
         id: deployment
         uses: actions/deploy-pages@v4
+

@@ -10,8 +10,9 @@ let failKey='';
 const ctx=vm.createContext({IntersectionObserver:class{constructor(cb){this.callback=cb;observers.push(this)}observe(){}unobserve(){}},document:{querySelector:get,querySelectorAll:selector=>selector==='#grid > .card'?domCards:[],documentElement:{dataset:{theme:'dark'}},addEventListener(){}},window:{addEventListener(){}},localStorage:{getItem:k=>stored.get(k)??null,setItem(k,v){if(k===failKey){failKey='';throw Error('quota')}stored.set(k,v)},removeItem:k=>stored.delete(k)},setTimeout:(fn,ms)=>{const id=++timerId;timers.set(id,{fn,ms});return id},clearTimeout:id=>timers.delete(id),requestAnimationFrame:fn=>fn(),crypto:webcrypto});
 vm.runInContext(await readFile('catalogue.js','utf8'),ctx);
 vm.runInContext(await readFile('ranks.js','utf8'),ctx);
+vm.runInContext(await readFile('discovery.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
-source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],accountReady})};})();`);
+source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
 vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
@@ -108,4 +109,23 @@ test('Hero swipes wrap both ways, ignore vertical scrolls and controls, and rest
  start();region.events.pointercancel();end(80);assert.equal(title(),before);
  start();start(150,100,{pointerId:2,isPrimary:false});end(80);assert.equal(title(),before);
  region.events.keydown({target:region,key:'ArrowLeft',preventDefault(){}});assert.equal(title(),'Interstellar');
+});
+
+
+
+test('Taste and active journey restore with journal backups while old backups preserve them',()=>{
+ api.resetJournal();
+ api.importJournal({format:'cinema500-journal-v1',titles:[],discovery:{genres:['Drama','Sci-Fi'],activeJourney:'mind'}});
+ assert.equal(api.snapshot().discovery.activeJourney,'mind');assert.equal(api.snapshot().discovery.genres.length,2);
+ api.importJournal({format:'cinema500-journal-v1',titles:[]});assert.equal(api.snapshot().discovery.activeJourney,'mind');
+ const before=JSON.stringify([...stored]);assert.throws(()=>api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0111161',status:'seen'}],discovery:{genres:['unknown'],activeJourney:'mind'}}));assert.equal(JSON.stringify([...stored]),before);
+ ctx.window.__cinema500=false;vm.runInContext(source,ctx);assert.equal(ctx.window.test.snapshot().discovery.activeJourney,'mind');
+ api.resetJournal();
+});
+
+test('The saved destination includes both films and series and updates after marking watched',()=>{
+ api.resetJournal();api.changeState('tt0111161','watchlist');api.changeState('tt0903747','watchlist');api.openWatchlist();
+ const html=get('#watchlist-items').innerHTML;assert.ok(html.includes('The Shawshank Redemption'));assert.ok(html.includes('Breaking Bad'));
+ api.changeState('tt0903747','seen');assert.ok(!get('#watchlist-items').innerHTML.includes('Breaking Bad'));assert.ok(get('#watchlist-items').innerHTML.includes('The Shawshank Redemption'));
+ api.resetJournal();
 });
