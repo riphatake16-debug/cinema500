@@ -264,3 +264,17 @@ dialog:has(.quick-palette){width:min(620px,calc(100% - 28px));max-height:min(82v
  .quick-footer{font-size:8px}
 }
 @media(prefers-reduced-motion:reduce){.quick-actions>button{transition:none}}
+
+/* Keep navigation and anchor jumps comfortable while the collection is in view. */
+header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(22px) saturate(125%);-webkit-backdrop-filter:blur(22px) saturate(125%)}
+html{scroll-padding-top:108px}
+@media(max-width:700px){html{scroll-padding-top:128px}}
+/* Give desktop catalogue labels the same clarity as the oversized artwork. */
+@media(min-width:801px){
+ .card-name{font-size:13px;font-weight:600}
+ .card-fa{font-size:10px;height:19px}
+ .card-meta{font-size:10px}
+ .rating{font-size:11px}
+ .seen-btn{height:35px;font-size:11px}
+ .want-btn{width:35px;height:35px}
+}
