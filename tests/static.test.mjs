@@ -12,7 +12,7 @@ vm.runInContext(await readFile('catalogue.js','utf8'),ctx);
 vm.runInContext(await readFile('ranks.js','utf8'),ctx);
 vm.runInContext(await readFile('discovery.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
-source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
+source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
 vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
@@ -128,4 +128,16 @@ test('The saved destination includes both films and series and updates after mar
  const html=get('#watchlist-items').innerHTML;assert.ok(html.includes('The Shawshank Redemption'));assert.ok(html.includes('Breaking Bad'));
  api.changeState('tt0903747','seen');assert.ok(!get('#watchlist-items').innerHTML.includes('Breaking Bad'));assert.ok(get('#watchlist-items').innerHTML.includes('The Shawshank Redemption'));
  api.resetJournal();
+});
+
+
+test('Alternative Persian names remain searchable after cleaning display titles',()=>{
+ api.resetJournal();api.setFilters('movie','all');get('#search').value='اینسپشن';assert.equal(api.filtered()[0].id,'tt1375666');assert.equal(api.quickMatches('اینسپشن')[0].id,'tt1375666');
+ api.setFilters('tv','all');get('#search').value='افسارگسیخته';assert.equal(api.filtered()[0].id,'tt0903747');get('#search').value='';api.setFilters('movie','all');
+});
+
+test('Marking a title inside a journey updates progress without reopening or scrolling the dialog',()=>{
+ api.resetJournal();api.openJourney('middle-earth');get('#details').scrollTop=120;assert.ok(get('#journey-detail-count').textContent.includes('۰ از ۳'));
+ api.changeState('tt0120737','seen');assert.ok(get('#journey-detail-count').textContent.includes('۱ از ۳'));assert.equal(get('#details').scrollTop,120);
+ api.changeState('tt0120737','none');assert.ok(get('#journey-detail-count').textContent.includes('۰ از ۳'));assert.equal(get('#details').scrollTop,120);api.resetJournal();
 });
