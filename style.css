@@ -200,3 +200,10 @@ select option{background:var(--surface);color:var(--text)}
 .cinema-hero{touch-action:pan-y pinch-zoom}.cinema-hero .hero-copy{user-select:none;-webkit-user-select:none}.hero-visual,.hero-backdrop-pane{contain:paint}.hero-frames{touch-action:pan-x pan-y pinch-zoom}
 @media(hover:none){.card:hover,.card:hover .poster>img{transform:none}.card{transition:border-color .2s ease}.card .poster>img{transition:none}}
 @media(prefers-reduced-motion:reduce){.ambient-layer{transition:none}}
+
+/* Reserve stable text slots so carousel content cannot resize its frame. */
+.cinema-hero h1{block-size:2.28em;block-size:2lh;flex-shrink:0}
+.cinema-hero .hero-fa{block-size:1.8em;block-size:1lh;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cinema-hero .hero-description{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;block-size:4.2em;block-size:2lh}
+.cinema-hero .featured-meta{block-size:1.8em;line-height:1.8;flex-wrap:nowrap;overflow:hidden}
+@media(max-width:700px){.cinema-hero .featured-meta{block-size:3.6em;flex-wrap:wrap;align-content:flex-start;align-items:flex-start}}
