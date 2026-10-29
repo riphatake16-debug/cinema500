@@ -26,13 +26,6 @@
     {id:'series-crime', title:'سریال‌های جنایی', subtitle:'از خیابان‌های بالتیمور تا دفتر ساول گودمن.', tag:'سریال جنایی', categories:['series','suspense'], color:'#b29889', ids:['tt0306414','tt0141842','tt0903747','tt3032476','tt2802850']},
     {id:'anime', title:'پنج انیمه برای دنبال‌کردن', subtitle:'ماجراجویی، معما و شخصیت‌هایی با انتخاب‌های دشوار.', tag:'انیمهٔ سریالی', categories:['animation','series'], color:'#9e9dcc', ids:['tt0213338','tt0877057','tt1355642','tt1910272','tt2560140']}
   ];
-  function hash(value) {
-    let n = 2166136261;
-    for (const c of String(value)) n = Math.imul(n ^ c.charCodeAt(0), 16777619);
-    n = Math.imul(n ^ (n >>> 16), 0x85ebca6b);
-    n = Math.imul(n ^ (n >>> 13), 0xc2b2ae35);
-    return ((n ^ (n >>> 16)) >>> 0) / 4294967296;
-  }
   function settings(raw, strict = false) {
     if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
       if (strict) throw Error('invalid_discovery');
@@ -49,42 +42,6 @@
   function mergeSettings(current, incoming) {
     const a = settings(current), b = settings(incoming, true);
     return {genres:a.genres.length ? a.genres : b.genres, activeJourney:a.activeJourney || b.activeJourney};
-  }
-  function taste(titles, preferences, selected = []) {
-    const weights = new Map(selected.map(g => [g, 4]));
-    const byId = new Map(titles.map(t => [t.id, t]));
-    const values = typeof preferences?.values === 'function' ? preferences.values() : (preferences || []);
-    for (const p of values) {
-      const title = byId.get(p.id);
-      if (!title) continue;
-      const weight = (p.favorite ? 4 : 0) + (p.rating >= 7 ? (p.rating - 6) * 1.5 : p.rating && p.rating <= 4 ? -(5 - p.rating) * 1.5 : 0);
-      for (const g of title.genres || []) weights.set(g, (weights.get(g) || 0) + weight / Math.sqrt(title.genres.length));
-    }
-    return weights;
-  }
-  function recommendations(titles, {seen = [], wanted = [], preferences = [], selectedGenres = [], kind = 'movie', mode = 'personal', day = '', round = 0, limit = 4} = {}) {
-    const watched = new Set(seen), saved = new Set(wanted);
-    const prefs = typeof preferences?.get === 'function' ? preferences : new Map(Array.from(preferences, p => [p.id,p]));
-    const weights = taste(titles, prefs, selectedGenres);
-    const maxWeight = Math.max(4, ...weights.values());
-    const candidates = titles.filter(t => t.type === kind && !watched.has(t.id) && !(prefs.get(t.id)?.rating && prefs.get(t.id).rating <= 4) && (mode !== 'short' || (t.runtime > 0 && t.runtime <= (kind === 'tv' ? 35 : 100))));
-    const ranked = candidates.map(t => {
-      const matches = (t.genres || []).filter(g => (weights.get(g) || 0) > 0).sort((a,b) => weights.get(b) - weights.get(a));
-      const affinity = (t.genres || []).reduce((n,g) => n + (weights.get(g) || 0) / maxWeight, 0) / Math.sqrt(Math.max(1,t.genres?.length));
-      const variation = hash(t.id+'|'+day+'|'+round);
-      const score = mode === 'explore' ? variation * 7 + (t.rating - 7) : affinity * 5 + (t.rating - 7) * 1.7 + variation * 2.5 + (saved.has(t.id) ? .7 : 0);
-      const reason = mode === 'short' ? {type:'short'} : mode === 'explore' ? {type:'explore'} : matches.length ? {type:'genre',genre:matches[0]} : saved.has(t.id) ? {type:'watchlist'} : {type:'quality'};
-      return {title:t, score, reason};
-    });
-    const picked = [];
-    while (picked.length < limit && ranked.length) {
-      ranked.sort((a,b) => {
-        const diversity = item => picked.reduce((n,p) => n + (item.title.genres?.[0] === p.title.genres?.[0] ? .65 : 0) + (item.title.title.split(':')[0] === p.title.title.split(':')[0] ? 2 : 0),0);
-        return (b.score - diversity(b)) - (a.score - diversity(a)) || a.title.rank - b.title.rank;
-      });
-      picked.push(ranked.shift());
-    }
-    return picked;
   }
   function similar(titles, source, seen = [], limit = 4) {
     const watched = new Set(seen), sourceGenres = new Set(source.genres || []);
@@ -108,5 +65,5 @@
     const watched=new Set(seen),byId=new Map(titles.map(t=>[t.id,t])),q=normalize(query);
     return journeys.filter(j=>category==='all'||(category==='featured'?j.featured:j.categories.includes(category))).filter(j=>!unfinishedOnly||j.ids.some(id=>!watched.has(id))).filter(j=>!q||normalize([j.title,j.subtitle,j.tag,...j.ids.flatMap(id=>{const t=byId.get(id);return t?[t.title,t.fa,...(t.aliases||[])]:[]})].join(' ')).includes(q));
   }
-  window.CinemaDiscovery = {genres, categories, journeys, settings, mergeSettings, taste, recommendations, similar, journeyProgress, filterJourneys};
+  window.CinemaDiscovery = {genres, categories, journeys, settings, mergeSettings, similar, journeyProgress, filterJourneys};
 })();
