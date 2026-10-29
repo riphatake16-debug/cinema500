@@ -360,11 +360,32 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0877057/"
       }
+    },
+    "tt0120586": {
+      "fa": "تاریخ مجهول آمریکا",
+      "summary": "یک نئونازی سابق تلاش می‌کند برادر کوچک‌ترش را از قدم‌گذاشتن در مسیر اشتباه گذشتهٔ خود بازدارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q208572"
+      }
+    },
+    "tt9362722": {
+      "fa": "مرد عنکبوتی: در میان دنیای عنکبوتی",
+      "summary": "مایلز مورالس در سفر به جهان‌های موازی با گروهی از مردان عنکبوتی آشنا می‌شود. اختلاف بر سر مقابله با تهدیدی تازه، او را میان پیروی از دیگران و انتخاب راه خودش قرار می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q76448600"
+      }
     }
   },
-  "retryAfter": {},
+  "retryAfter": {
+    "tt4934214": "2026-10-30T00:02:24+00:00",
+    "tt22248376": "2026-10-30T00:02:24+00:00"
+  },
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 272
+    "characters": 282
   }
 }
