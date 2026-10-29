@@ -536,7 +536,10 @@ dialog:has(.journey-list),dialog:has(.watchlist-items){padding:30px 18px 24px;wi
 .collection-sort{display:flex;min-width:0;max-width:52%}
 .collection-sort .custom-select{display:flex;width:100%;min-width:0}
 .collection-sort .select-trigger{min-width:0;min-height:46px;border-radius:16px;font-size:12px;padding:8px 12px;gap:12px}
-.collection-items{margin-top:15px}
+.collection-items{margin-top:15px;width:100%;min-width:0;grid-template-columns:minmax(0,1fr)}
+.collection-items>li{width:100%;min-width:0;max-width:100%}
+.collection-items .journey-work{flex:1 1 0%;min-width:0;max-width:100%}
+.collection-items .journey-work>span:nth-child(2){overflow:hidden}
 .collection-items>.collection-empty{display:block;text-align:center;padding:25px 12px;color:var(--muted)}
 .collection-page-status{text-align:center;margin:18px 0 0!important;font-size:11px!important}
 .collection-back{min-height:44px;color:var(--accent);margin-bottom:15px}
