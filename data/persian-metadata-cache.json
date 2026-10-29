@@ -594,6 +594,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q190525"
       }
+    },
+    "tt14986406": {
+      "fa": "بلیچ: جنگ خونین هزار ساله",
+      "summary": "با ناپدیدشدن مرموز ساکنان و نزدیک‌شدن تهدیدی تازه به انجمن ارواح، ایچیگو و همراهانش وارد نبردی گسترده می‌شوند که گذشته و آیندهٔ دنیای آن‌ها را به چالش می‌کشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112631839"
+      }
+    },
+    "tt15239678": {
+      "fa": "تلماسه: بخش دو",
+      "summary": "پل آتریدیز برای مقابله با کسانی که خانواده‌اش را نابود کرده‌اند، به فریمن‌های آراکیس می‌پیوندد؛ در حالی که عشق، قدرت و آینده‌ای هولناک، تصمیم‌هایش را پیچیده می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109228991"
+      }
+    },
+    "tt0082971": {
+      "fa": "مهاجمان صندوق گمشده",
+      "summary": "در سال ۱۹۳۶، دولت آمریکا ایندیانا جونز، باستان‌شناس ماجراجو، را مأمور یافتن صندوق عهد می‌کند تا نازی‌ها به قدرت آن دست پیدا نکنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q174284"
+      }
+    },
+    "tt7137906": {
+      "fa": "وقتی آنها ما را میبینند",
+      "summary": "پنج نوجوان اهل هارلم با اتهام نادرست به حمله‌ای وحشیانه در سنترال پارک، در کابوسی گرفتار می‌شوند؛ بر اساس داستانی واقعی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q55606843"
+      }
     }
   },
   "retryAfter": {
