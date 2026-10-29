@@ -578,3 +578,8 @@ dialog:has(.journey-list),dialog:has(.watchlist-items){padding:30px 18px 24px;wi
  .collection-detail-options>button{font-size:10px;padding-inline:8px}
 }
 
+
+/* Load the conversation interface only when the visitor opens it. */
+.assistant-launch{position:fixed;inset:auto auto max(22px,env(safe-area-inset-bottom)) 22px;z-index:20;display:flex;align-items:center;gap:9px;padding:12px 19px;min-height:48px;border:1px solid var(--line-strong);border-radius:28px;background:var(--surface);color:var(--text);box-shadow:0 6px 28px #0003;font-size:13px;font-weight:600;transition:transform .18s ease,background-color .18s ease}.assistant-launch .icon{color:var(--accent)}.assistant-launch:hover{transform:translateY(-2px);background:var(--surface2)}.assistant-launch[aria-busy=true]{opacity:.65;cursor:progress}@media(max-width:720px){.assistant-launch{left:14px;bottom:calc(90px + env(safe-area-inset-bottom));padding:10px 15px;min-height:44px;font-size:12px}}@media(prefers-reduced-motion:reduce){.assistant-launch{transition:none}}
+
+.assistant-context-button{margin-top:16px;margin-bottom:4px}

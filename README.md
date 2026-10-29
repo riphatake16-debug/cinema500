@@ -92,3 +92,19 @@ Ambient blur remains static during fades. Nested rating/watch buttons reuse thei
 در قطعی منبع، نبود متن یا پایان سهمیه، تکمیل خودکار برای اجرای بعدی صف می‌شود و حداقل ۶ ساعت تا تلاش بعدی همان اثر فاصله می‌افتد. رتبه‌ها مستقل از فارسی‌سازی منتشر می‌شوند. اگر هیچ منبعی نتیجهٔ فارسی معتبر ندهد، اثر وارد فهرست می‌شود و تا تکمیل در یکی از اجراهای بعدی، نبود خلاصهٔ فارسی صادقانه مشخص است.
 
 مستندات منابع: [IMDb ID در ویکی‌داده](https://www.wikidata.org/wiki/Property:P345)، [TextExtracts](https://www.mediawiki.org/wiki/Extension:TextExtracts)، [MyMemory API](https://mymemory.translated.net/doc/spec.php)، [محدودیت مصرف رایگان](https://mymemory.translated.net/doc/usagelimits.php).
+
+
+## Free cinema assistant
+
+The floating «دستیار سینما» button opens a lazy-loaded conversation dialog. The same assistant can be opened from a title’s details. Its two modes are clearly labeled:
+
+- **راهنمای داخلی** uses the current catalogue locally for genre/time/similarity suggestions and site help. It is a rules-based guide, not a language model. It never sends the journal or conversation to a server.
+- **چت هوش مصنوعی** connects to Puter through the official `https://js.puter.com/v2/` SDK. Visitors use their own Puter sign-in. No owner API key, server, paid subscription or billing configuration has been added. Availability and visitor quotas depend on Puter and its providers.
+
+Only explicitly allowlisted `:free` variants from the `openrouter` provider are accepted. Before each request, the current model catalogue must report numeric zero input and output prices and no extra charges or price overrides. Missing/unknown pricing or no available free model stops generation; there is no fallback to an ordinary paid model. Puter’s SDK may display its own account or usage-limit UI. No purchase, upgrade or payment is initiated by Cinema500.
+
+The remote model receives the typed chat, at most six recent messages, and up to twelve relevant public catalogue rows. Seen-title IDs are used locally to choose candidates; ratings, diary notes, watch dates, profile and backup files are not included. Chats live only in page memory and can be cleared. Spoiler avoidance is requested by default, but generated answers can be inaccurate.
+
+The SDK is loaded only after clicking the connection control; neither it nor a language model is downloaded on normal site visits. Requests can be stopped, have a 70-second deadline, and are never automatically retried. User/model text is escaped before rendering, and title links are restricted to known catalogue IDs.
+
+Primary provider references: [Puter chat](https://docs.puter.com/AI/chat/), [model catalogue and free variants](https://docs.puter.com/AI/listModels/), [quotas](https://docs.puter.com/rate-limits-and-quotas/).
