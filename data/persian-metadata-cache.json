@@ -378,6 +378,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q76448600"
       }
+    },
+    "tt0095765": {
+      "fa": "سینما پارادیزو",
+      "summary": "فیلم‌سازی کودکی‌اش را به یاد می‌آورد؛ زمانی که در سینمای روستایش شیفتهٔ فیلم شد و با آپاراتچی آن دوستی عمیقی پیدا کرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q464032"
+      }
+    },
+    "tt2297757": {
+      "fa": "ناتان برای تو",
+      "summary": "نیتن فیلدر با تحصیلات و تجربه‌هایش به کسب‌وکارهای کوچک کمک می‌کند؛ اما پیشنهادهای نامتعارفش، صاحبان آن‌ها را وارد موقعیت‌هایی دور از انتظار می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2297757/"
+      }
+    },
+    "tt9735318": {
+      "fa": "بیتلز: بازگشت",
+      "summary": "تصاویر آرشیوی جلسات تمرین و ضبط بیتلز در ژانویهٔ ۱۹۶۹، روند ساخت ترانه‌ها، روابط اعضای گروه و آماده‌شدن آن‌ها برای اجرای زنده را از نزدیک نشان می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q88532913"
+      }
+    },
+    "tt0034583": {
+      "fa": "کازابلانکا",
+      "summary": "مردی آمریکایی در کازابلانکا با عشق قدیمی‌اش روبه‌رو می‌شود و باید تصمیم بگیرد آیا به او و همسر فراری‌اش برای خروج از کشور کمک کند یا نه.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q132689"
+      }
     }
   },
   "retryAfter": {
@@ -386,6 +422,6 @@
   },
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 282
+    "characters": 296
   }
 }
