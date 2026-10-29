@@ -522,6 +522,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q104905"
       }
+    },
+    "tt0388629": {
+      "fa": "وان پیس",
+      "summary": "مانکی دی. لوفی و گروه دزدان دریایی‌اش برای یافتن بزرگ‌ترین گنج به‌جامانده از گلد راجر افسانه‌ای، معروف به «وان پیس»، ماجراجویی می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q710324"
+      }
+    },
+    "tt0021749": {
+      "fa": "روشناییهای شهر",
+      "summary": "ولگردی مهربان که عاشق دختری گل‌فروش و نابینا شده، با کمک مردی ثروتمند و دمدمی‌مزاج می‌کوشد هزینهٔ درمان او را فراهم کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q238211"
+      }
+    },
+    "tt2571774": {
+      "fa": "آفریقا (مجموعه تلویزیونی انگلیسی)",
+      "summary": "دیوید اتنبرو مخاطب را به سفری در آفریقا می‌برد؛ از بیابان و ساوانا تا جنگل، برای دیدار با حیات وحش شگفت‌انگیز این قاره.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q4689532"
+      }
+    },
+    "tt0078788": {
+      "fa": "آخرالزمان اکنون",
+      "summary": "در میانهٔ جنگ ویتنام، یک افسر آمریکایی مأمور می‌شود فرمانده‌ای سرکش را که از کنترل ارتش خارج شده، پیدا کند و از میان بردارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0078788/"
+      }
     }
   },
   "retryAfter": {
@@ -530,6 +566,6 @@
   },
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 296
+    "characters": 310
   }
 }
