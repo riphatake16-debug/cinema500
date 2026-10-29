@@ -414,6 +414,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q132689"
       }
+    },
+    "tt0092337": {
+      "fa": "ده فرمان",
+      "summary": "ده فیلم تلویزیونی درام که هرکدام با الهام از یکی از ده فرمان ساخته شده‌اند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q59783"
+      }
+    },
+    "tt0114814": {
+      "fa": "مظنونین همیشگی",
+      "summary": "تنها بازماندهٔ تیراندازی در یک کشتی، ماجرایی را برای پلیس تعریف می‌کند که از آشنایی پنج مجرم در صف شناسایی آغاز شده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q132351"
+      }
+    },
+    "tt0213338": {
+      "fa": "کابوی بیباپ",
+      "summary": "ماجراجویی‌ها و تلخی‌های زندگی یک جایزه‌بگیر خونسرد و همراهانش در آینده روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101244908"
+      }
+    },
+    "tt1853728": {
+      "fa": "جانگو آزاد شده",
+      "summary": "برده‌ای آزادشده با کمک یک جایزه‌بگیر آلمانی، برای نجات همسرش از دست مالک بی‌رحم یک مزرعه در می‌سی‌سی‌پی راهی می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q571032"
+      }
     }
   },
   "retryAfter": {
