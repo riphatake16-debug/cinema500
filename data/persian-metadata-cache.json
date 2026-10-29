@@ -144,11 +144,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q673517"
       }
+    },
+    "tt0317248": {
+      "fa": "شهر خدا",
+      "summary": "دو پسر در محله‌های فقیرنشین ریو بزرگ می‌شوند. یکی می‌خواهد عکاس شود و دیگری به یکی از چهره‌های قدرتمند دنیای تبهکاری تبدیل می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q220741"
+      }
+    },
+    "tt11126994": {
+      "fa": "آرکین",
+      "summary": "در میان شکاف عمیق شهر مرفه پیلتوور و منطقهٔ محروم زائون، سرنوشت دو خواهر با فناوری جادویی، مبارزه برای قدرت و باورهای متضاد گره می‌خورد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q85518571"
+      }
+    },
+    "tt0103064": {
+      "fa": "نابودگر ۲: روز داوری",
+      "summary": "یک سایبورگ مأمور می‌شود از جان کانر نوجوان محافظت کند؛ اما دشمنشان ماشینی پیشرفته‌تر و خطرناک‌تر است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q170564"
+      }
+    },
+    "tt0296310": {
+      "fa": "سیاره آبی",
+      "summary": "مجموعه‌ای مستند که پس از پنج سال تولید، تنوع شگفت‌انگیز زندگی در اقیانوس‌های جهان را به تصویر می‌کشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0296310/"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 111
+    "characters": 126
   }
 }
