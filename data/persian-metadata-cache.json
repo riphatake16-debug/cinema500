@@ -36,11 +36,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60747233"
       }
+    },
+    "tt7678620": {
+      "fa": "آبی",
+      "summary": "بلویی، توله‌سگی بازیگوش، همراه خواهر کوچکش بینگو و پدر و مادرشان، اتفاق‌های معمولی خانه و محله را به بازی‌های خیال‌انگیز و ماجراهایی دربارهٔ دوستی و خانواده تبدیل می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt7678620/"
+      }
+    },
+    "tt0080684": {
+      "fa": "جنگ ستارگان: قسمت پنجم - امپراتوری ضربه می‌زند",
+      "summary": "پس از شکست شورشیان در سیارهٔ یخی هاث، لوک آموزش جدای را نزد یودا آغاز می‌کند؛ در همین حال، دارث ویدر و بوبا فت دوستانش را تعقیب می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0080684/"
+      }
+    },
+    "tt0071075": {
+      "fa": "جهان در جنگ",
+      "summary": "مستندی ۲۶قسمتی با روایت لارنس اولیویه، دربارهٔ مرگبارترین درگیری تاریخ، جنگ جهانی دوم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0071075/"
+      }
+    },
+    "tt2560140": {
+      "fa": "حمله به تایتان",
+      "summary": "پس از ویران‌شدن زادگاه ارن یگر و مرگ مادرش، او تصمیم می‌گیرد با تایتان‌هایی بجنگد که بقای انسان‌ها را تهدید می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2560140/"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 14
+    "characters": 96
   }
 }
