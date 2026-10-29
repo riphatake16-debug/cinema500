@@ -72,6 +72,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt2560140/"
       }
+    },
+    "tt1355642": {
+      "fa": "کیمیاگر تمامفلزی: برادری",
+      "summary": "دو برادر برای زنده‌کردن مادرشان دست به کاری ممنوع می‌زنند و بخشی از بدنشان را از دست می‌دهند. آن‌ها برای جبران این اتفاق، به دنبال سنگ فیلسوف می‌روند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q437808"
+      }
+    },
+    "tt1533395": {
+      "fa": "زندگی",
+      "summary": "دیوید اتنبرو و گروه مستندساز بی‌بی‌سی در ده قسمت، حیات وحش سراسر زمین و راه‌های گوناگون جانداران برای رویارویی با دشواری‌های بقا را بررسی می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1710184"
+      }
+    },
+    "tt8420184": {
+      "fa": "آخرین رقص",
+      "summary": "مستندی دربارهٔ مایکل جردن و تیم شیکاگو بولز در دههٔ ۱۹۹۰ که با تمرکز بر آخرین فصل قهرمانی آن گروه، مسیر شکل‌گیری یکی از مشهورترین تیم‌های تاریخ بسکتبال را مرور می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q85807688"
+      }
+    },
+    "tt0052520": {
+      "fa": "منطقهی نیمهروشن",
+      "summary": "آدم‌های معمولی در موقعیت‌هایی شگفت‌انگیز و غیرعادی قرار می‌گیرند و هرکدام به شیوه‌ای خاص برای حل آن‌ها تلاش می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q742103"
+      }
     }
   },
   "retryAfter": {},
