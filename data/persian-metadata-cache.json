@@ -486,6 +486,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q15931555"
       }
+    },
+    "tt0027977": {
+      "fa": "عصر جدید",
+      "summary": "ولگرد و دختری بی‌خانمان تلاش می‌کنند در دنیای کارخانه‌ها و ماشین‌ها، کار و جایی برای زندگی پیدا کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q45602"
+      }
+    },
+    "tt7920978": {
+      "fa": "شخصیت",
+      "summary": "مردی پس از تشخیص ابتلا به آلزایمر، تصمیم می‌گیرد مجرمان را مجازات کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q52152174"
+      }
+    },
+    "tt0064116": {
+      "fa": "روزی روزگاری در غرب",
+      "summary": "غریبه‌ای اسرارآمیز با سازدهنی، با تبهکاری بدنام همراه می‌شود تا از بیوه‌ای در برابر آدمکش بی‌رحم شرکت راه‌آهن محافظت کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q168154"
+      }
+    },
+    "tt0910970": {
+      "fa": "وال-ئی",
+      "summary": "در آینده‌ای دور، ربات کوچکی که زباله جمع می‌کند، ناخواسته وارد سفری فضایی می‌شود که سرنوشت بشر را تغییر می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q104905"
+      }
     }
   },
   "retryAfter": {
