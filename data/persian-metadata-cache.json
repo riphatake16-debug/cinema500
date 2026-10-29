@@ -216,11 +216,47 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt2098220/"
       }
+    },
+    "tt12392504": {
+      "fa": "کلاهبرداری ۱۹۹۲: داستان هارشاد مهتا",
+      "summary": "صعود و سقوط هرشاد مهتا، کارگزار جاه‌طلب بورس هند، در مسیری از موفقیت‌های چشمگیر تا آشکارشدن تقلب‌های مالی و پیامدهای آن برای بازار روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q100709273"
+      }
+    },
+    "tt2092588": {
+      "fa": "سیاره یخزده",
+      "summary": "مستندی دربارهٔ حیات وحش و محیط طبیعی شمالگان و جنوبگان.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q559669"
+      }
+    },
+    "tt0081912": {
+      "fa": "فقط احمق‌ها و اسب‌ها",
+      "summary": "دو برادر در محلهٔ پکام لندن، با معامله‌های مشکوک و نقشه‌های جورواجور به دنبال فرصتی هستند که آن‌ها را میلیونر کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0081912/"
+      }
+    },
+    "tt6019206": {
+      "fa": "بیل را بکش: تمام ماجرای خونین",
+      "summary": "آدمکشی حرفه‌ای که همکاران سابقش او را به گمان مرگ رها کرده‌اند، برای انتقام از اعضای گروه و مردی که زمانی دوستش داشت راهی می‌شود؛ نسخهٔ یکپارچهٔ داستان «بیل را بکش».",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt6019206/"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 141
+    "characters": 196
   }
 }
