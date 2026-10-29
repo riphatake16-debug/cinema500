@@ -1,0 +1,18 @@
+name: Check chart source
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/probe_charts.py', '.github/workflows/check-chart-source.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check full movie and TV charts
+        run: python3 scripts/probe_charts.py
