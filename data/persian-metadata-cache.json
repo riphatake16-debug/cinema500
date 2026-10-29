@@ -630,6 +630,44 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q55606843"
       }
+    },
+    "tt0077711": {
+      "fa": "سونات پاییزی",
+      "summary": "سونات پاییزی (به سوئدی: Höstsonaten) فیلمی سوئدی در ژانر درام به کارگردانی اینگمار برگمان، محصول سال ۱۹۷۸ و با بازی اینگرید برگمان است. فیلم داستان زن پیانیست مشهوری است که پس از سال‌ها به دیدار دخترش که با او رابطه نداشته می‌رود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q322572",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B3%D9%88%D9%86%D8%A7%D8%AA+%D9%BE%D8%A7%DB%8C%DB%8C%D8%B2%DB%8C&oldid=40453934"
+      }
+    },
+    "tt4633694": {
+      "fa": "مرد عنکبوتی: به درون دنیای عنکبوتی",
+      "summary": "مایلز مورالس نوجوان به مرد عنکبوتی دنیای خود تبدیل می‌شود و همراه پنج همتای دیگر از جهان‌های موازی، با تهدیدی علیه همهٔ واقعیت‌ها روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q29588607"
+      }
+    },
+    "tt0472954": {
+      "fa": "فیلادلفیا همیشه آفتابی است",
+      "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23670"
+      }
+    },
+    "tt0405094": {
+      "fa": "زندگی دیگران",
+      "summary": "در برلین شرقیِ سال ۱۹۸۴، مأمور پلیس مخفی که زندگی یک نویسنده و معشوقه‌اش را شنود می‌کند، رفته‌رفته درگیر دنیای آن‌ها می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q153882"
+      }
     }
   },
   "retryAfter": {
