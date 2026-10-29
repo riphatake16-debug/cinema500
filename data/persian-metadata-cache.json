@@ -108,11 +108,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q742103"
       }
+    },
+    "tt0038650": {
+      "fa": "چه زندگی شگفتانگیزی",
+      "summary": "فرشته‌ای به کمک مردی ناامید می‌آید و به او نشان می‌دهد اگر هرگز به دنیا نمی‌آمد، زندگی اطرافیانش چگونه بود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q204191"
+      }
+    },
+    "tt1877514": {
+      "fa": "جنگ ویتنام",
+      "summary": "مروری جامع بر تاریخ حضور آمریکا در جنگ ویتنام؛ درگیری‌ای در جنوب‌شرقی آسیا که اختلافات عمیقی بر جای گذاشت.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1877514/"
+      }
+    },
+    "tt0047478": {
+      "fa": "هفت سامورایی",
+      "summary": "روستاییانی که از حملهٔ راهزنان به ستوه آمده‌اند، هفت سامورایی را برای دفاع از روستایشان به کمک می‌گیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q189540"
+      }
+    },
+    "tt0103359": {
+      "fa": "بتمن: مجموعه پویانمایی",
+      "summary": "شوالیهٔ تاریکی با کمک گاه‌به‌گاه رابین و بت‌گرل، با جنایت در گاتهام مبارزه می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q673517"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 96
+    "characters": 111
   }
 }
