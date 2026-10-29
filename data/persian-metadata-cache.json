@@ -288,11 +288,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q672443"
       }
+    },
+    "tt0056058": {
+      "fa": "هاراکیری",
+      "summary": "سامورایی بی‌اربابی به عمارت یک خاندان می‌رود تا هاراکیری کند. او با تعریف ماجرای مردی دیگر، گذشته‌ای را آشکار می‌کند که آبروی خاندان را به خطر می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1584406"
+      }
+    },
+    "tt33043892": {
+      "fa": "دکستر: رستاخیز",
+      "summary": "دکستر مورگان پس از بیدارشدن از کما، برای یافتن پسرش هریسون و ترمیم رابطه‌شان به نیویورک می‌رود؛ اما گذشتهٔ تاریکش خیلی زود به سراغ او می‌آید.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q127919404"
+      }
+    },
+    "tt13675832": {
+      "fa": "مثل اینکه",
+      "summary": "ییلماز، ایلکان و دوستانشان با اتفاق‌های کوچک و عجیب زندگی روزمره درگیر می‌شوند؛ سوءتفاهم‌ها و بحث‌های پایان‌ناپذیری که هر بار مسئله‌ای ساده را به بحرانی خنده‌دار تبدیل می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt13675832/"
+      }
+    },
+    "tt0054215": {
+      "fa": "روانی",
+      "summary": "منشی جوانی با پول یکی از مشتریان کارفرمایش فرار می‌کند و در متلی دورافتاده پناه می‌گیرد؛ متلی که مدیر جوانش زیر نفوذ مادرش است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q163038"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 229
+    "characters": 234
   }
 }
