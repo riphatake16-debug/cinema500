@@ -1,6 +1,46 @@
 {
   "schemaVersion": 1,
-  "titles": {},
+  "titles": {
+    "tt6769208": {
+      "fa": "سیاره آبی ۲",
+      "summary": "دیوید اتنبرو بار دیگر به اقیانوس‌های جهان می‌رود تا موجودات کمیاب اعماق و چالش‌های پیش روی زیست‌بوم‌های دریایی را نشان دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt6769208/"
+      }
+    },
+    "tt2395695": {
+      "fa": "کیهان: ادیسهای فضازمانی",
+      "summary": "سفری در تاریخ کشف قوانین طبیعت و شناخت جایگاه انسان در فضا و زمان.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q5174583"
+      }
+    },
+    "tt0081846": {
+      "fa": "گیتی: یک سفر شخصی",
+      "summary": "کارل سیگن، اخترشناس، مخاطب را در سفری جذاب با پدیده‌های کیهان و نظریه‌های مربوط به جهان آشنا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q866368"
+      }
+    },
+    "tt9253866": {
+      "fa": "سیاره ما",
+      "summary": "مستندی دربارهٔ تنوع زیستگاه‌های زمین؛ از طبیعت دورافتادهٔ شمالگان و اعماق اقیانوس تا چشم‌اندازهای آفریقا و جنگل‌های آمریکای جنوبی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q60747233"
+      }
+    }
+  },
   "retryAfter": {},
-  "translationUsage": {}
+  "translationUsage": {
+    "date": "2026-10-29",
+    "characters": 14
+  }
 }
