@@ -450,6 +450,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q571032"
       }
+    },
+    "tt0078748": {
+      "fa": "بیگانه (فیلم ۱۹۷۹)",
+      "summary": "خدمهٔ یک سفینهٔ تجاری به پیامی ناشناس پاسخ می‌دهند. پس از حملهٔ موجودی مرموز به یکی از اعضا، آن‌ها متوجه خطری می‌شوند که وارد سفینه شده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q103569"
+      }
+    },
+    "tt1508238": {
+      "fa": "آخرالزمان، جنگ جهانی دوم",
+      "summary": "مستندی فرانسوی در شش قسمت دربارهٔ جنگ جهانی دوم که با تصاویر واقعی ثبت‌شده در دوران جنگ ساخته شده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q610304"
+      }
+    },
+    "tt0047396": {
+      "fa": "پنجره پشتی",
+      "summary": "عکاسی که به‌دلیل آسیب‌دیدگی نمی‌تواند از خانه بیرون برود، همسایه‌ها را از پنجره زیر نظر می‌گیرد و به یکی از آن‌ها ظنین می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q34414"
+      }
+    },
+    "tt2802850": {
+      "fa": "فارگو",
+      "summary": "داستان‌هایی از فریب، دسیسه و قتل در مینه‌سوتای سردسیر روایت می‌شود که به شکلی مرموز به شهر فارگو در داکوتای شمالی پیوند می‌خورند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q15931555"
+      }
     }
   },
   "retryAfter": {
