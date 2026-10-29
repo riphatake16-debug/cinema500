@@ -180,11 +180,47 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0296310/"
       }
+    },
+    "tt0088763": {
+      "fa": "بازگشت به آینده",
+      "summary": "مارتی مک‌فلای، دانش‌آموزی هفده‌ساله، با ماشین زمانِ دوست دانشمندش داک براون، به‌اشتباه سی سال به گذشته فرستاده می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q91540"
+      }
+    },
+    "tt10541088": {
+      "fa": "مزرعه کلارکسون",
+      "summary": "جرمی کلارکسون تلاش می‌کند مزرعه‌ای در روستاهای انگلستان را اداره کند و با کمک افراد باتجربه، با دشواری‌های واقعی کشاورزی، آب‌وهوا، دامداری و تصمیم‌های روزمره روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107233698"
+      }
+    },
+    "tt0076759": {
+      "fa": "جنگ ستارگان",
+      "summary": "لوک اسکای‌واکر همراه با یک جدای، خلبانی جسور، یک ووکی و دو ربات، برای نجات شاهزاده لیا و مقابله با ایستگاه مرگبار امپراتوری راهی می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q17738"
+      }
+    },
+    "tt2098220": {
+      "fa": "هانتر در هانتر",
+      "summary": "گون فریکس آرزو دارد شکارچی شود؛ او با کمک دوستان و توانایی‌هایش، در پی پدری می‌رود که در کودکی ترکش کرده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2098220/"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 126
+    "characters": 141
   }
 }
