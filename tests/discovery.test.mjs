@@ -47,3 +47,46 @@ test('Movie journey estimates use remaining films; series episode lengths are ne
   else{assert.equal(p.minutes,p.entries.reduce((n,t)=>n+t.runtime,0));assert.equal(p.remainingMinutes,p.entries.slice(2).reduce((n,t)=>n+t.runtime,0));}
  }
 });
+
+test('Topic collections cover every one of the 500 titles without mixing films and series',()=>{
+ const all=new Set();
+ for(const kind of ['movie','tv']){
+  const groups=engine.collections(titles,kind),covered=new Set(groups.flatMap(c=>Array.from(c.ids)));
+  assert.equal(covered.size,250);assert.equal(groups.length,kind==='movie'?12:14);
+  for(const group of groups){
+   assert.equal(group.kind,kind);assert.equal(group.ids.length,new Set(group.ids).size);
+   assert.ok(group.entries.every(t=>t.type===kind&&t.genres.some(g=>group.genres.includes(g))));
+   for(const id of group.ids)all.add(id);
+  }
+  assert.ok(titles.filter(t=>t.type===kind).every(t=>covered.has(t.id)));
+ }
+ assert.equal(all.size,500);
+});
+test('Unclassified future entries remain accessible in a separate collection for their type',()=>{
+ const sample=[{id:'a',type:'movie',rank:1,genres:[]},{id:'b',type:'tv',rank:1,genres:['Unlisted']}];
+ const groups=engine.collections(sample);assert.equal(groups.length,2);
+ assert.deepEqual(Array.from(groups.find(c=>c.kind==='movie').ids),['a']);
+ assert.deepEqual(Array.from(groups.find(c=>c.kind==='tv').ids),['b']);
+});
+test('Collection search retains aliases, respects content type and hides fully watched groups',()=>{
+ assert.ok(engine.filterCollections(titles,{kind:'movie',query:'اینسپشن'}).some(c=>c.ids.includes('tt1375666')));
+ assert.equal(engine.filterCollections(titles,{kind:'tv',query:'اینسپشن'}).length,0);
+ assert.ok(engine.filterCollections(titles,{kind:'tv',query:'افسارگسیخته'}).some(c=>c.ids.includes('tt0903747')));
+ const group=engine.collections(titles,'movie').find(c=>c.id==='movie-music'),seen=new Set(group.ids);
+ assert.ok(!engine.filterCollections(titles,{kind:'movie',seen,unfinishedOnly:true}).some(c=>c.id===group.id));
+ assert.ok(engine.filterCollections(titles,{kind:'movie',seen}).some(c=>c.id===group.id));
+});
+test('Collection filters and ordering do not mutate the original catalogue or group order',()=>{
+ const group=engine.collections(titles,'movie').find(c=>c.id==='movie-drama'),before=Array.from(group.ids);
+ const seen=new Set([group.ids[0]]),list=engine.collectionEntries(group,{unseenOnly:true,seen,sort:'year'});
+ assert.equal(list.length,group.ids.length-1);assert.ok(!list.some(t=>seen.has(t.id)));
+ for(let i=1;i<list.length;i++)assert.ok(list[i-1].year>=list[i].year);
+ const alias=engine.collectionEntries(engine.collections(titles,'movie').find(c=>c.id==='movie-imagination'),{query:'اینسپشن'});assert.equal(alias.length,1);assert.equal(alias[0].id,'tt1375666');
+ assert.deepEqual(Array.from(group.ids),before);
+});
+test('Selected paths separate by type and preserve all 15 existing journey IDs',()=>{
+ const movies=engine.filterJourneys(titles,{kind:'movie',category:'all'}),series=engine.filterJourneys(titles,{kind:'tv',category:'all'});
+ assert.equal(movies.length,12);assert.equal(series.length,3);
+ assert.equal(new Set([...movies,...series].map(j=>j.id)).size,15);
+ for(const [kind,list] of [['movie',movies],['tv',series]])for(const j of list)assert.ok(engine.journeyProgress(j,titles).entries.every(t=>t.type===kind));
+});

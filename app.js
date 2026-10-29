@@ -19,8 +19,9 @@ function readPreferences(){const raw=storage.get('cinema-preferences',[]);return
 guestPreferences=readPreferences();preferences=new Map(guestPreferences);
 const discovery=window.CinemaDiscovery;
 let discoverySettings=discovery.settings(storage.get('cinema-discovery',{})),journeyOpenId=null,watchlistKind='all';
-let journeyCache='',journeyCategory='featured',journeyQuery='',journeyUnfinished=false,journeyCardsSignature='';
-const genreMap={Drama:'درام',Crime:'جنایی',Action:'اکشن',Adventure:'ماجراجویی',Comedy:'کمدی',Documentary:'مستند',Animation:'انیمیشن',Biography:'زندگی‌نامه',Thriller:'هیجان‌انگیز',Mystery:'معمایی',Romance:'عاشقانه',Horror:'ترسناک',Fantasy:'فانتزی','Sci-Fi':'علمی‌تخیلی',War:'جنگی',History:'تاریخی',Western:'وسترن',Family:'خانوادگی',Music:'موسیقی',Sport:'ورزشی'};
+let journeyKind='movie',journeyView='collections';
+let journeyCache='',journeyCategory='all',journeyQuery='',journeyUnfinished=false,journeyCardsSignature='';
+const genreMap={Drama:'درام',Crime:'جنایی',Action:'اکشن',Adventure:'ماجراجویی',Comedy:'کمدی',Documentary:'مستند',Animation:'انیمیشن',Biography:'زندگی‌نامه',Thriller:'هیجان‌انگیز',Mystery:'معمایی',Romance:'عاشقانه',Horror:'ترسناک',Fantasy:'فانتزی','Sci-Fi':'علمی‌تخیلی',War:'جنگی',History:'تاریخی',Western:'وسترن',Family:'خانوادگی',Music:'موسیقی',Sport:'ورزشی','Film-Noir':'نوآر',Musical:'موزیکال','Reality-TV':'رئالیتی‌شو','Game-Show':'مسابقه','Talk-Show':'گفت‌وگو',News:'خبر'};
 const genre=a=>(genreMap[a.genres?.[0]]||a.genres?.[0]||'');
 window.cinemaPosterError=image=>{const step=Number(image.dataset.retry||0),id=image.dataset.title;if(step===0&&id){image.dataset.retry='1';image.src=`https://images.metahub.space/poster/medium/${id}/img`;return}image.hidden=true;if(image.nextElementSibling)image.nextElementSibling.hidden=false};
 function poster(a){const fallback=`<div class="fallback" ${a.poster?'hidden':''}>${icon('film')}<small>CINEMA JOURNAL</small><b>${esc(a.title)}</b><small>${a.year}</small></div>`;return a.poster?`<img src="${esc(a.poster)}" data-title="${a.id}" alt="پوستر ${esc(a.title)}" loading="lazy" decoding="async" onerror="window.cinemaPosterError(this)">${fallback}`:fallback}
@@ -57,7 +58,7 @@ function renderAccount(){$('#account-slot').innerHTML=`<button class="account-bu
 function persistLocalJournal(){return storage.set('cinema-seen',[...seen])&&storage.set('cinema-wanted',[...wanted])&&storage.set('cinema-preferences',[...preferences.values()]);}
 function renderSyncStatus(){$('#sync-status').textContent='ذخیره فقط در همین مرورگر · برای انتقال یا نگه‌داری اطلاعات، پشتیبان بگیر.';}
 function changeState(id,next){if(!accountReady||!data.some(a=>a.id===id))return;const beforeRank=watcherRank();seen.delete(id);wanted.delete(id);if(next==='seen')seen.add(id);if(next==='watchlist')wanted.add(id);const prior=preferences.get(id)||{id,rating:null,favorite:false,note:'',watchedOn:null};preferences.set(id,{...prior,watchedOn:next==='seen'?(prior.watchedOn||today()):null});guestSeen=new Set(seen);guestWanted=new Set(wanted);if(!persistLocalJournal())toast('ذخیره‌سازی مرورگر در دسترس نیست؛ فایل پشتیبان بگیر.');stateVersion++;render(id);celebrateRank(beforeRank);refreshDialogActions();const date=$('#watched-on');if(dialogMode==='detail'&&detailId===id&&date&&date!==document.activeElement){date.value=preferences.get(id)?.watchedOn||'';window.CinemaDates?.refresh();}}
-function refreshDialogActions(){if(dialogMode==='detail'&&detailId&&$('#detail-actions')){if($('#personal-controls'))$('#personal-controls').innerHTML=personalControls(data.find(a=>a.id===detailId));$('#detail-actions').innerHTML=actionButtons(data.find(a=>a.id===detailId),true)}if(dialogMode==='recommend'&&$('#recommend-actions')){const id=$('#recommend-actions').dataset.id,a=data.find(a=>a.id===id);if(a)$('#recommend-actions').innerHTML=actionButtons(a,true)}if(dialogMode==='watchlist')renderWatchlist();if(dialogMode==='journey')refreshJourneyDialog()}
+function refreshDialogActions(){if(dialogMode==='detail'&&detailId&&$('#detail-actions')){if($('#personal-controls'))$('#personal-controls').innerHTML=personalControls(data.find(a=>a.id===detailId));$('#detail-actions').innerHTML=actionButtons(data.find(a=>a.id===detailId),true)}if(dialogMode==='recommend'&&$('#recommend-actions')){const id=$('#recommend-actions').dataset.id,a=data.find(a=>a.id===id);if(a)$('#recommend-actions').innerHTML=actionButtons(a,true)}if(dialogMode==='watchlist')renderWatchlist();if(dialogMode==='journey')refreshJourneyDialog();if(dialogMode==='collection')renderCollection()}
 function openAccount(){dialogMode='account';$('#details').setAttribute('aria-label','حساب من در این مرورگر');$('#dialog-content').innerHTML=`<h2>حساب من</h2><p class="source-note">فضای شخصی تو در همین مرورگر؛ بدون ثبت‌نام و رمز عبور.</p><div id="rank-profile-slot">${rankProfileMarkup()}</div><div class="account-card"><div class="account-stats"><span><b>${fa(seen.size)}</b>دیده‌شده</span><span><b>${fa(wanted.size)}</b>در لیست تماشا</span></div><p class="source-note">لیست تماشا، محبوب‌ها، نمره‌ها، تاریخ‌ها، یادداشت‌ها، سلیقه و مسیر فعال تو به‌صورت خودکار در همین مرورگر ذخیره می‌شوند. روی مرورگر یا دستگاه دیگر، دفتر جداگانه‌ای داری.</p><p class="source-note">با پاک‌کردن داده‌های سایت یا بستن حالت ناشناس ممکن است اطلاعاتت از دست برود. برای نگه‌داری اطلاعات یا انتقال به دستگاه دیگر، پشتیبان بگیر.</p></div><div class="account-links"><button id="open-journal" class="outline-button">${icon('film')} دفتر تماشای من</button><button class="outline-button" data-open-taste>${icon('sliders')} تنظیم سلیقهٔ من</button><button id="journal-export" class="outline-button">${icon('download')} دریافت پشتیبان</button><button id="journal-import" class="outline-button">${icon('plus')} واردکردن پشتیبان</button></div><input type="file" id="backup-file" accept="application/json,.json" hidden><p class="recommend-help">پشتیبان‌های قدیمی هم قابل استفاده‌اند. اطلاعات جدید به دفتر اضافه می‌شود و اطلاعات فعلی‌ات حفظ می‌شود.</p>`;$('#open-journal').onclick=openJournal;$('#journal-export').onclick=exportJournal;$('#journal-import').onclick=()=>$('#backup-file').click();$('#backup-file').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{if(file.size>2000000)throw Error();const added=importJournal(JSON.parse(await file.text()));render();openAccount();toast(fa(added)+' عنوان از پشتیبان وارد شد.')}catch{toast('فایل معتبر نیست یا ذخیره‌سازی مرورگر در دسترس نیست.')}};syncDock();if(!$('#details').open)$('#details').showModal()}
 
 function importJournal(payload){if(payload?.format!=='cinema500-journal-v1'||!Array.isArray(payload.titles)||payload.titles.length>10000)throw Error('invalid_backup');const nextDiscovery=payload.discovery===undefined?discoverySettings:discovery.mergeSettings(discoverySettings,payload.discovery);const known=new Set(data.map(a=>a.id)),ids=new Set();const entries=payload.titles.filter(p=>{if(!p||!known.has(p.id)||ids.has(p.id)||!['none','seen','watchlist'].includes(p.status)||(p.rating!==undefined&&p.rating!==null&&(!Number.isInteger(p.rating)||p.rating<1||p.rating>10))||(p.favorite!==undefined&&typeof p.favorite!=='boolean')||(p.note!==undefined&&(typeof p.note!=='string'||p.note.length>2000))||(p.watchedOn!==undefined&&p.watchedOn!==null&&!validWatchDate(p.watchedOn)))throw Error('invalid_entry');ids.add(p.id);return true});const nextSeen=new Set(seen),nextWanted=new Set(wanted),nextPrefs=new Map(preferences);let added=0;for(const p of entries){let changed=false;if(!nextSeen.has(p.id)&&!nextWanted.has(p.id)){if(p.status==='seen'){nextSeen.add(p.id);changed=true}if(p.status==='watchlist'){nextWanted.add(p.id);changed=true}}const prior=nextPrefs.get(p.id)||{id:p.id,rating:null,favorite:false};const value={id:p.id,rating:prior.rating||p.rating||null,favorite:prior.favorite||p.favorite||false,note:prior.note||p.note||'',watchedOn:prior.watchedOn||p.watchedOn||null};if(value.rating!==prior.rating||value.favorite!==prior.favorite||value.note!==(prior.note||'')||value.watchedOn!==(prior.watchedOn||null)){nextPrefs.set(p.id,value);changed=true}if(changed)added++}const writes=[['cinema-seen',[...nextSeen]],['cinema-wanted',[...nextWanted]],['cinema-preferences',[...nextPrefs.values()]],['cinema-discovery',nextDiscovery]].map(([key,value])=>[journalKey(key),value]),before=writes.map(([key])=>[key,localStorage.getItem(key)]);try{for(const [key,value] of writes)localStorage.setItem(key,JSON.stringify(value))}catch(error){for(const [key,value] of before){try{value===null?localStorage.removeItem(key):localStorage.setItem(key,value)}catch{}}throw error}seen=nextSeen;wanted=nextWanted;preferences=nextPrefs;guestSeen=new Set(seen);guestWanted=new Set(wanted);guestPreferences=new Map(preferences);discoverySettings=nextDiscovery;stateVersion++;return added}
@@ -72,7 +73,7 @@ $('#dialog-content').addEventListener('click',e=>{const button=e.target.closest(
 $('#quick-open').onclick=openQuickSearch;
 document.addEventListener('keydown',e=>{const target=e.target,typing=target instanceof Element&&(target.matches('input,textarea,select,[contenteditable=true]')||target.closest('[role=dialog]'));if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'&&!$('#details').open){e.preventDefault();openQuickSearch();return}if(e.key==='/'&&!typing&&!$('#details').open){e.preventDefault();$('#search').focus()}});
 
-function openDetail(id){const a=data.find(x=>x.id===id);if(!a)return;setAmbient(a);detailId=id;dialogMode='detail';$('#details').setAttribute('aria-label','جزئیات '+a.title);$('#details').classList.remove('closing');$('#dialog-image').style.backgroundImage=a.poster?'url('+JSON.stringify(a.poster)+')':'';$('#dialog-content').innerHTML=`<div class="detail-head"><div class="detail-poster">${poster(a)}</div><div><div class="eyebrow">${a.type==='movie'?'TOP 250 FILMS':'TOP 250 SERIES'} / ${String(a.rank).padStart(3,'0')}</div><h2>${esc(a.title)}</h2>${localizedTitle(a)?`<p>${esc(localizedTitle(a))}</p>`:''}<div class="detail-stats"><span class="gold">${icon('star')} ${a.rating.toFixed(1)}</span><span>${year(a.year)}</span>${a.runtime?`<span>${icon('clock')} ${fa(a.runtime)} دقیقه${a.type==='tv'?' / قسمت':''}</span>`:''}</div><div class="detail-genre">${(a.genres||[]).map(g=>esc(genreMap[g]||g)).join(' / ')}</div></div></div>${a.summary?`<p class="detail-summary" lang="fa" dir="rtl">${esc(a.summary)}</p>`:'<p class="source-note">خلاصهٔ داستان این اثر در دسترس نیست؛ اطلاعات بیشتر را در IMDb ببین.</p>'}<div id="detail-actions">${actionButtons(a,true)}</div><div id="personal-controls">${personalControls(a)}</div>${diaryControls(a)}<a class="imdb-link" href="https://www.imdb.com/title/${id}/" target="_blank" rel="noopener noreferrer"><span class="imdb-mark">IMDb</span> اطلاعات کامل اثر ${icon('arrow-up-right')}</a>${similarMarkup(a)}`;bindDiaryControls(a);$('#details').scrollTop=0;syncDock();if(!$('#details').open)$('#details').showModal()}
+function openDetail(id){const a=data.find(x=>x.id===id);if(!a)return;const backCollection=dialogMode==='collection'?collectionOpenId:null;if(backCollection)collectionScroll=$('#details').scrollTop;setAmbient(a);detailId=id;dialogMode='detail';$('#details').setAttribute('aria-label','جزئیات '+a.title);$('#details').classList.remove('closing');$('#dialog-image').style.backgroundImage=a.poster?'url('+JSON.stringify(a.poster)+')':'';$('#dialog-content').innerHTML=`${backCollection?`<button type="button" class="text-button collection-back" data-back-collection="${backCollection}">${icon('arrow-left')} بازگشت به دسته‌بندی</button>`:''}<div class="detail-head"><div class="detail-poster">${poster(a)}</div><div><div class="eyebrow">${a.type==='movie'?'TOP 250 FILMS':'TOP 250 SERIES'} / ${String(a.rank).padStart(3,'0')}</div><h2>${esc(a.title)}</h2>${localizedTitle(a)?`<p>${esc(localizedTitle(a))}</p>`:''}<div class="detail-stats"><span class="gold">${icon('star')} ${a.rating.toFixed(1)}</span><span>${year(a.year)}</span>${a.runtime?`<span>${icon('clock')} ${fa(a.runtime)} دقیقه${a.type==='tv'?' / قسمت':''}</span>`:''}</div><div class="detail-genre">${(a.genres||[]).map(g=>esc(genreMap[g]||g)).join(' / ')}</div></div></div>${a.summary?`<p class="detail-summary" lang="fa" dir="rtl">${esc(a.summary)}</p>`:'<p class="source-note">خلاصهٔ داستان این اثر در دسترس نیست؛ اطلاعات بیشتر را در IMDb ببین.</p>'}<div id="detail-actions">${actionButtons(a,true)}</div><div id="personal-controls">${personalControls(a)}</div>${diaryControls(a)}<a class="imdb-link" href="https://www.imdb.com/title/${id}/" target="_blank" rel="noopener noreferrer"><span class="imdb-mark">IMDb</span> اطلاعات کامل اثر ${icon('arrow-up-right')}</a>${similarMarkup(a)}`;bindDiaryControls(a);$('#details').scrollTop=0;syncDock();if(!$('#details').open)$('#details').showModal()}
 function closeDialog(){const dialog=$('#details');if(dialog.classList.contains('closing'))return;if(typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches){dialog.close();return}dialog.classList.add('closing');setTimeout(()=>{dialog.close();dialog.classList.remove('closing')},150)}
 $('.close-dialog').onclick=closeDialog;$('#details').addEventListener('cancel',e=>{e.preventDefault();closeDialog()});$('#details').addEventListener('close',()=>{window.CinemaSelects?.close();dismissRankUpgrade();dialogMode='';detailId=null;$('#dialog-image').style.backgroundImage='';syncDock()});$('#details').onclick=e=>{if(e.target===$('#details')){const r=$('#details').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog()}};
 $('#hero-feature').onclick=()=>{if(selectedId)openDetail(selectedId)};
@@ -170,23 +171,88 @@ function refreshJourneyDialog() {
 }
 
 function renderJourneys(force=false) {
-  const key=[stateVersion,discoverySettings.activeJourney,journeyCategory,journeyQuery,journeyUnfinished].join('|');
+  const key=[stateVersion,discoverySettings.activeJourney,journeyKind,journeyView,journeyCategory,journeyQuery,journeyUnfinished].join('|');
   if(!force&&journeyCache===key)return;
   journeyCache=key;
-  const filters=$('#journey-categories');
-  if(!filters.dataset.ready){filters.innerHTML=discovery.categories.map(c=>{const count=discovery.journeys.filter(j=>c.id==='all'||(c.id==='featured'?j.featured:j.categories.includes(c.id))).length;return `<button type="button" data-journey-category="${c.id}" aria-pressed="${c.id===journeyCategory}">${esc(c.label)}<span>${fa(count)}</span></button>`}).join('');filters.dataset.ready='true'}
+  const grouped=journeyView==='collections',unit=journeyKind==='movie'?'فیلم':'سریال',groups=discovery.collections(data,journeyKind);
+  const covered=new Set(groups.flatMap(c=>c.ids));
+  $('#explore-coverage').textContent=fa(covered.size)+' '+unit+' در '+fa(groups.length)+' دستهٔ موضوعی';
+  $('#explore-panel').setAttribute('aria-labelledby',journeyKind==='movie'?'explore-film-tab':'explore-series-tab');
+  $$('[data-explore-kind]').forEach(b=>{const active=b.dataset.exploreKind===journeyKind;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1});
+  $$('[data-explore-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.exploreView===journeyView)));
+  $('#explore-group-count').textContent=fa(groups.length);
+  $('#explore-path-count').textContent=fa(discovery.filterJourneys(data,{kind:journeyKind,category:'all'}).length);
+  const filters=$('#journey-categories');filters.hidden=grouped;
+  if(!grouped&&filters.dataset.kind!==journeyKind){
+    const options=discovery.categories.filter(c=>!['featured','series'].includes(c.id)).map(c=>({...c,count:discovery.filterJourneys(data,{kind:journeyKind,category:c.id}).length})).filter(c=>c.count);
+    if(!options.some(c=>c.id===journeyCategory))journeyCategory='all';
+    filters.innerHTML=options.map(c=>`<button type="button" data-journey-category="${c.id}" aria-pressed="${c.id===journeyCategory}">${esc(c.label)}<span>${fa(c.count)}</span></button>`).join('');filters.dataset.kind=journeyKind;
+  }
   $$('[data-journey-category]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.journeyCategory===journeyCategory)));
   $('#journey-unfinished').setAttribute('aria-pressed',String(journeyUnfinished));
   $('#journey-search-clear').hidden=!journeyQuery;
-  const list=discovery.filterJourneys(data,{category:journeyCategory,query:journeyQuery,unfinishedOnly:journeyUnfinished,seen});
-  $('#journey-result-count').textContent=fa(list.length)+' مسیر'+(journeyQuery?' برای «'+journeyQuery+'»':'');
-  const signature=[[...seen].sort().join(','),discoverySettings.activeJourney,list.map(j=>j.id).join(',')].join('|');
-  $('#journey-grid').classList.toggle('is-empty',!list.length);
-  if(journeyCardsSignature!==signature){journeyCardsSignature=signature;$('#journey-grid').innerHTML=list.length?list.map(j=>{const p=discovery.journeyProgress(j,data,seen),unit=p.kind==='tv'?'سریال':'فیلم';return `<button class="journey-card" data-journey="${j.id}" style="--journey-color:${j.color}" aria-label="مسیر ${esc(j.title)}؛ ${fa(p.done)} از ${fa(p.total)} ${unit} دیده‌شده"><span class="journey-art" aria-hidden="true">${p.entries.slice(0,3).map(a=>`<span>${poster(a)}</span>`).join('')}<span class="journey-art-shade"></span><small>${esc(j.tag)}</small></span><span class="journey-card-body"><span class="journey-card-heading"><strong>${esc(j.title)}</strong>${icon('chevron-left')}</span><span class="journey-subtitle">${esc(j.subtitle)}</span><span class="journey-duration">${fa(p.total)} ${unit}${p.minutes!==null?' · '+pathTime(p.minutes,true):''}</span><span class="journey-progress-copy"><span>${fa(p.done)} از ${fa(p.total)} را دیده‌ای</span><span>${p.done===p.total?'کامل شده':discoverySettings.activeJourney===j.id?'مسیر فعال':'دیدن مسیر'}</span></span><span class="journey-progress" aria-hidden="true"><i style="width:${p.total?p.done/p.total*100:0}%"></i></span></span></button>`}).join(''):`<div class="journey-empty">${icon('search')}<h3>مسیری پیدا نشد.</h3><p>نام دیگری جست‌وجو کن یا فیلترها را بردار.</p><button class="outline-button" data-journey-reset>پاک کردن فیلترها</button></div>`;}
-  const active=discovery.journeys.find(j=>j.id===discoverySettings.activeJourney);
-  $('#journey-current').hidden=!active;
-  if(active){const p=discovery.journeyProgress(active,data,seen);$('#journey-current').innerHTML=`<span class="journey-current-icon">${icon(p.next?'play':'check')}</span><div><small>${p.next?'مسیر فعال تو':'مسیر کامل شده'}</small><strong>${esc(active.title)}</strong><span>${p.next?'پیشنهاد بعدی: '+esc(localizedTitle(p.next)||p.next.title):'همهٔ آثار این مسیر را دیده‌ای.'}</span></div><button class="outline-button" data-journey="${active.id}">${p.next?'ادامهٔ مسیر':'دیدن مسیر'} ${icon('arrow-left')}</button>`;}
+  $('#journey-search').placeholder=grouped?'نام دسته یا '+unit+' را بنویس…':'نام مسیر یا '+unit+' را بنویس…';
+  const options={kind:journeyKind,category:journeyCategory,query:journeyQuery,unfinishedOnly:journeyUnfinished,seen};
+  const list=grouped?discovery.filterCollections(data,options):discovery.filterJourneys(data,options);
+  $('#journey-result-count').textContent=fa(list.length)+(grouped?' دسته':' مسیر')+(journeyQuery?' برای «'+journeyQuery+'»':'');
+  $('#explore-overlap-note').hidden=!grouped;
+  const signature=[journeyKind,journeyView,[...seen].sort().join(','),discoverySettings.activeJourney,list.map(j=>j.id).join(',')].join('|');
+  $('#journey-grid').classList.toggle('is-empty',!list.length);$('#journey-grid').classList.toggle('is-collections',grouped);
+  if(journeyCardsSignature!==signature){
+    journeyCardsSignature=signature;
+    $('#journey-grid').innerHTML=list.length?list.map(j=>{
+      const p=grouped?{entries:j.entries,total:j.ids.length,done:j.ids.filter(id=>seen.has(id)).length,minutes:null}:discovery.journeyProgress(j,data,seen);
+      return `<button class="journey-card ${grouped?'collection-card':''}" ${grouped?'data-collection':'data-journey'}="${j.id}" style="--journey-color:${j.color}" aria-label="${grouped?'دستهٔ':'مسیر'} ${esc(j.title)}؛ ${fa(p.done)} از ${fa(p.total)} ${unit} دیده‌شده"><span class="journey-art" aria-hidden="true">${p.entries.slice(0,3).map(a=>`<span>${poster(a)}</span>`).join('')}<span class="journey-art-shade"></span><small>${grouped?fa(p.total)+' '+unit:esc(j.tag)}</small></span><span class="journey-card-body"><span class="journey-card-heading"><strong>${esc(j.title)}</strong>${icon('chevron-left')}</span><span class="journey-subtitle">${esc(j.subtitle)}</span>${grouped?'':`<span class="journey-duration">${fa(p.total)} ${unit}${p.minutes!==null?' · '+pathTime(p.minutes,true):''}</span>`}<span class="journey-progress-copy"><span>${fa(p.done)} از ${fa(p.total)} را دیده‌ای</span><span>${p.done===p.total?'کامل شده':grouped?'دیدن دسته':discoverySettings.activeJourney===j.id?'مسیر فعال':'دیدن مسیر'}</span></span><span class="journey-progress" aria-hidden="true"><i style="width:${p.total?p.done/p.total*100:0}%"></i></span></span></button>`;
+    }).join(''):`<div class="journey-empty">${icon('search')}<h3>${grouped?'دسته‌ای':'مسیری'} پیدا نشد.</h3><p>نام دیگری جست‌وجو کن یا فیلترها را بردار.</p><button class="outline-button" data-journey-reset>پاک کردن فیلترها</button></div>`;
+  }
+  const active=discovery.journeys.find(j=>j.id===discoverySettings.activeJourney),progress=active&&discovery.journeyProgress(active,data,seen);
+  $('#journey-current').hidden=!active||progress.kind!==journeyKind;
+  if(active){const p=progress;$('#journey-current').innerHTML=`<span class="journey-current-icon">${icon(p.next?'play':'check')}</span><div><small>${p.next?'مسیر فعال تو':'مسیر کامل شده'}</small><strong>${esc(active.title)}</strong><span>${p.next?'اثر بعدی: '+esc(localizedTitle(p.next)||p.next.title):'همهٔ آثار این مسیر را دیده‌ای.'}</span></div><button class="outline-button" data-journey="${active.id}">${p.next?'ادامهٔ مسیر':'دیدن مسیر'} ${icon('arrow-left')}</button>`;}
 }
+let collectionOpenId=null,collectionQuery='',collectionUnseen=false,collectionSort='rank',collectionRowsShown=24,collectionScroll=0,collectionSignature='',collectionList=[];
+function openCollection(id,restore=false) {
+  const group=discovery.collections(data).find(c=>c.id===id);if(!group)return;
+  if(!restore){collectionQuery=journeyQuery&&discovery.collectionEntries(group,{query:journeyQuery}).length?journeyQuery:'';collectionUnseen=journeyUnfinished;collectionSort='rank';collectionRowsShown=24;collectionScroll=0;}
+  collectionOpenId=id;collectionSignature='';dialogMode='collection';$('#dialog-image').style.backgroundImage='';
+  $('#details').setAttribute('aria-label','دستهٔ '+group.title+'؛ '+(group.kind==='movie'?'فیلم‌ها':'سریال‌ها'));
+  $('#dialog-content').innerHTML=`<p class="collection-kicker">${group.kind==='movie'?'دسته‌بندی فیلم‌ها':'دسته‌بندی سریال‌ها'}</p><h2>${esc(group.title)}</h2><p class="source-note">${esc(group.subtitle)}</p><div class="collection-detail-stats"><b id="collection-total"></b><span id="collection-watched"></span></div><div class="journey-progress large" aria-hidden="true"><i id="collection-progress-fill"></i></div><div class="collection-detail-controls"><label class="collection-detail-search">${icon('search')}<input type="search" id="collection-search" aria-label="جست‌وجو در این دسته" placeholder="نام اثر را بنویس…" autocomplete="off"></label><div class="collection-detail-options"><button type="button" class="outline-button" data-collection-unseen aria-pressed="${collectionUnseen}">${icon('eye-off')} فقط ندیده‌ها</button><label class="collection-sort"><select id="collection-sort" aria-label="مرتب‌سازی آثار این دسته"><option value="rank">رتبهٔ IMDb</option><option value="rating">بیشترین امتیاز</option><option value="year">جدیدترین</option></select></label></div></div><p id="collection-match-count" class="source-note" role="status" aria-live="polite"></p><ol id="collection-items" class="journey-list collection-items"></ol><p id="collection-page-status" class="source-note collection-page-status" role="status" aria-live="polite"></p>`;
+  $('#collection-search').value=collectionQuery;$('#collection-sort').value=collectionSort;
+  $('#collection-search').oninput=()=>{collectionQuery=$('#collection-search').value;renderCollection(true)};
+  $('#collection-sort').onchange=()=>{collectionSort=$('#collection-sort').value;renderCollection(true)};
+  renderCollection();if(!$('#details').open)$('#details').showModal();$('#details').scrollTop=restore?collectionScroll:0;
+}
+function collectionRow(a,i) {
+  return `<li><span class="journey-index">${fa(i+1)}</span><button class="journey-work" data-detail="${a.id}" aria-label="جزئیات ${esc(localizedTitle(a)||a.title)}"><span class="journey-work-poster">${poster(a)}</span><span><strong dir="auto">${esc(localizedTitle(a)||a.title)}</strong>${originalName(a)}<span>${year(a.year)} · IMDb ${a.rating.toFixed(1)}</span></span>${icon('chevron-left')}</button><button class="journey-mark" data-seen="${a.id}" data-collection-mark="${a.id}" aria-pressed="${seen.has(a.id)}"></button></li>`;
+}
+function refreshCollectionMarks() {
+  $$('[data-collection-mark]').forEach(b=>{const watched=seen.has(b.dataset.seen),a=data.find(a=>a.id===b.dataset.seen);b.setAttribute('aria-pressed',String(watched));b.setAttribute('aria-label',(watched?'برداشتن علامت تماشا: ':'ثبت تماشا: ')+(a?localizedTitle(a)||a.title:b.dataset.seen));b.innerHTML=icon(watched?'check':'plus')+'<span>'+(watched?'دیده‌ام':'ثبت تماشا')+'</span>'});
+}
+function updateCollectionPageStatus() {
+  const count=Math.min(collectionRowsShown,collectionList.length);$('#collection-page-status').textContent=collectionList.length?'نمایش '+fa(count)+' از '+fa(collectionList.length)+(count<collectionList.length?' · با پایین رفتن، بقیهٔ آثار نمایش داده می‌شوند.':''):'';
+}
+function renderCollection(reset=false) {
+  if(dialogMode!=='collection')return;
+  const group=discovery.collections(data).find(c=>c.id===collectionOpenId);if(!group)return;
+  if(reset)collectionRowsShown=24;
+  const done=group.ids.filter(id=>seen.has(id)).length;
+  $('#collection-total').textContent=fa(group.ids.length)+' '+(group.kind==='movie'?'فیلم':'سریال');
+  $('#collection-watched').textContent=fa(done)+' دیده‌ای · '+fa(group.ids.length-done)+' ندیده';
+  $('#collection-progress-fill').style.width=(done/group.ids.length*100)+'%';
+  $$('[data-collection-unseen]').forEach(b=>b.setAttribute('aria-pressed',String(collectionUnseen)));
+  collectionList=discovery.collectionEntries(group,{query:collectionQuery,unseenOnly:collectionUnseen,seen,sort:collectionSort});
+  $('#collection-match-count').textContent=fa(collectionList.length)+' اثر'+(collectionQuery?' برای «'+collectionQuery+'»':'')+(collectionUnseen?' در میان ندیده‌ها':'');
+  const signature=[collectionOpenId,collectionQuery,collectionUnseen,collectionSort,collectionRowsShown,collectionList.map(t=>t.id).join(',')].join('|');
+  if(collectionSignature!==signature){collectionSignature=signature;$('#collection-items').innerHTML=collectionList.length?collectionList.slice(0,collectionRowsShown).map(collectionRow).join(''):'<li class="collection-empty"><p>با این انتخاب‌ها اثری پیدا نشد.</p><button class="outline-button" data-collection-clear>پاک کردن فیلترهای این دسته</button></li>';}
+  refreshCollectionMarks();updateCollectionPageStatus();
+}
+function appendCollectionRows() {
+  if(dialogMode!=='collection'||collectionRowsShown>=collectionList.length)return;
+  const from=collectionRowsShown;collectionRowsShown=Math.min(from+24,collectionList.length);
+  $('#collection-items').insertAdjacentHTML('beforeend',collectionList.slice(from,collectionRowsShown).map((a,i)=>collectionRow(a,from+i)).join(''));
+  collectionSignature=[collectionOpenId,collectionQuery,collectionUnseen,collectionSort,collectionRowsShown,collectionList.map(t=>t.id).join(',')].join('|');
+  refreshCollectionMarks();updateCollectionPageStatus();
+}
+
 function saveDiscoverySettings(next) {
   const value=discovery.settings(next,true);
   if(!storage.set('cinema-discovery',value)){toast('ذخیره‌سازی مرورگر در دسترس نیست؛ دوباره امتحان کن.');return false}
@@ -224,9 +290,15 @@ function syncDock() {
 }
 function handleDiscoveryActions(e) {
   const target=e.target;
+  const kindButton=target.closest('[data-explore-kind]');if(kindButton){journeyKind=kindButton.dataset.exploreKind;journeyCategory='all';journeyQuery='';journeyUnfinished=false;$('#journey-search').value='';$('#journey-grid').scrollLeft=0;renderJourneys(true);return}
+  const viewButton=target.closest('[data-explore-view]');if(viewButton){journeyView=viewButton.dataset.exploreView;journeyCategory='all';journeyQuery='';$('#journey-search').value='';$('#journey-grid').scrollLeft=0;renderJourneys(true);return}
+  const collectionButton=target.closest('[data-collection]');if(collectionButton){openCollection(collectionButton.dataset.collection);return}
+  const backButton=target.closest('[data-back-collection]');if(backButton){openCollection(backButton.dataset.backCollection,true);return}
+  if(target.closest('[data-collection-unseen]')){collectionUnseen=!collectionUnseen;renderCollection(true);return}
+  if(target.closest('[data-collection-clear]')){collectionQuery='';collectionUnseen=false;$('#collection-search').value='';renderCollection(true);return}
   const category=target.closest('[data-journey-category]');if(category){journeyCategory=category.dataset.journeyCategory;journeyQuery='';$('#journey-search').value='';renderJourneys(true);return}
-  if(target.closest('[data-journey-clear]')){journeyQuery='';journeyCategory='featured';$('#journey-search').value='';renderJourneys(true);return}
-  if(target.closest('[data-journey-reset]')){journeyQuery='';journeyCategory='featured';journeyUnfinished=false;$('#journey-search').value='';renderJourneys(true);return}
+  if(target.closest('[data-journey-clear]')){journeyQuery='';journeyCategory='all';$('#journey-search').value='';renderJourneys(true);return}
+  if(target.closest('[data-journey-reset]')){journeyQuery='';journeyCategory='all';journeyUnfinished=false;$('#journey-search').value='';renderJourneys(true);return}
   if(target.closest('[data-journey-unfinished]')){journeyUnfinished=!journeyUnfinished;renderJourneys(true);return}
   let b=target.closest('[data-journey]');if(b){openJourney(b.dataset.journey);return}
   b=target.closest('[data-start-journey]');if(b){const j=discovery.journeys.find(j=>j.id===b.dataset.startJourney),p=j&&discovery.journeyProgress(j,data,seen);if(j&&p.next&&saveDiscoverySettings({...discoverySettings,activeJourney:j.id})){openDetail(p.next.id);toast('مسیر '+j.title+' در صفحهٔ اصلی ذخیره شد.')}return}
@@ -237,6 +309,9 @@ function handleDiscoveryActions(e) {
 $('#journeys').addEventListener('click',handleDiscoveryActions);
 $('#journey-search').oninput=()=>{journeyQuery=$('#journey-search').value;if(journeyQuery.trim())journeyCategory='all';renderJourneys(true)};
 $('#dialog-content').addEventListener('click',handleDiscoveryActions);
+$('#details').addEventListener('scroll',()=>{const dialog=$('#details');if(dialogMode==='collection'&&dialog.scrollHeight-dialog.scrollTop-dialog.clientHeight<450)appendCollectionRows()},{passive:true});
+$('#journeys').addEventListener('keydown',e=>{const button=e.target.closest('[data-explore-kind]');if(!button||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const kind=e.key==='Home'?'movie':e.key==='End'?'tv':button.dataset.exploreKind==='movie'?'tv':'movie';const next=$$('[data-explore-kind]').find(b=>b.dataset.exploreKind===kind);next?.click();next?.focus()});
+
 
 
 loadAccount();loadCatalog();

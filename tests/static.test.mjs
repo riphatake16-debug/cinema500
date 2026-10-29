@@ -12,7 +12,7 @@ vm.runInContext(await readFile('catalogue.js','utf8'),ctx);
 vm.runInContext(await readFile('ranks.js','utf8'),ctx);
 vm.runInContext(await readFile('discovery.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
-source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
+source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
 vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
@@ -140,4 +140,20 @@ test('Marking a title inside a journey updates progress without reopening or scr
  api.resetJournal();api.openJourney('middle-earth');get('#details').scrollTop=120;assert.ok(get('#journey-detail-count').textContent.includes('۰ از ۳'));
  api.changeState('tt0120737','seen');assert.ok(get('#journey-detail-count').textContent.includes('۱ از ۳'));assert.equal(get('#details').scrollTop,120);
  api.changeState('tt0120737','none');assert.ok(get('#journey-detail-count').textContent.includes('۰ از ۳'));assert.equal(get('#details').scrollTop,120);api.resetJournal();
+});
+
+
+test('Discovery tabs render only the chosen type and category lists append without losing watched state',()=>{
+ api.resetJournal();api.setExplore('tv','collections');
+ assert.ok(get('#journey-grid').innerHTML.includes('data-collection="tv-documentary"'));
+ assert.ok(!get('#journey-grid').innerHTML.includes('data-collection="movie-'));
+ assert.ok(get('#explore-coverage').textContent.includes('۲۵۰ سریال'));
+ api.setExplore('movie','paths');assert.ok(get('#journey-grid').innerHTML.includes('data-journey="middle-earth"'));assert.ok(!get('#journey-grid').innerHTML.includes('data-journey="series-crime"'));
+ api.openCollection('movie-drama');const count=()=>[...get('#collection-items').innerHTML.matchAll(/data-detail=/g)].length;
+ assert.equal(count(),24);const first=get('#collection-items').innerHTML;api.appendCollectionRows();assert.equal(count(),48);assert.ok(get('#collection-items').innerHTML.startsWith(first));
+ const before=get('#collection-items').innerHTML;get('#details').scrollTop=120;api.changeState('tt0111161','seen');assert.equal(get('#collection-items').innerHTML,before);assert.ok(get('#collection-watched').textContent.includes('۱ دیده‌ای'));assert.equal(get('#details').scrollTop,120);
+ api.openDetail('tt0111161');assert.ok(get('#dialog-content').innerHTML.includes('data-back-collection="movie-drama"'));
+ api.openCollection('movie-drama',true);assert.equal(count(),48);assert.equal(get('#details').scrollTop,120);
+ api.openCollection('movie-imagination');get('#collection-search').value='اینسپشن';get('#collection-search').oninput();assert.equal(count(),1);assert.ok(get('#collection-items').innerHTML.includes('tt1375666'));
+ api.resetJournal();api.setExplore('movie','collections');
 });

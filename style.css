@@ -493,3 +493,80 @@ dialog:has(.journey-list),dialog:has(.watchlist-items){padding:30px 18px 24px;wi
 @media(max-width:360px){.journey-index{display:none}.journey-work{padding:7px}.journey-work-poster{width:35px;flex-basis:35px;height:53px}.journey-work strong{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.journey-mark{transition:none}}
 
+/* Keep the enhanced sort control inside its single glass frame. */
+.sort-label{height:auto;min-height:44px;min-width:0;max-width:100%;padding:0;align-items:stretch;border-radius:999px}
+.sort-label .custom-select{display:flex;min-width:0;width:100%;border-radius:inherit}
+.sort-label .select-trigger{min-width:0;min-height:44px;width:100%;height:auto;margin:0;padding:9px 16px;border:0;border-radius:inherit;background:transparent;box-shadow:none;line-height:1.7}
+.sort-label .select-value{display:block;min-width:0;max-width:100%;unicode-bidi:plaintext}
+.sort-label .select-chevron{flex:0 0 8px}
+
+/* Film and series collections share local catalogue data and lazy artwork. */
+.explore-navigation{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin:8px 0 15px}
+.explore-kind{display:flex;gap:5px;padding:5px;border:1px solid var(--glass-edge);border-radius:23px;background:linear-gradient(140deg,var(--glass-glint),transparent),var(--glass-fill);min-width:0}
+.explore-kind button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:47px;padding:10px 24px;border-radius:18px;font-size:14px;color:var(--muted);white-space:nowrap}
+.explore-kind button .icon{width:18px;height:18px}
+.explore-kind button>span{font-size:11px;opacity:.7}
+.explore-kind button[aria-selected=true]{background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--line-strong);color:var(--text)}
+.explore-view{display:flex;align-items:center;gap:6px;min-width:0}
+.explore-view button{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:8px 14px;font-size:12px;border:1px solid transparent;border-radius:16px;color:var(--muted)}
+.explore-view button[aria-pressed=true]{border-color:var(--line-strong);color:var(--text);background:var(--glass-fill)}
+.explore-view button>span{font-size:10px;opacity:.6}
+.explore-coverage{font-size:12px;color:var(--muted);margin:0 0 19px}
+#journey-categories[hidden]{display:none}
+.explore-result-line{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin:9px 0 17px;color:var(--muted);font-size:10px}
+.explore-result-line .journey-result-count{margin:0;margin-left:auto}
+.explore-swipe-hint{display:none}
+.collection-card .journey-art{height:122px;padding-top:12px}
+.collection-card .journey-art>span:not(.journey-art-shade){height:145px;width:29%;max-width:100px}
+.collection-card .journey-card-body{padding:13px 18px 18px}
+.collection-card .journey-subtitle{min-height:41px;font-size:11px;line-height:1.85}
+.collection-card .journey-progress-copy{margin-top:10px}
+.collection-kicker{color:var(--accent);font-size:11px;margin:0 0 7px}
+.collection-detail-stats{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:23px 0 9px;font-size:12px}
+.collection-detail-stats>b{font-size:17px;font-weight:600}
+.collection-detail-stats>span{color:var(--muted);font-size:11px}
+.collection-detail-controls{display:grid;gap:10px;margin-top:23px}
+.collection-detail-search{display:flex;align-items:center;gap:9px;padding:1px 14px;border:1px solid var(--line-strong);border-radius:17px;background:var(--glass-fill);min-width:0}
+.collection-detail-search:focus-within{border-color:var(--accent)}
+.collection-detail-search>.icon{width:17px;height:17px;color:var(--muted)}
+.collection-detail-search input{flex:1;width:100%;min-width:0;min-height:46px;border:0;outline:0;background:transparent;color:var(--text);font:inherit;font-size:14px}
+.collection-detail-options{display:flex;align-items:stretch;justify-content:space-between;gap:10px}
+.collection-detail-options>button{min-height:46px;border-radius:16px;justify-content:center;font-size:12px;white-space:nowrap}
+.collection-detail-options>button[aria-pressed=true]{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+.collection-sort{display:flex;min-width:0;max-width:52%}
+.collection-sort .custom-select{display:flex;width:100%;min-width:0}
+.collection-sort .select-trigger{min-width:0;min-height:46px;border-radius:16px;font-size:12px;padding:8px 12px;gap:12px}
+.collection-items{margin-top:15px}
+.collection-items>.collection-empty{display:block;text-align:center;padding:25px 12px;color:var(--muted)}
+.collection-page-status{text-align:center;margin:18px 0 0!important;font-size:11px!important}
+.collection-back{min-height:44px;color:var(--accent);margin-bottom:15px}
+.collection-back .icon{transform:rotate(180deg)}
+@media(max-width:700px){
+ .explore-navigation{gap:12px;margin-bottom:12px}
+ .explore-kind{width:100%;border-radius:22px;padding:5px}
+ .explore-kind button{flex:1;min-width:0;gap:8px;padding:9px 12px;font-size:14px}
+ .explore-view{width:100%;gap:5px}
+ .explore-view button{flex:1;padding:8px 9px;font-size:12px}
+ .explore-coverage{font-size:11px;margin-bottom:16px}
+ .explore-result-line{gap:6px 10px;font-size:10px;margin-bottom:14px}
+ .explore-result-line .journey-result-count{margin-left:0}
+ .explore-swipe-hint{display:block;flex-basis:100%;opacity:.75}
+ .collection-card .journey-art{height:130px}
+ .collection-card .journey-card-heading strong{font-size:17px}
+ .collection-card .journey-subtitle{font-size:12px;min-height:44px}
+ .collection-detail-stats{margin-top:18px}
+ dialog:has(.collection-items){padding:30px 18px 24px;width:calc(100% - 20px);max-height:90dvh;border-radius:28px}
+ .collection-detail-options{gap:8px}
+ .collection-detail-options>button{padding-inline:10px;font-size:11px;gap:6px}
+ .collection-detail-options>button>.icon{width:16px}
+ .collection-items .journey-work strong{overflow-wrap:anywhere}
+ .sort-label .select-trigger{min-height:44px;padding:8px 14px;font-size:14px}
+}
+@media(max-width:360px){
+ .explore-kind button{font-size:13px;padding-inline:8px;gap:7px}
+ .explore-kind button>span{font-size:10px}
+ .explore-view button{font-size:11px;padding-inline:7px}
+ .collection-sort .select-trigger{font-size:11px;padding-inline:10px}
+ .collection-detail-options>button{font-size:10px;padding-inline:8px}
+}
+

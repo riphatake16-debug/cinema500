@@ -26,6 +26,52 @@
     {id:'series-crime', title:'سریال‌های جنایی', subtitle:'از خیابان‌های بالتیمور تا دفتر ساول گودمن.', tag:'سریال جنایی', categories:['series','suspense'], color:'#b29889', ids:['tt0306414','tt0141842','tt0903747','tt3032476','tt2802850']},
     {id:'anime', title:'پنج انیمه برای دنبال‌کردن', subtitle:'ماجراجویی، معما و شخصیت‌هایی با انتخاب‌های دشوار.', tag:'انیمهٔ سریالی', categories:['animation','series'], color:'#9e9dcc', ids:['tt0213338','tt0877057','tt1355642','tt1910272','tt2560140']}
   ];
+  const topics = [
+    {id:'drama',title:'درام و زندگی‌نامه',subtitle:'زندگی آدم‌ها، رابطه‌ها و انتخاب‌هایشان.',genres:['Drama','Biography'],color:'#b8a28e'},
+    {id:'crime',title:'جنایی و معمایی',subtitle:'پرونده‌ها، سرنخ‌ها و دنیای تبهکارها.',genres:['Crime','Mystery','Film-Noir'],color:'#8fa5b8'},
+    {id:'adventure',title:'اکشن و ماجراجویی',subtitle:'سفرهای پرخطر و ماجراهای پرهیجان.',genres:['Action','Adventure'],color:'#bd987c'},
+    {id:'comedy',title:'کمدی',subtitle:'از شوخی‌های روزمره تا طنزهای تلخ.',genres:['Comedy'],color:'#d0b780'},
+    {id:'imagination',title:'علمی‌تخیلی و فانتزی',subtitle:'جهان‌های دیگر و اتفاق‌های ناممکن.',genres:['Sci-Fi','Fantasy'],color:'#a092cb'},
+    {id:'animation',title:'انیمیشن و انیمه',subtitle:'داستان‌های پویانمایی برای هر سنی.',genres:['Animation'],color:'#c49d9e'},
+    {id:'suspense',title:'ترس و تعلیق',subtitle:'برای وقتی که دلت کمی اضطراب می‌خواهد.',genres:['Horror','Thriller'],color:'#9e8ca6'},
+    {id:'relationships',title:'عاشقانه و خانوادگی',subtitle:'داستان‌هایی از عشق و کنار هم بودن.',genres:['Romance','Family'],color:'#c198a7'},
+    {id:'history',title:'جنگ و تاریخ',subtitle:'رویدادهای بزرگ از نگاه آدم‌های درگیرشان.',genres:['History','War'],color:'#a4ae8a'},
+    {id:'documentary',title:'مستند و واقعیت',subtitle:'دنیای واقعی؛ از طبیعت تا جامعه و خبر.',genres:['Documentary','News'],color:'#86afa5'},
+    {id:'western',title:'وسترن',subtitle:'قصه‌های غرب وحشی و مرزهای دور.',genres:['Western'],color:'#b8a17a'},
+    {id:'music',title:'موسیقی و موزیکال',subtitle:'وقتی موسیقی بخشی از داستان است.',genres:['Music','Musical'],color:'#ad9cc5'},
+    {id:'competition',title:'ورزش و رقابت',subtitle:'از میدان ورزش تا مسابقه‌های تلویزیونی.',genres:['Sport','Game-Show'],color:'#8aafa0'},
+    {id:'television',title:'رئالیتی‌شو و گفت‌وگو',subtitle:'آدم‌های واقعی، تجربه‌ها و گفت‌وگوهایشان.',genres:['Reality-TV','Talk-Show'],color:'#91a5c1'}
+  ];
+  const collectionCache = new WeakMap();
+  function collections(titles, kind) {
+    if (!collectionCache.has(titles)) {
+      const result=[];
+      for (const type of ['movie','tv']) {
+        const works=titles.filter(t=>t.type===type).sort((a,b)=>a.rank-b.rank),covered=new Set();
+        for (const topic of topics) {
+          const entries=works.filter(t=>(t.genres||[]).some(g=>topic.genres.includes(g)));
+          if(!entries.length)continue;
+          for(const t of entries)covered.add(t.id);
+          result.push({...topic,id:type+'-'+topic.id,kind:type,entries,ids:entries.map(t=>t.id)});
+        }
+        const entries=works.filter(t=>!covered.has(t.id));
+        if(entries.length)result.push({id:type+'-other',kind:type,title:'دیگر آثار',subtitle:'آثاری که در دسته‌های بالا جا نمی‌گیرند.',color:'#9aa6b5',genres:[],entries,ids:entries.map(t=>t.id)});
+      }
+      collectionCache.set(titles,result);
+    }
+    return collectionCache.get(titles).filter(c=>!kind||c.kind===kind);
+  }
+  function matchesTitle(title, query) {
+    return normalize([title.title,title.fa,...(title.aliases||[])].join(' ')).includes(normalize(query));
+  }
+  function collectionEntries(collection,{query='',unseenOnly=false,seen=[],sort='rank'}={}) {
+    const watched=new Set(seen);
+    return collection.entries.filter(t=>(!unseenOnly||!watched.has(t.id))&&(!query||matchesTitle(t,query))).sort((a,b)=>sort==='year'?b.year-a.year||a.rank-b.rank:sort==='rating'?b.rating-a.rating||a.rank-b.rank:a.rank-b.rank);
+  }
+  function filterCollections(titles,{kind='movie',query='',unfinishedOnly=false,seen=[]}={}) {
+    const watched=new Set(seen),q=normalize(query);
+    return collections(titles,kind).filter(c=>!unfinishedOnly||c.ids.some(id=>!watched.has(id))).filter(c=>!q||normalize(c.title+' '+c.subtitle).includes(q)||c.entries.some(t=>matchesTitle(t,q)));
+  }
   function settings(raw, strict = false) {
     if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
       if (strict) throw Error('invalid_discovery');
@@ -61,9 +107,9 @@
     return {entries, done, total:entries.length, next:remaining[0] || null, kind, minutes, remainingMinutes};
   }
   function normalize(value) {return String(value||'').toLowerCase().replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\u200e\u200f]/g,' ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim();}
-  function filterJourneys(titles,{category='featured',query='',unfinishedOnly=false,seen=[]}={}) {
+  function filterJourneys(titles,{category='featured',query='',unfinishedOnly=false,seen=[],kind}={}) {
     const watched=new Set(seen),byId=new Map(titles.map(t=>[t.id,t])),q=normalize(query);
-    return journeys.filter(j=>category==='all'||(category==='featured'?j.featured:j.categories.includes(category))).filter(j=>!unfinishedOnly||j.ids.some(id=>!watched.has(id))).filter(j=>!q||normalize([j.title,j.subtitle,j.tag,...j.ids.flatMap(id=>{const t=byId.get(id);return t?[t.title,t.fa,...(t.aliases||[])]:[]})].join(' ')).includes(q));
+    return journeys.filter(j=>!kind||j.ids.every(id=>byId.get(id)?.type===kind)).filter(j=>category==='all'||(category==='featured'?j.featured:j.categories.includes(category))).filter(j=>!unfinishedOnly||j.ids.some(id=>!watched.has(id))).filter(j=>!q||normalize([j.title,j.subtitle,j.tag,...j.ids.flatMap(id=>{const t=byId.get(id);return t?[t.title,t.fa,...(t.aliases||[])]:[]})].join(' ')).includes(q));
   }
-  window.CinemaDiscovery = {genres, categories, journeys, settings, mergeSettings, similar, journeyProgress, filterJourneys};
+  window.CinemaDiscovery = {genres, categories, journeys, settings, mergeSettings, similar, journeyProgress, filterJourneys, collections, collectionEntries, filterCollections};
 })();
