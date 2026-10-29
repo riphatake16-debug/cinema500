@@ -494,6 +494,11 @@ dialog:has(.journey-list),dialog:has(.watchlist-items){padding:30px 18px 24px;wi
 @media(prefers-reduced-motion:reduce){.journey-mark{transition:none}}
 
 /* Keep the enhanced sort control inside its single glass frame. */
+#catalog-date{min-width:0;white-space:normal;overflow-wrap:anywhere}
+#catalog-date:before{content:'';display:inline-block;width:6px;height:6px;margin-inline-end:7px;border-radius:50%;background:var(--muted);vertical-align:middle}
+#catalog-date[data-freshness=current]:before{background:var(--green)}
+#catalog-date[data-freshness=stale]:before{background:var(--accent)}
+#refresh-catalog{min-height:44px;flex-shrink:0;line-height:1.7}
 .sort-label{height:auto;min-height:44px;min-width:0;max-width:100%;padding:0;align-items:stretch;border-radius:999px}
 .sort-label .custom-select{display:flex;min-width:0;width:100%;border-radius:inherit}
 .sort-label .select-trigger{min-width:0;min-height:44px;width:100%;height:auto;margin:0;padding:9px 16px;border:0;border-radius:inherit;background:transparent;box-shadow:none;line-height:1.7}
