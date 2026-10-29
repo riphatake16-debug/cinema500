@@ -252,11 +252,47 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt6019206/"
       }
+    },
+    "tt1806234": {
+      "fa": "سیاره انسان",
+      "summary": "این مستند سازگاری انسان با محیط‌های طبیعی گوناگون و تأثیری را که بر آن‌ها می‌گذارد، بررسی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1806234/"
+      }
+    },
+    "tt0111893": {
+      "fa": "گلچین بیتلز",
+      "summary": "مستندی خودزندگی‌نامه‌ای دربارهٔ گروه بیتلز و مسیر شکل‌گیری و فعالیت آن.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0111893/"
+      }
+    },
+    "tt0095327": {
+      "fa": "مزار کرمهای شبتاب",
+      "summary": "پسری نوجوان و خواهر کوچکش در ژاپنِ دوران جنگ جهانی دوم، برای بقا می‌جنگند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q274520"
+      }
+    },
+    "tt0098769": {
+      "fa": "جنگ داخلی",
+      "summary": "مروری جامع بر جنگ داخلی آمریکا و رویدادهای آن.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q672443"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 196
+    "characters": 229
   }
 }
