@@ -1,6 +1,11 @@
 import copy
 import datetime as dt
+import json
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
+from scripts import refresh_catalogue
 from scripts.refresh_catalogue import read_seed, from_response, validate, fallback
 
 
@@ -62,6 +67,29 @@ class RefreshCatalogueTests(unittest.TestCase):
         with self.assertRaises(ValueError): validate(unsafe)
         future = copy.deepcopy(feed);future["retrievedAt"] = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(days=1)).isoformat()
         with self.assertRaises(ValueError): validate(future)
+
+    def test_curated_names_and_summaries_remove_obsolete_automatic_provenance(self):
+        previous = from_response(self.response(), self.seed)
+        previous["titles"][0]["localization"] = {"summarySource": "mymemory", "summaryUrl": "https://www.imdb.com/title/tt0111161/"}
+        result = from_response(self.response(), self.seed, previous)
+        self.assertNotIn("localization", result["titles"][0])
+        self.assertEqual(result["titles"][0]["summary"], self.seed["titles"][0]["summary"])
+
+    def test_metadata_failure_does_not_discard_fresh_ranks_or_partially_mutate_output(self):
+        response = self.response();rows = response["data"]["movies"]["edges"]
+        rows[0]["currentRank"], rows[1]["currentRank"] = 2, 1
+        def fail_after_partial_edit(titles):
+            titles[0]["summary"] = "must not be published"
+            raise TimeoutError("metadata unavailable")
+        with tempfile.TemporaryDirectory(dir=".") as temp:
+            output = Path(temp) / "feed.json"
+            arguments = ["refresh_catalogue.py", "--output", str(output), "--bundle", str(Path(temp) / "bundle.js"),
+                         "--last-good", str(Path(temp) / "checkpoint.json"), "--persian-cache", str(Path(temp) / "cache.json")]
+            with patch("sys.argv", arguments), patch.object(refresh_catalogue, "fetch_json", return_value=response), patch.object(refresh_catalogue.PersianMetadata, "enrich", side_effect=fail_after_partial_edit):
+                refresh_catalogue.main()
+            result = validate(json.loads(output.read_text()))
+            self.assertEqual(result["status"], "ok");self.assertEqual(result["titles"][0]["rank"], 2)
+            self.assertEqual(result["titles"][0]["summary"], self.seed["titles"][0]["summary"])
 
 
 if __name__ == "__main__":

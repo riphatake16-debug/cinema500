@@ -1,6 +1,12 @@
 /* Validate complete chart updates before they can replace a working catalogue. */
 (() => {
   const idPattern=/^tt\d{7,12}$/;
+  function localization(raw){
+    const value={};if(!raw||typeof raw!=='object')return value;
+    const rules={wikidata:/^https:\/\/www\.wikidata\.org\/entity\/Q\d+$/, 'wikipedia-fa':/^https:\/\/fa\.wikipedia\.org\/(?:wiki\/[^\s<>]+|w\/index\.php\?[^\s<>]+)$/,mymemory:/^https:\/\/www\.imdb\.com\/title\/tt\d{7,12}\/$/};
+    for(const field of ['fa','summary']){const source=raw[field+'Source'],url=raw[field+'Url'];if(typeof url==='string'&&url.length<=2000&&Object.hasOwn(rules,source)&&rules[source].test(url)){value[field+'Source']=source;value[field+'Url']=url;}}
+    return value;
+  }
   function title(raw,ranked=true){
     if(!raw||typeof raw!=='object'||!idPattern.test(raw.id)||!['movie','tv'].includes(raw.type)||typeof raw.title!=='string'||!raw.title.trim()||raw.title.length>500)throw Error('invalid_title');
     if(!Number.isInteger(raw.year)||raw.year<1800||raw.year>2100||!Number.isFinite(raw.rating)||raw.rating<=0||raw.rating>10)throw Error('invalid_metadata');
@@ -11,7 +17,7 @@
     return {id:raw.id,type:raw.type,rank:ranked?raw.rank:null,title:raw.title,year:raw.year,rating:raw.rating,poster,
       genres:[...new Set(raw.genres)],runtime:Number.isFinite(raw.runtime)&&raw.runtime>0&&raw.runtime<2000?Math.round(raw.runtime):0,
       fa:typeof raw.fa==='string'?raw.fa.slice(0,500):'',aliases:Array.isArray(raw.aliases)?raw.aliases.filter(s=>typeof s==='string').slice(0,12).map(s=>s.slice(0,500)):[],
-      summary:raw.summaryLanguage==='fa'&&typeof raw.summary==='string'?raw.summary.slice(0,5000):'',summaryLanguage:'fa'};
+      summary:raw.summaryLanguage==='fa'&&typeof raw.summary==='string'?raw.summary.slice(0,5000):'',summaryLanguage:'fa',localization:localization(raw.localization)};
   }
   function validate(raw,now=Date.now()){
     if(!raw||!Array.isArray(raw.titles)||raw.titles.length!==500)throw Error('incomplete_catalogue');

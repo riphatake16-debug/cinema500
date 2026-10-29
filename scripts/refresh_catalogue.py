@@ -4,12 +4,18 @@ No third-party package, account credential, browser fingerprint or proxy is used
 The cached public chart response is checked hourly by the Pages workflow.
 """
 import argparse
+import copy
 import datetime as dt
 import hashlib
 import json
 import re
 import urllib.request
 from pathlib import Path
+
+if __package__:
+    from .persian_metadata import PersianMetadata, read_cache
+else:
+    from persian_metadata import PersianMetadata, read_cache
 
 ENDPOINT = "https://caching.graphql.imdb.com/"
 DEPLOYED_FEED = "https://riphatake16-debug.github.io/cinema500/live-catalogue.json"
@@ -93,7 +99,9 @@ def from_response(response, seed, previous=None, stamp=None, localizations=None)
     stamp = stamp or now_iso()
     memory = {t["id"]: t for t in (previous or {}).get("archive", []) + (previous or {}).get("titles", [])}
     # Curated Persian names and summaries take precedence over cached copies.
-    memory.update({t["id"]: {**memory.get(t["id"], {}), **t} for t in seed["titles"]})
+    for curated in seed["titles"]:
+        memory[curated["id"]] = {**memory.get(curated["id"], {}), **curated}
+        memory[curated["id"]].pop("localization", None)
     titles = []
     for key, kind in (("movies", "movie"), ("series", "tv")):
         edges = response.get("data", {}).get(key, {}).get("edges", [])
@@ -112,6 +120,13 @@ def from_response(response, seed, previous=None, stamp=None, localizations=None)
                    "fa": prior.get("fa", ""), "summary": prior.get("summary", ""), "summaryLanguage": "fa"}
             if prior.get("aliases"):
                 row["aliases"] = prior["aliases"]
+            if prior.get("localization"):
+                provenance = dict(prior["localization"])
+                for field in ("fa", "summary"):
+                    if (localizations or {}).get(ident, {}).get(field):
+                        provenance.pop(field + "Source", None);provenance.pop(field + "Url", None)
+                if provenance:
+                    row["localization"] = provenance
             valid_title(row);titles.append(row)
     active = {t["id"] for t in titles}
     archive = [{**row, "rank": None} for ident, row in memory.items() if ident not in active]
@@ -145,6 +160,7 @@ def main():
     parser.add_argument("--output", default="_site/live-catalogue.json")
     parser.add_argument("--bundle", default="_site/catalogue.js")
     parser.add_argument("--last-good", default="data/catalogue-last-good.json")
+    parser.add_argument("--persian-cache", default="data/persian-metadata-cache.json")
     args = parser.parse_args();seed = read_seed(args.seed);validate(seed)
     previous = None
     try:
@@ -165,6 +181,21 @@ def main():
             pass
         result = fallback(seed, candidates)
         print("Retained last valid catalogue from", result["retrievedAt"])
+    # Metadata providers are independent: a failure never discards fresh ranks.
+    try:
+        cache = read_cache(args.persian_cache)
+        metadata = PersianMetadata(cache)
+        candidate = copy.deepcopy(result)
+        completed = metadata.enrich(candidate["titles"])
+        payload = {"titles": candidate["titles"], "archive": candidate.get("archive", [])}
+        candidate["version"] = hashlib.sha256(json.dumps(payload, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+        validate(candidate)
+        if metadata.cache != cache:
+            write_json(args.persian_cache, metadata.cache)
+        result = candidate
+        print("Persian metadata:", completed, "newly enriched;", sum(bool(t.get("fa")) and bool(t.get("summary")) for t in result["titles"]), "complete titles")
+    except Exception as error:
+        print("::warning::Persian metadata deferred:", type(error).__name__)
     write_json(args.output, result)
     Path(args.bundle).parent.mkdir(parents=True, exist_ok=True)
     Path(args.bundle).write_text("window.CINEMA_CATALOGUE = " + json.dumps(result, ensure_ascii=False, separators=(",", ":")) + ";\n")

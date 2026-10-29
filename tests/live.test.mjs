@@ -22,6 +22,12 @@ test('Freshness reflects successful data time, with truthful snapshot and failur
  assert.equal(live.freshness(live.validate(seed)),'snapshot');
  assert.equal(live.fresher(live.validate(seed),f),false);
 });
+test('Automatic Persian provenance is preserved, while unsafe provider links are discarded',()=>{
+ const f=feed();f.titles[0].localization={summarySource:'wikipedia-fa',summaryUrl:'https://fa.wikipedia.org/w/index.php?title=Example&oldid=123',faSource:'wikidata',faUrl:'https://www.wikidata.org/entity/Q123'};
+ const valid=live.validate(f).titles[0];assert.equal(valid.localization.summarySource,'wikipedia-fa');assert.ok(valid.localization.summaryUrl.includes('oldid=123'));
+ f.titles[0].localization={summarySource:'wikipedia-fa',summaryUrl:'https://fa.wikipedia.org.evil.example/wiki/Test',faSource:'mymemory',faUrl:'javascript:alert(1)'};
+ assert.equal(Object.keys(live.validate(f).titles[0].localization).length,0);
+});
 function app(){
  const elements=new Map(),stored=new Map();let failKey='';
  const get=s=>{if(!elements.has(s))elements.set(s,{value:'',dataset:{},innerHTML:'',textContent:'',hidden:false,open:false,style:{setProperty(){}},classList:{add(){},remove(){},toggle(){}},setAttribute(){},addEventListener(){},getBoundingClientRect(){return{top:10000}},insertAdjacentHTML(_,h){this.innerHTML+=h},showModal(){this.open=true},close(){this.open=false}});return elements.get(s)};
@@ -45,6 +51,15 @@ test('New title metadata travels with backups, including after it leaves the cha
  const before=JSON.stringify([...stored]);fail('cinema-title-archive');assert.throws(()=>api.importJournal(payload));assert.equal(JSON.stringify([...stored]),before);
  assert.equal(api.importJournal(payload),1);assert.ok(api.snapshot().seen.includes(extra.id));assert.equal(api.journalStats().movies,1);
  assert.ok(api.snapshot().all.some(t=>t.id===extra.id&&t.title===extra.title));
+});
+test('New automatic text shows its source in details and survives a metadata backup',()=>{
+ const {api,get}=app(),extra={...seed.titles[0],id:'tt9999997',title:'Newly localized film',rank:null,localization:{summarySource:'wikipedia-fa',summaryUrl:'https://fa.wikipedia.org/wiki/Example'}};
+ api.importJournal({format:'cinema500-journal-v1',titles:[{id:extra.id,status:'seen',titleData:extra}]});api.openDetail(extra.id);
+ assert.ok(get('#dialog-content').innerHTML.includes('ویکی‌پدیای فارسی'));assert.ok(get('#dialog-content').innerHTML.includes('CC BY-SA 4.0'));
+ const machine={...extra,id:'tt9999996',localization:{summarySource:'mymemory',summaryUrl:'https://www.imdb.com/title/tt9999996/'}};
+ api.importJournal({format:'cinema500-journal-v1',titles:[{id:machine.id,status:'seen',titleData:machine}]});api.openDetail(machine.id);
+ assert.ok(get('#dialog-content').innerHTML.includes('ترجمهٔ خودکار MyMemory'));
+ api.openDetail('tt0068646');assert.ok(!get('#dialog-content').innerHTML.includes('detail-provenance'));
 });
 
 
