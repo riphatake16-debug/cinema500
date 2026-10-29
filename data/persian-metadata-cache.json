@@ -324,11 +324,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q163038"
       }
+    },
+    "tt1865718": {
+      "fa": "آبشار جاذبه",
+      "summary": "دوقلوهایی به نام دیپر و میبل پاینز، تابستان را در جاذبهٔ گردشگری عموی بزرگشان در شهر مرموز گرویتی فالزِ اورگن می‌گذرانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1865718/"
+      }
+    },
+    "tt31938062": {
+      "fa": "پیت",
+      "summary": "پزشکان و پرستاران بخش اورژانس بیمارستانی در پیتسبرگ، میان رسیدگی به بیماران بدحال، فشار کاری و بحران‌های شخصی، برای تصمیم‌گیری‌های دشوار و ادامهٔ خدمت تلاش می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt31938062/"
+      }
+    },
+    "tt0303461": {
+      "fa": "کرم شب تاب",
+      "summary": "پانصد سال در آینده، خدمهٔ یک سفینهٔ کوچک برای بقا در بخش‌های ناشناختهٔ کهکشان سفر می‌کنند و از گروه‌های متخاصم و مأموران حکومت می‌گریزند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0303461/"
+      }
+    },
+    "tt0877057": {
+      "fa": "یادداشت مرگ",
+      "summary": "دانش‌آموزی باهوش دفترچه‌ای پیدا می‌کند که با نوشتن نام هرکس در آن می‌توان او را کشت؛ او مخفیانه تصمیم به پاک‌کردن جهان از مجرمان می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0877057/"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-29",
-    "characters": 234
+    "characters": 272
   }
 }
