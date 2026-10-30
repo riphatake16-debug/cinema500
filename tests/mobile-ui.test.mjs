@@ -100,7 +100,7 @@ test('roulette has a dedicated wheel icon everywhere instead of the AI sparkle i
  }
  assert.ok(app.includes("icon('roulette-wheel')"));
  assert.ok(!app.includes("icon('shuffle')"));
- assert.ok(html.includes('app.js?v=roulette-icon-20261031-1'));
+ assert.ok(html.includes('app.js?v=clean-details-20261031-1'));
 });
 
 test('film details omit watch-date controls and the external IMDb detail link',async()=>{
