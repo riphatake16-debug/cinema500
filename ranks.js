@@ -2,13 +2,13 @@
 (() => {
  const tiers=[
   {at:0,name:'تازه‌وارد',tag:'FIRST FRAME',color:'#a5b1c8'},
-  {at:5,name:'جویندهٔ داستان',tag:'STORY SEEKER',color:'#8ecab6'},
-  {at:15,name:'عاشق سینما',tag:'CINEMA LOVER',color:'#82d6ea'},
-  {at:35,name:'کاشف جهان‌ها',tag:'WORLD EXPLORER',color:'#b3a2f2'},
-  {at:75,name:'منتقد تیزبین',tag:'THE CRITIC',color:'#e6c38e'},
-  {at:150,name:'استاد سینما',tag:'CINEMA MASTER',color:'#e4a6bb'},
-  {at:300,name:'افسانهٔ پرده',tag:'SCREEN LEGEND',color:'#8ab7ff'},
-  {at:500,name:'اسطورهٔ ۵۰۰',tag:'THE FINAL FRAME',color:'#f1da9e'}
+  {at:5,name:'فیلم‌دوست',tag:'STORY SEEKER',color:'#8ecab6'},
+  {at:15,name:'تماشاگر پیگیر',tag:'CINEMA LOVER',color:'#82d6ea'},
+  {at:35,name:'سینماباز',tag:'WORLD EXPLORER',color:'#b3a2f2'},
+  {at:75,name:'تماشاگر حرفه‌ای',tag:'THE CRITIC',color:'#e6c38e'},
+  {at:150,name:'خورهٔ سینما',tag:'CINEMA MASTER',color:'#e4a6bb'},
+  {at:300,name:'سینماشناس',tag:'SCREEN LEGEND',color:'#8ab7ff'},
+  {at:500,name:'عضو باشگاه ۵۰۰',tag:'THE FINAL FRAME',color:'#f1da9e'}
  ];
  function forCount(value){const count=Math.min(500,Math.max(0,Math.floor(Number(value)||0)));let index=0;for(let i=1;i<tiers.length;i++)if(count>=tiers[i].at)index=i;const tier=tiers[index],next=tiers[index+1]||null;return {count,index,level:index+1,tier,next,xp:count*10,remaining:next?next.at-count:0,progress:next?(count-tier.at)/(next.at-tier.at):1};}
  function avatar(index){const level=Math.max(0,Math.min(7,index|0)),color=tiers[level].color;
@@ -21,3 +21,4 @@
  }
  window.CinemaRanks=Object.freeze({tiers:Object.freeze(tiers.map(Object.freeze)),forCount,avatar});
 })();
+

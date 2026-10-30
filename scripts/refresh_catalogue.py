@@ -137,7 +137,33 @@ def from_response(response, seed, previous=None, stamp=None, localizations=None)
                      "source": {"provider": "imdb-public-chart-cache", "movie": "https://www.imdb.com/chart/top/",
                                 "tv": "https://www.imdb.com/chart/toptv/"}, **payload})
 
-def fallback(seed, candidates, stamp=None):
+def curated_text(feed, seed, localizations=None):
+    """Keep reviewed copy when an outage makes an older chart cache necessary."""
+    result = copy.deepcopy(feed)
+    curated = {t["id"]: t for t in seed["titles"]}
+    for ident, fields in (localizations or {}).items():
+        curated[ident] = {**curated.get(ident, {}), **fields}
+    for row in result["titles"] + result.get("archive", []):
+        fields = curated.get(row["id"], {})
+        provenance = dict(row.get("localization") or {})
+        for field in ("fa", "summary"):
+            if fields.get(field):
+                row[field] = fields[field]
+                provenance.pop(field + "Source", None)
+                provenance.pop(field + "Url", None)
+        if fields.get("summary"):
+            row["summaryLanguage"] = "fa"
+        if fields.get("aliases"):
+            row["aliases"] = list(dict.fromkeys(row.get("aliases", []) + fields["aliases"]))
+        if provenance:
+            row["localization"] = provenance
+        else:
+            row.pop("localization", None)
+    payload = {"titles": result["titles"], "archive": result.get("archive", [])}
+    result["version"] = hashlib.sha256(json.dumps(payload, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+    return validate(result)
+
+def fallback(seed, candidates, stamp=None, localizations=None):
     valid = [seed]
     for candidate in candidates:
         try:
@@ -145,8 +171,8 @@ def fallback(seed, candidates, stamp=None):
         except (ValueError, TypeError, KeyError, AttributeError):
             pass
     chosen = max(valid, key=lambda x: x["retrievedAt"])
-    return {**chosen, "schemaVersion": 1, "status": "stale", "checkedAt": stamp or now_iso(),
-            "refreshMinutes": 60, "error": "source_unavailable"}
+    return curated_text({**chosen, "schemaVersion": 1, "status": "stale", "checkedAt": stamp or now_iso(),
+                         "refreshMinutes": 60, "error": "source_unavailable"}, seed, localizations)
 
 def write_json(path, data):
     target = Path(path);target.parent.mkdir(parents=True, exist_ok=True)
@@ -167,9 +193,9 @@ def main():
         previous = validate(json.loads(Path(args.last_good).read_text()))
     except (OSError, ValueError, TypeError, KeyError):
         pass
+    locale_path = Path("content/catalogue-localizations-fa.json")
+    localizations = json.loads(locale_path.read_text()) if locale_path.exists() else {}
     try:
-        locale_path = Path("content/catalogue-localizations-fa.json")
-        localizations = json.loads(locale_path.read_text()) if locale_path.exists() else {}
         result = from_response(fetch_json(ENDPOINT, json.dumps({"query": QUERY, "operationName": "Cinema500Charts"}).encode()), seed, previous, localizations=localizations)
         print("IMDb chart refresh succeeded: 250 movies, 250 series; fetched", result["retrievedAt"])
     except Exception as error:
@@ -179,7 +205,7 @@ def main():
             candidates.append(fetch_json(DEPLOYED_FEED))
         except Exception:
             pass
-        result = fallback(seed, candidates)
+        result = fallback(seed, candidates, localizations=localizations)
         print("Retained last valid catalogue from", result["retrievedAt"])
     # Metadata providers are independent: a failure never discards fresh ranks.
     try:

@@ -10,37 +10,37 @@
     {id:'series',label:'سریال‌ها'}
   ];
   const journeys = [
-    {id:'mind', title:'بازی با ذهن', subtitle:'پنج فیلم که مدام برداشتت از داستان را عوض می‌کنند.', tag:'معما و هیجان', categories:['suspense'], featured:true, color:'#9f8cdb', ids:['tt0133093','tt0209144','tt0482571','tt1375666','tt1130884']},
-    {id:'animation', title:'انیمیشن، فراتر از کودکی', subtitle:'داستان‌هایی دربارهٔ خانواده، تنهایی و بزرگ‌شدن.', tag:'انیمیشن', categories:['animation'], featured:true, color:'#d89c74', ids:['tt0245429','tt0910970','tt2380307','tt0095327','tt4633694']},
-    {id:'classics', title:'پنج قرار با کلاسیک‌ها', subtitle:'از کمدی صامت تا دادگاه و معمای جنایی.', tag:'کلاسیک', categories:['classic'], featured:true, color:'#8ab5aa', ids:['tt0050083','tt0034583','tt0027977','tt0047396','tt0043014']},
-    {id:'space', title:'سفر به فضا', subtitle:'سفرهای فضایی، سیاره‌های دور و خطرهایی ناشناخته.', tag:'علمی‌تخیلی', categories:['imagination'], color:'#7c9bc9', ids:['tt0062622','tt0076759','tt0080684','tt0078748','tt0816692']},
-    {id:'memory', title:'زمان و خاطره', subtitle:'وقتی نمی‌شود به حافظه یا گذر زمان اعتماد کرد.', tag:'زمان و هویت', categories:['imagination','suspense'], color:'#b093cf', ids:['tt0088763','tt0209144','tt0338013','tt1375666','tt5311514']},
-    {id:'middle-earth', title:'سه‌گانهٔ ارباب حلقه‌ها', subtitle:'سفر فرودو و یاران حلقه را به ترتیب دنبال کن.', tag:'فانتزی و ماجراجویی', categories:['imagination'], color:'#a9b77d', ids:['tt0120737','tt0167261','tt0167260']},
-    {id:'crime', title:'دنیای تبهکارها', subtitle:'خانواده، قدرت و بهایی که زندگی در مافیا دارد.', tag:'جنایی', categories:['suspense'], color:'#ba8f85', ids:['tt0068646','tt0071562','tt0099685','tt0317248','tt0407887']},
-    {id:'clues', title:'دنبال سرنخ', subtitle:'پنج پرونده که جوابشان به این سادگی پیدا نمی‌شود.', tag:'معمای جنایی', categories:['suspense'], color:'#8aa6a5', ids:['tt0047396','tt0051201','tt0052357','tt0114369','tt0353969']},
-    {id:'hope', title:'آدم‌ها و امید', subtitle:'دوستی و همراهی در روزهایی که زندگی سخت می‌گیرد.', tag:'درام انسانی', categories:['life'], color:'#c6ac7d', ids:['tt0111161','tt0118799','tt0119217','tt0097165','tt1675434']},
+    {id:'mind', title:'بازی با ذهن', subtitle:'پنج فیلم که با هر سرنخ تازه، برداشتت از داستان عوض می‌شه.', tag:'معما و هیجان', categories:['suspense'], featured:true, color:'#9f8cdb', ids:['tt0133093','tt0209144','tt0482571','tt1375666','tt1130884']},
+    {id:'animation', title:'قصه‌های انیمیشنی', subtitle:'دربارهٔ خانواده، تنهایی و بزرگ‌شدن؛ برای سن‌های مختلف.', tag:'انیمیشن', categories:['animation'], featured:true, color:'#d89c74', ids:['tt0245429','tt0910970','tt2380307','tt0095327','tt4633694']},
+    {id:'classics', title:'پنج فیلم کلاسیک', subtitle:'از کمدی صامت تا دادگاه و معمای جنایی.', tag:'کلاسیک', categories:['classic'], featured:true, color:'#8ab5aa', ids:['tt0050083','tt0034583','tt0027977','tt0047396','tt0043014']},
+    {id:'space', title:'سفر به فضا', subtitle:'سفر به سیاره‌های دور و روبه‌روشدن با خطرهای ناشناخته.', tag:'علمی‌تخیلی', categories:['imagination'], color:'#7c9bc9', ids:['tt0062622','tt0076759','tt0080684','tt0078748','tt0816692']},
+    {id:'memory', title:'زمان و خاطره', subtitle:'قصه‌هایی که زمان و خاطره توشون قابل اعتماد نیست.', tag:'زمان و هویت', categories:['imagination','suspense'], color:'#b093cf', ids:['tt0088763','tt0209144','tt0338013','tt1375666','tt5311514']},
+    {id:'middle-earth', title:'سه‌گانهٔ ارباب حلقه‌ها', subtitle:'سفر فرودو و همراه‌هاش رو به ترتیب ببین.', tag:'فانتزی و ماجراجویی', categories:['imagination'], color:'#a9b77d', ids:['tt0120737','tt0167261','tt0167260']},
+    {id:'crime', title:'دنیای تبهکارها', subtitle:'از زندگی در مافیا تا جنگ بر سر خانواده و قدرت.', tag:'جنایی', categories:['suspense'], color:'#ba8f85', ids:['tt0068646','tt0071562','tt0099685','tt0317248','tt0407887']},
+    {id:'clues', title:'دنبال سرنخ', subtitle:'پنج پرونده که جواب‌شون به این سادگی پیدا نمی‌شه.', tag:'معمای جنایی', categories:['suspense'], color:'#8aa6a5', ids:['tt0047396','tt0051201','tt0052357','tt0114369','tt0353969']},
+    {id:'hope', title:'آدم‌ها و امید', subtitle:'فیلم‌هایی دربارهٔ دوستی و امید در روزهای سخت.', tag:'درام انسانی', categories:['life'], color:'#c6ac7d', ids:['tt0111161','tt0118799','tt0119217','tt0097165','tt1675434']},
     {id:'comedy', title:'کمی بخندیم', subtitle:'کمدی، موسیقی و چند ماجرای شیرین و غیرمنتظره.', tag:'کمدی', categories:['life'], color:'#caa687', ids:['tt0045152','tt0053291','tt0070735','tt0120382','tt2278388']},
     {id:'world-cinema', title:'دور دنیا در پنج فیلم', subtitle:'پنج انتخاب از سینمای ایران، ژاپن، فرانسه، برزیل و کره.', tag:'سینمای جهان', categories:['world'], color:'#8eb5a3', ids:['tt1832382','tt0047478','tt0211915','tt0317248','tt6751668']},
     {id:'war', title:'آدم‌ها در دل جنگ', subtitle:'جنگ از نگاه سربازان، کودکان و آدم‌های عادی.', tag:'جنگ و تاریخ', categories:['history'], color:'#a3a185', ids:['tt0050825','tt0078788','tt0095327','tt0120815','tt0253474']},
-    {id:'series-mystery', title:'معماهای تلویزیونی', subtitle:'پرونده‌های جنایی و رازهایی که قسمت‌به‌قسمت باز می‌شوند.', tag:'سریال معمایی', categories:['series','suspense'], color:'#8a98b7', ids:['tt1475582','tt2356777','tt5290382','tt0098936','tt5753856']},
+    {id:'series-mystery', title:'سریال‌های پر از معما', subtitle:'پرونده‌ها و رازهایی که با هر قسمت بیشتر ازشون سر درمیاری.', tag:'سریال معمایی', categories:['series','suspense'], color:'#8a98b7', ids:['tt1475582','tt2356777','tt5290382','tt0098936','tt5753856']},
     {id:'series-crime', title:'سریال‌های جنایی', subtitle:'از خیابان‌های بالتیمور تا دفتر ساول گودمن.', tag:'سریال جنایی', categories:['series','suspense'], color:'#b29889', ids:['tt0306414','tt0141842','tt0903747','tt3032476','tt2802850']},
-    {id:'anime', title:'پنج انیمه برای دنبال‌کردن', subtitle:'ماجراجویی، معما و شخصیت‌هایی با انتخاب‌های دشوار.', tag:'انیمهٔ سریالی', categories:['animation','series'], color:'#9e9dcc', ids:['tt0213338','tt0877057','tt1355642','tt1910272','tt2560140']}
+    {id:'anime', title:'پنج انیمهٔ سریالی', subtitle:'از ماجراجویی و معما تا تصمیم‌های سخت شخصیت‌ها.', tag:'انیمهٔ سریالی', categories:['animation','series'], color:'#9e9dcc', ids:['tt0213338','tt0877057','tt1355642','tt1910272','tt2560140']}
   ];
   const topics = [
-    {id:'drama',title:'درام و زندگی‌نامه',subtitle:'زندگی آدم‌ها، رابطه‌ها و انتخاب‌هایشان.',genres:['Drama','Biography'],color:'#b8a28e'},
+    {id:'drama',title:'درام و زندگی‌نامه',subtitle:'آدم‌ها، رابطه‌ها و تصمیم‌هایی که زندگی‌شون رو عوض می‌کنه.',genres:['Drama','Biography'],color:'#b8a28e'},
     {id:'crime',title:'جنایی و معمایی',subtitle:'پرونده‌ها، سرنخ‌ها و دنیای تبهکارها.',genres:['Crime','Mystery','Film-Noir'],color:'#8fa5b8'},
     {id:'adventure',title:'اکشن و ماجراجویی',subtitle:'سفرهای پرخطر و ماجراهای پرهیجان.',genres:['Action','Adventure'],color:'#bd987c'},
     {id:'comedy',title:'کمدی',subtitle:'از شوخی‌های روزمره تا طنزهای تلخ.',genres:['Comedy'],color:'#d0b780'},
-    {id:'imagination',title:'علمی‌تخیلی و فانتزی',subtitle:'جهان‌های دیگر و اتفاق‌های ناممکن.',genres:['Sci-Fi','Fantasy'],color:'#a092cb'},
-    {id:'animation',title:'انیمیشن و انیمه',subtitle:'داستان‌های پویانمایی برای هر سنی.',genres:['Animation'],color:'#c49d9e'},
-    {id:'suspense',title:'ترس و تعلیق',subtitle:'برای وقتی که دلت کمی اضطراب می‌خواهد.',genres:['Horror','Thriller'],color:'#9e8ca6'},
+    {id:'imagination',title:'علمی‌تخیلی و فانتزی',subtitle:'دنیاهای خیالی و آینده‌های متفاوت.',genres:['Sci-Fi','Fantasy'],color:'#a092cb'},
+    {id:'animation',title:'انیمیشن و انیمه',subtitle:'از انیمیشن‌های خانوادگی تا انیمه‌های جدی‌تر.',genres:['Animation'],color:'#c49d9e'},
+    {id:'suspense',title:'ترس و تعلیق',subtitle:'قصه‌های ترسناک و پرتعلیق.',genres:['Horror','Thriller'],color:'#9e8ca6'},
     {id:'relationships',title:'عاشقانه و خانوادگی',subtitle:'داستان‌هایی از عشق و کنار هم بودن.',genres:['Romance','Family'],color:'#c198a7'},
-    {id:'history',title:'جنگ و تاریخ',subtitle:'رویدادهای بزرگ از نگاه آدم‌های درگیرشان.',genres:['History','War'],color:'#a4ae8a'},
+    {id:'history',title:'جنگ و تاریخ',subtitle:'زندگی آدم‌ها در جنگ و اتفاق‌های مهم تاریخی.',genres:['History','War'],color:'#a4ae8a'},
     {id:'documentary',title:'مستند و واقعیت',subtitle:'دنیای واقعی؛ از طبیعت تا جامعه و خبر.',genres:['Documentary','News'],color:'#86afa5'},
-    {id:'western',title:'وسترن',subtitle:'قصه‌های غرب وحشی و مرزهای دور.',genres:['Western'],color:'#b8a17a'},
-    {id:'music',title:'موسیقی و موزیکال',subtitle:'وقتی موسیقی بخشی از داستان است.',genres:['Music','Musical'],color:'#ad9cc5'},
+    {id:'western',title:'وسترن',subtitle:'هفت‌تیرکش‌ها و ماجراهای غرب وحشی.',genres:['Western'],color:'#b8a17a'},
+    {id:'music',title:'موسیقی و موزیکال',subtitle:'فیلم‌ها و سریال‌هایی که موسیقی توشون نقش اصلی داره.',genres:['Music','Musical'],color:'#ad9cc5'},
     {id:'competition',title:'ورزش و رقابت',subtitle:'از میدان ورزش تا مسابقه‌های تلویزیونی.',genres:['Sport','Game-Show'],color:'#8aafa0'},
-    {id:'television',title:'رئالیتی‌شو و گفت‌وگو',subtitle:'آدم‌های واقعی، تجربه‌ها و گفت‌وگوهایشان.',genres:['Reality-TV','Talk-Show'],color:'#91a5c1'}
+    {id:'television',title:'رئالیتی‌شو و گفت‌وگو',subtitle:'برنامه‌های گفت‌وگو و ماجراهای آدم‌ها جلوی دوربین.',genres:['Reality-TV','Talk-Show'],color:'#91a5c1'}
   ];
   const collectionCache = new WeakMap();
   function collections(titles, kind) {
@@ -55,7 +55,7 @@
           result.push({...topic,id:type+'-'+topic.id,kind:type,entries,ids:entries.map(t=>t.id)});
         }
         const entries=works.filter(t=>!covered.has(t.id));
-        if(entries.length)result.push({id:type+'-other',kind:type,title:'دیگر آثار',subtitle:'آثاری که در دسته‌های بالا جا نمی‌گیرند.',color:'#9aa6b5',genres:[],entries,ids:entries.map(t=>t.id)});
+        if(entries.length)result.push({id:type+'-other',kind:type,title:'دیگر آثار',subtitle:'عنوان‌هایی که هنوز توی دسته‌های دیگه قرار نگرفتن.',color:'#9aa6b5',genres:[],entries,ids:entries.map(t=>t.id)});
       }
       collectionCache.set(titles,result);
     }

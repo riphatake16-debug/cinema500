@@ -68,6 +68,35 @@ class RefreshCatalogueTests(unittest.TestCase):
         future = copy.deepcopy(feed);future["retrievedAt"] = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(days=1)).isoformat()
         with self.assertRaises(ValueError): validate(future)
 
+    def test_outage_keeps_reviewed_copy_without_reverting_live_ranks_or_new_titles(self):
+        source = self.response();rows = source["data"]["movies"]["edges"]
+        retired = rows[0]["node"]["id"];active = rows[1]["node"]["id"]
+        rows[0]["node"].update({"id": "tt9999999", "titleText": {"text": "New title"}})
+        rows[0]["currentRank"], rows[1]["currentRank"] = 2, 1
+        cached = from_response(source, self.seed)
+        current = next(t for t in cached["titles"] if t["id"] == active)
+        current.update({"summary": "نسخهٔ قدیمی", "localization": {"summarySource": "mymemory"}})
+        archived = next(t for t in cached["archive"] if t["id"] == retired)
+        archived["summary"] = "نسخهٔ قدیمی آرشیو"
+        new = next(t for t in cached["titles"] if t["id"] == "tt9999999")
+        new.update({"fa": "نام فارسی تازه", "summary": "متن خودکار", "localization": {"faSource": "wikidata", "summarySource": "mymemory"}})
+        original = copy.deepcopy(cached)
+        retained = fallback(self.seed, [cached], localizations={"tt9999999": {"summary": "متن بررسی‌شده"}})
+        restored = next(t for t in retained["titles"] if t["id"] == active)
+        self.assertEqual(restored["rank"], 1)
+        self.assertEqual(restored["summary"], self.seed["titles"][1]["summary"])
+        self.assertNotIn("localization", restored)
+        self.assertEqual(next(t for t in retained["archive"] if t["id"] == retired)["summary"], self.seed["titles"][0]["summary"])
+        fresh = next(t for t in retained["titles"] if t["id"] == "tt9999999")
+        self.assertEqual(fresh["rank"], 2)
+        self.assertEqual(fresh["fa"], "نام فارسی تازه")
+        self.assertEqual(fresh["summary"], "متن بررسی‌شده")
+        self.assertEqual(fresh["localization"], {"faSource": "wikidata"})
+        self.assertEqual(retained["retrievedAt"], cached["retrievedAt"])
+        self.assertEqual(retained["status"], "stale")
+        self.assertNotEqual(retained["version"], cached["version"])
+        self.assertEqual(cached, original)
+
     def test_curated_names_and_summaries_remove_obsolete_automatic_provenance(self):
         previous = from_response(self.response(), self.seed)
         previous["titles"][0]["localization"] = {"summarySource": "mymemory", "summaryUrl": "https://www.imdb.com/title/tt0111161/"}

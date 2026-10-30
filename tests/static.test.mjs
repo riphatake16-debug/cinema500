@@ -35,7 +35,7 @@ test('Hero rotates every six seconds, wraps, pauses during interaction and respe
 test('Changing a rating preserves unrelated poster nodes and the current grid',()=>{
  get('#search').value='';get('#genre').value='';get('#min-rating').value='0';get('#max-time').value='0';get('#decade').value='0';get('#sort').value='rank';api.setFilters('movie','all');
  get('#search').oninput();const list=api.filtered().slice(0,30);domCards=list.map(a=>({dataset:{id:a.id},outerHTML:'original-card'}));const untouched=domCards[29],gridBefore=get('#grid').innerHTML;
- api.changePreference(list[0].id,{rating:8});assert.ok(domCards[0].outerHTML.includes('امتیاز تو'));assert.equal(domCards[29],untouched);assert.equal(domCards[29].outerHTML,'original-card');assert.equal(get('#grid').innerHTML,gridBefore);domCards=[];
+ api.changePreference(list[0].id,{rating:8});assert.ok(domCards[0].outerHTML.includes('نمرهٔ تو'));assert.equal(domCards[29],untouched);assert.equal(domCards[29].outerHTML,'original-card');assert.equal(get('#grid').innerHTML,gridBefore);domCards=[];
 });
 test('Offscreen hero stops rotating and thumbnail markup stays stable between slides',()=>{
  get('#details').open=false;const tick=()=>{const entry=[...timers].find(([,t])=>t.ms===6000);assert.ok(entry);timers.delete(entry[0]);entry[1].fn()};
@@ -71,7 +71,7 @@ test('Recommendations respect hard filters and explain taste affinity from actua
  const pool=api.recommendPool('movie','',120,'unseen','Comedy');assert.ok(pool.length);assert.ok(pool.every(a=>a.type==='movie'&&a.runtime<=120&&a.genres.includes('Comedy')));
  api.changeState(pool[0].id,'seen');assert.ok(!api.recommendPool('movie','',120,'unseen','Comedy').some(a=>a.id===pool[0].id));
  assert.ok(api.recommendPool('movie','light',0,'unseen').every(a=>!a.genres.some(g=>['Horror','Thriller','Crime','War'].includes(g))));
- const candidate=ctx.window.CINEMA_CATALOGUE.titles.find(a=>a.id==='tt0120689');const reasons=api.recommendReasons(candidate,{mood:'thoughtful',max:200,selectedGenre:'Drama'});assert.ok(reasons.some(r=>r.includes('امتیازها و محبوب‌هایت')));
+ const candidate=ctx.window.CINEMA_CATALOGUE.titles.find(a=>a.id==='tt0120689');const reasons=api.recommendReasons(candidate,{mood:'thoughtful',max:200,selectedGenre:'Drama'});assert.ok(reasons.some(r=>r.includes('نمره‌ها و محبوب‌هات')));
  assert.ok([candidate].includes(api.pickForTaste([candidate],.99)));api.resetJournal();
 });
 
@@ -89,7 +89,7 @@ test('Ranks advance at every exact threshold, clamp counts, and expose a complet
  assert.equal(ranks.forCount(-1).xp,0);assert.equal(ranks.forCount(500).xp,5000);assert.equal(ranks.forCount(9999).count,500);assert.equal(ranks.forCount(500).progress,1);assert.equal(ranks.forCount(500).next,null);
 });
 test('Only unique watched titles grant XP; toggling and watchlists cannot multiply points',()=>{
- api.resetJournal();const ids=ctx.window.CINEMA_CATALOGUE.titles.slice(0,5).map(a=>a.id);for(const id of ids)api.changeState(id,'seen');assert.equal(api.watcherRank().xp,50);assert.equal(api.watcherRank().level,2);assert.ok(get('#rank-upgrade').innerHTML.includes('جویندهٔ داستان'));
+ api.resetJournal();const ids=ctx.window.CINEMA_CATALOGUE.titles.slice(0,5).map(a=>a.id);for(const id of ids)api.changeState(id,'seen');assert.equal(api.watcherRank().xp,50);assert.equal(api.watcherRank().level,2);assert.ok(get('#rank-upgrade').innerHTML.includes('فیلم‌دوست'));
  api.changeState(ids[0],'seen');assert.equal(api.watcherRank().xp,50);api.changeState(ids[0],'none');assert.equal(api.watcherRank().xp,40);assert.equal(api.watcherRank().level,1);api.changeState(ids[0],'watchlist');assert.equal(api.watcherRank().xp,40);api.changeState(ids[0],'seen');assert.equal(api.watcherRank().xp,50);
  const xp=api.watcherRank().xp;ctx.window.__cinema500=false;vm.runInContext(source,ctx);assert.equal(ctx.window.test.watcherRank().xp,xp);assert.ok(!get('#account-slot').innerHTML.includes('ورود'));
 });
@@ -152,7 +152,7 @@ test('Discovery tabs render only the chosen type and category lists append witho
  api.setExplore('movie','paths');assert.ok(get('#journey-grid').innerHTML.includes('data-journey="middle-earth"'));assert.ok(!get('#journey-grid').innerHTML.includes('data-journey="series-crime"'));
  api.openCollection('movie-drama');const count=()=>[...get('#collection-items').innerHTML.matchAll(/data-detail=/g)].length;
  assert.equal(count(),24);const first=get('#collection-items').innerHTML;api.appendCollectionRows();assert.equal(count(),48);assert.ok(get('#collection-items').innerHTML.startsWith(first));
- const before=get('#collection-items').innerHTML;get('#details').scrollTop=120;api.changeState('tt0111161','seen');assert.equal(get('#collection-items').innerHTML,before);assert.ok(get('#collection-watched').textContent.includes('۱ دیده‌ای'));assert.equal(get('#details').scrollTop,120);
+ const before=get('#collection-items').innerHTML;get('#details').scrollTop=120;api.changeState('tt0111161','seen');assert.equal(get('#collection-items').innerHTML,before);assert.ok(get('#collection-watched').textContent.includes('۱ دیدی'));assert.equal(get('#details').scrollTop,120);
  api.openDetail('tt0111161');assert.ok(get('#dialog-content').innerHTML.includes('data-back-collection="movie-drama"'));
  api.openCollection('movie-drama',true);assert.equal(count(),48);assert.equal(get('#details').scrollTop,120);
  api.openCollection('movie-imagination');get('#collection-search').value='اینسپشن';get('#collection-search').oninput();assert.equal(count(),1);assert.ok(get('#collection-items').innerHTML.includes('tt1375666'));
