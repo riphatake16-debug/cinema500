@@ -1597,6 +1597,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q185658"
       }
+    },
+    "tt0412142": {
+      "fa": "دکتر هاوس",
+      "summary": "دکتر هاوس، پزشکی نابغه و بدخلق، همراه تیمش علت بیماری‌های پیچیده را پیدا می‌کند. روش‌های غیرمعمول او همیشه برای همکاران و بیمارانش آسان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23558"
+      }
+    },
+    "tt0056592": {
+      "fa": "کشتن مرغ مقلد",
+      "summary": "اتیکوس فینچ، وکیلی در جنوب آمریکا، از مردی سیاه‌پوست در برابر اتهامی نادرست دفاع می‌کند. فرزندانش از نزدیک با تعصب و بی‌عدالتی جامعه آشنا می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q177922"
+      }
+    },
+    "tt0086661": {
+      "fa": "ماجراهای شرلوک هلمز",
+      "summary": "شرلوک هولمز و دکتر واتسون مجموعه‌ای از معماها و پرونده‌های دشوار را با مشاهده و استدلال حل می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q387306"
+      }
+    },
+    "tt0052357": {
+      "fa": "سرگیجه",
+      "summary": "کارآگاهی بازنشسته که با ترس‌ها و مشکلات شخصی‌اش درگیر است، به زنی مرموز دل می‌بندد و این علاقه کم‌کم به وسواس تبدیل می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q202548"
+      }
     }
   },
   "retryAfter": {},
