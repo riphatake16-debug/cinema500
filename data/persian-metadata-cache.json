@@ -740,6 +740,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q196977"
       }
+    },
+    "tt7660850": {
+      "fa": "وراثت",
+      "summary": "زندگی و کشمکش‌های یک خانوادهٔ آمریکاییِ نابسامان که مالک امپراتوری رسانه‌ای جهانی هستند، دنبال می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q30599007"
+      }
+    },
+    "tt0050825": {
+      "fa": "راههای افتخار",
+      "summary": "پس از خودداری سربازان از حمله به موضع دشمن، یک ژنرال آن‌ها را به بزدلی متهم می‌کند و فرمانده‌شان باید از آنان دفاع کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q747936"
+      }
+    },
+    "tt3398228": {
+      "fa": "بوجک هورسمن",
+      "summary": "بوجک هورسمن، ستارهٔ سابق یک سریال محبوب در دهه‌های ۱۹۸۰ و ۱۹۹۰، اکنون در هالیوود روزگار افولش را با گلایه از همه‌چیز می‌گذراند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q17733404"
+      }
+    },
+    "tt0361748": {
+      "fa": "حرامزادههای لعنتی",
+      "summary": "در فرانسهٔ اشغال‌شده، نقشهٔ سربازان یهودی آمریکایی برای ترور رهبران نازی با برنامهٔ انتقام‌جویانهٔ صاحب یک سینما هم‌زمان می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q153723"
+      }
     }
   },
   "retryAfter": {},
