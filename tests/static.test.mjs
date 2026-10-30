@@ -11,6 +11,7 @@ const ctx=vm.createContext({IntersectionObserver:class{constructor(cb){this.call
 vm.runInContext(await readFile('catalogue.js','utf8'),ctx);
 vm.runInContext(await readFile('ranks.js','utf8'),ctx);
 vm.runInContext(await readFile('discovery.js','utf8'),ctx);
+vm.runInContext(await readFile('roulette.js','utf8'),ctx);
 vm.runInContext(await readFile('live.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
 source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,openRoulette,spinRoulette,roulettePool,rouletteWinner:()=>rouletteWinner,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,openAccount,openAccountHelp,openStats,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
