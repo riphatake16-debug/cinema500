@@ -1705,6 +1705,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q181086"
       }
+    },
+    "tt0062588": {
+      "fa": "محلهٔ آقای راجرز",
+      "summary": "فرد راجرز با نمایش، موسیقی و سفر به محلهٔ خیال، موضوعات گوناگون را برای کودکان توضیح می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3234484"
+      }
+    },
+    "tt0120382": {
+      "fa": "نمایش ترومن",
+      "summary": "یک فروشندهٔ بیمه کشف می‌کند که تمام زندگی‌اش در واقع برنامه‌ای تلویزیونی بوده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q214801"
+      }
+    },
+    "tt0758745": {
+      "fa": "چراغهای جمعهشب (مجموعه تلویزیونی)",
+      "summary": "زندگی اعضای تیم فوتبال دبیرستانی دیلن پنترز و سرمربی‌شان اریک تیلور دنبال می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q4507"
+      }
+    },
+    "tt0993846": {
+      "fa": "گرگ وال استریت",
+      "summary": "جردن بلفورت به‌عنوان یک کارگزار بورس ثروت زیادی به دست می‌آورد، اما کلاهبرداری و فساد او را زیر ذره‌بین مأموران فدرال می‌برد؛ بر اساس یک داستان واقعی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1392744"
+      }
     }
   },
   "retryAfter": {},
