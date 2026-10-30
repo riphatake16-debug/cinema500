@@ -25,7 +25,7 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
   const versions = {
-    'app.js': 'roulette-20261031-1',
+    'app.js': 'roulette-icon-20261031-1',
     'mobile.css': 'roulette-20261031-1',
     'style.css': 'mobile-focus-20261031-1'
   };
@@ -88,4 +88,17 @@ test('roulette replaces assistant and tonight without losing the personal librar
  assert.ok(css.includes('.library-switch'));
  assert.ok(css.includes('.simple-stats-grid'));
  assert.ok(css.includes('prefers-reduced-motion:reduce'));
+});
+
+test('roulette has a dedicated wheel icon everywhere instead of the AI sparkle icon',async()=>{
+ const [html,app]=await Promise.all([read('index.html'),read('app.js')]);
+ assert.ok(html.includes('id="icon-roulette-wheel"'));
+ for(const selector of ['data-dock="roulette"','id="roulette-launch"','id="hero-random"']){
+   const i=html.indexOf(selector);
+   assert.ok(i>=0,selector);
+   assert.ok(html.slice(i,html.indexOf('</button>',i)).includes('href="#icon-roulette-wheel"'),selector+' wheel icon');
+ }
+ assert.ok(app.includes("icon('roulette-wheel')"));
+ assert.ok(!app.includes("icon('shuffle')"));
+ assert.ok(html.includes('app.js?v=roulette-icon-20261031-1'));
 });
