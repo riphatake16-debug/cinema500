@@ -1199,11 +1199,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q187278"
       }
+    },
+    "tt0248654": {
+      "fa": "شش فوت زیر زمین",
+      "summary": "اعضای خانواده‌ای در لس‌آنجلس، کسب‌وکار خانوادگی کفن‌ودفن را اداره می‌کنند و در کنار کارشان، با مشکلات و رابطه‌های شخصی خودشان درگیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q216919"
+      }
+    },
+    "tt0086190": {
+      "fa": "بازگشت جدای",
+      "summary": "پس از نجات هان سولو، شورشیان برای نابودی دومین ستارهٔ مرگ به اندور می‌روند؛ هم‌زمان لوک تلاش می‌کند دارث ویدر را از سوی تاریک بازگرداند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q181803"
+      }
+    },
+    "tt0434706": {
+      "fa": "هیولا",
+      "summary": "یک جراح مغز و اعصاب در آلمان می‌فهمد بیماری که زمانی نجات داده، به فردی خطرناک تبدیل شده است. روبه‌روشدن دوباره با او زندگی پزشک را زیرورو می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0434706/"
+      }
+    },
+    "tt0091251": {
+      "fa": "بیا و بنگر",
+      "summary": "پسری نوجوان پس از یافتن تفنگی قدیمی به مقاومت شوروی می‌پیوندد و در نبرد با نیروهای آلمانی، وحشت جنگ جهانی دوم را تجربه می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1130395"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 184
+    "characters": 191
   }
 }
