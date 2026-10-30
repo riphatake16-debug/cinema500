@@ -776,11 +776,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q153723"
       }
+    },
+    "tt12004706": {
+      "fa": "پنچایات",
+      "summary": "آبیشک، فارغ‌التحصیل مهندسی، به دلیل نداشتن گزینهٔ شغلی بهتر، منشی شورای محلی روستایی دورافتاده در اوتار پرادش می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt12004706/"
+      }
+    },
+    "tt0081505": {
+      "fa": "درخشش",
+      "summary": "خانواده‌ای زمستان را در هتلی دورافتاده می‌گذرانند؛ نیرویی شوم پدر را به خشونت سوق می‌دهد و پسرش تصاویر هولناکی از گذشته و آینده می‌بیند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q186341"
+      }
+    },
+    "tt0264235": {
+      "fa": "زیاد ذوقزده نشو",
+      "summary": "زندگی لری دیوید و موقعیت‌های دشواری که در برخورد با دوستان و غریبه‌ها برای خودش ایجاد می‌کند، روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23722"
+      }
+    },
+    "tt0032553": {
+      "fa": "دیکتاتور بزرگ",
+      "summary": "دیکتاتوری به نام آدنوید هینکل در پی گسترش امپراتوری‌اش است؛ هم‌زمان آرایشگری یهودی می‌کوشد از آزار حکومت او جان سالم به در ببرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109116"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 63
+    "characters": 72
   }
 }
