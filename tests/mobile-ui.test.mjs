@@ -25,8 +25,8 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
   const versions = {
-    'app.js': 'compact-detail-20261031-1',
-    'mobile.css': 'compact-detail-20261031-1',
+    'app.js': 'assistant-20261031-1',
+    'mobile.css': 'assistant-20261031-1',
     'style.css': 'mobile-focus-20261031-1'
   };
   for (const [file, version] of Object.entries(versions)) {
@@ -60,7 +60,7 @@ test('catalogue search is always visible and compatible with advanced filters', 
 
 test('film detail animations are light, accessible and optional controls stay collapsed',async()=>{
   const [html,js,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
-  assert.ok(html.includes('mobile.css?v=compact-detail-20261031-1'));
+  assert.ok(html.includes('mobile.css?v=assistant-20261031-1'));
   assert.ok(js.includes('detail-disclosure detail-personal'));
   assert.ok(js.includes('detail-disclosure detail-similar'));
   assert.ok(js.includes('data-expand-detail-summary'));
@@ -68,4 +68,19 @@ test('film detail animations are light, accessible and optional controls stay co
   assert.match(css,/\.detail-view \.detail-disclosure > summary:focus-visible/);
   assert.match(css,/@media \(prefers-reduced-motion:reduce\)/);
   assert.ok(css.includes('#details:has(.detail-view) .dialog-backdrop-image {display:none}'));
+});
+
+test('mobile dock has one assistant entry and links to personal library and stats', async()=>{
+ const [html,app,css,workflow]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css'),read('.github/workflows/pages.yml').catch(()=>null)]);
+ assert.ok(html.includes('data-dock="assistant"'));
+ assert.ok(!html.includes('data-dock="account"'));
+ assert.ok(html.includes('id="account-slot"'), 'profile is still available in header');
+ assert.ok(html.includes('assistant.js?v=assistant-20261031-1'));
+ assert.ok(app.includes("function openAssistant(){"));
+ assert.ok(app.includes("function renderWatchlist(){"));
+ assert.ok(app.includes("data-library-view"));
+ assert.ok(app.includes("simple-stats"));
+ assert.ok(css.includes(".assistant-screen"));
+ assert.ok(css.includes(".library-switch"));
+ assert.ok(css.includes(".simple-stats-grid"));
 });
