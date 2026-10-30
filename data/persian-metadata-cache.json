@@ -1489,11 +1489,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1043614"
       }
+    },
+    "tt38268282": {
+      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
+      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt38268282/"
+      }
+    },
+    "tt0053125": {
+      "fa": "شمال از شمال غربی",
+      "summary": "مدیر یک شرکت تبلیغاتی در نیویورک، پس از آنکه جاسوسان خارجی او را با مأمور دولت اشتباه می‌گیرند، ناچار به فرار می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q223139"
+      }
+    },
+    "tt0387764": {
+      "fa": "نمایش پیپ",
+      "summary": "مارک و جز، دو هم‌خانه با شخصیت‌هایی کاملاً متفاوت، تلاش می‌کنند از پس کار، رابطه‌ها و زندگی روزمره بربیایند؛ اما انتخاب‌هایشان معمولاً اوضاع را بدتر می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0387764/"
+      }
+    },
+    "tt0093058": {
+      "fa": "غلاف تمامفلزی",
+      "summary": "یک تفنگدار آمریکایی از آموزش‌های خشن پادگان وارد نبردهای جنگ ویتنام می‌شود و می‌بیند این تجربه‌ها چه تأثیری بر خودش و هم‌رزمانش می‌گذارند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q243439"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 218
+    "characters": 267
   }
 }
