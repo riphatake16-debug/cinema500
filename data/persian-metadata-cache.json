@@ -1453,6 +1453,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q103474"
       }
+    },
+    "tt0804503": {
+      "fa": "مد من",
+      "summary": "در آغاز دههٔ ۱۹۶۰، کارکنان یک آژانس تبلیغاتی در نیویورک برای موفقیت رقابت می‌کنند. در مرکز ماجرا دان دریپر است؛ مدیر مرموز بخش خلاقیت که گذشته‌اش را پنهان می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q223977"
+      }
+    },
+    "tt0036775": {
+      "fa": "غرامت مضاعف",
+      "summary": "یک مأمور بیمه با زنی متأهل برای قتل و دریافت پول بیمه همدست می‌شود؛ اما نقشهٔ آن‌ها یک بازرس را به شک می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q478209"
+      }
+    },
+    "tt16026746": {
+      "fa": "مردان ایکس ۹۷",
+      "summary": "ادامهٔ ماجراهای انیمیشن مردان ایکس در دههٔ ۱۹۹۰؛ گروه از جهانی محافظت می‌کند که از جهش‌یافته‌ها می‌ترسد و هم‌زمان باید با تهدیدهایی تازه روبه‌رو شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109558622"
+      }
+    },
+    "tt0986264": {
+      "fa": "ستارههای روی زمین",
+      "summary": "همه فکر می‌کنند پسربچه‌ای هشت‌ساله تنبل و دردسرساز است. معلم تازهٔ هنر با صبر و توجه، علت واقعی مشکل او در درس‌خواندن را پیدا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1043614"
+      }
     }
   },
   "retryAfter": {},
