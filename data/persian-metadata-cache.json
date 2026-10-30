@@ -1669,11 +1669,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q24815"
       }
+    },
+    "tt0481256": {
+      "fa": "روحیه مبارزه",
+      "summary": "ایپو، نوجوانی خجالتی که دیگران آزارش می‌دهند، با کمک یک بوکسور به این ورزش علاقه‌مند می‌شود. تمرین و مسابقه به او کمک می‌کنند اعتمادبه‌نفس پیدا کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0481256/"
+      }
+    },
+    "tt0070735": {
+      "fa": "نیش",
+      "summary": "دو کلاهبردار برای اجرای نقشه‌ای بزرگ و حساب‌شده با یکدیگر همراه می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q62665"
+      }
+    },
+    "tt1628033": {
+      "fa": "تخت گاز",
+      "summary": "مجری‌های برنامه خودروهای مختلف را آزمایش می‌کنند، به سفر می‌روند و در چالش‌هایی شرکت می‌کنند که همیشه طبق برنامه پیش نمی‌روند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q33162"
+      }
+    },
+    "tt0066921": {
+      "fa": "پرتقال کوکی",
+      "summary": "در آینده‌ای نزدیک، رهبر خشن یک گروه تبهکار به زندان می‌افتد و برای شرکت در آزمایشی با هدف تغییر رفتارش داوطلب می‌شود؛ اما نتیجه آن چیزی نیست که انتظار دارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q181086"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 323
+    "characters": 338
   }
 }
