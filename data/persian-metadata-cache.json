@@ -1525,11 +1525,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q243439"
       }
+    },
+    "tt0281491": {
+      "fa": "بازی هنوز",
+      "summary": "جک و ویکتور، دو دوست بازنشسته در محله‌ای از گلاسگو، با دردسرهای سالمندی، همسایه‌ها و تغییرات دنیای امروز روبه‌رو می‌شوند و با شوخی و رفاقت، روزگار می‌گذرانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0281491/"
+      }
+    },
+    "tt13309742": {
+      "fa": "سامورایی چشم آبی",
+      "summary": "در ژاپن دورهٔ ادو، جنگجویی با چشمان آبی هویت خود را پنهان می‌کند و برای انتقام از کسانی که آن‌ها را عامل رنج‌هایش می‌داند، سفری خطرناک را آغاز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q122899426"
+      }
+    },
+    "tt31514146": {
+      "fa": "قسم میخورم (فیلم)",
+      "summary": "جان دیویدسن از نوجوانی با سندرم تورت زندگی می‌کند. این فیلم زندگی او و تلاشش برای شناساندن شرایطی را دنبال می‌کند که بسیاری از اطرافیانش درک نمی‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q135321335"
+      }
+    },
+    "tt0158417": {
+      "fa": "ماهابهارات",
+      "summary": "دو شاخه از خاندان کورو، کائوراواها و پانداواها، بر سر تاج‌وتخت هاستیناپور با هم اختلاف دارند. این رقابت سرانجام به جنگ کوروکشترا می‌رسد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0158417/"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 267
+    "characters": 287
   }
 }
