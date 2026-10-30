@@ -884,6 +884,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q23781155"
       }
+    },
+    "tt0214341": {
+      "fa": "دراگون بال زد",
+      "summary": "گوکو پس از فهمیدن منشأ فرازمینی خود، همراه دوستانش برای دفاع از زمین در برابر هجوم دشمنان فضایی آماده می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q477916"
+      }
+    },
+    "tt0119217": {
+      "fa": "ویل هانتینگ خوب",
+      "summary": "ویل هانتینگ، نظافتچی دانشگاه ام‌آی‌تی، استعداد فوق‌العاده‌ای در ریاضی دارد؛ اما برای کنارآمدن با گذشته و انتخاب مسیر زندگی‌اش به کمک یک روان‌شناس نیاز دارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q193835"
+      }
+    },
+    "tt0096548": {
+      "fa": "بلکادر پیش میرود",
+      "summary": "کاپیتان ادموند بلک‌ادر در جنگ جهانی اول هر نقشه‌ای به ذهنش می‌رسد امتحان می‌کند تا مجبور نشود از سنگر به خط حمله برود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2740751"
+      }
+    },
+    "tt2380307": {
+      "fa": "کوکو",
+      "summary": "میگل آرزو دارد موسیقی‌دان شود، اما خانواده‌اش موسیقی را ممنوع کرده‌اند. سفر ناخواسته‌اش به سرزمین مردگان، او را با رازهای گذشتهٔ خانواده آشنا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q5815826"
+      }
     }
   },
   "retryAfter": {},
