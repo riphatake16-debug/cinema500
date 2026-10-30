@@ -225,3 +225,169 @@ html:has(#details[open]),html:has(#filter-drawer[open]){overflow-y:hidden}
 }
 @media(prefers-reduced-motion:reduce){.filter-drawer[open]{animation:none}#grid>.card{transition:none}}
 @media(prefers-reduced-transparency:reduce){.mobile-dock{background:var(--ui-panel);backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+/* Restore the compact two-column movie / series catalogue on phones.
+   The single-column full-bleed poster layout above remains untouched for
+   desktop; only the #grid cards are adapted below the mobile breakpoint. */
+@media (max-width: 700px) {
+  #grid.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 12px;
+    max-width: none;
+    margin-inline: 0;
+    align-items: stretch;
+  }
+  #grid > .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    aspect-ratio: auto;
+    border-radius: 14px;
+    background: var(--card);
+    box-shadow: 0 8px 18px #00000021;
+    contain-intrinsic-block-size: auto 370px;
+  }
+  #grid > .card > .poster {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+  #grid > .card > .poster:after {
+    background: linear-gradient(180deg, #05081150, transparent 35%, transparent 70%, #06091170);
+  }
+  #grid .rank {
+    top: 7px;
+    right: 7px;
+    min-width: 0;
+    min-height: 0;
+    padding: 3px 6px;
+    border-radius: 7px;
+    font-size: 10px;
+  }
+  #grid .poster-actions {
+    top: 6px;
+    left: 6px;
+    gap: 4px;
+  }
+  #grid .poster-actions > .favorite-btn,
+  #grid .poster-actions > .poster-save {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 9px;
+  }
+  #grid .poster-actions .icon {
+    width: 15px;
+    height: 15px;
+  }
+  #grid .poster .watched-badge,
+  #grid .poster .watchlist-badge {
+    top: auto;
+    right: auto;
+    bottom: 7px;
+    left: 7px;
+    min-height: 22px;
+    padding: 2px 6px;
+    font-size: 8px;
+  }
+  #grid .personal-badge {
+    top: auto;
+    left: auto;
+    right: 7px;
+    bottom: 7px;
+    min-height: 22px;
+    padding: 2px 5px;
+    font-size: 8px;
+  }
+  #grid .card-content {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    padding: 10px 9px 9px;
+    pointer-events: auto;
+    background: transparent;
+  }
+  #grid .poster-facts {
+    margin-bottom: 6px;
+    gap: 5px;
+    flex-wrap: wrap;
+    color: var(--text);
+  }
+  #grid .poster-facts > span {
+    min-height: 0;
+    padding: 2px 5px;
+    border: 1px solid var(--line-strong);
+    border-radius: 5px;
+    background: var(--surface2);
+    font-size: 9px;
+  }
+  #grid .poster-score > span { font-size: 8px; }
+  #grid .poster-score > b {
+    font-size: 10px;
+    color: var(--text);
+  }
+  #grid .card-name {
+    font-size: 12px;
+    line-height: 1.4;
+    min-height: 0;
+    margin: 0 0 4px;
+    letter-spacing: 0;
+    color: var(--text);
+    font-weight: 700;
+  }
+  #grid .card-fa {
+    font-size: 9px;
+    min-height: 0;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 5px;
+  }
+  #grid .card-actions {
+    margin-top: auto;
+    padding-top: 6px;
+  }
+  #grid .card-actions > .seen-btn {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: 35px;
+    min-height: 35px;
+    padding: 6px 4px;
+    border: 1px solid var(--line-strong);
+    border-radius: 9px;
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 10px;
+    gap: 4px;
+    white-space: nowrap;
+  }
+  #grid .card-actions > .seen-btn .icon {
+    width: 13px;
+    height: 13px;
+  }
+  #grid .card-actions > .seen-btn.is-seen {
+    background: #18362de6;
+    border-color: #b3e4c570;
+    color: #d3f2e0;
+  }
+  #grid > .skeleton-card {
+    aspect-ratio: 2 / 3;
+    border-radius: 14px;
+  }
+}
+@media (max-width: 360px) {
+  #grid.grid { gap: 12px 9px; }
+  #grid .card-content { padding: 8px 6px; }
+  #grid .card-name { font-size: 11px; }
+  #grid .card-actions > .seen-btn {
+    min-width: 0;
+    padding-inline: 2px;
+    font-size: 9px;
+  }
+}
