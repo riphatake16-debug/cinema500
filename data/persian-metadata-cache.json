@@ -920,11 +920,40 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q5815826"
       }
+    },
+    "tt0121220": {
+      "fa": "دراگون بال زد",
+      "summary": "ماجراهای گوکو با تشکیل خانواده و آشکارشدن منشأ فضایی‌اش ادامه می‌یابد؛ او و متحدانش باید زمین را در برابر دشمنان تازه حفظ کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q477916"
+      }
+    },
+    "tt0114709": {
+      "fa": "داستان اسباببازی",
+      "summary": "وودی، اسباب‌بازی گاوچران یک پسربچه، با آمدن فضانوردی تازه حسادت می‌کند و می‌ترسد دیگر اسباب‌بازی محبوب او نباشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q171048"
+      }
+    },
+    "tt1345836": {
+      "fa": "شوالیه تاریکی برمیخیزد",
+      "summary": "هشت سال پس از آشوب جوکر، بتمن با کمک کت‌وومن از انزوا بیرون می‌آید تا گاتهام را از دست تروریستی بی‌رحم به نام بین نجات دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q189330"
+      }
     }
   },
-  "retryAfter": {},
+  "retryAfter": {
+    "tt1831164": "2026-10-30T15:09:07+00:00"
+  },
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 86
+    "characters": 102
   }
 }
