@@ -1768,6 +1768,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q11598"
       }
+    },
+    "tt7472896": {
+      "fa": "آقای میانهرو",
+      "summary": "ری شوسمیت تلاش می‌کند میان پدربودن، دوستی و روابط خانوادگی تعادل برقرار کند؛ کاری دشوارتر از معمول، چون شغل پنهانی او انجام مأموریت‌های خشونت‌آمیز برای تبهکاران است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48780195"
+      }
+    },
+    "tt0208092": {
+      "fa": "قاپزنی",
+      "summary": "برگزارکنندگان مسابقه‌های بوکس، شرط‌بندان خشن، یک گانگستر روس و چند سارق ناشی، بر سر یک الماس دزدیده‌شدهٔ گران‌بها به جان هم می‌افتند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q335160"
+      }
+    },
+    "tt1305826": {
+      "fa": "وقت ماجراجویی",
+      "summary": "فین، پسری نوجوان، و بهترین دوستش جیک، سگی با قدرت‌های جادویی، در سرزمینی عجیب به ماجراجویی می‌روند و با موجودات گوناگون روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q53093"
+      }
+    },
+    "tt1130884": {
+      "fa": "جزیره شاتر",
+      "summary": "در سال ۱۹۵۴، یک مأمور آمریکایی برای تحقیق دربارهٔ ناپدیدشدن یکی از بیماران، به بیمارستان روانی مجرمان در جزیره‌ای دورافتاده می‌رود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q210364"
+      }
     }
   },
   "retryAfter": {
