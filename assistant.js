@@ -7,7 +7,7 @@ const genreWords={
 'Crime':['جنایی','مافیا','پلیسی','کارآگاه','جرم','جنایت','criminal','crime'],
 'Mystery':['معمایی','معما','رازآلود','راز','کارآگاهی','mystery'],
 'Thriller':['هیجانی','هیجان','تعلیق','دلهره','پر تنش','thriller'],
-'Horror':['ترسناک','وحشت','ترس','جن','ارواح','horror'],
+'Horror':['ترسناک','وحشت','ترس','ارواح','horror'],
 'Sci-Fi':['علمی تخیلی','فضایی','فضا','آینده','ربات','سای فای','سایفای','sci-fi','science fiction'],
 'Action':['اکشن','مبارزه','جنگیدن','زد و خورد','action'],
 'Adventure':['ماجراجویی','ماجراجویانه','ماجرا','سفر','adventure'],
@@ -29,7 +29,7 @@ function parse(query){
  for(const [genre,words] of Object.entries(genreWords)){
   const matches=words.map(normalize).filter(w=>s.includes(w));
   if(!matches.length)continue;
-  const negative=matches.some(w=>{const p=s.indexOf(w);return /(?:بدون|نمی خوام|نمیخوام|نباشه|نه|غیر)\s*$/.test(s.slice(Math.max(0,p-17),p))});
+  const negative=matches.some(w=>{const p=s.indexOf(w);return /(?:بدون|نمی خوام|نمیخوام|نباشه|نه|غیر|no)\s*$/.test(s.slice(Math.max(0,p-17),p))||/^\s*(?:نباشه|نمی خوام|نمیخوام|دوست ندارم|نه)/.test(s.slice(p+w.length,p+w.length+17))});
   if(negative)exclude.add(genre);else genres.push(genre);
  }
  const kind=/(?:سریال|مینی سریال|series|tv show)/.test(s)?'tv':/(?:فیلم|movie)/.test(s)?'movie':null;
