@@ -1091,6 +1091,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q105702"
       }
+    },
+    "tt0121955": {
+      "fa": "ساوت پارک",
+      "summary": "چهار دانش‌آموز در ساوت پارکِ کلرادو، با ماجراهای عجیب شهر و رفتارهای بزرگ‌ترها درگیر می‌شوند و معمولاً خودشان هم دردسر درست می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16538"
+      }
+    },
+    "tt0169547": {
+      "fa": "زیبایی آمریکایی",
+      "summary": "پدری ساکن حومهٔ شهر، پس از شیفتگی به دوست صمیمی دخترش، با بحران میانسالی روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q25139"
+      }
+    },
+    "tt0318871": {
+      "fa": "برزرک (مجموعه تلویزیونی ۱۹۹۷)",
+      "summary": "گاتس، شمشیرزنی ماهر، به گروه مزدوران «دستهٔ شاهین» به رهبری گریفیث می‌پیوندد و همراه آن‌ها برای رسیدن به دربار می‌جنگد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18559016"
+      }
+    },
+    "tt33175825": {
+      "fa": "حمله به تایتان: آخرین حمله",
+      "summary": "نسخهٔ سینمایی بخش پایانی «حمله به تایتان»؛ دوستان ارن برای متوقف‌کردن فاجعه‌ای که جهان را تهدید می‌کند، باید در برابر او بایستند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt33175825/"
+      }
     }
   },
   "retryAfter": {
@@ -1098,6 +1134,6 @@
   },
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 136
+    "characters": 168
   }
 }
