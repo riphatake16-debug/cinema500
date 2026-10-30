@@ -848,11 +848,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q244878"
       }
+    },
+    "tt0072500": {
+      "fa": "فالتی تاورز",
+      "summary": "بی‌کفایتی، زودخشمی و غرورِ صاحب هتل، باسیل فاولتی، باعث می‌شود دردسر و حادثه همیشه در کمین باشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q212731"
+      }
+    },
+    "tt23849204": {
+      "fa": "شکست دوازدهم",
+      "summary": "مانوج، جوانی از خانواده‌ای محروم، پس از شکست تحصیلی تصمیم می‌گیرد دوباره شروع کند و برای ورود به خدمات پلیس هند با فقر و دشواری‌های آزمون رقابتی بجنگد؛ بر اساس زندگی مانوج کومار شارما.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q122921105"
+      }
+    },
+    "tt10530900": {
+      "fa": "گولاک",
+      "summary": "خانوادهٔ میشرا در محله‌ای از هند با دغدغه‌های معمولی زندگی، خرج خانه، آرزوها و اختلاف‌های کوچک کنار می‌آیند؛ روایت‌هایی صمیمی و طنزآمیز از رابطهٔ والدین و فرزندان.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt10530900/"
+      }
+    },
+    "tt4154796": {
+      "fa": "انتقامجویان: پایان بازی",
+      "summary": "پس از ویرانی‌های نبرد با تانوس، انتقام‌جویان با کمک متحدان باقی‌مانده دوباره گرد هم می‌آیند تا پیامدهای اقدامات او را تغییر دهند و تعادل جهان را بازگردانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23781155"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 80
+    "characters": 86
   }
 }
