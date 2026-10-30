@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "1f0e06021a866d6d0829f9255b8b9a9ff4bd12553f07debbb689e357eb1be106",
+  "version": "8c7a48ec1bb897f5609b9712f583bb590dfe439782a81468b448faa9065fbf0f",
   "status": "ok",
-  "retrievedAt": "2026-10-29T06:41:34+00:00",
-  "checkedAt": "2026-10-29T06:41:34+00:00",
+  "retrievedAt": "2026-10-30T01:23:22+00:00",
+  "checkedAt": "2026-10-30T01:23:22+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -280,9 +280,13 @@
         "Sci-Fi"
       ],
       "runtime": 124,
-      "fa": "",
+      "fa": "جنگ ستارگان: قسمت پنجم - امپراتوری ضربه می‌زند",
       "summary": "پس از شکست شورشیان در سیارهٔ یخی هاث، لوک آموزش جدای را نزد یودا آغاز می‌کند؛ در همین حال، دارث ویدر و بوبا فت دوستانش را تعقیب می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0080684/"
+      }
     },
     {
       "id": "tt0133093",
@@ -393,9 +397,13 @@
         "Romance"
       ],
       "runtime": 130,
-      "fa": "",
+      "fa": "چه زندگی شگفتانگیزی",
       "summary": "فرشته‌ای به کمک مردی ناامید می‌آید و به او نشان می‌دهد اگر هرگز به دنیا نمی‌آمد، زندگی اطرافیانش چگونه بود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q204191"
+      }
     },
     {
       "id": "tt0102926",
@@ -446,9 +454,13 @@
         "Drama"
       ],
       "runtime": 207,
-      "fa": "",
+      "fa": "هفت سامورایی",
       "summary": "روستاییانی که از حملهٔ راهزنان به ستوه آمده‌اند، هفت سامورایی را برای دفاع از روستایشان به کمک می‌گیرند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q189540"
+      }
     },
     {
       "id": "tt0120689",
@@ -482,9 +494,13 @@
         "Drama"
       ],
       "runtime": 130,
-      "fa": "",
+      "fa": "شهر خدا",
       "summary": "دو پسر در محله‌های فقیرنشین ریو بزرگ می‌شوند. یکی می‌خواهد عکاس شود و دیگری به یکی از چهره‌های قدرتمند دنیای تبهکاری تبدیل می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q220741"
+      }
     },
     {
       "id": "tt0118799",
@@ -519,9 +535,13 @@
         "Sci-Fi"
       ],
       "runtime": 137,
-      "fa": "",
+      "fa": "نابودگر ۲: روز داوری",
       "summary": "یک سایبورگ مأمور می‌شود از جان کانر نوجوان محافظت کند؛ اما دشمنشان ماشینی پیشرفته‌تر و خطرناک‌تر است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q170564"
+      }
     },
     {
       "id": "tt0088763",
@@ -537,9 +557,13 @@
         "Sci-Fi"
       ],
       "runtime": 116,
-      "fa": "",
+      "fa": "بازگشت به آینده",
       "summary": "مارتی مک‌فلای، دانش‌آموزی هفده‌ساله، با ماشین زمانِ دوست دانشمندش داک براون، به‌اشتباه سی سال به گذشته فرستاده می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q91540"
+      }
     },
     {
       "id": "tt0076759",
@@ -556,9 +580,13 @@
         "Sci-Fi"
       ],
       "runtime": 121,
-      "fa": "",
+      "fa": "جنگ ستارگان",
       "summary": "لوک اسکای‌واکر همراه با یک جدای، خلبانی جسور، یک ووکی و دو ربات، برای نجات شاهزاده لیا و مقابله با ایستگاه مرگبار امپراتوری راهی می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q17738"
+      }
     },
     {
       "id": "tt0245429",
@@ -630,9 +658,13 @@
         "Thriller"
       ],
       "runtime": 253,
-      "fa": "",
+      "fa": "بیل را بکش: تمام ماجرای خونین",
       "summary": "آدمکشی حرفه‌ای که همکاران سابقش او را به گمان مرگ رها کرده‌اند، برای انتقام از اعضای گروه و مردی که زمانی دوستش داشت راهی می‌شود؛ نسخهٔ یکپارچهٔ داستان «بیل را بکش».",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt6019206/"
+      }
     },
     {
       "id": "tt6751668",
@@ -669,9 +701,13 @@
         "War"
       ],
       "runtime": 88,
-      "fa": "",
+      "fa": "مزار کرمهای شبتاب",
       "summary": "پسری نوجوان و خواهر کوچکش در ژاپنِ دوران جنگ جهانی دوم، برای بقا می‌جنگند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q274520"
+      }
     },
     {
       "id": "tt0056058",
@@ -686,9 +722,13 @@
         "Mystery"
       ],
       "runtime": 133,
-      "fa": "",
+      "fa": "هاراکیری",
       "summary": "سامورایی بی‌اربابی به عمارت یک خاندان می‌رود تا هاراکیری کند. او با تعریف ماجرای مردی دیگر، گذشته‌ای را آشکار می‌کند که آبروی خاندان را به خطر می‌اندازد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1584406"
+      }
     },
     {
       "id": "tt0110357",
@@ -725,9 +765,13 @@
         "Thriller"
       ],
       "runtime": 109,
-      "fa": "",
+      "fa": "روانی",
       "summary": "منشی جوانی با پول یکی از مشتریان کارفرمایش فرار می‌کند و در متلی دورافتاده پناه می‌گیرد؛ متلی که مدیر جوانش زیر نفوذ مادرش است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q163038"
+      }
     },
     {
       "id": "tt0407887",
@@ -804,9 +848,13 @@
         "Drama"
       ],
       "runtime": 119,
-      "fa": "",
+      "fa": "تاریخ مجهول آمریکا",
       "summary": "یک نئونازی سابق تلاش می‌کند برادر کوچک‌ترش را از قدم‌گذاشتن در مسیر اشتباه گذشتهٔ خود بازدارد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q208572"
+      }
     },
     {
       "id": "tt9362722",
@@ -825,9 +873,13 @@
         "Sci-Fi"
       ],
       "runtime": 140,
-      "fa": "",
+      "fa": "مرد عنکبوتی: در میان دنیای عنکبوتی",
       "summary": "مایلز مورالس در سفر به جهان‌های موازی با گروهی از مردان عنکبوتی آشنا می‌شود. اختلاف بر سر مقابله با تهدیدی تازه، او را میان پیروی از دیگران و انتخاب راه خودش قرار می‌دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q76448600"
+      }
     },
     {
       "id": "tt0095765",
@@ -842,9 +894,13 @@
         "Romance"
       ],
       "runtime": 174,
-      "fa": "",
+      "fa": "سینما پارادیزو",
       "summary": "فیلم‌سازی کودکی‌اش را به یاد می‌آورد؛ زمانی که در سینمای روستایش شیفتهٔ فیلم شد و با آپاراتچی آن دوستی عمیقی پیدا کرد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q464032"
+      }
     },
     {
       "id": "tt0110413",
@@ -882,9 +938,13 @@
         "War"
       ],
       "runtime": 102,
-      "fa": "",
+      "fa": "کازابلانکا",
       "summary": "مردی آمریکایی در کازابلانکا با عشق قدیمی‌اش روبه‌رو می‌شود و باید تصمیم بگیرد آیا به او و همسر فراری‌اش برای خروج از کشور کمک کند یا نه.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q132689"
+      }
     },
     {
       "id": "tt1675434",
@@ -921,9 +981,13 @@
         "Thriller"
       ],
       "runtime": 106,
-      "fa": "",
+      "fa": "مظنونین همیشگی",
       "summary": "تنها بازماندهٔ تیراندازی در یک کشتی، ماجرایی را برای پلیس تعریف می‌کند که از آشنایی پنج مجرم در صف شناسایی آغاز شده است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q132351"
+      }
     },
     {
       "id": "tt1853728",
@@ -938,9 +1002,13 @@
         "Western"
       ],
       "runtime": 165,
-      "fa": "",
+      "fa": "جانگو آزاد شده",
       "summary": "برده‌ای آزادشده با کمک یک جایزه‌بگیر آلمانی، برای نجات همسرش از دست مالک بی‌رحم یک مزرعه در می‌سی‌سی‌پی راهی می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q571032"
+      }
     },
     {
       "id": "tt0078748",
@@ -955,9 +1023,13 @@
         "Sci-Fi"
       ],
       "runtime": 117,
-      "fa": "",
+      "fa": "بیگانه (فیلم ۱۹۷۹)",
       "summary": "خدمهٔ یک سفینهٔ تجاری به پیامی ناشناس پاسخ می‌دهند. پس از حملهٔ موجودی مرموز به یکی از اعضا، آن‌ها متوجه خطری می‌شوند که وارد سفینه شده است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q103569"
+      }
     },
     {
       "id": "tt0047396",
@@ -973,9 +1045,13 @@
         "Thriller"
       ],
       "runtime": 112,
-      "fa": "",
+      "fa": "پنجره پشتی",
       "summary": "عکاسی که به‌دلیل آسیب‌دیدگی نمی‌تواند از خانه بیرون برود، همسایه‌ها را از پنجره زیر نظر می‌گیرد و به یکی از آن‌ها ظنین می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q34414"
+      }
     },
     {
       "id": "tt0027977",
@@ -991,9 +1067,13 @@
         "Romance"
       ],
       "runtime": 87,
-      "fa": "",
+      "fa": "عصر جدید",
       "summary": "ولگرد و دختری بی‌خانمان تلاش می‌کنند در دنیای کارخانه‌ها و ماشین‌ها، کار و جایی برای زندگی پیدا کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q45602"
+      }
     },
     {
       "id": "tt0064116",
@@ -1008,9 +1088,13 @@
         "Western"
       ],
       "runtime": 145,
-      "fa": "",
+      "fa": "روزی روزگاری در غرب",
       "summary": "غریبه‌ای اسرارآمیز با سازدهنی، با تبهکاری بدنام همراه می‌شود تا از بیوه‌ای در برابر آدمکش بی‌رحم شرکت راه‌آهن محافظت کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q168154"
+      }
     },
     {
       "id": "tt0910970",
@@ -1027,9 +1111,13 @@
         "Sci-Fi"
       ],
       "runtime": 98,
-      "fa": "",
+      "fa": "وال-ئی",
       "summary": "در آینده‌ای دور، ربات کوچکی که زباله جمع می‌کند، ناخواسته وارد سفری فضایی می‌شود که سرنوشت بشر را تغییر می‌دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q104905"
+      }
     },
     {
       "id": "tt0021749",
@@ -1045,9 +1133,13 @@
         "Romance"
       ],
       "runtime": 87,
-      "fa": "",
+      "fa": "روشناییهای شهر",
       "summary": "ولگردی مهربان که عاشق دختری گل‌فروش و نابینا شده، با کمک مردی ثروتمند و دمدمی‌مزاج می‌کوشد هزینهٔ درمان او را فراهم کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q238211"
+      }
     },
     {
       "id": "tt0078788",
@@ -1063,9 +1155,13 @@
         "War"
       ],
       "runtime": 147,
-      "fa": "",
+      "fa": "آخرالزمان اکنون",
       "summary": "در میانهٔ جنگ ویتنام، یک افسر آمریکایی مأمور می‌شود فرمانده‌ای سرکش را که از کنترل ارتش خارج شده، پیدا کند و از میان بردارد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0078788/"
+      }
     },
     {
       "id": "tt4154756",
@@ -1081,9 +1177,13 @@
         "Sci-Fi"
       ],
       "runtime": 149,
-      "fa": "",
+      "fa": "انتقامجویان: جنگ ابدیت",
       "summary": "انتقام‌جویان و متحدانشان باید همه‌چیز را به خطر بیندازند تا پیش از نابودی جهان، جلوی تانوس قدرتمند را بگیرند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23780914"
+      }
     },
     {
       "id": "tt0209144",
@@ -1098,9 +1198,13 @@
         "Thriller"
       ],
       "runtime": 113,
-      "fa": "",
+      "fa": "ممنتو",
       "summary": "مردی که حافظهٔ کوتاه‌مدتش را از دست داده، تلاش می‌کند قاتل همسرش را پیدا کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190525"
+      }
     },
     {
       "id": "tt15239678",
@@ -1117,9 +1221,13 @@
         "Sci-Fi"
       ],
       "runtime": 166,
-      "fa": "",
+      "fa": "تلماسه: بخش دو",
       "summary": "پل آتریدیز برای مقابله با کسانی که خانواده‌اش را نابود کرده‌اند، به فریمن‌های آراکیس می‌پیوندد؛ در حالی که عشق، قدرت و آینده‌ای هولناک، تصمیم‌هایش را پیچیده می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109228991"
+      }
     },
     {
       "id": "tt0082971",
@@ -1133,9 +1241,13 @@
         "Adventure"
       ],
       "runtime": 115,
-      "fa": "",
+      "fa": "مهاجمان صندوق گمشده",
       "summary": "در سال ۱۹۳۶، دولت آمریکا ایندیانا جونز، باستان‌شناس ماجراجو، را مأمور یافتن صندوق عهد می‌کند تا نازی‌ها به قدرت آن دست پیدا نکنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q174284"
+      }
     },
     {
       "id": "tt4633694",
@@ -1154,9 +1266,13 @@
         "Sci-Fi"
       ],
       "runtime": 117,
-      "fa": "",
+      "fa": "مرد عنکبوتی: به درون دنیای عنکبوتی",
       "summary": "مایلز مورالس نوجوان به مرد عنکبوتی دنیای خود تبدیل می‌شود و همراه پنج همتای دیگر از جهان‌های موازی، با تهدیدی علیه همهٔ واقعیت‌ها روبه‌رو می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q29588607"
+      }
     },
     {
       "id": "tt0405094",
@@ -1172,9 +1288,13 @@
         "Thriller"
       ],
       "runtime": 137,
-      "fa": "",
+      "fa": "زندگی دیگران",
       "summary": "در برلین شرقیِ سال ۱۹۸۴، مأمور پلیس مخفی که زندگی یک نویسنده و معشوقه‌اش را شنود می‌کند، رفته‌رفته درگیر دنیای آن‌ها می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q153882"
+      }
     },
     {
       "id": "tt33764258",
@@ -1190,9 +1310,13 @@
         "Fantasy"
       ],
       "runtime": 172,
-      "fa": "",
+      "fa": "ادیسه",
       "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
+      }
     },
     {
       "id": "tt0043014",
@@ -1504,26 +1628,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0112573",
-      "type": "movie",
-      "rank": 82,
-      "title": "Braveheart",
-      "year": 1995,
-      "rating": 8.3,
-      "poster": "./posters/tt0112573.jpg",
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "runtime": 178,
-      "fa": "",
-      "summary": "پس از کشته‌شدن همسر پنهانی‌اش به دست انگلیسی‌ها، ویلیام والاس علیه ادوارد اول، پادشاه انگلستان، قیام می‌کند.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0082096",
       "type": "movie",
-      "rank": 83,
+      "rank": 82,
       "title": "Das Boot",
       "year": 1981,
       "rating": 8.3,
@@ -1535,6 +1642,23 @@
       "runtime": 149,
       "fa": "",
       "summary": "روایتی از زندگی تنگ و خفقان‌آور در یک زیردریایی آلمانی طی جنگ جهانی دوم؛ میان ملال، آلودگی و وحشتی بی‌پایان.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0112573",
+      "type": "movie",
+      "rank": 83,
+      "title": "Braveheart",
+      "year": 1995,
+      "rating": 8.3,
+      "poster": "./posters/tt0112573.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 178,
+      "fa": "",
+      "summary": "پس از کشته‌شدن همسر پنهانی‌اش به دست انگلیسی‌ها، ویلیام والاس علیه ادوارد اول، پادشاه انگلستان، قیام می‌کند.",
       "summaryLanguage": "fa"
     },
     {
@@ -3929,26 +4053,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0077416",
-      "type": "movie",
-      "rank": 217,
-      "title": "The Deer Hunter",
-      "year": 1978,
-      "rating": 8.1,
-      "poster": "./posters/tt0077416.jpg",
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "runtime": 183,
-      "fa": "",
-      "summary": "روایتی از تأثیر عمیق جنگ ویتنام بر زندگی دوستانی در شهری صنعتی و کوچک در پنسیلوانیا.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0046268",
       "type": "movie",
-      "rank": 218,
+      "rank": 217,
       "title": "The Wages of Fear",
       "year": 1953,
       "rating": 8.1,
@@ -3961,6 +4068,23 @@
       "runtime": 156,
       "fa": "",
       "summary": "در روستایی فرسوده در آمریکای جنوبی، چهار مرد برای حمل محموله‌ای فوری از نیتروگلیسیرین استخدام می‌شوند؛ بدون تجهیزات لازم برای سفری امن.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0077416",
+      "type": "movie",
+      "rank": 218,
+      "title": "The Deer Hunter",
+      "year": 1978,
+      "rating": 8.1,
+      "poster": "./posters/tt0077416.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 183,
+      "fa": "",
+      "summary": "روایتی از تأثیر عمیق جنگ ویتنام بر زندگی دوستانی در شهری صنعتی و کوچک در پنسیلوانیا.",
       "summaryLanguage": "fa"
     },
     {
@@ -4037,26 +4161,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0113247",
-      "type": "movie",
-      "rank": 223,
-      "title": "La haine",
-      "year": 1995,
-      "rating": 8.1,
-      "poster": "./posters/tt0113247.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 98,
-      "fa": "",
-      "summary": "بیست‌وچهار ساعت از زندگی سه جوان در حومهٔ فرانسه، در روز پس از شورشی خشونت‌آمیز روایت می‌شود.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0059742",
       "type": "movie",
-      "rank": 224,
+      "rank": 223,
       "title": "The Sound of Music",
       "year": 1965,
       "rating": 8.1,
@@ -4074,9 +4181,43 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt1895587",
+      "id": "tt0113247",
+      "type": "movie",
+      "rank": 224,
+      "title": "La haine",
+      "year": 1995,
+      "rating": 8.1,
+      "poster": "./posters/tt0113247.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 98,
+      "fa": "",
+      "summary": "بیست‌وچهار ساعت از زندگی سه جوان در حومهٔ فرانسه، در روز پس از شورشی خشونت‌آمیز روایت می‌شود.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt15097216",
       "type": "movie",
       "rank": 225,
+      "title": "Jai Bhim",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt15097216.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 164,
+      "fa": "",
+      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt1895587",
+      "type": "movie",
+      "rank": 226,
       "title": "Spotlight",
       "year": 2015,
       "rating": 8.1,
@@ -4089,23 +4230,6 @@
       "runtime": 129,
       "fa": "",
       "summary": "داستان واقعی روزنامه‌نگاران بوستون گلوب که رسوایی گستردهٔ کودک‌آزاری و پنهان‌کاری در کلیسای کاتولیک محلی را افشا می‌کنند.",
-      "summaryLanguage": "fa"
-    },
-    {
-      "id": "tt15097216",
-      "type": "movie",
-      "rank": 226,
-      "title": "Jai Bhim",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt15097216.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 164,
-      "fa": "",
-      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
       "summaryLanguage": "fa"
     },
     {
@@ -4520,20 +4644,27 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt10431500",
+      "id": "tt0077711",
       "type": "movie",
       "rank": 250,
-      "title": "Miracle in Cell No. 7",
-      "year": 2019,
-      "rating": 8.2,
-      "poster": "./posters/tt10431500.jpg",
+      "title": "Autumn Sonata",
+      "year": 1978,
+      "rating": 8.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTg1MzJiNTYtZjcyNS00NDE5LWE0N2ItMGIxM2Y2ZDMyYjJjXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Drama"
+        "Drama",
+        "Music"
       ],
-      "runtime": 132,
-      "fa": "",
-      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
-      "summaryLanguage": "fa"
+      "runtime": 99,
+      "fa": "سونات پاییزی",
+      "summary": "سونات پاییزی (به سوئدی: Höstsonaten) فیلمی سوئدی در ژانر درام به کارگردانی اینگمار برگمان، محصول سال ۱۹۷۸ و با بازی اینگرید برگمان است. فیلم داستان زن پیانیست مشهوری است که پس از سال‌ها به دیدار دخترش که با او رابطه نداشته می‌رود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q322572",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B3%D9%88%D9%86%D8%A7%D8%AA+%D9%BE%D8%A7%DB%8C%DB%8C%D8%B2%DB%8C&oldid=40453934"
+      }
     },
     {
       "id": "tt0903747",
@@ -4713,9 +4844,13 @@
         "Family"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "سیاره آبی ۲",
       "summary": "دیوید اتنبرو بار دیگر به اقیانوس‌های جهان می‌رود تا موجودات کمیاب اعماق و چالش‌های پیش روی زیست‌بوم‌های دریایی را نشان دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt6769208/"
+      }
     },
     {
       "id": "tt2395695",
@@ -4730,9 +4865,12 @@
         "Family"
       ],
       "runtime": 45,
-      "fa": "",
+      "fa": "کیهان: ادیسه‌ای فضازمانی",
       "summary": "سفری در تاریخ کشف قوانین طبیعت و شناخت جایگاه انسان در فضا و زمان.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "aliases": [
+        "کیهان: ادیسهای فضازمانی"
+      ]
     },
     {
       "id": "tt0081846",
@@ -4746,9 +4884,13 @@
         "Documentary"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "گیتی: یک سفر شخصی",
       "summary": "کارل سیگن، اخترشناس، مخاطب را در سفری جذاب با پدیده‌های کیهان و نظریه‌های مربوط به جهان آشنا می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q866368"
+      }
     },
     {
       "id": "tt9253866",
@@ -4763,9 +4905,13 @@
         "Family"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "سیاره ما",
       "summary": "مستندی دربارهٔ تنوع زیستگاه‌های زمین؛ از طبیعت دورافتادهٔ شمالگان و اعماق اقیانوس تا چشم‌اندازهای آفریقا و جنگل‌های آمریکای جنوبی.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q60747233"
+      }
     },
     {
       "id": "tt0944947",
@@ -4803,9 +4949,13 @@
         "Family"
       ],
       "runtime": 7,
-      "fa": "",
+      "fa": "آبی",
       "summary": "بلویی، توله‌سگی بازیگوش، همراه خواهر کوچکش بینگو و پدر و مادرشان، اتفاق‌های معمولی خانه و محله را به بازی‌های خیال‌انگیز و ماجراهایی دربارهٔ دوستی و خانواده تبدیل می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt7678620/"
+      }
     },
     {
       "id": "tt0071075",
@@ -4821,9 +4971,13 @@
         "War"
       ],
       "runtime": 52,
-      "fa": "",
+      "fa": "جهان در جنگ",
       "summary": "مستندی ۲۶قسمتی با روایت لارنس اولیویه، دربارهٔ مرگبارترین درگیری تاریخ، جنگ جهانی دوم.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0071075/"
+      }
     },
     {
       "id": "tt2560140",
@@ -4842,9 +4996,13 @@
         "Horror"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "حمله به تایتان",
       "summary": "پس از ویران‌شدن زادگاه ارن یگر و مرگ مادرش، او تصمیم می‌گیرد با تایتان‌هایی بجنگد که بقای انسان‌ها را تهدید می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2560140/"
+      }
     },
     {
       "id": "tt1355642",
@@ -4864,9 +5022,13 @@
         "Sci-Fi"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "کیمیاگر تمامفلزی: برادری",
       "summary": "دو برادر برای زنده‌کردن مادرشان دست به کاری ممنوع می‌زنند و بخشی از بدنشان را از دست می‌دهند. آن‌ها برای جبران این اتفاق، به دنبال سنگ فیلسوف می‌روند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q437808"
+      }
     },
     {
       "id": "tt1533395",
@@ -4880,9 +5042,13 @@
         "Documentary"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "زندگی",
       "summary": "دیوید اتنبرو و گروه مستندساز بی‌بی‌سی در ده قسمت، حیات وحش سراسر زمین و راه‌های گوناگون جانداران برای رویارویی با دشواری‌های بقا را بررسی می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1710184"
+      }
     },
     {
       "id": "tt8420184",
@@ -4899,9 +5065,13 @@
         "Sport"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "آخرین رقص",
       "summary": "مستندی دربارهٔ مایکل جردن و تیم شیکاگو بولز در دههٔ ۱۹۹۰ که با تمرکز بر آخرین فصل قهرمانی آن گروه، مسیر شکل‌گیری یکی از مشهورترین تیم‌های تاریخ بسکتبال را مرور می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q85807688"
+      }
     },
     {
       "id": "tt0052520",
@@ -4920,9 +5090,13 @@
         "Thriller"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "منطقهی نیمهروشن",
       "summary": "آدم‌های معمولی در موقعیت‌هایی شگفت‌انگیز و غیرعادی قرار می‌گیرند و هرکدام به شیوه‌ای خاص برای حل آن‌ها تلاش می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q742103"
+      }
     },
     {
       "id": "tt1877514",
@@ -4938,9 +5112,13 @@
         "War"
       ],
       "runtime": 100,
-      "fa": "",
+      "fa": "جنگ ویتنام",
       "summary": "مروری جامع بر تاریخ حضور آمریکا در جنگ ویتنام؛ درگیری‌ای در جنوب‌شرقی آسیا که اختلافات عمیقی بر جای گذاشت.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1877514/"
+      }
     },
     {
       "id": "tt2861424",
@@ -4998,9 +5176,13 @@
         "Sci-Fi"
       ],
       "runtime": 22,
-      "fa": "",
+      "fa": "بتمن: مجموعه پویانمایی",
       "summary": "شوالیهٔ تاریکی با کمک گاه‌به‌گاه رابین و بت‌گرل، با جنایت در گاتهام مبارزه می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q673517"
+      }
     },
     {
       "id": "tt3032476",
@@ -5056,9 +5238,13 @@
         "Sci-Fi"
       ],
       "runtime": 40,
-      "fa": "",
+      "fa": "آرکین",
       "summary": "در میان شکاف عمیق شهر مرفه پیلتوور و منطقهٔ محروم زائون، سرنوشت دو خواهر با فناوری جادویی، مبارزه برای قدرت و باورهای متضاد گره می‌خورد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q85518571"
+      }
     },
     {
       "id": "tt0296310",
@@ -5073,9 +5259,13 @@
         "Family"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "سیاره آبی",
       "summary": "مجموعه‌ای مستند که پس از پنج سال تولید، تنوع شگفت‌انگیز زندگی در اقیانوس‌های جهان را به تصویر می‌کشد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0296310/"
+      }
     },
     {
       "id": "tt10541088",
@@ -5091,9 +5281,13 @@
         "Reality-TV"
       ],
       "runtime": 45,
-      "fa": "",
+      "fa": "مزرعه کلارکسون",
       "summary": "جرمی کلارکسون تلاش می‌کند مزرعه‌ای در روستاهای انگلستان را اداره کند و با کمک افراد باتجربه، با دشواری‌های واقعی کشاورزی، آب‌وهوا، دامداری و تصمیم‌های روزمره روبه‌رو می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107233698"
+      }
     },
     {
       "id": "tt2098220",
@@ -5111,9 +5305,13 @@
         "Fantasy"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "هانتر در هانتر",
       "summary": "گون فریکس آرزو دارد شکارچی شود؛ او با کمک دوستان و توانایی‌هایش، در پی پدری می‌رود که در کودکی ترکش کرده است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2098220/"
+      }
     },
     {
       "id": "tt12392504",
@@ -5130,9 +5328,13 @@
         "Thriller"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "کلاهبرداری ۱۹۹۲: داستان هارشاد مهتا",
       "summary": "صعود و سقوط هرشاد مهتا، کارگزار جاه‌طلب بورس هند، در مسیری از موفقیت‌های چشمگیر تا آشکارشدن تقلب‌های مالی و پیامدهای آن برای بازار روایت می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q100709273"
+      }
     },
     {
       "id": "tt2092588",
@@ -5147,9 +5349,13 @@
         "Family"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "سیاره یخزده",
       "summary": "مستندی دربارهٔ حیات وحش و محیط طبیعی شمالگان و جنوبگان.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q559669"
+      }
     },
     {
       "id": "tt0081912",
@@ -5163,9 +5369,13 @@
         "Comedy"
       ],
       "runtime": 95,
-      "fa": "",
+      "fa": "فقط احمق‌ها و اسب‌ها",
       "summary": "دو برادر در محلهٔ پکام لندن، با معامله‌های مشکوک و نقشه‌های جورواجور به دنبال فرصتی هستند که آن‌ها را میلیونر کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0081912/"
+      }
     },
     {
       "id": "tt1806234",
@@ -5179,9 +5389,13 @@
         "Documentary"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "سیاره انسان",
       "summary": "این مستند سازگاری انسان با محیط‌های طبیعی گوناگون و تأثیری را که بر آن‌ها می‌گذارد، بررسی می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1806234/"
+      }
     },
     {
       "id": "tt0111893",
@@ -5196,9 +5410,13 @@
         "Music"
       ],
       "runtime": 67,
-      "fa": "",
+      "fa": "گلچین بیتلز",
       "summary": "مستندی خودزندگی‌نامه‌ای دربارهٔ گروه بیتلز و مسیر شکل‌گیری و فعالیت آن.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0111893/"
+      }
     },
     {
       "id": "tt0098769",
@@ -5214,9 +5432,13 @@
         "War"
       ],
       "runtime": 90,
-      "fa": "",
+      "fa": "جنگ داخلی",
       "summary": "مروری جامع بر جنگ داخلی آمریکا و رویدادهای آن.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q672443"
+      }
     },
     {
       "id": "tt33043892",
@@ -5233,9 +5455,13 @@
         "Thriller"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "دکستر: رستاخیز",
       "summary": "دکستر مورگان پس از بیدارشدن از کما، برای یافتن پسرش هریسون و ترمیم رابطه‌شان به نیویورک می‌رود؛ اما گذشتهٔ تاریکش خیلی زود به سراغ او می‌آید.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q127919404"
+      }
     },
     {
       "id": "tt13675832",
@@ -5249,30 +5475,18 @@
         "Comedy"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "مثل اینکه",
       "summary": "ییلماز، ایلکان و دوستانشان با اتفاق‌های کوچک و عجیب زندگی روزمره درگیر می‌شوند؛ سوءتفاهم‌ها و بحث‌های پایان‌ناپذیری که هر بار مسئله‌ای ساده را به بحرانی خنده‌دار تبدیل می‌کند.",
-      "summaryLanguage": "fa"
-    },
-    {
-      "id": "tt31938062",
-      "type": "tv",
-      "rank": 39,
-      "title": "The Pitt",
-      "year": 2025,
-      "rating": 8.9,
-      "poster": "./posters/tt31938062.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 50,
-      "fa": "",
-      "summary": "پزشکان و پرستاران بخش اورژانس بیمارستانی در پیتسبرگ، میان رسیدگی به بیماران بدحال، فشار کاری و بحران‌های شخصی، برای تصمیم‌گیری‌های دشوار و ادامهٔ خدمت تلاش می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt13675832/"
+      }
     },
     {
       "id": "tt1865718",
       "type": "tv",
-      "rank": 40,
+      "rank": 39,
       "title": "Gravity Falls",
       "year": 2012,
       "rating": 8.9,
@@ -5285,9 +5499,33 @@
         "Fantasy"
       ],
       "runtime": 23,
-      "fa": "",
+      "fa": "آبشار جاذبه",
       "summary": "دوقلوهایی به نام دیپر و میبل پاینز، تابستان را در جاذبهٔ گردشگری عموی بزرگشان در شهر مرموز گرویتی فالزِ اورگن می‌گذرانند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1865718/"
+      }
+    },
+    {
+      "id": "tt31938062",
+      "type": "tv",
+      "rank": 40,
+      "title": "The Pitt",
+      "year": 2025,
+      "rating": 8.9,
+      "poster": "./posters/tt31938062.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 50,
+      "fa": "پیت",
+      "summary": "پزشکان و پرستاران بخش اورژانس بیمارستانی در پیتسبرگ، میان رسیدگی به بیماران بدحال، فشار کاری و بحران‌های شخصی، برای تصمیم‌گیری‌های دشوار و ادامهٔ خدمت تلاش می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt31938062/"
+      }
     },
     {
       "id": "tt0303461",
@@ -5302,9 +5540,13 @@
         "Sci-Fi"
       ],
       "runtime": 45,
-      "fa": "",
+      "fa": "کرم شب تاب",
       "summary": "پانصد سال در آینده، خدمهٔ یک سفینهٔ کوچک برای بقا در بخش‌های ناشناختهٔ کهکشان سفر می‌کنند و از گروه‌های متخاصم و مأموران حکومت می‌گریزند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0303461/"
+      }
     },
     {
       "id": "tt0877057",
@@ -5323,9 +5565,13 @@
         "Thriller"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "یادداشت مرگ",
       "summary": "دانش‌آموزی باهوش دفترچه‌ای پیدا می‌کند که با نوشتن نام هرکس در آن می‌توان او را کشت؛ او مخفیانه تصمیم به پاک‌کردن جهان از مجرمان می‌گیرد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0877057/"
+      }
     },
     {
       "id": "tt4934214",
@@ -5340,9 +5586,13 @@
         "Game-Show"
       ],
       "runtime": 45,
-      "fa": "",
+      "fa": "مدیر",
       "summary": "در هر فصل، پنج کمدین باید مأموریت‌هایی عجیب و خلاقانه را انجام دهند. الکس هورن اجرای چالش‌ها را زیر نظر دارد و گرگ دیویس دربارهٔ نتیجه و امتیازها قضاوت می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4934214/"
+      }
     },
     {
       "id": "tt22248376",
@@ -5360,9 +5610,13 @@
         "Fantasy"
       ],
       "runtime": 25,
-      "fa": "",
+      "fa": "فریرن: فراتر از پایان سفر",
       "summary": "فریرن، جادوگری الف با عمری بسیار طولانی، پس از پایان ماجراجویی بزرگ گروهش سفر تازه‌ای را آغاز می‌کند تا آدم‌ها، خاطرات و ارزش زمانی را که با همراهانش گذرانده بهتر بشناسد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt22248376/"
+      }
     },
     {
       "id": "tt2297757",
@@ -5377,9 +5631,13 @@
         "Comedy"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "ناتان برای تو",
       "summary": "نیتن فیلدر با تحصیلات و تجربه‌هایش به کسب‌وکارهای کوچک کمک می‌کند؛ اما پیشنهادهای نامتعارفش، صاحبان آن‌ها را وارد موقعیت‌هایی دور از انتظار می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2297757/"
+      }
     },
     {
       "id": "tt9735318",
@@ -5396,9 +5654,13 @@
         "Music"
       ],
       "runtime": 150,
-      "fa": "",
+      "fa": "بیتلز: بازگشت",
       "summary": "تصاویر آرشیوی جلسات تمرین و ضبط بیتلز در ژانویهٔ ۱۹۶۹، روند ساخت ترانه‌ها، روابط اعضای گروه و آماده‌شدن آن‌ها برای اجرای زنده را از نزدیک نشان می‌دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q88532913"
+      }
     },
     {
       "id": "tt0092337",
@@ -5412,9 +5674,13 @@
         "Drama"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "ده فرمان",
       "summary": "ده فیلم تلویزیونی درام که هرکدام با الهام از یکی از ده فرمان ساخته شده‌اند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q59783"
+      }
     },
     {
       "id": "tt0098904",
@@ -5449,9 +5715,13 @@
         "Sci-Fi"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "کابوی بیباپ",
       "summary": "ماجراجویی‌ها و تلخی‌های زندگی یک جایزه‌بگیر خونسرد و همراهانش در آینده روایت می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101244908"
+      }
     },
     {
       "id": "tt2356777",
@@ -5486,9 +5756,13 @@
         "War"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "آخرالزمان، جنگ جهانی دوم",
       "summary": "مستندی فرانسوی در شش قسمت دربارهٔ جنگ جهانی دوم که با تصاویر واقعی ثبت‌شده در دوران جنگ ساخته شده است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q610304"
+      }
     },
     {
       "id": "tt2802850",
@@ -5504,9 +5778,13 @@
         "Thriller"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "فارگو",
       "summary": "داستان‌هایی از فریب، دسیسه و قتل در مینه‌سوتای سردسیر روایت می‌شود که به شکلی مرموز به شهر فارگو در داکوتای شمالی پیوند می‌خورند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q15931555"
+      }
     },
     {
       "id": "tt7920978",
@@ -5523,9 +5801,13 @@
         "Thriller"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "شخصیت",
       "summary": "مردی پس از تشخیص ابتلا به آلزایمر، تصمیم می‌گیرد مجرمان را مجازات کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q52152174"
+      }
     },
     {
       "id": "tt5622316",
@@ -5565,9 +5847,13 @@
         "Fantasy"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "وان پیس",
       "summary": "مانکی دی. لوفی و گروه دزدان دریایی‌اش برای یافتن بزرگ‌ترین گنج به‌جامانده از گلد راجر افسانه‌ای، معروف به «وان پیس»، ماجراجویی می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q710324"
+      }
     },
     {
       "id": "tt2571774",
@@ -5582,9 +5868,13 @@
         "Family"
       ],
       "runtime": 50,
-      "fa": "",
+      "fa": "آفریقا (مجموعه تلویزیونی انگلیسی)",
       "summary": "دیوید اتنبرو مخاطب را به سفری در آفریقا می‌برد؛ از بیابان و ساوانا تا جنگل، برای دیدار با حیات وحش شگفت‌انگیز این قاره.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q4689532"
+      }
     },
     {
       "id": "tt0200276",
@@ -5598,9 +5888,13 @@
         "Drama"
       ],
       "runtime": 42,
-      "fa": "",
+      "fa": "بال غربی",
       "summary": "نگاهی به زندگی و کار کارکنان بال غربی کاخ سفید.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3577037"
+      }
     },
     {
       "id": "tt26471411",
@@ -5616,9 +5910,13 @@
         "Romance"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "وقتی زندگی به تو نارنگی میدهد",
       "summary": "در جزیرهٔ ججوی کره، دختر و پسری با شخصیت‌های متفاوت کنار هم بزرگ می‌شوند؛ داستان عشق و پایداری آن‌ها در گذر سال‌ها، با دشواری‌های زندگی و امید به آینده همراه است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q117353211"
+      }
     },
     {
       "id": "tt14986406",
@@ -5635,9 +5933,13 @@
         "Fantasy"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "بلیچ: جنگ خونین هزار ساله",
       "summary": "با ناپدیدشدن مرموز ساکنان و نزدیک‌شدن تهدیدی تازه به انجمن ارواح، ایچیگو و همراهانش وارد نبردی گسترده می‌شوند که گذشته و آیندهٔ دنیای آن‌ها را به چالش می‌کشد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112631839"
+      }
     },
     {
       "id": "tt0108778",
@@ -5675,9 +5977,13 @@
         "History"
       ],
       "runtime": 75,
-      "fa": "",
+      "fa": "وقتی آنها ما را میبینند",
       "summary": "پنج نوجوان اهل هارلم با اتهام نادرست به حمله‌ای وحشیانه در سنترال پارک، در کابوسی گرفتار می‌شوند؛ بر اساس داستانی واقعی.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q55606843"
+      }
     },
     {
       "id": "tt0472954",
@@ -5691,9 +5997,13 @@
         "Comedy"
       ],
       "runtime": 22,
-      "fa": "",
+      "fa": "فیلادلفیا همیشه آفتابی است",
       "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23670"
+      }
     },
     {
       "id": "tt10233448",
@@ -5711,9 +6021,13 @@
         "History"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "حماسه وینلند",
       "summary": "تورفین همراه قاتل پدرش سفر می‌کند تا روزی در دوئلی به‌عنوان جنگجویی شرافتمند از او انتقام بگیرد و یاد پدرش را گرامی بدارد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt10233448/"
+      }
     },
     {
       "id": "tt4742876",
@@ -6001,26 +6315,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0112130",
-      "type": "tv",
-      "rank": 80,
-      "title": "Pride and Prejudice",
-      "year": 1995,
-      "rating": 8.8,
-      "poster": "./posters/tt0112130.jpg",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 50,
-      "fa": "",
-      "summary": "ورود مردان ثروتمند، مادر خانوادهٔ بنت را برای شوهر‌دادن دخترانش به تکاپو می‌اندازد؛ در همین حال، الیزابت مستقل و صریح با آقای دارسی مغرور روبه‌رو می‌شود.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt5182866",
       "type": "tv",
-      "rank": 81,
+      "rank": 80,
       "title": "Reply 1988",
       "year": 2015,
       "rating": 9,
@@ -6034,6 +6331,23 @@
       "runtime": 90,
       "fa": "",
       "summary": "پنج دوست نوجوان و خانواده‌هایشان در محله‌ای از سئولِ سال ۱۹۸۸ زندگی می‌کنند؛ دوستی، عشق‌های نخستین و فشارهای بزرگ‌شدن، روزمرگی‌های آن‌ها را به خاطراتی مشترک تبدیل می‌کند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0112130",
+      "type": "tv",
+      "rank": 81,
+      "title": "Pride and Prejudice",
+      "year": 1995,
+      "rating": 8.8,
+      "poster": "./posters/tt0112130.jpg",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 50,
+      "fa": "",
+      "summary": "ورود مردان ثروتمند، مادر خانوادهٔ بنت را برای شوهر‌دادن دخترانش به تکاپو می‌اندازد؛ در همین حال، الیزابت مستقل و صریح با آقای دارسی مغرور روبه‌رو می‌شود.",
       "summaryLanguage": "fa"
     },
     {
@@ -6201,7 +6515,7 @@
       "rank": 90,
       "title": "My Mister",
       "year": 2018,
-      "rating": 8.9,
+      "rating": 9,
       "poster": "./posters/tt7923710.jpg",
       "genres": [
         "Drama"
@@ -6465,9 +6779,26 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0407362",
+      "id": "tt5687612",
       "type": "tv",
       "rank": 104,
+      "title": "Fleabag",
+      "year": 2016,
+      "rating": 8.7,
+      "poster": "./posters/tt5687612.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 30,
+      "fa": "",
+      "summary": "زنی جوان در لندن تلاش می‌کند زندگی‌اش را پیش ببرد و هم‌زمان با پیامدهای یک تراژدی تازه کنار بیاید؛ اقتباسی از نمایش‌نامه‌ای تحسین‌شده.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0407362",
+      "type": "tv",
+      "rank": 105,
       "title": "Battlestar Galactica",
       "year": 2004,
       "rating": 8.7,
@@ -6481,23 +6812,6 @@
       "runtime": 45,
       "fa": "",
       "summary": "با بازگشت سای‌لون‌ها و نابودی دوازده مستعمره، خدمهٔ سفینهٔ قدیمی گالاکتیکا از آخرین بازماندگان بشر در سفر به زمین افسانه‌ای محافظت می‌کنند.",
-      "summaryLanguage": "fa"
-    },
-    {
-      "id": "tt5687612",
-      "type": "tv",
-      "rank": 105,
-      "title": "Fleabag",
-      "year": 2016,
-      "rating": 8.7,
-      "poster": "./posters/tt5687612.jpg",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "runtime": 30,
-      "fa": "",
-      "summary": "زنی جوان در لندن تلاش می‌کند زندگی‌اش را پیش ببرد و هم‌زمان با پیامدهای یک تراژدی تازه کنار بیاید؛ اقتباسی از نمایش‌نامه‌ای تحسین‌شده.",
       "summaryLanguage": "fa"
     },
     {
@@ -7125,9 +7439,25 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0094525",
+      "id": "tt30263074",
       "type": "tv",
       "rank": 140,
+      "title": "Sapne Vs Everyone",
+      "year": 2023,
+      "rating": 9.2,
+      "poster": "./posters/tt30263074.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "",
+      "summary": "دو جوان بلندپرواز در دنیای بی‌رحم فروش املاک به دنبال رؤیاهایشان هستند؛ یکی آرزوی بازیگری دارد و دیگری ثروت می‌خواهد، اما فشار جامعه و مرزهای اخلاقی راهشان را پیچیده می‌کند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0094525",
+      "type": "tv",
+      "rank": 141,
       "title": "Poirot",
       "year": 1989,
       "rating": 8.6,
@@ -7141,22 +7471,6 @@
       "runtime": 100,
       "fa": "",
       "summary": "پرونده‌های هرکول پوآرو، کارآگاه بلژیکیِ نامتعارف اما تیزبین، روایت می‌شود.",
-      "summaryLanguage": "fa"
-    },
-    {
-      "id": "tt30263074",
-      "type": "tv",
-      "rank": 141,
-      "title": "Sapne Vs Everyone",
-      "year": 2023,
-      "rating": 9.2,
-      "poster": "./posters/tt30263074.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "",
-      "summary": "دو جوان بلندپرواز در دنیای بی‌رحم فروش املاک به دنبال رؤیاهایشان هستند؛ یکی آرزوی بازیگری دارد و دیگری ثروت می‌خواهد، اما فشار جامعه و مرزهای اخلاقی راهشان را پیچیده می‌کند.",
       "summaryLanguage": "fa"
     },
     {
@@ -7538,27 +7852,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt13111040",
-      "type": "tv",
-      "rank": 163,
-      "title": "The Offer",
-      "year": 2022,
-      "rating": 8.6,
-      "poster": "./posters/tt13111040.jpg",
-      "genres": [
-        "Biography",
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "",
-      "summary": "آلبرت اس. رادی، تهیه‌کنندهٔ فیلم «پدرخوانده»، برای به‌ثمررساندن پروژه با فشارهای استودیو، انتخاب بازیگران و مخالفت‌های بیرون از سینما روبه‌رو می‌شود؛ روایتی دراماتیک از پشت صحنهٔ ساخت فیلم.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt2788316",
       "type": "tv",
-      "rank": 164,
+      "rank": 163,
       "title": "Shōgun",
       "year": 2024,
       "rating": 8.6,
@@ -7573,6 +7869,24 @@
       "runtime": 60,
       "fa": "",
       "summary": "در ژاپنِ آستانهٔ قرن هفدهم، ورود یک دریانورد انگلیسی به کشوری درگیر رقابت‌های سیاسی، سرنوشت او را با لرد توراناگا و مترجمی ژاپنی در مبارزه‌ای حساس برای قدرت پیوند می‌دهد.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt13111040",
+      "type": "tv",
+      "rank": 164,
+      "title": "The Offer",
+      "year": 2022,
+      "rating": 8.6,
+      "poster": "./posters/tt13111040.jpg",
+      "genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "",
+      "summary": "آلبرت اس. رادی، تهیه‌کنندهٔ فیلم «پدرخوانده»، برای به‌ثمررساندن پروژه با فشارهای استودیو، انتخاب بازیگران و مخالفت‌های بیرون از سینما روبه‌رو می‌شود؛ روایتی دراماتیک از پشت صحنهٔ ساخت فیلم.",
       "summaryLanguage": "fa"
     },
     {
@@ -9188,6 +9502,23 @@
       "summary": "آن شرلی، دختری یتیم با تخیلی پرشور، وارد خانهٔ خواهر و برادری در جزیرهٔ پرنس ادوارد می‌شود و در مسیر پیداکردن خانواده، دوستی و جایگاهش، زندگی اطرافیان را تغییر می‌دهد.",
       "summaryLanguage": "fa",
       "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt0088727.json"
+    },
+    {
+      "id": "tt10431500",
+      "type": "movie",
+      "rank": null,
+      "title": "Miracle in Cell No. 7",
+      "year": 2019,
+      "rating": 8.2,
+      "poster": "./posters/tt10431500.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 132,
+      "fa": "",
+      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
+      "summaryLanguage": "fa",
+      "summarySource": "https://v3-cinemeta.strem.io/meta/movie/tt10431500.json"
     }
   ]
 }

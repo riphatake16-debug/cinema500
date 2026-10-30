@@ -668,14 +668,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q153882"
       }
+    },
+    "tt4934214": {
+      "fa": "مدیر",
+      "summary": "در هر فصل، پنج کمدین باید مأموریت‌هایی عجیب و خلاقانه را انجام دهند. الکس هورن اجرای چالش‌ها را زیر نظر دارد و گرگ دیویس دربارهٔ نتیجه و امتیازها قضاوت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4934214/"
+      }
+    },
+    "tt22248376": {
+      "fa": "فریرن: فراتر از پایان سفر",
+      "summary": "فریرن، جادوگری الف با عمری بسیار طولانی، پس از پایان ماجراجویی بزرگ گروهش سفر تازه‌ای را آغاز می‌کند تا آدم‌ها، خاطرات و ارزش زمانی را که با همراهانش گذرانده بهتر بشناسد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt22248376/"
+      }
+    },
+    "tt10233448": {
+      "fa": "حماسه وینلند",
+      "summary": "تورفین همراه قاتل پدرش سفر می‌کند تا روزی در دوئلی به‌عنوان جنگجویی شرافتمند از او انتقام بگیرد و یاد پدرش را گرامی بدارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt10233448/"
+      }
+    },
+    "tt33764258": {
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
+      }
     }
   },
-  "retryAfter": {
-    "tt4934214": "2026-10-30T00:02:24+00:00",
-    "tt22248376": "2026-10-30T00:02:24+00:00"
-  },
+  "retryAfter": {},
   "translationUsage": {
-    "date": "2026-10-29",
-    "characters": 310
+    "date": "2026-10-30",
+    "characters": 51
   }
 }
