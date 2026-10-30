@@ -1343,11 +1343,49 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q55614601"
       }
+    },
+    "tt0242519": {
+      "fa": "کلک",
+      "summary": "کلک (به هندی: Hera Pheri)فیلمی محصول سال ۲۰۰۰ و به کارگردانی پریادارشان است. در این فیلم بازیگرانی همچون آکشی کومار، سونیل شتی، پارش راوال، تابو، گلشن گروور، کولبوشان کارباندا، اوم پوری، آسرانی، کاشمیرا شاه، نامراتا شیرودکار، موکش خانا، مشتاق خان ایفای نقش کرده‌اند. این فیلم یکی از ۲۵۰ فیلم برتر دنیاست و جزو معروفترین آثار کمدی هندی محسوب می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q5732486",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%DA%A9%D9%84%DA%A9+%28%D9%81%DB%8C%D9%84%D9%85+%DB%B2%DB%B0%DB%B0%DB%B0%29&oldid=44720071"
+      }
+    },
+    "tt0056172": {
+      "fa": "لورنس عربستان",
+      "summary": "داستان تی. ای. لارنس، افسر انگلیسی‌ای که در جنگ جهانی اول قبایل پراکنده و رقیب عرب را برای نبرد با عثمانی متحد کرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q228186"
+      }
+    },
+    "tt0286486": {
+      "fa": "سپر",
+      "summary": "یک پلیس فاسد در لس‌آنجلس و اعضای تیمش، پرونده‌ها را با روش‌های خودشان پیش می‌برند؛ روش‌هایی که بارها آن‌ها را در برابر قانون قرار می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0286486/"
+      }
+    },
+    "tt0113277": {
+      "fa": "مخمصه",
+      "summary": "گروهی از سارقان حرفه‌ای بانک در آخرین سرقتشان سرنخی به جا می‌گذارند و یک کارآگاه را به تعقیب خود می‌کشانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q42198"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 208
+    "characters": 218
   }
 }
