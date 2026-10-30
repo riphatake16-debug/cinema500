@@ -25,7 +25,7 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
   const versions = {
-    'app.js': 'roulette-icon-20261031-1',
+    'app.js': 'clean-details-20261031-1',
     'mobile.css': 'roulette-20261031-1',
     'style.css': 'mobile-focus-20261031-1'
   };
@@ -101,4 +101,17 @@ test('roulette has a dedicated wheel icon everywhere instead of the AI sparkle i
  assert.ok(app.includes("icon('roulette-wheel')"));
  assert.ok(!app.includes("icon('shuffle')"));
  assert.ok(html.includes('app.js?v=roulette-icon-20261031-1'));
+});
+
+test('film details omit watch-date controls and the external IMDb detail link',async()=>{
+  const [html,app,workflow]=await Promise.all([read('index.html'),read('app.js'),read('.github/workflows/pages.yml').catch(()=>null)]);
+  assert.ok(!html.includes('dates.js'), 'the unused calendar is no longer downloaded');
+  assert.ok(!app.includes('CinemaDates'), 'date calendar is disconnected');
+  assert.ok(!app.includes('id="watched-on"'));
+  assert.ok(!app.includes('watch-date-trigger'));
+  assert.ok(!app.includes('class="imdb-link"'));
+  assert.ok(!app.includes('id="journal-month"'));
+  assert.ok(app.includes('امتیاز و یادداشت من'));
+  assert.ok(app.includes('function journalEntries()'));
+  assert.ok(html.includes('app.js?v=clean-details-20261031-1'));
 });
