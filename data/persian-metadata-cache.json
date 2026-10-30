@@ -947,6 +947,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q189330"
       }
+    },
+    "tt0353049": {
+      "fa": "نمایش چاپل",
+      "summary": "دیو شپل در نمایش‌های کوتاه طنز، با موضوع‌های نژادی، فرهنگ و رفتارهای جامعه شوخی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0353049/"
+      }
+    },
+    "tt0086879": {
+      "fa": "آمادئوس",
+      "summary": "آنتونیو سالیری، آهنگ‌سازی که به استعداد موتسارت حسادت می‌کند، از زندگی و موفقیت‌های او می‌گوید و ادعا می‌کند که باعث مرگش شده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190956"
+      }
+    },
+    "tt0193676": {
+      "fa": "فریکها و گیکها",
+      "summary": "دختری دبیرستانی و درس‌خوان با گروهی از نوجوانان سرکش معاشرت می‌کند؛ هم‌زمان برادر کوچک‌ترش سال نخست دبیرستان را پشت سر می‌گذارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q500769"
+      }
+    },
+    "tt5311514": {
+      "fa": "اسم شما.",
+      "summary": "دختر و پسری که یکدیگر را نمی‌شناسند، به شکلی عجیب با هم ارتباط پیدا می‌کنند. تلاش برای پیدا کردن هم، آن‌ها را با چیزی فراتر از فاصلهٔ میان دو شهر روبه‌رو می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q21697406"
+      }
     }
   },
   "retryAfter": {
@@ -954,6 +990,6 @@
   },
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 102
+    "characters": 118
   }
 }
