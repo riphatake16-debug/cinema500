@@ -1417,6 +1417,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q174811"
       }
+    },
+    "tt0407362": {
+      "fa": "ناوبر فضایی گالاکتیکا (مجموعه تلویزیونی ۲۰۰۹)",
+      "summary": "پس از حملهٔ سای‌لون‌ها و نابودی دوازده مستعمره، بازماندگان انسان‌ها با محافظت سفینهٔ گالاکتیکا به‌دنبال خانه‌ای تازه می‌روند: سیاره‌ای به نام زمین که وجودش برایشان افسانه است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q237072"
+      }
+    },
+    "tt0105236": {
+      "fa": "سگهای انباری",
+      "summary": "پس از شکست خونین یک سرقت جواهرفروشی، تبهکاران بازمانده گمان می‌کنند یکی از آن‌ها خبرچین پلیس است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q72962"
+      }
+    },
+    "tt0092455": {
+      "fa": "پیشتازان فضا: نسل بعدی",
+      "summary": "نزدیک به صد سال پس از مأموریت کاپیتان کرک، نسل تازه‌ای از افسران ناوگان ستاره‌ای با سفینهٔ انترپرایز به جست‌وجوی ناشناخته‌ها می‌روند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16290"
+      }
+    },
+    "tt0062622": {
+      "fa": "۲۰۰۱: یک اودیسه فضایی",
+      "summary": "کشف شیئی مرموز در ماه، به آغاز یک مأموریت فضایی منجر می‌شود. فضانوردان برای پیدا کردن منشأ آن، با همراهی رایانهٔ هوشمند هال ۹۰۰۰ راهی می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q103474"
+      }
     }
   },
   "retryAfter": {},
