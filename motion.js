@@ -1,14 +1,14 @@
 /* Short, one-shot motion. Never animate offscreen cards or loop effects. */
 (() => {
  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
- const active=new Set(),backdrops=new WeakMap();let sceneAnimations=[];
+ const compact=window.matchMedia('(max-width:700px)');const active=new Set(),backdrops=new WeakMap();let sceneAnimations=[];
  const canMove=()=>!reduce.matches&&document.visibilityState!=='hidden'&&typeof Element.prototype.animate==='function';
  function animate(node,frames,options={}){if(!node||!canMove())return;const animation=node.animate(frames,{duration:360,easing:'cubic-bezier(.22,1,.36,1)',...options});active.add(animation);animation.finished.catch(()=>{}).finally(()=>active.delete(animation));return animation;}
  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')for(const animation of active)animation.cancel();});
  reduce.addEventListener?.('change',()=>{if(reduce.matches){for(const animation of active)animation.cancel();}});
  const revealed=new Set();
  const observer=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>{let offset=0;for(const entry of entries){if(!entry.isIntersecting)continue;observer.unobserve(entry.target);const node=entry.target,id=node.dataset.id||node.dataset.motionKey;if(id&&revealed.has(id))continue;if(id)revealed.add(id);animate(node,node.matches('.card')?[{opacity:0},{opacity:1}]:[{opacity:0,transform:'translateY(10px)'},{opacity:1,transform:'translateY(0)'}],{duration:340,delay:Math.min(offset++,3)*24});}},{threshold:.06}):null;
- function watch(root){if(!observer)return;const nodes=root.matches?.('.card,.rank-banner,.dashboard-title')?[root]:root.querySelectorAll?.('.card,.rank-banner,.dashboard-title')||[];for(const node of nodes){if(node.dataset.motionObserved)continue;node.dataset.motionObserved='true';const key=node.dataset.id||node.dataset.motionKey;if(key&&revealed.has(key))continue;observer.observe(node);}}
+ function watch(root){if(!observer)return;const nodes=root.matches?.('.card,.rank-banner,.dashboard-title')?[root]:root.querySelectorAll?.('.card,.rank-banner,.dashboard-title')||[];for(const node of nodes){if(compact.matches&&node.matches('.card'))continue;if(node.dataset.motionObserved)continue;node.dataset.motionObserved='true';const key=node.dataset.id||node.dataset.motionKey;if(key&&revealed.has(key))continue;observer.observe(node);}}
  watch(document);
  new MutationObserver(records=>{for(const record of records){for(const node of record.removedNodes){if(node.nodeType!==1||!observer)continue;observer.unobserve(node);for(const child of node.querySelectorAll('.card,.rank-banner,.dashboard-title'))observer.unobserve(child);}for(const node of record.addedNodes)if(node.nodeType===1)watch(node);}}).observe(document.body,{childList:true,subtree:true});
  document.addEventListener('pointerdown',event=>{const button=event.target.closest('button:not(:disabled),a.hero-link');if(!button)return;animate(button,[{scale:'1'},{scale:'.965'},{scale:'1'}],{duration:230,easing:'cubic-bezier(.2,.7,.3,1)'});},{passive:true});
