@@ -1381,6 +1381,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q42198"
       }
+    },
+    "tt1606375": {
+      "fa": "دونتن ابی(مجموعه تلویزیونی)",
+      "summary": "زندگی خانوادهٔ اشرافی کراولی و خدمتکارانشان در بریتانیای اوایل قرن بیستم دنبال می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q83071"
+      }
+    },
+    "tt0086250": {
+      "fa": "صورتزخمی",
+      "summary": "مهاجری کوبایی و بلندپرواز در میامیِ سال ۱۹۸۰، کنترل یک شبکهٔ مواد مخدر را به دست می‌گیرد و گرفتار طمع می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q47075"
+      }
+    },
+    "tt5687612": {
+      "fa": "فلیبگ",
+      "summary": "زنی جوان در لندن پس از یک فقدان تلخ، تلاش می‌کند زندگی، کار و روابطش را دوباره سر و سامان بدهد؛ اما همیشه هم انتخاب‌های درستی نمی‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16868648"
+      }
+    },
+    "tt1049413": {
+      "fa": "بالا",
+      "summary": "کارل فردریکسن ۷۸ساله، خانه‌اش را با بادکنک‌ها به سوی آبشار بهشت می‌برد؛ بی‌خبر از اینکه پسربچه‌ای هم هم‌سفر او شده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q174811"
+      }
     }
   },
   "retryAfter": {},
