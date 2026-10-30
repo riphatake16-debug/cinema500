@@ -704,11 +704,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
+    },
+    "tt4742876": {
+      "fa": "پرتاب‌کنندگان TVF",
+      "summary": "چهار کارآفرین جوان کارهای روزمره‌شان را رها می‌کنند تا کسب‌وکار نوپای خود را راه بیندازند و با دشواری‌های این مسیر روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4742876/"
+      }
+    },
+    "tt0043014": {
+      "fa": "سانست بلوار",
+      "summary": "فیلم‌نامه‌نویسی با ستارهٔ فراموش‌شدهٔ سینمای صامت آشنا می‌شود؛ زنی که حاضر نیست پایان دوران شهرتش را بپذیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q193570"
+      }
+    },
+    "tt3530232": {
+      "fa": "هفته پیش امشب با جان اولیور",
+      "summary": "جان اولیور با نگاه طنزآمیز خود، در برنامه‌ای هفتگی به بررسی خبرها و موضوعات روز می‌پردازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16735585"
+      }
+    },
+    "tt0051201": {
+      "fa": "شاهدی برای تعقیب",
+      "summary": "وکیلی باتجربه در بریتانیا، دفاع از متهم یک پروندهٔ قتل را بر عهده می‌گیرد؛ پرونده‌ای که پی‌درپی غافلگیرش می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q196977"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 51
+    "characters": 63
   }
 }
