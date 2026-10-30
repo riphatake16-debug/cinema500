@@ -24,8 +24,13 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /start\+CARD_BATCH_SIZE/);
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
-  for (const file of ['app.js', 'mobile.css', 'style.css']) {
-    assert.ok(html.includes('./' + file + '?v=mobile-focus-20261031-1'), file + ' cache key');
+  const versions = {
+    'app.js': 'quick-search-20261031-1',
+    'mobile.css': 'quick-search-20261031-1',
+    'style.css': 'mobile-focus-20261031-1'
+  };
+  for (const [file, version] of Object.entries(versions)) {
+    assert.ok(html.includes('./' + file + '?v=' + version), file + ' cache key');
   }
 });
 
@@ -38,4 +43,17 @@ test('CSS media blocks stay balanced after old rules were removed', async () => 
     assert.ok(depth >= 0, 'closed more braces than opened');
   }
   assert.equal(depth, 0);
+});
+
+test('catalogue search is always visible and compatible with advanced filters', async () => {
+  const [html, js, css] = await Promise.all([read('index.html'), read('app.js'), read('mobile.css')]);
+  for(const id of ['catalog-search', 'catalog-search-clear', 'filters-toggle', 'search']){
+    assert.ok(html.includes('id="' + id + '"'), 'missing ' + id);
+  }
+  assert.ok(html.includes('role="search"'), 'visible search landmark');
+  assert.match(css, /\.catalog-search\s*\{/);
+  assert.match(css, /\.catalog-search:focus-within\s*\{/);
+  assert.ok(js.includes('function syncCatalogSearch()'));
+  assert.ok(js.includes("'#catalog-search').oninput"));
+  assert.ok(js.includes("'#catalog-search-clear').onclick"));
 });
