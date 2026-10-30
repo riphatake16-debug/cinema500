@@ -1019,6 +1019,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q162729"
       }
+    },
+    "tt0098936": {
+      "fa": "توئین پیکس",
+      "summary": "یک مأمور اف‌بی‌آی با روش‌هایی غیرمعمول، برای بررسی قتل زنی جوان وارد شهر توئین پیکس می‌شود؛ شهری که مردمش رازهای زیادی دارند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2085"
+      }
+    },
+    "tt0082096": {
+      "fa": "داس بوت",
+      "summary": "خدمهٔ یک زیردریایی آلمانی در جنگ جهانی دوم، روزهایشان را در فضایی تنگ و پراسترس می‌گذرانند؛ جایی که انتظار طولانی می‌تواند هر لحظه جای خود را به ترس از حمله بدهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q62730"
+      }
+    },
+    "tt2707408": {
+      "fa": "نارکوس",
+      "summary": "فعالیت‌های جنایی پابلو اسکوبار، قاچاقچی بزرگ کلمبیایی، و دیگر سرکردگان مواد مخدر که سال‌ها کشور را درگیر کرده‌اند، روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2707408/"
+      }
+    },
+    "tt0119698": {
+      "fa": "شاهزاده مونونوکه",
+      "summary": "آشیتاکا برای درمان نفرینی مرگبار سفر می‌کند و در میانهٔ جنگ خدایان جنگل با مردم یک شهرک معدن‌کاری، با شاهزاده مونونوکه آشنا می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q186572"
+      }
     }
   },
   "retryAfter": {
@@ -1026,6 +1062,6 @@
   },
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 118
+    "characters": 124
   }
 }
