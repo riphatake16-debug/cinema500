@@ -14,7 +14,7 @@ vm.runInContext(await readFile('discovery.js','utf8'),ctx);
 vm.runInContext(await readFile('roulette.js','utf8'),ctx);
 vm.runInContext(await readFile('live.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
-source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,openRoulette,spinRoulette,roulettePool,rouletteWinner:()=>rouletteWinner,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,openAccount,openAccountHelp,openStats,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
+source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalEntries,openJournal,openRoulette,spinRoulette,roulettePool,rouletteWinner:()=>rouletteWinner,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,openAccount,openAccountHelp,openStats,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
 vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
@@ -55,16 +55,39 @@ test('All 500 titles have Persian summaries rendered with RTL layout',()=>{
  for(const a of described){assert.equal(a.summaryLanguage,'fa');assert.match(a.summary,/[آ-ی]/);assert.ok(!a.summary.includes('See full summary'));}
  api.openDetail('tt0903747');assert.ok(get('#dialog-content').innerHTML.includes('lang="fa" dir="rtl"'));assert.ok(get('#dialog-content').innerHTML.includes('معلم شیمی'));
 });
-test('Private diary preserves notes across rating changes, dates mark watched, and Persian month grouping works',()=>{
+test('Diary keeps notes and watched status without collecting dates; legacy backups remain valid',()=>{
  api.resetJournal();
- api.saveDiary('tt0111161','A memorable story <script>test</script>','2026-10-20');
- let entry=api.snapshot().preferences.find(p=>p.id==='tt0111161');assert.equal(entry.watchedOn,'2026-10-20');assert.ok(api.snapshot().seen.includes('tt0111161'));
- api.changePreference('tt0111161',{rating:9});entry=api.snapshot().preferences.find(p=>p.id==='tt0111161');assert.ok(entry.note.includes('memorable'));assert.equal(entry.watchedOn,'2026-10-20');
- assert.ok(api.journalForMonth(api.monthOf('2026-10-20')).some(a=>a.id==='tt0111161'));
- api.openDetail('tt0111161');assert.ok(get('#dialog-content').innerHTML.includes('&lt;script&gt;test&lt;/script&gt;'));assert.ok(!get('#dialog-content').innerHTML.includes('<script>test</script>'));
- assert.throws(()=>api.saveDiary('tt0111161','x','2026-02-30'));assert.throws(()=>api.saveDiary('tt0111161','x'.repeat(2001),''));
- const before=JSON.stringify(api.snapshot());assert.throws(()=>api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',note:'x',watchedOn:'2026-02-30'}]}));assert.equal(JSON.stringify(api.snapshot()),before);
- api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',note:'Imported note',watchedOn:'2026-09-10'}]});assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0068646').note,'Imported note');
+ api.saveDiary('tt0111161','A memorable story <script>test</script>');
+ let entry=api.snapshot().preferences.find(p=>p.id==='tt0111161');
+ assert.equal(entry.note.includes('memorable'),true);
+ assert.equal(entry.watchedOn,null);
+ assert.ok(!api.snapshot().seen.includes('tt0111161'),'writing a note should not mark watched');
+ api.changeState('tt0111161','seen');
+ assert.ok(api.snapshot().seen.includes('tt0111161'));
+ assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0111161').watchedOn,null,'watching should not create a date');
+ api.changePreference('tt0111161',{rating:9});
+ assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0111161').rating,9);
+ assert.ok(api.journalEntries().some(a=>a.id==='tt0111161'));
+ api.openDetail('tt0111161');
+ const detail=get('#dialog-content').innerHTML;
+ assert.ok(detail.includes('&lt;script&gt;test&lt;/script&gt;'));
+ assert.ok(!detail.includes('<script>test</script>'));
+ assert.ok(!detail.includes('تاریخ تماشا'));
+ assert.ok(!detail.includes('watch-date-trigger'));
+ assert.ok(!detail.includes('imdb-link'));
+ assert.ok(!detail.includes('https://www.imdb.com/title/'));
+ assert.throws(()=>api.saveDiary('tt0111161','x'.repeat(2001)));
+ api.openJournal();
+ assert.ok(get('#journal-list').innerHTML.includes('دیده‌ام'));
+ assert.ok(!get('#dialog-content').innerHTML.includes('journal-month'));
+ assert.ok(!get('#journal-list').innerHTML.includes('تاریخ تماشا'));
+ const before=JSON.stringify(api.snapshot());
+ assert.throws(()=>api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',watchedOn:'2026-02-30'}]}));
+ assert.equal(JSON.stringify(api.snapshot()),before);
+ api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',note:'Imported note',watchedOn:'2026-09-10'}]});
+ assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0068646').watchedOn,'2026-09-10','keep existing historical dates for backup compatibility');
+ api.saveDiary('tt0068646','Updated note');
+ assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0068646').watchedOn,'2026-09-10');
  api.resetJournal();
 });
 test('Roulette draws from the current catalogue without changing private records',()=>{
