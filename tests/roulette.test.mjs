@@ -13,7 +13,7 @@ test('roulette picks only real catalogue titles and filters seen works',()=>{
  assert.equal(pool.length,249);
  assert.ok(pool.every(a=>a.type==='movie'&&!seen.includes(a.id)));
  const tv=all.find(a=>a.type==='tv');
- assert.deepEqual(wheel.eligible(all,'tv','watchlist',seen,[tv.id]).map(a=>a.id),[tv.id]);
+ assert.deepEqual(Array.from(wheel.eligible(all,'tv','watchlist',seen,[tv.id]),a=>a.id),[tv.id]);
  assert.equal(wheel.eligible(all,'movie','watchlist',seen,[tv.id]).length,0);
 });
 test('roulette samples unique titles without replacing entries',()=>{
