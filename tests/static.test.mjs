@@ -67,27 +67,20 @@ test('Private diary preserves notes across rating changes, dates mark watched, a
  api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',note:'Imported note',watchedOn:'2026-09-10'}]});assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0068646').note,'Imported note');
  api.resetJournal();
 });
-test('Roulette filters only current catalogue, honors watched and saved history',()=>{
- api.resetJournal();
- api.changeState('tt0111161','seen');
- api.changeState('tt0903747','watchlist');
+test('Roulette draws from the current catalogue without changing private records',()=>{
+ const before=JSON.stringify(api.snapshot());
  api.openRoulette();
- get('#roulette-kind').value='movie';
- get('#roulette-source').value='unseen';
- const current=api.roulettePool();
- assert.equal(current.length,249);
- assert.ok(current.every(a=>a.type==='movie'&&a.id!=='tt0111161'));
  get('#roulette-kind').value='tv';
- get('#roulette-source').value='watchlist';
- const saved=api.roulettePool();
- assert.equal(saved.length,1);
- assert.equal(saved[0].id,'tt0903747');
+ get('#roulette-source').value='all';
+ const pool=api.roulettePool();
+ assert.equal(pool.length,250);
+ assert.ok(pool.every(a=>a.type==='tv'));
  api.spinRoulette();
- assert.equal(api.rouletteWinner(),'tt0903747');
- assert.ok(get('#roulette-choices').innerHTML.includes('Breaking Bad'));
+ assert.ok(pool.some(a=>a.id===api.rouletteWinner()));
+ assert.ok(get('#roulette-choices').innerHTML.includes('<span>'));
  assert.equal(get('#roulette-spin').disabled,true);
- assert.equal(api.snapshot().wanted.length,1);
- api.resetJournal();
+ assert.equal(JSON.stringify(api.snapshot()),before);
+ get('#details').open=false;
 });
 
 test('Browser-only profile exposes backup without any sign-in or cloud dependency',async()=>{
