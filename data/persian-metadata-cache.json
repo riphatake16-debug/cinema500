@@ -983,6 +983,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q21697406"
       }
+    },
+    "tt5182866": {
+      "fa": "پاسخ به ۱۹۸۸",
+      "summary": "پنج دوست نوجوان و خانواده‌هایشان در محله‌ای از سئولِ سال ۱۹۸۸ زندگی می‌کنند. دوستی، اولین عشق‌ها و مشکلات خانوادگی، بخشی از روزهای آن‌هاست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q19657395"
+      }
+    },
+    "tt1187043": {
+      "fa": "سه احمق",
+      "summary": "دو دوست در جست‌وجوی هم‌دانشگاهی گمشده‌شان، خاطرات کسی را مرور می‌کنند که به آن‌ها آموخت متفاوت فکر کنند؛ حتی وقتی دیگران آن‌ها را احمق می‌خواندند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q229633"
+      }
+    },
+    "tt0112130": {
+      "fa": "غرور و تعصب",
+      "summary": "مادر خانوادهٔ بنت با ورود چند مرد ثروتمند به فکر ازدواج دخترانش می‌افتد. در همین حال، الیزابتِ صریح و مستقل با آقای دارسیِ مغرور آشنا می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q855673"
+      }
+    },
+    "tt0112573": {
+      "fa": "شجاعدل",
+      "summary": "پس از کشته‌شدن همسر پنهانی‌اش به دست انگلیسی‌ها، ویلیام والاس علیه ادوارد اول، پادشاه انگلستان، قیام می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q162729"
+      }
     }
   },
   "retryAfter": {
