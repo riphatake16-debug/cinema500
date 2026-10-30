@@ -1633,11 +1633,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q202548"
       }
+    },
+    "tt2303687": {
+      "fa": "خط وظیفه",
+      "summary": "پس از مرگ یک مرد در عملیاتی ناموفق، استیو آرنات به واحد مبارزه با فساد پلیس منتقل می‌شود و کارش را با بررسی رفتار همکارانش ادامه می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2303687/"
+      }
+    },
+    "tt0211915": {
+      "fa": "آملی",
+      "summary": "آملی، دختری خیال‌پرداز در پاریس، تصمیم می‌گیرد با کارهای کوچک زندگی اطرافیانش را بهتر کند. در همین مسیر، عشق وارد زندگی خودش هم می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q484048"
+      }
+    },
+    "tt0994314": {
+      "fa": "کد گیاس",
+      "summary": "شاهزاده‌ای طردشده پس از به‌دست‌آوردن قدرت مرموز کنترل دیگران، به رهبر نقاب‌دار شورشی علیه امپراتوری قدرتمند تبدیل می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q4384067"
+      }
+    },
+    "tt0033467": {
+      "fa": "همشهری کین",
+      "summary": "پس از مرگ چارلز فاستر کین، صاحب یک امپراتوری مطبوعاتی، خبرنگاران دنبال معنای آخرین کلمه‌ای می‌گردند که گفته است: «رزباد».",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q24815"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 311
+    "characters": 323
   }
 }
