@@ -1163,6 +1163,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q17065414"
       }
+    },
+    "tt0045152": {
+      "fa": "آواز در باران",
+      "summary": "با ورود صدا به سینما، یک شرکت فیلم‌سازی و ستاره‌های فیلم‌های صامتش باید خود را با شرایط تازه وفق بدهند؛ کاری که برای همه آسان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q309153"
+      }
+    },
+    "tt7923710": {
+      "fa": "آجوشی من",
+      "summary": "مردی میانسال و زنی جوان، هرکدام زیر بار مشکلات کاری و خانوادگی، به شکلی غیرمنتظره با هم آشنا می‌شوند و در دل خستگی و تنهایی، به یکدیگر دلگرمی می‌دهند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q43111245"
+      }
+    },
+    "tt0087843": {
+      "fa": "روزی روزگاری در آمریکا",
+      "summary": "تبهکاری قدیمی پس از بیش از سی سال به محلهٔ دوران جوانی‌اش در منهتن برمی‌گردد و دوباره با خاطرات، دوستی‌ها و حسرت‌های گذشته روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q206388"
+      }
+    },
+    "tt0435761": {
+      "fa": "داستان اسباببازی ۳",
+      "summary": "پیش از رفتن اندی به دانشگاه، اسباب‌بازی‌ها به‌اشتباه به مهدکودک فرستاده می‌شوند و وودی باید آن‌ها را متقاعد کند که رها نشده‌اند و باید به خانه برگردند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q187278"
+      }
     }
   },
   "retryAfter": {},
