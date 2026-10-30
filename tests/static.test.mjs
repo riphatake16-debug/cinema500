@@ -13,7 +13,7 @@ vm.runInContext(await readFile('ranks.js','utf8'),ctx);
 vm.runInContext(await readFile('discovery.js','utf8'),ctx);
 vm.runInContext(await readFile('live.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
-source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,openAccountHelp,openStats,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
+source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,openRoulette,spinRoulette,roulettePool,rouletteWinner:()=>rouletteWinner,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,openAccount,openAccountHelp,openStats,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
 vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
@@ -66,13 +66,27 @@ test('Private diary preserves notes across rating changes, dates mark watched, a
  api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0068646',status:'seen',note:'Imported note',watchedOn:'2026-09-10'}]});assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0068646').note,'Imported note');
  api.resetJournal();
 });
-test('Recommendations respect hard filters and explain taste affinity from actual preferences',()=>{
- api.resetJournal();api.changePreference('tt0111161',{rating:10,favorite:true});assert.ok(api.tasteGenres().get('Drama')>0);
- const pool=api.recommendPool('movie','',120,'unseen','Comedy');assert.ok(pool.length);assert.ok(pool.every(a=>a.type==='movie'&&a.runtime<=120&&a.genres.includes('Comedy')));
- api.changeState(pool[0].id,'seen');assert.ok(!api.recommendPool('movie','',120,'unseen','Comedy').some(a=>a.id===pool[0].id));
- assert.ok(api.recommendPool('movie','light',0,'unseen').every(a=>!a.genres.some(g=>['Horror','Thriller','Crime','War'].includes(g))));
- const candidate=ctx.window.CINEMA_CATALOGUE.titles.find(a=>a.id==='tt0120689');const reasons=api.recommendReasons(candidate,{mood:'thoughtful',max:200,selectedGenre:'Drama'});assert.ok(reasons.some(r=>r.includes('نمره‌ها و محبوب‌هات')));
- assert.ok([candidate].includes(api.pickForTaste([candidate],.99)));api.resetJournal();
+test('Roulette filters only current catalogue, honors watched and saved history',()=>{
+ api.resetJournal();
+ api.changeState('tt0111161','seen');
+ api.changeState('tt0903747','watchlist');
+ api.openRoulette();
+ get('#roulette-kind').value='movie';
+ get('#roulette-source').value='unseen';
+ const current=api.roulettePool();
+ assert.equal(current.length,249);
+ assert.ok(current.every(a=>a.type==='movie'&&a.id!=='tt0111161'));
+ get('#roulette-kind').value='tv';
+ get('#roulette-source').value='watchlist';
+ const saved=api.roulettePool();
+ assert.equal(saved.length,1);
+ assert.equal(saved[0].id,'tt0903747');
+ api.spinRoulette();
+ assert.equal(api.rouletteWinner(),'tt0903747');
+ assert.ok(get('#roulette-choices').innerHTML.includes('Breaking Bad'));
+ assert.equal(get('#roulette-spin').disabled,true);
+ assert.equal(api.snapshot().wanted.length,1);
+ api.resetJournal();
 });
 
 test('Browser-only profile exposes backup without any sign-in or cloud dependency',async()=>{
