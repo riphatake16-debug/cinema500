@@ -1055,6 +1055,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q186572"
       }
+    },
+    "tt0074006": {
+      "fa": "من، کلودیوس (مجموعه تلویزیونی)",
+      "summary": "تاریخ امپراتوری روم از نگاه یکی از فرمانروایانش روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q135096"
+      }
+    },
+    "tt0364569": {
+      "fa": "همکلاسی قدیمی",
+      "summary": "اوه دائه‌سو پس از پانزده سال اسارت آزاد می‌شود، اما می‌فهمد تنها پنج روز فرصت دارد هویت کسی را که زندانی‌اش کرده پیدا کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q475693"
+      }
+    },
+    "tt9432978": {
+      "fa": "کارخانه کوتا",
+      "summary": "این مجموعهٔ سیاه‌وسفید هندی، مشکلات روزمرهٔ نوجوانانی را دنبال می‌کند که برای آزمون ورودی مؤسسات فناوری هند آماده می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt9432978/"
+      }
+    },
+    "tt0057012": {
+      "fa": "دکتر استرنجلاو",
+      "summary": "یک فرماندهٔ سرکش دستور حملهٔ هسته‌ای می‌دهد. سیاست‌مداران و ژنرال‌ها در اتاق جنگ تلاش می‌کنند پیش از وقوع فاجعه، جلوی آن را بگیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q105702"
+      }
     }
   },
   "retryAfter": {
@@ -1062,6 +1098,6 @@
   },
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 124
+    "characters": 136
   }
 }
