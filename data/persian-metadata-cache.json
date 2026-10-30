@@ -1271,11 +1271,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q209878"
       }
+    },
+    "tt0044741": {
+      "fa": "زیستن",
+      "summary": "کارمندی پس از فهمیدن اینکه سرطانش درمانی ندارد، به زندگی‌ای که پشت سر گذاشته فکر می‌کند و دنبال کاری می‌گردد که به روزهای باقی‌مانده‌اش معنا بدهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q152105"
+      }
+    },
+    "tt0118421": {
+      "fa": "آز",
+      "summary": "زندانیان و کارکنان یک زندان امنیتی، در محیطی پرتنش برای قدرت، اعتماد و زنده‌ماندن با هم درگیر می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q739780"
+      }
+    },
+    "tt2106476": {
+      "fa": "شکار (فیلم ۲۰۱۲)",
+      "summary": "معلمی که بر سر حضانت پسرش درگیر است، دوباره به زندگی امیدوار می‌شود؛ اما اتهامی نادرست، رابطه‌اش با اطرافیان و زندگی‌اش را به هم می‌ریزد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q32303"
+      }
+    },
+    "tt0988824": {
+      "fa": "ناروتو: شیپودن",
+      "summary": "ناروتو اوزوماکی، نینجایی نوجوان و پرانرژی، برای کسب احترام و رسیدن به مقام هوکاگه، رهبر و نیرومندترین نینجای روستا، تلاش می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0988824/"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 191
+    "characters": 208
   }
 }
