@@ -101,7 +101,13 @@ function setTheme(){const dark=document.documentElement.dataset.theme==='dark';$
 $('#theme').onclick=()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('cinema-theme',document.documentElement.dataset.theme)}catch{}setTheme()};setTheme();
 $$('[data-type]').forEach(b=>b.onclick=()=>{type=b.dataset.type;limit=CARD_BATCH_SIZE;$$('[data-type]').forEach(c=>{c.classList.toggle('active',c===b);c.setAttribute('aria-selected',c===b)});render();revealGrid()});
 $$('[data-status]').forEach(b=>b.onclick=()=>{status=b.dataset.status;limit=CARD_BATCH_SIZE;$$('[data-status]').forEach(c=>{c.classList.toggle('active',c===b);c.setAttribute('aria-pressed',String(c===b))});render();revealGrid()});
-let searchFrame=0;$('#search').oninput=()=>{limit=CARD_BATCH_SIZE;if(searchFrame)cancelAnimationFrame(searchFrame);searchFrame=requestAnimationFrame(()=>{searchFrame=0;render()})};$('#sort').onchange=()=>{limit=CARD_BATCH_SIZE;render();revealGrid()};$('#genre').onchange=()=>{limit=CARD_BATCH_SIZE;render();revealGrid()};$('#reset').onclick=resetFilters;
+let searchFrame=0;
+function syncCatalogSearch(){const value=$('#search').value;const inline=$('#catalog-search');if(inline.value!==value)inline.value=value;$('#catalog-search-clear').hidden=!value}
+function handleCatalogSearchInput(){syncCatalogSearch();limit=CARD_BATCH_SIZE;if(searchFrame)cancelAnimationFrame(searchFrame);searchFrame=requestAnimationFrame(()=>{searchFrame=0;render()})}
+$('#search').oninput=handleCatalogSearchInput;
+$('#catalog-search').oninput=()=>{$('#search').value=$('#catalog-search').value;handleCatalogSearchInput()};
+$('#catalog-search-clear').onclick=()=>{$('#search').value='';handleCatalogSearchInput();$('#catalog-search').focus?.()};
+syncCatalogSearch();$('#sort').onchange=()=>{limit=CARD_BATCH_SIZE;render();revealGrid()};$('#genre').onchange=()=>{limit=CARD_BATCH_SIZE;render();revealGrid()};$('#reset').onclick=resetFilters;
 function handleActions(e){const f=e.target.closest('[data-favorite]');if(f){changePreference(f.dataset.favorite,{favorite:!preferences.get(f.dataset.favorite)?.favorite});return}const r=e.target.closest('[data-score]');if(r){changePreference(detailId,{rating:r.dataset.score==='clear'?null:Number(r.dataset.score)});return}const b=e.target.closest('[data-seen]');if(b){changeState(b.dataset.seen,seen.has(b.dataset.seen)?'none':'seen');return}const w=e.target.closest('[data-want]');if(w){changeState(w.dataset.want,wanted.has(w.dataset.want)?'none':'watchlist');return}const d=e.target.closest('[data-detail]');if(d)openDetail(d.dataset.detail)}
 $('#grid').onclick=handleActions;$('#dialog-content').addEventListener('click',handleActions);$('#dialog-content').addEventListener('keydown',e=>{if(!e.target.closest('.quick-result'))return;const items=[...$('#quick-results').querySelectorAll('.quick-result')],index=items.indexOf(e.target.closest('.quick-result'));if(e.key==='ArrowDown'&&items.length){e.preventDefault();items[(index+1)%items.length].focus()}else if(e.key==='ArrowUp'&&items.length){e.preventDefault();items[(index-1+items.length)%items.length].focus()}});
 $('#dialog-content').addEventListener('click',e=>{const button=e.target.closest('[data-command]');if(!button)return;const command=button.dataset.command;if(command==='tonight')openTonight();else if(command==='journal')openJournal();else if(command==='watchlist')openWatchlist();});
@@ -222,7 +228,7 @@ function updateFilterSummary(total){
   $('#filter-results').textContent='نمایش '+fa(total)+' '+(type==='movie'?'فیلم':'سریال');
 }
 function resetFilters(){
-  $('#search').value='';$('#genre').value='';$('#min-rating').value='0';$('#decade').value='0';$('#max-time').value='0';$('#sort').value='rank';status='all';limit=CARD_BATCH_SIZE;
+  $('#search').value='';syncCatalogSearch();$('#genre').value='';$('#min-rating').value='0';$('#decade').value='0';$('#max-time').value='0';$('#sort').value='rank';status='all';limit=CARD_BATCH_SIZE;
   $$('[data-status]').forEach(b=>{const active=b.dataset.status==='all';b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});render();revealGrid();
 }
 function openFilters(){
