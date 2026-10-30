@@ -168,6 +168,8 @@ function spinRoulette(){
  const center=(index+.5)*45,offset=(360-center-rouletteRotation%360+360)%360;
  rouletteRotation+=1800+offset;
  wheel.style.transition='';
+ // Force the reset angle to paint before animating, including the first spin.
+ void wheel.offsetWidth;
  wheel.style.transform='rotate('+rouletteRotation+'deg)';
  result.innerHTML='<p class="roulette-placeholder">گردونه داره برات انتخاب می‌کنه…</p>';
  button.disabled=true;button.innerHTML=icon('shuffle')+' در حال چرخش…';
