@@ -1127,13 +1127,47 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt33175825/"
       }
+    },
+    "tt1831164": {
+      "fa": "لیلا و مکنون",
+      "summary": "لیلا و مجنون در استانبول عاشق هم می‌شوند؛ در داستانی کمدی که اتفاق‌های عجیب و شخصیت‌های غیرمنتظره مدام مسیرش را عوض می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1831164/"
+      }
+    },
+    "tt1910272": {
+      "fa": "اشتاینز;گیت",
+      "summary": "دانشجویی و دوستانش راهی برای سفر در زمان پیدا می‌کنند. آن‌ها باید با پیامدهای این کشف روبه‌رو شوند و جلوی نقشه‌های یک سازمان خطرناک را بگیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q20590069"
+      }
+    },
+    "tt8267604": {
+      "fa": "کفرناحوم",
+      "summary": "پسربچه‌ای دوازده‌ساله که برای جرمی خشونت‌آمیز زندانی شده، از پدر و مادرش به دلیل بی‌توجهی شکایت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q51803319"
+      }
+    },
+    "tt3718778": {
+      "fa": "آنسوی دیوار باغ",
+      "summary": "دو برادر در سرزمینی اسرارآمیز گم می‌شوند و تلاش می‌کنند راه خانه را پیدا کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q17065414"
+      }
     }
   },
-  "retryAfter": {
-    "tt1831164": "2026-10-30T15:09:07+00:00"
-  },
+  "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 168
+    "characters": 184
   }
 }
