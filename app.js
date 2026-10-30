@@ -261,7 +261,7 @@ function openFilters(){
 function closeFilters(showResults=false){
   window.CinemaSelects?.close();const drawer=$('#filter-drawer');if(drawer.open)drawer.close(showResults?'results':'');
 }
-$('#filters-toggle').onclick=openFilters;$('#filter-close').onclick=()=>closeFilters();$('#filter-apply').onclick=()=>closeFilters(true);
+$('#assistant-launch').onclick=openAssistant;$('#filters-toggle').onclick=openFilters;$('#filter-close').onclick=()=>closeFilters();$('#filter-apply').onclick=()=>closeFilters(true);
 $('#filter-drawer').addEventListener('close',()=>{$('#filters-toggle').setAttribute('aria-expanded','false');window.CinemaSelects?.close();applyPendingCatalogue();checkScrollPosition();if($('#filter-drawer').returnValue==='results')scrollToSection('#collection')});
 $('#filter-drawer').onclick=e=>{if(e.target!==$('#filter-drawer'))return;const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeFilters()};
 $('#search').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();closeFilters(true)}});
@@ -452,7 +452,7 @@ function scrollToSection(id) {
 }
 function setDialogMode(mode){dialogMode=mode;syncDock();}
 function syncDock() {
-  const primary=['account','account-help','stats','watchlist','assistant'].includes(dialogMode),current=dialogMode==='account-help'?'assistant':dialogMode==='account'?'assistant':primary?dialogMode:status==='watchlist'?'watchlist':'collection';
+  const primary=['account','account-help','stats','watchlist','assistant'].includes(dialogMode),current=['account','account-help'].includes(dialogMode)?'':primary?dialogMode:status==='watchlist'?'watchlist':'collection';
   $('#details').classList.toggle('dock-screen',primary);
   const dock=$('.mobile-dock'),parent=primary?$('#details'):document.body;
   if(parent?.appendChild&&dock&&dock.parentElement!==parent)parent.appendChild(dock);
