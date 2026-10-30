@@ -391,3 +391,95 @@ html:has(#details[open]),html:has(#filter-drawer[open]){overflow-y:hidden}
     font-size: 9px;
   }
 }
+
+/* Cinema500 mobile bubble layout: two columns, lightweight chrome, less noise. */
+@media (max-width:700px) {
+  .hero.cinema-hero {
+    min-height:clamp(425px,120vw,485px);
+    border-radius:25px;
+    box-shadow:var(--bubble-shadow);
+  }
+  .hero-note,.explore-overlap-note,.explore-swipe-hint {display:none}
+  .curated-section {margin-block:27px}
+  .curated-heading {margin-bottom:14px}
+  .journey-grid {grid-auto-columns:min(80vw,310px);gap:10px}
+  .journey-card {border-radius:23px}
+  .collection-top h2 {font-size:22px}
+  .collection-toolbar {margin-block:14px 10px}
+  #grid.grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:15px 11px;
+  }
+  #grid > .card {
+    min-width:0;
+    padding:5px;
+    border:1px solid var(--bubble-edge);
+    border-radius:22px;
+    background:var(--bubble-fill);
+    box-shadow:var(--bubble-shadow);
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+    contain-intrinsic-block-size:auto 350px;
+  }
+  #grid > .card > .poster {
+    border-radius:17px;
+    overflow:hidden;
+  }
+  #grid .card-content {
+    min-width:0;
+    padding:10px 6px 7px;
+    background:none;
+  }
+  #grid .poster-facts > span {
+    background:var(--bubble-chip);
+    border-color:var(--bubble-edge);
+    border-radius:7px;
+    font-size:9px;
+  }
+  #grid .rank {top:9px;right:9px;border-radius:9px}
+  #grid .poster-actions {top:8px;left:8px;gap:4px}
+  #grid .poster-actions > .favorite-btn,
+  #grid .poster-actions > .poster-save {
+    width:35px;height:35px;min-width:35px;min-height:35px;
+    border:1px solid #ffffff45;
+    border-radius:11px;
+    background:rgba(12,17,30,.75);
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+  }
+  #grid .poster-actions .icon {width:16px;height:16px}
+  #grid .card-name {font-size:12px;line-height:1.45}
+  #grid .card-fa {font-size:9px;line-height:1.6}
+  #grid .card-actions > .seen-btn {
+    min-height:37px;
+    border-radius:11px;
+    border-color:var(--bubble-edge);
+    background:var(--bubble-chip);
+  }
+  #grid > .skeleton-card {border-radius:22px}
+  .metric-card {border-radius:22px}
+  .journal-metrics {gap:9px}
+  .filter-drawer::backdrop {
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+  }
+  .mobile-dock {
+    background:color-mix(in srgb,var(--ui-dock) 90%,transparent);
+    box-shadow:0 10px 28px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.19);
+    -webkit-backdrop-filter:blur(11px) saturate(110%);
+    backdrop-filter:blur(11px) saturate(110%);
+  }
+}
+@media (max-width:360px) {
+  #grid.grid {gap:12px 9px}
+  #grid > .card {padding:4px;border-radius:19px}
+  #grid > .card > .poster {border-radius:15px}
+  #grid .card-content {padding:8px 5px 6px}
+  #grid .card-name {font-size:11px}
+  #grid .poster-actions > .favorite-btn,
+  #grid .poster-actions > .poster-save {width:32px;height:32px;min-width:32px;min-height:32px}
+}
+@media (prefers-reduced-transparency:reduce) {
+  #grid > .card,.metric-card,.journey-card {background:var(--surface);box-shadow:none}
+  .mobile-dock {-webkit-backdrop-filter:none;backdrop-filter:none}
+}
