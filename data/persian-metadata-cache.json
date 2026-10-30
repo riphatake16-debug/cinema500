@@ -1235,6 +1235,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1130395"
       }
+    },
+    "tt10986410": {
+      "fa": "تد لسو",
+      "summary": "تد لاسو، مربی فوتبال آمریکایی، برای مربیگری یک تیم فوتبال در انگلستان استخدام می‌شود. او این ورزش را خوب نمی‌شناسد، اما تلاش می‌کند اعتماد بازیکنان و هواداران را به دست بیاورد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q96407897"
+      }
+    },
+    "tt0180093": {
+      "fa": "مرثیه برای یک رؤیا",
+      "summary": "چهار نفر در کونی‌آیلند هرکدام رؤیایی برای آینده دارند، اما با شدیدترشدن اعتیادشان، زندگی و آرزوهایشان از هم می‌پاشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q487181"
+      }
+    },
+    "tt1255953": {
+      "fa": "ویرانشده",
+      "summary": "خواهر و برادری دوقلو برای شناختن گذشتهٔ خانواده و انجام آخرین خواسته‌های مادرشان، به خاورمیانه سفر می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1212650"
+      }
+    },
+    "tt0384766": {
+      "fa": "روم",
+      "summary": "در آخرین روزهای جمهوری روم، زندگی چهره‌های قدرتمند و مردم عادی به هم گره می‌خورد و همه تحت تأثیر رقابت‌های سیاسی و جنگ قرار می‌گیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q209878"
+      }
     }
   },
   "retryAfter": {},
