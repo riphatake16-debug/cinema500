@@ -243,7 +243,7 @@ test('Film detail shows key facts first and retains optional journal/related too
   assert.ok(html.includes('id="personal-controls"'));
   assert.ok(html.includes('id="diary-form"'));
   assert.ok(html.includes('id="detail-journal"'));
-  assert.ok(html.includes('https://www.imdb.com/title/'+movie.id+'/'));
+  assert.ok(!html.includes('https://www.imdb.com/title/'+movie.id+'/'),'detail stays on Cinema500 without outbound IMDb action');
   assert.ok(html.indexOf('id="detail-actions"')<html.indexOf('detail-disclosure detail-personal'));
   assert.ok(!html.includes('<details class="detail-disclosure detail-personal" open'));
   if(movie.summary?.length>225){
