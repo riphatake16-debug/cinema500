@@ -1741,11 +1741,40 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1392744"
       }
+    },
+    "tt0268093": {
+      "fa": "رامایان",
+      "summary": "شاهزاده رام به خواست نامادری‌اش از آیودهیا تبعید می‌شود و برادر وفادارش لاکشمانا و همسرش سیتا، او را در سفر به جنگل همراهی می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0268093/"
+      }
+    },
+    "tt0017136": {
+      "fa": "مادرشهر",
+      "summary": "در شهری در آینده، کارگران و طبقهٔ ثروتمند زندگی‌های کاملاً متفاوتی دارند. پسر طراح شهر به زنی از میان کارگران علاقه‌مند می‌شود و با زندگی آن‌ها آشنا می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q151599"
+      }
+    },
+    "tt0367279": {
+      "fa": "پرورش شکستخورده",
+      "summary": "مایکل بلوث پس از زندانی‌شدن پدرش، مسئول ادارهٔ امور خانواده می‌شود؛ اما خودخواهی و تصمیم‌های عجیب اعضای خانواده مدام کارش را سخت‌تر می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q11598"
+      }
     }
   },
-  "retryAfter": {},
+  "retryAfter": {
+    "tt8579674": "2026-10-31T05:44:05+00:00"
+  },
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 338
+    "characters": 349
   }
 }
