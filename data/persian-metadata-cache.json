@@ -1307,6 +1307,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0988824/"
       }
+    },
+    "tt0338013": {
+      "fa": "درخشش ابدی یک ذهن پاک",
+      "summary": "پس از به‌هم‌خوردن رابطه‌شان، زن و مردی سراغ روشی پزشکی می‌روند تا خاطرات یکدیگر را از ذهنشان پاک کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q208269"
+      }
+    },
+    "tt5712554": {
+      "fa": "گراند تور",
+      "summary": "جرمی، ریچارد و جیمز با خودروهای تازه و هیجان‌انگیز سازندگان مختلف، به ماجراجویی در سراسر جهان می‌روند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q21980653"
+      }
+    },
+    "tt0053604": {
+      "fa": "آپارتمان",
+      "summary": "مردی برای پیشرفت شغلی، آپارتمانش را در اختیار مدیران شرکت می‌گذارد؛ اما این کار زندگی عاطفی خودش را هم پیچیده می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q270510"
+      }
+    },
+    "tt6741278": {
+      "fa": "شکستناپذیر",
+      "summary": "مارک گریسون نوجوان قدرت‌های ابرقهرمانی‌اش را به دست می‌آورد. او در کنار یادگرفتن استفاده از آن‌ها، با مسئولیت‌های تازه و حقیقت‌هایی دشوار دربارهٔ خانواده‌اش روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q55614601"
+      }
     }
   },
   "retryAfter": {},
