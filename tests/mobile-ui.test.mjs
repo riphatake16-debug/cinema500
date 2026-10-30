@@ -25,8 +25,8 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
   const versions = {
-    'app.js': 'quick-search-20261031-1',
-    'mobile.css': 'quick-search-20261031-1',
+    'app.js': 'compact-detail-20261031-1',
+    'mobile.css': 'compact-detail-20261031-1',
     'style.css': 'mobile-focus-20261031-1'
   };
   for (const [file, version] of Object.entries(versions)) {
@@ -56,4 +56,16 @@ test('catalogue search is always visible and compatible with advanced filters', 
   assert.ok(js.includes('function syncCatalogSearch()'));
   assert.ok(js.includes("'#catalog-search').oninput"));
   assert.ok(js.includes("'#catalog-search-clear').onclick"));
+});
+
+test('film detail animations are light, accessible and optional controls stay collapsed',async()=>{
+  const [html,js,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
+  assert.ok(html.includes('mobile.css?v=compact-detail-20261031-1'));
+  assert.ok(js.includes('detail-disclosure detail-personal'));
+  assert.ok(js.includes('detail-disclosure detail-similar'));
+  assert.ok(js.includes('data-expand-detail-summary'));
+  assert.match(css,/\.detail-view\s*\{[^}]*animation:detailAppear/);
+  assert.match(css,/\.detail-view \.detail-disclosure > summary:focus-visible/);
+  assert.match(css,/@media \(prefers-reduced-motion:reduce\)/);
+  assert.ok(css.includes('#details:has(.detail-view) .dialog-backdrop-image {display:none}'));
 });
