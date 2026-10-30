@@ -199,3 +199,25 @@ test('Catalogue search works directly without opening filters and stays in sync'
   assert.equal(api.filtered().length,250);
   assert.equal(JSON.stringify(api.snapshot()),journal);
 });
+
+test('Film detail shows key facts first and retains optional journal/related tools in collapsed panels',()=>{
+  api.setFilters('movie','all');
+  const movie=api.filtered().find(a=>a.summary&&a.summary.length>225)||api.filtered()[0];
+  api.openDetail(movie.id);
+  const html=get('#dialog-content').innerHTML;
+  assert.ok(html.includes('class="detail-view"'));
+  assert.ok(html.includes('id="detail-actions"'));
+  assert.ok(html.includes('detail-disclosure detail-personal'));
+  assert.ok(html.includes('detail-disclosure detail-similar'));
+  assert.ok(html.includes('id="personal-controls"'));
+  assert.ok(html.includes('id="diary-form"'));
+  assert.ok(html.includes('id="detail-journal"'));
+  assert.ok(html.includes('https://www.imdb.com/title/'+movie.id+'/'));
+  assert.ok(html.indexOf('id="detail-actions"')<html.indexOf('detail-disclosure detail-personal'));
+  assert.ok(!html.includes('<details class="detail-disclosure detail-personal" open'));
+  if(movie.summary?.length>225){
+    assert.ok(html.includes('detail-summary is-clamped'));
+    assert.ok(html.includes('data-expand-detail-summary'));
+  }
+  get('#details').open=false;
+});
