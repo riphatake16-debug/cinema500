@@ -92,3 +92,10 @@ Ambient blur remains static during fades. Nested rating/watch buttons reuse thei
 در قطعی منبع، نبود متن یا پایان سهمیه، تکمیل خودکار برای اجرای بعدی صف می‌شود و حداقل ۶ ساعت تا تلاش بعدی همان اثر فاصله می‌افتد. رتبه‌ها مستقل از فارسی‌سازی منتشر می‌شوند. اگر هیچ منبعی نتیجهٔ فارسی معتبر ندهد، اثر وارد فهرست می‌شود و تا تکمیل در یکی از اجراهای بعدی، نبود خلاصهٔ فارسی صادقانه مشخص است.
 
 مستندات منابع: [IMDb ID در ویکی‌داده](https://www.wikidata.org/wiki/Property:P345)، [TextExtracts](https://www.mediawiki.org/wiki/Extension:TextExtracts)، [MyMemory API](https://mymemory.translated.net/doc/spec.php)، [محدودیت مصرف رایگان](https://mymemory.translated.net/doc/usagelimits.php).
+
+
+### Mobile browsing and app screens
+
+The mobile catalogue uses one full-poster card per row with IMDb/year badges and floating favorite/watchlist controls. Search, status, genre, rating, decade, runtime and sort share one native dialog; controls are not duplicated and the live result count updates before returning to the grid. Reset changes only filters.
+
+The four-destination dock remains reachable in the mobile watchlist, statistics, profile and profile guide. The profile keeps its level/avatar and backup actions up front; browser-storage explanations live in the separate guide. Analytics use the existing journal calculations, including archived titles. Layouts respect safe-area insets, keyboard focus, reduced motion and the existing light/dark themes.

@@ -4,16 +4,16 @@ import vm from 'node:vm';
 import {readFile,access} from 'node:fs/promises';
 import {webcrypto} from 'node:crypto';
 const elements=new Map(),stored=new Map(),observers=[],timers=new Map();let timerId=0,domCards=[];
-function element(){return {value:'',dataset:{},textContent:'',innerHTML:'',hidden:false,open:false,style:{setProperty(){}},classList:{add(){},remove(){},toggle(){}},setAttribute(){},insertAdjacentHTML(p,h){this.innerHTML+=h},getBoundingClientRect(){return {top:10000}},events:{},addEventListener(name,handler){this.events[name]=handler},showModal(){this.open=true},close(){this.open=false}}}
+function element(){return {value:'',dataset:{},textContent:'',innerHTML:'',hidden:false,open:false,style:{setProperty(){}},classList:{add(){},remove(){},toggle(){}},setAttribute(){},insertAdjacentHTML(p,h){this.innerHTML+=h},getBoundingClientRect(){return {top:10000}},events:{},addEventListener(name,handler){this.events[name]=handler},showModal(){this.open=true},close(value=''){this.open=false;this.returnValue=value},appendChild(node){node.parentElement=this;return node}}}
 function get(s){if(!elements.has(s))elements.set(s,element());return elements.get(s)}
 let failKey='';
-const ctx=vm.createContext({IntersectionObserver:class{constructor(cb){this.callback=cb;observers.push(this)}observe(){}unobserve(){}},document:{querySelector:get,querySelectorAll:selector=>selector==='#grid > .card'?domCards:[],documentElement:{dataset:{theme:'dark'}},addEventListener(){}},window:{addEventListener(){}},localStorage:{getItem:k=>stored.get(k)??null,setItem(k,v){if(k===failKey){failKey='';throw Error('quota')}stored.set(k,v)},removeItem:k=>stored.delete(k)},setTimeout:(fn,ms)=>{const id=++timerId;timers.set(id,{fn,ms});return id},clearTimeout:id=>timers.delete(id),requestAnimationFrame:fn=>fn(),crypto:webcrypto});
+const ctx=vm.createContext({IntersectionObserver:class{constructor(cb){this.callback=cb;observers.push(this)}observe(){}unobserve(){}},document:{body:element(),querySelector:get,querySelectorAll:selector=>selector==='#grid > .card'?domCards:[],documentElement:{dataset:{theme:'dark'}},addEventListener(){}},window:{addEventListener(){}},localStorage:{getItem:k=>stored.get(k)??null,setItem(k,v){if(k===failKey){failKey='';throw Error('quota')}stored.set(k,v)},removeItem:k=>stored.delete(k)},setTimeout:(fn,ms)=>{const id=++timerId;timers.set(id,{fn,ms});return id},clearTimeout:id=>timers.delete(id),requestAnimationFrame:fn=>fn(),crypto:webcrypto});
 vm.runInContext(await readFile('catalogue.js','utf8'),ctx);
 vm.runInContext(await readFile('ranks.js','utf8'),ctx);
 vm.runInContext(await readFile('discovery.js','utf8'),ctx);
 vm.runInContext(await readFile('live.js','utf8'),ctx);
 let source=await readFile('app.js','utf8');
-source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
+source=source.replace(/\}\)\(\);\s*$/,`window.test={watcherRank,saveDiary,journalForMonth,monthOf,tasteGenres,pickForTaste,recommendReasons,resetJournal:()=>{seen=new Set();wanted=new Set();preferences=new Map();discoverySettings=discovery.settings({});stateVersion++;localStorage.removeItem('cinema-discovery');for(const key of ['cinema-seen','cinema-wanted','cinema-preferences'])localStorage.removeItem(key);},openDetail,openWatchlist,openJourney,openCollection,appendCollectionRows,setExplore:(kind,view)=>{journeyKind=kind;journeyView=view;renderJourneys(true)},quickMatches,setAmbient,filtered,changeState,changePreference,importJournal,recommendPool,openAccount,openAccountHelp,openStats,setFilters:(t,s)=>{type=t;status=s},snapshot:()=>({seen:[...seen],wanted:[...wanted],preferences:[...preferences.values()],discovery:discoverySettings,accountReady})};})();`);
 vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
@@ -77,7 +77,7 @@ test('Recommendations respect hard filters and explain taste affinity from actua
 
 test('Browser-only profile exposes backup without any sign-in or cloud dependency',async()=>{
  const html=await readFile('index.html','utf8');assert.ok(!/auth-config|auth\.js|cloud-sync|supabase/i.test(html));assert.ok(!/CinemaAuth|cloudSync|queueCloud|authStatus/.test(source));
- api.openAccount();const profile=get('#dialog-content').innerHTML;assert.ok(profile.includes('بدون ثبت‌نام و رمز عبور'));assert.ok(profile.includes('journal-export'));assert.ok(profile.includes('journal-import'));assert.ok(!profile.includes('ورود با گوگل'));
+ api.openAccount();const profile=get('#dialog-content').innerHTML;assert.ok(profile.includes('account-help'));assert.ok(!profile.includes('اطلاعات هر مرورگر'));get('#account-help').onclick();assert.ok(get('#dialog-content').innerHTML.includes('اطلاعات هر مرورگر'));get('#account-guide-back').onclick();assert.ok(profile.includes('journal-export'));assert.ok(profile.includes('journal-import'));assert.ok(!profile.includes('ورود با گوگل'));
 });
 
 test('Existing browser records survive a fresh initialization with the same storage keys',()=>{
@@ -157,4 +157,24 @@ test('Discovery tabs render only the chosen type and category lists append witho
  api.openCollection('movie-drama',true);assert.equal(count(),48);assert.equal(get('#details').scrollTop,120);
  api.openCollection('movie-imagination');get('#collection-search').value='اینسپشن';get('#collection-search').oninput();assert.equal(count(),1);assert.ok(get('#collection-items').innerHTML.includes('tt1375666'));
  api.resetJournal();api.setExplore('movie','collections');
+});
+
+
+test('Combined drawer filters preview the result and reset without changing the private journal',()=>{
+ const flow=ctx.window.test;flow.resetJournal();flow.changeState('tt0111161','seen');flow.changePreference('tt0111161',{rating:9,note:'Keep this note'});flow.changeState('tt0068646','watchlist');
+ const journal=JSON.stringify(flow.snapshot()),records=JSON.stringify([...stored]);get('#details').open=false;flow.setFilters('movie','seen');
+ get('#search').value='۱۹۹۴';get('#genre').value='Drama';get('#min-rating').value='9';get('#max-time').value='180';get('#decade').value='1990';get('#sort').value='year';
+ get('#filters-toggle').onclick();assert.equal(get('#filter-drawer').open,true);assert.equal(flow.filtered().length,1);assert.equal(flow.filtered()[0].id,'tt0111161');assert.equal(get('#filter-count').textContent,'۷');assert.equal(get('#filter-results').textContent,'نمایش ۱ فیلم');
+ get('#clear-filters').onclick();assert.equal(get('#filter-drawer').open,true);assert.equal(flow.filtered().length,250);assert.equal(get('#search').value,'');assert.equal(get('#sort').value,'rank');assert.equal(get('#filter-count').hidden,true);
+ assert.equal(JSON.stringify(flow.snapshot()),journal);assert.equal(JSON.stringify([...stored]),records);get('#filter-apply').onclick();assert.equal(get('#filter-drawer').open,false);assert.equal(get('#filter-drawer').returnValue,'results');
+});
+
+test('The same navigation survives profile, guide and stats transitions and leaves drill-down dialogs',()=>{
+ const flow=ctx.window.test,dock=get('.mobile-dock'),journal=JSON.stringify(flow.snapshot());
+ flow.openAccount();assert.equal(dock.parentElement,get('#details'));
+ get('#account-help').onclick();assert.equal(dock.parentElement,get('#details'));
+ get('#account-guide-back').onclick();assert.equal(dock.parentElement,get('#details'));
+ flow.openStats();assert.equal(dock.parentElement,get('#details'));
+ flow.openDetail('tt0111161');assert.equal(dock.parentElement,ctx.document.body);
+ assert.equal(get('.mobile-dock'),dock);assert.equal(JSON.stringify(flow.snapshot()),journal);
 });
