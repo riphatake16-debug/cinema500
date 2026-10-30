@@ -11,7 +11,6 @@ let stateVersion=0,cloudStates=new Set(),preferences=new Map(),guestPreferences=
 const CARD_BATCH_SIZE=typeof matchMedia==='function'&&matchMedia('(max-width:700px)').matches?18:30;
 let data=[],charts=[],type='movie',status='all',limit=CARD_BATCH_SIZE,seen=new Set(),wanted=new Set(),guestSeen=new Set(),guestWanted=new Set(),accountReady=false,saving=false,refreshing=false,toastTimer,syncedAt=null,detailId=null,dialogMode='';
 function validWatchDate(value){if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;const date=new Date(value+'T12:00:00Z');return !Number.isNaN(date.getTime())&&date.toISOString().slice(0,10)===value;}
-function today(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
 const journalKey=key=>key;
 const storage={get(key,fallback){try{return JSON.parse(localStorage.getItem(journalKey(key))||JSON.stringify(fallback))}catch{return fallback}},set(key,value){try{localStorage.setItem(journalKey(key),JSON.stringify(value));return true}catch{return false}}};
 const live=window.CinemaLive;let catalogueInfo=live.validate(window.CINEMA_CATALOGUE),titleMemory=live.memory(window.CINEMA_CATALOGUE,storage.get('cinema-title-archive',[]));
