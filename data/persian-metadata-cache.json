@@ -812,11 +812,47 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q109116"
       }
+    },
+    "tt0081834": {
+      "fa": "داس بوت",
+      "summary": "خدمهٔ یک زیردریایی آلمانی در آغاز جنگ جهانی دوم، مأموریت گشت‌زنی هراس‌انگیزی را تجربه می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0081834/"
+      }
+    },
+    "tt0090605": {
+      "fa": "بیگانهها",
+      "summary": "الن ریپلی پس از ۵۷ سال خواب مصنوعی نجات می‌یابد. با قطع ارتباط یک مستعمره، او همراه تفنگداران مجهز به جایی بازمی‌گردد که کابوسش از آن آغاز شده بود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q104814"
+      }
+    },
+    "tt0063929": {
+      "fa": "سیرک پرنده مانتی پایتان",
+      "summary": "مجموعه‌ای از نمایش‌های کوتاه طنز و سوررئال با اجرای گروه مانتی پایتون.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16401"
+      }
+    },
+    "tt0057565": {
+      "fa": "بهشت و دوزخ",
+      "summary": "یکی از مدیران شرکت کفش‌سازی، پس از ربوده‌شدن پسر راننده‌اش، هدف اخاذی قرار می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q244878"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 72
+    "characters": 80
   }
 }
