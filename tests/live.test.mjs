@@ -37,8 +37,8 @@ function app(){
  vm.runInContext(source,ctx);get('#sort').value='rank';return{api:ctx.window.test,get,stored,ctx,fail:key=>failKey=key};
 }
 test('Rank changes and membership changes retain diary, watched flags, watchlists and XP',()=>{
- const {api,get,stored}=app();api.changeState('tt0111161','seen');api.changePreference('tt0111161',{rating:9,favorite:true});api.saveDiary('tt0111161','یادداشت من','2026-10-20');api.changeState('tt0068646','watchlist');
- const f=feed();[f.titles[0].rank,f.titles[1].rank]=[2,1];assert.equal(api.applyLiveCatalogue(f),true);assert.equal(api.snapshot().rank,2);assert.equal(api.watcherRank().xp,10);
+ const {api,get,stored}=app();api.changeState('tt0111161','seen');api.changePreference('tt0111161',{rating:9,favorite:true});api.saveDiary('tt0111161','یادداشت من');api.changeState('tt0068646','watchlist');
+ const f=feed();[f.titles[0].rank,f.titles[1].rank]=[2,1];assert.equal(api.applyLiveCatalogue(f),true);assert.equal(api.snapshot().rank,2);assert.deepEqual(Array.from(api.filtered().slice(0,2),a=>a.id),['tt0068646','tt0111161'],'re-ordered IMDb chart updates the actual visible list');assert.equal(api.watcherRank().xp,10);assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0111161').watchedOn,null);
  const changed=clone(f);changed.version='b'.repeat(64);const departed=changed.titles.find(t=>t.id==='tt0111161');changed.archive=[{...departed,rank:null}];changed.titles=changed.titles.map(t=>t.id===departed.id?{...t,id:'tt9999999',title:'New fixture',fa:'اثر تازه'}:t);
  api.applyLiveCatalogue(changed);assert.ok(!api.snapshot().ids.includes(departed.id));assert.ok(api.snapshot().seen.includes(departed.id));assert.equal(api.watcherRank().xp,10);assert.equal(api.journalStats().movies,1);
  api.openDetail(departed.id);assert.ok(get('#dialog-content').innerHTML.includes('یادداشت من'));assert.ok(get('#dialog-content').innerHTML.includes('خارج از فهرست فعلی'));
