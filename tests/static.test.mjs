@@ -178,3 +178,24 @@ test('The same navigation survives profile, guide and stats transitions and leav
  flow.openDetail('tt0111161');assert.equal(dock.parentElement,ctx.document.body);
  assert.equal(get('.mobile-dock'),dock);assert.equal(JSON.stringify(flow.snapshot()),journal);
 });
+
+test('Catalogue search works directly without opening filters and stays in sync',()=>{
+  get('#clear-filters').onclick();
+  const journal=JSON.stringify(api.snapshot());
+  get('#catalog-search').value='Shawshank';
+  get('#catalog-search').oninput();
+  assert.equal(get('#search').value,'Shawshank');
+  assert.equal(api.filtered()[0].id,'tt0111161');
+  assert.equal(get('#catalog-search-clear').hidden,false);
+  assert.equal(get('#filter-drawer').open,false);
+  get('#search').value='۱۹۹۴';
+  get('#search').oninput();
+  assert.equal(get('#catalog-search').value,'۱۹۹۴');
+  assert.ok(api.filtered().every(a=>a.year===1994));
+  get('#catalog-search-clear').onclick();
+  assert.equal(get('#search').value,'');
+  assert.equal(get('#catalog-search').value,'');
+  assert.equal(get('#catalog-search-clear').hidden,true);
+  assert.equal(api.filtered().length,250);
+  assert.equal(JSON.stringify(api.snapshot()),journal);
+});
