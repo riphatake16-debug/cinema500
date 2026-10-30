@@ -578,3 +578,67 @@ dialog:has(.journey-list),dialog:has(.watchlist-items){padding:30px 18px 24px;wi
  .collection-detail-options>button{font-size:10px;padding-inline:8px}
 }
 
+/* Cinema500 glass-bubble refinement: translucent colour, not per-card GPU blur. */
+:root {
+  --bubble-fill: linear-gradient(150deg,rgba(255,255,255,.115) 0%,rgba(255,255,255,.045) 29%,rgba(17,25,41,.76) 100%);
+  --bubble-edge: rgba(213,226,255,.21);
+  --bubble-shadow: 0 9px 26px rgba(1,5,15,.22),inset 0 1px 0 rgba(255,255,255,.17);
+  --bubble-chip: rgba(255,255,255,.075);
+}
+html[data-theme=light] {
+  --bubble-fill: linear-gradient(145deg,rgba(255,255,255,.96),rgba(242,246,255,.70) 52%,rgba(228,234,244,.76));
+  --bubble-edge: rgba(122,141,172,.24);
+  --bubble-shadow: 0 9px 26px rgba(30,44,72,.09),inset 0 1px 0 rgba(255,255,255,.97);
+  --bubble-chip: rgba(35,52,86,.055);
+}
+.grid > .card {
+  border: 1px solid var(--bubble-edge);
+  border-radius: 25px;
+  padding: 6px;
+  background: var(--bubble-fill);
+  box-shadow: var(--bubble-shadow);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  transition: border-color .18s ease,transform .18s ease,box-shadow .18s ease;
+}
+.grid > .card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb,var(--accent) 40%,var(--bubble-edge));
+  box-shadow: 0 12px 30px rgba(1,5,15,.24),inset 0 1px 0 rgba(255,255,255,.18);
+}
+.grid > .card > .poster {border-radius:19px;overflow:hidden}
+.grid > .card .card-content {padding:10px 9px 9px}
+.grid > .card .card-meta > span:first-child,
+.grid > .card .card-meta > .dot,
+.grid > .card .card-meta > .rating {display:none}
+.grid > .card .card-meta {margin:5px 0 9px}
+.metric-card,
+.journey-card,
+.explore-kind,
+.explore-view,
+.collection-toolbar .filters-toggle {
+  border-color:var(--bubble-edge);
+  background:var(--bubble-fill);
+  box-shadow:var(--bubble-shadow);
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+.metric-card {border-radius:24px}
+.journey-card {border-radius:25px}
+.explore-kind,.explore-view {border-radius:24px}
+.collection-toolbar .filters-toggle {border-radius:18px}
+.metric-card .metric-icon {background:var(--bubble-chip);border-color:var(--bubble-edge)}
+.metric-card .metric-value small {display:none}
+.hero.cinema-hero {border-radius:29px;border-color:var(--bubble-edge);box-shadow:var(--bubble-shadow)}
+.hero-watermark {display:none}
+.ambient-layer.active {filter:blur(46px) saturate(.78);opacity:.16}
+@media (max-width:700px) {
+  .ambient {display:none}
+  .grid > .card:hover {transform:none;box-shadow:var(--bubble-shadow)}
+}
+@media (prefers-reduced-motion:reduce) {
+  .grid > .card,.metric-card,.journey-card {transition:none}
+}
+
+/* The result count is the only remaining item in this row. */
+.result-line > #result-count {font-size:11px;opacity:1;color:var(--muted)}
