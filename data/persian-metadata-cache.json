@@ -1561,11 +1561,47 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0158417/"
       }
+    },
+    "tt0095016": {
+      "fa": "جان سخت",
+      "summary": "یک پلیس نیویورکی در لس‌آنجلس تلاش می‌کند همسرش و دیگر مهمانان جشن کریسمس را از دست گروگان‌گیران یک برج نجات دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q105598"
+      }
+    },
+    "tt0022100": {
+      "fa": "ام",
+      "summary": "وقتی پلیس یک شهر آلمانی نمی‌تواند قاتل کودکان را دستگیر کند، تبهکاران هم به جست‌وجوی او می‌پیوندند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q127021"
+      }
+    },
+    "tt6025022": {
+      "fa": "لیگ عدالت نامحدود",
+      "summary": "اعضای اصلی لیگ عدالت با ده‌ها ابرقهرمان دیگر از دنیای دی‌سی متحد می‌شوند تا با دشمنان و تهدیدهای بزرگ‌تر مقابله کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt6025022/"
+      }
+    },
+    "tt0097576": {
+      "fa": "ایندیانا جونز و آخرین جنگ صلیبی",
+      "summary": "پس از ناپدیدشدن پدر ایندیانا جونز در جست‌وجوی جام مقدس، او بار دیگر با نازی‌ها روبه‌رو می‌شود تا مانع دستیابی‌شان به قدرت جام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q185658"
+      }
     }
   },
   "retryAfter": {},
   "translationUsage": {
     "date": "2026-10-30",
-    "characters": 287
+    "characters": 311
   }
 }
