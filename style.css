@@ -639,3 +639,6 @@ html[data-theme=light] {
 @media (prefers-reduced-motion:reduce) {
   .grid > .card,.metric-card,.journey-card {transition:none}
 }
+
+/* The result count is the only remaining item in this row. */
+.result-line > #result-count {font-size:11px;opacity:1;color:var(--muted)}
