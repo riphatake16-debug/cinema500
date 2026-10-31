@@ -2004,6 +2004,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q84323848"
       }
+    },
+    "tt30263074": {
+      "fa": "ساپنه در مقابل همه",
+      "summary": "دو جوان در کار فروش املاک به‌دنبال آرزوهایشان هستند؛ یکی می‌خواهد بازیگر شود و دیگری ثروتمند. فشار کار و اطرافیان، آن‌ها را به تصمیم‌های سخت می‌کشاند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt30263074/"
+      }
+    },
+    "tt0469494": {
+      "fa": "خون به پا خواهد شد",
+      "summary": "مردی بلندپرواز در سال‌های آغازین صنعت نفت به‌دنبال ثروت می‌رود. عطش قدرت و درگیری‌های خانوادگی و مذهبی، او را هر روز از اطرافیانش دورتر می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q244315"
+      }
+    },
+    "tt0094525": {
+      "fa": "پوآروی آگاتا کریستی",
+      "summary": "پرونده‌های هرکول پوآرو، کارآگاه بلژیکیِ نامتعارف اما تیزبین، روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q391101"
+      }
+    },
+    "tt0053291": {
+      "fa": "بعضیها داغشو دوست دارند",
+      "summary": "دو نوازنده پس از دیدن یک قتل مافیایی، با پوشش زنانه در گروه موسیقی زنان پنهان می‌شوند؛ اما دردسرها تازه آغاز شده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190086"
+      }
     }
   },
   "retryAfter": {
@@ -2012,6 +2048,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 225
+    "characters": 242
   }
 }
