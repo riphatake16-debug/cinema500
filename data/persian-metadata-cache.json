@@ -1876,6 +1876,44 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q20762668"
       }
+    },
+    "tt0421291": {
+      "fa": "طرف اروپایی",
+      "summary": "زندگی و دوران خانواده نسبتاً سنتی سوتجو اوغلو و مبارزات کمدی آنها برای اقتباس از زندگی معاصر و پر سر و صدای نیشانتاشی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt0421291/",
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0421291/"
+      }
+    },
+    "tt14392248": {
+      "fa": "داوطلبان",
+      "summary": "سه دوست برای آزمون سخت استخدام در مشاغل دولتی هند آماده می‌شوند. رقابت و فشار این مسیر، بر دوستی و انتخاب‌های آینده‌شان هم اثر می‌گذارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt14392248/"
+      }
+    },
+    "tt0040522": {
+      "fa": "دزد دوچرخه",
+      "summary": "در ایتالیای پس از جنگ، دوچرخهٔ مردی کارگر دزدیده می‌شود و او همراه پسرش به جست‌وجوی آن می‌رود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q172837"
+      }
+    },
+    "tt0111958": {
+      "fa": "پدر تد",
+      "summary": "سه کشیش نامتعارف و خدمتکارشان در جزیرهٔ کراگی زندگی می‌کنند؛ جایی که برخلاف ظاهرش، چندان آرام و بی‌دردسر نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0111958/"
+      }
     }
   },
   "retryAfter": {
@@ -1883,6 +1921,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 23
+    "characters": 206
   }
 }
