@@ -19,6 +19,45 @@ vm.runInContext(source,ctx);const api=ctx.window.test;get('#sort').value='rank';
 test('500 unique titles, relative local artwork and no API/login dependency',async()=>{const titles=ctx.window.CINEMA_CATALOGUE.titles;assert.equal(titles.length,500);assert.equal(new Set(titles.map(x=>x.id)).size,500);for(const a of titles){assert.ok(a.poster.startsWith('./posters/'));await access(''+a.poster)}assert.equal(titles.filter(a=>a.type==='movie').length,250);assert.ok(!source.includes('/api/'));assert.ok(!source.includes('signin-with-chatgpt'));assert.ok(api.snapshot().accountReady)});
 test('rank/name/year search and local watched/rating preferences work without fetch',()=>{get('#search').value='۱۲';assert.equal(api.filtered()[0].rank,12);get('#search').value='Shawshank';assert.equal(api.filtered()[0].id,'tt0111161');get('#search').value='۱۹۹۴';assert.ok(api.filtered().every(a=>a.year===1994));get('#search').value='';api.changeState('tt0111161','watchlist');api.changeState('tt0111161','seen');assert.ok(api.snapshot().seen.includes('tt0111161'));assert.ok(!api.snapshot().wanted.includes('tt0111161'));api.changePreference('tt0111161',{rating:9,favorite:true});assert.ok(stored.get('cinema-preferences').includes('tt0111161'))});
 test('backup imports merge, preserve local entries and reject malformed files atomically',()=>{const payload={format:'cinema500-journal-v1',titles:[{id:'tt0111161',status:'watchlist',rating:1,favorite:false},{id:'tt0068646',status:'watchlist',rating:10,favorite:true}]};assert.equal(api.importJournal(payload),1);assert.ok(api.snapshot().seen.includes('tt0111161'));assert.equal(api.snapshot().preferences.find(p=>p.id==='tt0111161').rating,9);assert.ok(api.snapshot().wanted.includes('tt0068646'));const before=JSON.stringify([...stored]);assert.throws(()=>api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0468569',status:'seen',rating:11}]}));assert.equal(JSON.stringify([...stored]),before);failKey='cinema-wanted';assert.throws(()=>api.importJournal({format:'cinema500-journal-v1',titles:[{id:'tt0468569',status:'seen'}]}));assert.equal(JSON.stringify([...stored]),before);assert.equal(api.importJournal(payload),0)});
+
+test('storage failures do not partially save or display a watched or rated change',()=>{
+ api.resetJournal();
+ const before=JSON.stringify(api.snapshot()),diskBefore=JSON.stringify([...stored]);
+ failKey='cinema-wanted';
+ api.changeState('tt0111161','seen');
+ assert.equal(JSON.stringify(api.snapshot()),before);
+ assert.equal(JSON.stringify([...stored]),diskBefore);
+ failKey='cinema-preferences';
+ api.changePreference('tt0111161',{rating:9});
+ assert.equal(JSON.stringify(api.snapshot()),before);
+ assert.equal(JSON.stringify([...stored]),diskBefore);
+ failKey='cinema-seen';
+ assert.throws(()=>api.saveDiary('tt0111161','test note'),/storage_failed/);
+ assert.equal(JSON.stringify(api.snapshot()),before);
+ assert.equal(JSON.stringify([...stored]),diskBefore);
+ api.resetJournal();
+});
+
+test('backup preview requires explicit confirmation before importing anything',async()=>{
+ api.resetJournal();
+ api.openAccount();
+ const id='tt0468569',backup={format:'cinema500-journal-v1',titles:[{id,status:'watchlist',note:'Saved from another browser'}]};
+ const file={size:200,text:async()=>JSON.stringify(backup)};
+ const before=JSON.stringify(api.snapshot()),diskBefore=JSON.stringify([...stored]);
+ await get('#backup-file').onchange({target:{files:[file]}});
+ assert.equal(get('#backup-preview').hidden,false);
+ assert.ok(get('#backup-preview').innerHTML.includes('پیش‌نمایش فایل پشتیبان'));
+ assert.equal(JSON.stringify(api.snapshot()),before);
+ assert.equal(JSON.stringify([...stored]),diskBefore);
+ get('#backup-cancel').onclick();
+ assert.equal(get('#backup-preview').hidden,true);
+ assert.equal(JSON.stringify(api.snapshot()),before);
+ await get('#backup-file').onchange({target:{files:[file]}});
+ get('#backup-confirm').onclick();
+ assert.ok(api.snapshot().wanted.includes(id));
+ assert.equal(api.snapshot().preferences.find(p=>p.id===id)?.note,'Saved from another browser');
+ api.resetJournal();
+});
 test('infinite scrolling appends, local backup UI and theme work',()=>{api.setFilters('movie','all');get('#search').oninput();const count=()=>[...get('#grid').innerHTML.matchAll(/<article class=/g)].length;assert.equal(count(),30);observers[0].callback([{isIntersecting:true}]);assert.equal(count(),60);api.openAccount();assert.ok(get('#dialog-content').innerHTML.includes('backup-file'));get('#theme').onclick();assert.equal(stored.get('cinema-theme'),'light')});
 
 test('Hero rotates every six seconds, wraps, pauses during interaction and respects manual selection',()=>{
