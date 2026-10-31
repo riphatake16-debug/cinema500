@@ -2040,6 +2040,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q190086"
       }
+    },
+    "tt0348914": {
+      "fa": "شاخه خشکیده درخت",
+      "summary": "در اواخر قرن نوزدهم، زندگی اهالی ددوود در داکوتای جنوبی، شهری گرفتار فساد و جنایت، دنبال می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1050603"
+      }
+    },
+    "tt0075314": {
+      "fa": "راننده تاکسی",
+      "summary": "یک کهنه‌سرباز به‌عنوان رانندهٔ تاکسی شبانه در نیویورک کار می‌کند. تنهایی و دیدن فساد شهر، او را به این فکر می‌اندازد که خودش باید برای تغییر اوضاع دست به کار شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q47221"
+      }
+    },
+    "tt1518542": {
+      "fa": "سارابهای در مقابل سارابهای",
+      "summary": "ورود عروسی از خانواده‌ای با درآمد متوسط به یک خانوادهٔ بسیار ثروتمند در بمبئی، اختلاف سلیقه‌ها و عادت‌های آن‌ها را به ماجراهایی خنده‌دار تبدیل می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1518542/"
+      }
+    },
+    "tt10272386": {
+      "fa": "پدر",
+      "summary": "مردی سالخورده کمک دخترش را رد می‌کند، اما چیزهای آشنای زندگی‌اش کم‌کم برایش غریبه می‌شوند. او دیگر مطمئن نیست به حافظهٔ خودش اعتماد کند یا حرف اطرافیانش.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q65066669"
+      }
     }
   },
   "retryAfter": {
@@ -2048,6 +2084,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 242
+    "characters": 263
   }
 }
