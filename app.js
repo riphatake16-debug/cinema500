@@ -373,7 +373,7 @@ function openFilters(){
 function closeFilters(showResults=false){
   window.CinemaSelects?.close();const drawer=$('#filter-drawer');if(drawer.open)drawer.close(showResults?'results':'');
 }
-$('#roulette-launch').onclick=openRoulette;$('#filters-toggle').onclick=openFilters;$('#filter-close').onclick=()=>closeFilters();$('#filter-apply').onclick=()=>closeFilters(true);
+$('#filters-toggle').onclick=openFilters;$('#filter-close').onclick=()=>closeFilters();$('#filter-apply').onclick=()=>closeFilters(true);
 $('#filter-drawer').addEventListener('close',()=>{$('#filters-toggle').setAttribute('aria-expanded','false');window.CinemaSelects?.close();applyPendingCatalogue();checkScrollPosition();if($('#filter-drawer').returnValue==='results')scrollToSection('#collection')});
 $('#filter-drawer').onclick=e=>{if(e.target!==$('#filter-drawer'))return;const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeFilters()};
 $('#search').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();closeFilters(true)}});
