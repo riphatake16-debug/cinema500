@@ -1,0 +1,37 @@
+name: Verify optional Firebase auth
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'auth.js'
+      - 'auth-ui.js'
+      - 'auth.css'
+      - 'firebase-config.js'
+      - 'index.html'
+      - 'app.js'
+      - 'privacy.html'
+      - 'tests/**'
+      - '.github/workflows/auth-checks.yml'
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Firebase code syntax
+        run: |
+          node --check auth.js
+          node --check auth-ui.js
+          node --check firebase-config.js
+          node --check app.js
+      - name: Run optional-auth regression tests
+        run: |
+          mkdir -p _site
+          cp index.html privacy.html terms.html firebase-config.js auth.js auth-ui.js auth.css app.js _site/
+          cd _site
+          node --test ../tests/auth-optional.test.mjs
