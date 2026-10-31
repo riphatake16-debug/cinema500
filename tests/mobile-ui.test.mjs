@@ -25,8 +25,8 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
   const versions = {
-    'app.js': 'final-polish-20261031-1',
-    'mobile.css': 'final-polish-20261031-1',
+    'app.js': 'roulette-dock-only-20261031-3',
+    'mobile.css': 'roulette-dock-only-20261031-3',
     'style.css': 'mobile-focus-20261031-1'
   };
   for (const [file, version] of Object.entries(versions)) {
@@ -60,7 +60,7 @@ test('catalogue search is always visible and compatible with advanced filters', 
 
 test('film detail animations are light, accessible and optional controls stay collapsed',async()=>{
   const [html,js,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
-  assert.ok(html.includes('mobile.css?v=hero-wheel-removed-20261031-2'));
+  assert.ok(html.includes('mobile.css?v=roulette-dock-only-20261031-3'));
   assert.ok(js.includes('detail-disclosure detail-personal'));
   assert.ok(js.includes('detail-disclosure detail-similar'));
   assert.ok(js.includes('data-expand-detail-summary'));
@@ -76,7 +76,7 @@ test('roulette replaces assistant and tonight without losing the personal librar
  assert.ok(!html.includes('data-dock="assistant"'));
  assert.ok(!html.includes('assistant.js'));
  assert.ok(html.includes('roulette.js?v=roulette-20261031-1'));
- assert.ok(html.includes('id="roulette-launch"'));
+ assert.ok(!html.includes('id="roulette-launch"'), 'no catalogue roulette shortcut');
  assert.ok(html.includes('id="account-slot"'));
  assert.ok(app.includes('function openRoulette()'));
  assert.ok(app.includes('function spinRoulette()'));
@@ -90,19 +90,21 @@ test('roulette replaces assistant and tonight without losing the personal librar
  assert.ok(css.includes('prefers-reduced-motion:reduce'));
 });
 
-test('roulette icon stays in the dock and dedicated section, not in the hero',async()=>{
+test('the bottom dock is the only roulette shortcut',async()=>{
  const [html,app]=await Promise.all([read('index.html'),read('app.js')]);
  assert.ok(html.includes('id="icon-roulette-wheel"'));
- for(const selector of ['data-dock="roulette"','id="roulette-launch"']){
+ for(const selector of ['data-dock="roulette"']){
    const i=html.indexOf(selector);
    assert.ok(i>=0,selector);
    assert.ok(html.slice(i,html.indexOf('</button>',i)).includes('href="#icon-roulette-wheel"'),selector+' wheel icon');
  }
  assert.ok(!html.includes('id="hero-random"'), 'the duplicate hero wheel is removed');
  assert.ok(!app.includes("$('#hero-random')"), 'the removed button has no handler');
+ assert.equal((html.match(/data-dock="roulette"/g)||[]).length,1, 'one bottom dock roulette button');
+ assert.ok(!app.includes("$('#roulette-launch')"), 'the removed catalogue button has no handler');
  assert.ok(app.includes("icon('roulette-wheel')"));
  assert.ok(!app.includes("icon('shuffle')"));
- assert.ok(html.includes('app.js?v=hero-wheel-cleanup-20261031-1'));
+ assert.ok(html.includes('app.js?v=roulette-dock-only-20261031-3'));
 });
 
 test('film details omit watch-date controls and the external IMDb detail link',async()=>{
@@ -115,13 +117,13 @@ test('film details omit watch-date controls and the external IMDb detail link',a
   assert.ok(!app.includes('id="journal-month"'));
   assert.ok(app.includes('امتیاز و یادداشت من'));
   assert.ok(app.includes('function journalEntries()'));
-  assert.ok(html.includes('app.js?v=final-polish-20261031-1'));
+  assert.ok(html.includes('app.js?v=roulette-dock-only-20261031-3'));
 });
 
 test('final polish keeps mobile scrolling cheap and makes backup confirmation accessible',async()=>{
  const [html,app,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
- assert.ok(html.includes('app.js?v=final-polish-20261031-1'));
- assert.ok(html.includes('mobile.css?v=hero-wheel-removed-20261031-2'));
+ assert.ok(html.includes('app.js?v=roulette-dock-only-20261031-3'));
+ assert.ok(html.includes('mobile.css?v=roulette-dock-only-20261031-3'));
  assert.ok(app.includes('lastRenderedList=list'));
  assert.ok(app.includes('const list=lastRenderedList,start='));
  assert.ok(app.includes('function writeJournalAtomically('));
