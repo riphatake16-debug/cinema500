@@ -1950,6 +1950,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0459159/"
       }
+    },
+    "tt0058625": {
+      "fa": "زن در ریگ روان",
+      "summary": "پژوهشگری که برای بررسی حشره‌ها سفر کرده، به دست روستاییان در خانهٔ زنی میان تپه‌های ماسه گرفتار می‌شود. آن دو باید هر روز شن‌های اطراف خانه را بیرون بریزند تا زیر آن دفن نشوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1207936"
+      }
+    },
+    "tt0372784": {
+      "fa": "بتمن آغاز میکند",
+      "summary": "بروس وین پس از آموزش نزد استادش، مبارزه برای رهایی گاتهام از جنایت و فساد را در قامت بتمن آغاز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q166262"
+      }
+    },
+    "tt15398776": {
+      "fa": "اوپنهایمر",
+      "summary": "جی. رابرت اوپنهایمر از چهره‌های اصلی پروژهٔ ساخت بمب اتم است. فیلم، زندگی او، فشارهای سیاسی و درگیری‌اش با پیامدهای این سلاح را دنبال می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q108839994"
+      }
+    },
+    "tt1266020": {
+      "fa": "پارکها و تفریحات",
+      "summary": "کارمندان شهرداری شهری در ایندیانا، در اجرای طرح‌های گوناگون برای بهترکردن شهر، درگیر موقعیت‌های خنده‌دار و نامعقول می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q218035"
+      }
     }
   },
   "retryAfter": {
