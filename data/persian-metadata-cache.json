@@ -2258,6 +2258,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt3398540/"
       }
+    },
+    "tt0266697": {
+      "fa": "بیل را بکش بخش ۱",
+      "summary": "آدمکشی سابق پس از چهار سال از کما بیدار می‌شود و برای انتقام از همکارانی می‌رود که به او خیانت کرده‌اند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q165325"
+      }
+    },
+    "tt10332508": {
+      "fa": "اولیه (مجموعه تلویزیونی)",
+      "summary": "یک انسان غارنشین و یک دایناسور، پس از ازدست‌دادن عزیزانشان همراه هم می‌شوند. آن‌ها در دنیایی خشن و پر از موجودات خطرناک، برای زنده‌ماندن به یکدیگر کمک می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q70106936"
+      }
+    },
+    "tt0457430": {
+      "fa": "هزارتوی پن",
+      "summary": "در اسپانیای سال ۱۹۴۴، دختری خیال‌پرداز که ناپدری‌اش افسری بی‌رحم است، به دنیایی جادویی پناه می‌برد؛ دنیایی که خطرهای خودش را دارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q216006"
+      }
+    },
+    "tt0088484": {
+      "fa": "بلکادر ۲",
+      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2668056"
+      }
     }
   },
   "retryAfter": {
