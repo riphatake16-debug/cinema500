@@ -2222,6 +2222,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q104630896"
       }
+    },
+    "tt1392214": {
+      "fa": "زندانیان",
+      "summary": "پس از ناپدیدشدن دختر کلر دوور و دوستش، او با افزایش فشار و پیچیده‌شدن تحقیقات پلیس، تصمیم می‌گیرد شخصاً وارد عمل شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3404003"
+      }
+    },
+    "tt1856010": {
+      "fa": "خانه پوشالی",
+      "summary": "یک نمایندهٔ کنگره و همسرش برای انتقام از کسانی که به او خیانت کرده‌اند، نقشه می‌کشند و قدم‌به‌قدم به قدرت بیشتری می‌رسند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3330940"
+      }
+    },
+    "tt1745960": {
+      "fa": "تاپ گان: ماوریک",
+      "summary": "ماوریک برای آموزش گروهی از خلبانان جوان به تاپ گان بازمی‌گردد؛ مأموریتی خطرناک و حضور پسر دوست ازدست‌رفته‌اش، او را وادار می‌کند با گذشتهٔ خود روبه‌رو شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q31202708"
+      }
+    },
+    "tt3398540": {
+      "fa": "هایکیو!!",
+      "summary": "هیناتا شویو، دانش‌آموزی کوتاه‌قد، با دیدن مسابقهٔ قهرمانی والیبال در تلویزیون شیفتهٔ این ورزش می‌شود و تصمیم می‌گیرد مانند ستارهٔ آن مسابقه پیشرفت کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt3398540/"
+      }
     }
   },
   "retryAfter": {
@@ -2230,6 +2266,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 263
+    "characters": 272
   }
 }
