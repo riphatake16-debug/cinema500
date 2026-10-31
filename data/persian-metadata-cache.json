@@ -2609,6 +2609,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q111189743"
       }
+    },
+    "tt0434409": {
+      "fa": "وی مثل وندتا",
+      "summary": "در بریتانیای استبدادی آینده، مبارزی مرموز با نام «وی» با کمک زنی جوان برای سرنگونی حکومت نقشه می‌کشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q5890"
+      }
+    },
+    "tt0106028": {
+      "fa": "قتل: زندگی در خیابان",
+      "summary": "یک واحد تحقیقات قتل، جنایت‌های خشونت‌آمیز شهر بالتیمور را بررسی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0106028/"
+      }
+    },
+    "tt0097165": {
+      "fa": "انجمن شاعران مرده",
+      "summary": "جان کیتینگ، معلم ادبیات، دانش‌آموزانش را تشویق می‌کند مستقل فکر کنند و نگاه خودشان را به شعر و زندگی داشته باشند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q106316"
+      }
+    },
+    "tt5421602": {
+      "fa": "آن شرلی و یک ایی (مجموعه تلویزیونی ۲۰۱۷)",
+      "summary": "آن، دختری یتیم و خیال‌پرداز، در اواخر قرن نوزدهم وارد خانه‌ای تازه در جزیرهٔ پرنس ادوارد می‌شود؛ اقتباسی از رمان‌های لوسی ماد مونتگمری.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q28091065"
+      }
     }
   },
   "retryAfter": {
@@ -2618,6 +2654,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 387
+    "characters": 415
   }
 }
