@@ -4,8 +4,8 @@ name: Bootstrap first signed Cinema500 release
 # then encrypted for its owner using a public recovery key. Only ciphertext
 # is uploaded; no private signing key or passphrase goes into Git.
 on:
-  push:
-    branches: [feature/android-market-app]
+  pull_request:
+    branches: [main]
     paths: [.github/workflows/bootstrap-signed-release.yml]
 
 permissions:
@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   signed-release:
+    if: github.event.pull_request.head.repo.full_name == 'riphatake16-debug/cinema500' && github.head_ref == 'feature/android-market-app'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
