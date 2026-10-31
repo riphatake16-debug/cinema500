@@ -6,7 +6,7 @@ const fa=n=>Number(n).toLocaleString('fa-IR'), esc=s=>String(s??'').replace(/[&<
 const year=n=>Number(n).toLocaleString('fa-IR',{useGrouping:false});
 function norm(s){return String(s).toLowerCase().replace(/[۰-۹]/g,c=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(c)).replace(/[٠-٩]/g,c=>'٠١٢٣٤٥٦٧٨٩'.indexOf(c)).replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\u200f\u200e]/g,' ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim()}
 let selectedId=null,ambientSlot=0,ambientVersion=0,gridTimer;
-let listVersion=0,loadingMore=false,scrollObserver;
+let listVersion=0,loadingMore=false,scrollObserver,lastRenderedList=[];
 let stateVersion=0,cloudStates=new Set(),preferences=new Map(),guestPreferences=new Map();
 const CARD_BATCH_SIZE=typeof matchMedia==='function'&&matchMedia('(max-width:700px)').matches?18:30;
 let data=[],charts=[],type='movie',status='all',limit=CARD_BATCH_SIZE,seen=new Set(),wanted=new Set(),guestSeen=new Set(),guestWanted=new Set(),accountReady=false,saving=false,refreshing=false,toastTimer,syncedAt=null,detailId=null,dialogMode='';
@@ -43,10 +43,10 @@ function cardMarkup(a){
   return `<article class="card ${a.id===selectedId?'is-selected':''}" data-id="${a.id}" style="--i:${a.rank%30}"><div class="poster">${poster(a)}<span class="rank" aria-label="رتبهٔ ${fa(a.rank)} در IMDb">#${fa(a.rank)}</span><div class="poster-actions"><button type="button" class="favorite-btn ${pref?.favorite?'active':''}" data-favorite="${a.id}" aria-label="${pref?.favorite?'حذف از':'افزودن به'} محبوب‌ها: ${esc(a.title)}" aria-pressed="${!!pref?.favorite}" ${!accountReady||saving?'disabled':''}>${icon('heart')}</button>${watchlistButton(a)}</div>${watched?`<span class="watched-badge">${icon('check')} دیده‌شده</span>`:wanted.has(a.id)?`<span class="watchlist-badge">${icon('bookmark')} در لیست</span>`:''}${pref?.rating?`<span class="personal-badge">نمرهٔ تو <b>${fa(pref.rating)}</b></span>`:''}<button class="poster-button" data-detail="${a.id}" aria-label="جزئیات ${esc(a.title)}"><span class="poster-open-icon">${icon('play')}</span></button></div><div class="card-content"><div class="poster-facts"><span class="poster-score" aria-label="امتیاز IMDb ${a.rating.toFixed(1)} از ۱۰"><span>IMDb</span><b>${a.rating.toFixed(1)}</b></span><span class="poster-year">${year(a.year)}</span></div><button class="card-name" data-detail="${a.id}" title="${esc(a.title)}" dir="auto">${esc(a.title)}</button><div class="card-fa">${esc(localizedTitle(a))}</div><div class="card-meta"><span>${year(a.year)}</span><span class="dot">·</span><span>${esc(genre(a))}</span><span class="rating">${icon('star')}${a.rating.toFixed(1)}</span></div>${actionButtons(a)}</div></article>`;
 }
 
-function render(changedId){window.CinemaSelects?.refresh();if(!data.length)return;listVersion++;const list=filtered(),total=data.filter(a=>a.type===type),count=total.filter(a=>seen.has(a.id)).length;$('#all-count').textContent=fa(250);$('#seen-count').textContent=fa(count);$('#unseen-count').textContent=fa(250-count);$('#watchlist-count').textContent=fa(total.filter(a=>wanted.has(a.id)).length);const n=data.filter(a=>seen.has(a.id)).length;$('#total-seen').textContent=fa(n);$('#percent').textContent=fa(Math.round(n/5))+'٪';$('#progress-bar').style.width=(n/5)+'%';$('#mini-ring').style.setProperty('--progress',(n/5)+'%');$('#progress-copy').textContent=n?fa(n)+' اثر از این مجموعه رو دیدی':'تماشاهایی که اینجا ثبت کردی';$('#result-count').textContent=fa(list.length)+' '+(type==='movie'?'فیلم':'سریال');renderCards(list.slice(0,limit),changedId);$('#empty').hidden=!!list.length;$('#empty-copy').textContent=$('#search').value?'چیزی پیدا نشد. نام فارسی یا انگلیسی، رتبهٔ ۱ تا ۲۵۰ یا سال انتشار رو امتحان کن.':status==='seen'?'زیر پوستر فیلم یا سریالی که دیدی، «ثبت تماشا» رو بزن تا اینجا نمایش داده بشه.':status==='watchlist'?'نشانک کنار هر عنوان رو بزن تا برای تماشای بعد ذخیره بشه.':'با این فیلترها چیزی پیدا نشد. چند فیلتر رو بردار و دوباره امتحان کن.';updatePagination(list.length);$('#grid').setAttribute('aria-busy','false');renderDashboard();updateFilterSummary(list.length);renderRank();renderHeroActions();renderCatalogStatus();renderSyncStatus();renderJourneys();syncDock();if(!scrollObserver)checkScrollPosition()}
+function render(changedId){window.CinemaSelects?.refresh();if(!data.length)return;listVersion++;const list=filtered();lastRenderedList=list;const total=data.filter(a=>a.type===type),count=total.filter(a=>seen.has(a.id)).length;$('#all-count').textContent=fa(250);$('#seen-count').textContent=fa(count);$('#unseen-count').textContent=fa(250-count);$('#watchlist-count').textContent=fa(total.filter(a=>wanted.has(a.id)).length);const n=data.filter(a=>seen.has(a.id)).length;$('#total-seen').textContent=fa(n);$('#percent').textContent=fa(Math.round(n/5))+'٪';$('#progress-bar').style.width=(n/5)+'%';$('#mini-ring').style.setProperty('--progress',(n/5)+'%');$('#progress-copy').textContent=n?fa(n)+' اثر از این مجموعه رو دیدی':'تماشاهایی که اینجا ثبت کردی';$('#result-count').textContent=fa(list.length)+' '+(type==='movie'?'فیلم':'سریال');renderCards(list.slice(0,limit),changedId);$('#empty').hidden=!!list.length;$('#empty-copy').textContent=$('#search').value?'چیزی پیدا نشد. نام فارسی یا انگلیسی، رتبهٔ ۱ تا ۲۵۰ یا سال انتشار رو امتحان کن.':status==='seen'?'زیر پوستر فیلم یا سریالی که دیدی، «ثبت تماشا» رو بزن تا اینجا نمایش داده بشه.':status==='watchlist'?'نشانک کنار هر عنوان رو بزن تا برای تماشای بعد ذخیره بشه.':'با این فیلترها چیزی پیدا نشد. چند فیلتر رو بردار و دوباره امتحان کن.';updatePagination(list.length);$('#grid').setAttribute('aria-busy','false');renderDashboard();updateFilterSummary(list.length);renderRank();renderHeroActions();renderCatalogStatus();renderSyncStatus();renderJourneys();syncDock();if(!scrollObserver)checkScrollPosition()}
 function renderCards(visible,changedId){const grid=$('#grid'),current=$$('#grid > .card');if(changedId&&current.length===visible.length&&current.every((card,i)=>card.dataset.id===visible[i].id)){const index=visible.findIndex(a=>a.id===changedId);if(index>=0)current[index].outerHTML=cardMarkup(visible[index]);return}grid.innerHTML=visible.map(cardMarkup).join('')}
 function updatePagination(total){const sentinel=$('#scroll-sentinel');sentinel.hidden=limit>=total;$('#page-info').textContent=total?'نمایش '+fa(Math.min(limit,total))+' از '+fa(total)+' عنوان':'';if(scrollObserver){scrollObserver.unobserve(sentinel);if(!sentinel.hidden)scrollObserver.observe(sentinel)}}
-function loadNextPage(){const sentinel=$('#scroll-sentinel');if(loadingMore||sentinel.hidden||isOverlayOpen()||!data.length)return;const list=filtered(),start=Math.min(limit,list.length),version=listVersion;if(start>=list.length){updatePagination(list.length);return}loadingMore=true;$('#grid').setAttribute('aria-busy','true');requestAnimationFrame(()=>{if(version!==listVersion){loadingMore=false;$('#grid').setAttribute('aria-busy','false');updatePagination(filtered().length);return}limit=Math.min(start+CARD_BATCH_SIZE,list.length);$('#grid').insertAdjacentHTML('beforeend',list.slice(start,limit).map(cardMarkup).join(''));loadingMore=false;$('#grid').setAttribute('aria-busy','false');updatePagination(list.length)})}
+function loadNextPage(){const sentinel=$('#scroll-sentinel');if(loadingMore||sentinel.hidden||isOverlayOpen()||!data.length)return;const list=lastRenderedList,start=Math.min(limit,list.length),version=listVersion;if(start>=list.length){updatePagination(list.length);return}loadingMore=true;$('#grid').setAttribute('aria-busy','true');requestAnimationFrame(()=>{if(version!==listVersion){loadingMore=false;$('#grid').setAttribute('aria-busy','false');updatePagination(lastRenderedList.length);return}limit=Math.min(start+CARD_BATCH_SIZE,list.length);$('#grid').insertAdjacentHTML('beforeend',list.slice(start,limit).map(cardMarkup).join(''));loadingMore=false;$('#grid').setAttribute('aria-busy','false');updatePagination(list.length)})}
 let scrollCheckPending=false;
 function checkScrollPosition(){if(scrollCheckPending)return;scrollCheckPending=true;requestAnimationFrame(()=>{scrollCheckPending=false;const sentinel=$('#scroll-sentinel');if(!sentinel.hidden&&sentinel.getBoundingClientRect().top<=window.innerHeight+400)loadNextPage()})}
 if(typeof IntersectionObserver!=='undefined'){scrollObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))loadNextPage()},{rootMargin:'400px 0px'});}else{window.addEventListener('scroll',checkScrollPosition,{passive:true});window.addEventListener('resize',checkScrollPosition,{passive:true});}
@@ -66,9 +66,44 @@ function openQuickSearch(){closeFilters();setDialogMode('quick');$('#details').s
 
 function loadAccount(){accountReady=true;renderAccount();render();}
 function renderAccount(){$('#account-slot').innerHTML=`<button class="account-button" id="account"><span id="account-avatar" class="account-avatar" aria-hidden="true"></span> حساب من</button>`;$('#account').onclick=()=>openAccount()}
-function persistLocalJournal(){return rememberJournalTitles()&&storage.set('cinema-seen',[...seen])&&storage.set('cinema-wanted',[...wanted])&&storage.set('cinema-preferences',[...preferences.values()]);}
+/* Keep the four journal keys consistent when storage runs out of space. */
+function writeJournalAtomically(rows){
+  const snapshot=rows.map(([key])=>[key,localStorage.getItem(key)]);
+  try{
+    for(const [key,value] of rows)localStorage.setItem(key,JSON.stringify(value));
+    return true;
+  }catch{
+    for(const [key,value] of snapshot){
+      try{value===null?localStorage.removeItem(key):localStorage.setItem(key,value)}catch{}
+    }
+    return false;
+  }
+}
+function persistLocalJournal(){
+  const ids=new Set([...seen,...wanted,...preferences.keys()]);
+  return writeJournalAtomically([
+    ['cinema-title-archive',[...ids].map(id=>titleMemory.get(id)).filter(Boolean)],
+    ['cinema-seen',[...seen]],
+    ['cinema-wanted',[...wanted]],
+    ['cinema-preferences',[...preferences.values()]]
+  ]);
+}
 function renderSyncStatus(){$('#sync-status').textContent='اطلاعاتت توی همین مرورگر می‌مونه؛ برای انتقال به دستگاه دیگه پشتیبان بگیر.';}
-function changeState(id,next){if(!accountReady||!findTitle(id))return;const beforeRank=watcherRank();seen.delete(id);wanted.delete(id);if(next==='seen')seen.add(id);if(next==='watchlist')wanted.add(id);const prior=preferences.get(id)||{id,rating:null,favorite:false,note:'',watchedOn:null};preferences.set(id,{...prior});guestSeen=new Set(seen);guestWanted=new Set(wanted);if(!persistLocalJournal())toast('اطلاعاتت ذخیره نشد؛ فعلاً یک فایل پشتیبان بگیر.');stateVersion++;render(id);celebrateRank(beforeRank);refreshDialogActions();}
+function changeState(id,next){
+ if(!accountReady||!findTitle(id))return;
+ const beforeRank=watcherRank(),oldSeen=new Set(seen),oldWanted=new Set(wanted),oldPreferences=new Map(preferences);
+ seen.delete(id);wanted.delete(id);
+ if(next==='seen')seen.add(id);
+ if(next==='watchlist')wanted.add(id);
+ const prior=preferences.get(id)||{id,rating:null,favorite:false,note:'',watchedOn:null};
+ preferences.set(id,{...prior});
+ if(!persistLocalJournal()){
+  seen=oldSeen;wanted=oldWanted;preferences=oldPreferences;
+  toast('ثبت نشد؛ حافظهٔ مرورگر رو بررسی کن. اطلاعات قبلی حفظ شده.');return;
+ }
+ guestSeen=new Set(seen);guestWanted=new Set(wanted);guestPreferences=new Map(preferences);
+ stateVersion++;render(id);celebrateRank(beforeRank);refreshDialogActions();
+}
 function refreshDialogActions(){if(dialogMode==='detail'&&detailId&&$('#detail-actions')){if($('#personal-controls'))$('#personal-controls').innerHTML=personalControls(findTitle(detailId));const hint=$('#dialog-content').querySelector?.('.detail-personal > summary .detail-disclosure-hint');if(hint){const p=preferences.get(detailId);hint.innerHTML=(p?.rating?'نمرهٔ '+fa(p.rating):p?.note?'یادداشت داری':'اختیاری')+' '+icon('arrow-down')}$('#detail-actions').innerHTML=actionButtons(findTitle(detailId),true)}if(dialogMode==='watchlist')renderWatchlist();if(dialogMode==='journey')refreshJourneyDialog();if(dialogMode==='collection')renderCollection()}
 function openAccount(){
   setDialogMode('account');$('#details').setAttribute('aria-label','حساب من');$('#dialog-image').style.backgroundImage='';
@@ -259,7 +294,16 @@ function heroFrames(){const fixed=backdropIds.map(id=>data.find(a=>a.id===id)).f
 function renderFrames(){const frames=backdropIds.map(id=>findTitle(id)).filter(Boolean),node=$('#featured-frames'),key=frames.map(a=>a.id).join(',')+'|'+heroPaused;if(node.dataset.framesKey===key){$$('#featured-frames [data-frame]').forEach(button=>{button.classList.toggle('active',button.dataset.frame===selectedId);button.setAttribute('aria-pressed',button.dataset.frame===selectedId)});return}node.dataset.framesKey=key;node.innerHTML=frames.map(a=>`<button data-frame="${a.id}" class="hero-frame ${a.id===selectedId?'active':''}" title="${esc(a.title)}" aria-label="نمایش ${esc(a.title)}" aria-pressed="${a.id===selectedId}"><img src="${esc(a.poster)}" alt="" loading="lazy"></button>`).join('')+`<button data-carousel-toggle class="icon-button" style="width:32px;height:32px;align-self:center;flex-shrink:0" aria-label="${heroPaused?'شروع تعویض خودکار فیلم‌ها':'توقف تعویض خودکار فیلم‌ها'}" title="${heroPaused?'پخش خودکار':'توقف پخش خودکار'}" aria-pressed="${heroPaused}">${heroPaused?icon('play'):'<svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>'}</button>`}
 function renderHeroActions(){const b=$('#hero-save');b.innerHTML=icon(wanted.has(selectedId)?'check':'plus')+(wanted.has(selectedId)?' در لیست تماشا':' لیست تماشا');b.disabled=!accountReady||saving}
 function personalControls(a){const p=preferences.get(a.id);return `<section class="personal-rating"><div class="personal-rating-head"><div><span class="eyebrow">نظر تو</span><h3>نمره تو به این اثر</h3></div><button class="detail-favorite ${p?.favorite?'active':''}" data-favorite="${a.id}" aria-pressed="${!!p?.favorite}" ${!accountReady||saving?'disabled':''}>${icon('heart')} ${p?.favorite?'از محبوب‌های تو':'افزودن به محبوب‌ها'}</button></div><div class="rating-picker" aria-label="نمرهٔ من از ۱ تا ۱۰">${Array.from({length:10},(_,i)=>`<button data-score="${i+1}" class="${p?.rating===i+1?'active':''}" aria-label="نمرهٔ ${i+1}" aria-pressed="${p?.rating===i+1}" ${!accountReady||saving?'disabled':''}>${fa(i+1)}</button>`).join('')}</div><div class="rating-picker-note"><span>${p?.rating?'نمرهٔ تو: '+fa(p.rating)+' از ۱۰':'این نمره فقط نظر خودته و روی امتیاز IMDb اثری نداره.'}</span>${p?.rating?'<button data-score="clear">پاک کردن نمره</button>':''}</div></section>`}
-function changePreference(id,change){if(!id||!accountReady||!findTitle(id))return;preferences.set(id,{id,rating:null,favorite:false,note:'',watchedOn:null,...preferences.get(id),...change});guestPreferences=new Map(preferences);if(!(storage.set('cinema-preferences',[...preferences.values()])&&rememberJournalTitles()))toast('اطلاعاتت ذخیره نشد؛ فعلاً یک فایل پشتیبان بگیر.');stateVersion++;render(id);refreshDialogActions()}
+function changePreference(id,change){
+ if(!id||!accountReady||!findTitle(id))return;
+ const oldPreferences=new Map(preferences);
+ preferences.set(id,{id,rating:null,favorite:false,note:'',watchedOn:null,...preferences.get(id),...change});
+ if(!persistLocalJournal()){
+  preferences=oldPreferences;
+  toast('ثبت نشد؛ حافظهٔ مرورگر رو بررسی کن. نمره و یادداشت قبلی محفوظن.');return;
+ }
+ guestPreferences=new Map(preferences);stateVersion++;render(id);refreshDialogActions();
+}
 function journalStats(){const watched=allTitles().filter(a=>seen.has(a.id));const genreCounts={};watched.forEach(a=>(a.genres||[]).forEach(g=>genreCounts[g]=(genreCounts[g]||0)+1));const catalogueIds=new Set(titleMemory.keys());const scores=[...preferences.values()].filter(p=>p.rating&&catalogueIds.has(p.id));return {watched,movies:watched.filter(a=>a.type==='movie').length,series:watched.filter(a=>a.type==='tv').length,minutes:watched.filter(a=>a.type==='movie').reduce((n,a)=>n+(a.runtime||0),0),scored:scores.length,average:scores.length?scores.reduce((n,p)=>n+p.rating,0)/scores.length:null,genres:Object.entries(genreCounts).sort((a,b)=>b[1]-a[1]),favorites:[...preferences.values()].filter(p=>p.favorite&&catalogueIds.has(p.id)).length}}
 function renderDashboard(){const stats=journalStats();$('.dashboard').hidden=!(seen.size||wanted.size||[...preferences.values()].some(p=>p.rating||p.favorite||p.note||p.watchedOn));$('#rank-summary').hidden=!seen.size;$('#metric-wanted').textContent=fa(wanted.size);$('#metric-favorites-count').textContent=fa(stats.favorites);$('#metric-rating').textContent=stats.average===null?'—':stats.average.toLocaleString('fa-IR',{maximumFractionDigits:1});$('#favorites-count').textContent=fa(data.filter(a=>a.type===type&&preferences.get(a.id)?.favorite).length);$('#filter-dot').hidden=true}
 function openStats(){
@@ -318,7 +362,15 @@ heroRegion.addEventListener('keydown',event=>{if(event.target!==heroRegion||!['A
 document.addEventListener('visibilitychange',scheduleHeroRotation);
 
 function diaryControls(a){const pref=preferences.get(a.id)||{};return `<section class="diary-panel"><h3>نظرت دربارهٔ این اثر چیه؟</h3><p class="source-note">یادداشتت خصوصیه و فقط توی همین مرورگر ذخیره می‌شه.</p><form id="diary-form" data-title="${a.id}"><label for="diary-note">یادداشت من</label><textarea id="diary-note" maxlength="2000" rows="4" placeholder="چی رو دوست داشتی؟ چی به نظرت خوب نبود؟">${esc(pref.note||'')}</textarea><div class="diary-foot"><span id="diary-count">${fa((pref.note||'').length)} / ۲٬۰۰۰</span><button class="accent-button" type="submit">${icon('check')} ذخیرهٔ یادداشت</button></div><p id="diary-message" role="status"></p></form><button id="detail-journal" class="text-button">دفتر تماشای من ${icon('arrow-up-right')}</button></section>`;}
-function saveDiary(id,note){if(!findTitle(id)||typeof note!=='string'||note.length>2000)throw Error('invalid_diary');const beforeRank=watcherRank();const pref={id,rating:null,favorite:false,watchedOn:null,...preferences.get(id),note:note.trim()};preferences.set(id,pref);if(!persistLocalJournal())throw Error('storage_failed');stateVersion++;render(id);celebrateRank(beforeRank);refreshDialogActions();}
+function saveDiary(id,note){
+ if(!findTitle(id)||typeof note!=='string'||note.length>2000)throw Error('invalid_diary');
+ const beforeRank=watcherRank(),oldPreferences=new Map(preferences);
+ const pref={id,rating:null,favorite:false,watchedOn:null,...preferences.get(id),note:note.trim()};
+ preferences.set(id,pref);
+ if(!persistLocalJournal()){preferences=oldPreferences;throw Error('storage_failed')}
+ guestPreferences=new Map(preferences);
+ stateVersion++;render(id);celebrateRank(beforeRank);refreshDialogActions();
+}
 function bindDiaryControls(a){$('#diary-note').oninput=()=>{$('#diary-count').textContent=fa($('#diary-note').value.length)+' / ۲٬۰۰۰';$('#diary-message').textContent='هنوز ذخیره نکردی؛ دکمهٔ ذخیره رو بزن.'};$('#diary-form').onsubmit=e=>{e.preventDefault();try{saveDiary(a.id,$('#diary-note').value);$('#diary-message').textContent='یادداشت ذخیره شد.';toast('یادداشتت ذخیره شد.')}catch{$('#diary-message').textContent='ذخیره نشد؛ یادداشت رو بررسی کن و دوباره بزن.'}};$('#detail-journal').onclick=openJournal;}
 function journalEntries(){return allTitles().filter(a=>{const p=preferences.get(a.id);return seen.has(a.id)||p?.note||p?.favorite||p?.rating}).sort((a,b)=>Number(seen.has(b.id))-Number(seen.has(a.id))||(a.rank||999)-(b.rank||999)||a.title.localeCompare(b.title));}
 function openJournal(){setDialogMode('journal');$('#details').setAttribute('aria-label','دفتر تماشای من');$('#dialog-content').innerHTML='<h2>دفتر تماشای من</h2><p class="source-note">فیلم‌ها و سریال‌هایی که دیدی، بهشون نمره دادی یا براشون یادداشت نوشتی.</p><div id="journal-summary" class="journal-summary"></div><div id="journal-list" class="journal-list"></div>';renderJournal();if(!$('#details').open)$('#details').showModal();}
