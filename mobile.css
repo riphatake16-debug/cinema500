@@ -876,4 +876,5 @@ html:has(#details[open]),html:has(#filter-drawer[open]){overflow-y:hidden}
 }
 
 /* Compatibility guard: hide the obsolete roulette button in cached hero markup. */
-.hero-actions > .hero-shuffle{display:none!important}
+.hero-actions > .hero-shuffle,
+.collection-toolbar > .roulette-launch{display:none!important}
