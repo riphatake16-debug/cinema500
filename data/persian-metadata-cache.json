@@ -1840,13 +1840,49 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q339876"
       }
+    },
+    "tt5788792": {
+      "fa": "خانم میزل شگفتانگیز",
+      "summary": "زنی خانه‌دار در دههٔ ۱۹۶۰ تصمیم می‌گیرد به کمدین استندآپ تبدیل شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q30634329"
+      }
+    },
+    "tt6966692": {
+      "fa": "کتاب سبز",
+      "summary": "در دههٔ ۱۹۶۰، نگهبانی ایتالیایی‌آمریکایی رانندهٔ یک پیانیست سیاه‌پوست می‌شود و او را در تور اجراهایش در جنوب آمریکا همراهی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48673898"
+      }
+    },
+    "tt10801534": {
+      "fa": "چگونه با جان ویلسون ارتباط برقرار کنیم",
+      "summary": "جان ویلسون با دوربینش در نیویورک می‌گردد تا دربارهٔ کارهای سادهٔ روزمره راهنمایی بدهد. اما آدم‌ها و اتفاق‌هایی که می‌بیند، هر بار مسیر موضوع را عوض می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt10801534/"
+      }
+    },
+    "tt5074352": {
+      "fa": "دنگل",
+      "summary": "ماهاویر سینگ فوگات، کشتی‌گیر سابق، دو دخترش را آموزش می‌دهد تا در بازی‌های کشورهای مشترک‌المنافع مسابقه بدهند؛ با وجود مخالفت‌ها و فشارهای اجتماعی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q20762668"
+      }
     }
   },
   "retryAfter": {
     "tt8579674": "2026-10-31T05:44:05+00:00"
   },
   "translationUsage": {
-    "date": "2026-10-30",
-    "characters": 349
+    "date": "2026-10-31",
+    "characters": 23
   }
 }
