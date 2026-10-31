@@ -105,15 +105,53 @@ function changeState(id,next){
  stateVersion++;render(id);celebrateRank(beforeRank);refreshDialogActions();
 }
 function refreshDialogActions(){if(dialogMode==='detail'&&detailId&&$('#detail-actions')){if($('#personal-controls'))$('#personal-controls').innerHTML=personalControls(findTitle(detailId));const hint=$('#dialog-content').querySelector?.('.detail-personal > summary .detail-disclosure-hint');if(hint){const p=preferences.get(detailId);hint.innerHTML=(p?.rating?'نمرهٔ '+fa(p.rating):p?.note?'یادداشت داری':'اختیاری')+' '+icon('arrow-down')}$('#detail-actions').innerHTML=actionButtons(findTitle(detailId),true)}if(dialogMode==='watchlist')renderWatchlist();if(dialogMode==='journey')refreshJourneyDialog();if(dialogMode==='collection')renderCollection()}
+/* Preview the backup before committing any data to localStorage. */
+function previewJournal(payload){
+ if(payload?.format!=='cinema500-journal-v1'||!Array.isArray(payload.titles)||payload.titles.length>10000)throw Error('invalid_backup');
+ const ids=new Set();let seenCount=0,wantedCount=0,notesCount=0;
+ for(const item of payload.titles){
+  if(!item||typeof item.id!=='string'||!/^tt\d{7,12}$/.test(item.id)||ids.has(item.id)||!['none','seen','watchlist'].includes(item.status))throw Error('invalid_entry');
+  if(item.rating!==undefined&&item.rating!==null&&(!Number.isInteger(item.rating)||item.rating<1||item.rating>10))throw Error('invalid_rating');
+  if(item.note!==undefined&&(typeof item.note!=='string'||item.note.length>2000))throw Error('invalid_note');
+  if(item.favorite!==undefined&&typeof item.favorite!=='boolean')throw Error('invalid_favorite');
+  if(item.watchedOn!==undefined&&item.watchedOn!==null&&!validWatchDate(item.watchedOn))throw Error('invalid_date');
+  if(!titleMemory.has(item.id)&&(!item.titleData||item.titleData.id!==item.id))throw Error('unknown_title');
+  ids.add(item.id);
+  seenCount+=Number(item.status==='seen');wantedCount+=Number(item.status==='watchlist');
+  notesCount+=Number(!!item.note||!!item.rating||!!item.favorite);
+ }
+ return {count:ids.size,seenCount,wantedCount,notesCount};
+}
 function openAccount(){
   setDialogMode('account');$('#details').setAttribute('aria-label','حساب من');$('#dialog-image').style.backgroundImage='';
-  $('#dialog-content').innerHTML=`<section class="profile-screen"><div class="screen-heading"><span class="screen-kicker">فضای شخصی تو</span><h2>حساب من</h2></div><div id="rank-profile-slot">${rankProfileMarkup()}</div><div class="profile-metrics"><div><b>${fa(seen.size)}</b><span>اثر دیده‌شده</span></div><div><b>${fa(wanted.size)}</b><span>در لیست تماشا</span></div></div><div class="profile-actions"><button id="journal-export" class="profile-action profile-action-primary" type="button"><span>${icon('download')}</span><b>دریافت پشتیبان</b><small>ذخیرهٔ فایل اطلاعات من</small></button><button id="journal-import" class="profile-action" type="button"><span>${icon('refresh')}</span><b>بازیابی پشتیبان</b><small>ادامه با اطلاعات فایل قبلی</small></button><button id="open-journal" class="profile-journal" type="button">${icon('film')}<span>دفتر تماشای من</span>${icon('chevron-left')}</button></div><button id="account-help" class="profile-help" type="button">${icon('info')} ذخیره‌سازی و راهنما ${icon('chevron-left')}</button><input type="file" id="backup-file" accept="application/json,.json" hidden></section>`;
-  $('#open-journal').onclick=openJournal;$('#journal-export').onclick=exportJournal;$('#journal-import').onclick=()=>$('#backup-file').click();$('#backup-file').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{if(file.size>2000000)throw Error();const added=importJournal(JSON.parse(await file.text()));render();openAccount();toast(fa(added)+' مورد از پشتیبان اضافه یا تکمیل شد.')}catch{toast('بازیابی انجام نشد؛ فایل پشتیبان رو بررسی کن و مطمئن شو مرورگر اجازهٔ ذخیره‌سازی می‌ده.')}};
+  $('#dialog-content').innerHTML=`<section class="profile-screen"><div class="screen-heading"><span class="screen-kicker">فضای شخصی تو</span><h2>حساب من</h2></div><div id="rank-profile-slot">${rankProfileMarkup()}</div><div class="profile-metrics"><div><b>${fa(seen.size)}</b><span>اثر دیده‌شده</span></div><div><b>${fa(wanted.size)}</b><span>در لیست تماشا</span></div></div><div class="profile-actions"><button id="journal-export" class="profile-action profile-action-primary" type="button"><span>${icon('download')}</span><b>دریافت پشتیبان</b><small>ذخیرهٔ فایل اطلاعات من</small></button><button id="journal-import" class="profile-action" type="button"><span>${icon('refresh')}</span><b>بازیابی پشتیبان</b><small>ادامه با اطلاعات فایل قبلی</small></button><button id="open-journal" class="profile-journal" type="button">${icon('film')}<span>دفتر تماشای من</span>${icon('chevron-left')}</button></div><button id="account-help" class="profile-help" type="button">${icon('info')} ذخیره‌سازی و راهنما ${icon('chevron-left')}</button><input type="file" id="backup-file" accept="application/json,.json" hidden><section id="backup-preview" class="backup-preview" role="region" aria-label="تأیید بازیابی پشتیبان" hidden></section></section>`;
+  $('#open-journal').onclick=openJournal;$('#journal-export').onclick=exportJournal;$('#journal-import').onclick=()=>$('#backup-file').click();
+ $('#backup-file').onchange=async e=>{
+  const file=e.target.files?.[0],preview=$('#backup-preview');
+  if(!file)return;
+  preview.hidden=true;preview.innerHTML='';
+  try{
+   if(file.size>2000000)throw Error('oversize_backup');
+   const payload=JSON.parse(await file.text()),info=previewJournal(payload);
+   preview.innerHTML='<h3>پیش‌نمایش فایل پشتیبان</h3><p>'+fa(info.count)+' عنوان؛ '+fa(info.seenCount)+' دیده‌شده، '+fa(info.wantedCount)+' برای بعد، '+fa(info.notesCount)+' نمره یا یادداشت.</p><p>اطلاعات فایل با اطلاعات فعلی ادغام می‌شن و ثبت‌های قبلی حذف نمی‌شن. فقط اگر مطمئنی ادامه بده.</p><div class="backup-preview-actions"><button type="button" class="accent-button" id="backup-confirm">'+icon('check')+' تأیید بازیابی</button><button type="button" class="outline-button" id="backup-cancel">انصراف</button></div>';
+   preview.hidden=false;
+   $('#backup-cancel').onclick=()=>{preview.hidden=true;preview.innerHTML='';$('#backup-file').value=''};
+   $('#backup-confirm').onclick=()=>{
+    try{
+     const added=importJournal(payload);
+     render();openAccount();toast(fa(added)+' مورد از فایل پشتیبان اضافه یا تکمیل شد.');
+    }catch{toast('بازیابی انجام نشد. فایل یا حافظهٔ مرورگر رو بررسی کن.')}
+   };
+  }catch{
+   toast('فایل پشتیبان نامعتبره یا بیشتر از حد مجازه؛ هیچ اطلاعاتی تغییر نکرد.');
+  }
+  $('#backup-file').value='';
+ };
   $('#account-help').onclick=openAccountHelp;syncDock();if(!$('#details').open)$('#details').showModal();$('#details').scrollTop=0;
 }
 function openAccountHelp(){
   setDialogMode('account-help');$('#details').setAttribute('aria-label','راهنمای حساب من');$('#dialog-image').style.backgroundImage='';
-  $('#dialog-content').innerHTML=`<section class="profile-guide"><button class="text-button guide-back" id="account-guide-back" type="button">${icon('arrow-left')} حساب من</button><div class="screen-heading"><span class="screen-kicker">اطلاعاتت در اختیار خودته</span><h2>ذخیره‌سازی و راهنما</h2></div><article><h3>اطلاعاتم کجا می‌مونه؟</h3><p>لیست‌ها، نمره‌ها و یادداشت‌هات توی همین مرورگر ذخیره می‌شن. اطلاعات هر مرورگر و دستگاه جداست؛ ثبت‌نام و رمز عبور هم لازم نیست.</p></article><article><h3>چطور نگهشون دارم؟</h3><p>از «دریافت پشتیبان» یک فایل بگیر. برای انتقال به دستگاه دیگه، همون فایل رو با «بازیابی پشتیبان» باز کن. پاک‌کردن داده‌های سایت یا بستن حالت ناشناس می‌تونه اطلاعات ذخیره‌شده رو پاک کنه.</p></article><article><h3>بازیابی چه کاری می‌کنه؟</h3><p>اطلاعات فایل به اطلاعات فعلی‌ات اضافه می‌شه؛ چیزهایی که قبلاً ثبت کردی باقی می‌مونن. پشتیبان‌های قدیمی هم قابل استفاده‌ان.</p></article><article><h3>سطحم چطور بالاتر می‌ره؟</h3><p>هر فیلم یا سریال دیده‌شده ۱۰ امتیاز داره و هر عنوان فقط یک‌بار حساب می‌شه. برداشتن علامت تماشا امتیازش رو کم می‌کنه؛ خارج‌شدن عنوان از فهرست IMDb امتیازت رو تغییر نمی‌ده.</p></article></section>`;
+  $('#dialog-content').innerHTML=`<section class="profile-guide"><button class="text-button guide-back" id="account-guide-back" type="button">${icon('arrow-left')} حساب من</button><div class="screen-heading"><span class="screen-kicker">اطلاعاتت در اختیار خودته</span><h2>ذخیره‌سازی و راهنما</h2></div><article><h3>اطلاعاتم کجا می‌مونه؟</h3><p>لیست‌ها، نمره‌ها و یادداشت‌هات توی همین مرورگر ذخیره می‌شن. اطلاعات هر مرورگر و دستگاه جداست؛ ثبت‌نام و رمز عبور هم لازم نیست.</p></article><article><h3>چطور نگهشون دارم؟</h3><p>از «دریافت پشتیبان» یک فایل بگیر. برای انتقال به دستگاه دیگه، همون فایل رو با «بازیابی پشتیبان» باز کن. پاک‌کردن داده‌های سایت یا بستن حالت ناشناس می‌تونه اطلاعات ذخیره‌شده رو پاک کنه.</p></article><article><h3>بازیابی چه کاری می‌کنه؟</h3><p>قبل از بازیابی، تعداد عنوان‌ها و ثبت‌ها نمایش داده می‌شه و باید خودت تأیید کنی. اطلاعات فایل به اطلاعات فعلی اضافه می‌شه؛ موارد قبلی باقی می‌مونن. پشتیبان‌های قدیمی هم قابل استفاده‌ان.</p></article><article><h3>سطحم چطور بالاتر می‌ره؟</h3><p>هر فیلم یا سریال دیده‌شده ۱۰ امتیاز داره و هر عنوان فقط یک‌بار حساب می‌شه. برداشتن علامت تماشا امتیازش رو کم می‌کنه؛ خارج‌شدن عنوان از فهرست IMDb امتیازت رو تغییر نمی‌ده.</p></article></section>`;
   $('#account-guide-back').onclick=openAccount;syncDock();if(!$('#details').open)$('#details').showModal();$('#details').scrollTop=0;
 }
 
@@ -313,7 +351,7 @@ function openStats(){
   $('#stats-journal').onclick=openJournal;$('#stats-export').onclick=exportJournal;$('#stats-account').onclick=openAccount;
   syncDock();if(!$('#details').open)$('#details').showModal();$('#details').scrollTop=0;
 }
-function exportJournal(){if(!accountReady){toast('اطلاعات هنوز بارگذاری نشده؛ یک‌بار صفحه رو تازه کن.');return}const entries=new Map();for(const id of seen)entries.set(id,{id,status:'seen'});for(const id of wanted)entries.set(id,{id,status:'watchlist'});for(const [id,p] of preferences)entries.set(id,{id,status:'none',...entries.get(id),rating:p.rating,favorite:!!p.favorite,note:p.note||'',watchedOn:p.watchedOn||null});const payload={format:'cinema500-journal-v1',exportedAt:new Date().toISOString(),discovery:discoverySettings,titles:[...entries.values()].map(p=>({...p,title:findTitle(p.id)?.title||null,titleData:findTitle(p.id)||null}))};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='cinema500-journal.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('فایل پشتیبان آماده شد.')}
+function exportJournal(){if(!accountReady){toast('اطلاعات هنوز بارگذاری نشده؛ یک‌بار صفحه رو تازه کن.');return}const entries=new Map();for(const id of seen)entries.set(id,{id,status:'seen'});for(const id of wanted)entries.set(id,{id,status:'watchlist'});for(const [id,p] of preferences)entries.set(id,{id,status:'none',...entries.get(id),rating:p.rating,favorite:!!p.favorite,note:p.note||'',watchedOn:p.watchedOn||null});const payload={format:'cinema500-journal-v1',exportedAt:new Date().toISOString(),discovery:discoverySettings,titles:[...entries.values()].map(p=>({...p,title:findTitle(p.id)?.title||null,titleData:findTitle(p.id)||null}))};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='cinema500-journal.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('دانلود پشتیبان شروع شد؛ مطمئن شو فایل توی دستگاه ذخیره شده.')}
 function selectStatus(next){status=next;limit=CARD_BATCH_SIZE;$$('[data-status]').forEach(b=>{b.classList.toggle('active',b.dataset.status===next);b.setAttribute('aria-pressed',String(b.dataset.status===next))});render();revealGrid();$('#collection').scrollIntoView({behavior:'smooth',block:'start'})}
 $('#stats').onclick=openStats;$('#nav-stats').onclick=openStats;$('#nav-watchlist').onclick=openWatchlist;$('#metric-watchlist').onclick=openWatchlist;$('#metric-favorites').onclick=()=>selectStatus('favorites');$('#export-data').onclick=exportJournal;
 $('#hero-save').onclick=()=>{if(selectedId)changeState(selectedId,wanted.has(selectedId)?'none':'watchlist')};$('#hero-random').onclick=openRoulette;$('#featured-frames').onclick=e=>{if(e.target.closest('[data-carousel-toggle]')){heroPaused=!heroPaused;renderFrames();scheduleHeroRotation();return}const b=e.target.closest('[data-frame]');if(b)setAmbient(findTitle(b.dataset.frame))};
