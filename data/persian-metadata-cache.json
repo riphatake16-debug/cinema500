@@ -2186,6 +2186,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q25340152"
       }
+    },
+    "tt0112641": {
+      "fa": "کازینو",
+      "summary": "دو دوست در دنیای کازینوهای لاس‌وگاس، بر سر پول، قدرت و عشق با هم درگیر می‌شوند. طمع و خیانت، رابطهٔ آن‌ها و کسب‌وکارشان را به خطر می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q220910"
+      }
+    },
+    "tt1733785": {
+      "fa": "پل",
+      "summary": "کشف جسدی روی پل مرزی دانمارک و سوئد، دو کارآگاه از دو کشور را وادار می‌کند برای یافتن قاتل همکاری کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1211796"
+      }
+    },
+    "tt0477348": {
+      "fa": "جایی برای پیرمردها نیست",
+      "summary": "مردی هنگام شکار، به محل یک معاملهٔ مواد مخدر و بیش از دو میلیون دلار پول برمی‌خورد. برداشتن پول او را وارد تعقیب‌وگریزی مرگبار می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q183081"
+      }
+    },
+    "tt9140342": {
+      "fa": "گناه",
+      "summary": "چند جوان در لندن دههٔ ۱۹۸۰ دوستی، عشق و زندگی مستقل را تجربه می‌کنند. با گسترش ایدز، آن‌ها باید با ترس و ازدست‌دادن عزیزانشان کنار بیایند و از یکدیگر حمایت کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q104630896"
+      }
     }
   },
   "retryAfter": {
