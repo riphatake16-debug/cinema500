@@ -2294,14 +2294,32 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2668056"
       }
+    },
+    "tt0105695": {
+      "fa": "نابخشوده",
+      "summary": "ویلیام مانی، هفت‌تیرکش بازنشسته، با بی‌میلی آخرین مأموریتش را همراه دوست قدیمی و جوانی تازه‌کار می‌پذیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q104137"
+      }
+    },
+    "tt4063800": {
+      "fa": "دفتر",
+      "summary": "مأمور اطلاعات فرانسه پس از شش سال فعالیت مخفی در سوریه به خانه بازمی‌گردد؛ او باید از هویت پوششی‌اش فاصله بگیرد، نیروی تازه‌ای آموزش دهد و ناپدیدشدن همکارش را بررسی کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q19593743"
+      }
     }
   },
   "retryAfter": {
-    "tt8579674": "2026-10-31T11:56:20+00:00",
-    "tt13991232": "2026-10-31T11:56:20+00:00"
+    "tt8579674": "2026-10-31T18:10:00+00:00",
+    "tt13991232": "2026-10-31T18:10:00+00:00"
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 272
+    "characters": 276
   }
 }
