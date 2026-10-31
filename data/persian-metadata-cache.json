@@ -2312,6 +2312,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q19593743"
       }
+    },
+    "tt0268978": {
+      "fa": "یک ذهن زیبا",
+      "summary": "جان نش، ریاضی‌دانی نابغه اما منزوی، پس از پذیرش کاری محرمانه در رمزگشایی، وارد دوره‌ای کابوس‌وار از زندگی می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q164103"
+      }
+    },
+    "tt8111088": {
+      "fa": "ماندالورین",
+      "summary": "یک جایزه‌بگیر تنها در گوشه‌های دور کهکشان، بیرون از قلمرو جمهوری نو، سفر می‌کند و مأموریت‌های خطرناک می‌پذیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q56876444"
+      }
+    },
+    "tt0347149": {
+      "fa": "قصر متحرک هاول",
+      "summary": "جادوگری دختری جوان را نفرین می‌کند و او ظاهر یک زن پیر را پیدا می‌کند. دختر برای شکستن نفرین، از جادوگری جوان و همراهانش در قصری متحرک کمک می‌خواهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q29011"
+      }
+    },
+    "tt0229889": {
+      "fa": "کودک هشت",
+      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1323981"
+      }
     }
   },
   "retryAfter": {
