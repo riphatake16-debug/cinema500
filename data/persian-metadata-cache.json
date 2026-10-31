@@ -1804,6 +1804,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q210364"
       }
+    },
+    "tt11280740": {
+      "fa": "جداسازی",
+      "summary": "کارمندان شرکتی مرموز پذیرفته‌اند که خاطرات محل کار و زندگی شخصی‌شان از هم جدا شود. ظاهرشدن یک همکار در بیرون از اداره، مارک را به جست‌وجوی حقیقت این جدایی می‌کشاند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101096725"
+      }
+    },
+    "tt0363163": {
+      "fa": "سقوط",
+      "summary": "تراودل یونگه، آخرین منشی هیتلر، آخرین روزهای دیکتاتور نازی را در پناهگاه برلین در پایان جنگ جهانی دوم روایت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q152857"
+      }
+    },
+    "tt5555260": {
+      "fa": "این ما هستیم",
+      "summary": "زندگی یک زوج و سه فرزندشان در دوره‌های مختلف دنبال می‌شود؛ از بزرگ‌شدن بچه‌ها تا تأثیر تصمیم‌ها و خاطرات خانوادگی بر زندگی بزرگسالی آن‌ها.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q24068191"
+      }
+    },
+    "tt0119488": {
+      "fa": "محرمانه لسآنجلس",
+      "summary": "سه پلیس با روش‌های کاری متفاوت، چند قتل را در لس‌آنجلس دههٔ ۱۹۵۰ بررسی می‌کنند و در جریان تحقیقات با فساد گسترده روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q339876"
+      }
     }
   },
   "retryAfter": {
