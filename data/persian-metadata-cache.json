@@ -2114,6 +2114,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16977365"
       }
+    },
+    "tt0042192": {
+      "fa": "همه چیز درباره ایو",
+      "summary": "دختری که در ظاهر خجالتی است، وارد زندگی یک ستارهٔ باسابقهٔ برادوی می‌شود؛ اما پشت این ظاهر آرام، جاه‌طلبی بزرگی پنهان است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q200299"
+      }
+    },
+    "tt4288182": {
+      "fa": "آتلانتا",
+      "summary": "ارن و پسرعمویش آلفرد تلاش می‌کنند در دنیای رپ آتلانتا پیشرفت کنند و با مسائل نژاد، فقر، روابط، جایگاه اجتماعی و پدرشدن روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23016639"
+      }
+    },
+    "tt0012349": {
+      "fa": "پسربچه",
+      "summary": "ولگرد از کودکی رهاشده مراقبت می‌کند، اما رویدادها پیوند میان آن دو را به خطر می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q374172"
+      }
+    },
+    "tt0096639": {
+      "fa": "کبوتر تنها (مینیسریال)",
+      "summary": "دو تکاور سابق تگزاس تصمیم می‌گیرند گله‌ای را با کمک چند نفر از اهالی شهر به مونتانا ببرند؛ سفری طولانی که دوباره آن‌ها را وارد ماجراجویی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2547946"
+      }
     }
   },
   "retryAfter": {
