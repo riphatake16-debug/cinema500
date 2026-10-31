@@ -834,3 +834,43 @@ html:has(#details[open]),html:has(#filter-drawer[open]){overflow-y:hidden}
  .roulette-wheel{transition:none}
  .collection-toolbar .roulette-launch{transition:none}
 }
+
+
+/* Final polish: predictable touch targets, keyboard focus and backup confirmation. */
+.backup-preview{
+ margin:16px 0 4px;
+ padding:17px;
+ border:1px solid var(--bubble-edge);
+ border-radius:18px;
+ background:var(--bubble-fill);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
+}
+.backup-preview[hidden]{display:none}
+.backup-preview h3{margin:0 0 7px;font-size:15px;color:var(--text)}
+.backup-preview p{margin:6px 0;font-size:12px;line-height:1.9;color:var(--muted)}
+.backup-preview-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:13px}
+.backup-preview-actions button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:46px;min-width:120px;flex:1;padding:10px 13px;border-radius:14px;font-weight:700;font-size:12px}
+.backup-preview-actions .icon{width:16px;height:16px}
+.library-switch button:focus-visible,
+.watchlist-switch button:focus-visible,
+.saved-work-actions button:focus-visible,
+.profile-actions button:focus-visible,
+.backup-preview-actions button:focus-visible,
+.roulette-spin:focus-visible,
+.roulette-launch:focus-visible{
+ outline:2px solid var(--accent);
+ outline-offset:3px;
+}
+@media(max-width:700px){
+ /* Native visibility skipping on offscreen cards: posters stay lazy-loaded. */
+ @supports (content-visibility:auto){
+  #grid>.card{content-visibility:auto;contain-intrinsic-size:auto 370px}
+ }
+ .library-switch button,.watchlist-switch button,.saved-work-actions button{min-height:44px}
+ .profile-actions button{touch-action:manipulation}
+ .backup-preview{padding:14px;border-radius:16px}
+ .backup-preview-actions{gap:8px}
+}
+@media(prefers-reduced-motion:reduce){
+ .backup-preview-actions button,.library-switch button,.saved-work-actions button{transition:none!important}
+}
