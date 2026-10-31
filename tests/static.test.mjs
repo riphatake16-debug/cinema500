@@ -56,6 +56,7 @@ test('backup preview requires explicit confirmation before importing anything',a
  get('#backup-confirm').onclick();
  assert.ok(api.snapshot().wanted.includes(id));
  assert.equal(api.snapshot().preferences.find(p=>p.id===id)?.note,'Saved from another browser');
+ get('#details').open=false; // Leave the modal closed for the following infinite-scroll test.
  api.resetJournal();
 });
 test('infinite scrolling appends, local backup UI and theme work',()=>{api.setFilters('movie','all');get('#search').oninput();const count=()=>[...get('#grid').innerHTML.matchAll(/<article class=/g)].length;assert.equal(count(),30);observers[0].callback([{isIntersecting:true}]);assert.equal(count(),60);api.openAccount();assert.ok(get('#dialog-content').innerHTML.includes('backup-file'));get('#theme').onclick();assert.equal(stored.get('cinema-theme'),'light')});
