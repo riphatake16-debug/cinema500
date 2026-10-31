@@ -2420,6 +2420,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q732383"
       }
+    },
+    "tt0055630": {
+      "fa": "یوجیمبو",
+      "summary": "سامورایی زیرکی وارد شهری می‌شود که دو گروه تبهکار آن را در اختیار دارند. او تصمیم می‌گیرد آن دو گروه را به جان هم بیندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q20475"
+      }
+    },
+    "tt13111040": {
+      "fa": "پیشنهاد (سریال)",
+      "summary": "آلبرت اس. رادی برای ساخت «پدرخوانده» باید با مدیران استودیو، مشکل انتخاب بازیگر و مخالفت‌های بیرون از سینما کنار بیاید؛ داستانی دربارهٔ پشت صحنهٔ ساخت فیلم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107740038"
+      }
+    },
+    "tt0080678": {
+      "fa": "مرد فیلنما",
+      "summary": "جراحی در دوران ویکتوریا به مردی کمک می‌کند که به‌خاطر ظاهر متفاوتش در نمایش‌های خیابانی تحقیر می‌شود. آشنایی آن‌ها، مهربانی و شخصیت او را به دیگران نشان می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q272860"
+      }
+    },
+    "tt2788316": {
+      "fa": "شوگان",
+      "summary": "دریانوردی انگلیسی در آستانهٔ قرن هفدهم به ژاپن می‌رسد. او با کمک یک مترجم، وارد رقابت سیاسی لرد توراناگا و رقیبانش می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q56276181"
+      }
     }
   },
   "retryAfter": {
