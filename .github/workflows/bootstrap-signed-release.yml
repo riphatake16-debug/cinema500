@@ -1,0 +1,109 @@
+name: Bootstrap first signed Cinema500 release
+
+# One-time bootstrap only. The permanent signing key is made on the runner,
+# then encrypted for its owner using a public recovery key. Only ciphertext
+# is uploaded; no private signing key or passphrase goes into Git.
+on:
+  push:
+    branches: [feature/android-market-app]
+    paths: [.github/workflows/bootstrap-signed-release.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  signed-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+      - name: Generate permanent Android signing key and build APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          SIGN_PASS="$(openssl rand -hex 32)"
+          PASSWORD_FILE="$RUNNER_TEMP/cinema500-signing-password.txt"
+          KEYSTORE_FILE="$RUNNER_TEMP/cinema500-release.jks"
+          printf '%s' "$SIGN_PASS" > "$PASSWORD_FILE"
+          keytool -genkeypair -noprompt -storetype JKS \
+            -keystore "$KEYSTORE_FILE" \
+            -alias cinema500 -keyalg RSA -keysize 3072 \
+            -sigalg SHA256withRSA -validity 10000 \
+            -storepass "$SIGN_PASS" -keypass "$SIGN_PASS" \
+            -dname "CN=Cinema500, OU=Android, O=Cinema500, C=IR"
+
+          export CINEMA500_KEYSTORE_PATH="$KEYSTORE_FILE"
+          export CINEMA500_KEYSTORE_PASSWORD="$SIGN_PASS"
+          export CINEMA500_KEY_ALIAS="cinema500"
+          export CINEMA500_KEY_PASSWORD="$SIGN_PASS"
+
+          gradle -p android :app:assembleRelease --no-daemon
+          APK="android/app/build/outputs/apk/release/app-release.apk"
+          test -s "$APK"
+          APKSIGNER="$(find "$ANDROID_HOME/build-tools" -maxdepth 2 -type f -name apksigner | sort -V | tail -n 1)"
+          if [ -z "$APKSIGNER" ]; then echo "Android apksigner missing"; exit 1; fi
+          "$APKSIGNER" verify --verbose --print-certs "$APK" > "$RUNNER_TEMP/apk-verification.txt"
+          cat "$RUNNER_TEMP/apk-verification.txt"
+          grep -Eqi 'Verified using v2 scheme .*: true' "$RUNNER_TEMP/apk-verification.txt"
+          if grep -Eqi 'Verified using v2 scheme .*: false' "$RUNNER_TEMP/apk-verification.txt"; then
+            echo "V2 signature was not valid"; exit 1
+          fi
+
+          cat > "$RUNNER_TEMP/cinema500-recovery-public.pem" <<'RECOVERY_PUBLIC_KEY'
+          -----BEGIN PUBLIC KEY-----
+          MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3l3dsFga2+9yzJXV7+vW
+          ONP8wzOy4BIGwWTk1WbBXbmsGnQ1t7CsUtKvA8GRXiXJk83ceiWoW4L2UyCMf04O
+          c4JXopNWXUryZP/rhn/HCi5T2cX6BJUkkKuAuwW9qoV+BHinr6tfpiVawRHjko4K
+          qfgdB29cSu/o/ACcb+gBZTBH0kcvhgZwsIaMCL4gamuHa7PBYjQ9OByJ03hak2qH
+          9raUnIzN+GxbVrdx4FBv6HzRzgSQ3oN7UVrgtkPgUSumRY7qi2Vm5i1por3kjrZZ
+          9ogKTIjxBJgiArWd9Ew0Y4av5Vo5yqoW4xKPYryd3w2yvM1XYkvHjfMNYAAJGfuC
+          GqQJXiqfHqTHLDknPCQtOlUdODLynJIZqOsS8qU/w6ty/3ZuhXhCWn3ZqNgR+54d
+          SbffbKZM28LAgEjf90THUI5oqku2c9rX8AR8rSGORp8vrF2QlXo96csLHm6CpxeC
+          fsfvrrhMm4+RrEvd6iTgk6mAn9cI5RZLgXH8slCTdXmZ5yXNNp9bRTXzorjtliQH
+          FNgvvu52i9Rz8ZlOzbfgFkp7UIiA39VOtDp++jyZZstZOWCadZq9vILR/3gAa1FR
+          0Zezxp1fE5W0UjGGsgF8mgYjba4tdEu3xhLqZTzBv+U1jFYQj6O5dLo+n4tCDz/M
+          2Iu4ZXjX1FJz1BAmUisKI/8CAwEAAQ==
+          -----END PUBLIC KEY-----
+          RECOVERY_PUBLIC_KEY
+
+          mkdir -p release-backup
+          openssl enc -aes-256-cbc -salt -pbkdf2 -iter 250000 \
+            -in "$KEYSTORE_FILE" -out release-backup/cinema500-release.jks.enc \
+            -pass file:"$PASSWORD_FILE"
+          openssl pkeyutl -encrypt -pubin \
+            -inkey "$RUNNER_TEMP/cinema500-recovery-public.pem" \
+            -pkeyopt rsa_padding_mode:oaep \
+            -pkeyopt rsa_oaep_md:sha256 \
+            -pkeyopt rsa_mgf1_md:sha256 \
+            -in "$PASSWORD_FILE" \
+            -out release-backup/signing-password.rsa-oaep.bin
+          "$APKSIGNER" verify --print-certs "$APK" > release-backup/apk-signature-certificate.txt
+          sha256sum "$KEYSTORE_FILE" | cut -d' ' -f1 > release-backup/keystore-sha256.txt
+          sha256sum "$APK" | cut -d' ' -f1 > release-backup/apk-sha256.txt
+          # Remove raw secret from the runner before artifact upload.
+          shred -u "$KEYSTORE_FILE" "$PASSWORD_FILE" || rm -f "$KEYSTORE_FILE" "$PASSWORD_FILE"
+
+      - name: Upload signed APK (ready for device verification)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cinema500-first-signed-release-apk
+          path: android/app/build/outputs/apk/release/app-release.apk
+          retention-days: 90
+          if-no-files-found: error
+      - name: Upload encrypted permanent key backup
+        uses: actions/upload-artifact@v4
+        with:
+          name: cinema500-ENCRYPTED-signing-key-backup
+          path: release-backup/
+          retention-days: 90
+          if-no-files-found: error
