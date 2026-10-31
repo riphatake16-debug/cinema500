@@ -2384,6 +2384,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q65258113"
       }
+    },
+    "tt4729430": {
+      "fa": "کلاوس",
+      "summary": "دوستی یک پستچی تازه‌کار با اسباب‌بازی‌سازی به نام کلاوس، در شهری سرد و دورافتاده، زنجیره‌ای از مهربانی به راه می‌اندازد و دشمنی قدیمی را کم‌رنگ می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q67208596"
+      }
+    },
+    "tt27497448": {
+      "fa": "شوالیه هفت پادشاهی",
+      "summary": "یک قرن پیش از «بازی تاج‌وتخت»، دانکن، شوالیه‌ای جوان، و همراه زیرکش اگ در وستروس سفر می‌کنند؛ سفری که آن‌ها را با خطرها و آدم‌های قدرتمند روبه‌رو می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q120277524"
+      }
+    },
+    "tt12042730": {
+      "fa": "پروژه درود بر مریم",
+      "summary": "معلم علوم در سفینه‌ای دور از زمین و بدون خاطره‌ای روشن بیدار می‌شود. با بازگشت حافظه‌اش می‌فهمد که باید راهی برای مقابله با خطری پیدا کند که خورشید و بقای بشر را تهدید می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107105860"
+      }
+    },
+    "tt0080306": {
+      "fa": "بله آقای وزیر",
+      "summary": "جیمز هکر وزیر می‌شود و فکر می‌کند می‌تواند تغییرهای بزرگی ایجاد کند. اما خیلی زود می‌فهمد پیش‌بردن تصمیم‌هایش در میان سیاست‌مداران و کارمندان دولت چقدر سخت است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q732383"
+      }
     }
   },
   "retryAfter": {
