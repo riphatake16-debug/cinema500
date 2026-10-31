@@ -2150,6 +2150,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2547946"
       }
+    },
+    "tt0089881": {
+      "fa": "آشوب (فیلم ۱۹۸۵)",
+      "summary": "فرمانروایی سالخورده در ژاپن قدرت را میان سه پسرش تقسیم می‌کند، بی‌خبر از اینکه این تصمیم آن‌ها را هم در برابر یکدیگر و هم در برابر خودش قرار می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q565231"
+      }
+    },
+    "tt0096657": {
+      "fa": "مستر بین",
+      "summary": "مستر بین برای انجام ساده‌ترین کارهای روزمره به دردسر می‌افتد و با راه‌حل‌های عجیبش، معمولاً دردسر بزرگ‌تری درست می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q484020"
+      }
+    },
+    "tt0084787": {
+      "fa": "موجود",
+      "summary": "گروهی پژوهشگر در قطب جنوب با موجودی فضایی روبه‌رو می‌شوند که می‌تواند ظاهر قربانیانش را تقلید کند. خیلی زود دیگر نمی‌دانند به چه کسی اعتماد کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q210756"
+      }
+    },
+    "tt5290382": {
+      "fa": "شکارچی ذهن",
+      "summary": "در اواخر دههٔ ۱۹۷۰، دو مأمور اف‌بی‌آی برای کمک به حل پرونده‌های باز، مأمور مصاحبه با قاتلان زنجیره‌ای می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q25340152"
+      }
     }
   },
   "retryAfter": {
