@@ -90,17 +90,19 @@ test('roulette replaces assistant and tonight without losing the personal librar
  assert.ok(css.includes('prefers-reduced-motion:reduce'));
 });
 
-test('roulette has a dedicated wheel icon everywhere instead of the AI sparkle icon',async()=>{
+test('roulette icon stays in the dock and dedicated section, not in the hero',async()=>{
  const [html,app]=await Promise.all([read('index.html'),read('app.js')]);
  assert.ok(html.includes('id="icon-roulette-wheel"'));
- for(const selector of ['data-dock="roulette"','id="roulette-launch"','id="hero-random"']){
+ for(const selector of ['data-dock="roulette"','id="roulette-launch"']){
    const i=html.indexOf(selector);
    assert.ok(i>=0,selector);
    assert.ok(html.slice(i,html.indexOf('</button>',i)).includes('href="#icon-roulette-wheel"'),selector+' wheel icon');
  }
+ assert.ok(!html.includes('id="hero-random"'), 'the duplicate hero wheel is removed');
+ assert.ok(!app.includes("$('#hero-random')"), 'the removed button has no handler');
  assert.ok(app.includes("icon('roulette-wheel')"));
  assert.ok(!app.includes("icon('shuffle')"));
- assert.ok(html.includes('app.js?v=final-polish-20261031-1'));
+ assert.ok(html.includes('app.js?v=hero-wheel-cleanup-20261031-1'));
 });
 
 test('film details omit watch-date controls and the external IMDb detail link',async()=>{
