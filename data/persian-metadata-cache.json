@@ -2537,6 +2537,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q748851"
       }
+    },
+    "tt0031381": {
+      "fa": "بربادرفته",
+      "summary": "در دوران جنگ داخلی آمریکا و بازسازی پس از آن، زنی حسابگر و مردی جسور، عشقی پرآشوب را تجربه می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2875"
+      }
+    },
+    "tt0092324": {
+      "fa": "بلکادر سوم",
+      "summary": "بلک‌ادر پیشخدمت شاهزاده جورج است و باید با تصمیم‌های احمقانهٔ اربابش کنار بیاید؛ در حالی که خودش هم مدام برای پول و موقعیت بهتر نقشه می‌کشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1887578"
+      }
+    },
+    "tt0120735": {
+      "fa": "قفل، انبار و دو بشکه باروت",
+      "summary": "چهار دوست در لندن پس از باخت در یک بازی ورق، بدهکار می‌شوند. تلاش آن‌ها برای جورکردن پول، پای چند گروه خلافکار و دو تفنگ عتیقه را به ماجرا باز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q851095"
+      }
+    },
+    "tt4299972": {
+      "fa": "بدشانسی: زندگی و مرگ رابرت دورست",
+      "summary": "مستندی دربارهٔ رابرت دورست، وارث یک خانوادهٔ ثروتمند در کار املاک، و ارتباط نام او با چند پروندهٔ جنایی حل‌نشده.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4299972/"
+      }
     }
   },
   "retryAfter": {
@@ -2546,6 +2582,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 342
+    "characters": 387
   }
 }
