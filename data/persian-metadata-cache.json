@@ -2456,6 +2456,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q56276181"
       }
+    },
+    "tt32820897": {
+      "fa": "شیطانکش: فیلم کیمتسو نو یائیبا: قلعه بیپایان",
+      "summary": "تانجیرو و اعضای گروه شکارچیان شیاطین به قلعهٔ بی‌نهایت کشیده می‌شوند؛ هزارتویی مرگبار که در آن، نبرد با شیاطین قدرتمند و رویارویی با موزان وارد مرحله‌ای تازه می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q126948105"
+      }
+    },
+    "tt7562112": {
+      "fa": "ژست",
+      "summary": "در نیویورک دههٔ ۱۹۸۰، اعضای جامعهٔ بال‌روم در رقابت‌های رقص و نمایش شرکت می‌کنند و برای خودشان خانواده‌ای انتخابی می‌سازند؛ در کنار تلاش برای عشق، پذیرش و گذران زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q30603704"
+      }
+    },
+    "tt0057115": {
+      "fa": "فرار بزرگ",
+      "summary": "اسیران متفقین در جنگ جهانی دوم، نقشه‌ای برای فرار چندصد نفر از یک اردوگاه آلمانی طراحی می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q110354"
+      }
+    },
+    "tt9103932": {
+      "fa": "بزرگترین رویدادهای جنگ جهانی دوم به صورت رنگی",
+      "summary": "مجموعه‌ای مستند که با استفاده از تصاویر آرشیوی رنگی‌شده، رویدادهای مهم جنگ جهانی دوم را مرور می‌کند و ابعاد نظامی و انسانی این درگیری را نشان می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt9103932/"
+      }
     }
   },
   "retryAfter": {
@@ -2464,6 +2500,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 276
+    "characters": 309
   }
 }
