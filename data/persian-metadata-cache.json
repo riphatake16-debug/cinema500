@@ -2573,6 +2573,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt4299972/"
       }
+    },
+    "tt0264464": {
+      "fa": "اگه میتونی منو بگیر",
+      "summary": "مأمور باتجربهٔ اف‌بی‌آی در تعقیب فرانک ابگنیل جوان است؛ کسی که پیش از نوزده‌سالگی، با جعل هویت خلبان، پزشک و دادستان میلیون‌ها دلار چک جعلی نقد کرده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q208108"
+      }
+    },
+    "tt1870479": {
+      "fa": "اتاق خبر",
+      "summary": "ورود تیمی تازه به یک تحریریهٔ خبری، روش کار و اصول اخلاقی آن را تغییر می‌دهد و پیامدهای غیرمنتظره‌ای برای مجری قدیمی‌اش دارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q276180"
+      }
+    },
+    "tt0071315": {
+      "fa": "محله چینیها",
+      "summary": "کارآگاهی خصوصی که برای افشای خیانت زناشویی استخدام شده، در شبکه‌ای از فریب، فساد و قتل گرفتار می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q644987"
+      }
+    },
+    "tt15435876": {
+      "fa": "پنگوئن",
+      "summary": "پس از رویدادهای «بتمن»، آز کاب، معروف به پنگوئن، تلاش می‌کند قدرت بیشتری در دنیای تبهکاری گاتهام به دست بیاورد؛ اما خاندان‌های رقیب حاضر نیستند به‌آسانی کنار بروند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q111189743"
+      }
     }
   },
   "retryAfter": {
