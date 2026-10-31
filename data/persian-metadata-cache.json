@@ -2645,6 +2645,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q28091065"
       }
+    },
+    "tt2096673": {
+      "fa": "درون و برون",
+      "summary": "رایلی با خانواده‌اش به سان‌فرانسیسکو می‌رود. در ذهن او، شادی، غم، ترس، خشم و نفرت تلاش می‌کنند با خانه، مدرسه و زندگی تازه کنار بیایند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q6144664"
+      }
+    },
+    "tt0979432": {
+      "fa": "امپراتوری بوردواک",
+      "summary": "در دوران ممنوعیت الکل، یک سیاست‌مدار آتلانتیک‌سیتی از مقامش برای همکاری با تبهکاران استفاده می‌کند و تلاش می‌کند هم قدرت سیاسی و هم درآمد غیرقانونی‌اش را حفظ کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q585758"
+      }
+    },
+    "tt0346336": {
+      "fa": "بهترین دوران جوانی",
+      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1217941"
+      }
+    },
+    "tt4834232": {
+      "fa": "نقش حیاتی",
+      "summary": "گروهی از صداپیشگان حرفه‌ای هر هفته دور هم جمع می‌شوند تا «سیاه‌چال‌ها و اژدهایان» بازی کنند. آن‌ها با نقش‌آفرینی و بداهه‌گویی، داستانی مشترک را پیش می‌برند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4834232/"
+      }
     }
   },
   "retryAfter": {
@@ -2654,6 +2690,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 415
+    "characters": 428
   }
 }
