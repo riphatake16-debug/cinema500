@@ -21,6 +21,45 @@
 - نمایش محتوای وب به‌تنهایی تضمین پذیرش مارکت نیست؛ موارد قوانین/حقوق محتوا و
   الزامات حریم خصوصی و کیفیت را در مایکت و بازار بررسی کنید.
 
+## اولین APK امضاشده و بازیابی کلید
+
+برای اولین انتشار، GitHub Actions در یک اجرای جداگانه به نام
+**Bootstrap first signed Cinema500 release** یک کلید امضای دائمی تولید و
+`app-release.apk` را با آن امضا می‌کند. سازندهٔ برنامه باید **هر دو**
+Artifact این اجرا را نگه دارد:
+
+- `cinema500-first-signed-release-apk`: فایل APK امضاشده.
+- `cinema500-ENCRYPTED-signing-key-backup`: پشتیبان رمزگذاری‌شدهٔ کلید.
+
+پشتیبان دوم فقط با کلید خصوصی بازیابی مربوط به مالک قابل باز شدن است.
+**کلید خصوصی بازیابی از ابتدا خارج از GitHub تولید شده و نباید در مخزن
+آپلود شود.** در پوشهٔ پشتیبان فایل `apk-signature-certificate.txt`
+برای بررسی اثرانگشت گواهی وجود دارد.
+
+برای بازیابی روی رایانه‌ای با OpenSSL، دو Artifact و کلید خصوصی بازیابی را
+در محلی امن بگذارید و این دستورات را در همان محل اجرا کنید:
+
+```bash
+openssl pkeyutl -decrypt -inkey cinema500_release_recovery_private.pem \
+  -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 \
+  -pkeyopt rsa_mgf1_md:sha256 -in signing-password.rsa-oaep.bin \
+  -out cinema500-signing-password.txt
+openssl enc -d -aes-256-cbc -pbkdf2 -iter 250000 \
+  -in cinema500-release.jks.enc -out cinema500-release.jks \
+  -pass file:cinema500-signing-password.txt
+sha256sum cinema500-release.jks
+```
+
+آخرین خروجی باید با `keystore-sha256.txt` برابر باشد. سپس با این
+keystore و گذرواژهٔ بازیابی‌شده، چهار Secret بخش بعد را در GitHub تنظیم
+کنید تا آپدیت‌های بعدی با **همان کلید** امضا شوند. ساخت دوبارهٔ کلید برای
+نسخه دوم، به‌روزرسانی روی نصب‌های قبلی را از کار می‌اندازد.
+
+**مهم:** APK آزمایشی `debug` با کلید متفاوتی امضا شده است. قبل از نصب
+APK رسمی، از دفتر تماشا پشتیبان بگیرید، نسخه آزمایشی را حذف کنید و سپس
+APK رسمی را نصب کنید. از Android App Signing و حقوق انتشار محتوای فیلم‌ها
+قبل از ارسال به مارکت مطمئن شوید.
+
 ## گرفتن APK آزمایشی از GitHub
 
 1. تغییرات این شاخه را با Pull Request به `main` ادغام کنید.
