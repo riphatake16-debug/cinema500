@@ -2076,6 +2076,44 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q65066669"
       }
+    },
+    "tt12361178": {
+      "fa": "ظاهر فریبنده ۲ (فیلم ۲۰۲۱)",
+      "summary": "ظاهر فریبنده ۲ (به هندی: Drishyam 2) فیلم جنایی هندی مالایالم-زبان، محصول سال ۲۰۲۱ است که توسط جیتو جوزف نوشته و کارگردانی شده‌است. در این فیلم، که دنباله فیلم ظاهر فریبنده (۲۰۱۳) و دومین قسمت از این مجموعه است، موهنلال، مینا، انسیبا حسن (Ansiba Hassan) و استر آنیل نقش‌های اصلی را بازی کرده‌اند. داستان فیلم شش سال بعد از رخدادهای فیلم ظاهر فریبنده اتفاق می‌افتد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q102036246",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B8%D8%A7%D9%87%D8%B1+%D9%81%D8%B1%DB%8C%D8%A8%D9%86%D8%AF%D9%87+%DB%B2+%28%D9%81%DB%8C%D9%84%D9%85+%DB%B2%DB%B0%DB%B2%DB%B1%29&oldid=43321984"
+      }
+    },
+    "tt4786824": {
+      "fa": "تاج",
+      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q20707362"
+      }
+    },
+    "tt0167404": {
+      "fa": "حس ششم",
+      "summary": "پسربچه‌ای که می‌تواند با ارواح ارتباط برقرار کند، از یک روان‌شناس کودک کمک می‌خواهد؛ روان‌شناسی که خودش هم روزهای سختی را می‌گذراند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q183063"
+      }
+    },
+    "tt3322312": {
+      "fa": "بیباک",
+      "summary": "مت مرداک، وکیلی نابینا در روز و مبارزی نقاب‌دار در شب، با نام دردویل با جنایت در نیویورک مقابله می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16977365"
+      }
     }
   },
   "retryAfter": {
