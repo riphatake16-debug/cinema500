@@ -25,7 +25,7 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
   const versions = {
-    'app.js': 'roulette-dock-only-20261031-3',
+    'app.js': 'firebase-auth-optin-20261031-1',
     'mobile.css': 'roulette-dock-only-20261031-3',
     'style.css': 'mobile-focus-20261031-1'
   };
@@ -104,7 +104,7 @@ test('the bottom dock is the only roulette shortcut',async()=>{
  assert.ok(!app.includes("$('#roulette-launch')"), 'the removed catalogue button has no handler');
  assert.ok(app.includes("icon('roulette-wheel')"));
  assert.ok(!app.includes("icon('shuffle')"));
- assert.ok(html.includes('app.js?v=roulette-dock-only-20261031-3'));
+ assert.ok(html.includes('app.js?v=firebase-auth-optin-20261031-1'));
 });
 
 test('film details omit watch-date controls and the external IMDb detail link',async()=>{
@@ -117,12 +117,12 @@ test('film details omit watch-date controls and the external IMDb detail link',a
   assert.ok(!app.includes('id="journal-month"'));
   assert.ok(app.includes('امتیاز و یادداشت من'));
   assert.ok(app.includes('function journalEntries()'));
-  assert.ok(html.includes('app.js?v=roulette-dock-only-20261031-3'));
+  assert.ok(html.includes('app.js?v=firebase-auth-optin-20261031-1'));
 });
 
 test('final polish keeps mobile scrolling cheap and makes backup confirmation accessible',async()=>{
  const [html,app,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
- assert.ok(html.includes('app.js?v=roulette-dock-only-20261031-3'));
+ assert.ok(html.includes('app.js?v=firebase-auth-optin-20261031-1'));
  assert.ok(html.includes('mobile.css?v=roulette-dock-only-20261031-3'));
  assert.ok(app.includes('lastRenderedList=list'));
  assert.ok(app.includes('const list=lastRenderedList,start='));
