@@ -1,0 +1,7 @@
+.gradle/
+build/
+**/build/
+local.properties
+app/src/main/res/drawable-nodpi/cinema_icon.png
+*.jks
+*.keystore
