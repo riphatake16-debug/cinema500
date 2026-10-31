@@ -1914,6 +1914,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0111958/"
       }
+    },
+    "tt0055031": {
+      "fa": "قضاوت در نورنبرگ",
+      "summary": "در سال ۱۹۴۸، دادگاهی آمریکایی در آلمانِ اشغال‌شده، چهار قاضی نازی را به اتهام جنایات جنگی محاکمه می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q309545"
+      }
+    },
+    "tt1795096": {
+      "fa": "بهزات چ. داستان کارآگاه آنکارا",
+      "summary": "یک کارآگاه در آنکارا، در کنار مشکلات شخصی و اختلاف‌های تیمش، پرونده‌های قتل را بررسی می‌کند؛ پرونده‌هایی که گاهی او را با خودِ سیستم درگیر می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q4881030"
+      }
+    },
+    "tt0107290": {
+      "fa": "پارک ژوراسیک",
+      "summary": "با قطع برق یک پارک تفریحی و فرار دایناسورهای شبیه‌سازی‌شده، یک دیرینه‌شناس باید از دو کودک محافظت کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q167726"
+      }
+    },
+    "tt0459159": {
+      "fa": "ضخامت آن",
+      "summary": "وزیر امور اجتماعی و تیمش باید هم از پس بحران‌های خبری بربیایند و هم دفتر نخست‌وزیر را راضی نگه دارند؛ کاری که با اشتباه‌های پی‌درپی‌شان سخت‌تر می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0459159/"
+      }
     }
   },
   "retryAfter": {
@@ -1921,6 +1957,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 206
+    "characters": 221
   }
 }
