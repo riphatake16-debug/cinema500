@@ -2348,6 +2348,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1323981"
       }
+    },
+    "tt0040897": {
+      "fa": "گنجهای سیرا مادره",
+      "summary": "دو آمریکایی جویای کار در مکزیک، معدن‌کاری سالخورده را راضی می‌کنند تا در کوه‌های سیرا مادره به آن‌ها برای یافتن طلا کمک کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q251559"
+      }
+    },
+    "tt9253284": {
+      "fa": "اندور",
+      "summary": "کاسیان آندور در دوران سلطهٔ امپراتوری، وارد شبکه‌ای از مقاومت، جاسوسی و انتخاب‌های پرهزینه می‌شود؛ مسیری که او را به یکی از چهره‌های شورش در دنیای جنگ ستارگان تبدیل می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q60462338"
+      }
+    },
+    "tt0266543": {
+      "fa": "در جستجوی نمو",
+      "summary": "پس از اسیرشدن پسرش و انتقال او به سیدنی، یک دلقک‌ماهی ترسو سفری پرخطر را برای بازگرداندنش به خانه آغاز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q132863"
+      }
+    },
+    "tt10850932": {
+      "fa": "سقوط بر روی تو",
+      "summary": "زنی ثروتمند از کرهٔ جنوبی هنگام پرواز با پاراگلایدر، ناخواسته در کرهٔ شمالی فرود می‌آید. افسری به او پناه می‌دهد و میانشان رابطه‌ای شکل می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q65258113"
+      }
     }
   },
   "retryAfter": {
