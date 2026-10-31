@@ -1,0 +1,47 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'ir.cinema500.app'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'ir.cinema500.app'
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+    }
+    buildFeatures { buildConfig true }
+    signingConfigs {
+        release {
+            def path = System.getenv('CINEMA500_KEYSTORE_PATH')
+            if (path) {
+                storeFile file(path)
+                storePassword System.getenv('CINEMA500_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('CINEMA500_KEY_ALIAS')
+                keyPassword System.getenv('CINEMA500_KEY_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (System.getenv('CINEMA500_KEYSTORE_PATH')) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// Use the existing PWA icon, so web and Android branding stay consistent.
+tasks.register('prepareCinemaIcon', Copy) {
+    from file('../../icons/icon-192.png')
+    into file('src/main/res/drawable-nodpi')
+    rename { 'cinema_icon.png' }
+}
+tasks.named('preBuild') { dependsOn 'prepareCinemaIcon' }
+
+dependencies { implementation 'androidx.webkit:webkit:1.12.1' }

@@ -1,0 +1,67 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'android/**'
+      - '.github/workflows/android.yml'
+  pull_request:
+    paths:
+      - 'android/**'
+      - '.github/workflows/android.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out Cinema500
+        uses: actions/checkout@v4
+      - name: Configure Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Configure Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+      - name: Build test APK
+        run: gradle -p android :app:assembleDebug --no-daemon
+      - name: Upload test APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: cinema500-debug-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 14
+
+      # The release key is never stored in the repository.
+      - name: Build signed market APK
+        id: release
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          KEYSTORE_B64: ${{ secrets.CINEMA500_KEYSTORE_BASE64 }}
+          CINEMA500_KEYSTORE_PASSWORD: ${{ secrets.CINEMA500_KEYSTORE_PASSWORD }}
+          CINEMA500_KEY_ALIAS: ${{ secrets.CINEMA500_KEY_ALIAS }}
+          CINEMA500_KEY_PASSWORD: ${{ secrets.CINEMA500_KEY_PASSWORD }}
+        run: |
+          if [ -z "$KEYSTORE_B64" ] || [ -z "$CINEMA500_KEYSTORE_PASSWORD" ] || [ -z "$CINEMA500_KEY_ALIAS" ] || [ -z "$CINEMA500_KEY_PASSWORD" ]; then
+            echo "Missing signing secrets; only a debug APK was produced."
+            exit 0
+          fi
+          printf '%s' "$KEYSTORE_B64" | base64 --decode > "$RUNNER_TEMP/cinema500-release.jks"
+          export CINEMA500_KEYSTORE_PATH="$RUNNER_TEMP/cinema500-release.jks"
+          gradle -p android :app:assembleRelease --no-daemon
+          echo "signed=yes" >> "$GITHUB_OUTPUT"
+      - name: Upload signed market APK
+        if: steps.release.outputs.signed == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cinema500-market-release-apk
+          path: android/app/build/outputs/apk/release/app-release.apk
+          retention-days: 14
