@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سینما ۵۰۰</string>
+    <string name="offline_message">اتصال به اینترنت برقرار نیست. برای نمایش سینما ۵۰۰ دوباره تلاش کن.</string>
+    <string name="retry">تلاش دوباره</string>
+    <string name="saved_backup">فایل پشتیبان ذخیره شد.</string>
+    <string name="failed_backup">ذخیره فایل پشتیبان انجام نشد.</string>
+</resources>
