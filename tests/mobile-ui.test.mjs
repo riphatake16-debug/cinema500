@@ -60,7 +60,7 @@ test('catalogue search is always visible and compatible with advanced filters', 
 
 test('film detail animations are light, accessible and optional controls stay collapsed',async()=>{
   const [html,js,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
-  assert.ok(html.includes('mobile.css?v=final-polish-20261031-1'));
+  assert.ok(html.includes('mobile.css?v=hero-wheel-removed-20261031-2'));
   assert.ok(js.includes('detail-disclosure detail-personal'));
   assert.ok(js.includes('detail-disclosure detail-similar'));
   assert.ok(js.includes('data-expand-detail-summary'));
@@ -121,7 +121,7 @@ test('film details omit watch-date controls and the external IMDb detail link',a
 test('final polish keeps mobile scrolling cheap and makes backup confirmation accessible',async()=>{
  const [html,app,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
  assert.ok(html.includes('app.js?v=final-polish-20261031-1'));
- assert.ok(html.includes('mobile.css?v=final-polish-20261031-1'));
+ assert.ok(html.includes('mobile.css?v=hero-wheel-removed-20261031-2'));
  assert.ok(app.includes('lastRenderedList=list'));
  assert.ok(app.includes('const list=lastRenderedList,start='));
  assert.ok(app.includes('function writeJournalAtomically('));
