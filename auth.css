@@ -1,0 +1,27 @@
+.cinema-auth-root{margin:18px 0}
+.auth-panel{border:1px solid rgba(164,151,197,.27);border-radius:18px;background:rgba(22,24,35,.72);padding:20px;color:var(--text,#f0f1f8);line-height:1.8}
+.auth-panel h3{margin:0 0 7px;font-size:17px;font-weight:800}
+.auth-panel p{margin:7px 0 12px;font-size:13px;line-height:1.9}
+.auth-panel a{color:#bd9cff}
+.auth-panel form{display:flex;flex-direction:column;gap:7px;max-width:440px}
+.auth-panel label{font-size:12px;font-weight:700;color:inherit}
+.auth-panel input{height:44px;border:1px solid rgba(172,172,187,.38);background:rgba(0,0,0,.22);border-radius:11px;padding:0 13px;outline:none;color:inherit;font:inherit;font-size:14px;direction:ltr;text-align:left;min-width:0}
+.auth-panel input:focus-visible{border-color:#bd9cff;outline:2px solid rgba(189,156,255,.4)}
+.auth-panel button{font:inherit;cursor:pointer;min-height:40px;border-radius:11px}
+.auth-panel button:focus-visible{outline:2px solid #bd9cff;outline-offset:3px}
+.auth-panel button:disabled{opacity:.55;cursor:wait}
+.auth-tabs{display:flex;gap:8px;margin:15px 0}
+.auth-tab{background:transparent;border:1px solid rgba(172,172,187,.3);color:inherit;padding:7px 16px;font-size:13px}
+.auth-tab[aria-pressed="true"]{background:#7952c6;border-color:#9874e3;color:white}
+.auth-submit{margin-top:12px;background:#8c66d7;border:0;color:#fff;font-size:14px;font-weight:800}
+.auth-google,.auth-control{margin-top:9px;border:1px solid rgba(172,172,187,.4);background:rgba(255,255,255,.06);color:inherit;padding:8px 14px;font-size:13px}
+.auth-google{width:100%;max-width:440px}
+.auth-link{padding:5px 0;color:#c3a7ff;border:0;background:transparent;display:block;text-decoration:underline;text-underline-offset:4px;font-size:12px}
+.auth-actions{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 16px}
+.auth-actions .auth-control{margin-top:0}
+.auth-danger{border-color:rgba(225,92,92,.42);color:#ffb7b7}
+.auth-warning{color:#ffe0a4}
+.auth-success{color:#91e6bd}
+.auth-panel #auth-notice{padding:8px 12px;border-radius:10px;background:rgba(131,107,191,.17);color:inherit}
+.auth-disclaimer{font-size:12px!important;color:var(--muted,#a4a4b6);line-height:1.85!important;margin-top:14px!important}
+@media(max-width:540px){.auth-panel{padding:14px;border-radius:14px}.auth-actions{display:grid;grid-template-columns:1fr}.auth-google{max-width:none}}
