@@ -874,3 +874,6 @@ html:has(#details[open]),html:has(#filter-drawer[open]){overflow-y:hidden}
 @media(prefers-reduced-motion:reduce){
  .backup-preview-actions button,.library-switch button,.saved-work-actions button{transition:none!important}
 }
+
+/* Compatibility guard: hide the obsolete roulette button in cached hero markup. */
+.hero-actions > .hero-shuffle{display:none!important}
