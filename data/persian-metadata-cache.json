@@ -2492,6 +2492,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9103932/"
       }
+    },
+    "tt0071853": {
+      "fa": "مانتی پایتون و جام مقدس",
+      "summary": "شاه آرتور و شوالیه‌های میز گرد به‌دنبال جام مقدس راه می‌افتند؛ سفری پر از اتفاق‌های عجیب، مانع‌های خنده‌دار و دردسرهای غیرمنتظره.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q25043"
+      }
+    },
+    "tt0090509": {
+      "fa": "بازگشت شرلوک هولمز",
+      "summary": "شرلوک هولمز و دکتر واتسون برای حل مجموعه‌ای تازه از پرونده‌های مرموز، بار دیگر مشاهده و استدلال را به کار می‌گیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0090509/"
+      }
+    },
+    "tt0046912": {
+      "fa": "ام را به نشانه مرگ بگیر",
+      "summary": "یک تنیس‌باز پس از فهمیدن رابطهٔ همسرش با مردی دیگر، برای کشتن او نقشه می‌کشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q496255"
+      }
+    },
+    "tt2049116": {
+      "fa": "گومورا",
+      "summary": "چیرو برای رسیدن به رهبری یک گروه تبهکار، قواعد قدیمی را کنار می‌گذارد. جنگ قدرتی که آغاز می‌شود، جان خودش و خانواده‌اش را به خطر می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16876411"
+      }
     }
   },
   "retryAfter": {
@@ -2500,6 +2536,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 309
+    "characters": 338
   }
 }
