@@ -2681,6 +2681,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt4834232/"
       }
+    },
+    "tt0117951": {
+      "fa": "رگیابی",
+      "summary": "رنتون که در دنیای مواد مخدر ادینبرو غرق شده، با وجود وسوسهٔ مواد و نفوذ دوستانش تلاش می‌کند پاک شود و از آن فضا بیرون بیاید.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109135"
+      }
+    },
+    "tt8595766": {
+      "fa": "خانواده یه مری",
+      "summary": "تابستان ۱۹۹۸ از نگاه پسری دوازده‌ساله روایت می‌شود؛ پسری که خانواده‌اش را دوست دارد، اما همیشه با رفتار و تصمیم‌هایشان کنار نمی‌آید.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt8595766/"
+      }
+    },
+    "tt1201607": {
+      "fa": "هری پاتر و یادگاران مرگ - قسمت دوم",
+      "summary": "هری، رون و هرماینی برای نابودی ولدمورت به دنبال جان‌پیچ‌های باقی‌مانده می‌گردند، در حالی که نبرد نهایی در هاگوارتز شعله‌ور می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q232009"
+      }
+    },
+    "tt9174558": {
+      "fa": "دوپسیک",
+      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101420707"
+      }
     }
   },
   "retryAfter": {
@@ -2690,6 +2726,6 @@
   },
   "translationUsage": {
     "date": "2026-10-31",
-    "characters": 428
+    "characters": 443
   }
 }
