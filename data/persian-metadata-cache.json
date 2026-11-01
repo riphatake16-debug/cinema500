@@ -3086,6 +3086,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q43379503"
       }
+    },
+    "tt0198781": {
+      "fa": "شرکت هیولاها",
+      "summary": "هیولاها برای تأمین انرژی شهر، کودکان را می‌ترسانند؛ اما ورود یک کودک به دنیای آن‌ها باعث می‌شود دو هیولا در باورهایشان تردید کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q187726"
+      }
+    },
+    "tt4082744": {
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
+      }
+    },
+    "tt0083658": {
+      "fa": "بلید رانر",
+      "summary": "یک مأمور ویژه باید چهار انسان‌نمای مصنوعی را پیدا کند و از بین ببرد؛ موجوداتی که برای پیدا کردن سازنده‌شان از فضا به زمین برگشته‌اند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q184843"
+      }
+    },
+    "tt10802170": {
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
     }
   },
   "retryAfter": {
@@ -3095,6 +3131,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 156
+    "characters": 168
   }
 }
