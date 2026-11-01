@@ -2798,6 +2798,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q180098"
       }
+    },
+    "tt29623480": {
+      "fa": "ربات وحشی",
+      "summary": "رباتی به نام رز در جزیره‌ای دورافتاده گیر می‌افتد و باید زندگی در طبیعت را یاد بگیرد. مراقبت از یک جوجه‌غاز یتیم، او را به جانوران جزیره نزدیک می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q124378349"
+      }
+    },
+    "tt0053488": {
+      "fa": "نمایش باگز بانی",
+      "summary": "باگز بانی، خرگوش مشهور کارتونی، همراه دیگر شخصیت‌های انیمیشن برادران وارنر میزبان مجموعه‌ای هفتگی از ماجراهای طنز است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0053488/"
+      }
+    },
+    "tt2119532": {
+      "fa": "خط الرأس ارهای",
+      "summary": "دزموند داس، امدادگر آمریکایی در نبرد اوکیناوا، حاضر نیست کسی را بکشد. او بدون شلیک یک گلوله، جان هم‌رزمانش را نجات می‌دهد و نشان افتخار می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q21010856"
+      }
+    },
+    "tt1489428": {
+      "fa": "موجه",
+      "summary": "ریلن گیونز، مأمور فدرال، از میامی به شرق کنتاکی منتقل می‌شود؛ منطقهٔ روستایی و معدن‌خیزی که در آن بزرگ شده و هنوز با آدم‌های گذشته‌اش درگیر است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1535208"
+      }
     }
   },
   "retryAfter": {
@@ -2807,6 +2843,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 32
+    "characters": 51
   }
 }
