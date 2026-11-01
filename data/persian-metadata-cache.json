@@ -3131,6 +3131,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q14920425"
       }
+    },
+    "tt9335498": {
+      "fa": "شیطان کش: کیمتسو نو یایبا",
+      "summary": "پس از حملهٔ شیاطین، تنها تانجیرو و خواهرش نزوکو زنده می‌مانند؛ تانجیرو برای انتقام و درمان خواهری که در حال تبدیل‌شدن به شیطان است، به شکارچی شیاطین تبدیل می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt9335498/"
+      }
+    },
+    "tt1950186": {
+      "fa": "فورد در برابر فراری",
+      "summary": "یک طراح خودرو و یک راننده تلاش می‌کنند برای فورد ماشینی بسازند که فراری را در مسابقهٔ لمانِ ۱۹۶۶ شکست دهد؛ با وجود محدودیت‌های فنی و دخالت مدیران شرکت.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q55081822"
+      }
+    },
+    "tt13868972": {
+      "fa": "پسران موشک",
+      "summary": "زندگی و همکاری هومی بابا و ویکرام سارابهای، دو دانشمند برجستهٔ هند، در مسیر شکل‌گیری برنامه‌های هسته‌ای و فضایی کشورشان و در میان چالش‌های علمی، سیاسی و شخصی روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt13868972/"
+      }
+    },
+    "tt0073195": {
+      "fa": "آروارهها",
+      "summary": "حمله‌های یک کوسهٔ عظیم، آرامش شهری ساحلی را به هم می‌زند. رئیس پلیس، یک زیست‌شناس دریایی و دریانوردی باتجربه برای متوقف‌کردن خطر راهی دریا می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q189505"
+      }
     }
   },
   "retryAfter": {
@@ -3140,6 +3176,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 172
+    "characters": 213
   }
 }
