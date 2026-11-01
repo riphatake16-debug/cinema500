@@ -2942,6 +2942,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q39571"
       }
+    },
+    "tt0275137": {
+      "fa": "لیگ عدالت",
+      "summary": "هفت قهرمان نیرومند با هم متحد می‌شوند و یکی از قدرتمندترین گروه‌های ابرقهرمانی را تشکیل می‌دهند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0275137/"
+      }
+    },
+    "tt1205489": {
+      "fa": "گرن تورینو",
+      "summary": "والت، کهنه‌سربازی بداخلاق، با پسر همسایه آشنا می‌شود؛ همان نوجوانی که قصد دزدیدن ماشین محبوبش را داشته. این آشنایی نگاه هر دو را تغییر می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q126699"
+      }
+    },
+    "tt0086831": {
+      "fa": "بله، نخست وزیر.",
+      "summary": "جیمز هکر حالا نخست‌وزیر بریتانیاست، اما رسیدن به این مقام به معنی خلاص‌شدن از بازی‌های سیاسی و مانع‌تراشی اطرافیان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0086831/"
+      }
+    },
+    "tt2024544": {
+      "fa": "۱۲ سال بردگی",
+      "summary": "در آمریکای پیش از جنگ داخلی، سولومون نورثاپ، مرد سیاه‌پوست آزادی از نیویورک، ربوده و به بردگی فروخته می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3023357"
+      }
     }
   },
   "retryAfter": {
@@ -2952,6 +2988,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 92
+    "characters": 125
   }
 }
