@@ -3275,6 +3275,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q214723"
       }
+    },
+    "tt9544034": {
+      "fa": "خانواده انسان",
+      "summary": "مردی از طبقهٔ متوسط که در واحد ویژهٔ سازمان تحقیقات ملی هند کار می‌کند، با چالش‌های زندگی خانوادگی و مأموریت‌های امنیتی روبه‌روست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt9544034/"
+      }
+    },
+    "tt0978762": {
+      "fa": "مری و مکس",
+      "summary": "داستان دوستی مکاتبه‌ای میان مری، دختری تنها و هشت‌ساله در حومهٔ ملبورن، و مکس، مردی ۴۴ساله در نیویورک.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1128756"
+      }
+    },
+    "tt3428912": {
+      "fa": "هپی ولی",
+      "summary": "کاترین کاوود، گروهبان پلیس در یورکشایر، میان پرونده‌های جنایی دشوار و مسئولیت‌های خانوادگی، با آسیب‌های گذشته و پیامدهای خشونت در جامعهٔ اطرافش روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt3428912/"
+      }
+    },
+    "tt0015324": {
+      "fa": "شرلوک جونیور",
+      "summary": "آپاراتچی جوانی آرزو دارد کارآگاه شود. وقتی رقیبش او را به دزدی متهم می‌کند، تلاش می‌کند بی‌گناهی‌اش را ثابت کند و در رؤیا خودش را کارآگاهی حرفه‌ای می‌بیند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1569918"
+      }
     }
   },
   "retryAfter": {
@@ -3284,6 +3320,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 268
+    "characters": 294
   }
 }
