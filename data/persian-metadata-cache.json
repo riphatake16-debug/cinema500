@@ -2978,6 +2978,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q3023357"
       }
+    },
+    "tt7908628": {
+      "fa": "آنچه در تاریکی انجام میدهیم",
+      "summary": "دوربینی شبیه دوربین مستند، زندگی چند خون‌آشام هم‌خانه در استتن‌آیلند را دنبال می‌کند؛ موجوداتی قدیمی که در کنار اختلاف‌هایشان باید با زندگی امروزی هم کنار بیایند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q55637582"
+      }
+    },
+    "tt0892769": {
+      "fa": "چگونه اژدهای خود را تربیت کنیم",
+      "summary": "وایکینگی نوجوان که آرزوی شکار اژدها دارد، برخلاف انتظار با اژدهایی جوان دوست می‌شود و می‌فهمد شناختش از این موجودات کامل نبوده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q373096"
+      }
+    },
+    "tt35495073": {
+      "fa": "رقابت داغ",
+      "summary": "دو مرد که ستاره‌های رقیب هاکی هستند، به یکدیگر دل می‌بندند. آن‌ها باید رابطه‌شان را پنهان نگه دارند و هم‌زمان از پس فشار رقابت حرفه‌ای بربیایند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q136813219"
+      }
+    },
+    "tt0081398": {
+      "fa": "گاو خشمگین",
+      "summary": "زندگی جیک لاموتا، بوکسوری که خشونت و خشم او را در رینگ به اوج می‌رساند، اما زندگی بیرون از رینگش را ویران می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q220780"
+      }
     }
   },
   "retryAfter": {
