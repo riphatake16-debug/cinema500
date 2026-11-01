@@ -3203,6 +3203,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q123906765"
       }
+    },
+    "tt6108262": {
+      "fa": "خورشید سیاه",
+      "summary": "در بالکانِ اواخر دههٔ ۱۹۲۰، چند پروندهٔ جنایی پای سیاست‌مداران، صاحبان پول و گروه‌های تبهکار را به ماجرایی مشترک باز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt6108262/"
+      }
+    },
+    "tt10872600": {
+      "fa": "مرد عنکبوتی: راهی به خانه نیست",
+      "summary": "پس از فاش‌شدن هویت مرد عنکبوتی، پیتر پارکر از دکتر استرنج کمک می‌خواهد تا زندگی عادی‌اش را پس بگیرد؛ اما اشتباهی جادویی، تهدیدهایی از جهان‌های دیگر را وارد دنیای او می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt10872600/"
+      }
+    },
+    "tt4158110": {
+      "fa": "آقای ربات",
+      "summary": "الیوت، کارشناس امنیت سایبری و هکر، به گروهی مخفی می‌پیوندد تا با یک شرکت بزرگ و فاسد مقابله کند؛ در حالی که زندگی و ذهن آشفتهٔ خودش هم برایش دردسر می‌سازند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18844729"
+      }
+    },
+    "tt3011894": {
+      "fa": "قصههای وحشی (فیلم)",
+      "summary": "شش داستان دربارهٔ آدم‌هایی که زیر فشار قرار می‌گیرند، کنترل خود را از دست می‌دهند و دست به کارهایی می‌زنند که زندگی‌شان را به هم می‌ریزد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16672466"
+      }
     }
   },
   "retryAfter": {
@@ -3212,6 +3248,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 236
+    "characters": 268
   }
 }
