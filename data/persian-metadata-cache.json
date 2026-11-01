@@ -2726,6 +2726,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q24053277"
       }
+    },
+    "tt1486217": {
+      "fa": "آرچر",
+      "summary": "مأموران یک سازمان جاسوسی باید عملیات مخفی انجام دهند، اما دعواها، روابط شخصی و رفتارهای عجیبشان معمولاً خودِ مأموریت را به دردسر می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q632670"
+      }
+    },
+    "tt0050212": {
+      "fa": "پل رودخانه کوای",
+      "summary": "اسیران جنگی بریتانیایی برای نیروهای ژاپنی پلی بر رودخانهٔ کوای می‌سازند، بی‌خبر از آنکه متفقین برای نابودکردن همان پل نقشه دارند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q188718"
+      }
+    },
+    "tt21056886": {
+      "fa": "حکمرانی لاشخورها",
+      "summary": "بازماندگان یک سفینهٔ باری در سیاره‌ای زیبا اما ناشناخته پراکنده شده‌اند. آن‌ها برای زنده‌ماندن و پیدا کردن راه بازگشت، باید با طبیعت عجیب و خطرناک آن آشنا شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q123110427"
+      }
+    },
+    "tt0042876": {
+      "fa": "راشومون",
+      "summary": "ماجرای تعرض به زنی و قتل همسر سامورایی او، از دید یک راهزن، زن، روح سامورایی و یک هیزم‌شکن بازگو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q135465"
+      }
     }
   },
   "retryAfter": {
