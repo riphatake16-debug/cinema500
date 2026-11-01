@@ -3167,6 +3167,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q189505"
       }
+    },
+    "tt0487831": {
+      "fa": "گروه آیتی",
+      "summary": "روی، ماس و سرپرستشان جن، کارکنان بخش پشتیبانی فناوری اطلاعات یک شرکت بزرگ، با دردسرهای کاری و موقعیت‌های طنزآمیز روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q239672"
+      }
+    },
+    "tt0107207": {
+      "fa": "به نام پدر",
+      "summary": "اعتراف اجباری مردی جوان به یک بمب‌گذاری، خودش و پدرش را به زندان می‌اندازد. یک وکیل تلاش می‌کند حقیقت پرونده را روشن کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q304074"
+      }
+    },
+    "tt0863046": {
+      "fa": "پرواز کنکوردها",
+      "summary": "برت و جِمین، اعضای گروه فولک‌راک فلایت آو د کانکوردز از نیوزیلند، در نیویورک به دنبال شهرت هستند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0863046/"
+      }
+    },
+    "tt30472557": {
+      "fa": "فیلم چینساو من: آرک رزه",
+      "summary": "دنجی پس از آشنایی با دختری به نام رزه، احساساتی تازه را تجربه می‌کند؛ اما این رابطه در دنیای خطرناک انسان‌ها و شیاطین، او را وارد ماجرایی فراتر از یک دلبستگی ساده می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q123906765"
+      }
     }
   },
   "retryAfter": {
@@ -3176,6 +3212,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 213
+    "characters": 236
   }
 }
