@@ -3311,6 +3311,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1569918"
       }
+    },
+    "tt0325980": {
+      "fa": "دزدان دریایی کارائیب: نفرین مروارید سیاه",
+      "summary": "ویل ترنر، آهنگری جوان، برای نجات زن محبوبش با ناخدای عجیبی به نام جک اسپارو همراه می‌شود. آن‌ها با گروهی از دزدان دریایی نفرین‌شده روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q46717"
+      }
+    },
+    "tt10048342": {
+      "fa": "گامبی وزیر",
+      "summary": "بث هارمون، دختری یتیم و نابغه در شطرنج، در آمریکای دههٔ ۱۹۶۰ برای قهرمانی تلاش می‌کند؛ اما تنهایی و اعتیاد، زندگی و تمرکزش را به هم می‌ریزند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q85808226"
+      }
+    },
+    "tt3315342": {
+      "fa": "ولورین ۳",
+      "summary": "در آینده‌ای که جهش‌یافته‌ها تقریباً از میان رفته‌اند، زندگی آرام لوگان سالخورده با درخواست کمک دختری جهش‌یافته که دانشمندان تعقیبش می‌کنند، دگرگون می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q24053263"
+      }
+    },
+    "tt0129690": {
+      "fa": "من آلن پارتریج هستم.",
+      "summary": "آلن پارتریج پس از شکست در تلویزیون، در رادیوی محلی نوریچ کار می‌کند و با نقشه‌ها و تلاش‌های معمولاً ناموفق، دنبال راهی برای برگشتن به شهرت است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0129690/"
+      }
     }
   },
   "retryAfter": {
@@ -3321,6 +3357,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 298
+    "characters": 316
   }
 }
