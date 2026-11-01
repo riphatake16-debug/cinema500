@@ -3239,6 +3239,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16672466"
       }
+    },
+    "tt0278238": {
+      "fa": "سامورایی جک",
+      "summary": "سامورایی‌ای به آینده فرستاده می‌شود و برای برگشتن به زمان خودش و شکست‌دادن دشمنی که جهان را تصاحب کرده، مبارزه می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q694101"
+      }
+    },
+    "tt5323662": {
+      "fa": "صدای خاموش",
+      "summary": "پسری که در کودکی هم‌کلاسی ناشنوایش را آزار داده، سال‌ها بعد از کارش پشیمان می‌شود و برای پیدا کردن او و جبران گذشته تلاش می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23925035"
+      }
+    },
+    "tt7120662": {
+      "fa": "دختران دری",
+      "summary": "دختری نوجوان و دوستانش در ایرلند شمالیِ دههٔ ۱۹۹۰، در سایهٔ تنش‌های سیاسی بزرگ می‌شوند؛ اما دغدغه‌های مدرسه، خانواده و دوستی همچنان ماجراهای خنده‌دار روزمره‌شان را می‌سازند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q47090557"
+      }
+    },
+    "tt0015864": {
+      "fa": "جویندگان طلا",
+      "summary": "جوینده‌ای برای یافتن طلا راهی کلوندایک می‌شود و در این مسیر، چیزهایی فراتر از ثروت پیدا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q214723"
+      }
     }
   },
   "retryAfter": {
