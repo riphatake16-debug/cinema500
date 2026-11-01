@@ -2906,6 +2906,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q222720"
       }
+    },
+    "tt0417373": {
+      "fa": "برادران ونچر",
+      "summary": "دکتر راستی ونچر، دانشمندی پرادعا، همراه محافظ قدرتمندش و دو پسر ماجراجویش، مدام درگیر دشمنان عجیب و مأموریت‌های دردسرساز می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0417373/"
+      }
+    },
+    "tt0118849": {
+      "fa": "بچههای آسمان",
+      "summary": "پسری کفش‌های خواهرش را گم می‌کند و برای پیدا کردنشان همه‌جا را می‌گردد. وقتی جست‌وجویش بی‌نتیجه می‌ماند، راه دیگری برای تهیهٔ یک جفت کفش پیدا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q339804"
+      }
+    },
+    "tt0088509": {
+      "fa": "دراگون بال",
+      "summary": "سون گوکو، مبارزی با دم میمون، همراه شخصیت‌هایی عجیب به دنبال گوی‌های اژدها می‌رود؛ گوی‌هایی که می‌توانند آرزوی صاحبشان را برآورده کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q239506"
+      }
+    },
+    "tt0096283": {
+      "fa": "همسایه من توتورو",
+      "summary": "دو خواهر برای نزدیک‌بودن به مادر بیمارشان به روستا نقل‌مکان می‌کنند و با ارواح شگفت‌انگیز جنگل آشنا می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q39571"
+      }
     }
   },
   "retryAfter": {
@@ -2916,6 +2952,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 75
+    "characters": 92
   }
 }
