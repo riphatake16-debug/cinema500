@@ -3347,6 +3347,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0129690/"
       }
+    },
+    "tt0075148": {
+      "fa": "راکی",
+      "summary": "بوکسوری گمنام فرصت مبارزه با قهرمان سنگین‌وزن را پیدا می‌کند. او می‌خواهد تا پایان مسابقه دوام بیاورد و توانایی‌اش را به خودش ثابت کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q188652"
+      }
+    },
+    "tt5897304": {
+      "fa": "ماب سایکو ۱۰۰",
+      "summary": "دانش‌آموزی با قدرت‌های فراطبیعی می‌خواهد مثل بقیه زندگی کند. او باید توانایی‌های رو‌به‌رشد و احساساتش را کنترل کند، اما مدام درگیر دردسرهای تازه می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt5897304/"
+      }
+    },
+    "tt0077416": {
+      "fa": "شکارچی گوزن",
+      "summary": "چند دوست از شهری صنعتی در پنسیلوانیا راهی جنگ ویتنام می‌شوند؛ تجربه‌ای که زندگی و دوستی آن‌ها را برای همیشه تغییر می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q201674"
+      }
+    },
+    "tt1534360": {
+      "fa": "ایزل",
+      "summary": "عمر اوچار پس از خیانت دوستان مورد اعتمادش و زنی که دوست داشت، با هویت ازل بازمی‌گردد تا انتقام بگیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q840657"
+      }
     }
   },
   "retryAfter": {
@@ -3357,6 +3393,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 316
+    "characters": 330
   }
 }
