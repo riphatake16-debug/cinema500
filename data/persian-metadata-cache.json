@@ -3050,6 +3050,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q785430"
       }
+    },
+    "tt2278388": {
+      "fa": "هتل بزرگ بوداپست",
+      "summary": "نویسنده‌ای با صاحب یک هتل قدیمی و باشکوه آشنا می‌شود. صاحب هتل از دوران شاگردی‌اش و ماجراهایی می‌گوید که همراه سرپیشخدمت هتل تجربه کرده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3521099"
+      }
+    },
+    "tt0280249": {
+      "fa": "دراگون بال",
+      "summary": "سون گوکو، پسری جنگجو با دمی عجیب، برای نیرومندترشدن سفر می‌کند و با هفت گوی اژدها آشنا می‌شود که در کنار هم هر آرزویی را برآورده می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0280249/"
+      }
+    },
+    "tt0112471": {
+      "fa": "پیش از طلوع",
+      "summary": "زن و مردی جوان در قطاری در اروپا آشنا می‌شوند و شبی را در وین با هم می‌گذرانند؛ با این آگاهی که شاید تنها شب مشترکشان باشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q659609"
+      }
+    },
+    "tt6763664": {
+      "fa": "فرار از خانه هیل",
+      "summary": "اعضای خانواده‌ای که از هم دور شده‌اند، دوباره با خاطرات خانهٔ قدیمی‌شان روبه‌رو می‌شوند. داستان میان گذشته و حال جابه‌جا می‌شود تا روشن کند آنجا چه اتفاقی افتاده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q43379503"
+      }
     }
   },
   "retryAfter": {
@@ -3059,6 +3095,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 145
+    "characters": 156
   }
 }
