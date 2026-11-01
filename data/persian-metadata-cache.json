@@ -3014,16 +3014,51 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q220780"
       }
+    },
+    "tt0314979": {
+      "fa": "جنگ ستارگان. باشه.",
+      "summary": "پس از نابودی دوازده مستعمره به دست سای‌لون‌ها، ناوگانی از آخرین بازماندگان بشر از تعقیب دشمن فرار می‌کند و در جست‌وجوی زمین است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0314979/"
+      }
+    },
+    "tt0423731": {
+      "fa": "سامورایی چامپلو",
+      "summary": "فو، پیشخدمت یک چایخانه، دو شمشیرزن ماهر به نام موگن و جین را از اعدام نجات می‌دهد تا برای یافتن «سامورایی‌ای با بوی گل آفتاب‌گردان» به او کمک کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q143276"
+      }
+    },
+    "tt0353969": {
+      "fa": "خاطرات قتل",
+      "summary": "در منطقه‌ای کوچک در کرهٔ سال ۱۹۸۶، دو کارآگاه برای حل پروندهٔ تعرض و قتل چند زن جوان به دست قاتلی ناشناس تلاش می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q488169"
+      }
+    },
+    "tt1641384": {
+      "fa": "عدالت جوان (مجموعه تلویزیونی)",
+      "summary": "ابرقهرمانان نوجوان تلاش می‌کنند شایستگی خود را برای عضویت در لیگ عدالت ثابت کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q785430"
+      }
     }
   },
   "retryAfter": {
     "tt8579674": "2026-11-01T15:02:21+00:00",
     "tt13991232": "2026-11-01T15:02:21+00:00",
-    "tt4508902": "2026-11-01T15:02:21+00:00",
-    "tt0314979": "2026-11-01T11:59:22+00:00"
+    "tt4508902": "2026-11-01T15:02:21+00:00"
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 125
+    "characters": 145
   }
 }
