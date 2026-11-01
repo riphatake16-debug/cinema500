@@ -2762,6 +2762,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q135465"
       }
+    },
+    "tt2063241": {
+      "fa": "عمر فاروق",
+      "summary": "زندگی عمر بن خطاب از سال‌های پیش از پذیرش اسلام تا دوران خلافتش دنبال می‌شود؛ در کنار رویدادهای سیاسی، مذهبی و اجتماعی آغاز تاریخ اسلام.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3184088"
+      }
+    },
+    "tt0072684": {
+      "fa": "بری لیندون",
+      "summary": "جوانی ماجراجو از ایرلند در قرن هجدهم با بیوه‌ای ثروتمند ازدواج می‌کند و به طبقهٔ اشراف راه پیدا می‌کند؛ اما حفظ جایگاهی که به دست آورده آسان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q471716"
+      }
+    },
+    "tt0094517": {
+      "fa": "تئاتر علوم اسرارآمیز ۳۰۰۰",
+      "summary": "مردی در یک ایستگاه فضایی اسیر شده و مجبور است فیلم‌های ضعیف تماشا کند. او و دوستان رباتش با شوخی‌کردن دربارهٔ فیلم‌ها، این وضعیت را تحمل می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0094517/"
+      }
+    },
+    "tt0052618": {
+      "fa": "بن هور",
+      "summary": "شاهزاده‌ای یهودی با خیانت دوست رومی‌اش به بردگی فرستاده می‌شود. او پس از به‌دست‌آوردن آزادی، برای انتقام برمی‌گردد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q180098"
+      }
     }
   },
   "retryAfter": {
@@ -2771,6 +2807,6 @@
   },
   "translationUsage": {
     "date": "2026-11-01",
-    "characters": 4
+    "characters": 32
   }
 }
