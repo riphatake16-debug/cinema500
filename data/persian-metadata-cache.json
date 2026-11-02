@@ -3770,6 +3770,33 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q17111973"
       }
+    },
+    "tt0091763": {
+      "fa": "جوخه",
+      "summary": "سربازی جوان در جنگ ویتنام، هم با خشونت دشمن روبه‌رو می‌شود و هم با اختلاف و رفتارهای هم‌رزمانش؛ تجربه‌ای که باورهایش را زیر سؤال می‌برد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190643"
+      }
+    },
+    "tt0290978": {
+      "fa": "اداره",
+      "summary": "وقتی شرکت تصمیم به کوچک‌کردن شعبه‌ها می‌گیرد، یک دفتر با احتمال تعطیلی روبه‌رو می‌شود؛ گروه مستندساز زندگی روزمرهٔ کارکنان و مدیرشان دیوید برنت را دنبال می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23829"
+      }
+    },
+    "tt0050976": {
+      "fa": "مهر هفتم",
+      "summary": "در دوران طاعون سیاه، مردی هنگام بازی شطرنج با مرگ، در جست‌وجوی پاسخ پرسش‌هایی دربارهٔ زندگی، مرگ و وجود خداست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q217189"
+      }
     }
   },
   "retryAfter": {
@@ -3777,10 +3804,10 @@
     "tt13991232": "2026-11-03T00:09:33+00:00",
     "tt4508902": "2026-11-03T00:09:33+00:00",
     "tt0237123": "2026-11-03T00:09:33+00:00",
-    "tt3895150": "2026-11-02T21:12:55+00:00"
+    "tt3895150": "2026-11-03T03:58:00+00:00"
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 196
+    "characters": 213
   }
 }
