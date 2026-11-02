@@ -3833,6 +3833,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q784812"
       }
+    },
+    "tt26743760": {
+      "fa": "خاطرات داروخانه",
+      "summary": "مائومائو که داروها و سم‌ها را خوب می‌شناسد، پس از ربوده‌شدن به خدمت دربار درمی‌آید. دانش او کمک می‌کند راز بیماری‌ها و اتفاق‌های مشکوک قصر را پیدا کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt26743760/"
+      }
+    },
+    "tt0092005": {
+      "fa": "کنار من بمان",
+      "summary": "نویسنده‌ای سفری از دوران کودکی‌اش را به یاد می‌آورد؛ زمانی که همراه دوستانش برای یافتن جسد پسری گمشده راهی شد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q494722"
+      }
+    },
+    "tt0118273": {
+      "fa": "برنج",
+      "summary": "برنامه‌ای طنز که با تقلید از گزارش‌های جدی تلویزیونی، شیوهٔ پوشش مسائل روز و رفتار چهره‌های مشهور را دست می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0118273/"
+      }
+    },
+    "tt0032138": {
+      "fa": "جادوگر شهر از",
+      "summary": "گردبادی دوروتی و سگش توتو را از کانزاس به سرزمین جادویی آز می‌برد. او همراه سه دوست تازه برای یافتن جادوگری راهی می‌شود که شاید بتواند راه خانه را نشانش دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q193695"
+      }
     }
   },
   "retryAfter": {
@@ -3844,6 +3880,6 @@
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 242
+    "characters": 273
   }
 }
