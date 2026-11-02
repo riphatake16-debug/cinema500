@@ -3491,6 +3491,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt5189670/"
       }
+    },
+    "tt0113247": {
+      "fa": "نفرت (فیلم 1995)",
+      "summary": "یک روز پس از شورشی خشونت‌آمیز، سه جوان در حومهٔ پاریس روزشان را با خشم، بی‌هدفی و تنش با پلیس می‌گذرانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q466101"
+      }
+    },
+    "tt1124373": {
+      "fa": "فرزندان آشوب",
+      "summary": "یک موتورسوار تلاش می‌کند میان پدربودن و عضویت در باشگاه موتورسواران قانون‌گریز تعادل برقرار کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q171254"
+      }
+    },
+    "tt15097216": {
+      "fa": "جای بهیم",
+      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt15097216/"
+      }
+    },
+    "tt36988358": {
+      "fa": "گناه نخستین تاکوپی",
+      "summary": "تاکوپی، موجودی فضایی که می‌خواهد دیگران را خوشحال کند، با شیزوکا، دختربچه‌ای غمگین، آشنا می‌شود. اما ابزارهای جادویی‌اش به‌سادگی نمی‌توانند مشکل‌های زندگی او را حل کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt36988358/"
+      }
     }
   },
   "retryAfter": {
@@ -3501,6 +3537,6 @@
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 70
+    "characters": 99
   }
 }
