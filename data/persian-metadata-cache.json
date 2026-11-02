@@ -3527,6 +3527,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt36988358/"
       }
+    },
+    "tt1895587": {
+      "fa": "افشاگر",
+      "summary": "داستان واقعی روزنامه‌نگاران بوستون گلوب که رسوایی گستردهٔ کودک‌آزاری و پنهان‌کاری در کلیسای کاتولیک محلی را افشا می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18154496"
+      }
+    },
+    "tt0187664": {
+      "fa": "فاصله",
+      "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0187664/"
+      }
+    },
+    "tt0088247": {
+      "fa": "نابودگر (فیلم ۱۹۸۴)",
+      "summary": "سربازی از سال ۲۰۲۹ به گذشته فرستاده می‌شود تا زنی جوان را از دست سایبورگی نابودنشدنی نجات دهد؛ زنی که پسر آینده‌اش کلید نجات بشریت است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q162255"
+      }
+    },
+    "tt0163507": {
+      "fa": "اصلاً خط مال کیست؟",
+      "summary": "کمدین‌ها در مسابقه‌ای بداهه، با همراهی مهمانان و گاهی تماشاگران، بازی‌ها و نمایش‌های کوتاه طنز اجرا می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0163507/"
+      }
     }
   },
   "retryAfter": {
@@ -3537,6 +3573,6 @@
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 103
+    "characters": 133
   }
 }
