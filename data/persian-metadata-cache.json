@@ -3662,6 +3662,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q118869205"
       }
+    },
+    "tt1028532": {
+      "fa": "هاچی: داستان یک سگ",
+      "summary": "استاد دانشگاهی سگی رهاشده را به خانه می‌آورد. میان آن‌ها دوستی‌ای شکل می‌گیرد که به بخشی جدانشدنی از زندگی روزمره‌شان تبدیل می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q59249"
+      }
+    },
+    "tt1513168": {
+      "fa": "گذر از کرمچاله",
+      "summary": "مورگان فریمن همراه دانشمندان، پرسش‌های بزرگ دربارهٔ جهان را بررسی می‌کند؛ از آغاز هستی تا ماهیت زمان و احتمال وجود زندگی در جایی دیگر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2499084"
+      }
+    },
+    "tt0381681": {
+      "fa": "پیش از غروب",
+      "summary": "نه سال پس از نخستین دیدار جسی و سلین، آن‌ها در جریان تور معرفی کتاب جسی در فرانسه دوباره یکدیگر را می‌بینند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q652186"
+      }
+    },
+    "tt0075537": {
+      "fa": "حواست به حرفات باشه",
+      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2512029"
+      }
     }
   },
   "retryAfter": {
