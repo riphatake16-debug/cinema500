@@ -3455,6 +3455,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt10590066/"
       }
+    },
+    "tt26548265": {
+      "fa": "مهاراجه",
+      "summary": "آرایشگری پس از سرقت از خانه‌اش، از پلیس می‌خواهد «لاکشمی» را پیدا کند؛ اما توضیح‌های مبهم او دربارهٔ این گمشده، مأموران را وارد پرونده‌ای پیچیده‌تر از انتظارشان می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt26548265/"
+      }
+    },
+    "tt4093826": {
+      "fa": "توئین پیکس (مجموعه تلویزیونی ۲۰۱۷)",
+      "summary": "بیست‌وپنج سال پس از قتل لورا پالمر، داستان توئین پیکس با بازگشت شخصیت‌های قدیمی و رازهایی تازه ادامه پیدا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23971551"
+      }
+    },
+    "tt0059742": {
+      "fa": "اشکها و لبخندها",
+      "summary": "زنی جوان از صومعه به خانهٔ یک افسر نیروی دریایی می‌رود که همسرش را از دست داده است. او مراقبت از هفت فرزند مرد را به عهده می‌گیرد و با موسیقی، فضای خانه را تغییر می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q60072"
+      }
+    },
+    "tt5189670": {
+      "fa": "ساختن یک قاتل",
+      "summary": "این مستند استیون ایوری را در طول ده سال دنبال می‌کند؛ مردی که آزمایش دی‌ان‌ای بی‌گناهی‌اش را در یک پرونده ثابت می‌کند، اما بعد درگیر اتهام تازه‌ای می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt5189670/"
+      }
     }
   },
   "retryAfter": {
@@ -3465,6 +3501,6 @@
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 45
+    "characters": 70
   }
 }
