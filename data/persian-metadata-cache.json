@@ -3599,16 +3599,44 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt2100976/"
       }
+    },
+    "tt0047296": {
+      "fa": "در بارانداز",
+      "summary": "بوکسوری سابق که حالا کارگر بارانداز است، برای ایستادن در برابر رؤسای فاسد اتحادیه‌اش تلاش می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q211372"
+      }
+    },
+    "tt0112159": {
+      "fa": "نئون جنسیس اونگلیون",
+      "summary": "نوجوانی به درخواست پدرش به گروهی نخبه از خلبانان می‌پیوندد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q662"
+      }
+    },
+    "tt0041959": {
+      "fa": "مرد سوم",
+      "summary": "هالی مارتینز، نویسندهٔ داستان‌های عامه‌پسند، به وینِ پس از جنگ می‌رود و درگیر تحقیق دربارهٔ مرگ مرموز دوست قدیمی‌اش هری لایم می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q271830"
+      }
     }
   },
   "retryAfter": {
     "tt8579674": "2026-11-02T16:23:47+00:00",
     "tt13991232": "2026-11-02T16:23:47+00:00",
     "tt4508902": "2026-11-02T16:23:47+00:00",
-    "tt0237123": "2026-11-02T16:23:47+00:00"
+    "tt0237123": "2026-11-02T16:23:47+00:00",
+    "tt3895150": "2026-11-02T21:12:55+00:00"
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 158
+    "characters": 175
   }
 }
