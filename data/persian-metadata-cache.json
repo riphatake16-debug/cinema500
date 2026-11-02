@@ -3734,6 +3734,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q23536"
       }
+    },
+    "tt3170832": {
+      "fa": "اتاق (فیلم ۲۰۱۵)",
+      "summary": "زنی که هفت سال در فضایی بسته اسیر بوده، همراه پسر خردسالش آزاد می‌شود و کودک برای نخستین بار دنیای بیرون را تجربه می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18703032"
+      }
+    },
+    "tt0290988": {
+      "fa": "دیشت تو تریلـر پارک به یارو داد.",
+      "summary": "یک گروه مستندساز زندگی سه خلافکار خرده‌پا را در شهرکی از خانه‌های سیار دنبال می‌کند؛ جایی که نقشه‌های پول‌درآوردن و دردسرهای همسایگی، مدام آن‌ها را به گرفتاری تازه‌ای می‌کشانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0290988/"
+      }
+    },
+    "tt0395169": {
+      "fa": "هتل رواندا",
+      "summary": "پل روسساباگینا، مدیر یک هتل در رواندا، در جریان حملات شبه‌نظامیان هوتو، به بیش از هزار پناهجوی توتسی پناه می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q223884"
+      }
+    },
+    "tt3526078": {
+      "fa": "شتز کریک",
+      "summary": "خانوادهٔ رز ثروتشان را از دست می‌دهند و به شهر کوچکی می‌روند که تنها دارایی باقی‌مانده‌شان است. عادت‌کردن به این زندگی تازه برای هیچ‌کدام آسان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q17111973"
+      }
     }
   },
   "retryAfter": {
@@ -3745,6 +3781,6 @@
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 179
+    "characters": 196
   }
 }
