@@ -3797,6 +3797,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q217189"
       }
+    },
+    "tt4236770": {
+      "fa": "یلواستون",
+      "summary": "خانوادهٔ داتن برای حفظ مزرعهٔ بزرگشان در مونتانا، با سازندگان املاک و رقیبان درگیر می‌شوند؛ در حالی که اختلاف‌های سیاسی و خانوادگی هم کارشان را سخت‌تر می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q47452423"
+      }
+    },
+    "tt1979320": {
+      "fa": "شتاب",
+      "summary": "جیمز هانت و نیکی لائودا، دو رانندهٔ فرمول یک با شخصیت‌هایی متفاوت، در دههٔ ۱۹۷۰ برای قهرمانی با یکدیگر رقابت می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1768437"
+      }
+    },
+    "tt1877368": {
+      "fa": "نقشه بزرگ.",
+      "summary": "شرکت‌کننده‌های غیرحرفه‌ای هر هفته در چند چالش شیرینی‌پزی رقابت می‌کنند. آن‌ها باید با مهارت، خلاقیت و مدیریت زمان، نظر داوران را جلب کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1877368/"
+      }
+    },
+    "tt0058946": {
+      "fa": "نبرد الجزیره",
+      "summary": "در الجزیرهٔ دههٔ ۱۹۵۰، مبارزه برای استقلال از فرانسه شدت می‌گیرد. خشونت میان مبارزان و نیروهای نظامی، زندگی مردم شهر را هم تحت تأثیر قرار می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q784812"
+      }
     }
   },
   "retryAfter": {
@@ -3808,6 +3844,6 @@
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 213
+    "characters": 242
   }
 }
