@@ -3698,6 +3698,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2512029"
       }
+    },
+    "tt0129167": {
+      "fa": "غول آهنی",
+      "summary": "پسربچه‌ای با رباتی غول‌پیکر از فضا دوست می‌شود و تلاش می‌کند او را از دست مأمور دولتی‌ای پنهان کند که ربات را یک تهدید می‌داند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q867283"
+      }
+    },
+    "tt7278862": {
+      "fa": "دوست نابغه من",
+      "summary": "زنی در مرور خاطراتش، دوستی پیچیده و طولانی با هم‌کلاسی دوران کودکی‌اش در ناپل را روایت می‌کند؛ رابطه‌ای میان صمیمیت، رقابت و تلاش برای ساختن زندگی‌ای متفاوت.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q56411652"
+      }
+    },
+    "tt0070047": {
+      "fa": "جنگیر",
+      "summary": "رفتارهای ترسناک و غیرقابل‌توضیح یک دختر نوجوان، مادرش را به جست‌وجوی کمک می‌کشاند؛ تلاشی که سرانجام دو کشیش را برای رویارویی با نیرویی شوم به خانهٔ آن‌ها می‌آورد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q274167"
+      }
+    },
+    "tt1492966": {
+      "fa": "لوئی",
+      "summary": "لوئی، کمدینی که از همسرش جدا شده، در نیویورک میان اجراهای کمدی، بزرگ‌کردن دو دخترش و دردسرهای زندگی شخصی‌اش رفت‌وآمد می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23536"
+      }
     }
   },
   "retryAfter": {
