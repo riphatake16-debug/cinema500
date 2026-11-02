@@ -3563,6 +3563,42 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0163507/"
       }
+    },
+    "tt0050986": {
+      "fa": "توت فرنگیهای وحشی",
+      "summary": "استادی سالخورده در طول یک سفر، به خاطراتش برمی‌گردد و با تنهایی و فاصله‌ای روبه‌رو می‌شود که در طول زندگی میان خودش و دیگران ایجاد کرده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q239756"
+      }
+    },
+    "tt0988818": {
+      "fa": "گینتاما",
+      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0988818/"
+      }
+    },
+    "tt0036868": {
+      "fa": "بهترین سالهای زندگی ما",
+      "summary": "سه کهنه‌سرباز پس از جنگ جهانی دوم به خانه برمی‌گردند، اما پیدا کردن کار و برگشتن به زندگی خانوادگی برایشان آسان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q645094"
+      }
+    },
+    "tt2100976": {
+      "fa": "جوکرهای غیرعملی",
+      "summary": "چهار دوست واقعی یکدیگر را به انجام چالش‌ها و شوخی‌های جسورانه‌ای وادار می‌کنند که با دوربین مخفی ثبت می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2100976/"
+      }
     }
   },
   "retryAfter": {
@@ -3573,6 +3609,6 @@
   },
   "translationUsage": {
     "date": "2026-11-02",
-    "characters": 133
+    "characters": 158
   }
 }
