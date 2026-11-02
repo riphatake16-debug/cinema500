@@ -3626,6 +3626,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q271830"
       }
+    },
+    "tt0118715": {
+      "fa": "لباوسکی بزرگ",
+      "summary": "جف لبوسکی، معروف به «دود»، با میلیونری هم‌نام اشتباه گرفته می‌شود و برای جبران خسارت فرشش، از دوستان بولینگ‌بازش کمک می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q337078"
+      }
+    },
+    "tt1190634": {
+      "fa": "پسرها",
+      "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48796994"
+      }
+    },
+    "tt0317705": {
+      "fa": "شگفتانگیزان",
+      "summary": "خانواده‌ای از ابرقهرمانان که هویت واقعی خود را پنهان کرده‌اند، تلاش می‌کنند زندگی آرامی در حومهٔ شهر داشته باشند؛ اما خطری تازه آن‌ها را دوباره به میدان می‌کشاند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q213326"
+      }
+    },
+    "tt27446493": {
+      "fa": "هندوانه چشمک زن",
+      "summary": "نوجوانی علاقه‌مند به موسیقی به گذشته سفر می‌کند و با پدرش در هجده‌سالگی آشنا می‌شود؛ همراهی آن‌ها در یک گروه موسیقی، نگاه او به خانواده، دوستی و آینده را تغییر می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q118869205"
+      }
     }
   },
   "retryAfter": {
