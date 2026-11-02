@@ -3383,6 +3383,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q840657"
       }
+    },
+    "tt0046268": {
+      "fa": "مزد ترس",
+      "summary": "چهار مرد در آمریکای جنوبی برای حمل محموله‌ای از نیتروگلیسیرین استخدام می‌شوند. جاده خطرناک است و آن‌ها تجهیزات لازم برای حمل امن این مادهٔ منفجره را ندارند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q465773"
+      }
+    },
+    "tt20859920": {
+      "fa": "کیمیای روح",
+      "summary": "در سرزمین خیالی دِهو، جادویی ممنوعه امکان جابه‌جایی روح‌ها میان بدن‌ها را فراهم می‌کند؛ سرنوشت چند جادوگر جوان در میان عشق، آموزش و خطرهای این قدرت به هم گره می‌خورد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q110890248"
+      }
+    },
+    "tt0017925": {
+      "fa": "جنرال",
+      "summary": "جاسوسان نیروهای شمال، لوکوموتیو محبوب یک رانندهٔ قطار را می‌دزدند. او به‌تنهایی تعقیبشان می‌کند و تا پشت خطوط دشمن پیش می‌رود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q850159"
+      }
+    },
+    "tt0403778": {
+      "fa": "راه طولانی (مجموعه تلویزیونی ۲۰۰۴)",
+      "summary": "ایوان مک‌گرگور و چارلی بورمن، دو بازیگر و دوست، با موتورسیکلت به دور دنیا سفر می‌کنند و از سرزمین‌هایی مانند سیبری و قزاقستان می‌گذرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1055793"
+      }
     }
   },
   "retryAfter": {
