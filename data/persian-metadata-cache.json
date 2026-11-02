@@ -3419,6 +3419,42 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1055793"
       }
+    },
+    "tt0031679": {
+      "fa": "آقای اسمیت به واشنگتن میرود",
+      "summary": "مردی ساده‌دل به سنای آمریکا راه پیدا می‌کند؛ برنامه‌هایش خیلی زود با فساد سیاسی برخورد می‌کند، اما حاضر به عقب‌نشینی نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q866120"
+      }
+    },
+    "tt12343534": {
+      "fa": "جوجوتسو کایسن",
+      "summary": "یوجی ایتادوری پس از بلعیدن یک شیء نفرین‌شده، میزبان موجودی قدرتمند می‌شود. او به مدرسه‌ای پنهانی می‌پیوندد تا همراه دیگران با نفرین‌ها مبارزه کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt12343534/"
+      }
+    },
+    "tt0046438": {
+      "fa": "داستان توکیو",
+      "summary": "زوجی سالخورده برای دیدن فرزندان و نوه‌هایشان به توکیو می‌روند، اما فرزندانشان وقت چندانی برای آن‌ها ندارند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q26060"
+      }
+    },
+    "tt10590066": {
+      "fa": "همه موجودات بزرگ و کوچک",
+      "summary": "دامپزشکی جوان کارش را در روستاهای یورکشایر آغاز می‌کند و در کنار همکارانش، با حیوانات، صاحبانشان و دشواری‌های زندگی روستایی روبه‌رو می‌شود؛ اقتباسی از نوشته‌های جیمز هریوت.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt10590066/"
+      }
     }
   },
   "retryAfter": {
@@ -3428,7 +3464,7 @@
     "tt0237123": "2026-11-02T03:52:44+00:00"
   },
   "translationUsage": {
-    "date": "2026-11-01",
-    "characters": 330
+    "date": "2026-11-02",
+    "characters": 41
   }
 }
