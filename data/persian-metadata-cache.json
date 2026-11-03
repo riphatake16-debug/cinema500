@@ -3869,6 +3869,33 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q193695"
       }
+    },
+    "tt3230854": {
+      "fa": "گستره",
+      "summary": "در آینده، انسان‌ها در زمین، مریخ و کمربند سیارکی زندگی می‌کنند. ناپدیدشدن یک زن، یک کارآگاه، خدمهٔ سفینه‌ای و یک سیاست‌مدار را وارد توطئه‌ای مشترک می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18389644"
+      }
+    },
+    "tt0476735": {
+      "fa": "پدرم و پسرم",
+      "summary": "خانوادهٔ یک روزنامه‌نگار چپ‌گرا، پس از کودتای نظامی در ترکیهٔ دههٔ ۱۹۸۰، از هم می‌پاشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q797577"
+      }
+    },
+    "tt4430212": {
+      "fa": "جلوههای ویژه",
+      "summary": "پس از وقوع جرمی غیرمنتظره، مردی برای محافظت از خانواده‌اش دست به کار می‌شود و تلاش می‌کند آن‌ها را از تحقیقات پلیس دور نگه دارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q19824636"
+      }
     }
   },
   "retryAfter": {
@@ -3876,10 +3903,11 @@
     "tt13991232": "2026-11-03T07:26:51+00:00",
     "tt4508902": "2026-11-03T07:26:51+00:00",
     "tt0237123": "2026-11-03T07:26:51+00:00",
-    "tt3895150": "2026-11-03T03:58:00+00:00"
+    "tt3895150": "2026-11-03T03:58:00+00:00",
+    "tt0373732": "2026-11-03T09:08:21+00:00"
   },
   "translationUsage": {
     "date": "2026-11-03",
-    "characters": 4
+    "characters": 17
   }
 }
