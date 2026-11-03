@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "5eb24dc9d2cfcdf0018e27932c3a9be02151b67f6b12c1bb92f21822f80c0156",
+  "version": "a246965006ce5cbaf6ba8fbf9bc00590376cfb82852d1fc347bb82125a421287",
   "status": "ok",
-  "retrievedAt": "2026-11-02T01:28:21+00:00",
-  "checkedAt": "2026-11-02T01:28:21+00:00",
+  "retrievedAt": "2026-11-03T01:26:51+00:00",
+  "checkedAt": "2026-11-03T01:26:51+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -2489,30 +2489,9 @@
       }
     },
     {
-      "id": "tt0211915",
-      "type": "movie",
-      "rank": 119,
-      "title": "Amélie",
-      "year": 2001,
-      "rating": 8.2,
-      "poster": "./posters/tt0211915.jpg",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "runtime": 122,
-      "fa": "آملی",
-      "summary": "آملی، دختری خیال‌پرداز در پاریس، تصمیم می‌گیرد با کارهای کوچک زندگی اطرافیانش را بهتر کند. در همین مسیر، عشق وارد زندگی خودش هم می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q484048"
-      }
-    },
-    {
       "id": "tt0033467",
       "type": "movie",
-      "rank": 120,
+      "rank": 119,
       "title": "Citizen Kane",
       "year": 1941,
       "rating": 8.2,
@@ -2528,6 +2507,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q24815"
+      }
+    },
+    {
+      "id": "tt0211915",
+      "type": "movie",
+      "rank": 120,
+      "title": "Amélie",
+      "year": 2001,
+      "rating": 8.2,
+      "poster": "./posters/tt0211915.jpg",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": 122,
+      "fa": "آملی",
+      "summary": "آملی، دختری خیال‌پرداز در پاریس، تصمیم می‌گیرد با کارهای کوچک زندگی اطرافیانش را بهتر کند. در همین مسیر، عشق وارد زندگی خودش هم می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q484048"
       }
     },
     {
@@ -4728,9 +4728,13 @@
         "Drama"
       ],
       "runtime": 129,
-      "fa": "",
+      "fa": "آقای اسمیت به واشنگتن میرود",
       "summary": "مردی ساده‌دل به سنای آمریکا راه پیدا می‌کند؛ برنامه‌هایش خیلی زود با فساد سیاسی برخورد می‌کند، اما حاضر به عقب‌نشینی نیست.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q866120"
+      }
     },
     {
       "id": "tt0046438",
@@ -4744,9 +4748,13 @@
         "Drama"
       ],
       "runtime": 137,
-      "fa": "",
+      "fa": "داستان توکیو",
       "summary": "زوجی سالخورده برای دیدن فرزندان و نوه‌هایشان به توکیو می‌روند، اما فرزندانشان وقت چندانی برای آن‌ها ندارند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q26060"
+      }
     },
     {
       "id": "tt26548265",
@@ -4764,9 +4772,13 @@
         "Thriller"
       ],
       "runtime": 141,
-      "fa": "",
+      "fa": "مهاراجه",
       "summary": "آرایشگری پس از سرقت از خانه‌اش، از پلیس می‌خواهد «لاکشمی» را پیدا کند؛ اما توضیح‌های مبهم او دربارهٔ این گمشده، مأموران را وارد پرونده‌ای پیچیده‌تر از انتظارشان می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt26548265/"
+      }
     },
     {
       "id": "tt0059742",
@@ -4784,9 +4796,13 @@
         "Romance"
       ],
       "runtime": 174,
-      "fa": "",
+      "fa": "اشکها و لبخندها",
       "summary": "زنی جوان از صومعه به خانهٔ یک افسر نیروی دریایی می‌رود که همسرش را از دست داده است. او مراقبت از هفت فرزند مرد را به عهده می‌گیرد و با موسیقی، فضای خانه را تغییر می‌دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q60072"
+      }
     },
     {
       "id": "tt0113247",
@@ -4801,9 +4817,13 @@
         "Drama"
       ],
       "runtime": 98,
-      "fa": "",
+      "fa": "نفرت (فیلم 1995)",
       "summary": "یک روز پس از شورشی خشونت‌آمیز، سه جوان در حومهٔ پاریس روزشان را با خشم، بی‌هدفی و تنش با پلیس می‌گذرانند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q466101"
+      }
     },
     {
       "id": "tt15097216",
@@ -4818,9 +4838,13 @@
         "Drama"
       ],
       "runtime": 164,
-      "fa": "",
+      "fa": "جای بهیم",
       "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt15097216/"
+      }
     },
     {
       "id": "tt1895587",
@@ -4836,9 +4860,13 @@
         "Drama"
       ],
       "runtime": 129,
-      "fa": "",
+      "fa": "افشاگر",
       "summary": "داستان واقعی روزنامه‌نگاران بوستون گلوب که رسوایی گستردهٔ کودک‌آزاری و پنهان‌کاری در کلیسای کاتولیک محلی را افشا می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18154496"
+      }
     },
     {
       "id": "tt0088247",
@@ -4854,9 +4882,13 @@
         "Sci-Fi"
       ],
       "runtime": 107,
-      "fa": "",
+      "fa": "نابودگر (فیلم ۱۹۸۴)",
       "summary": "سربازی از سال ۲۰۲۹ به گذشته فرستاده می‌شود تا زنی جوان را از دست سایبورگی نابودنشدنی نجات دهد؛ زنی که پسر آینده‌اش کلید نجات بشریت است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q162255"
+      }
     },
     {
       "id": "tt0050986",
@@ -4871,9 +4903,13 @@
         "Romance"
       ],
       "runtime": 92,
-      "fa": "",
+      "fa": "توت فرنگیهای وحشی",
       "summary": "استادی سالخورده در طول یک سفر، به خاطراتش برمی‌گردد و با تنهایی و فاصله‌ای روبه‌رو می‌شود که در طول زندگی میان خودش و دیگران ایجاد کرده است.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q239756"
+      }
     },
     {
       "id": "tt0036868",
@@ -4889,9 +4925,13 @@
         "War"
       ],
       "runtime": 170,
-      "fa": "",
+      "fa": "بهترین سالهای زندگی ما",
       "summary": "سه کهنه‌سرباز پس از جنگ جهانی دوم به خانه برمی‌گردند، اما پیدا کردن کار و برگشتن به زندگی خانوادگی برایشان آسان نیست.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q645094"
+      }
     },
     {
       "id": "tt0047296",
@@ -4907,9 +4947,13 @@
         "Thriller"
       ],
       "runtime": 108,
-      "fa": "",
+      "fa": "در بارانداز",
       "summary": "بوکسوری سابق که حالا کارگر بارانداز است، برای ایستادن در برابر رؤسای فاسد اتحادیه‌اش تلاش می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q211372"
+      }
     },
     {
       "id": "tt0041959",
@@ -4926,9 +4970,13 @@
         "Thriller"
       ],
       "runtime": 104,
-      "fa": "",
+      "fa": "مرد سوم",
       "summary": "هالی مارتینز، نویسندهٔ داستان‌های عامه‌پسند، به وینِ پس از جنگ می‌رود و درگیر تحقیق دربارهٔ مرگ مرموز دوست قدیمی‌اش هری لایم می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q271830"
+      }
     },
     {
       "id": "tt0118715",
@@ -4943,9 +4991,13 @@
         "Crime"
       ],
       "runtime": 117,
-      "fa": "",
+      "fa": "لباوسکی بزرگ",
       "summary": "جف لبوسکی، معروف به «دود»، با میلیونری هم‌نام اشتباه گرفته می‌شود و برای جبران خسارت فرشش، از دوستان بولینگ‌بازش کمک می‌گیرد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q337078"
+      }
     },
     {
       "id": "tt0317705",
@@ -4962,9 +5014,13 @@
         "Family"
       ],
       "runtime": 115,
-      "fa": "",
+      "fa": "شگفتانگیزان",
       "summary": "خانواده‌ای از ابرقهرمانان که هویت واقعی خود را پنهان کرده‌اند، تلاش می‌کنند زندگی آرامی در حومهٔ شهر داشته باشند؛ اما خطری تازه آن‌ها را دوباره به میدان می‌کشاند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q213326"
+      }
     },
     {
       "id": "tt1028532",
@@ -4980,9 +5036,13 @@
         "Family"
       ],
       "runtime": 93,
-      "fa": "",
+      "fa": "هاچی: داستان یک سگ",
       "summary": "استاد دانشگاهی سگی رهاشده را به خانه می‌آورد. میان آن‌ها دوستی‌ای شکل می‌گیرد که به بخشی جدانشدنی از زندگی روزمره‌شان تبدیل می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q59249"
+      }
     },
     {
       "id": "tt0381681",
@@ -4997,9 +5057,13 @@
         "Romance"
       ],
       "runtime": 80,
-      "fa": "",
+      "fa": "پیش از غروب",
       "summary": "نه سال پس از نخستین دیدار جسی و سلین، آن‌ها در جریان تور معرفی کتاب جسی در فرانسه دوباره یکدیگر را می‌بینند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q652186"
+      }
     },
     {
       "id": "tt0129167",
@@ -5017,9 +5081,13 @@
         "Sci-Fi"
       ],
       "runtime": 86,
-      "fa": "",
+      "fa": "غول آهنی",
       "summary": "پسربچه‌ای با رباتی غول‌پیکر از فضا دوست می‌شود و تلاش می‌کند او را از دست مأمور دولتی‌ای پنهان کند که ربات را یک تهدید می‌داند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q867283"
+      }
     },
     {
       "id": "tt0070047",
@@ -5033,9 +5101,13 @@
         "Horror"
       ],
       "runtime": 122,
-      "fa": "",
+      "fa": "جنگیر",
       "summary": "رفتارهای ترسناک و غیرقابل‌توضیح یک دختر نوجوان، مادرش را به جست‌وجوی کمک می‌کشاند؛ تلاشی که سرانجام دو کشیش را برای رویارویی با نیرویی شوم به خانهٔ آن‌ها می‌آورد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q274167"
+      }
     },
     {
       "id": "tt3170832",
@@ -5050,9 +5122,13 @@
         "Thriller"
       ],
       "runtime": 118,
-      "fa": "",
+      "fa": "اتاق (فیلم ۲۰۱۵)",
       "summary": "زنی که هفت سال در فضایی بسته اسیر بوده، همراه پسر خردسالش آزاد می‌شود و کودک برای نخستین بار دنیای بیرون را تجربه می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18703032"
+      }
     },
     {
       "id": "tt0395169",
@@ -5069,9 +5145,13 @@
         "War"
       ],
       "runtime": 121,
-      "fa": "",
+      "fa": "هتل رواندا",
       "summary": "پل روسساباگینا، مدیر یک هتل در رواندا، در جریان حملات شبه‌نظامیان هوتو، به بیش از هزار پناهجوی توتسی پناه می‌دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q223884"
+      }
     },
     {
       "id": "tt0091763",
@@ -5086,9 +5166,13 @@
         "War"
       ],
       "runtime": 120,
-      "fa": "",
+      "fa": "جوخه",
       "summary": "سربازی جوان در جنگ ویتنام، هم با خشونت دشمن روبه‌رو می‌شود و هم با اختلاف و رفتارهای هم‌رزمانش؛ تجربه‌ای که باورهایش را زیر سؤال می‌برد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190643"
+      }
     },
     {
       "id": "tt0050976",
@@ -5103,9 +5187,13 @@
         "Fantasy"
       ],
       "runtime": 96,
-      "fa": "",
+      "fa": "مهر هفتم",
       "summary": "در دوران طاعون سیاه، مردی هنگام بازی شطرنج با مرگ، در جست‌وجوی پاسخ پرسش‌هایی دربارهٔ زندگی، مرگ و وجود خداست.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q217189"
+      }
     },
     {
       "id": "tt1979320",
@@ -5121,9 +5209,13 @@
         "Sport"
       ],
       "runtime": 123,
-      "fa": "",
+      "fa": "شتاب",
       "summary": "جیمز هانت و نیکی لائودا، دو رانندهٔ فرمول یک با شخصیت‌هایی متفاوت، در دههٔ ۱۹۷۰ برای قهرمانی با یکدیگر رقابت می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1768437"
+      }
     },
     {
       "id": "tt0058946",
@@ -5138,9 +5230,13 @@
         "War"
       ],
       "runtime": 121,
-      "fa": "",
+      "fa": "نبرد الجزیره",
       "summary": "در الجزیرهٔ دههٔ ۱۹۵۰، مبارزه برای استقلال از فرانسه شدت می‌گیرد. خشونت میان مبارزان و نیروهای نظامی، زندگی مردم شهر را هم تحت تأثیر قرار می‌دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q784812"
+      }
     },
     {
       "id": "tt0092005",
@@ -5155,9 +5251,13 @@
         "Drama"
       ],
       "runtime": 89,
-      "fa": "",
+      "fa": "کنار من بمان",
       "summary": "نویسنده‌ای سفری از دوران کودکی‌اش را به یاد می‌آورد؛ زمانی که همراه دوستانش برای یافتن جسد پسری گمشده راهی شد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q494722"
+      }
     },
     {
       "id": "tt0032138",
@@ -5174,9 +5274,13 @@
         "Musical"
       ],
       "runtime": 102,
-      "fa": "",
+      "fa": "جادوگر شهر از",
       "summary": "گردبادی دوروتی و سگش توتو را از کانزاس به سرزمین جادویی آز می‌برد. او همراه سه دوست تازه برای یافتن جادوگری راهی می‌شود که شاید بتواند راه خانه را نشانش دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q193695"
+      }
     },
     {
       "id": "tt0476735",
@@ -6264,25 +6368,9 @@
       }
     },
     {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 47,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0092337",
       "type": "tv",
-      "rank": 48,
+      "rank": 47,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6298,6 +6386,22 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
+    },
+    {
+      "id": "tt0098904",
+      "type": "tv",
+      "rank": 48,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -6520,9 +6624,30 @@
       }
     },
     {
-      "id": "tt14986406",
+      "id": "tt0108778",
       "type": "tv",
       "rank": 59,
+      "title": "Friends",
+      "year": 1994,
+      "rating": 8.8,
+      "poster": "./posters/tt0108778.jpg",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": 22,
+      "fa": "فرندز",
+      "summary": "زندگی شخصی و کاری شش دوست بیست‌وچندساله و سی‌وچندساله در منهتن دنبال می‌شود.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "فرندز دوستان",
+        "دوستان"
+      ]
+    },
+    {
+      "id": "tt14986406",
+      "type": "tv",
+      "rank": 60,
       "title": "Bleach: Thousand-Year Blood War",
       "year": 2022,
       "rating": 9,
@@ -6541,27 +6666,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q112631839"
       }
-    },
-    {
-      "id": "tt0108778",
-      "type": "tv",
-      "rank": 60,
-      "title": "Friends",
-      "year": 1994,
-      "rating": 8.8,
-      "poster": "./posters/tt0108778.jpg",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "runtime": 22,
-      "fa": "فرندز",
-      "summary": "زندگی شخصی و کاری شش دوست بیست‌وچندساله و سی‌وچندساله در منهتن دنبال می‌شود.",
-      "summaryLanguage": "fa",
-      "aliases": [
-        "فرندز دوستان",
-        "دوستان"
-      ]
     },
     {
       "id": "tt7137906",
@@ -7186,9 +7290,29 @@
       }
     },
     {
-      "id": "tt3718778",
+      "id": "tt7923710",
       "type": "tv",
       "rank": 89,
+      "title": "My Mister",
+      "year": 2018,
+      "rating": 9,
+      "poster": "./posters/tt7923710.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 70,
+      "fa": "آجوشی من",
+      "summary": "مردی میانسال و زنی جوان، هرکدام زیر بار مشکلات کاری و خانوادگی، به شکلی غیرمنتظره با هم آشنا می‌شوند و در دل خستگی و تنهایی، به یکدیگر دلگرمی می‌دهند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q43111245"
+      }
+    },
+    {
+      "id": "tt3718778",
+      "type": "tv",
+      "rank": 90,
       "title": "Over the Garden Wall",
       "year": 2014,
       "rating": 8.7,
@@ -7212,26 +7336,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q17065414"
-      }
-    },
-    {
-      "id": "tt7923710",
-      "type": "tv",
-      "rank": 90,
-      "title": "My Mister",
-      "year": 2018,
-      "rating": 9,
-      "poster": "./posters/tt7923710.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 70,
-      "fa": "آجوشی من",
-      "summary": "مردی میانسال و زنی جوان، هرکدام زیر بار مشکلات کاری و خانوادگی، به شکلی غیرمنتظره با هم آشنا می‌شوند و در دل خستگی و تنهایی، به یکدیگر دلگرمی می‌دهند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q43111245"
       }
     },
     {
@@ -7389,31 +7493,9 @@
       }
     },
     {
-      "id": "tt0118421",
-      "type": "tv",
-      "rank": 98,
-      "title": "Oz",
-      "year": 1997,
-      "rating": 8.7,
-      "poster": "./posters/tt0118421.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "آز",
-      "summary": "زندانیان و کارکنان یک زندان امنیتی، در محیطی پرتنش برای قدرت، اعتماد و زنده‌ماندن با هم درگیر می‌شوند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q739780"
-      }
-    },
-    {
       "id": "tt0988824",
       "type": "tv",
-      "rank": 99,
+      "rank": 98,
       "title": "Naruto: Shippuden",
       "year": 2007,
       "rating": 8.7,
@@ -7433,6 +7515,28 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0988824/"
+      }
+    },
+    {
+      "id": "tt0118421",
+      "type": "tv",
+      "rank": 99,
+      "title": "Oz",
+      "year": 1997,
+      "rating": 8.7,
+      "poster": "./posters/tt0118421.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "آز",
+      "summary": "زندانیان و کارکنان یک زندان امنیتی، در محیطی پرتنش برای قدرت، اعتماد و زنده‌ماندن با هم درگیر می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q739780"
       }
     },
     {
@@ -7595,53 +7699,9 @@
       }
     },
     {
-      "id": "tt0804503",
-      "type": "tv",
-      "rank": 107,
-      "title": "Mad Men",
-      "year": 2007,
-      "rating": 8.7,
-      "poster": "./posters/tt0804503.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 45,
-      "fa": "مد من",
-      "summary": "در آغاز دههٔ ۱۹۶۰، کارکنان یک آژانس تبلیغاتی در نیویورک برای موفقیت رقابت می‌کنند. در مرکز ماجرا دان دریپر است؛ مدیر مرموز بخش خلاقیت که گذشته‌اش را پنهان می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q223977"
-      }
-    },
-    {
-      "id": "tt16026746",
-      "type": "tv",
-      "rank": 108,
-      "title": "X-Men '97",
-      "year": 2024,
-      "rating": 8.7,
-      "poster": "./posters/tt16026746.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Drama",
-        "Sci-Fi"
-      ],
-      "runtime": 22,
-      "fa": "مردان ایکس ۹۷",
-      "summary": "ادامهٔ ماجراهای انیمیشن مردان ایکس در دههٔ ۱۹۹۰؛ گروه از جهانی محافظت می‌کند که از جهش‌یافته‌ها می‌ترسد و هم‌زمان باید با تهدیدهایی تازه روبه‌رو شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q109558622"
-      }
-    },
-    {
       "id": "tt38268282",
       "type": "tv",
-      "rank": 109,
+      "rank": 107,
       "title": "Steel Ball Run: JoJo's Bizarre Adventure",
       "year": 2026,
       "rating": 9.3,
@@ -7661,6 +7721,50 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt38268282/"
+      }
+    },
+    {
+      "id": "tt0804503",
+      "type": "tv",
+      "rank": 108,
+      "title": "Mad Men",
+      "year": 2007,
+      "rating": 8.7,
+      "poster": "./posters/tt0804503.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 45,
+      "fa": "مد من",
+      "summary": "در آغاز دههٔ ۱۹۶۰، کارکنان یک آژانس تبلیغاتی در نیویورک برای موفقیت رقابت می‌کنند. در مرکز ماجرا دان دریپر است؛ مدیر مرموز بخش خلاقیت که گذشته‌اش را پنهان می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q223977"
+      }
+    },
+    {
+      "id": "tt16026746",
+      "type": "tv",
+      "rank": 109,
+      "title": "X-Men '97",
+      "year": 2024,
+      "rating": 8.7,
+      "poster": "./posters/tt16026746.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "runtime": 22,
+      "fa": "مردان ایکس ۹۷",
+      "summary": "ادامهٔ ماجراهای انیمیشن مردان ایکس در دههٔ ۱۹۹۰؛ گروه از جهانی محافظت می‌کند که از جهش‌یافته‌ها می‌ترسد و هم‌زمان باید با تهدیدهایی تازه روبه‌رو شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109558622"
       }
     },
     {
@@ -8175,9 +8279,29 @@
       }
     },
     {
-      "id": "tt1795096",
+      "id": "tt0111958",
       "type": "tv",
       "rank": 133,
+      "title": "Father Ted",
+      "year": 1995,
+      "rating": 8.6,
+      "poster": "./posters/tt0111958.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 25,
+      "fa": "پدر تد",
+      "summary": "سه کشیش نامتعارف و خدمتکارشان در جزیرهٔ کراگی زندگی می‌کنند؛ جایی که برخلاف ظاهرش، چندان آرام و بی‌دردسر نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0111958/"
+      }
+    },
+    {
+      "id": "tt1795096",
+      "type": "tv",
+      "rank": 134,
       "title": "Behzat Ç: An Ankara Detective Story",
       "year": 2010,
       "rating": 8.8,
@@ -8196,26 +8320,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4881030"
-      }
-    },
-    {
-      "id": "tt0111958",
-      "type": "tv",
-      "rank": 134,
-      "title": "Father Ted",
-      "year": 1995,
-      "rating": 8.6,
-      "poster": "./posters/tt0111958.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 25,
-      "fa": "پدر تد",
-      "summary": "سه کشیش نامتعارف و خدمتکارشان در جزیرهٔ کراگی زندگی می‌کنند؛ جایی که برخلاف ظاهرش، چندان آرام و بی‌دردسر نیست.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0111958/"
       }
     },
     {
@@ -8889,29 +8993,9 @@
       }
     },
     {
-      "id": "tt7562112",
-      "type": "tv",
-      "rank": 166,
-      "title": "Pose",
-      "year": 2018,
-      "rating": 8.6,
-      "poster": "./posters/tt7562112.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "ژست",
-      "summary": "در نیویورک دههٔ ۱۹۸۰، اعضای جامعهٔ بال‌روم در رقابت‌های رقص و نمایش شرکت می‌کنند و برای خودشان خانواده‌ای انتخابی می‌سازند؛ در کنار تلاش برای عشق، پذیرش و گذران زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q30603704"
-      }
-    },
-    {
       "id": "tt0090509",
       "type": "tv",
-      "rank": 167,
+      "rank": 166,
       "title": "The Return of Sherlock Holmes",
       "year": 1986,
       "rating": 8.7,
@@ -8928,6 +9012,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0090509/"
+      }
+    },
+    {
+      "id": "tt7562112",
+      "type": "tv",
+      "rank": 167,
+      "title": "Pose",
+      "year": 2018,
+      "rating": 8.6,
+      "poster": "./posters/tt7562112.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "ژست",
+      "summary": "در نیویورک دههٔ ۱۹۸۰، اعضای جامعهٔ بال‌روم در رقابت‌های رقص و نمایش شرکت می‌کنند و برای خودشان خانواده‌ای انتخابی می‌سازند؛ در کنار تلاش برای عشق، پذیرش و گذران زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q30603704"
       }
     },
     {
@@ -9143,9 +9247,29 @@
       }
     },
     {
-      "id": "tt8595766",
+      "id": "tt9174558",
       "type": "tv",
       "rank": 178,
+      "title": "Dopesick",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt9174558.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "دوپسیک",
+      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101420707"
+      }
+    },
+    {
+      "id": "tt8595766",
+      "type": "tv",
+      "rank": 179,
       "title": "Yeh Meri Family",
       "year": 2018,
       "rating": 8.9,
@@ -9164,26 +9288,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt8595766/"
-      }
-    },
-    {
-      "id": "tt9174558",
-      "type": "tv",
-      "rank": 179,
-      "title": "Dopesick",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt9174558.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "دوپسیک",
-      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q101420707"
       }
     },
     {
@@ -9658,9 +9762,30 @@
       }
     },
     {
-      "id": "tt6763664",
+      "id": "tt10802170",
       "type": "tv",
       "rank": 200,
+      "title": "The Rehearsal",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "./posters/tt10802170.jpg",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
+    },
+    {
+      "id": "tt6763664",
+      "type": "tv",
+      "rank": 201,
       "title": "The Haunting of Hill House",
       "year": 2018,
       "rating": 8.5,
@@ -9681,50 +9806,9 @@
       }
     },
     {
-      "id": "tt10802170",
-      "type": "tv",
-      "rank": 201,
-      "title": "The Rehearsal",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "./posters/tt10802170.jpg",
-      "genres": [
-        "Documentary",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "د ریهرسال",
-      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112915576"
-      }
-    },
-    {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 202,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
-      }
-    },
-    {
       "id": "tt9335498",
       "type": "tv",
-      "rank": 203,
+      "rank": 202,
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "rating": 8.5,
@@ -9743,6 +9827,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9335498/"
+      }
+    },
+    {
+      "id": "tt4082744",
+      "type": "tv",
+      "rank": 203,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10111,9 +10215,13 @@
         "Thriller"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "جوجوتسو کایسن",
       "summary": "یوجی ایتادوری پس از بلعیدن یک شیء نفرین‌شده، میزبان موجودی قدرتمند می‌شود. او به مدرسه‌ای پنهانی می‌پیوندد تا همراه دیگران با نفرین‌ها مبارزه کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt12343534/"
+      }
     },
     {
       "id": "tt10590066",
@@ -10128,9 +10236,13 @@
         "Drama"
       ],
       "runtime": null,
-      "fa": "",
+      "fa": "همه موجودات بزرگ و کوچک",
       "summary": "دامپزشکی جوان کارش را در روستاهای یورکشایر آغاز می‌کند و در کنار همکارانش، با حیوانات، صاحبانشان و دشواری‌های زندگی روستایی روبه‌رو می‌شود؛ اقتباسی از نوشته‌های جیمز هریوت.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt10590066/"
+      }
     },
     {
       "id": "tt4093826",
@@ -10147,9 +10259,13 @@
         "Mystery"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "توئین پیکس (مجموعه تلویزیونی ۲۰۱۷)",
       "summary": "بیست‌وپنج سال پس از قتل لورا پالمر، داستان توئین پیکس با بازگشت شخصیت‌های قدیمی و رازهایی تازه ادامه پیدا می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23971551"
+      }
     },
     {
       "id": "tt5189670",
@@ -10164,9 +10280,13 @@
         "Crime"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "ساختن یک قاتل",
       "summary": "این مستند استیون ایوری را در طول ده سال دنبال می‌کند؛ مردی که آزمایش دی‌ان‌ای بی‌گناهی‌اش را در یک پرونده ثابت می‌کند، اما بعد درگیر اتهام تازه‌ای می‌شود.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt5189670/"
+      }
     },
     {
       "id": "tt1124373",
@@ -10182,9 +10302,13 @@
         "Thriller"
       ],
       "runtime": 45,
-      "fa": "",
+      "fa": "فرزندان آشوب",
       "summary": "یک موتورسوار تلاش می‌کند میان پدربودن و عضویت در باشگاه موتورسواران قانون‌گریز تعادل برقرار کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q171254"
+      }
     },
     {
       "id": "tt36988358",
@@ -10200,9 +10324,13 @@
         "Sci-Fi"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "گناه نخستین تاکوپی",
       "summary": "تاکوپی، موجودی فضایی که می‌خواهد دیگران را خوشحال کند، با شیزوکا، دختربچه‌ای غمگین، آشنا می‌شود. اما ابزارهای جادویی‌اش به‌سادگی نمی‌توانند مشکل‌های زندگی او را حل کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt36988358/"
+      }
     },
     {
       "id": "tt0187664",
@@ -10216,9 +10344,13 @@
         "Comedy"
       ],
       "runtime": 25,
-      "fa": "",
+      "fa": "فاصله",
       "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0187664/"
+      }
     },
     {
       "id": "tt0163507",
@@ -10233,9 +10365,13 @@
         "Game-Show"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "اصلاً خط مال کیست؟",
       "summary": "کمدین‌ها در مسابقه‌ای بداهه، با همراهی مهمانان و گاهی تماشاگران، بازی‌ها و نمایش‌های کوتاه طنز اجرا می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0163507/"
+      }
     },
     {
       "id": "tt0988818",
@@ -10252,9 +10388,13 @@
         "Sci-Fi"
       ],
       "runtime": 25,
-      "fa": "",
+      "fa": "گینتاما",
       "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0988818/"
+      }
     },
     {
       "id": "tt2100976",
@@ -10269,9 +10409,13 @@
         "Reality-TV"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "جوکرهای غیرعملی",
       "summary": "چهار دوست واقعی یکدیگر را به انجام چالش‌ها و شوخی‌های جسورانه‌ای وادار می‌کنند که با دوربین مخفی ثبت می‌شوند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2100976/"
+      }
     },
     {
       "id": "tt0112159",
@@ -10288,9 +10432,13 @@
         "Sci-Fi"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "نئون جنسیس اونگلیون",
       "summary": "نوجوانی به درخواست پدرش به گروهی نخبه از خلبانان می‌پیوندد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q662"
+      }
     },
     {
       "id": "tt3895150",
@@ -10327,9 +10475,13 @@
         "Sci-Fi"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "پسرها",
       "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48796994"
+      }
     },
     {
       "id": "tt27446493",
@@ -10347,9 +10499,13 @@
         "Romance"
       ],
       "runtime": 70,
-      "fa": "",
+      "fa": "هندوانه چشمک زن",
       "summary": "نوجوانی علاقه‌مند به موسیقی به گذشته سفر می‌کند و با پدرش در هجده‌سالگی آشنا می‌شود؛ همراهی آن‌ها در یک گروه موسیقی، نگاه او به خانواده، دوستی و آینده را تغییر می‌دهد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q118869205"
+      }
     },
     {
       "id": "tt1513168",
@@ -10363,9 +10519,13 @@
         "Documentary"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "گذر از کرمچاله",
       "summary": "مورگان فریمن همراه دانشمندان، پرسش‌های بزرگ دربارهٔ جهان را بررسی می‌کند؛ از آغاز هستی تا ماهیت زمان و احتمال وجود زندگی در جایی دیگر.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2499084"
+      }
     },
     {
       "id": "tt0075537",
@@ -10379,9 +10539,13 @@
         "Comedy"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "حواست به حرفات باشه",
       "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2512029"
+      }
     },
     {
       "id": "tt7278862",
@@ -10395,9 +10559,13 @@
         "Drama"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "دوست نابغه من",
       "summary": "زنی در مرور خاطراتش، دوستی پیچیده و طولانی با هم‌کلاسی دوران کودکی‌اش در ناپل را روایت می‌کند؛ رابطه‌ای میان صمیمیت، رقابت و تلاش برای ساختن زندگی‌ای متفاوت.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q56411652"
+      }
     },
     {
       "id": "tt1492966",
@@ -10412,9 +10580,13 @@
         "Drama"
       ],
       "runtime": 22,
-      "fa": "",
+      "fa": "لوئی",
       "summary": "لوئی، کمدینی که از همسرش جدا شده، در نیویورک میان اجراهای کمدی، بزرگ‌کردن دو دخترش و دردسرهای زندگی شخصی‌اش رفت‌وآمد می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23536"
+      }
     },
     {
       "id": "tt0290988",
@@ -10429,9 +10601,13 @@
         "Crime"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "دیشت تو تریلـر پارک به یارو داد.",
       "summary": "یک گروه مستندساز زندگی سه خلافکار خرده‌پا را در شهرکی از خانه‌های سیار دنبال می‌کند؛ جایی که نقشه‌های پول‌درآوردن و دردسرهای همسایگی، مدام آن‌ها را به گرفتاری تازه‌ای می‌کشانند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0290988/"
+      }
     },
     {
       "id": "tt3526078",
@@ -10445,9 +10621,13 @@
         "Comedy"
       ],
       "runtime": 22,
-      "fa": "",
+      "fa": "شتز کریک",
       "summary": "خانوادهٔ رز ثروتشان را از دست می‌دهند و به شهر کوچکی می‌روند که تنها دارایی باقی‌مانده‌شان است. عادت‌کردن به این زندگی تازه برای هیچ‌کدام آسان نیست.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q17111973"
+      }
     },
     {
       "id": "tt0290978",
@@ -10462,9 +10642,13 @@
         "Drama"
       ],
       "runtime": 30,
-      "fa": "",
+      "fa": "اداره",
       "summary": "وقتی شرکت تصمیم به کوچک‌کردن شعبه‌ها می‌گیرد، یک دفتر با احتمال تعطیلی روبه‌رو می‌شود؛ گروه مستندساز زندگی روزمرهٔ کارکنان و مدیرشان دیوید برنت را دنبال می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23829"
+      }
     },
     {
       "id": "tt4236770",
@@ -10479,9 +10663,13 @@
         "Western"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "یلواستون",
       "summary": "خانوادهٔ داتن برای حفظ مزرعهٔ بزرگشان در مونتانا، با سازندگان املاک و رقیبان درگیر می‌شوند؛ در حالی که اختلاف‌های سیاسی و خانوادگی هم کارشان را سخت‌تر می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q47452423"
+      }
     },
     {
       "id": "tt1877368",
@@ -10496,9 +10684,13 @@
         "Reality-TV"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "نقشه بزرگ.",
       "summary": "شرکت‌کننده‌های غیرحرفه‌ای هر هفته در چند چالش شیرینی‌پزی رقابت می‌کنند. آن‌ها باید با مهارت، خلاقیت و مدیریت زمان، نظر داوران را جلب کنند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1877368/"
+      }
     },
     {
       "id": "tt26743760",
@@ -10516,9 +10708,13 @@
         "Romance"
       ],
       "runtime": 23,
-      "fa": "",
+      "fa": "خاطرات داروخانه",
       "summary": "مائومائو که داروها و سم‌ها را خوب می‌شناسد، پس از ربوده‌شدن به خدمت دربار درمی‌آید. دانش او کمک می‌کند راز بیماری‌ها و اتفاق‌های مشکوک قصر را پیدا کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt26743760/"
+      }
     },
     {
       "id": "tt0118273",
@@ -10532,9 +10728,13 @@
         "Comedy"
       ],
       "runtime": 25,
-      "fa": "",
+      "fa": "برنج",
       "summary": "برنامه‌ای طنز که با تقلید از گزارش‌های جدی تلویزیونی، شیوهٔ پوشش مسائل روز و رفتار چهره‌های مشهور را دست می‌اندازد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0118273/"
+      }
     },
     {
       "id": "tt3230854",
@@ -10636,23 +10836,24 @@
       }
     },
     {
-      "id": "tt12074628",
+      "id": "tt2575988",
       "type": "tv",
       "rank": 250,
-      "title": "Smiling Friends",
-      "year": 2020,
+      "title": "Silicon Valley",
+      "year": 2014,
       "rating": 8.5,
-      "poster": "./posters/tt12074628.jpg",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Animation",
-        "Short",
-        "Comedy",
-        "Fantasy"
+        "Comedy"
       ],
-      "runtime": 12,
-      "fa": "",
-      "summary": "کارکنان یک شرکت کوچک وظیفه دارند آدم‌ها را خوشحال کنند؛ اما هر مشتری آن‌ها را وارد ماجرایی عجیب و گاهی خطرناک می‌کند.",
-      "summaryLanguage": "fa"
+      "runtime": 30,
+      "fa": "سیلیکون ولی",
+      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "دره سیلیکون",
+        "درهٔ سیلیکون"
+      ]
     }
   ],
   "archive": [
@@ -10739,26 +10940,6 @@
       }
     },
     {
-      "id": "tt2575988",
-      "type": "tv",
-      "rank": null,
-      "title": "Silicon Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "سیلیکون ولی",
-      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
-      "summaryLanguage": "fa",
-      "aliases": [
-        "دره سیلیکون",
-        "درهٔ سیلیکون"
-      ]
-    },
-    {
       "id": "tt12361178",
       "type": "movie",
       "rank": null,
@@ -10782,6 +10963,25 @@
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B8%D8%A7%D9%87%D8%B1+%D9%81%D8%B1%DB%8C%D8%A8%D9%86%D8%AF%D9%87+%DB%B2+%28%D9%81%DB%8C%D9%84%D9%85+%DB%B2%DB%B0%DB%B2%DB%B1%29&oldid=43321984"
       }
+    },
+    {
+      "id": "tt12074628",
+      "type": "tv",
+      "rank": null,
+      "title": "Smiling Friends",
+      "year": 2020,
+      "rating": 8.5,
+      "poster": "./posters/tt12074628.jpg",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Horror"
+      ],
+      "runtime": 12,
+      "fa": "",
+      "summary": "کارکنان یک شرکت کوچک وظیفه دارند آدم‌ها را خوشحال کنند؛ اما هر مشتری آن‌ها را وارد ماجرایی عجیب و گاهی خطرناک می‌کند.",
+      "summaryLanguage": "fa",
+      "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt12074628.json"
     }
   ]
 }
