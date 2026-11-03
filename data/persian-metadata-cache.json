@@ -3914,6 +3914,24 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q28930028"
       }
+    },
+    "tt1954470": {
+      "fa": "گنگ‌های پلیس، که توسط خبرچینان بی‌شمار هدایت می‌شدند،.",
+      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1954470/"
+      }
+    },
+    "tt10431500": {
+      "fa": "معجزه در سلول شماره ۷",
+      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q73804850"
+      }
     }
   },
   "retryAfter": {
@@ -3927,6 +3945,6 @@
   },
   "translationUsage": {
     "date": "2026-11-03",
-    "characters": 34
+    "characters": 52
   }
 }
