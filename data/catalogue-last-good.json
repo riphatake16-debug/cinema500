@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "a246965006ce5cbaf6ba8fbf9bc00590376cfb82852d1fc347bb82125a421287",
+  "version": "ed839fd4adb6382799dc45dca7fcc2050229493cc083b31210a6e098e2ffdd6c",
   "status": "ok",
-  "retrievedAt": "2026-11-03T01:26:51+00:00",
-  "checkedAt": "2026-11-03T01:26:51+00:00",
+  "retrievedAt": "2026-11-04T01:26:33+00:00",
+  "checkedAt": "2026-11-04T01:26:33+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1804,9 +1804,29 @@
       }
     },
     {
-      "id": "tt33175825",
+      "id": "tt0169547",
       "type": "movie",
       "rank": 87,
+      "title": "American Beauty",
+      "year": 1999,
+      "rating": 8.3,
+      "poster": "./posters/tt0169547.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 122,
+      "fa": "زیبایی آمریکایی",
+      "summary": "پدری ساکن حومهٔ شهر، پس از شیفتگی به دوست صمیمی دخترش، با بحران میانسالی روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q25139"
+      }
+    },
+    {
+      "id": "tt33175825",
+      "type": "movie",
+      "rank": 88,
       "title": "Attack on Titan: The Last Attack",
       "year": 2024,
       "rating": 8.9,
@@ -1825,26 +1845,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt33175825/"
-      }
-    },
-    {
-      "id": "tt0169547",
-      "type": "movie",
-      "rank": 88,
-      "title": "American Beauty",
-      "year": 1999,
-      "rating": 8.3,
-      "poster": "./posters/tt0169547.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 122,
-      "fa": "زیبایی آمریکایی",
-      "summary": "پدری ساکن حومهٔ شهر، پس از شیفتگی به دوست صمیمی دخترش، با بحران میانسالی روبه‌رو می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q25139"
       }
     },
     {
@@ -2489,30 +2489,9 @@
       }
     },
     {
-      "id": "tt0033467",
-      "type": "movie",
-      "rank": 119,
-      "title": "Citizen Kane",
-      "year": 1941,
-      "rating": 8.2,
-      "poster": "./posters/tt0033467.jpg",
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 119,
-      "fa": "همشهری کین",
-      "summary": "پس از مرگ چارلز فاستر کین، صاحب یک امپراتوری مطبوعاتی، خبرنگاران دنبال معنای آخرین کلمه‌ای می‌گردند که گفته است: «رزباد».",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q24815"
-      }
-    },
-    {
       "id": "tt0211915",
       "type": "movie",
-      "rank": 120,
+      "rank": 119,
       "title": "Amélie",
       "year": 2001,
       "rating": 8.2,
@@ -2528,6 +2507,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q484048"
+      }
+    },
+    {
+      "id": "tt0033467",
+      "type": "movie",
+      "rank": 120,
+      "title": "Citizen Kane",
+      "year": 1941,
+      "rating": 8.2,
+      "poster": "./posters/tt0033467.jpg",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 119,
+      "fa": "همشهری کین",
+      "summary": "پس از مرگ چارلز فاستر کین، صاحب یک امپراتوری مطبوعاتی، خبرنگاران دنبال معنای آخرین کلمه‌ای می‌گردند که گفته است: «رزباد».",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q24815"
       }
     },
     {
@@ -3462,9 +3462,30 @@
       }
     },
     {
-      "id": "tt32820897",
+      "id": "tt0080678",
       "type": "movie",
       "rank": 164,
+      "title": "The Elephant Man",
+      "year": 1980,
+      "rating": 8.2,
+      "poster": "./posters/tt0080678.jpg",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "runtime": 124,
+      "fa": "مرد فیلنما",
+      "summary": "جراحی در دوران ویکتوریا به مردی کمک می‌کند که به‌خاطر ظاهر متفاوتش در نمایش‌های خیابانی تحقیر می‌شود. آشنایی آن‌ها، مهربانی و شخصیت او را به دیگران نشان می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q272860"
+      }
+    },
+    {
+      "id": "tt32820897",
+      "type": "movie",
+      "rank": 165,
       "title": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
       "year": 2025,
       "rating": 8.3,
@@ -3484,27 +3505,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q126948105"
-      }
-    },
-    {
-      "id": "tt0080678",
-      "type": "movie",
-      "rank": 165,
-      "title": "The Elephant Man",
-      "year": 1980,
-      "rating": 8.2,
-      "poster": "./posters/tt0080678.jpg",
-      "genres": [
-        "Biography",
-        "Drama"
-      ],
-      "runtime": 124,
-      "fa": "مرد فیلنما",
-      "summary": "جراحی در دوران ویکتوریا به مردی کمک می‌کند که به‌خاطر ظاهر متفاوتش در نمایش‌های خیابانی تحقیر می‌شود. آشنایی آن‌ها، مهربانی و شخصیت او را به دیگران نشان می‌دهد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q272860"
       }
     },
     {
@@ -3776,30 +3776,9 @@
       }
     },
     {
-      "id": "tt0117951",
-      "type": "movie",
-      "rank": 178,
-      "title": "Trainspotting",
-      "year": 1996,
-      "rating": 8.1,
-      "poster": "./posters/tt0117951.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 93,
-      "fa": "رگیابی",
-      "summary": "رنتون که در دنیای مواد مخدر ادینبرو غرق شده، با وجود وسوسهٔ مواد و نفوذ دوستانش تلاش می‌کند پاک شود و از آن فضا بیرون بیاید.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q109135"
-      }
-    },
-    {
       "id": "tt1201607",
       "type": "movie",
-      "rank": 179,
+      "rank": 178,
       "title": "Harry Potter and the Deathly Hallows: Part 2",
       "year": 2011,
       "rating": 8.1,
@@ -3817,6 +3796,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q232009"
+      }
+    },
+    {
+      "id": "tt0117951",
+      "type": "movie",
+      "rank": 179,
+      "title": "Trainspotting",
+      "year": 1996,
+      "rating": 8.1,
+      "poster": "./posters/tt0117951.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 93,
+      "fa": "رگیابی",
+      "summary": "رنتون که در دنیای مواد مخدر ادینبرو غرق شده، با وجود وسوسهٔ مواد و نفوذ دوستانش تلاش می‌کند پاک شود و از آن فضا بیرون بیاید.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109135"
       }
     },
     {
@@ -5294,9 +5294,13 @@
         "Drama"
       ],
       "runtime": 112,
-      "fa": "",
+      "fa": "پدرم و پسرم",
       "summary": "خانوادهٔ یک روزنامه‌نگار چپ‌گرا، پس از کودتای نظامی در ترکیهٔ دههٔ ۱۹۸۰، از هم می‌پاشد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q797577"
+      }
     },
     {
       "id": "tt4430212",
@@ -5313,9 +5317,13 @@
         "Thriller"
       ],
       "runtime": 163,
-      "fa": "",
+      "fa": "جلوههای ویژه",
       "summary": "پس از وقوع جرمی غیرمنتظره، مردی برای محافظت از خانواده‌اش دست به کار می‌شود و تلاش می‌کند آن‌ها را از تحقیقات پلیس دور نگه دارد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q19824636"
+      }
     },
     {
       "id": "tt0019254",
@@ -5331,9 +5339,13 @@
         "History"
       ],
       "runtime": 114,
-      "fa": "",
+      "fa": "مصائب ژاندارک",
       "summary": "ژاندارک در سال ۱۴۳۱ در دادگاهی مذهبی محاکمه می‌شود. قاضی‌ها از او می‌خواهند حرفش را دربارهٔ دریافت پیام‌های الهی پس بگیرد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q51520"
+      }
     },
     {
       "id": "tt1954470",
@@ -5351,9 +5363,13 @@
         "Thriller"
       ],
       "runtime": 321,
-      "fa": "",
+      "fa": "گنگ‌های پلیس، که توسط خبرچینان بی‌شمار هدایت می‌شدند،.",
       "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1954470/"
+      }
     },
     {
       "id": "tt10431500",
@@ -5367,9 +5383,13 @@
         "Drama"
       ],
       "runtime": 132,
-      "fa": "",
+      "fa": "معجزه در سلول شماره ۷",
       "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q73804850"
+      }
     },
     {
       "id": "tt0903747",
@@ -6645,32 +6665,9 @@
       ]
     },
     {
-      "id": "tt14986406",
-      "type": "tv",
-      "rank": 60,
-      "title": "Bleach: Thousand-Year Blood War",
-      "year": 2022,
-      "rating": 9,
-      "poster": "./posters/tt14986406.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "runtime": 24,
-      "fa": "بلیچ: جنگ خونین هزار ساله",
-      "summary": "با ناپدیدشدن مرموز ساکنان و نزدیک‌شدن تهدیدی تازه به انجمن ارواح، ایچیگو و همراهانش وارد نبردی گسترده می‌شوند که گذشته و آیندهٔ دنیای آن‌ها را به چالش می‌کشد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112631839"
-      }
-    },
-    {
       "id": "tt7137906",
       "type": "tv",
-      "rank": 61,
+      "rank": 60,
       "title": "When They See Us",
       "year": 2019,
       "rating": 8.8,
@@ -6688,6 +6685,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q55606843"
+      }
+    },
+    {
+      "id": "tt14986406",
+      "type": "tv",
+      "rank": 61,
+      "title": "Bleach: Thousand-Year Blood War",
+      "year": 2022,
+      "rating": 9,
+      "poster": "./posters/tt14986406.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "runtime": 24,
+      "fa": "بلیچ: جنگ خونین هزار ساله",
+      "summary": "با ناپدیدشدن مرموز ساکنان و نزدیک‌شدن تهدیدی تازه به انجمن ارواح، ایچیگو و همراهانش وارد نبردی گسترده می‌شوند که گذشته و آیندهٔ دنیای آن‌ها را به چالش می‌کشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112631839"
       }
     },
     {
@@ -7699,34 +7719,9 @@
       }
     },
     {
-      "id": "tt38268282",
-      "type": "tv",
-      "rank": 107,
-      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
-      "year": 2026,
-      "rating": 9.3,
-      "poster": "./posters/tt38268282.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": null,
-      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
-      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt38268282/"
-      }
-    },
-    {
       "id": "tt0804503",
       "type": "tv",
-      "rank": 108,
+      "rank": 107,
       "title": "Mad Men",
       "year": 2007,
       "rating": 8.7,
@@ -7746,7 +7741,7 @@
     {
       "id": "tt16026746",
       "type": "tv",
-      "rank": 109,
+      "rank": 108,
       "title": "X-Men '97",
       "year": 2024,
       "rating": 8.7,
@@ -7770,7 +7765,7 @@
     {
       "id": "tt0387764",
       "type": "tv",
-      "rank": 110,
+      "rank": 109,
       "title": "Peep Show",
       "year": 2003,
       "rating": 8.7,
@@ -7785,6 +7780,31 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0387764/"
+      }
+    },
+    {
+      "id": "tt38268282",
+      "type": "tv",
+      "rank": 110,
+      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
+      "year": 2026,
+      "rating": 9.3,
+      "poster": "./posters/tt38268282.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
+      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt38268282/"
       }
     },
     {
@@ -7942,32 +7962,9 @@
       }
     },
     {
-      "id": "tt2303687",
-      "type": "tv",
-      "rank": 118,
-      "title": "Line of Duty",
-      "year": 2012,
-      "rating": 8.7,
-      "poster": "./posters/tt2303687.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "خط وظیفه",
-      "summary": "پس از مرگ یک مرد در عملیاتی ناموفق، استیو آرنات به واحد مبارزه با فساد پلیس منتقل می‌شود و کارش را با بررسی رفتار همکارانش ادامه می‌دهد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt2303687/"
-      }
-    },
-    {
       "id": "tt0994314",
       "type": "tv",
-      "rank": 119,
+      "rank": 118,
       "title": "Code Geass: Lelouch of the Rebellion",
       "year": 2006,
       "rating": 8.7,
@@ -7987,6 +7984,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4384067"
+      }
+    },
+    {
+      "id": "tt2303687",
+      "type": "tv",
+      "rank": 119,
+      "title": "Line of Duty",
+      "year": 2012,
+      "rating": 8.7,
+      "poster": "./posters/tt2303687.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "خط وظیفه",
+      "summary": "پس از مرگ یک مرد در عملیاتی ناموفق، استیو آرنات به واحد مبارزه با فساد پلیس منتقل می‌شود و کارش را با بررسی رفتار همکارانش ادامه می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2303687/"
       }
     },
     {
@@ -8403,9 +8423,29 @@
       }
     },
     {
-      "id": "tt13991232",
+      "id": "tt30263074",
       "type": "tv",
       "rank": 139,
+      "title": "Sapne Vs Everyone",
+      "year": 2023,
+      "rating": 9.2,
+      "poster": "./posters/tt30263074.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "ساپنه در مقابل همه",
+      "summary": "دو جوان در کار فروش املاک به‌دنبال آرزوهایشان هستند؛ یکی می‌خواهد بازیگر شود و دیگری ثروتمند. فشار کار و اطرافیان، آن‌ها را به تصمیم‌های سخت می‌کشاند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt30263074/"
+      }
+    },
+    {
+      "id": "tt13991232",
+      "type": "tv",
+      "rank": 140,
       "title": "1883",
       "year": 2021,
       "rating": 8.6,
@@ -8422,7 +8462,7 @@
     {
       "id": "tt0094525",
       "type": "tv",
-      "rank": 140,
+      "rank": 141,
       "title": "Poirot",
       "year": 1989,
       "rating": 8.6,
@@ -8440,26 +8480,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q391101"
-      }
-    },
-    {
-      "id": "tt30263074",
-      "type": "tv",
-      "rank": 141,
-      "title": "Sapne Vs Everyone",
-      "year": 2023,
-      "rating": 9.2,
-      "poster": "./posters/tt30263074.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "ساپنه در مقابل همه",
-      "summary": "دو جوان در کار فروش املاک به‌دنبال آرزوهایشان هستند؛ یکی می‌خواهد بازیگر شود و دیگری ثروتمند. فشار کار و اطرافیان، آن‌ها را به تصمیم‌های سخت می‌کشاند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt30263074/"
       }
     },
     {
@@ -8726,9 +8746,29 @@
       }
     },
     {
-      "id": "tt10332508",
+      "id": "tt0088484",
       "type": "tv",
       "rank": 154,
+      "title": "Blackadder II",
+      "year": 1986,
+      "rating": 8.6,
+      "poster": "./posters/tt0088484.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بلکادر ۲",
+      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2668056"
+      }
+    },
+    {
+      "id": "tt10332508",
+      "type": "tv",
+      "rank": 155,
       "title": "Primal",
       "year": 2019,
       "rating": 8.6,
@@ -8748,26 +8788,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q70106936"
-      }
-    },
-    {
-      "id": "tt0088484",
-      "type": "tv",
-      "rank": 155,
-      "title": "Blackadder II",
-      "year": 1986,
-      "rating": 8.6,
-      "poster": "./posters/tt0088484.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بلکادر ۲",
-      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2668056"
       }
     },
     {
@@ -9247,29 +9267,9 @@
       }
     },
     {
-      "id": "tt9174558",
-      "type": "tv",
-      "rank": 178,
-      "title": "Dopesick",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt9174558.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "دوپسیک",
-      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q101420707"
-      }
-    },
-    {
       "id": "tt8595766",
       "type": "tv",
-      "rank": 179,
+      "rank": 178,
       "title": "Yeh Meri Family",
       "year": 2018,
       "rating": 8.9,
@@ -9288,6 +9288,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt8595766/"
+      }
+    },
+    {
+      "id": "tt9174558",
+      "type": "tv",
+      "rank": 179,
+      "title": "Dopesick",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt9174558.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "دوپسیک",
+      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101420707"
       }
     },
     {
@@ -9806,9 +9826,29 @@
       }
     },
     {
-      "id": "tt9335498",
+      "id": "tt4082744",
       "type": "tv",
       "rank": 202,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
+      }
+    },
+    {
+      "id": "tt9335498",
+      "type": "tv",
+      "rank": 203,
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "rating": 8.5,
@@ -9827,26 +9867,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9335498/"
-      }
-    },
-    {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 203,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10693,9 +10713,29 @@
       }
     },
     {
-      "id": "tt26743760",
+      "id": "tt0118273",
       "type": "tv",
       "rank": 243,
+      "title": "Brass Eye",
+      "year": 1997,
+      "rating": 8.6,
+      "poster": "./posters/tt0118273.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 25,
+      "fa": "برنج",
+      "summary": "برنامه‌ای طنز که با تقلید از گزارش‌های جدی تلویزیونی، شیوهٔ پوشش مسائل روز و رفتار چهره‌های مشهور را دست می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0118273/"
+      }
+    },
+    {
+      "id": "tt26743760",
+      "type": "tv",
+      "rank": 244,
       "title": "The Apothecary Diaries",
       "year": 2023,
       "rating": 8.6,
@@ -10717,26 +10757,6 @@
       }
     },
     {
-      "id": "tt0118273",
-      "type": "tv",
-      "rank": 244,
-      "title": "Brass Eye",
-      "year": 1997,
-      "rating": 8.6,
-      "poster": "./posters/tt0118273.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 25,
-      "fa": "برنج",
-      "summary": "برنامه‌ای طنز که با تقلید از گزارش‌های جدی تلویزیونی، شیوهٔ پوشش مسائل روز و رفتار چهره‌های مشهور را دست می‌اندازد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0118273/"
-      }
-    },
-    {
       "id": "tt3230854",
       "type": "tv",
       "rank": 245,
@@ -10750,9 +10770,13 @@
         "Sci-Fi"
       ],
       "runtime": 60,
-      "fa": "",
+      "fa": "گستره",
       "summary": "در آینده، انسان‌ها در زمین، مریخ و کمربند سیارکی زندگی می‌کنند. ناپدیدشدن یک زن، یک کارآگاه، خدمهٔ سفینه‌ای و یک سیاست‌مدار را وارد توطئه‌ای مشترک می‌کند.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18389644"
+      }
     },
     {
       "id": "tt0373732",
@@ -10769,9 +10793,13 @@
         "Drama"
       ],
       "runtime": 22,
-      "fa": "",
+      "fa": "بونداک‌ها",
       "summary": "هویی و رایلی به خانهٔ پدربزرگشان در حومهٔ شهر می‌روند. تفاوت نگاه دو برادر با پدربزرگ و همسایه‌ها، ماجراهای طنزآمیز تازه‌ای می‌سازد.",
-      "summaryLanguage": "fa"
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0373732/"
+      }
     },
     {
       "id": "tt2244495",
@@ -10809,30 +10837,35 @@
         "Horror"
       ],
       "runtime": 24,
-      "fa": "",
+      "fa": "ماجراجویی عجیب و غریب جوجو (مجموعه تلویزیونی)",
       "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
-      "summaryLanguage": "fa"
-    },
-    {
-      "id": "tt0421291",
-      "type": "tv",
-      "rank": 249,
-      "title": "The European Side",
-      "year": 2004,
-      "rating": 8.6,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMGI0MWViMTktYjIwMy00YjRlLTk0ZmQtYzNlNzZlZTNmYjQwXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 90,
-      "fa": "طرف اروپایی",
-      "summary": "زندگی و دوران خانواده نسبتاً سنتی سوتجو اوغلو و مبارزات کمدی آنها برای اقتباس از زندگی معاصر و پر سر و صدای نیشانتاشی.",
       "summaryLanguage": "fa",
       "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0421291/",
-        "summarySource": "mymemory",
-        "summaryUrl": "https://www.imdb.com/title/tt0421291/"
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q28930028"
+      }
+    },
+    {
+      "id": "tt12074628",
+      "type": "tv",
+      "rank": 249,
+      "title": "Smiling Friends",
+      "year": 2020,
+      "rating": 8.5,
+      "poster": "./posters/tt12074628.jpg",
+      "genres": [
+        "Animation",
+        "Short",
+        "Comedy",
+        "Fantasy"
+      ],
+      "runtime": 12,
+      "fa": "اسمایلینگ فرندز",
+      "summary": "کارکنان یک شرکت کوچک وظیفه دارند آدم‌ها را خوشحال کنند؛ اما هر مشتری آن‌ها را وارد ماجرایی عجیب و گاهی خطرناک می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107087854"
       }
     },
     {
@@ -10965,23 +10998,26 @@
       }
     },
     {
-      "id": "tt12074628",
+      "id": "tt0421291",
       "type": "tv",
       "rank": null,
-      "title": "Smiling Friends",
-      "year": 2020,
-      "rating": 8.5,
-      "poster": "./posters/tt12074628.jpg",
+      "title": "The European Side",
+      "year": 2004,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGI0MWViMTktYjIwMy00YjRlLTk0ZmQtYzNlNzZlZTNmYjQwXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Animation",
-        "Comedy",
-        "Horror"
+        "Comedy"
       ],
-      "runtime": 12,
-      "fa": "",
-      "summary": "کارکنان یک شرکت کوچک وظیفه دارند آدم‌ها را خوشحال کنند؛ اما هر مشتری آن‌ها را وارد ماجرایی عجیب و گاهی خطرناک می‌کند.",
+      "runtime": 90,
+      "fa": "طرف اروپایی",
+      "summary": "زندگی و دوران خانواده نسبتاً سنتی سوتجو اوغلو و مبارزات کمدی آنها برای اقتباس از زندگی معاصر و پر سر و صدای نیشانتاشی.",
       "summaryLanguage": "fa",
-      "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt12074628.json"
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0421291/",
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt0421291/"
+      }
     }
   ]
 }

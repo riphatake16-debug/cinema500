@@ -3941,6 +3941,15 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0373732/"
       }
+    },
+    "tt12074628": {
+      "fa": "اسمایلینگ فرندز",
+      "summary": "کارکنان یک شرکت کوچک وظیفه دارند آدم‌ها را خوشحال کنند؛ اما هر مشتری آن‌ها را وارد ماجرایی عجیب و گاهی خطرناک می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107087854"
+      }
     }
   },
   "retryAfter": {
