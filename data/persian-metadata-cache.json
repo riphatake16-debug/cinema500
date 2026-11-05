@@ -3961,6 +3961,17 @@
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%84%D8%A7%D8%A7%D9%BE%D8%A7%D8%AA%D8%A7+%D8%AE%D8%A7%D9%86%D9%85%E2%80%8C%D9%87%D8%A7&oldid=44210686"
       }
+    },
+    "tt7019842": {
+      "fa": "۹۶ (فیلم)",
+      "summary": "۹۶ (به تامیلی: 96) فیلمی محصول سال ۲۰۱۸ و به کارگردانی سی. پریمکومار است. در این فیلم بازیگرانی همچون ویجی ستوپاتی، تریشا، دوادارشینی و وارشا بولامما ایفای نقش کرده‌اند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q30597974",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%DB%B9%DB%B6+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=43504139"
+      }
     }
   },
   "retryAfter": {
@@ -3968,11 +3979,11 @@
     "tt13991232": "2026-11-05T13:40:09+00:00",
     "tt4508902": "2026-11-05T13:40:09+00:00",
     "tt0237123": "2026-11-05T13:40:09+00:00",
-    "tt3895150": "2026-11-05T10:15:14+00:00",
-    "tt2244495": "2026-11-05T10:15:14+00:00"
+    "tt3895150": "2026-11-05T17:19:13+00:00",
+    "tt2244495": "2026-11-05T17:19:13+00:00"
   },
   "translationUsage": {
     "date": "2026-11-05",
-    "characters": 25
+    "characters": 42
   }
 }
