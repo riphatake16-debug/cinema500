@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "ed839fd4adb6382799dc45dca7fcc2050229493cc083b31210a6e098e2ffdd6c",
+  "version": "98fd12b42d95b3e54759b02b4a6c0a6fb2d391f931c3ecd8b7efc3cf7328faba",
   "status": "ok",
-  "retrievedAt": "2026-11-04T01:26:33+00:00",
-  "checkedAt": "2026-11-04T01:26:33+00:00",
+  "retrievedAt": "2026-11-05T01:29:11+00:00",
+  "checkedAt": "2026-11-05T01:29:11+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1804,9 +1804,33 @@
       }
     },
     {
-      "id": "tt0169547",
+      "id": "tt33175825",
       "type": "movie",
       "rank": 87,
+      "title": "Attack on Titan: The Last Attack",
+      "year": 2024,
+      "rating": 8.9,
+      "poster": "./posters/tt33175825.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Drama",
+        "Horror"
+      ],
+      "runtime": 144,
+      "fa": "حمله به تایتان: آخرین حمله",
+      "summary": "نسخهٔ سینمایی بخش پایانی «حمله به تایتان»؛ دوستان ارن برای متوقف‌کردن فاجعه‌ای که جهان را تهدید می‌کند، باید در برابر او بایستند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt33175825/"
+      }
+    },
+    {
+      "id": "tt0169547",
+      "type": "movie",
+      "rank": 88,
       "title": "American Beauty",
       "year": 1999,
       "rating": 8.3,
@@ -1821,30 +1845,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q25139"
-      }
-    },
-    {
-      "id": "tt33175825",
-      "type": "movie",
-      "rank": 88,
-      "title": "Attack on Titan: The Last Attack",
-      "year": 2024,
-      "rating": 8.9,
-      "poster": "./posters/tt33175825.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Drama",
-        "Horror"
-      ],
-      "runtime": 145,
-      "fa": "حمله به تایتان: آخرین حمله",
-      "summary": "نسخهٔ سینمایی بخش پایانی «حمله به تایتان»؛ دوستان ارن برای متوقف‌کردن فاجعه‌ای که جهان را تهدید می‌کند، باید در برابر او بایستند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt33175825/"
       }
     },
     {
@@ -2362,30 +2362,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt31514146",
-      "type": "movie",
-      "rank": 113,
-      "title": "I Swear",
-      "year": 2025,
-      "rating": 8.3,
-      "poster": "./posters/tt31514146.jpg",
-      "genres": [
-        "Biography",
-        "Drama"
-      ],
-      "runtime": 120,
-      "fa": "قسم میخورم (فیلم)",
-      "summary": "جان دیویدسن از نوجوانی با سندرم تورت زندگی می‌کند. این فیلم زندگی او و تلاشش برای شناساندن شرایطی را دنبال می‌کند که بسیاری از اطرافیانش درک نمی‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q135321335"
-      }
-    },
-    {
       "id": "tt0095016",
       "type": "movie",
-      "rank": 114,
+      "rank": 113,
       "title": "Die Hard",
       "year": 1988,
       "rating": 8.2,
@@ -2401,6 +2380,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q105598"
+      }
+    },
+    {
+      "id": "tt31514146",
+      "type": "movie",
+      "rank": 114,
+      "title": "I Swear",
+      "year": 2025,
+      "rating": 8.3,
+      "poster": "./posters/tt31514146.jpg",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "runtime": 120,
+      "fa": "قسم میخورم (فیلم)",
+      "summary": "جان دیویدسن از نوجوانی با سندرم تورت زندگی می‌کند. این فیلم زندگی او و تلاشش برای شناساندن شرایطی را دنبال می‌کند که بسیاری از اطرافیانش درک نمی‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q135321335"
       }
     },
     {
@@ -2937,9 +2937,29 @@
       }
     },
     {
-      "id": "tt8503618",
+      "id": "tt0469494",
       "type": "movie",
       "rank": 140,
+      "title": "There Will Be Blood",
+      "year": 2007,
+      "rating": 8.2,
+      "poster": "./posters/tt0469494.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 158,
+      "fa": "خون به پا خواهد شد",
+      "summary": "مردی بلندپرواز در سال‌های آغازین صنعت نفت به‌دنبال ثروت می‌رود. عطش قدرت و درگیری‌های خانوادگی و مذهبی، او را هر روز از اطرافیانش دورتر می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q244315"
+      }
+    },
+    {
+      "id": "tt8503618",
+      "type": "movie",
+      "rank": 141,
       "title": "Hamilton",
       "year": 2020,
       "rating": 8.3,
@@ -2957,26 +2977,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q84323848"
-      }
-    },
-    {
-      "id": "tt0469494",
-      "type": "movie",
-      "rank": 141,
-      "title": "There Will Be Blood",
-      "year": 2007,
-      "rating": 8.2,
-      "poster": "./posters/tt0469494.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 158,
-      "fa": "خون به پا خواهد شد",
-      "summary": "مردی بلندپرواز در سال‌های آغازین صنعت نفت به‌دنبال ثروت می‌رود. عطش قدرت و درگیری‌های خانوادگی و مذهبی، او را هر روز از اطرافیانش دورتر می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q244315"
       }
     },
     {
@@ -4264,31 +4264,9 @@
       }
     },
     {
-      "id": "tt0112471",
-      "type": "movie",
-      "rank": 200,
-      "title": "Before Sunrise",
-      "year": 1995,
-      "rating": 8.1,
-      "poster": "./posters/tt0112471.jpg",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 101,
-      "fa": "پیش از طلوع",
-      "summary": "زن و مردی جوان در قطاری در اروپا آشنا می‌شوند و شبی را در وین با هم می‌گذرانند؛ با این آگاهی که شاید تنها شب مشترکشان باشد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q659609"
-      }
-    },
-    {
       "id": "tt0198781",
       "type": "movie",
-      "rank": 201,
+      "rank": 200,
       "title": "Monsters, Inc.",
       "year": 2001,
       "rating": 8.1,
@@ -4307,6 +4285,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q187726"
+      }
+    },
+    {
+      "id": "tt0112471",
+      "type": "movie",
+      "rank": 201,
+      "title": "Before Sunrise",
+      "year": 1995,
+      "rating": 8.1,
+      "poster": "./posters/tt0112471.jpg",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 101,
+      "fa": "پیش از طلوع",
+      "summary": "زن و مردی جوان در قطاری در اروپا آشنا می‌شوند و شبی را در وین با هم می‌گذرانند؛ با این آگاهی که شاید تنها شب مشترکشان باشد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q659609"
       }
     },
     {
@@ -4781,9 +4781,30 @@
       }
     },
     {
-      "id": "tt0059742",
+      "id": "tt0113247",
       "type": "movie",
       "rank": 223,
+      "title": "La haine",
+      "year": 1995,
+      "rating": 8.1,
+      "poster": "./posters/tt0113247.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 98,
+      "fa": "نفرت (فیلم 1995)",
+      "summary": "یک روز پس از شورشی خشونت‌آمیز، سه جوان در حومهٔ پاریس روزشان را با خشم، بی‌هدفی و تنش با پلیس می‌گذرانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q466101"
+      }
+    },
+    {
+      "id": "tt0059742",
+      "type": "movie",
+      "rank": 224,
       "title": "The Sound of Music",
       "year": 1965,
       "rating": 8.1,
@@ -4802,27 +4823,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60072"
-      }
-    },
-    {
-      "id": "tt0113247",
-      "type": "movie",
-      "rank": 224,
-      "title": "La haine",
-      "year": 1995,
-      "rating": 8.1,
-      "poster": "./posters/tt0113247.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 98,
-      "fa": "نفرت (فیلم 1995)",
-      "summary": "یک روز پس از شورشی خشونت‌آمیز، سه جوان در حومهٔ پاریس روزشان را با خشم، بی‌هدفی و تنش با پلیس می‌گذرانند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q466101"
       }
     },
     {
@@ -8746,29 +8746,9 @@
       }
     },
     {
-      "id": "tt0088484",
-      "type": "tv",
-      "rank": 154,
-      "title": "Blackadder II",
-      "year": 1986,
-      "rating": 8.6,
-      "poster": "./posters/tt0088484.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بلکادر ۲",
-      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2668056"
-      }
-    },
-    {
       "id": "tt10332508",
       "type": "tv",
-      "rank": 155,
+      "rank": 154,
       "title": "Primal",
       "year": 2019,
       "rating": 8.6,
@@ -8788,6 +8768,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q70106936"
+      }
+    },
+    {
+      "id": "tt0088484",
+      "type": "tv",
+      "rank": 155,
+      "title": "Blackadder II",
+      "year": 1986,
+      "rating": 8.6,
+      "poster": "./posters/tt0088484.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بلکادر ۲",
+      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2668056"
       }
     },
     {
@@ -8945,9 +8945,31 @@
       }
     },
     {
-      "id": "tt2788316",
+      "id": "tt13111040",
       "type": "tv",
       "rank": 163,
+      "title": "The Offer",
+      "year": 2022,
+      "rating": 8.6,
+      "poster": "./posters/tt13111040.jpg",
+      "genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "پیشنهاد (سریال)",
+      "summary": "آلبرت اس. رادی برای ساخت «پدرخوانده» باید با مدیران استودیو، مشکل انتخاب بازیگر و مخالفت‌های بیرون از سینما کنار بیاید؛ داستانی دربارهٔ پشت صحنهٔ ساخت فیلم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107740038"
+      }
+    },
+    {
+      "id": "tt2788316",
+      "type": "tv",
+      "rank": 164,
       "title": "Shōgun",
       "year": 2024,
       "rating": 8.6,
@@ -8966,28 +8988,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q56276181"
-      }
-    },
-    {
-      "id": "tt13111040",
-      "type": "tv",
-      "rank": 164,
-      "title": "The Offer",
-      "year": 2022,
-      "rating": 8.6,
-      "poster": "./posters/tt13111040.jpg",
-      "genres": [
-        "Biography",
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "پیشنهاد (سریال)",
-      "summary": "آلبرت اس. رادی برای ساخت «پدرخوانده» باید با مدیران استودیو، مشکل انتخاب بازیگر و مخالفت‌های بیرون از سینما کنار بیاید؛ داستانی دربارهٔ پشت صحنهٔ ساخت فیلم.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q107740038"
       }
     },
     {
@@ -9826,29 +9826,9 @@
       }
     },
     {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 202,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
-      }
-    },
-    {
       "id": "tt9335498",
       "type": "tv",
-      "rank": 203,
+      "rank": 202,
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "rating": 8.5,
@@ -9867,6 +9847,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9335498/"
+      }
+    },
+    {
+      "id": "tt4082744",
+      "type": "tv",
+      "rank": 203,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10024,9 +10024,31 @@
       }
     },
     {
-      "id": "tt9544034",
+      "id": "tt3428912",
       "type": "tv",
       "rank": 211,
+      "title": "Happy Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "./posters/tt3428912.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "هپی ولی",
+      "summary": "کاترین کاوود، گروهبان پلیس در یورکشایر، میان پرونده‌های جنایی دشوار و مسئولیت‌های خانوادگی، با آسیب‌های گذشته و پیامدهای خشونت در جامعهٔ اطرافش روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt3428912/"
+      }
+    },
+    {
+      "id": "tt9544034",
+      "type": "tv",
+      "rank": 212,
       "title": "The Family Man",
       "year": 2019,
       "rating": 8.6,
@@ -10045,28 +10067,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9544034/"
-      }
-    },
-    {
-      "id": "tt3428912",
-      "type": "tv",
-      "rank": 212,
-      "title": "Happy Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "./posters/tt3428912.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "هپی ولی",
-      "summary": "کاترین کاوود، گروهبان پلیس در یورکشایر، میان پرونده‌های جنایی دشوار و مسئولیت‌های خانوادگی، با آسیب‌های گذشته و پیامدهای خشونت در جامعهٔ اطرافش روبه‌رو می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt3428912/"
       }
     },
     {
@@ -10353,23 +10353,26 @@
       }
     },
     {
-      "id": "tt0187664",
+      "id": "tt0988818",
       "type": "tv",
       "rank": 226,
-      "title": "Spaced",
-      "year": 1999,
-      "rating": 8.5,
-      "poster": "./posters/tt0187664.jpg",
+      "title": "Gintama",
+      "year": 2005,
+      "rating": 8.7,
+      "poster": "./posters/tt0988818.jpg",
       "genres": [
-        "Comedy"
+        "Animation",
+        "Action",
+        "Comedy",
+        "Sci-Fi"
       ],
       "runtime": 25,
-      "fa": "فاصله",
-      "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
+      "fa": "گینتاما",
+      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0187664/"
+        "faUrl": "https://www.imdb.com/title/tt0988818/"
       }
     },
     {
@@ -10394,26 +10397,23 @@
       }
     },
     {
-      "id": "tt0988818",
+      "id": "tt0187664",
       "type": "tv",
       "rank": 228,
-      "title": "Gintama",
-      "year": 2005,
-      "rating": 8.7,
-      "poster": "./posters/tt0988818.jpg",
+      "title": "Spaced",
+      "year": 1999,
+      "rating": 8.5,
+      "poster": "./posters/tt0187664.jpg",
       "genres": [
-        "Animation",
-        "Action",
-        "Comedy",
-        "Sci-Fi"
+        "Comedy"
       ],
       "runtime": 25,
-      "fa": "گینتاما",
-      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
+      "fa": "فاصله",
+      "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0988818/"
+        "faUrl": "https://www.imdb.com/title/tt0187664/"
       }
     },
     {
@@ -10757,31 +10757,9 @@
       }
     },
     {
-      "id": "tt3230854",
-      "type": "tv",
-      "rank": 245,
-      "title": "The Expanse",
-      "year": 2015,
-      "rating": 8.5,
-      "poster": "./posters/tt3230854.jpg",
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi"
-      ],
-      "runtime": 60,
-      "fa": "گستره",
-      "summary": "در آینده، انسان‌ها در زمین، مریخ و کمربند سیارکی زندگی می‌کنند. ناپدیدشدن یک زن، یک کارآگاه، خدمهٔ سفینه‌ای و یک سیاست‌مدار را وارد توطئه‌ای مشترک می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q18389644"
-      }
-    },
-    {
       "id": "tt0373732",
       "type": "tv",
-      "rank": 246,
+      "rank": 245,
       "title": "The Boondocks",
       "year": 2005,
       "rating": 8.5,
@@ -10799,6 +10777,28 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0373732/"
+      }
+    },
+    {
+      "id": "tt3230854",
+      "type": "tv",
+      "rank": 246,
+      "title": "The Expanse",
+      "year": 2015,
+      "rating": 8.5,
+      "poster": "./posters/tt3230854.jpg",
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ],
+      "runtime": 60,
+      "fa": "گستره",
+      "summary": "در آینده، انسان‌ها در زمین، مریخ و کمربند سیارکی زندگی می‌کنند. ناپدیدشدن یک زن، یک کارآگاه، خدمهٔ سفینه‌ای و یک سیاست‌مدار را وارد توطئه‌ای مشترک می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q18389644"
       }
     },
     {
