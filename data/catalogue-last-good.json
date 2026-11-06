@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "98fd12b42d95b3e54759b02b4a6c0a6fb2d391f931c3ecd8b7efc3cf7328faba",
+  "version": "1b47a3e5b76a8720a39a00a336c6c8e83659b870eeaf41a3d744ad1843b8012b",
   "status": "ok",
-  "retrievedAt": "2026-11-05T01:29:11+00:00",
-  "checkedAt": "2026-11-05T01:29:11+00:00",
+  "retrievedAt": "2026-11-06T01:31:29+00:00",
+  "checkedAt": "2026-11-06T01:31:29+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1307,6 +1307,7 @@
       "genres": [
         "Action",
         "Adventure",
+        "Drama",
         "Fantasy"
       ],
       "runtime": 172,
@@ -2467,25 +2468,24 @@
       }
     },
     {
-      "id": "tt0052357",
+      "id": "tt0033467",
       "type": "movie",
       "rank": 118,
-      "title": "Vertigo",
-      "year": 1958,
+      "title": "Citizen Kane",
+      "year": 1941,
       "rating": 8.2,
-      "poster": "./posters/tt0052357.jpg",
+      "poster": "./posters/tt0033467.jpg",
       "genres": [
-        "Mystery",
-        "Romance",
-        "Thriller"
+        "Drama",
+        "Mystery"
       ],
-      "runtime": 128,
-      "fa": "سرگیجه",
-      "summary": "کارآگاهی بازنشسته که با ترس‌ها و مشکلات شخصی‌اش درگیر است، به زنی مرموز دل می‌بندد و این علاقه کم‌کم به وسواس تبدیل می‌شود.",
+      "runtime": 119,
+      "fa": "همشهری کین",
+      "summary": "پس از مرگ چارلز فاستر کین، صاحب یک امپراتوری مطبوعاتی، خبرنگاران دنبال معنای آخرین کلمه‌ای می‌گردند که گفته است: «رزباد».",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q202548"
+        "faUrl": "https://www.wikidata.org/entity/Q24815"
       }
     },
     {
@@ -2510,24 +2510,25 @@
       }
     },
     {
-      "id": "tt0033467",
+      "id": "tt0052357",
       "type": "movie",
       "rank": 120,
-      "title": "Citizen Kane",
-      "year": 1941,
+      "title": "Vertigo",
+      "year": 1958,
       "rating": 8.2,
-      "poster": "./posters/tt0033467.jpg",
+      "poster": "./posters/tt0052357.jpg",
       "genres": [
-        "Drama",
-        "Mystery"
+        "Mystery",
+        "Romance",
+        "Thriller"
       ],
-      "runtime": 119,
-      "fa": "همشهری کین",
-      "summary": "پس از مرگ چارلز فاستر کین، صاحب یک امپراتوری مطبوعاتی، خبرنگاران دنبال معنای آخرین کلمه‌ای می‌گردند که گفته است: «رزباد».",
+      "runtime": 128,
+      "fa": "سرگیجه",
+      "summary": "کارآگاهی بازنشسته که با ترس‌ها و مشکلات شخصی‌اش درگیر است، به زنی مرموز دل می‌بندد و این علاقه کم‌کم به وسواس تبدیل می‌شود.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q24815"
+        "faUrl": "https://www.wikidata.org/entity/Q202548"
       }
     },
     {
@@ -4781,30 +4782,9 @@
       }
     },
     {
-      "id": "tt0113247",
-      "type": "movie",
-      "rank": 223,
-      "title": "La haine",
-      "year": 1995,
-      "rating": 8.1,
-      "poster": "./posters/tt0113247.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 98,
-      "fa": "نفرت (فیلم 1995)",
-      "summary": "یک روز پس از شورشی خشونت‌آمیز، سه جوان در حومهٔ پاریس روزشان را با خشم، بی‌هدفی و تنش با پلیس می‌گذرانند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q466101"
-      }
-    },
-    {
       "id": "tt0059742",
       "type": "movie",
-      "rank": 224,
+      "rank": 223,
       "title": "The Sound of Music",
       "year": 1965,
       "rating": 8.1,
@@ -4823,6 +4803,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60072"
+      }
+    },
+    {
+      "id": "tt0113247",
+      "type": "movie",
+      "rank": 224,
+      "title": "La haine",
+      "year": 1995,
+      "rating": 8.1,
+      "poster": "./posters/tt0113247.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 98,
+      "fa": "نفرت (فیلم 1995)",
+      "summary": "یک روز پس از شورشی خشونت‌آمیز، سه جوان در حومهٔ پاریس روزشان را با خشم، بی‌هدفی و تنش با پلیس می‌گذرانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q466101"
       }
     },
     {
@@ -4979,30 +4980,9 @@
       }
     },
     {
-      "id": "tt0118715",
-      "type": "movie",
-      "rank": 232,
-      "title": "The Big Lebowski",
-      "year": 1998,
-      "rating": 8.1,
-      "poster": "./posters/tt0118715.jpg",
-      "genres": [
-        "Comedy",
-        "Crime"
-      ],
-      "runtime": 117,
-      "fa": "لباوسکی بزرگ",
-      "summary": "جف لبوسکی، معروف به «دود»، با میلیونری هم‌نام اشتباه گرفته می‌شود و برای جبران خسارت فرشش، از دوستان بولینگ‌بازش کمک می‌گیرد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q337078"
-      }
-    },
-    {
       "id": "tt0317705",
       "type": "movie",
-      "rank": 233,
+      "rank": 232,
       "title": "The Incredibles",
       "year": 2004,
       "rating": 8,
@@ -5020,6 +5000,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q213326"
+      }
+    },
+    {
+      "id": "tt0118715",
+      "type": "movie",
+      "rank": 233,
+      "title": "The Big Lebowski",
+      "year": 1998,
+      "rating": 8.1,
+      "poster": "./posters/tt0118715.jpg",
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "runtime": 117,
+      "fa": "لباوسکی بزرگ",
+      "summary": "جف لبوسکی، معروف به «دود»، با میلیونری هم‌نام اشتباه گرفته می‌شود و برای جبران خسارت فرشش، از دوستان بولینگ‌بازش کمک می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q337078"
       }
     },
     {
@@ -6388,9 +6389,25 @@
       }
     },
     {
-      "id": "tt0092337",
+      "id": "tt0098904",
       "type": "tv",
       "rank": 47,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0092337",
+      "type": "tv",
+      "rank": 48,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6406,22 +6423,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
-    },
-    {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 48,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -6841,9 +6842,29 @@
       }
     },
     {
-      "id": "tt12004706",
+      "id": "tt0264235",
       "type": "tv",
       "rank": 68,
+      "title": "Curb Your Enthusiasm",
+      "year": 2000,
+      "rating": 8.8,
+      "poster": "./posters/tt0264235.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "زیاد ذوقزده نشو",
+      "summary": "زندگی لری دیوید و موقعیت‌های دشواری که در برخورد با دوستان و غریبه‌ها برای خودش ایجاد می‌کند، روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23722"
+      }
+    },
+    {
+      "id": "tt12004706",
+      "type": "tv",
+      "rank": 69,
       "title": "Panchayat",
       "year": 2020,
       "rating": 9,
@@ -6859,26 +6880,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt12004706/"
-      }
-    },
-    {
-      "id": "tt0264235",
-      "type": "tv",
-      "rank": 69,
-      "title": "Curb Your Enthusiasm",
-      "year": 2000,
-      "rating": 8.8,
-      "poster": "./posters/tt0264235.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "زیاد ذوقزده نشو",
-      "summary": "زندگی لری دیوید و موقعیت‌های دشواری که در برخورد با دوستان و غریبه‌ها برای خودش ایجاد می‌کند، روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23722"
       }
     },
     {
@@ -7739,9 +7740,34 @@
       }
     },
     {
-      "id": "tt16026746",
+      "id": "tt38268282",
       "type": "tv",
       "rank": 108,
+      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
+      "year": 2026,
+      "rating": 9.3,
+      "poster": "./posters/tt38268282.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
+      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt38268282/"
+      }
+    },
+    {
+      "id": "tt16026746",
+      "type": "tv",
+      "rank": 109,
       "title": "X-Men '97",
       "year": 2024,
       "rating": 8.7,
@@ -7765,7 +7791,7 @@
     {
       "id": "tt0387764",
       "type": "tv",
-      "rank": 109,
+      "rank": 110,
       "title": "Peep Show",
       "year": 2003,
       "rating": 8.7,
@@ -7780,31 +7806,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0387764/"
-      }
-    },
-    {
-      "id": "tt38268282",
-      "type": "tv",
-      "rank": 110,
-      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
-      "year": 2026,
-      "rating": 9.3,
-      "poster": "./posters/tt38268282.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": null,
-      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
-      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt38268282/"
       }
     },
     {
@@ -7987,32 +7988,9 @@
       }
     },
     {
-      "id": "tt2303687",
-      "type": "tv",
-      "rank": 119,
-      "title": "Line of Duty",
-      "year": 2012,
-      "rating": 8.7,
-      "poster": "./posters/tt2303687.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "خط وظیفه",
-      "summary": "پس از مرگ یک مرد در عملیاتی ناموفق، استیو آرنات به واحد مبارزه با فساد پلیس منتقل می‌شود و کارش را با بررسی رفتار همکارانش ادامه می‌دهد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt2303687/"
-      }
-    },
-    {
       "id": "tt0481256",
       "type": "tv",
-      "rank": 120,
+      "rank": 119,
       "title": "Fighting Spirit",
       "year": 2000,
       "rating": 8.8,
@@ -8030,6 +8008,29 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0481256/"
+      }
+    },
+    {
+      "id": "tt2303687",
+      "type": "tv",
+      "rank": 120,
+      "title": "Line of Duty",
+      "year": 2012,
+      "rating": 8.7,
+      "poster": "./posters/tt2303687.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "خط وظیفه",
+      "summary": "پس از مرگ یک مرد در عملیاتی ناموفق، استیو آرنات به واحد مبارزه با فساد پلیس منتقل می‌شود و کارش را با بررسی رفتار همکارانش ادامه می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2303687/"
       }
     },
     {
@@ -8078,30 +8079,9 @@
       }
     },
     {
-      "id": "tt0758745",
-      "type": "tv",
-      "rank": 123,
-      "title": "Friday Night Lights",
-      "year": 2006,
-      "rating": 8.7,
-      "poster": "./posters/tt0758745.jpg",
-      "genres": [
-        "Drama",
-        "Sport"
-      ],
-      "runtime": 45,
-      "fa": "چراغهای جمعهشب (مجموعه تلویزیونی)",
-      "summary": "زندگی اعضای تیم فوتبال دبیرستانی دیلن پنترز و سرمربی‌شان اریک تیلور دنبال می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q4507"
-      }
-    },
-    {
       "id": "tt0268093",
       "type": "tv",
-      "rank": 124,
+      "rank": 123,
       "title": "Ramayan",
       "year": 1987,
       "rating": 9,
@@ -8121,6 +8101,27 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0268093/"
+      }
+    },
+    {
+      "id": "tt0758745",
+      "type": "tv",
+      "rank": 124,
+      "title": "Friday Night Lights",
+      "year": 2006,
+      "rating": 8.7,
+      "poster": "./posters/tt0758745.jpg",
+      "genres": [
+        "Drama",
+        "Sport"
+      ],
+      "runtime": 45,
+      "fa": "چراغهای جمعهشب (مجموعه تلویزیونی)",
+      "summary": "زندگی اعضای تیم فوتبال دبیرستانی دیلن پنترز و سرمربی‌شان اریک تیلور دنبال می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q4507"
       }
     },
     {
@@ -8503,9 +8504,31 @@
       }
     },
     {
-      "id": "tt0348914",
+      "id": "tt4786824",
       "type": "tv",
       "rank": 143,
+      "title": "The Crown",
+      "year": 2016,
+      "rating": 8.6,
+      "poster": "./posters/tt4786824.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "runtime": 60,
+      "fa": "تاج",
+      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q20707362"
+      }
+    },
+    {
+      "id": "tt0348914",
+      "type": "tv",
+      "rank": 144,
       "title": "Deadwood",
       "year": 2004,
       "rating": 8.6,
@@ -8523,28 +8546,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1050603"
-      }
-    },
-    {
-      "id": "tt4786824",
-      "type": "tv",
-      "rank": 144,
-      "title": "The Crown",
-      "year": 2016,
-      "rating": 8.6,
-      "poster": "./posters/tt4786824.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "runtime": 60,
-      "fa": "تاج",
-      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q20707362"
       }
     },
     {
@@ -8835,30 +8836,9 @@
       }
     },
     {
-      "id": "tt0229889",
-      "type": "tv",
-      "rank": 158,
-      "title": "El Chavo",
-      "year": 1972,
-      "rating": 8.7,
-      "poster": "./posters/tt0229889.jpg",
-      "genres": [
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 30,
-      "fa": "کودک هشت",
-      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1323981"
-      }
-    },
-    {
       "id": "tt10850932",
       "type": "tv",
-      "rank": 159,
+      "rank": 158,
       "title": "Crash Landing on You",
       "year": 2019,
       "rating": 8.7,
@@ -8876,6 +8856,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q65258113"
+      }
+    },
+    {
+      "id": "tt0229889",
+      "type": "tv",
+      "rank": 159,
+      "title": "El Chavo",
+      "year": 1972,
+      "rating": 8.7,
+      "poster": "./posters/tt0229889.jpg",
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 30,
+      "fa": "کودک هشت",
+      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1323981"
       }
     },
     {
@@ -9013,9 +9014,29 @@
       }
     },
     {
-      "id": "tt0090509",
+      "id": "tt7562112",
       "type": "tv",
       "rank": 166,
+      "title": "Pose",
+      "year": 2018,
+      "rating": 8.6,
+      "poster": "./posters/tt7562112.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "ژست",
+      "summary": "در نیویورک دههٔ ۱۹۸۰، اعضای جامعهٔ بال‌روم در رقابت‌های رقص و نمایش شرکت می‌کنند و برای خودشان خانواده‌ای انتخابی می‌سازند؛ در کنار تلاش برای عشق، پذیرش و گذران زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q30603704"
+      }
+    },
+    {
+      "id": "tt0090509",
+      "type": "tv",
+      "rank": 167,
       "title": "The Return of Sherlock Holmes",
       "year": 1986,
       "rating": 8.7,
@@ -9032,26 +9053,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0090509/"
-      }
-    },
-    {
-      "id": "tt7562112",
-      "type": "tv",
-      "rank": 167,
-      "title": "Pose",
-      "year": 2018,
-      "rating": 8.6,
-      "poster": "./posters/tt7562112.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "ژست",
-      "summary": "در نیویورک دههٔ ۱۹۸۰، اعضای جامعهٔ بال‌روم در رقابت‌های رقص و نمایش شرکت می‌کنند و برای خودشان خانواده‌ای انتخابی می‌سازند؛ در کنار تلاش برای عشق، پذیرش و گذران زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q30603704"
       }
     },
     {
@@ -10353,32 +10354,9 @@
       }
     },
     {
-      "id": "tt0988818",
-      "type": "tv",
-      "rank": 226,
-      "title": "Gintama",
-      "year": 2005,
-      "rating": 8.7,
-      "poster": "./posters/tt0988818.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Comedy",
-        "Sci-Fi"
-      ],
-      "runtime": 25,
-      "fa": "گینتاما",
-      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0988818/"
-      }
-    },
-    {
       "id": "tt0163507",
       "type": "tv",
-      "rank": 227,
+      "rank": 226,
       "title": "Whose Line Is It Anyway?",
       "year": 1998,
       "rating": 8.5,
@@ -10399,7 +10377,7 @@
     {
       "id": "tt0187664",
       "type": "tv",
-      "rank": 228,
+      "rank": 227,
       "title": "Spaced",
       "year": 1999,
       "rating": 8.5,
@@ -10414,6 +10392,29 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0187664/"
+      }
+    },
+    {
+      "id": "tt0988818",
+      "type": "tv",
+      "rank": 228,
+      "title": "Gintama",
+      "year": 2005,
+      "rating": 8.7,
+      "poster": "./posters/tt0988818.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "runtime": 25,
+      "fa": "گینتاما",
+      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0988818/"
       }
     },
     {
@@ -10481,32 +10482,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt1190634",
-      "type": "tv",
-      "rank": 232,
-      "title": "The Boys",
-      "year": 2019,
-      "rating": 8.5,
-      "poster": "./posters/tt1190634.jpg",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Crime",
-        "Sci-Fi"
-      ],
-      "runtime": 60,
-      "fa": "پسرها",
-      "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q48796994"
-      }
-    },
-    {
       "id": "tt27446493",
       "type": "tv",
-      "rank": 233,
+      "rank": 232,
       "title": "Twinkling Watermelon",
       "year": 2023,
       "rating": 8.8,
@@ -10525,6 +10503,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q118869205"
+      }
+    },
+    {
+      "id": "tt1190634",
+      "type": "tv",
+      "rank": 233,
+      "title": "The Boys",
+      "year": 2019,
+      "rating": 8.5,
+      "poster": "./posters/tt1190634.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime",
+        "Sci-Fi"
+      ],
+      "runtime": 60,
+      "fa": "پسرها",
+      "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48796994"
       }
     },
     {
@@ -10713,29 +10714,9 @@
       }
     },
     {
-      "id": "tt0118273",
-      "type": "tv",
-      "rank": 243,
-      "title": "Brass Eye",
-      "year": 1997,
-      "rating": 8.6,
-      "poster": "./posters/tt0118273.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 25,
-      "fa": "برنج",
-      "summary": "برنامه‌ای طنز که با تقلید از گزارش‌های جدی تلویزیونی، شیوهٔ پوشش مسائل روز و رفتار چهره‌های مشهور را دست می‌اندازد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0118273/"
-      }
-    },
-    {
       "id": "tt26743760",
       "type": "tv",
-      "rank": 244,
+      "rank": 243,
       "title": "The Apothecary Diaries",
       "year": 2023,
       "rating": 8.6,
@@ -10754,6 +10735,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt26743760/"
+      }
+    },
+    {
+      "id": "tt0118273",
+      "type": "tv",
+      "rank": 244,
+      "title": "Brass Eye",
+      "year": 1997,
+      "rating": 8.6,
+      "poster": "./posters/tt0118273.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 25,
+      "fa": "برنج",
+      "summary": "برنامه‌ای طنز که با تقلید از گزارش‌های جدی تلویزیونی، شیوهٔ پوشش مسائل روز و رفتار چهره‌های مشهور را دست می‌اندازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0118273/"
       }
     },
     {
@@ -10820,9 +10821,32 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt2359704",
+      "id": "tt12074628",
       "type": "tv",
       "rank": 248,
+      "title": "Smiling Friends",
+      "year": 2020,
+      "rating": 8.5,
+      "poster": "./posters/tt12074628.jpg",
+      "genres": [
+        "Animation",
+        "Short",
+        "Comedy",
+        "Fantasy"
+      ],
+      "runtime": 12,
+      "fa": "اسمایلینگ فرندز",
+      "summary": "کارکنان یک شرکت کوچک وظیفه دارند آدم‌ها را خوشحال کنند؛ اما هر مشتری آن‌ها را وارد ماجرایی عجیب و گاهی خطرناک می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q107087854"
+      }
+    },
+    {
+      "id": "tt2359704",
+      "type": "tv",
+      "rank": 249,
       "title": "JoJo's Bizarre Adventure",
       "year": 2012,
       "rating": 8.6,
@@ -10846,47 +10870,29 @@
       }
     },
     {
-      "id": "tt12074628",
+      "id": "tt0310455",
       "type": "tv",
-      "rank": 249,
-      "title": "Smiling Friends",
-      "year": 2020,
-      "rating": 8.5,
-      "poster": "./posters/tt12074628.jpg",
+      "rank": 250,
+      "title": "Foyle's War",
+      "year": 2002,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjExMDJlZWUtNzQxMS00ZGI4LTg1N2QtMmU3NTkyN2Q4NzYyXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Animation",
-        "Short",
-        "Comedy",
-        "Fantasy"
+        "Crime",
+        "Drama",
+        "Mystery",
+        "War"
       ],
-      "runtime": 12,
-      "fa": "اسمایلینگ فرندز",
-      "summary": "کارکنان یک شرکت کوچک وظیفه دارند آدم‌ها را خوشحال کنند؛ اما هر مشتری آن‌ها را وارد ماجرایی عجیب و گاهی خطرناک می‌کند.",
+      "runtime": 90,
+      "fa": "بازرس فویل",
+      "summary": "بازرس فویل (انگلیسی: Foyle's War) یک سریال قسمت-محور در ژانر جنایی – درام محصول انگلستان است. داستان سریال در زمان جنگ دوم جهانی در انگلستان واقع است و در هر قسمت حوادث جنایی رخ می‌دهد که بازرس فویل به بررسی علت وقوع جنایت و دستگیری عاملان می‌پردازد.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q107087854"
+        "faUrl": "https://www.wikidata.org/entity/Q2377188",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
       }
-    },
-    {
-      "id": "tt2575988",
-      "type": "tv",
-      "rank": 250,
-      "title": "Silicon Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "سیلیکون ولی",
-      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
-      "summaryLanguage": "fa",
-      "aliases": [
-        "دره سیلیکون",
-        "درهٔ سیلیکون"
-      ]
     }
   ],
   "archive": [
@@ -11018,6 +11024,26 @@
         "summarySource": "mymemory",
         "summaryUrl": "https://www.imdb.com/title/tt0421291/"
       }
+    },
+    {
+      "id": "tt2575988",
+      "type": "tv",
+      "rank": null,
+      "title": "Silicon Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "سیلیکون ولی",
+      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "دره سیلیکون",
+        "درهٔ سیلیکون"
+      ]
     }
   ]
 }
