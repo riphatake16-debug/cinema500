@@ -3994,6 +3994,17 @@
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%85%D9%84%D9%88%D8%AF%DB%8C+%DA%A9%D9%88%D8%B1&oldid=44715720"
       }
+    },
+    "tt1983079": {
+      "fa": "با ماما تماس بگیرید",
+      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt1983079/",
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1983079/"
+      }
     }
   },
   "retryAfter": {
@@ -4006,6 +4017,6 @@
   },
   "translationUsage": {
     "date": "2026-11-07",
-    "characters": 63
+    "characters": 182
   }
 }
