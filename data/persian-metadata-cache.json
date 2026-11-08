@@ -4005,6 +4005,17 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt1983079/"
       }
+    },
+    "tt20850406": {
+      "fa": "سیتا رامام",
+      "summary": "سیتا رامام (به انگلیسی: Sita Ramam) فیلمی هندی محصول سال ۲۰۲۲ و به کارگردانی هانا راغواپودی است. در این فیلم بازیگرانی همچون دولکوئر سلمان، مرونال تاکور، راشمیکا ماندانا، سومانت، ساچین خدکار، پراکاش راج، بومیکا چاولا، تینو آناند و جیشو سنگوپتا ایفای نقش کرده‌اند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q113455828",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B3%DB%8C%D8%AA%D8%A7+%D8%B1%D8%A7%D9%85%D8%A7%D9%85&oldid=43483691"
+      }
     }
   },
   "retryAfter": {
