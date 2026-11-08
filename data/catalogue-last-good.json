@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "f4f74ce624385ade58f3ef4e63bd0f52805e4dfd5ed68a0fae302b98826e2d7e",
+  "version": "e78a0e06b498b2a0d541d7f79d8fa15932aedfd12426c912de5b5bc8f740762a",
   "status": "ok",
-  "retrievedAt": "2026-11-07T01:23:23+00:00",
-  "checkedAt": "2026-11-07T01:23:23+00:00",
+  "retrievedAt": "2026-11-08T01:28:36+00:00",
+  "checkedAt": "2026-11-08T01:28:36+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -4782,9 +4782,30 @@
       }
     },
     {
-      "id": "tt0059742",
+      "id": "tt15097216",
       "type": "movie",
       "rank": 223,
+      "title": "Jai Bhim",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt15097216.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 164,
+      "fa": "جای بهیم",
+      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt15097216/"
+      }
+    },
+    {
+      "id": "tt0059742",
+      "type": "movie",
+      "rank": 224,
       "title": "The Sound of Music",
       "year": 1965,
       "rating": 8.1,
@@ -4803,27 +4824,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60072"
-      }
-    },
-    {
-      "id": "tt15097216",
-      "type": "movie",
-      "rank": 224,
-      "title": "Jai Bhim",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt15097216.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 164,
-      "fa": "جای بهیم",
-      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt15097216/"
       }
     },
     {
@@ -5373,23 +5373,26 @@
       }
     },
     {
-      "id": "tt10431500",
+      "id": "tt21626284",
       "type": "movie",
       "rank": 250,
-      "title": "Miracle in Cell No. 7",
-      "year": 2019,
-      "rating": 8.2,
-      "poster": "./posters/tt10431500.jpg",
+      "title": "Lost Ladies",
+      "year": 2023,
+      "rating": 8.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGI5NzVmNDktZWY2Ni00ZGMwLTlhMzctNzJhYTgzZmQ2ZjNjXkEyXkFqcGc@._V1_.jpg",
       "genres": [
+        "Comedy",
         "Drama"
       ],
-      "runtime": 132,
-      "fa": "معجزه در سلول شماره ۷",
-      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
+      "runtime": 122,
+      "fa": "لااپاتا خانمها",
+      "summary": "لااپاتا خانم‌ها (به انگلیسی: Laapataa Ladies) که خانم‌های گمشده نیز شناخته می‌شود. یک فیلم کمدی-درام به کارگردانی کیران رائو محصول ۲۰۲۴ است. و تولید شده توسط رائو، عامر خان و جیوتی دشپنده. با بازی نیتانشی گوئل، پراتیبا رانتا، اسپارش شریواستاو، چهایا کادام و راوی کیشان می‌گوید. داستان دو عروس جوان که در حین قطار سواری به خانه شوهرشان رد و بدل می‌شوند.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q73804850"
+        "faUrl": "https://www.wikidata.org/entity/Q124714626",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%84%D8%A7%D8%A7%D9%BE%D8%A7%D8%AA%D8%A7+%D8%AE%D8%A7%D9%86%D9%85%E2%80%8C%D9%87%D8%A7&oldid=44210686"
       }
     },
     {
@@ -6389,9 +6392,25 @@
       }
     },
     {
-      "id": "tt0092337",
+      "id": "tt0098904",
       "type": "tv",
       "rank": 47,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0092337",
+      "type": "tv",
+      "rank": 48,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6407,22 +6426,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
-    },
-    {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 48,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -7217,30 +7220,9 @@
       }
     },
     {
-      "id": "tt9432978",
-      "type": "tv",
-      "rank": 85,
-      "title": "Kota Factory",
-      "year": 2019,
-      "rating": 9,
-      "poster": "./posters/tt9432978.jpg",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "runtime": 40,
-      "fa": "کارخانه کوتا",
-      "summary": "این مجموعهٔ سیاه‌وسفید هندی، مشکلات روزمرهٔ نوجوانانی را دنبال می‌کند که برای آزمون ورودی مؤسسات فناوری هند آماده می‌شوند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt9432978/"
-      }
-    },
-    {
       "id": "tt0121955",
       "type": "tv",
-      "rank": 86,
+      "rank": 85,
       "title": "South Park",
       "year": 1997,
       "rating": 8.7,
@@ -7256,6 +7238,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16538"
+      }
+    },
+    {
+      "id": "tt9432978",
+      "type": "tv",
+      "rank": 86,
+      "title": "Kota Factory",
+      "year": 2019,
+      "rating": 9,
+      "poster": "./posters/tt9432978.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 40,
+      "fa": "کارخانه کوتا",
+      "summary": "این مجموعهٔ سیاه‌وسفید هندی، مشکلات روزمرهٔ نوجوانانی را دنبال می‌کند که برای آزمون ورودی مؤسسات فناوری هند آماده می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt9432978/"
       }
     },
     {
@@ -7697,32 +7700,9 @@
       }
     },
     {
-      "id": "tt0092455",
-      "type": "tv",
-      "rank": 106,
-      "title": "Star Trek: The Next Generation",
-      "year": 1987,
-      "rating": 8.7,
-      "poster": "./posters/tt0092455.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Sci-Fi"
-      ],
-      "runtime": 45,
-      "fa": "پیشتازان فضا: نسل بعدی",
-      "summary": "نزدیک به صد سال پس از مأموریت کاپیتان کرک، نسل تازه‌ای از افسران ناوگان ستاره‌ای با سفینهٔ انترپرایز به جست‌وجوی ناشناخته‌ها می‌روند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q16290"
-      }
-    },
-    {
       "id": "tt38268282",
       "type": "tv",
-      "rank": 107,
+      "rank": 106,
       "title": "Steel Ball Run: JoJo's Bizarre Adventure",
       "year": 2026,
       "rating": 9.3,
@@ -7742,6 +7722,29 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt38268282/"
+      }
+    },
+    {
+      "id": "tt0092455",
+      "type": "tv",
+      "rank": 107,
+      "title": "Star Trek: The Next Generation",
+      "year": 1987,
+      "rating": 8.7,
+      "poster": "./posters/tt0092455.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "runtime": 45,
+      "fa": "پیشتازان فضا: نسل بعدی",
+      "summary": "نزدیک به صد سال پس از مأموریت کاپیتان کرک، نسل تازه‌ای از افسران ناوگان ستاره‌ای با سفینهٔ انترپرایز به جست‌وجوی ناشناخته‌ها می‌روند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16290"
       }
     },
     {
@@ -8057,31 +8060,9 @@
       }
     },
     {
-      "id": "tt0062588",
-      "type": "tv",
-      "rank": 122,
-      "title": "Mister Rogers' Neighborhood",
-      "year": 1968,
-      "rating": 8.8,
-      "poster": "./posters/tt0062588.jpg",
-      "genres": [
-        "Family",
-        "Fantasy",
-        "Music"
-      ],
-      "runtime": 30,
-      "fa": "محلهٔ آقای راجرز",
-      "summary": "فرد راجرز با نمایش، موسیقی و سفر به محلهٔ خیال، موضوعات گوناگون را برای کودکان توضیح می‌دهد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q3234484"
-      }
-    },
-    {
       "id": "tt0268093",
       "type": "tv",
-      "rank": 123,
+      "rank": 122,
       "title": "Ramayan",
       "year": 1987,
       "rating": 9,
@@ -8101,6 +8082,28 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0268093/"
+      }
+    },
+    {
+      "id": "tt0062588",
+      "type": "tv",
+      "rank": 123,
+      "title": "Mister Rogers' Neighborhood",
+      "year": 1968,
+      "rating": 8.8,
+      "poster": "./posters/tt0062588.jpg",
+      "genres": [
+        "Family",
+        "Fantasy",
+        "Music"
+      ],
+      "runtime": 30,
+      "fa": "محلهٔ آقای راجرز",
+      "summary": "فرد راجرز با نمایش، موسیقی و سفر به محلهٔ خیال، موضوعات گوناگون را برای کودکان توضیح می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3234484"
       }
     },
     {
@@ -9758,9 +9761,30 @@
       }
     },
     {
-      "id": "tt0280249",
+      "id": "tt10802170",
       "type": "tv",
       "rank": 199,
+      "title": "The Rehearsal",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "./posters/tt10802170.jpg",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
+    },
+    {
+      "id": "tt0280249",
+      "type": "tv",
+      "rank": 200,
       "title": "Dragon Ball",
       "year": 1995,
       "rating": 8.5,
@@ -9780,27 +9804,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0280249/"
-      }
-    },
-    {
-      "id": "tt10802170",
-      "type": "tv",
-      "rank": 200,
-      "title": "The Rehearsal",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "./posters/tt10802170.jpg",
-      "genres": [
-        "Documentary",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "د ریهرسال",
-      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112915576"
       }
     },
     {
@@ -10025,9 +10028,31 @@
       }
     },
     {
-      "id": "tt9544034",
+      "id": "tt3428912",
       "type": "tv",
       "rank": 211,
+      "title": "Happy Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "./posters/tt3428912.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "هپی ولی",
+      "summary": "کاترین کاوود، گروهبان پلیس در یورکشایر، میان پرونده‌های جنایی دشوار و مسئولیت‌های خانوادگی، با آسیب‌های گذشته و پیامدهای خشونت در جامعهٔ اطرافش روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt3428912/"
+      }
+    },
+    {
+      "id": "tt9544034",
+      "type": "tv",
+      "rank": 212,
       "title": "The Family Man",
       "year": 2019,
       "rating": 8.6,
@@ -10046,28 +10071,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9544034/"
-      }
-    },
-    {
-      "id": "tt3428912",
-      "type": "tv",
-      "rank": 212,
-      "title": "Happy Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "./posters/tt3428912.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "هپی ولی",
-      "summary": "کاترین کاوود، گروهبان پلیس در یورکشایر، میان پرونده‌های جنایی دشوار و مسئولیت‌های خانوادگی، با آسیب‌های گذشته و پیامدهای خشونت در جامعهٔ اطرافش روبه‌رو می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt3428912/"
       }
     },
     {
@@ -10354,9 +10357,32 @@
       }
     },
     {
-      "id": "tt0163507",
+      "id": "tt0988818",
       "type": "tv",
       "rank": 226,
+      "title": "Gintama",
+      "year": 2005,
+      "rating": 8.7,
+      "poster": "./posters/tt0988818.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "runtime": 25,
+      "fa": "گینتاما",
+      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0988818/"
+      }
+    },
+    {
+      "id": "tt0163507",
+      "type": "tv",
+      "rank": 227,
       "title": "Whose Line Is It Anyway?",
       "year": 1998,
       "rating": 8.5,
@@ -10377,7 +10403,7 @@
     {
       "id": "tt0187664",
       "type": "tv",
-      "rank": 227,
+      "rank": 228,
       "title": "Spaced",
       "year": 1999,
       "rating": 8.5,
@@ -10392,29 +10418,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0187664/"
-      }
-    },
-    {
-      "id": "tt0988818",
-      "type": "tv",
-      "rank": 228,
-      "title": "Gintama",
-      "year": 2005,
-      "rating": 8.7,
-      "poster": "./posters/tt0988818.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Comedy",
-        "Sci-Fi"
-      ],
-      "runtime": 25,
-      "fa": "گینتاما",
-      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0988818/"
       }
     },
     {
@@ -10482,9 +10485,32 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt27446493",
+      "id": "tt1190634",
       "type": "tv",
       "rank": 232,
+      "title": "The Boys",
+      "year": 2019,
+      "rating": 8.5,
+      "poster": "./posters/tt1190634.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime",
+        "Sci-Fi"
+      ],
+      "runtime": 60,
+      "fa": "پسرها",
+      "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48796994"
+      }
+    },
+    {
+      "id": "tt27446493",
+      "type": "tv",
+      "rank": 233,
       "title": "Twinkling Watermelon",
       "year": 2023,
       "rating": 8.8,
@@ -10503,29 +10529,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q118869205"
-      }
-    },
-    {
-      "id": "tt1190634",
-      "type": "tv",
-      "rank": 233,
-      "title": "The Boys",
-      "year": 2019,
-      "rating": 8.5,
-      "poster": "./posters/tt1190634.jpg",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Crime",
-        "Sci-Fi"
-      ],
-      "runtime": 60,
-      "fa": "پسرها",
-      "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q48796994"
       }
     },
     {
@@ -10672,30 +10675,9 @@
       }
     },
     {
-      "id": "tt4236770",
-      "type": "tv",
-      "rank": 241,
-      "title": "Yellowstone",
-      "year": 2018,
-      "rating": 8.6,
-      "poster": "./posters/tt4236770.jpg",
-      "genres": [
-        "Drama",
-        "Western"
-      ],
-      "runtime": 60,
-      "fa": "یلواستون",
-      "summary": "خانوادهٔ داتن برای حفظ مزرعهٔ بزرگشان در مونتانا، با سازندگان املاک و رقیبان درگیر می‌شوند؛ در حالی که اختلاف‌های سیاسی و خانوادگی هم کارشان را سخت‌تر می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q47452423"
-      }
-    },
-    {
       "id": "tt1877368",
       "type": "tv",
-      "rank": 242,
+      "rank": 241,
       "title": "The Great British Baking Show",
       "year": 2010,
       "rating": 8.6,
@@ -10711,6 +10693,27 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt1877368/"
+      }
+    },
+    {
+      "id": "tt4236770",
+      "type": "tv",
+      "rank": 242,
+      "title": "Yellowstone",
+      "year": 2018,
+      "rating": 8.6,
+      "poster": "./posters/tt4236770.jpg",
+      "genres": [
+        "Drama",
+        "Western"
+      ],
+      "runtime": 60,
+      "fa": "یلواستون",
+      "summary": "خانوادهٔ داتن برای حفظ مزرعهٔ بزرگشان در مونتانا، با سازندگان املاک و رقیبان درگیر می‌شوند؛ در حالی که اختلاف‌های سیاسی و خانوادگی هم کارشان را سخت‌تر می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q47452423"
       }
     },
     {
@@ -10803,27 +10806,9 @@
       }
     },
     {
-      "id": "tt2244495",
-      "type": "tv",
-      "rank": 247,
-      "title": "The Eric Andre Show",
-      "year": 2012,
-      "rating": 8.5,
-      "poster": "./posters/tt2244495.jpg",
-      "genres": [
-        "Comedy",
-        "Reality-TV",
-        "Talk-Show"
-      ],
-      "runtime": 11,
-      "fa": "",
-      "summary": "اریک آندره در فضایی عجیب تلاش می‌کند یک برنامهٔ گفت‌وگومحور اجرا کند؛ گاهی طراح شوخی‌هاست و گاهی خودش قربانی آن‌ها می‌شود.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt12074628",
       "type": "tv",
-      "rank": 248,
+      "rank": 247,
       "title": "Smiling Friends",
       "year": 2020,
       "rating": 8.5,
@@ -10844,35 +10829,27 @@
       }
     },
     {
-      "id": "tt2359704",
+      "id": "tt2244495",
       "type": "tv",
-      "rank": 249,
-      "title": "JoJo's Bizarre Adventure",
+      "rank": 248,
+      "title": "The Eric Andre Show",
       "year": 2012,
-      "rating": 8.6,
-      "poster": "./posters/tt2359704.jpg",
+      "rating": 8.5,
+      "poster": "./posters/tt2244495.jpg",
       "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
         "Comedy",
-        "Drama",
-        "Fantasy",
-        "Horror"
+        "Reality-TV",
+        "Talk-Show"
       ],
-      "runtime": 24,
-      "fa": "ماجراجویی عجیب و غریب جوجو (مجموعه تلویزیونی)",
-      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q28930028"
-      }
+      "runtime": 11,
+      "fa": "",
+      "summary": "اریک آندره در فضایی عجیب تلاش می‌کند یک برنامهٔ گفت‌وگومحور اجرا کند؛ گاهی طراح شوخی‌هاست و گاهی خودش قربانی آن‌ها می‌شود.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0310455",
       "type": "tv",
-      "rank": 250,
+      "rank": 249,
       "title": "Foyle's War",
       "year": 2002,
       "rating": 8.6,
@@ -10892,6 +10869,29 @@
         "faUrl": "https://www.wikidata.org/entity/Q2377188",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
+      }
+    },
+    {
+      "id": "tt1983079",
+      "type": "tv",
+      "rank": 250,
+      "title": "Call the Midwife",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMjAwNzc1MzVeQTJeQWpwZ15BbWU4MDQzODgzMjEx._V1_.jpg",
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "runtime": 60,
+      "fa": "با ماما تماس بگیرید",
+      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1983079/",
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt1983079/"
       }
     }
   ],
@@ -11044,6 +11044,42 @@
         "دره سیلیکون",
         "درهٔ سیلیکون"
       ]
+    },
+    {
+      "id": "tt10431500",
+      "type": "movie",
+      "rank": null,
+      "title": "Miracle in Cell No. 7",
+      "year": 2019,
+      "rating": 8.2,
+      "poster": "./posters/tt10431500.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 132,
+      "fa": "",
+      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
+      "summaryLanguage": "fa",
+      "summarySource": "https://v3-cinemeta.strem.io/meta/movie/tt10431500.json"
+    },
+    {
+      "id": "tt2359704",
+      "type": "tv",
+      "rank": null,
+      "title": "JoJo's Bizarre Adventure",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "./posters/tt2359704.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Animation"
+      ],
+      "runtime": 24,
+      "fa": "",
+      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt2359704.json"
     }
   ]
 }
