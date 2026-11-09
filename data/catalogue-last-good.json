@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "e78a0e06b498b2a0d541d7f79d8fa15932aedfd12426c912de5b5bc8f740762a",
+  "version": "8a7219d1d7f71573fa48b7fca31ad135bcb30baaadb8240e02df1ef9f6ee1346",
   "status": "ok",
-  "retrievedAt": "2026-11-08T01:28:36+00:00",
-  "checkedAt": "2026-11-08T01:28:36+00:00",
+  "retrievedAt": "2026-11-09T01:31:47+00:00",
+  "checkedAt": "2026-11-09T01:31:47+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1297,32 +1297,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 64,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.4,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt0043014",
       "type": "movie",
-      "rank": 65,
+      "rank": 64,
       "title": "Sunset Boulevard",
       "year": 1950,
       "rating": 8.4,
@@ -1343,7 +1320,7 @@
     {
       "id": "tt0051201",
       "type": "movie",
-      "rank": 66,
+      "rank": 65,
       "title": "Witness for the Prosecution",
       "year": 1957,
       "rating": 8.4,
@@ -1361,6 +1338,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q196977"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 66,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.4,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -2363,30 +2363,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0095016",
-      "type": "movie",
-      "rank": 113,
-      "title": "Die Hard",
-      "year": 1988,
-      "rating": 8.2,
-      "poster": "./posters/tt0095016.jpg",
-      "genres": [
-        "Action",
-        "Thriller"
-      ],
-      "runtime": 132,
-      "fa": "جان سخت",
-      "summary": "یک پلیس نیویورکی در لس‌آنجلس تلاش می‌کند همسرش و دیگر مهمانان جشن کریسمس را از دست گروگان‌گیران یک برج نجات دهد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q105598"
-      }
-    },
-    {
       "id": "tt31514146",
       "type": "movie",
-      "rank": 114,
+      "rank": 113,
       "title": "I Swear",
       "year": 2025,
       "rating": 8.3,
@@ -2402,6 +2381,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q135321335"
+      }
+    },
+    {
+      "id": "tt0095016",
+      "type": "movie",
+      "rank": 114,
+      "title": "Die Hard",
+      "year": 1988,
+      "rating": 8.2,
+      "poster": "./posters/tt0095016.jpg",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 132,
+      "fa": "جان سخت",
+      "summary": "یک پلیس نیویورکی در لس‌آنجلس تلاش می‌کند همسرش و دیگر مهمانان جشن کریسمس را از دست گروگان‌گیران یک برج نجات دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q105598"
       }
     },
     {
@@ -4065,31 +4065,9 @@
       }
     },
     {
-      "id": "tt0116282",
-      "type": "movie",
-      "rank": 191,
-      "title": "Fargo",
-      "year": 1996,
-      "rating": 8.1,
-      "poster": "./posters/tt0116282.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 98,
-      "fa": "فارگو",
-      "summary": "نقشهٔ جنایی ناشیانهٔ جری لاندگارد، با اشتباهات او و همدستانش و پیگیری پلیسی باردار به نام مارج گاندرسون، از کنترل خارج می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q222720"
-      }
-    },
-    {
       "id": "tt0118849",
       "type": "movie",
-      "rank": 192,
+      "rank": 191,
       "title": "Children of Heaven",
       "year": 1997,
       "rating": 8.2,
@@ -4106,6 +4084,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q339804"
+      }
+    },
+    {
+      "id": "tt0116282",
+      "type": "movie",
+      "rank": 192,
+      "title": "Fargo",
+      "year": 1996,
+      "rating": 8.1,
+      "poster": "./posters/tt0116282.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 98,
+      "fa": "فارگو",
+      "summary": "نقشهٔ جنایی ناشیانهٔ جری لاندگارد، با اشتباهات او و همدستانش و پیگیری پلیسی باردار به نام مارج گاندرسون، از کنترل خارج می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q222720"
       }
     },
     {
@@ -4402,31 +4402,9 @@
       }
     },
     {
-      "id": "tt0107207",
-      "type": "movie",
-      "rank": 206,
-      "title": "In the Name of the Father",
-      "year": 1993,
-      "rating": 8.1,
-      "poster": "./posters/tt0107207.jpg",
-      "genres": [
-        "Biography",
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 133,
-      "fa": "به نام پدر",
-      "summary": "اعتراف اجباری مردی جوان به یک بمب‌گذاری، خودش و پدرش را به زندان می‌اندازد. یک وکیل تلاش می‌کند حقیقت پرونده را روشن کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q304074"
-      }
-    },
-    {
       "id": "tt30472557",
       "type": "movie",
-      "rank": 207,
+      "rank": 206,
       "title": "Chainsaw Man - The Movie: Reze Arc",
       "year": 2025,
       "rating": 8.3,
@@ -4447,6 +4425,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q123906765"
+      }
+    },
+    {
+      "id": "tt0107207",
+      "type": "movie",
+      "rank": 207,
+      "title": "In the Name of the Father",
+      "year": 1993,
+      "rating": 8.1,
+      "poster": "./posters/tt0107207.jpg",
+      "genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 133,
+      "fa": "به نام پدر",
+      "summary": "اعتراف اجباری مردی جوان به یک بمب‌گذاری، خودش و پدرش را به زندان می‌اندازد. یک وکیل تلاش می‌کند حقیقت پرونده را روشن کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q304074"
       }
     },
     {
@@ -4650,30 +4650,9 @@
       }
     },
     {
-      "id": "tt0077416",
-      "type": "movie",
-      "rank": 217,
-      "title": "The Deer Hunter",
-      "year": 1978,
-      "rating": 8.1,
-      "poster": "./posters/tt0077416.jpg",
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "runtime": 183,
-      "fa": "شکارچی گوزن",
-      "summary": "چند دوست از شهری صنعتی در پنسیلوانیا راهی جنگ ویتنام می‌شوند؛ تجربه‌ای که زندگی و دوستی آن‌ها را برای همیشه تغییر می‌دهد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q201674"
-      }
-    },
-    {
       "id": "tt0046268",
       "type": "movie",
-      "rank": 218,
+      "rank": 217,
       "title": "The Wages of Fear",
       "year": 1953,
       "rating": 8.1,
@@ -4690,6 +4669,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q465773"
+      }
+    },
+    {
+      "id": "tt0077416",
+      "type": "movie",
+      "rank": 218,
+      "title": "The Deer Hunter",
+      "year": 1978,
+      "rating": 8.1,
+      "poster": "./posters/tt0077416.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 183,
+      "fa": "شکارچی گوزن",
+      "summary": "چند دوست از شهری صنعتی در پنسیلوانیا راهی جنگ ویتنام می‌شوند؛ تجربه‌ای که زندگی و دوستی آن‌ها را برای همیشه تغییر می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q201674"
       }
     },
     {
@@ -5373,26 +5373,23 @@
       }
     },
     {
-      "id": "tt21626284",
+      "id": "tt10431500",
       "type": "movie",
       "rank": 250,
-      "title": "Lost Ladies",
-      "year": 2023,
-      "rating": 8.3,
-      "poster": "https://m.media-amazon.com/images/M/MV5BZGI5NzVmNDktZWY2Ni00ZGMwLTlhMzctNzJhYTgzZmQ2ZjNjXkEyXkFqcGc@._V1_.jpg",
+      "title": "Miracle in Cell No. 7",
+      "year": 2019,
+      "rating": 8.2,
+      "poster": "./posters/tt10431500.jpg",
       "genres": [
-        "Comedy",
         "Drama"
       ],
-      "runtime": 122,
-      "fa": "لااپاتا خانمها",
-      "summary": "لااپاتا خانم‌ها (به انگلیسی: Laapataa Ladies) که خانم‌های گمشده نیز شناخته می‌شود. یک فیلم کمدی-درام به کارگردانی کیران رائو محصول ۲۰۲۴ است. و تولید شده توسط رائو، عامر خان و جیوتی دشپنده. با بازی نیتانشی گوئل، پراتیبا رانتا، اسپارش شریواستاو، چهایا کادام و راوی کیشان می‌گوید. داستان دو عروس جوان که در حین قطار سواری به خانه شوهرشان رد و بدل می‌شوند.",
+      "runtime": 132,
+      "fa": "معجزه در سلول شماره ۷",
+      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q124714626",
-        "summarySource": "wikipedia-fa",
-        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%84%D8%A7%D8%A7%D9%BE%D8%A7%D8%AA%D8%A7+%D8%AE%D8%A7%D9%86%D9%85%E2%80%8C%D9%87%D8%A7&oldid=44210686"
+        "faUrl": "https://www.wikidata.org/entity/Q73804850"
       }
     },
     {
@@ -6692,9 +6689,29 @@
       }
     },
     {
-      "id": "tt14986406",
+      "id": "tt0472954",
       "type": "tv",
       "rank": 61,
+      "title": "It's Always Sunny in Philadelphia",
+      "year": 2005,
+      "rating": 8.8,
+      "poster": "./posters/tt0472954.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "فیلادلفیا همیشه آفتابی است",
+      "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23670"
+      }
+    },
+    {
+      "id": "tt14986406",
+      "type": "tv",
+      "rank": 62,
       "title": "Bleach: Thousand-Year Blood War",
       "year": 2022,
       "rating": 9,
@@ -6712,26 +6729,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q112631839"
-      }
-    },
-    {
-      "id": "tt0472954",
-      "type": "tv",
-      "rank": 62,
-      "title": "It's Always Sunny in Philadelphia",
-      "year": 2005,
-      "rating": 8.8,
-      "poster": "./posters/tt0472954.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "فیلادلفیا همیشه آفتابی است",
-      "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23670"
       }
     },
     {
@@ -7220,51 +7217,9 @@
       }
     },
     {
-      "id": "tt0121955",
-      "type": "tv",
-      "rank": 85,
-      "title": "South Park",
-      "year": 1997,
-      "rating": 8.7,
-      "poster": "./posters/tt0121955.jpg",
-      "genres": [
-        "Animation",
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساوت پارک",
-      "summary": "چهار دانش‌آموز در ساوت پارکِ کلرادو، با ماجراهای عجیب شهر و رفتارهای بزرگ‌ترها درگیر می‌شوند و معمولاً خودشان هم دردسر درست می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q16538"
-      }
-    },
-    {
-      "id": "tt9432978",
-      "type": "tv",
-      "rank": 86,
-      "title": "Kota Factory",
-      "year": 2019,
-      "rating": 9,
-      "poster": "./posters/tt9432978.jpg",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "runtime": 40,
-      "fa": "کارخانه کوتا",
-      "summary": "این مجموعهٔ سیاه‌وسفید هندی، مشکلات روزمرهٔ نوجوانانی را دنبال می‌کند که برای آزمون ورودی مؤسسات فناوری هند آماده می‌شوند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt9432978/"
-      }
-    },
-    {
       "id": "tt0318871",
       "type": "tv",
-      "rank": 87,
+      "rank": 85,
       "title": "Berserk",
       "year": 1997,
       "rating": 8.8,
@@ -7285,6 +7240,48 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q18559016"
+      }
+    },
+    {
+      "id": "tt0121955",
+      "type": "tv",
+      "rank": 86,
+      "title": "South Park",
+      "year": 1997,
+      "rating": 8.7,
+      "poster": "./posters/tt0121955.jpg",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساوت پارک",
+      "summary": "چهار دانش‌آموز در ساوت پارکِ کلرادو، با ماجراهای عجیب شهر و رفتارهای بزرگ‌ترها درگیر می‌شوند و معمولاً خودشان هم دردسر درست می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16538"
+      }
+    },
+    {
+      "id": "tt9432978",
+      "type": "tv",
+      "rank": 87,
+      "title": "Kota Factory",
+      "year": 2019,
+      "rating": 9,
+      "poster": "./posters/tt9432978.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 40,
+      "fa": "کارخانه کوتا",
+      "summary": "این مجموعهٔ سیاه‌وسفید هندی، مشکلات روزمرهٔ نوجوانانی را دنبال می‌کند که برای آزمون ورودی مؤسسات فناوری هند آماده می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt9432978/"
       }
     },
     {
@@ -8839,30 +8836,9 @@
       }
     },
     {
-      "id": "tt0229889",
-      "type": "tv",
-      "rank": 158,
-      "title": "El Chavo",
-      "year": 1972,
-      "rating": 8.7,
-      "poster": "./posters/tt0229889.jpg",
-      "genres": [
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 30,
-      "fa": "کودک هشت",
-      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1323981"
-      }
-    },
-    {
       "id": "tt9253284",
       "type": "tv",
-      "rank": 159,
+      "rank": 158,
       "title": "Andor",
       "year": 2022,
       "rating": 8.6,
@@ -8881,6 +8857,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60462338"
+      }
+    },
+    {
+      "id": "tt0229889",
+      "type": "tv",
+      "rank": 159,
+      "title": "El Chavo",
+      "year": 1972,
+      "rating": 8.7,
+      "poster": "./posters/tt0229889.jpg",
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 30,
+      "fa": "کودک هشت",
+      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1323981"
       }
     },
     {
@@ -9732,9 +9729,30 @@
       }
     },
     {
-      "id": "tt1641384",
+      "id": "tt10802170",
       "type": "tv",
       "rank": 198,
+      "title": "The Rehearsal",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "./posters/tt10802170.jpg",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
+    },
+    {
+      "id": "tt1641384",
+      "type": "tv",
+      "rank": 199,
       "title": "Young Justice",
       "year": 2010,
       "rating": 8.6,
@@ -9758,27 +9776,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q785430"
-      }
-    },
-    {
-      "id": "tt10802170",
-      "type": "tv",
-      "rank": 199,
-      "title": "The Rehearsal",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "./posters/tt10802170.jpg",
-      "genres": [
-        "Documentary",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "د ریهرسال",
-      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112915576"
       }
     },
     {
@@ -9807,9 +9804,29 @@
       }
     },
     {
-      "id": "tt6763664",
+      "id": "tt4082744",
       "type": "tv",
       "rank": 201,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
+      }
+    },
+    {
+      "id": "tt6763664",
+      "type": "tv",
+      "rank": 202,
       "title": "The Haunting of Hill House",
       "year": 2018,
       "rating": 8.5,
@@ -9827,26 +9844,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q43379503"
-      }
-    },
-    {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 202,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10357,26 +10354,23 @@
       }
     },
     {
-      "id": "tt0988818",
+      "id": "tt0187664",
       "type": "tv",
       "rank": 226,
-      "title": "Gintama",
-      "year": 2005,
-      "rating": 8.7,
-      "poster": "./posters/tt0988818.jpg",
+      "title": "Spaced",
+      "year": 1999,
+      "rating": 8.5,
+      "poster": "./posters/tt0187664.jpg",
       "genres": [
-        "Animation",
-        "Action",
-        "Comedy",
-        "Sci-Fi"
+        "Comedy"
       ],
       "runtime": 25,
-      "fa": "گینتاما",
-      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
+      "fa": "فاصله",
+      "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0988818/"
+        "faUrl": "https://www.imdb.com/title/tt0187664/"
       }
     },
     {
@@ -10401,23 +10395,26 @@
       }
     },
     {
-      "id": "tt0187664",
+      "id": "tt0988818",
       "type": "tv",
       "rank": 228,
-      "title": "Spaced",
-      "year": 1999,
-      "rating": 8.5,
-      "poster": "./posters/tt0187664.jpg",
+      "title": "Gintama",
+      "year": 2005,
+      "rating": 8.7,
+      "poster": "./posters/tt0988818.jpg",
       "genres": [
-        "Comedy"
+        "Animation",
+        "Action",
+        "Comedy",
+        "Sci-Fi"
       ],
       "runtime": 25,
-      "fa": "فاصله",
-      "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
+      "fa": "گینتاما",
+      "summary": "بیگانگان توکیوی قدیم را اشغال کرده‌اند و سامورایی‌ها دیگر جایگاه سابق را ندارند. گینتوکی برای گذران زندگی هر کاری قبول می‌کند و همراه دوستانش به دردسر می‌افتد.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0187664/"
+        "faUrl": "https://www.imdb.com/title/tt0988818/"
       }
     },
     {
@@ -10485,32 +10482,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt1190634",
-      "type": "tv",
-      "rank": 232,
-      "title": "The Boys",
-      "year": 2019,
-      "rating": 8.5,
-      "poster": "./posters/tt1190634.jpg",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Crime",
-        "Sci-Fi"
-      ],
-      "runtime": 60,
-      "fa": "پسرها",
-      "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q48796994"
-      }
-    },
-    {
       "id": "tt27446493",
       "type": "tv",
-      "rank": 233,
+      "rank": 232,
       "title": "Twinkling Watermelon",
       "year": 2023,
       "rating": 8.8,
@@ -10529,6 +10503,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q118869205"
+      }
+    },
+    {
+      "id": "tt1190634",
+      "type": "tv",
+      "rank": 233,
+      "title": "The Boys",
+      "year": 2019,
+      "rating": 8.5,
+      "poster": "./posters/tt1190634.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime",
+        "Sci-Fi"
+      ],
+      "runtime": 60,
+      "fa": "پسرها",
+      "summary": "گروهی تصمیم می‌گیرند با ابرقهرمانانی مقابله کنند که پشت چهرهٔ محبوبشان، از قدرت خود سوءاستفاده می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48796994"
       }
     },
     {
@@ -10552,29 +10549,9 @@
       }
     },
     {
-      "id": "tt0075537",
-      "type": "tv",
-      "rank": 235,
-      "title": "Mind Your Language",
-      "year": 1977,
-      "rating": 8.6,
-      "poster": "./posters/tt0075537.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "حواست به حرفات باشه",
-      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2512029"
-      }
-    },
-    {
       "id": "tt7278862",
       "type": "tv",
-      "rank": 236,
+      "rank": 235,
       "title": "My Brilliant Friend",
       "year": 2018,
       "rating": 8.6,
@@ -10589,6 +10566,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q56411652"
+      }
+    },
+    {
+      "id": "tt0075537",
+      "type": "tv",
+      "rank": 236,
+      "title": "Mind Your Language",
+      "year": 1977,
+      "rating": 8.6,
+      "poster": "./posters/tt0075537.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "حواست به حرفات باشه",
+      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2512029"
       }
     },
     {
@@ -10806,9 +10803,27 @@
       }
     },
     {
-      "id": "tt12074628",
+      "id": "tt2244495",
       "type": "tv",
       "rank": 247,
+      "title": "The Eric Andre Show",
+      "year": 2012,
+      "rating": 8.5,
+      "poster": "./posters/tt2244495.jpg",
+      "genres": [
+        "Comedy",
+        "Reality-TV",
+        "Talk-Show"
+      ],
+      "runtime": 11,
+      "fa": "",
+      "summary": "اریک آندره در فضایی عجیب تلاش می‌کند یک برنامهٔ گفت‌وگومحور اجرا کند؛ گاهی طراح شوخی‌هاست و گاهی خودش قربانی آن‌ها می‌شود.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt12074628",
+      "type": "tv",
+      "rank": 248,
       "title": "Smiling Friends",
       "year": 2020,
       "rating": 8.5,
@@ -10829,27 +10844,32 @@
       }
     },
     {
-      "id": "tt2244495",
+      "id": "tt1983079",
       "type": "tv",
-      "rank": 248,
-      "title": "The Eric Andre Show",
+      "rank": 249,
+      "title": "Call the Midwife",
       "year": 2012,
-      "rating": 8.5,
-      "poster": "./posters/tt2244495.jpg",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMjAwNzc1MzVeQTJeQWpwZ15BbWU4MDQzODgzMjEx._V1_.jpg",
       "genres": [
-        "Comedy",
-        "Reality-TV",
-        "Talk-Show"
+        "Drama",
+        "History"
       ],
-      "runtime": 11,
-      "fa": "",
-      "summary": "اریک آندره در فضایی عجیب تلاش می‌کند یک برنامهٔ گفت‌وگومحور اجرا کند؛ گاهی طراح شوخی‌هاست و گاهی خودش قربانی آن‌ها می‌شود.",
-      "summaryLanguage": "fa"
+      "runtime": 60,
+      "fa": "با ماما تماس بگیرید",
+      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1983079/",
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt1983079/"
+      }
     },
     {
       "id": "tt0310455",
       "type": "tv",
-      "rank": 249,
+      "rank": 250,
       "title": "Foyle's War",
       "year": 2002,
       "rating": 8.6,
@@ -10869,29 +10889,6 @@
         "faUrl": "https://www.wikidata.org/entity/Q2377188",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
-      }
-    },
-    {
-      "id": "tt1983079",
-      "type": "tv",
-      "rank": 250,
-      "title": "Call the Midwife",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMjAwNzc1MzVeQTJeQWpwZ15BbWU4MDQzODgzMjEx._V1_.jpg",
-      "genres": [
-        "Drama",
-        "History"
-      ],
-      "runtime": 60,
-      "fa": "با ماما تماس بگیرید",
-      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1983079/",
-        "summarySource": "mymemory",
-        "summaryUrl": "https://www.imdb.com/title/tt1983079/"
       }
     }
   ],
@@ -11046,23 +11043,6 @@
       ]
     },
     {
-      "id": "tt10431500",
-      "type": "movie",
-      "rank": null,
-      "title": "Miracle in Cell No. 7",
-      "year": 2019,
-      "rating": 8.2,
-      "poster": "./posters/tt10431500.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 132,
-      "fa": "",
-      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
-      "summaryLanguage": "fa",
-      "summarySource": "https://v3-cinemeta.strem.io/meta/movie/tt10431500.json"
-    },
-    {
       "id": "tt2359704",
       "type": "tv",
       "rank": null,
@@ -11080,6 +11060,29 @@
       "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
       "summaryLanguage": "fa",
       "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt2359704.json"
+    },
+    {
+      "id": "tt21626284",
+      "type": "movie",
+      "rank": null,
+      "title": "Lost Ladies",
+      "year": 2023,
+      "rating": 8.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGI5NzVmNDktZWY2Ni00ZGMwLTlhMzctNzJhYTgzZmQ2ZjNjXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 122,
+      "fa": "لااپاتا خانمها",
+      "summary": "لااپاتا خانم‌ها (به انگلیسی: Laapataa Ladies) که خانم‌های گمشده نیز شناخته می‌شود. یک فیلم کمدی-درام به کارگردانی کیران رائو محصول ۲۰۲۴ است. و تولید شده توسط رائو، عامر خان و جیوتی دشپنده. با بازی نیتانشی گوئل، پراتیبا رانتا، اسپارش شریواستاو، چهایا کادام و راوی کیشان می‌گوید. داستان دو عروس جوان که در حین قطار سواری به خانه شوهرشان رد و بدل می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q124714626",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%84%D8%A7%D8%A7%D9%BE%D8%A7%D8%AA%D8%A7+%D8%AE%D8%A7%D9%86%D9%85%E2%80%8C%D9%87%D8%A7&oldid=44210686"
+      }
     }
   ]
 }
