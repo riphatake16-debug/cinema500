@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "38e04f22310a6ba22a0af228a901f3b936c77cf1f0328d8ad0777a979cc757d1",
+  "version": "229e59d014468cc05f42c8a75b7dec7fd7f31a3007a4c79ca28e97eb639b755a",
   "status": "ok",
-  "retrievedAt": "2026-11-10T01:25:35+00:00",
-  "checkedAt": "2026-11-10T01:25:35+00:00",
+  "retrievedAt": "2026-11-11T01:26:16+00:00",
+  "checkedAt": "2026-11-11T01:26:16+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1362,32 +1362,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 67,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.4,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt0361748",
       "type": "movie",
-      "rank": 68,
+      "rank": 67,
       "title": "Inglourious Basterds",
       "year": 2009,
       "rating": 8.4,
@@ -1408,7 +1385,7 @@
     {
       "id": "tt0081505",
       "type": "movie",
-      "rank": 69,
+      "rank": 68,
       "title": "The Shining",
       "year": 1980,
       "rating": 8.4,
@@ -1429,7 +1406,7 @@
     {
       "id": "tt0032553",
       "type": "movie",
-      "rank": 70,
+      "rank": 69,
       "title": "The Great Dictator",
       "year": 1940,
       "rating": 8.4,
@@ -1446,6 +1423,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q109116"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 70,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.4,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -1891,9 +1891,33 @@
       }
     },
     {
-      "id": "tt0087843",
+      "id": "tt2056785",
       "type": "movie",
       "rank": 91,
+      "title": "Wildwood",
+      "year": 2026,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2JjOGQ1OGMtZmUwYS00YmQ2LTllNzQtZjU2YjY1NzM2NzJjXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "runtime": 130,
+      "fa": "وایلدوود (فیلم)",
+      "summary": "وایلدوود (به انگلیسی: Wildwood) یک فیلم پویانمایی استاپ‌موشن آمریکایی محصول ۲۰۲۶ در ژانر فانتزی تاریک حماسی به کارگردانی تراویس نایت و نویسندگی کریس باتلر است که بر اساس رمانی به همین نام اثر کالین ملوی و کارسون الیس ساخته شده است. این انیمیشن توسط لایکا تولید شده که ششمین پویانمایی استاپ‌موشن خود را می‌سازد. در این فیلم کری مولیگان، پیتون الیزابت لی، جیکوب ترمبلی، ریچارد ئی. گرانت، آکوافینا، آماندلا استنبرگ، تام ویتس، چارلی دی، بلایث دانر، آرتور نایت، آنجلا باست و ماهرشالا علی. صداپیشگی می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q123058740",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt0087843",
+      "type": "movie",
+      "rank": 92,
       "title": "Once Upon a Time in America",
       "year": 1984,
       "rating": 8.3,
@@ -1914,7 +1938,7 @@
     {
       "id": "tt7286456",
       "type": "movie",
-      "rank": 92,
+      "rank": 93,
       "title": "Joker",
       "year": 2019,
       "rating": 8.3,
@@ -1931,7 +1955,7 @@
     {
       "id": "tt0435761",
       "type": "movie",
-      "rank": 93,
+      "rank": 94,
       "title": "Toy Story 3",
       "year": 2010,
       "rating": 8.3,
@@ -1955,7 +1979,7 @@
     {
       "id": "tt0086190",
       "type": "movie",
-      "rank": 94,
+      "rank": 95,
       "title": "Star Wars: Episode VI - Return of the Jedi",
       "year": 1983,
       "rating": 8.3,
@@ -1978,7 +2002,7 @@
     {
       "id": "tt0091251",
       "type": "movie",
-      "rank": 95,
+      "rank": 96,
       "title": "Come and See",
       "year": 1985,
       "rating": 8.3,
@@ -2000,7 +2024,7 @@
     {
       "id": "tt0180093",
       "type": "movie",
-      "rank": 96,
+      "rank": 97,
       "title": "Requiem for a Dream",
       "year": 2000,
       "rating": 8.3,
@@ -2020,7 +2044,7 @@
     {
       "id": "tt1255953",
       "type": "movie",
-      "rank": 97,
+      "rank": 98,
       "title": "Incendies",
       "year": 2010,
       "rating": 8.3,
@@ -2042,7 +2066,7 @@
     {
       "id": "tt0044741",
       "type": "movie",
-      "rank": 98,
+      "rank": 99,
       "title": "Ikiru",
       "year": 1952,
       "rating": 8.3,
@@ -2062,7 +2086,7 @@
     {
       "id": "tt2106476",
       "type": "movie",
-      "rank": 99,
+      "rank": 100,
       "title": "The Hunt",
       "year": 2012,
       "rating": 8.3,
@@ -2082,7 +2106,7 @@
     {
       "id": "tt0338013",
       "type": "movie",
-      "rank": 100,
+      "rank": 101,
       "title": "Eternal Sunshine of the Spotless Mind",
       "year": 2004,
       "rating": 8.3,
@@ -2104,7 +2128,7 @@
     {
       "id": "tt0053604",
       "type": "movie",
-      "rank": 101,
+      "rank": 102,
       "title": "The Apartment",
       "year": 1960,
       "rating": 8.3,
@@ -2126,7 +2150,7 @@
     {
       "id": "tt0056172",
       "type": "movie",
-      "rank": 102,
+      "rank": 103,
       "title": "Lawrence of Arabia",
       "year": 1962,
       "rating": 8.3,
@@ -2149,7 +2173,7 @@
     {
       "id": "tt0113277",
       "type": "movie",
-      "rank": 103,
+      "rank": 104,
       "title": "Heat",
       "year": 1995,
       "rating": 8.3,
@@ -2171,7 +2195,7 @@
     {
       "id": "tt0086250",
       "type": "movie",
-      "rank": 104,
+      "rank": 105,
       "title": "Scarface",
       "year": 1983,
       "rating": 8.3,
@@ -2192,7 +2216,7 @@
     {
       "id": "tt1049413",
       "type": "movie",
-      "rank": 105,
+      "rank": 106,
       "title": "Up",
       "year": 2009,
       "rating": 8.3,
@@ -2216,7 +2240,7 @@
     {
       "id": "tt0105236",
       "type": "movie",
-      "rank": 106,
+      "rank": 107,
       "title": "Reservoir Dogs",
       "year": 1992,
       "rating": 8.2,
@@ -2238,7 +2262,7 @@
     {
       "id": "tt0062622",
       "type": "movie",
-      "rank": 107,
+      "rank": 108,
       "title": "2001: A Space Odyssey",
       "year": 1968,
       "rating": 8.3,
@@ -2259,7 +2283,7 @@
     {
       "id": "tt0036775",
       "type": "movie",
-      "rank": 108,
+      "rank": 109,
       "title": "Double Indemnity",
       "year": 1944,
       "rating": 8.3,
@@ -2283,7 +2307,7 @@
     {
       "id": "tt0986264",
       "type": "movie",
-      "rank": 109,
+      "rank": 110,
       "title": "Like Stars on Earth",
       "year": 2007,
       "rating": 8.3,
@@ -2304,7 +2328,7 @@
     {
       "id": "tt0053125",
       "type": "movie",
-      "rank": 110,
+      "rank": 111,
       "title": "North by Northwest",
       "year": 1959,
       "rating": 8.2,
@@ -2328,7 +2352,7 @@
     {
       "id": "tt0093058",
       "type": "movie",
-      "rank": 111,
+      "rank": 112,
       "title": "Full Metal Jacket",
       "year": 1987,
       "rating": 8.2,
@@ -2349,7 +2373,7 @@
     {
       "id": "tt1832382",
       "type": "movie",
-      "rank": 112,
+      "rank": 113,
       "title": "A Separation",
       "year": 2011,
       "rating": 8.3,
@@ -2365,7 +2389,7 @@
     {
       "id": "tt31514146",
       "type": "movie",
-      "rank": 113,
+      "rank": 114,
       "title": "I Swear",
       "year": 2025,
       "rating": 8.3,
@@ -2386,7 +2410,7 @@
     {
       "id": "tt0095016",
       "type": "movie",
-      "rank": 114,
+      "rank": 115,
       "title": "Die Hard",
       "year": 1988,
       "rating": 8.2,
@@ -2407,7 +2431,7 @@
     {
       "id": "tt0022100",
       "type": "movie",
-      "rank": 115,
+      "rank": 116,
       "title": "M",
       "year": 1931,
       "rating": 8.3,
@@ -2429,7 +2453,7 @@
     {
       "id": "tt0097576",
       "type": "movie",
-      "rank": 116,
+      "rank": 117,
       "title": "Indiana Jones and the Last Crusade",
       "year": 1989,
       "rating": 8.2,
@@ -2449,7 +2473,7 @@
     {
       "id": "tt0056592",
       "type": "movie",
-      "rank": 117,
+      "rank": 118,
       "title": "To Kill a Mockingbird",
       "year": 1962,
       "rating": 8.2,
@@ -2465,27 +2489,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q177922"
-      }
-    },
-    {
-      "id": "tt0033467",
-      "type": "movie",
-      "rank": 118,
-      "title": "Citizen Kane",
-      "year": 1941,
-      "rating": 8.2,
-      "poster": "./posters/tt0033467.jpg",
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 119,
-      "fa": "همشهری کین",
-      "summary": "پس از مرگ چارلز فاستر کین، صاحب یک امپراتوری مطبوعاتی، خبرنگاران دنبال معنای آخرین کلمه‌ای می‌گردند که گفته است: «رزباد».",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q24815"
       }
     },
     {
@@ -2510,9 +2513,30 @@
       }
     },
     {
-      "id": "tt0052357",
+      "id": "tt0033467",
       "type": "movie",
       "rank": 120,
+      "title": "Citizen Kane",
+      "year": 1941,
+      "rating": 8.2,
+      "poster": "./posters/tt0033467.jpg",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 119,
+      "fa": "همشهری کین",
+      "summary": "پس از مرگ چارلز فاستر کین، صاحب یک امپراتوری مطبوعاتی، خبرنگاران دنبال معنای آخرین کلمه‌ای می‌گردند که گفته است: «رزباد».",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q24815"
+      }
+    },
+    {
+      "id": "tt0052357",
+      "type": "movie",
+      "rank": 121,
       "title": "Vertigo",
       "year": 1958,
       "rating": 8.2,
@@ -2534,7 +2558,7 @@
     {
       "id": "tt0070735",
       "type": "movie",
-      "rank": 121,
+      "rank": 122,
       "title": "The Sting",
       "year": 1973,
       "rating": 8.2,
@@ -2556,7 +2580,7 @@
     {
       "id": "tt0120382",
       "type": "movie",
-      "rank": 122,
+      "rank": 123,
       "title": "The Truman Show",
       "year": 1998,
       "rating": 8.2,
@@ -2577,7 +2601,7 @@
     {
       "id": "tt0066921",
       "type": "movie",
-      "rank": 123,
+      "rank": 124,
       "title": "A Clockwork Orange",
       "year": 1971,
       "rating": 8.2,
@@ -2598,7 +2622,7 @@
     {
       "id": "tt0993846",
       "type": "movie",
-      "rank": 124,
+      "rank": 125,
       "title": "The Wolf of Wall Street",
       "year": 2013,
       "rating": 8.2,
@@ -2621,7 +2645,7 @@
     {
       "id": "tt0017136",
       "type": "movie",
-      "rank": 125,
+      "rank": 126,
       "title": "Metropolis",
       "year": 1927,
       "rating": 8.2,
@@ -2642,7 +2666,7 @@
     {
       "id": "tt8579674",
       "type": "movie",
-      "rank": 126,
+      "rank": 127,
       "title": "1917",
       "year": 2019,
       "rating": 8.2,
@@ -2659,7 +2683,7 @@
     {
       "id": "tt0208092",
       "type": "movie",
-      "rank": 127,
+      "rank": 128,
       "title": "Snatch",
       "year": 2000,
       "rating": 8.2,
@@ -2680,7 +2704,7 @@
     {
       "id": "tt1130884",
       "type": "movie",
-      "rank": 128,
+      "rank": 129,
       "title": "Shutter Island",
       "year": 2010,
       "rating": 8.2,
@@ -2701,7 +2725,7 @@
     {
       "id": "tt0363163",
       "type": "movie",
-      "rank": 129,
+      "rank": 130,
       "title": "Downfall",
       "year": 2004,
       "rating": 8.2,
@@ -2724,7 +2748,7 @@
     {
       "id": "tt0119488",
       "type": "movie",
-      "rank": 130,
+      "rank": 131,
       "title": "L.A. Confidential",
       "year": 1997,
       "rating": 8.2,
@@ -2747,7 +2771,7 @@
     {
       "id": "tt6966692",
       "type": "movie",
-      "rank": 131,
+      "rank": 132,
       "title": "Green Book",
       "year": 2018,
       "rating": 8.2,
@@ -2770,7 +2794,7 @@
     {
       "id": "tt5074352",
       "type": "movie",
-      "rank": 132,
+      "rank": 133,
       "title": "Dangal",
       "year": 2016,
       "rating": 8.3,
@@ -2793,7 +2817,7 @@
     {
       "id": "tt0040522",
       "type": "movie",
-      "rank": 133,
+      "rank": 134,
       "title": "Bicycle Thieves",
       "year": 1948,
       "rating": 8.2,
@@ -2813,7 +2837,7 @@
     {
       "id": "tt0055031",
       "type": "movie",
-      "rank": 134,
+      "rank": 135,
       "title": "Judgment at Nuremberg",
       "year": 1961,
       "rating": 8.3,
@@ -2835,7 +2859,7 @@
     {
       "id": "tt0107290",
       "type": "movie",
-      "rank": 135,
+      "rank": 136,
       "title": "Jurassic Park",
       "year": 1993,
       "rating": 8.2,
@@ -2856,7 +2880,7 @@
     {
       "id": "tt0058625",
       "type": "movie",
-      "rank": 136,
+      "rank": 137,
       "title": "Woman in the Dunes",
       "year": 1964,
       "rating": 8.4,
@@ -2877,7 +2901,7 @@
     {
       "id": "tt0372784",
       "type": "movie",
-      "rank": 137,
+      "rank": 138,
       "title": "Batman Begins",
       "year": 2005,
       "rating": 8.2,
@@ -2897,7 +2921,7 @@
     {
       "id": "tt15398776",
       "type": "movie",
-      "rank": 138,
+      "rank": 139,
       "title": "Oppenheimer",
       "year": 2023,
       "rating": 8.2,
@@ -2919,7 +2943,7 @@
     {
       "id": "tt0059578",
       "type": "movie",
-      "rank": 139,
+      "rank": 140,
       "title": "For a Few Dollars More",
       "year": 1965,
       "rating": 8.2,
@@ -2940,7 +2964,7 @@
     {
       "id": "tt0469494",
       "type": "movie",
-      "rank": 140,
+      "rank": 141,
       "title": "There Will Be Blood",
       "year": 2007,
       "rating": 8.2,
@@ -2960,7 +2984,7 @@
     {
       "id": "tt8503618",
       "type": "movie",
-      "rank": 141,
+      "rank": 142,
       "title": "Hamilton",
       "year": 2020,
       "rating": 8.3,
@@ -2983,7 +3007,7 @@
     {
       "id": "tt0053291",
       "type": "movie",
-      "rank": 142,
+      "rank": 143,
       "title": "Some Like It Hot",
       "year": 1959,
       "rating": 8.2,
@@ -3005,7 +3029,7 @@
     {
       "id": "tt0075314",
       "type": "movie",
-      "rank": 143,
+      "rank": 144,
       "title": "Taxi Driver",
       "year": 1976,
       "rating": 8.2,
@@ -3026,7 +3050,7 @@
     {
       "id": "tt10272386",
       "type": "movie",
-      "rank": 144,
+      "rank": 145,
       "title": "The Father",
       "year": 2020,
       "rating": 8.2,
@@ -3047,7 +3071,7 @@
     {
       "id": "tt0167404",
       "type": "movie",
-      "rank": 145,
+      "rank": 146,
       "title": "The Sixth Sense",
       "year": 1999,
       "rating": 8.2,
@@ -3069,7 +3093,7 @@
     {
       "id": "tt0042192",
       "type": "movie",
-      "rank": 146,
+      "rank": 147,
       "title": "All About Eve",
       "year": 1950,
       "rating": 8.2,
@@ -3089,7 +3113,7 @@
     {
       "id": "tt0012349",
       "type": "movie",
-      "rank": 147,
+      "rank": 148,
       "title": "The Kid",
       "year": 1921,
       "rating": 8.2,
@@ -3111,7 +3135,7 @@
     {
       "id": "tt0089881",
       "type": "movie",
-      "rank": 148,
+      "rank": 149,
       "title": "Ran",
       "year": 1985,
       "rating": 8.2,
@@ -3133,7 +3157,7 @@
     {
       "id": "tt0084787",
       "type": "movie",
-      "rank": 149,
+      "rank": 150,
       "title": "The Thing",
       "year": 1982,
       "rating": 8.2,
@@ -3155,7 +3179,7 @@
     {
       "id": "tt0112641",
       "type": "movie",
-      "rank": 150,
+      "rank": 151,
       "title": "Casino",
       "year": 1995,
       "rating": 8.2,
@@ -3176,7 +3200,7 @@
     {
       "id": "tt0477348",
       "type": "movie",
-      "rank": 151,
+      "rank": 152,
       "title": "No Country for Old Men",
       "year": 2007,
       "rating": 8.2,
@@ -3198,7 +3222,7 @@
     {
       "id": "tt1392214",
       "type": "movie",
-      "rank": 152,
+      "rank": 153,
       "title": "Prisoners",
       "year": 2013,
       "rating": 8.2,
@@ -3221,7 +3245,7 @@
     {
       "id": "tt1745960",
       "type": "movie",
-      "rank": 153,
+      "rank": 154,
       "title": "Top Gun: Maverick",
       "year": 2022,
       "rating": 8.2,
@@ -3242,7 +3266,7 @@
     {
       "id": "tt0266697",
       "type": "movie",
-      "rank": 154,
+      "rank": 155,
       "title": "Kill Bill: Vol. 1",
       "year": 2003,
       "rating": 8.2,
@@ -3264,7 +3288,7 @@
     {
       "id": "tt0457430",
       "type": "movie",
-      "rank": 155,
+      "rank": 156,
       "title": "Pan's Labyrinth",
       "year": 2006,
       "rating": 8.2,
@@ -3286,7 +3310,7 @@
     {
       "id": "tt0105695",
       "type": "movie",
-      "rank": 156,
+      "rank": 157,
       "title": "Unforgiven",
       "year": 1992,
       "rating": 8.2,
@@ -3307,7 +3331,7 @@
     {
       "id": "tt0268978",
       "type": "movie",
-      "rank": 157,
+      "rank": 158,
       "title": "A Beautiful Mind",
       "year": 2001,
       "rating": 8.2,
@@ -3329,7 +3353,7 @@
     {
       "id": "tt0347149",
       "type": "movie",
-      "rank": 158,
+      "rank": 159,
       "title": "Howl's Moving Castle",
       "year": 2004,
       "rating": 8.2,
@@ -3352,7 +3376,7 @@
     {
       "id": "tt0040897",
       "type": "movie",
-      "rank": 159,
+      "rank": 160,
       "title": "The Treasure of the Sierra Madre",
       "year": 1948,
       "rating": 8.2,
@@ -3374,7 +3398,7 @@
     {
       "id": "tt0266543",
       "type": "movie",
-      "rank": 160,
+      "rank": 161,
       "title": "Finding Nemo",
       "year": 2003,
       "rating": 8.2,
@@ -3397,7 +3421,7 @@
     {
       "id": "tt4729430",
       "type": "movie",
-      "rank": 161,
+      "rank": 162,
       "title": "Klaus",
       "year": 2019,
       "rating": 8.2,
@@ -3421,7 +3445,7 @@
     {
       "id": "tt12042730",
       "type": "movie",
-      "rank": 162,
+      "rank": 163,
       "title": "Project Hail Mary",
       "year": 2026,
       "rating": 8.2,
@@ -3443,7 +3467,7 @@
     {
       "id": "tt0055630",
       "type": "movie",
-      "rank": 163,
+      "rank": 164,
       "title": "Yojimbo",
       "year": 1961,
       "rating": 8.2,
@@ -3465,7 +3489,7 @@
     {
       "id": "tt0080678",
       "type": "movie",
-      "rank": 164,
+      "rank": 165,
       "title": "The Elephant Man",
       "year": 1980,
       "rating": 8.2,
@@ -3486,7 +3510,7 @@
     {
       "id": "tt32820897",
       "type": "movie",
-      "rank": 165,
+      "rank": 166,
       "title": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
       "year": 2025,
       "rating": 8.3,
@@ -3511,7 +3535,7 @@
     {
       "id": "tt0057115",
       "type": "movie",
-      "rank": 166,
+      "rank": 167,
       "title": "The Great Escape",
       "year": 1963,
       "rating": 8.2,
@@ -3534,7 +3558,7 @@
     {
       "id": "tt0071853",
       "type": "movie",
-      "rank": 167,
+      "rank": 168,
       "title": "Monty Python and the Holy Grail",
       "year": 1975,
       "rating": 8.1,
@@ -3556,7 +3580,7 @@
     {
       "id": "tt0046912",
       "type": "movie",
-      "rank": 168,
+      "rank": 169,
       "title": "Dial M for Murder",
       "year": 1954,
       "rating": 8.1,
@@ -3579,7 +3603,7 @@
     {
       "id": "tt1305806",
       "type": "movie",
-      "rank": 169,
+      "rank": 170,
       "title": "The Secret in Their Eyes",
       "year": 2009,
       "rating": 8.2,
@@ -3602,7 +3626,7 @@
     {
       "id": "tt0031381",
       "type": "movie",
-      "rank": 170,
+      "rank": 171,
       "title": "Gone with the Wind",
       "year": 1939,
       "rating": 8.2,
@@ -3624,7 +3648,7 @@
     {
       "id": "tt0120735",
       "type": "movie",
-      "rank": 171,
+      "rank": 172,
       "title": "Lock, Stock and Two Smoking Barrels",
       "year": 1998,
       "rating": 8.1,
@@ -3645,7 +3669,7 @@
     {
       "id": "tt0264464",
       "type": "movie",
-      "rank": 172,
+      "rank": 173,
       "title": "Catch Me If You Can",
       "year": 2002,
       "rating": 8.1,
@@ -3667,7 +3691,7 @@
     {
       "id": "tt0071315",
       "type": "movie",
-      "rank": 173,
+      "rank": 174,
       "title": "Chinatown",
       "year": 1974,
       "rating": 8.1,
@@ -3689,7 +3713,7 @@
     {
       "id": "tt0434409",
       "type": "movie",
-      "rank": 174,
+      "rank": 175,
       "title": "V for Vendetta",
       "year": 2005,
       "rating": 8.1,
@@ -3712,7 +3736,7 @@
     {
       "id": "tt0097165",
       "type": "movie",
-      "rank": 175,
+      "rank": 176,
       "title": "Dead Poets Society",
       "year": 1989,
       "rating": 8.1,
@@ -3733,7 +3757,7 @@
     {
       "id": "tt2096673",
       "type": "movie",
-      "rank": 176,
+      "rank": 177,
       "title": "Inside Out",
       "year": 2015,
       "rating": 8.1,
@@ -3758,7 +3782,7 @@
     {
       "id": "tt1201607",
       "type": "movie",
-      "rank": 177,
+      "rank": 178,
       "title": "Harry Potter and the Deathly Hallows: Part 2",
       "year": 2011,
       "rating": 8.1,
@@ -3781,7 +3805,7 @@
     {
       "id": "tt0346336",
       "type": "movie",
-      "rank": 178,
+      "rank": 179,
       "title": "The Best of Youth",
       "year": 2003,
       "rating": 8.4,
@@ -3802,7 +3826,7 @@
     {
       "id": "tt0117951",
       "type": "movie",
-      "rank": 179,
+      "rank": 180,
       "title": "Trainspotting",
       "year": 1996,
       "rating": 8.1,
@@ -3823,7 +3847,7 @@
     {
       "id": "tt5027774",
       "type": "movie",
-      "rank": 180,
+      "rank": 181,
       "title": "Three Billboards Outside Ebbing, Missouri",
       "year": 2017,
       "rating": 8.1,
@@ -3845,7 +3869,7 @@
     {
       "id": "tt0050212",
       "type": "movie",
-      "rank": 181,
+      "rank": 182,
       "title": "The Bridge on the River Kwai",
       "year": 1957,
       "rating": 8.1,
@@ -3867,7 +3891,7 @@
     {
       "id": "tt0042876",
       "type": "movie",
-      "rank": 182,
+      "rank": 183,
       "title": "Rashomon",
       "year": 1950,
       "rating": 8.1,
@@ -3889,7 +3913,7 @@
     {
       "id": "tt0072684",
       "type": "movie",
-      "rank": 183,
+      "rank": 184,
       "title": "Barry Lyndon",
       "year": 1975,
       "rating": 8.1,
@@ -3911,7 +3935,7 @@
     {
       "id": "tt0052618",
       "type": "movie",
-      "rank": 184,
+      "rank": 185,
       "title": "Ben-Hur",
       "year": 1959,
       "rating": 8.1,
@@ -3932,7 +3956,7 @@
     {
       "id": "tt29623480",
       "type": "movie",
-      "rank": 185,
+      "rank": 186,
       "title": "The Wild Robot",
       "year": 2024,
       "rating": 8.1,
@@ -3955,7 +3979,7 @@
     {
       "id": "tt2119532",
       "type": "movie",
-      "rank": 186,
+      "rank": 187,
       "title": "Hacksaw Ridge",
       "year": 2016,
       "rating": 8.1,
@@ -3978,7 +4002,7 @@
     {
       "id": "tt1291584",
       "type": "movie",
-      "rank": 187,
+      "rank": 188,
       "title": "Warrior",
       "year": 2011,
       "rating": 8.1,
@@ -4000,7 +4024,7 @@
     {
       "id": "tt0382932",
       "type": "movie",
-      "rank": 188,
+      "rank": 189,
       "title": "Ratatouille",
       "year": 2007,
       "rating": 8.1,
@@ -4024,7 +4048,7 @@
     {
       "id": "tt1392190",
       "type": "movie",
-      "rank": 189,
+      "rank": 190,
       "title": "Mad Max: Fury Road",
       "year": 2015,
       "rating": 8.1,
@@ -4046,7 +4070,7 @@
     {
       "id": "tt0405159",
       "type": "movie",
-      "rank": 190,
+      "rank": 191,
       "title": "Million Dollar Baby",
       "year": 2004,
       "rating": 8.1,
@@ -4067,7 +4091,7 @@
     {
       "id": "tt0118849",
       "type": "movie",
-      "rank": 191,
+      "rank": 192,
       "title": "Children of Heaven",
       "year": 1997,
       "rating": 8.2,
@@ -4089,7 +4113,7 @@
     {
       "id": "tt0116282",
       "type": "movie",
-      "rank": 192,
+      "rank": 193,
       "title": "Fargo",
       "year": 1996,
       "rating": 8.1,
@@ -4111,7 +4135,7 @@
     {
       "id": "tt0096283",
       "type": "movie",
-      "rank": 193,
+      "rank": 194,
       "title": "My Neighbor Totoro",
       "year": 1988,
       "rating": 8.1,
@@ -4135,7 +4159,7 @@
     {
       "id": "tt1205489",
       "type": "movie",
-      "rank": 194,
+      "rank": 195,
       "title": "Gran Torino",
       "year": 2008,
       "rating": 8.1,
@@ -4155,7 +4179,7 @@
     {
       "id": "tt2024544",
       "type": "movie",
-      "rank": 195,
+      "rank": 196,
       "title": "12 Years a Slave",
       "year": 2013,
       "rating": 8.1,
@@ -4177,7 +4201,7 @@
     {
       "id": "tt0892769",
       "type": "movie",
-      "rank": 196,
+      "rank": 197,
       "title": "How to Train Your Dragon",
       "year": 2010,
       "rating": 8.1,
@@ -4201,7 +4225,7 @@
     {
       "id": "tt0081398",
       "type": "movie",
-      "rank": 197,
+      "rank": 198,
       "title": "Raging Bull",
       "year": 1980,
       "rating": 8.1,
@@ -4223,7 +4247,7 @@
     {
       "id": "tt0353969",
       "type": "movie",
-      "rank": 198,
+      "rank": 199,
       "title": "Memories of Murder",
       "year": 2003,
       "rating": 8.1,
@@ -4246,7 +4270,7 @@
     {
       "id": "tt2278388",
       "type": "movie",
-      "rank": 199,
+      "rank": 200,
       "title": "The Grand Budapest Hotel",
       "year": 2014,
       "rating": 8.1,
@@ -4267,7 +4291,7 @@
     {
       "id": "tt0198781",
       "type": "movie",
-      "rank": 200,
+      "rank": 201,
       "title": "Monsters, Inc.",
       "year": 2001,
       "rating": 8.1,
@@ -4291,7 +4315,7 @@
     {
       "id": "tt0112471",
       "type": "movie",
-      "rank": 201,
+      "rank": 202,
       "title": "Before Sunrise",
       "year": 1995,
       "rating": 8.1,
@@ -4313,7 +4337,7 @@
     {
       "id": "tt0083658",
       "type": "movie",
-      "rank": 202,
+      "rank": 203,
       "title": "Blade Runner",
       "year": 1982,
       "rating": 8.1,
@@ -4336,7 +4360,7 @@
     {
       "id": "tt2267998",
       "type": "movie",
-      "rank": 203,
+      "rank": 204,
       "title": "Gone Girl",
       "year": 2014,
       "rating": 8.1,
@@ -4358,7 +4382,7 @@
     {
       "id": "tt1950186",
       "type": "movie",
-      "rank": 204,
+      "rank": 205,
       "title": "Ford v Ferrari",
       "year": 2019,
       "rating": 8.1,
@@ -4381,7 +4405,7 @@
     {
       "id": "tt0073195",
       "type": "movie",
-      "rank": 205,
+      "rank": 206,
       "title": "Jaws",
       "year": 1975,
       "rating": 8.1,
@@ -4399,32 +4423,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q189505"
-      }
-    },
-    {
-      "id": "tt30472557",
-      "type": "movie",
-      "rank": 206,
-      "title": "Chainsaw Man - The Movie: Reze Arc",
-      "year": 2025,
-      "rating": 8.3,
-      "poster": "./posters/tt30472557.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Romance",
-        "Thriller"
-      ],
-      "runtime": 100,
-      "fa": "فیلم چینساو من: آرک رزه",
-      "summary": "دنجی پس از آشنایی با دختری به نام رزه، احساساتی تازه را تجربه می‌کند؛ اما این رابطه در دنیای خطرناک انسان‌ها و شیاطین، او را وارد ماجرایی فراتر از یک دلبستگی ساده می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q123906765"
       }
     },
     {
@@ -4450,9 +4448,35 @@
       }
     },
     {
-      "id": "tt10872600",
+      "id": "tt30472557",
       "type": "movie",
       "rank": 208,
+      "title": "Chainsaw Man - The Movie: Reze Arc",
+      "year": 2025,
+      "rating": 8.3,
+      "poster": "./posters/tt30472557.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Romance",
+        "Thriller"
+      ],
+      "runtime": 100,
+      "fa": "فیلم چینساو من: آرک رزه",
+      "summary": "دنجی پس از آشنایی با دختری به نام رزه، احساساتی تازه را تجربه می‌کند؛ اما این رابطه در دنیای خطرناک انسان‌ها و شیاطین، او را وارد ماجرایی فراتر از یک دلبستگی ساده می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q123906765"
+      }
+    },
+    {
+      "id": "tt10872600",
+      "type": "movie",
+      "rank": 209,
       "title": "Spider-Man: No Way Home",
       "year": 2021,
       "rating": 8.1,
@@ -4475,7 +4499,7 @@
     {
       "id": "tt3011894",
       "type": "movie",
-      "rank": 209,
+      "rank": 210,
       "title": "Wild Tales",
       "year": 2014,
       "rating": 8.1,
@@ -4497,7 +4521,7 @@
     {
       "id": "tt5323662",
       "type": "movie",
-      "rank": 210,
+      "rank": 211,
       "title": "A Silent Voice: The Movie",
       "year": 2016,
       "rating": 8.2,
@@ -4518,7 +4542,7 @@
     {
       "id": "tt0015864",
       "type": "movie",
-      "rank": 211,
+      "rank": 212,
       "title": "The Gold Rush",
       "year": 1925,
       "rating": 8.1,
@@ -4542,7 +4566,7 @@
     {
       "id": "tt0978762",
       "type": "movie",
-      "rank": 212,
+      "rank": 213,
       "title": "Mary and Max",
       "year": 2009,
       "rating": 8.1,
@@ -4564,7 +4588,7 @@
     {
       "id": "tt0015324",
       "type": "movie",
-      "rank": 213,
+      "rank": 214,
       "title": "Sherlock Jr.",
       "year": 1924,
       "rating": 8.1,
@@ -4586,7 +4610,7 @@
     {
       "id": "tt0325980",
       "type": "movie",
-      "rank": 214,
+      "rank": 215,
       "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
       "year": 2003,
       "rating": 8.1,
@@ -4608,7 +4632,7 @@
     {
       "id": "tt3315342",
       "type": "movie",
-      "rank": 215,
+      "rank": 216,
       "title": "Logan",
       "year": 2017,
       "rating": 8.1,
@@ -4631,7 +4655,7 @@
     {
       "id": "tt0075148",
       "type": "movie",
-      "rank": 216,
+      "rank": 217,
       "title": "Rocky",
       "year": 1976,
       "rating": 8.1,
@@ -4647,28 +4671,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q188652"
-      }
-    },
-    {
-      "id": "tt0046268",
-      "type": "movie",
-      "rank": 217,
-      "title": "The Wages of Fear",
-      "year": 1953,
-      "rating": 8.1,
-      "poster": "./posters/tt0046268.jpg",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 156,
-      "fa": "مزد ترس",
-      "summary": "چهار مرد در آمریکای جنوبی برای حمل محموله‌ای از نیتروگلیسیرین استخدام می‌شوند. جاده خطرناک است و آن‌ها تجهیزات لازم برای حمل امن این مادهٔ منفجره را ندارند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q465773"
       }
     },
     {
@@ -4693,9 +4695,31 @@
       }
     },
     {
-      "id": "tt0017925",
+      "id": "tt0046268",
       "type": "movie",
       "rank": 219,
+      "title": "The Wages of Fear",
+      "year": 1953,
+      "rating": 8.1,
+      "poster": "./posters/tt0046268.jpg",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 156,
+      "fa": "مزد ترس",
+      "summary": "چهار مرد در آمریکای جنوبی برای حمل محموله‌ای از نیتروگلیسیرین استخدام می‌شوند. جاده خطرناک است و آن‌ها تجهیزات لازم برای حمل امن این مادهٔ منفجره را ندارند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q465773"
+      }
+    },
+    {
+      "id": "tt0017925",
+      "type": "movie",
+      "rank": 220,
       "title": "The General",
       "year": 1926,
       "rating": 8.1,
@@ -4719,7 +4743,7 @@
     {
       "id": "tt0031679",
       "type": "movie",
-      "rank": 220,
+      "rank": 221,
       "title": "Mr. Smith Goes to Washington",
       "year": 1939,
       "rating": 8.1,
@@ -4740,7 +4764,7 @@
     {
       "id": "tt26548265",
       "type": "movie",
-      "rank": 221,
+      "rank": 222,
       "title": "Maharaja",
       "year": 2024,
       "rating": 8.3,
@@ -4764,7 +4788,7 @@
     {
       "id": "tt0046438",
       "type": "movie",
-      "rank": 222,
+      "rank": 223,
       "title": "Tokyo Story",
       "year": 1953,
       "rating": 8.1,
@@ -4784,7 +4808,7 @@
     {
       "id": "tt15097216",
       "type": "movie",
-      "rank": 223,
+      "rank": 224,
       "title": "Jai Bhim",
       "year": 2021,
       "rating": 8.6,
@@ -4805,7 +4829,7 @@
     {
       "id": "tt0059742",
       "type": "movie",
-      "rank": 224,
+      "rank": 225,
       "title": "The Sound of Music",
       "year": 1965,
       "rating": 8.1,
@@ -4829,7 +4853,7 @@
     {
       "id": "tt0113247",
       "type": "movie",
-      "rank": 225,
+      "rank": 226,
       "title": "La haine",
       "year": 1995,
       "rating": 8.1,
@@ -4850,7 +4874,7 @@
     {
       "id": "tt1895587",
       "type": "movie",
-      "rank": 226,
+      "rank": 227,
       "title": "Spotlight",
       "year": 2015,
       "rating": 8.1,
@@ -4872,7 +4896,7 @@
     {
       "id": "tt0088247",
       "type": "movie",
-      "rank": 227,
+      "rank": 228,
       "title": "The Terminator",
       "year": 1984,
       "rating": 8.1,
@@ -4894,7 +4918,7 @@
     {
       "id": "tt0050986",
       "type": "movie",
-      "rank": 228,
+      "rank": 229,
       "title": "Wild Strawberries",
       "year": 1957,
       "rating": 8.1,
@@ -4915,7 +4939,7 @@
     {
       "id": "tt0036868",
       "type": "movie",
-      "rank": 229,
+      "rank": 230,
       "title": "The Best Years of Our Lives",
       "year": 1946,
       "rating": 8.1,
@@ -4937,7 +4961,7 @@
     {
       "id": "tt0047296",
       "type": "movie",
-      "rank": 230,
+      "rank": 231,
       "title": "On the Waterfront",
       "year": 1954,
       "rating": 8.1,
@@ -4959,7 +4983,7 @@
     {
       "id": "tt0041959",
       "type": "movie",
-      "rank": 231,
+      "rank": 232,
       "title": "The Third Man",
       "year": 1949,
       "rating": 8.1,
@@ -4982,7 +5006,7 @@
     {
       "id": "tt0317705",
       "type": "movie",
-      "rank": 232,
+      "rank": 233,
       "title": "The Incredibles",
       "year": 2004,
       "rating": 8,
@@ -5005,7 +5029,7 @@
     {
       "id": "tt0118715",
       "type": "movie",
-      "rank": 233,
+      "rank": 234,
       "title": "The Big Lebowski",
       "year": 1998,
       "rating": 8.1,
@@ -5026,7 +5050,7 @@
     {
       "id": "tt1028532",
       "type": "movie",
-      "rank": 234,
+      "rank": 235,
       "title": "Hachi: A Dog's Tale",
       "year": 2009,
       "rating": 8.1,
@@ -5048,7 +5072,7 @@
     {
       "id": "tt0381681",
       "type": "movie",
-      "rank": 235,
+      "rank": 236,
       "title": "Before Sunset",
       "year": 2004,
       "rating": 8.1,
@@ -5069,7 +5093,7 @@
     {
       "id": "tt0129167",
       "type": "movie",
-      "rank": 236,
+      "rank": 237,
       "title": "The Iron Giant",
       "year": 1999,
       "rating": 8.1,
@@ -5093,7 +5117,7 @@
     {
       "id": "tt0070047",
       "type": "movie",
-      "rank": 237,
+      "rank": 238,
       "title": "The Exorcist",
       "year": 1973,
       "rating": 8.1,
@@ -5113,7 +5137,7 @@
     {
       "id": "tt3170832",
       "type": "movie",
-      "rank": 238,
+      "rank": 239,
       "title": "Room",
       "year": 2015,
       "rating": 8.1,
@@ -5134,7 +5158,7 @@
     {
       "id": "tt0395169",
       "type": "movie",
-      "rank": 239,
+      "rank": 240,
       "title": "Hotel Rwanda",
       "year": 2004,
       "rating": 8.1,
@@ -5157,7 +5181,7 @@
     {
       "id": "tt0091763",
       "type": "movie",
-      "rank": 240,
+      "rank": 241,
       "title": "Platoon",
       "year": 1986,
       "rating": 8,
@@ -5178,7 +5202,7 @@
     {
       "id": "tt0050976",
       "type": "movie",
-      "rank": 241,
+      "rank": 242,
       "title": "The Seventh Seal",
       "year": 1957,
       "rating": 8.1,
@@ -5199,7 +5223,7 @@
     {
       "id": "tt1979320",
       "type": "movie",
-      "rank": 242,
+      "rank": 243,
       "title": "Rush",
       "year": 2013,
       "rating": 8.1,
@@ -5221,7 +5245,7 @@
     {
       "id": "tt0058946",
       "type": "movie",
-      "rank": 243,
+      "rank": 244,
       "title": "The Battle of Algiers",
       "year": 1966,
       "rating": 8.1,
@@ -5242,7 +5266,7 @@
     {
       "id": "tt0092005",
       "type": "movie",
-      "rank": 244,
+      "rank": 245,
       "title": "Stand by Me",
       "year": 1986,
       "rating": 8.1,
@@ -5263,7 +5287,7 @@
     {
       "id": "tt0032138",
       "type": "movie",
-      "rank": 245,
+      "rank": 246,
       "title": "The Wizard of Oz",
       "year": 1939,
       "rating": 8.1,
@@ -5286,7 +5310,7 @@
     {
       "id": "tt0476735",
       "type": "movie",
-      "rank": 246,
+      "rank": 247,
       "title": "My Father and My Son",
       "year": 2005,
       "rating": 8.2,
@@ -5306,7 +5330,7 @@
     {
       "id": "tt4430212",
       "type": "movie",
-      "rank": 247,
+      "rank": 248,
       "title": "Drishyam",
       "year": 2015,
       "rating": 8.2,
@@ -5329,7 +5353,7 @@
     {
       "id": "tt0019254",
       "type": "movie",
-      "rank": 248,
+      "rank": 249,
       "title": "The Passion of Joan of Arc",
       "year": 1928,
       "rating": 8.1,
@@ -5351,7 +5375,7 @@
     {
       "id": "tt1954470",
       "type": "movie",
-      "rank": 249,
+      "rank": 250,
       "title": "Gangs of Wasseypur",
       "year": 2012,
       "rating": 8.2,
@@ -5370,26 +5394,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt1954470/"
-      }
-    },
-    {
-      "id": "tt10431500",
-      "type": "movie",
-      "rank": 250,
-      "title": "Miracle in Cell No. 7",
-      "year": 2019,
-      "rating": 8.2,
-      "poster": "./posters/tt10431500.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 132,
-      "fa": "معجزه در سلول شماره ۷",
-      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q73804850"
       }
     },
     {
@@ -6534,32 +6538,9 @@
       ]
     },
     {
-      "id": "tt7920978",
-      "type": "tv",
-      "rank": 54,
-      "title": "Persona",
-      "year": 2018,
-      "rating": 8.9,
-      "poster": "./posters/tt7920978.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "شخصیت",
-      "summary": "مردی پس از تشخیص ابتلا به آلزایمر، تصمیم می‌گیرد مجرمان را مجازات کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q52152174"
-      }
-    },
-    {
       "id": "tt0388629",
       "type": "tv",
-      "rank": 55,
+      "rank": 54,
       "title": "One Piece",
       "year": 1999,
       "rating": 9,
@@ -6584,7 +6565,7 @@
     {
       "id": "tt2571774",
       "type": "tv",
-      "rank": 56,
+      "rank": 55,
       "title": "Africa",
       "year": 2013,
       "rating": 8.9,
@@ -6600,6 +6581,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4689532"
+      }
+    },
+    {
+      "id": "tt7920978",
+      "type": "tv",
+      "rank": 56,
+      "title": "Persona",
+      "year": 2018,
+      "rating": 8.9,
+      "poster": "./posters/tt7920978.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "شخصیت",
+      "summary": "مردی پس از تشخیص ابتلا به آلزایمر، تصمیم می‌گیرد مجرمان را مجازات کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q52152174"
       }
     },
     {
@@ -7217,30 +7221,9 @@
       }
     },
     {
-      "id": "tt0121955",
-      "type": "tv",
-      "rank": 85,
-      "title": "South Park",
-      "year": 1997,
-      "rating": 8.7,
-      "poster": "./posters/tt0121955.jpg",
-      "genres": [
-        "Animation",
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساوت پارک",
-      "summary": "چهار دانش‌آموز در ساوت پارکِ کلرادو، با ماجراهای عجیب شهر و رفتارهای بزرگ‌ترها درگیر می‌شوند و معمولاً خودشان هم دردسر درست می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q16538"
-      }
-    },
-    {
       "id": "tt0318871",
       "type": "tv",
-      "rank": 86,
+      "rank": 85,
       "title": "Berserk",
       "year": 1997,
       "rating": 8.8,
@@ -7261,6 +7244,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q18559016"
+      }
+    },
+    {
+      "id": "tt0121955",
+      "type": "tv",
+      "rank": 86,
+      "title": "South Park",
+      "year": 1997,
+      "rating": 8.7,
+      "poster": "./posters/tt0121955.jpg",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساوت پارک",
+      "summary": "چهار دانش‌آموز در ساوت پارکِ کلرادو، با ماجراهای عجیب شهر و رفتارهای بزرگ‌ترها درگیر می‌شوند و معمولاً خودشان هم دردسر درست می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16538"
       }
     },
     {
@@ -7697,9 +7701,32 @@
       }
     },
     {
-      "id": "tt38268282",
+      "id": "tt0092455",
       "type": "tv",
       "rank": 106,
+      "title": "Star Trek: The Next Generation",
+      "year": 1987,
+      "rating": 8.7,
+      "poster": "./posters/tt0092455.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "runtime": 45,
+      "fa": "پیشتازان فضا: نسل بعدی",
+      "summary": "نزدیک به صد سال پس از مأموریت کاپیتان کرک، نسل تازه‌ای از افسران ناوگان ستاره‌ای با سفینهٔ انترپرایز به جست‌وجوی ناشناخته‌ها می‌روند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16290"
+      }
+    },
+    {
+      "id": "tt38268282",
+      "type": "tv",
+      "rank": 107,
       "title": "Steel Ball Run: JoJo's Bizarre Adventure",
       "year": 2026,
       "rating": 9.3,
@@ -7719,29 +7746,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt38268282/"
-      }
-    },
-    {
-      "id": "tt0092455",
-      "type": "tv",
-      "rank": 107,
-      "title": "Star Trek: The Next Generation",
-      "year": 1987,
-      "rating": 8.7,
-      "poster": "./posters/tt0092455.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Sci-Fi"
-      ],
-      "runtime": 45,
-      "fa": "پیشتازان فضا: نسل بعدی",
-      "summary": "نزدیک به صد سال پس از مأموریت کاپیتان کرک، نسل تازه‌ای از افسران ناوگان ستاره‌ای با سفینهٔ انترپرایز به جست‌وجوی ناشناخته‌ها می‌روند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q16290"
       }
     },
     {
@@ -8424,29 +8428,9 @@
       }
     },
     {
-      "id": "tt30263074",
-      "type": "tv",
-      "rank": 139,
-      "title": "Sapne Vs Everyone",
-      "year": 2023,
-      "rating": 9.2,
-      "poster": "./posters/tt30263074.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "ساپنه در مقابل همه",
-      "summary": "دو جوان در کار فروش املاک به‌دنبال آرزوهایشان هستند؛ یکی می‌خواهد بازیگر شود و دیگری ثروتمند. فشار کار و اطرافیان، آن‌ها را به تصمیم‌های سخت می‌کشاند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt30263074/"
-      }
-    },
-    {
       "id": "tt13991232",
       "type": "tv",
-      "rank": 140,
+      "rank": 139,
       "title": "1883",
       "year": 2021,
       "rating": 8.6,
@@ -8463,7 +8447,7 @@
     {
       "id": "tt0094525",
       "type": "tv",
-      "rank": 141,
+      "rank": 140,
       "title": "Poirot",
       "year": 1989,
       "rating": 8.6,
@@ -8481,6 +8465,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q391101"
+      }
+    },
+    {
+      "id": "tt30263074",
+      "type": "tv",
+      "rank": 141,
+      "title": "Sapne Vs Everyone",
+      "year": 2023,
+      "rating": 9.2,
+      "poster": "./posters/tt30263074.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "ساپنه در مقابل همه",
+      "summary": "دو جوان در کار فروش املاک به‌دنبال آرزوهایشان هستند؛ یکی می‌خواهد بازیگر شود و دیگری ثروتمند. فشار کار و اطرافیان، آن‌ها را به تصمیم‌های سخت می‌کشاند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt30263074/"
       }
     },
     {
@@ -8638,31 +8642,9 @@
       }
     },
     {
-      "id": "tt1733785",
-      "type": "tv",
-      "rank": 149,
-      "title": "The Bridge",
-      "year": 2011,
-      "rating": 8.6,
-      "poster": "./posters/tt1733785.jpg",
-      "genres": [
-        "Crime",
-        "Mystery",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "پل",
-      "summary": "کشف جسدی روی پل مرزی دانمارک و سوئد، دو کارآگاه از دو کشور را وادار می‌کند برای یافتن قاتل همکاری کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1211796"
-      }
-    },
-    {
       "id": "tt5290382",
       "type": "tv",
-      "rank": 150,
+      "rank": 149,
       "title": "Mindhunter",
       "year": 2017,
       "rating": 8.6,
@@ -8680,6 +8662,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q25340152"
+      }
+    },
+    {
+      "id": "tt1733785",
+      "type": "tv",
+      "rank": 150,
+      "title": "The Bridge",
+      "year": 2011,
+      "rating": 8.6,
+      "poster": "./posters/tt1733785.jpg",
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "پل",
+      "summary": "کشف جسدی روی پل مرزی دانمارک و سوئد، دو کارآگاه از دو کشور را وادار می‌کند برای یافتن قاتل همکاری کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1211796"
       }
     },
     {
@@ -9268,9 +9272,29 @@
       }
     },
     {
-      "id": "tt8595766",
+      "id": "tt9174558",
       "type": "tv",
       "rank": 178,
+      "title": "Dopesick",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt9174558.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "دوپسیک",
+      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101420707"
+      }
+    },
+    {
+      "id": "tt8595766",
+      "type": "tv",
+      "rank": 179,
       "title": "Yeh Meri Family",
       "year": 2018,
       "rating": 8.9,
@@ -9289,26 +9313,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt8595766/"
-      }
-    },
-    {
-      "id": "tt9174558",
-      "type": "tv",
-      "rank": 179,
-      "title": "Dopesick",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt9174558.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "دوپسیک",
-      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q101420707"
       }
     },
     {
@@ -9493,9 +9497,31 @@
       }
     },
     {
-      "id": "tt0314979",
+      "id": "tt2701582",
       "type": "tv",
       "rank": 188,
+      "title": "Endeavour",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "./posters/tt2701582.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 90,
+      "fa": "اندور (سریال تلویزیونی)",
+      "summary": "در دههٔ ۱۹۶۰، اندور مورسِ جوان همراه با همکار باتجربه‌اش فرد ترزدی، در آغاز دوران خدمتش پرونده‌هایی را در آکسفورد بررسی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2151914"
+      }
+    },
+    {
+      "id": "tt0314979",
+      "type": "tv",
+      "rank": 189,
       "title": "Battlestar Galactica",
       "year": 2003,
       "rating": 8.5,
@@ -9513,28 +9539,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0314979/"
-      }
-    },
-    {
-      "id": "tt2701582",
-      "type": "tv",
-      "rank": 189,
-      "title": "Endeavour",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "./posters/tt2701582.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 90,
-      "fa": "اندور (سریال تلویزیونی)",
-      "summary": "در دههٔ ۱۹۶۰، اندور مورسِ جوان همراه با همکار باتجربه‌اش فرد ترزدی، در آغاز دوران خدمتش پرونده‌هایی را در آکسفورد بررسی می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2151914"
       }
     },
     {
@@ -9682,31 +9686,9 @@
       }
     },
     {
-      "id": "tt35495073",
-      "type": "tv",
-      "rank": 196,
-      "title": "Heated Rivalry",
-      "year": 2025,
-      "rating": 8.7,
-      "poster": "./posters/tt35495073.jpg",
-      "genres": [
-        "Drama",
-        "Romance",
-        "Sport"
-      ],
-      "runtime": 50,
-      "fa": "رقابت داغ",
-      "summary": "دو مرد که ستاره‌های رقیب هاکی هستند، به یکدیگر دل می‌بندند. آن‌ها باید رابطه‌شان را پنهان نگه دارند و هم‌زمان از پس فشار رقابت حرفه‌ای بربیایند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q136813219"
-      }
-    },
-    {
       "id": "tt10802170",
       "type": "tv",
-      "rank": 197,
+      "rank": 196,
       "title": "The Rehearsal",
       "year": 2022,
       "rating": 8.5,
@@ -9727,7 +9709,7 @@
     {
       "id": "tt0423731",
       "type": "tv",
-      "rank": 198,
+      "rank": 197,
       "title": "Samurai Champloo",
       "year": 2004,
       "rating": 8.5,
@@ -9750,9 +9732,56 @@
       }
     },
     {
-      "id": "tt1641384",
+      "id": "tt35495073",
+      "type": "tv",
+      "rank": 198,
+      "title": "Heated Rivalry",
+      "year": 2025,
+      "rating": 8.7,
+      "poster": "./posters/tt35495073.jpg",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Sport"
+      ],
+      "runtime": 50,
+      "fa": "رقابت داغ",
+      "summary": "دو مرد که ستاره‌های رقیب هاکی هستند، به یکدیگر دل می‌بندند. آن‌ها باید رابطه‌شان را پنهان نگه دارند و هم‌زمان از پس فشار رقابت حرفه‌ای بربیایند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q136813219"
+      }
+    },
+    {
+      "id": "tt0280249",
       "type": "tv",
       "rank": 199,
+      "title": "Dragon Ball",
+      "year": 1995,
+      "rating": 8.5,
+      "poster": "./posters/tt0280249.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "runtime": 24,
+      "fa": "دراگون بال",
+      "summary": "سون گوکو، پسری جنگجو با دمی عجیب، برای نیرومندترشدن سفر می‌کند و با هفت گوی اژدها آشنا می‌شود که در کنار هم هر آرزویی را برآورده می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0280249/"
+      }
+    },
+    {
+      "id": "tt1641384",
+      "type": "tv",
+      "rank": 200,
       "title": "Young Justice",
       "year": 2010,
       "rating": 8.6,
@@ -9776,31 +9805,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q785430"
-      }
-    },
-    {
-      "id": "tt0280249",
-      "type": "tv",
-      "rank": 200,
-      "title": "Dragon Ball",
-      "year": 1995,
-      "rating": 8.5,
-      "poster": "./posters/tt0280249.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Fantasy",
-        "Sci-Fi",
-        "Thriller"
-      ],
-      "runtime": 24,
-      "fa": "دراگون بال",
-      "summary": "سون گوکو، پسری جنگجو با دمی عجیب، برای نیرومندترشدن سفر می‌کند و با هفت گوی اژدها آشنا می‌شود که در کنار هم هر آرزویی را برآورده می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0280249/"
       }
     },
     {
@@ -10844,9 +10848,32 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0310455",
+      "id": "tt1983079",
       "type": "tv",
       "rank": 249,
+      "title": "Call the Midwife",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMjAwNzc1MzVeQTJeQWpwZ15BbWU4MDQzODgzMjEx._V1_.jpg",
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "runtime": 60,
+      "fa": "با ماما تماس بگیرید",
+      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1983079/",
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt1983079/"
+      }
+    },
+    {
+      "id": "tt0310455",
+      "type": "tv",
+      "rank": 250,
       "title": "Foyle's War",
       "year": 2002,
       "rating": 8.6,
@@ -10866,29 +10893,6 @@
         "faUrl": "https://www.wikidata.org/entity/Q2377188",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
-      }
-    },
-    {
-      "id": "tt1983079",
-      "type": "tv",
-      "rank": 250,
-      "title": "Call the Midwife",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMjAwNzc1MzVeQTJeQWpwZ15BbWU4MDQzODgzMjEx._V1_.jpg",
-      "genres": [
-        "Drama",
-        "History"
-      ],
-      "runtime": 60,
-      "fa": "با ماما تماس بگیرید",
-      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1983079/",
-        "summarySource": "mymemory",
-        "summaryUrl": "https://www.imdb.com/title/tt1983079/"
       }
     }
   ],
@@ -11083,6 +11087,23 @@
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%84%D8%A7%D8%A7%D9%BE%D8%A7%D8%AA%D8%A7+%D8%AE%D8%A7%D9%86%D9%85%E2%80%8C%D9%87%D8%A7&oldid=44210686"
       }
+    },
+    {
+      "id": "tt10431500",
+      "type": "movie",
+      "rank": null,
+      "title": "Miracle in Cell No. 7",
+      "year": 2019,
+      "rating": 8.2,
+      "poster": "./posters/tt10431500.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 132,
+      "fa": "",
+      "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
+      "summaryLanguage": "fa",
+      "summarySource": "https://v3-cinemeta.strem.io/meta/movie/tt10431500.json"
     }
   ]
 }
