@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "229e59d014468cc05f42c8a75b7dec7fd7f31a3007a4c79ca28e97eb639b755a",
+  "version": "7cf952634a1e123112ca05426041ca4ade4d1735fd6b9a26a8275300e3b02a24",
   "status": "ok",
-  "retrievedAt": "2026-11-11T01:26:16+00:00",
-  "checkedAt": "2026-11-11T01:26:16+00:00",
+  "retrievedAt": "2026-11-12T01:35:05+00:00",
+  "checkedAt": "2026-11-12T01:35:05+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1869,31 +1869,9 @@
       }
     },
     {
-      "id": "tt0045152",
-      "type": "movie",
-      "rank": 90,
-      "title": "Singin' in the Rain",
-      "year": 1952,
-      "rating": 8.3,
-      "poster": "./posters/tt0045152.jpg",
-      "genres": [
-        "Comedy",
-        "Musical",
-        "Romance"
-      ],
-      "runtime": 103,
-      "fa": "آواز در باران",
-      "summary": "با ورود صدا به سینما، یک شرکت فیلم‌سازی و ستاره‌های فیلم‌های صامتش باید خود را با شرایط تازه وفق بدهند؛ کاری که برای همه آسان نیست.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q309153"
-      }
-    },
-    {
       "id": "tt2056785",
       "type": "movie",
-      "rank": 91,
+      "rank": 90,
       "title": "Wildwood",
       "year": 2026,
       "rating": 8.6,
@@ -1912,6 +1890,28 @@
         "faUrl": "https://www.wikidata.org/entity/Q123058740",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt0045152",
+      "type": "movie",
+      "rank": 91,
+      "title": "Singin' in the Rain",
+      "year": 1952,
+      "rating": 8.3,
+      "poster": "./posters/tt0045152.jpg",
+      "genres": [
+        "Comedy",
+        "Musical",
+        "Romance"
+      ],
+      "runtime": 103,
+      "fa": "آواز در باران",
+      "summary": "با ورود صدا به سینما، یک شرکت فیلم‌سازی و ستاره‌های فیلم‌های صامتش باید خود را با شرایط تازه وفق بدهند؛ کاری که برای همه آسان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q309153"
       }
     },
     {
@@ -2643,9 +2643,26 @@
       }
     },
     {
-      "id": "tt0017136",
+      "id": "tt8579674",
       "type": "movie",
       "rank": 126,
+      "title": "1917",
+      "year": 2019,
+      "rating": 8.2,
+      "poster": "./posters/tt8579674.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 119,
+      "fa": "",
+      "summary": "در جنگ جهانی اول، دو سرباز باید در زمانی کوتاه پیامی را به خط مقدم برسانند تا ۱۶۰۰ سرباز را از افتادن در تلهٔ دشمن نجات دهند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0017136",
+      "type": "movie",
+      "rank": 127,
       "title": "Metropolis",
       "year": 1927,
       "rating": 8.2,
@@ -2662,23 +2679,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q151599"
       }
-    },
-    {
-      "id": "tt8579674",
-      "type": "movie",
-      "rank": 127,
-      "title": "1917",
-      "year": 2019,
-      "rating": 8.2,
-      "poster": "./posters/tt8579674.jpg",
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "runtime": 119,
-      "fa": "",
-      "summary": "در جنگ جهانی اول، دو سرباز باید در زمانی کوتاه پیامی را به خط مقدم برسانند تا ۱۶۰۰ سرباز را از افتادن در تلهٔ دشمن نجات دهند.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt0208092",
@@ -2878,9 +2878,29 @@
       }
     },
     {
-      "id": "tt0058625",
+      "id": "tt0372784",
       "type": "movie",
       "rank": 137,
+      "title": "Batman Begins",
+      "year": 2005,
+      "rating": 8.2,
+      "poster": "./posters/tt0372784.jpg",
+      "genres": [
+        "Crime"
+      ],
+      "runtime": 140,
+      "fa": "بتمن آغاز میکند",
+      "summary": "بروس وین پس از آموزش نزد استادش، مبارزه برای رهایی گاتهام از جنایت و فساد را در قامت بتمن آغاز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q166262"
+      }
+    },
+    {
+      "id": "tt0058625",
+      "type": "movie",
+      "rank": 138,
       "title": "Woman in the Dunes",
       "year": 1964,
       "rating": 8.4,
@@ -2896,26 +2916,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1207936"
-      }
-    },
-    {
-      "id": "tt0372784",
-      "type": "movie",
-      "rank": 138,
-      "title": "Batman Begins",
-      "year": 2005,
-      "rating": 8.2,
-      "poster": "./posters/tt0372784.jpg",
-      "genres": [
-        "Crime"
-      ],
-      "runtime": 140,
-      "fa": "بتمن آغاز میکند",
-      "summary": "بروس وین پس از آموزش نزد استادش، مبارزه برای رهایی گاتهام از جنایت و فساد را در قامت بتمن آغاز می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q166262"
       }
     },
     {
@@ -3780,9 +3780,30 @@
       }
     },
     {
-      "id": "tt1201607",
+      "id": "tt0346336",
       "type": "movie",
       "rank": 178,
+      "title": "The Best of Youth",
+      "year": 2003,
+      "rating": 8.4,
+      "poster": "./posters/tt0346336.jpg",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 374,
+      "fa": "بهترین دوران جوانی",
+      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1217941"
+      }
+    },
+    {
+      "id": "tt1201607",
+      "type": "movie",
+      "rank": 179,
       "title": "Harry Potter and the Deathly Hallows: Part 2",
       "year": 2011,
       "rating": 8.1,
@@ -3800,27 +3821,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q232009"
-      }
-    },
-    {
-      "id": "tt0346336",
-      "type": "movie",
-      "rank": 179,
-      "title": "The Best of Youth",
-      "year": 2003,
-      "rating": 8.4,
-      "poster": "./posters/tt0346336.jpg",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 374,
-      "fa": "بهترین دوران جوانی",
-      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1217941"
       }
     },
     {
@@ -4426,31 +4426,9 @@
       }
     },
     {
-      "id": "tt0107207",
-      "type": "movie",
-      "rank": 207,
-      "title": "In the Name of the Father",
-      "year": 1993,
-      "rating": 8.1,
-      "poster": "./posters/tt0107207.jpg",
-      "genres": [
-        "Biography",
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 133,
-      "fa": "به نام پدر",
-      "summary": "اعتراف اجباری مردی جوان به یک بمب‌گذاری، خودش و پدرش را به زندان می‌اندازد. یک وکیل تلاش می‌کند حقیقت پرونده را روشن کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q304074"
-      }
-    },
-    {
       "id": "tt30472557",
       "type": "movie",
-      "rank": 208,
+      "rank": 207,
       "title": "Chainsaw Man - The Movie: Reze Arc",
       "year": 2025,
       "rating": 8.3,
@@ -4471,6 +4449,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q123906765"
+      }
+    },
+    {
+      "id": "tt0107207",
+      "type": "movie",
+      "rank": 208,
+      "title": "In the Name of the Father",
+      "year": 1993,
+      "rating": 8.1,
+      "poster": "./posters/tt0107207.jpg",
+      "genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 133,
+      "fa": "به نام پدر",
+      "summary": "اعتراف اجباری مردی جوان به یک بمب‌گذاری، خودش و پدرش را به زندان می‌اندازد. یک وکیل تلاش می‌کند حقیقت پرونده را روشن کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q304074"
       }
     },
     {
@@ -4630,9 +4630,30 @@
       }
     },
     {
-      "id": "tt3315342",
+      "id": "tt0075148",
       "type": "movie",
       "rank": 216,
+      "title": "Rocky",
+      "year": 1976,
+      "rating": 8.1,
+      "poster": "./posters/tt0075148.jpg",
+      "genres": [
+        "Drama",
+        "Sport"
+      ],
+      "runtime": 120,
+      "fa": "راکی",
+      "summary": "بوکسوری گمنام فرصت مبارزه با قهرمان سنگین‌وزن را پیدا می‌کند. او می‌خواهد تا پایان مسابقه دوام بیاورد و توانایی‌اش را به خودش ثابت کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q188652"
+      }
+    },
+    {
+      "id": "tt3315342",
+      "type": "movie",
+      "rank": 217,
       "title": "Logan",
       "year": 2017,
       "rating": 8.1,
@@ -4650,27 +4671,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q24053263"
-      }
-    },
-    {
-      "id": "tt0075148",
-      "type": "movie",
-      "rank": 217,
-      "title": "Rocky",
-      "year": 1976,
-      "rating": 8.1,
-      "poster": "./posters/tt0075148.jpg",
-      "genres": [
-        "Drama",
-        "Sport"
-      ],
-      "runtime": 120,
-      "fa": "راکی",
-      "summary": "بوکسوری گمنام فرصت مبارزه با قهرمان سنگین‌وزن را پیدا می‌کند. او می‌خواهد تا پایان مسابقه دوام بیاورد و توانایی‌اش را به خودش ثابت کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q188652"
       }
     },
     {
@@ -4916,30 +4916,9 @@
       }
     },
     {
-      "id": "tt0050986",
-      "type": "movie",
-      "rank": 229,
-      "title": "Wild Strawberries",
-      "year": 1957,
-      "rating": 8.1,
-      "poster": "./posters/tt0050986.jpg",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 92,
-      "fa": "توت فرنگیهای وحشی",
-      "summary": "استادی سالخورده در طول یک سفر، به خاطراتش برمی‌گردد و با تنهایی و فاصله‌ای روبه‌رو می‌شود که در طول زندگی میان خودش و دیگران ایجاد کرده است.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q239756"
-      }
-    },
-    {
       "id": "tt0036868",
       "type": "movie",
-      "rank": 230,
+      "rank": 229,
       "title": "The Best Years of Our Lives",
       "year": 1946,
       "rating": 8.1,
@@ -4956,6 +4935,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q645094"
+      }
+    },
+    {
+      "id": "tt0050986",
+      "type": "movie",
+      "rank": 230,
+      "title": "Wild Strawberries",
+      "year": 1957,
+      "rating": 8.1,
+      "poster": "./posters/tt0050986.jpg",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 92,
+      "fa": "توت فرنگیهای وحشی",
+      "summary": "استادی سالخورده در طول یک سفر، به خاطراتش برمی‌گردد و با تنهایی و فاصله‌ای روبه‌رو می‌شود که در طول زندگی میان خودش و دیگران ایجاد کرده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q239756"
       }
     },
     {
@@ -6171,9 +6171,29 @@
       }
     },
     {
-      "id": "tt33043892",
+      "id": "tt13675832",
       "type": "tv",
       "rank": 37,
+      "title": "As If",
+      "year": 2021,
+      "rating": 9,
+      "poster": "./posters/tt13675832.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "مثل اینکه",
+      "summary": "ییلماز، ایلکان و دوستانشان با اتفاق‌های کوچک و عجیب زندگی روزمره درگیر می‌شوند؛ سوءتفاهم‌ها و بحث‌های پایان‌ناپذیری که هر بار مسئله‌ای ساده را به بحرانی خنده‌دار تبدیل می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt13675832/"
+      }
+    },
+    {
+      "id": "tt33043892",
+      "type": "tv",
+      "rank": 38,
       "title": "Dexter: Resurrection",
       "year": 2025,
       "rating": 9,
@@ -6191,26 +6211,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q127919404"
-      }
-    },
-    {
-      "id": "tt13675832",
-      "type": "tv",
-      "rank": 38,
-      "title": "As If",
-      "year": 2021,
-      "rating": 9,
-      "poster": "./posters/tt13675832.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "مثل اینکه",
-      "summary": "ییلماز، ایلکان و دوستانشان با اتفاق‌های کوچک و عجیب زندگی روزمره درگیر می‌شوند؛ سوءتفاهم‌ها و بحث‌های پایان‌ناپذیری که هر بار مسئله‌ای ساده را به بحرانی خنده‌دار تبدیل می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt13675832/"
       }
     },
     {
@@ -6693,9 +6693,29 @@
       }
     },
     {
-      "id": "tt14986406",
+      "id": "tt0472954",
       "type": "tv",
       "rank": 61,
+      "title": "It's Always Sunny in Philadelphia",
+      "year": 2005,
+      "rating": 8.8,
+      "poster": "./posters/tt0472954.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "فیلادلفیا همیشه آفتابی است",
+      "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23670"
+      }
+    },
+    {
+      "id": "tt14986406",
+      "type": "tv",
+      "rank": 62,
       "title": "Bleach: Thousand-Year Blood War",
       "year": 2022,
       "rating": 9,
@@ -6713,26 +6733,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q112631839"
-      }
-    },
-    {
-      "id": "tt0472954",
-      "type": "tv",
-      "rank": 62,
-      "title": "It's Always Sunny in Philadelphia",
-      "year": 2005,
-      "rating": 8.8,
-      "poster": "./posters/tt0472954.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "فیلادلفیا همیشه آفتابی است",
-      "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23670"
       }
     },
     {
@@ -7724,9 +7724,29 @@
       }
     },
     {
-      "id": "tt38268282",
+      "id": "tt0804503",
       "type": "tv",
       "rank": 107,
+      "title": "Mad Men",
+      "year": 2007,
+      "rating": 8.7,
+      "poster": "./posters/tt0804503.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 45,
+      "fa": "مد من",
+      "summary": "در آغاز دههٔ ۱۹۶۰، کارکنان یک آژانس تبلیغاتی در نیویورک برای موفقیت رقابت می‌کنند. در مرکز ماجرا دان دریپر است؛ مدیر مرموز بخش خلاقیت که گذشته‌اش را پنهان می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q223977"
+      }
+    },
+    {
+      "id": "tt38268282",
+      "type": "tv",
+      "rank": 108,
       "title": "Steel Ball Run: JoJo's Bizarre Adventure",
       "year": 2026,
       "rating": 9.3,
@@ -7746,26 +7766,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt38268282/"
-      }
-    },
-    {
-      "id": "tt0804503",
-      "type": "tv",
-      "rank": 108,
-      "title": "Mad Men",
-      "year": 2007,
-      "rating": 8.7,
-      "poster": "./posters/tt0804503.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 45,
-      "fa": "مد من",
-      "summary": "در آغاز دههٔ ۱۹۶۰، کارکنان یک آژانس تبلیغاتی در نیویورک برای موفقیت رقابت می‌کنند. در مرکز ماجرا دان دریپر است؛ مدیر مرموز بخش خلاقیت که گذشته‌اش را پنهان می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q223977"
       }
     },
     {
@@ -8428,26 +8428,9 @@
       }
     },
     {
-      "id": "tt13991232",
-      "type": "tv",
-      "rank": 139,
-      "title": "1883",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt13991232.jpg",
-      "genres": [
-        "Drama",
-        "Western"
-      ],
-      "runtime": 60,
-      "fa": "",
-      "summary": "خانوادهٔ داتن در آمریکای پس از جنگ داخلی، همراه کاروانی از مهاجران راهی غرب می‌شوند؛ سفری سخت و خطرناک به امید پیدا کردن جایی برای زندگی بهتر.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0094525",
       "type": "tv",
-      "rank": 140,
+      "rank": 139,
       "title": "Poirot",
       "year": 1989,
       "rating": 8.6,
@@ -8466,6 +8449,23 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q391101"
       }
+    },
+    {
+      "id": "tt13991232",
+      "type": "tv",
+      "rank": 140,
+      "title": "1883",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt13991232.jpg",
+      "genres": [
+        "Drama",
+        "Western"
+      ],
+      "runtime": 60,
+      "fa": "",
+      "summary": "خانوادهٔ داتن در آمریکای پس از جنگ داخلی، همراه کاروانی از مهاجران راهی غرب می‌شوند؛ سفری سخت و خطرناک به امید پیدا کردن جایی برای زندگی بهتر.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt30263074",
@@ -8908,9 +8908,29 @@
       }
     },
     {
-      "id": "tt27497448",
+      "id": "tt0080306",
       "type": "tv",
       "rank": 161,
+      "title": "Yes Minister",
+      "year": 1980,
+      "rating": 8.6,
+      "poster": "./posters/tt0080306.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بله آقای وزیر",
+      "summary": "جیمز هکر وزیر می‌شود و فکر می‌کند می‌تواند تغییرهای بزرگی ایجاد کند. اما خیلی زود می‌فهمد پیش‌بردن تصمیم‌هایش در میان سیاست‌مداران و کارمندان دولت چقدر سخت است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q732383"
+      }
+    },
+    {
+      "id": "tt27497448",
+      "type": "tv",
+      "rank": 162,
       "title": "A Knight of the Seven Kingdoms",
       "year": 2026,
       "rating": 8.6,
@@ -8927,26 +8947,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q120277524"
-      }
-    },
-    {
-      "id": "tt0080306",
-      "type": "tv",
-      "rank": 162,
-      "title": "Yes Minister",
-      "year": 1980,
-      "rating": 8.6,
-      "poster": "./posters/tt0080306.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بله آقای وزیر",
-      "summary": "جیمز هکر وزیر می‌شود و فکر می‌کند می‌تواند تغییرهای بزرگی ایجاد کند. اما خیلی زود می‌فهمد پیش‌بردن تصمیم‌هایش در میان سیاست‌مداران و کارمندان دولت چقدر سخت است.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q732383"
       }
     },
     {
@@ -9732,31 +9732,9 @@
       }
     },
     {
-      "id": "tt35495073",
-      "type": "tv",
-      "rank": 198,
-      "title": "Heated Rivalry",
-      "year": 2025,
-      "rating": 8.7,
-      "poster": "./posters/tt35495073.jpg",
-      "genres": [
-        "Drama",
-        "Romance",
-        "Sport"
-      ],
-      "runtime": 50,
-      "fa": "رقابت داغ",
-      "summary": "دو مرد که ستاره‌های رقیب هاکی هستند، به یکدیگر دل می‌بندند. آن‌ها باید رابطه‌شان را پنهان نگه دارند و هم‌زمان از پس فشار رقابت حرفه‌ای بربیایند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q136813219"
-      }
-    },
-    {
       "id": "tt0280249",
       "type": "tv",
-      "rank": 199,
+      "rank": 198,
       "title": "Dragon Ball",
       "year": 1995,
       "rating": 8.5,
@@ -9781,7 +9759,7 @@
     {
       "id": "tt1641384",
       "type": "tv",
-      "rank": 200,
+      "rank": 199,
       "title": "Young Justice",
       "year": 2010,
       "rating": 8.6,
@@ -9805,6 +9783,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q785430"
+      }
+    },
+    {
+      "id": "tt35495073",
+      "type": "tv",
+      "rank": 200,
+      "title": "Heated Rivalry",
+      "year": 2025,
+      "rating": 8.7,
+      "poster": "./posters/tt35495073.jpg",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Sport"
+      ],
+      "runtime": 50,
+      "fa": "رقابت داغ",
+      "summary": "دو مرد که ستاره‌های رقیب هاکی هستند، به یکدیگر دل می‌بندند. آن‌ها باید رابطه‌شان را پنهان نگه دارند و هم‌زمان از پس فشار رقابت حرفه‌ای بربیایند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q136813219"
       }
     },
     {
@@ -10158,31 +10158,9 @@
       }
     },
     {
-      "id": "tt1534360",
-      "type": "tv",
-      "rank": 217,
-      "title": "Ezel",
-      "year": 2009,
-      "rating": 8.6,
-      "poster": "./posters/tt1534360.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 90,
-      "fa": "ایزل",
-      "summary": "عمر اوچار پس از خیانت دوستان مورد اعتمادش و زنی که دوست داشت، با هویت ازل بازمی‌گردد تا انتقام بگیرد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q840657"
-      }
-    },
-    {
       "id": "tt20859920",
       "type": "tv",
-      "rank": 218,
+      "rank": 217,
       "title": "Alchemy of Souls",
       "year": 2022,
       "rating": 8.7,
@@ -10201,6 +10179,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q110890248"
+      }
+    },
+    {
+      "id": "tt1534360",
+      "type": "tv",
+      "rank": 218,
+      "title": "Ezel",
+      "year": 2009,
+      "rating": 8.6,
+      "poster": "./posters/tt1534360.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 90,
+      "fa": "ایزل",
+      "summary": "عمر اوچار پس از خیانت دوستان مورد اعتمادش و زنی که دوست داشت، با هویت ازل بازمی‌گردد تا انتقام بگیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q840657"
       }
     },
     {
@@ -10358,9 +10358,29 @@
       }
     },
     {
-      "id": "tt0163507",
+      "id": "tt0187664",
       "type": "tv",
       "rank": 226,
+      "title": "Spaced",
+      "year": 1999,
+      "rating": 8.5,
+      "poster": "./posters/tt0187664.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 25,
+      "fa": "فاصله",
+      "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0187664/"
+      }
+    },
+    {
+      "id": "tt0163507",
+      "type": "tv",
+      "rank": 227,
       "title": "Whose Line Is It Anyway?",
       "year": 1998,
       "rating": 8.5,
@@ -10376,26 +10396,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0163507/"
-      }
-    },
-    {
-      "id": "tt0187664",
-      "type": "tv",
-      "rank": 227,
-      "title": "Spaced",
-      "year": 1999,
-      "rating": 8.5,
-      "poster": "./posters/tt0187664.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 25,
-      "fa": "فاصله",
-      "summary": "تیم و دیزی، دو دوست بیست‌وچندساله در شمال لندن، برای اجارهٔ تنها آپارتمانی که توان پرداختش را دارند، باید وانمود کنند زوج هستند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0187664/"
       }
     },
     {
@@ -10676,30 +10676,9 @@
       }
     },
     {
-      "id": "tt1877368",
-      "type": "tv",
-      "rank": 241,
-      "title": "The Great British Baking Show",
-      "year": 2010,
-      "rating": 8.6,
-      "poster": "./posters/tt1877368.jpg",
-      "genres": [
-        "Game-Show",
-        "Reality-TV"
-      ],
-      "runtime": 60,
-      "fa": "نقشه بزرگ.",
-      "summary": "شرکت‌کننده‌های غیرحرفه‌ای هر هفته در چند چالش شیرینی‌پزی رقابت می‌کنند. آن‌ها باید با مهارت، خلاقیت و مدیریت زمان، نظر داوران را جلب کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1877368/"
-      }
-    },
-    {
       "id": "tt4236770",
       "type": "tv",
-      "rank": 242,
+      "rank": 241,
       "title": "Yellowstone",
       "year": 2018,
       "rating": 8.6,
@@ -10715,6 +10694,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q47452423"
+      }
+    },
+    {
+      "id": "tt1877368",
+      "type": "tv",
+      "rank": 242,
+      "title": "The Great British Baking Show",
+      "year": 2010,
+      "rating": 8.6,
+      "poster": "./posters/tt1877368.jpg",
+      "genres": [
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "runtime": 60,
+      "fa": "نقشه بزرگ.",
+      "summary": "شرکت‌کننده‌های غیرحرفه‌ای هر هفته در چند چالش شیرینی‌پزی رقابت می‌کنند. آن‌ها باید با مهارت، خلاقیت و مدیریت زمان، نظر داوران را جلب کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1877368/"
       }
     },
     {
@@ -10830,9 +10830,35 @@
       }
     },
     {
-      "id": "tt2244495",
+      "id": "tt2359704",
       "type": "tv",
       "rank": 248,
+      "title": "JoJo's Bizarre Adventure",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "./posters/tt2359704.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
+      "runtime": 24,
+      "fa": "ماجراجویی عجیب و غریب جوجو (مجموعه تلویزیونی)",
+      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q28930028"
+      }
+    },
+    {
+      "id": "tt2244495",
+      "type": "tv",
+      "rank": 249,
       "title": "The Eric Andre Show",
       "year": 2012,
       "rating": 8.5,
@@ -10850,7 +10876,7 @@
     {
       "id": "tt1983079",
       "type": "tv",
-      "rank": 249,
+      "rank": 250,
       "title": "Call the Midwife",
       "year": 2012,
       "rating": 8.6,
@@ -10868,31 +10894,6 @@
         "faUrl": "https://www.imdb.com/title/tt1983079/",
         "summarySource": "mymemory",
         "summaryUrl": "https://www.imdb.com/title/tt1983079/"
-      }
-    },
-    {
-      "id": "tt0310455",
-      "type": "tv",
-      "rank": 250,
-      "title": "Foyle's War",
-      "year": 2002,
-      "rating": 8.6,
-      "poster": "https://m.media-amazon.com/images/M/MV5BNjExMDJlZWUtNzQxMS00ZGI4LTg1N2QtMmU3NTkyN2Q4NzYyXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery",
-        "War"
-      ],
-      "runtime": 90,
-      "fa": "بازرس فویل",
-      "summary": "بازرس فویل (انگلیسی: Foyle's War) یک سریال قسمت-محور در ژانر جنایی – درام محصول انگلستان است. داستان سریال در زمان جنگ دوم جهانی در انگلستان واقع است و در هر قسمت حوادث جنایی رخ می‌دهد که بازرس فویل به بررسی علت وقوع جنایت و دستگیری عاملان می‌پردازد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2377188",
-        "summarySource": "wikipedia-fa",
-        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
       }
     }
   ],
@@ -11047,25 +11048,6 @@
       ]
     },
     {
-      "id": "tt2359704",
-      "type": "tv",
-      "rank": null,
-      "title": "JoJo's Bizarre Adventure",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "./posters/tt2359704.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Animation"
-      ],
-      "runtime": 24,
-      "fa": "",
-      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
-      "summaryLanguage": "fa",
-      "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt2359704.json"
-    },
-    {
       "id": "tt21626284",
       "type": "movie",
       "rank": null,
@@ -11104,6 +11086,31 @@
       "summary": "پدری با ناتوانی ذهنی به‌اشتباه به قتل متهم و زندانی می‌شود. پیوند عمیق او با دختر کوچکش، زندگی هم‌بندی‌ها را تحت تأثیر قرار می‌دهد و امید به اثبات بی‌گناهی‌اش را زنده نگه می‌دارد.",
       "summaryLanguage": "fa",
       "summarySource": "https://v3-cinemeta.strem.io/meta/movie/tt10431500.json"
+    },
+    {
+      "id": "tt0310455",
+      "type": "tv",
+      "rank": null,
+      "title": "Foyle's War",
+      "year": 2002,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjExMDJlZWUtNzQxMS00ZGI4LTg1N2QtMmU3NTkyN2Q4NzYyXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "War"
+      ],
+      "runtime": 90,
+      "fa": "بازرس فویل",
+      "summary": "بازرس فویل (انگلیسی: Foyle's War) یک سریال قسمت-محور در ژانر جنایی – درام محصول انگلستان است. داستان سریال در زمان جنگ دوم جهانی در انگلستان واقع است و در هر قسمت حوادث جنایی رخ می‌دهد که بازرس فویل به بررسی علت وقوع جنایت و دستگیری عاملان می‌پردازد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2377188",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
+      }
     }
   ]
 }
