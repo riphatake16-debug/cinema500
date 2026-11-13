@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "7cf952634a1e123112ca05426041ca4ade4d1735fd6b9a26a8275300e3b02a24",
+  "version": "9914150c8a22af3486cdedc4639bce79655fbc70e879a3b3377e8d774453a663",
   "status": "ok",
-  "retrievedAt": "2026-11-12T01:35:05+00:00",
-  "checkedAt": "2026-11-12T01:35:05+00:00",
+  "retrievedAt": "2026-11-13T01:29:03+00:00",
+  "checkedAt": "2026-11-13T01:29:03+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1529,7 +1529,7 @@
         "Adventure",
         "Sci-Fi"
       ],
-      "runtime": 181,
+      "runtime": 186,
       "fa": "انتقامجویان: پایان بازی",
       "summary": "پس از نبرد با تانوس، انتقام‌جویانِ باقی‌مانده دوباره دور هم جمع می‌شوند تا راهی برای جبران اتفاق‌های آن نبرد پیدا کنند.",
       "summaryLanguage": "fa",
@@ -1849,29 +1849,9 @@
       }
     },
     {
-      "id": "tt8267604",
-      "type": "movie",
-      "rank": 89,
-      "title": "Capernaum",
-      "year": 2018,
-      "rating": 8.4,
-      "poster": "./posters/tt8267604.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 126,
-      "fa": "کفرناحوم",
-      "summary": "پسربچه‌ای دوازده‌ساله که برای جرمی خشونت‌آمیز زندانی شده، از پدر و مادرش به دلیل بی‌توجهی شکایت می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q51803319"
-      }
-    },
-    {
       "id": "tt2056785",
       "type": "movie",
-      "rank": 90,
+      "rank": 89,
       "title": "Wildwood",
       "year": 2026,
       "rating": 8.6,
@@ -1890,6 +1870,26 @@
         "faUrl": "https://www.wikidata.org/entity/Q123058740",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt8267604",
+      "type": "movie",
+      "rank": 90,
+      "title": "Capernaum",
+      "year": 2018,
+      "rating": 8.4,
+      "poster": "./posters/tt8267604.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 126,
+      "fa": "کفرناحوم",
+      "summary": "پسربچه‌ای دوازده‌ساله که برای جرمی خشونت‌آمیز زندانی شده، از پدر و مادرش به دلیل بی‌توجهی شکایت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q51803319"
       }
     },
     {
@@ -2599,30 +2599,9 @@
       }
     },
     {
-      "id": "tt0066921",
-      "type": "movie",
-      "rank": 124,
-      "title": "A Clockwork Orange",
-      "year": 1971,
-      "rating": 8.2,
-      "poster": "./posters/tt0066921.jpg",
-      "genres": [
-        "Crime",
-        "Sci-Fi"
-      ],
-      "runtime": 136,
-      "fa": "پرتقال کوکی",
-      "summary": "در آینده‌ای نزدیک، رهبر خشن یک گروه تبهکار به زندان می‌افتد و برای شرکت در آزمایشی با هدف تغییر رفتارش داوطلب می‌شود؛ اما نتیجه آن چیزی نیست که انتظار دارد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q181086"
-      }
-    },
-    {
       "id": "tt0993846",
       "type": "movie",
-      "rank": 125,
+      "rank": 124,
       "title": "The Wolf of Wall Street",
       "year": 2013,
       "rating": 8.2,
@@ -2643,26 +2622,30 @@
       }
     },
     {
-      "id": "tt8579674",
+      "id": "tt0066921",
       "type": "movie",
-      "rank": 126,
-      "title": "1917",
-      "year": 2019,
+      "rank": 125,
+      "title": "A Clockwork Orange",
+      "year": 1971,
       "rating": 8.2,
-      "poster": "./posters/tt8579674.jpg",
+      "poster": "./posters/tt0066921.jpg",
       "genres": [
-        "Drama",
-        "War"
+        "Crime",
+        "Sci-Fi"
       ],
-      "runtime": 119,
-      "fa": "",
-      "summary": "در جنگ جهانی اول، دو سرباز باید در زمانی کوتاه پیامی را به خط مقدم برسانند تا ۱۶۰۰ سرباز را از افتادن در تلهٔ دشمن نجات دهند.",
-      "summaryLanguage": "fa"
+      "runtime": 136,
+      "fa": "پرتقال کوکی",
+      "summary": "در آینده‌ای نزدیک، رهبر خشن یک گروه تبهکار به زندان می‌افتد و برای شرکت در آزمایشی با هدف تغییر رفتارش داوطلب می‌شود؛ اما نتیجه آن چیزی نیست که انتظار دارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q181086"
+      }
     },
     {
       "id": "tt0017136",
       "type": "movie",
-      "rank": 127,
+      "rank": 126,
       "title": "Metropolis",
       "year": 1927,
       "rating": 8.2,
@@ -2679,6 +2662,23 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q151599"
       }
+    },
+    {
+      "id": "tt8579674",
+      "type": "movie",
+      "rank": 127,
+      "title": "1917",
+      "year": 2019,
+      "rating": 8.2,
+      "poster": "./posters/tt8579674.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 119,
+      "fa": "",
+      "summary": "در جنگ جهانی اول، دو سرباز باید در زمانی کوتاه پیامی را به خط مقدم برسانند تا ۱۶۰۰ سرباز را از افتادن در تلهٔ دشمن نجات دهند.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0208092",
@@ -3780,30 +3780,9 @@
       }
     },
     {
-      "id": "tt0346336",
-      "type": "movie",
-      "rank": 178,
-      "title": "The Best of Youth",
-      "year": 2003,
-      "rating": 8.4,
-      "poster": "./posters/tt0346336.jpg",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 374,
-      "fa": "بهترین دوران جوانی",
-      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1217941"
-      }
-    },
-    {
       "id": "tt1201607",
       "type": "movie",
-      "rank": 179,
+      "rank": 178,
       "title": "Harry Potter and the Deathly Hallows: Part 2",
       "year": 2011,
       "rating": 8.1,
@@ -3826,7 +3805,7 @@
     {
       "id": "tt0117951",
       "type": "movie",
-      "rank": 180,
+      "rank": 179,
       "title": "Trainspotting",
       "year": 1996,
       "rating": 8.1,
@@ -3842,6 +3821,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q109135"
+      }
+    },
+    {
+      "id": "tt0346336",
+      "type": "movie",
+      "rank": 180,
+      "title": "The Best of Youth",
+      "year": 2003,
+      "rating": 8.4,
+      "poster": "./posters/tt0346336.jpg",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 374,
+      "fa": "بهترین دوران جوانی",
+      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1217941"
       }
     },
     {
@@ -4143,7 +4143,6 @@
       "genres": [
         "Animation",
         "Adventure",
-        "Comedy",
         "Family",
         "Fantasy"
       ],
@@ -7744,34 +7743,9 @@
       }
     },
     {
-      "id": "tt38268282",
-      "type": "tv",
-      "rank": 108,
-      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
-      "year": 2026,
-      "rating": 9.3,
-      "poster": "./posters/tt38268282.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": null,
-      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
-      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt38268282/"
-      }
-    },
-    {
       "id": "tt0387764",
       "type": "tv",
-      "rank": 109,
+      "rank": 108,
       "title": "Peep Show",
       "year": 2003,
       "rating": 8.7,
@@ -7791,7 +7765,7 @@
     {
       "id": "tt16026746",
       "type": "tv",
-      "rank": 110,
+      "rank": 109,
       "title": "X-Men '97",
       "year": 2024,
       "rating": 8.7,
@@ -7810,6 +7784,31 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q109558622"
+      }
+    },
+    {
+      "id": "tt38268282",
+      "type": "tv",
+      "rank": 110,
+      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
+      "year": 2026,
+      "rating": 9.3,
+      "poster": "./posters/tt38268282.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
+      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt38268282/"
       }
     },
     {
@@ -7992,32 +7991,9 @@
       }
     },
     {
-      "id": "tt0481256",
-      "type": "tv",
-      "rank": 119,
-      "title": "Fighting Spirit",
-      "year": 2000,
-      "rating": 8.8,
-      "poster": "./posters/tt0481256.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Comedy",
-        "Sport"
-      ],
-      "runtime": 30,
-      "fa": "روحیه مبارزه",
-      "summary": "ایپو، نوجوانی خجالتی که دیگران آزارش می‌دهند، با کمک یک بوکسور به این ورزش علاقه‌مند می‌شود. تمرین و مسابقه به او کمک می‌کنند اعتمادبه‌نفس پیدا کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0481256/"
-      }
-    },
-    {
       "id": "tt2303687",
       "type": "tv",
-      "rank": 120,
+      "rank": 119,
       "title": "Line of Duty",
       "year": 2012,
       "rating": 8.7,
@@ -8035,6 +8011,29 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt2303687/"
+      }
+    },
+    {
+      "id": "tt0481256",
+      "type": "tv",
+      "rank": 120,
+      "title": "Fighting Spirit",
+      "year": 2000,
+      "rating": 8.8,
+      "poster": "./posters/tt0481256.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Comedy",
+        "Sport"
+      ],
+      "runtime": 30,
+      "fa": "روحیه مبارزه",
+      "summary": "ایپو، نوجوانی خجالتی که دیگران آزارش می‌دهند، با کمک یک بوکسور به این ورزش علاقه‌مند می‌شود. تمرین و مسابقه به او کمک می‌کنند اعتمادبه‌نفس پیدا کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0481256/"
       }
     },
     {
@@ -8840,9 +8839,30 @@
       }
     },
     {
-      "id": "tt9253284",
+      "id": "tt0229889",
       "type": "tv",
       "rank": 158,
+      "title": "El Chavo",
+      "year": 1972,
+      "rating": 8.7,
+      "poster": "./posters/tt0229889.jpg",
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 30,
+      "fa": "کودک هشت",
+      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1323981"
+      }
+    },
+    {
+      "id": "tt9253284",
+      "type": "tv",
+      "rank": 159,
       "title": "Andor",
       "year": 2022,
       "rating": 8.6,
@@ -8861,27 +8881,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60462338"
-      }
-    },
-    {
-      "id": "tt0229889",
-      "type": "tv",
-      "rank": 159,
-      "title": "El Chavo",
-      "year": 1972,
-      "rating": 8.7,
-      "poster": "./posters/tt0229889.jpg",
-      "genres": [
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 30,
-      "fa": "کودک هشت",
-      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1323981"
       }
     },
     {
@@ -9644,9 +9643,30 @@
       }
     },
     {
-      "id": "tt0086831",
+      "id": "tt10802170",
       "type": "tv",
       "rank": 194,
+      "title": "The Rehearsal",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "./posters/tt10802170.jpg",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
+    },
+    {
+      "id": "tt0086831",
+      "type": "tv",
+      "rank": 195,
       "title": "Yes, Prime Minister",
       "year": 1986,
       "rating": 8.6,
@@ -9666,7 +9686,7 @@
     {
       "id": "tt7908628",
       "type": "tv",
-      "rank": 195,
+      "rank": 196,
       "title": "What We Do in the Shadows",
       "year": 2019,
       "rating": 8.5,
@@ -9683,27 +9703,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q55637582"
-      }
-    },
-    {
-      "id": "tt10802170",
-      "type": "tv",
-      "rank": 196,
-      "title": "The Rehearsal",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "./posters/tt10802170.jpg",
-      "genres": [
-        "Documentary",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "د ریهرسال",
-      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112915576"
       }
     },
     {
@@ -9808,29 +9807,9 @@
       }
     },
     {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 201,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
-      }
-    },
-    {
       "id": "tt6763664",
       "type": "tv",
-      "rank": 202,
+      "rank": 201,
       "title": "The Haunting of Hill House",
       "year": 2018,
       "rating": 8.5,
@@ -9848,6 +9827,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q43379503"
+      }
+    },
+    {
+      "id": "tt4082744",
+      "type": "tv",
+      "rank": 202,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10830,35 +10829,9 @@
       }
     },
     {
-      "id": "tt2359704",
-      "type": "tv",
-      "rank": 248,
-      "title": "JoJo's Bizarre Adventure",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "./posters/tt2359704.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Horror"
-      ],
-      "runtime": 24,
-      "fa": "ماجراجویی عجیب و غریب جوجو (مجموعه تلویزیونی)",
-      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q28930028"
-      }
-    },
-    {
       "id": "tt2244495",
       "type": "tv",
-      "rank": 249,
+      "rank": 248,
       "title": "The Eric Andre Show",
       "year": 2012,
       "rating": 8.5,
@@ -10876,7 +10849,7 @@
     {
       "id": "tt1983079",
       "type": "tv",
-      "rank": 250,
+      "rank": 249,
       "title": "Call the Midwife",
       "year": 2012,
       "rating": 8.6,
@@ -10895,6 +10868,26 @@
         "summarySource": "mymemory",
         "summaryUrl": "https://www.imdb.com/title/tt1983079/"
       }
+    },
+    {
+      "id": "tt2575988",
+      "type": "tv",
+      "rank": 250,
+      "title": "Silicon Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "سیلیکون ولی",
+      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "دره سیلیکون",
+        "درهٔ سیلیکون"
+      ]
     }
   ],
   "archive": [
@@ -11028,26 +11021,6 @@
       }
     },
     {
-      "id": "tt2575988",
-      "type": "tv",
-      "rank": null,
-      "title": "Silicon Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "سیلیکون ولی",
-      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
-      "summaryLanguage": "fa",
-      "aliases": [
-        "دره سیلیکون",
-        "درهٔ سیلیکون"
-      ]
-    },
-    {
       "id": "tt21626284",
       "type": "movie",
       "rank": null,
@@ -11111,6 +11084,25 @@
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
       }
+    },
+    {
+      "id": "tt2359704",
+      "type": "tv",
+      "rank": null,
+      "title": "JoJo's Bizarre Adventure",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "./posters/tt2359704.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Animation"
+      ],
+      "runtime": 24,
+      "fa": "",
+      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt2359704.json"
     }
   ]
 }
