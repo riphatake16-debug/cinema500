@@ -1070,3 +1070,6 @@ dialog::backdrop{animation:backdropIn .5s ease-out}
 }
 /* the static aurora gradient replaces the photographic ambient layers */
 .ambient{display:none}
+/* the sticky bar no longer blurs the page while it scrolls underneath */
+header{background-color:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:none;-webkit-backdrop-filter:none}
+.mobile-dock{background-color:color-mix(in srgb,var(--bg) 96%,transparent);backdrop-filter:none;-webkit-backdrop-filter:none}

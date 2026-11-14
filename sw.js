@@ -1,5 +1,5 @@
 /* Cinema500 offline shell. Fresh catalogue stays network-first; artwork is cached on demand. */
-const VERSION = 'cinema500-v7';
+const VERSION = 'cinema500-v8';
 const SHELL = [
   './', './index.html', './privacy.html', './terms.html',
   './app.js', './catalogue.js', './live.js', './discovery.js', './ranks.js',
