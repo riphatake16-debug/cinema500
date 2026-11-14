@@ -34,6 +34,16 @@
 
 منوی موبایل چهار مقصد با نام کامل دارد: مجموعه آثار، لیست تماشا، آمار تماشا و حساب من. سربرگ همراه صفحه حرکت می‌کند و چسبان نیست. بخش «بعدش چی ببینم؟» همراه با محاسبات، کنترل‌ها و سبک‌های اختصاصی آن حذف شده است. انتخاب با زمان و حال‌وهوا از جست‌وجوی سریع در دسترس است. کارت‌های جدید فیلتر تاری جدا ندارند؛ کارت‌های مسیر تا وقتی نتیجه و پیشرفتشان تغییر نکند، بازسازی نمی‌شوند.
 
+## آفلاین، اشتراک‌گذاری و فونت محلی
+
+فونت Vazirmatn به‌صورت متغیر (woff2، حدود ۱۱۰ کیلوبایت) داخل `fonts/` سرو می‌شود و دیگر هیچ درخواستی به Google Fonts فرستاده نمی‌شود؛ متن صفحه حتی با شبکهٔ کند یا فیلترشده با همان طراحی دیده می‌شود. مجوز فونت در `fonts/OFL.txt` است.
+
+یک service worker ساده (`sw.js`) پوستهٔ برنامه، CSS، اسکریپت‌ها، آیکون‌ها و فونت را پیش‌کش می‌کند تا بعد از اولین بازدید، سایت بدون شبکه هم باز شود. فهرست زنده (`live-catalogue.json`) همیشه اول از شبکه با مهلت ۴ ثانیه خوانده می‌شود تا آفلاین‌بودن باعث نمایش فهرست کهنه نشود؛ پوسترها هنگام دیدن ذخیره می‌شوند و حداکثر ۲۶۰ تصویر نگه داشته می‌شود. اگر نسخهٔ تازه‌ای نصب شود، به‌جای بازخوانی خودکار، نوار «نسخهٔ تازه آماده است» با دکمهٔ به‌روزرسانی نشان داده می‌شود.
+
+هر اثر یک لینک دائمی دارد: `?t=tt0111161` و بازکردن همان لینک، مستقیم جزئیات اثر را باز می‌کند (back مرورگر هم کار می‌کند). میان‌برهای نصب اپ با `?view=watchlist`، `?view=roulette` و `?view=stats` به همان صفحه‌ها می‌روند.
+
+حرکت‌ها با موتور `motion.js` و منحنی فنری اجرا می‌شوند: ورود پله‌ای بخش‌ها و کارت‌ها با محوشدگی و بلور، پارالاکس ملایم قاب ویژه، نوار پیشرفت اسکرول، زوم پوستر در هاور، درخشش یک‌بارهٔ هیرو، زیرخط متحرک تیترها و گذار دایره‌ای تم با View Transitions. با `prefers-reduced-motion` همهٔ این‌ها خاموش می‌شوند. وقتی مرورگر نصب را پیشنهاد بدهد، دکمهٔ «نصب اپ» در پانوشت ظاهر می‌شود؛ قطع‌شدن شبکه هم با برچسب «آفلاین» کنار همان پانوشت مشخص می‌شود. آمار تماشا هم حالا توزیع ژانرها و دهه‌ها را با نوارهای درصدی نشان می‌دهد.
+
 ## انتشار
 
 GitHub Actions تصاویر محلی را از دو فایل artwork-1.zip و artwork-2.zip در _site باز می‌کند و سایت را روی GitHub Pages منتشر می‌کند. آزمایش‌های `tests/*.test.mjs` در همین مسیر اجرا می‌شوند؛ پیشنهادها، مسیرها، دفتر، انتقال پشتیبان، تقویم، نصب و متادیتا بررسی می‌شوند. رتبه‌ها از فهرست واقعی IMDb دریافت می‌شوند؛ زمان دریافت موفق و وضعیت ذخیره‌شده/تازه روی سایت مشخص است. میزبانی تابع شرایط GitHub است.
@@ -45,6 +55,8 @@ GitHub Actions تصاویر محلی را از دو فایل artwork-1.zip و ar
 برای ثبت مالکیت در [Google Search Console](https://search.google.com/search-console/welcome)، یک **URL-prefix property** با آدرس دقیق `https://riphatake16-debug.github.io/cinema500/` انتخاب کنید. روش HTML tag یا HTML file به دسترسی DNS دامنهٔ GitHub نیاز ندارد. فقط توکن یا فایل واقعی صادرشده برای حساب مالک را اضافه کنید؛ توکن فرضی یا متعلق به حساب دیگر معتبر نیست. تأییدیهٔ قبلی مالکان دیگر را حذف نکنید. فایل HTML تأیید مالکیت، در صورت استفاده، باید در مرحلهٔ Assemble workflow نیز به `_site` کپی شود تا انتشارهای ساعتی آن را حذف نکنند.
 
 پس از تأیید مالکیت، `https://riphatake16-debug.github.io/cinema500/sitemap.xml` را در بخش Sitemaps ارسال کنید و با URL Inspection برای آدرس اصلی درخواست ایندکس بدهید. ثبت property یا ارسال sitemap به‌معنای پذیرش در نتایج یا رتبهٔ اول نیست؛ نتیجه را از گزارش Pages و URL Inspection بررسی کنید. درخواست یکسانِ مکرر، بررسی را سریع‌تر نمی‌کند.
+
+برای خزنده‌هایی که JavaScript اجرا نمی‌کنند، یک بلوک `noscript` با معرفی برند و ۴۰ پیوند واقعی به آثار اضافه شده است؛ هر اثر هم لینک دائمی `?t=` دارد. اسکیمای `WebSite` همراه `SearchAction` روی `?q=` تنظیم شده و خودِ صفحه این پارامتر را در جست‌وجو اعمال می‌کند. `robots.txt` هم به sitemap اشاره می‌کند و تاریخ `lastmod` هنگام هر انتشار به‌صورت خودکار با تاریخ بیلد به‌روز می‌شود.
 
 این سایت در زیردایرکتوری `/cinema500/` قرار دارد. گوگل فایل robots را فقط در ریشهٔ میزبان (`https://riphatake16-debug.github.io/robots.txt`) می‌خواند؛ فایل robots داخل پوشهٔ پروژه جایگزین آن نیست. نبود robots.txt با پاسخ ۴۰۴ مانع خزیدن نیست. نمایش نام دلخواه سایت از طریق WebSite در گوگل نیز برای زیردایرکتوری تضمین یا پشتیبانی نمی‌شود؛ به همین دلیل schema ساختگی یا ادعای ثبت خودکار در گوگل اضافه نشده است.
 
@@ -64,7 +76,7 @@ GitHub Actions تصاویر محلی را از دو فایل artwork-1.zip و ar
 
 The relative `manifest.webmanifest` keeps app identity, launch URL and scope within the GitHub Pages project. The custom vector mark is in `icons/cinema500.svg`, with 192px/512px PNG icons and a 180px Apple touch icon. The 512px mark stays within the maskable safe circle.
 
-The requested display mode is `fullscreen`, with the browser's standard fallback to `standalone`. iOS home-screen launches use Apple metadata; OS status indicators depend on platform support. Open the HTTPS site and use the browser's **Install app / Add to Home screen** command, then launch its icon. The app still needs a network connection to load. Existing local journals and backup formats are unchanged.
+The requested display mode is `fullscreen`, with the browser's standard fallback to `standalone`. iOS home-screen launches use Apple metadata; OS status indicators depend on platform support. Open the HTTPS site and use the browser's **Install app / Add to Home screen** command, then launch its icon. After the first visit the offline shell serves the app without a network connection, and the hour‑old catalogue falls back to the last valid copy. Existing local journals and backup formats are unchanged.
 
 
 ### Carousel and rendering

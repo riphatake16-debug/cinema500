@@ -21,8 +21,8 @@ jobs:
       - name: Assemble complete static site
         run: |
           mkdir -p _site
-          cp index.html privacy.html terms.html app.js roulette.js discovery.js catalogue.js live.js ranks.js motion.js style.css mobile.css favicon.svg .nojekyll mobile-preview.html selects.js manifest.webmanifest sitemap.xml _site/
-          cp -R icons _site/
+          cp index.html privacy.html terms.html app.js roulette.js discovery.js catalogue.js live.js ranks.js motion.js style.css mobile.css favicon.svg .nojekyll mobile-preview.html selects.js manifest.webmanifest sitemap.xml robots.txt sw.js sw-register.js _site/
+          cp -R icons fonts _site/
           unzip -q artwork-1.zip -d _site
           unzip -q artwork-2.zip -d _site
           python3 - <<'PY'
@@ -38,7 +38,9 @@ jobs:
           for a in titles:
               assert (Path('_site')/a['poster']).is_file(),a['id']
           assert len(list(Path('_site/backdrops').glob('*.jpg')))==6
-          print('Verified 500 titles, 500 posters and 6 backdrops')
+          assert (Path('_site/fonts/Vazirmatn-Variable.woff2')).stat().st_size>50000
+          assert (Path('_site/sw.js')).is_file() and (Path('_site/sw-register.js')).is_file()
+          print('Verified 500 titles, 500 posters, 6 backdrops, local font and offline shell')
           PY
       - name: Verify local journal behavior
         working-directory: _site
@@ -47,6 +49,17 @@ jobs:
         run: python3 -m unittest discover -s tests -p '*_test.py'
       - name: Refresh full IMDb charts and keep a valid fallback
         run: python3 scripts/refresh_catalogue.py
+      - name: Stamp the sitemap with today's build date
+        run: |
+          python3 - <<'PY'
+          import re
+          from datetime import date
+          from pathlib import Path
+          path = Path('_site/sitemap.xml')
+          stamp = date.today().isoformat()
+          path.write_text(re.sub(r'<lastmod>[^<]+</lastmod>', f'<lastmod>{stamp}</lastmod>', path.read_text()))
+          print('Sitemap lastmod:', stamp)
+          PY
       - name: Validate the published payload with the browser validator
         run: |
           node --input-type=module <<'JS'

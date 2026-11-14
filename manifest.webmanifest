@@ -15,6 +15,11 @@
   "icons": [
     {"src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
     {"src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "shortcuts": [
+    {"name": "لیست تماشای من", "short_name": "لیست تماشا", "url": "./?view=watchlist", "icons": [{"src": "./icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "گردونه شانس", "short_name": "گردونه", "url": "./?view=roulette", "icons": [{"src": "./icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "آمار تماشای من", "short_name": "آمار", "url": "./?view=stats", "icons": [{"src": "./icons/icon-192.png", "sizes": "192x192"}]}
   ]
 }
 

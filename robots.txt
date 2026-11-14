@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riphatake16-debug.github.io/cinema500/sitemap.xml

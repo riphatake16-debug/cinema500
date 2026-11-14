@@ -878,3 +878,189 @@ html:has(#details[open]),html:has(#filter-drawer[open]){overflow-y:hidden}
 /* Compatibility guard: hide the obsolete roulette button in cached hero markup. */
 .hero-actions > .hero-shuffle,
 .collection-toolbar > .roulette-launch{display:none!important}
+
+/* ===== glass environment: translucent surfaces over an ambient gradient ===== */
+:root{
+  --glass-tint:rgba(18,22,34,.60);
+  --glass-tint-strong:rgba(15,19,30,.84);
+  --glass-tint-card:rgba(23,28,42,.55);
+  --glass-line:rgba(232,238,255,.15);
+  --glass-sheen:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.025) 40%,rgba(255,255,255,0) 72%);
+  --glass-lift:0 22px 58px rgba(2,5,14,.46),inset 0 1px 0 rgba(255,255,255,.14);
+}
+html[data-theme=light]{
+  --glass-tint:rgba(255,255,255,.58);
+  --glass-tint-strong:rgba(255,255,255,.88);
+  --glass-tint-card:rgba(255,255,255,.60);
+  --glass-line:rgba(36,44,66,.15);
+  --glass-sheen:linear-gradient(145deg,rgba(255,255,255,.94),rgba(255,255,255,.38) 46%,rgba(255,255,255,.06) 78%);
+  --glass-lift:0 22px 58px rgba(31,41,66,.14),inset 0 1px 0 rgba(255,255,255,.96);
+}
+body{
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(42% 34% at 8% 2%,rgba(212,184,141,.30),transparent 70%),
+    radial-gradient(38% 32% at 94% 0%,rgba(116,158,214,.30),transparent 72%),
+    radial-gradient(46% 38% at 80% 96%,rgba(150,196,182,.24),transparent 72%),
+    radial-gradient(44% 34% at 6% 92%,rgba(158,132,208,.26),transparent 70%);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
+html[data-theme=light] body{
+  background-image:
+    radial-gradient(42% 34% at 8% 2%,rgba(212,184,141,.26),transparent 70%),
+    radial-gradient(38% 32% at 94% 0%,rgba(116,158,214,.22),transparent 72%),
+    radial-gradient(46% 38% at 80% 96%,rgba(150,196,182,.20),transparent 72%),
+    radial-gradient(44% 34% at 6% 92%,rgba(158,132,208,.18),transparent 70%);
+}
+header{
+  background-image:var(--glass-sheen);
+  background-color:color-mix(in srgb,var(--glass-tint) 92%,transparent);
+  border-bottom-color:var(--glass-line);
+  backdrop-filter:blur(22px) saturate(140%);
+  -webkit-backdrop-filter:blur(22px) saturate(140%);
+}
+.card,.metric-card,.simple-stats-grid>div,.detail-disclosure,.journal-metrics .metric-card{
+  background-color:var(--glass-tint-card);
+  background-image:var(--glass-sheen);
+  border-color:var(--glass-line);
+  box-shadow:0 12px 34px rgba(0,0,0,.20),inset 0 1px 0 rgba(255,255,255,.10);
+  backdrop-filter:blur(3px) saturate(115%);
+  -webkit-backdrop-filter:blur(3px) saturate(115%);
+}
+html[data-theme=light] .card,html[data-theme=light] .metric-card,html[data-theme=light] .simple-stats-grid>div,html[data-theme=light] .detail-disclosure{
+  box-shadow:0 12px 34px rgba(31,41,66,.10),inset 0 1px 0 rgba(255,255,255,.92);
+}
+.card:hover{box-shadow:0 18px 42px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.16);border-color:var(--glass-line-strong,var(--glass-line))}
+dialog{
+  background:linear-gradient(160deg,var(--glass-tint-strong),color-mix(in srgb,var(--bg) 42%,transparent));
+  border-color:var(--glass-line);
+  box-shadow:var(--glass-lift);
+  backdrop-filter:blur(30px) saturate(140%);
+  -webkit-backdrop-filter:blur(30px) saturate(140%);
+}
+.filter-drawer{
+  background:linear-gradient(165deg,var(--glass-tint-strong),color-mix(in srgb,var(--ui-panel) 55%,transparent));
+  border-color:var(--glass-line);
+  box-shadow:var(--glass-lift);
+  backdrop-filter:blur(28px) saturate(140%);
+  -webkit-backdrop-filter:blur(28px) saturate(140%);
+}
+.cinema-hero{
+  border-color:var(--glass-line);
+  box-shadow:var(--glass-lift);
+}
+.mobile-dock{
+  border-color:var(--glass-line);
+  box-shadow:0 18px 52px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.18);
+}
+.catalog-search,.journey-search,.searchbox,.type-tabs,.explore-kind,.explore-view,.filters-toggle,.icon-button,.select-trigger,.drawer-close{
+  background-color:var(--glass-tint-card);
+  border-color:var(--glass-line);
+  backdrop-filter:blur(12px) saturate(130%);
+  -webkit-backdrop-filter:blur(12px) saturate(130%);
+}
+.journey-card,.glass-options{
+  border-color:var(--glass-line);
+  backdrop-filter:blur(16px) saturate(135%);
+  -webkit-backdrop-filter:blur(16px) saturate(135%);
+}
+.hero-primary,.hero-save,.accent-button{
+  backdrop-filter:blur(8px) saturate(120%);
+  -webkit-backdrop-filter:blur(8px) saturate(120%);
+}
+@supports not ((backdrop-filter:blur(2px)) or (-webkit-backdrop-filter:blur(2px))){
+  :root{--glass-tint-card:rgba(23,28,42,.94);--glass-tint-strong:rgba(15,19,30,.97)}
+  html[data-theme=light]{--glass-tint-card:rgba(255,255,255,.96);--glass-tint-strong:rgba(255,255,255,.99)}
+}
+@media (prefers-reduced-transparency:reduce){
+  :root{--glass-tint-card:rgba(23,28,42,.96);--glass-tint-strong:rgba(15,19,30,.98)}
+  html[data-theme=light]{--glass-tint-card:rgba(255,255,255,.97);--glass-tint-strong:rgba(255,255,255,.99)}
+  .card,.metric-card,dialog,.filter-drawer,header,.mobile-dock,.catalog-search,.journey-search,.type-tabs,.select-trigger,.icon-button{backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+
+#grid > .card,.grid > .card{
+  background-color:var(--glass-tint-card);
+  background-image:var(--glass-sheen);
+  border-color:var(--glass-line);
+  box-shadow:0 12px 34px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.10);
+  backdrop-filter:blur(4px) saturate(118%);
+  -webkit-backdrop-filter:blur(4px) saturate(118%);
+}
+html[data-theme=light] #grid > .card{
+  box-shadow:0 12px 34px rgba(31,41,66,.10),inset 0 1px 0 rgba(255,255,255,.92);
+}
+
+
+/* ===== modern motion layer ===== */
+:root{--motion-spring:cubic-bezier(.16,1,.3,1)}
+html{background:var(--bg);overflow-x:clip}
+body{background-color:transparent;background-image:none}
+body::before{
+  content:"";position:fixed;inset:-30vmax;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(34% 28% at 22% 20%,rgba(212,184,141,.26),transparent 68%),
+    radial-gradient(32% 26% at 82% 14%,rgba(116,158,214,.26),transparent 70%),
+    radial-gradient(38% 30% at 76% 82%,rgba(150,196,182,.20),transparent 70%),
+    radial-gradient(34% 28% at 16% 86%,rgba(158,132,208,.24),transparent 68%);
+  animation:auroraDrift 24s var(--motion-spring) infinite alternate;
+  will-change:transform;
+}
+html[data-theme=light] body::before{opacity:.85}
+@keyframes auroraDrift{
+  0%{transform:translate3d(-2.5%,-1.5%,0) scale(1.02)}
+  50%{transform:translate3d(1.5%,2.5%,0) scale(1.07)}
+  100%{transform:translate3d(3%,-1%,0) scale(1.03)}
+}
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:220;pointer-events:none}
+.scroll-progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),#8fb7ff 55%,#b3a2f2);box-shadow:0 0 16px rgba(212,184,141,.55)}
+#hero-visual{will-change:transform}
+.cinema-hero::after{
+  content:"";position:absolute;inset:0;z-index:2;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(115deg,transparent 34%,rgba(255,255,255,.12) 48%,transparent 62%);
+  mix-blend-mode:screen;animation:heroSheen 1.8s .15s var(--motion-spring) both;
+}
+@keyframes heroSheen{
+  from{transform:translateX(120%);opacity:0}
+  30%{opacity:.6}
+  to{transform:translateX(-120%);opacity:0}
+}
+.curated-heading h2,.collection-top h2{position:relative}
+.curated-heading h2::after,.collection-top h2::after{
+  content:"";position:absolute;inset-inline-start:0;bottom:-7px;width:46px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,var(--accent),transparent);
+  transform-origin:right;animation:underlineGrow .9s .15s var(--motion-spring) both;
+}
+@keyframes underlineGrow{from{transform:scaleX(0);opacity:0}to{transform:scaleX(1);opacity:1}}
+@media (hover:hover) and (pointer:fine){
+  .card{transition:transform .5s var(--motion-spring),box-shadow .5s var(--motion-spring),border-color .4s}
+  .card:hover{transform:translateY(-7px)}
+  .poster img{transition:transform .9s var(--motion-spring),filter .6s}
+  .card:hover .poster img{transform:scale(1.06)}
+  .poster-score,.card-name{transition:transform .5s var(--motion-spring)}
+  .card:hover .poster-score,.card:hover .card-name{transform:translateY(-2px)}
+  .journey-card{transition:transform .5s var(--motion-spring),border-color .3s}
+  .journey-card:hover{transform:translateY(-5px) scale(1.006)}
+  .metric-card{transition:transform .4s var(--motion-spring),box-shadow .4s}
+  .metric-card:hover{transform:translateY(-3px)}
+}
+button:not(:disabled),a.hero-link{transition:transform .32s var(--motion-spring),box-shadow .32s,background-color .25s,color .25s,border-color .25s}
+button:not(:disabled):hover{transform:translateY(-1px)}
+button:not(:disabled):active{transform:translateY(0) scale(.975)}
+@keyframes dialogSpringIn{from{opacity:0;transform:translateY(26px) scale(.955)}to{opacity:1;transform:none}}
+dialog[open]{animation:dialogSpringIn .55s var(--motion-spring)}
+dialog::backdrop{animation:backdropIn .5s ease-out}
+::view-transition-old(root){animation:none}
+::view-transition-new(root){animation:none}
+.rank-summary .avatar,.account-avatar{animation:avatarFloat 6s ease-in-out infinite}
+@keyframes avatarFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){
+  body::before{animation:none}
+  .cinema-hero::after{animation:none;opacity:0}
+  .curated-heading h2::after,.collection-top h2::after{animation:none}
+  .card:hover,.journey-card:hover,.metric-card:hover,button:not(:disabled):hover{transform:none}
+  .card:hover .poster img{transform:none}
+  .rank-summary .avatar,.account-avatar{animation:none}
+  dialog[open]{animation:none}
+  .scroll-progress i{transition:none}
+}
