@@ -25,9 +25,9 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
   assert.match(js, /loading="lazy" decoding="async" width="320" height="480"/);
   assert.match(js, /matchMedia\('\(max-width:700px\), \(prefers-reduced-motion: reduce\)'\)\.matches/);
   const versions = {
-    'app.js': 'perf-20261114-2',
-    'mobile.css': 'perf-20261114-2',
-    'style.css': 'perf-20261114-2'
+    'app.js': 'perf-20261114-3',
+    'mobile.css': 'perf-20261114-3',
+    'style.css': 'perf-20261114-3'
   };
   for (const [file, version] of Object.entries(versions)) {
     assert.ok(html.includes('./' + file + '?v=' + version), file + ' cache key');
@@ -60,7 +60,7 @@ test('catalogue search is always visible and compatible with advanced filters', 
 
 test('film detail animations are light, accessible and optional controls stay collapsed',async()=>{
   const [html,js,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
-  assert.ok(html.includes('mobile.css?v=perf-20261114-2'));
+  assert.ok(html.includes('mobile.css?v=perf-20261114-3'));
   assert.ok(js.includes('detail-disclosure detail-personal'));
   assert.ok(js.includes('detail-disclosure detail-similar'));
   assert.ok(js.includes('data-expand-detail-summary'));
@@ -104,7 +104,7 @@ test('the bottom dock is the only roulette shortcut',async()=>{
  assert.ok(!app.includes("$('#roulette-launch')"), 'the removed catalogue button has no handler');
  assert.ok(app.includes("icon('roulette-wheel')"));
  assert.ok(!app.includes("icon('shuffle')"));
- assert.ok(html.includes('app.js?v=perf-20261114-2'));
+ assert.ok(html.includes('app.js?v=perf-20261114-3'));
 });
 
 test('film details omit watch-date controls and the external IMDb detail link',async()=>{
@@ -117,13 +117,13 @@ test('film details omit watch-date controls and the external IMDb detail link',a
   assert.ok(!app.includes('id="journal-month"'));
   assert.ok(app.includes('امتیاز و یادداشت من'));
   assert.ok(app.includes('function journalEntries()'));
-  assert.ok(html.includes('app.js?v=perf-20261114-2'));
+  assert.ok(html.includes('app.js?v=perf-20261114-3'));
 });
 
 test('final polish keeps mobile scrolling cheap and makes backup confirmation accessible',async()=>{
  const [html,app,css]=await Promise.all([read('index.html'),read('app.js'),read('mobile.css')]);
- assert.ok(html.includes('app.js?v=perf-20261114-2'));
- assert.ok(html.includes('mobile.css?v=perf-20261114-2'));
+ assert.ok(html.includes('app.js?v=perf-20261114-3'));
+ assert.ok(html.includes('mobile.css?v=perf-20261114-3'));
  assert.ok(app.includes('lastRenderedList=list'));
  assert.ok(app.includes('const list=lastRenderedList,start='));
  assert.ok(app.includes('function writeJournalAtomically('));

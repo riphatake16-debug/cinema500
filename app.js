@@ -45,7 +45,28 @@ function cardMarkup(a){
 }
 
 function render(changedId){window.CinemaSelects?.refresh();if(!data.length)return;listVersion++;const list=filtered();lastRenderedList=list;const total=data.filter(a=>a.type===type),count=total.filter(a=>seen.has(a.id)).length;$('#all-count').textContent=fa(250);$('#seen-count').textContent=fa(count);$('#unseen-count').textContent=fa(250-count);$('#watchlist-count').textContent=fa(total.filter(a=>wanted.has(a.id)).length);const n=data.filter(a=>seen.has(a.id)).length;$('#total-seen').textContent=fa(n);$('#percent').textContent=fa(Math.round(n/5))+'٪';$('#progress-bar').style.width=(n/5)+'%';$('#mini-ring').style.setProperty('--progress',(n/5)+'%');$('#progress-copy').textContent=n?fa(n)+' اثر از این مجموعه رو دیدی':'تماشاهایی که اینجا ثبت کردی';$('#result-count').textContent=fa(list.length)+' '+(type==='movie'?'فیلم':'سریال');renderCards(list.slice(0,limit),changedId);$('#empty').hidden=!!list.length;$('#empty-copy').textContent=$('#search').value?'چیزی پیدا نشد. نام فارسی یا انگلیسی، رتبهٔ ۱ تا ۲۵۰ یا سال انتشار رو امتحان کن.':status==='seen'?'زیر پوستر فیلم یا سریالی که دیدی، «ثبت تماشا» رو بزن تا اینجا نمایش داده بشه.':status==='watchlist'?'نشانک کنار هر عنوان رو بزن تا برای تماشای بعد ذخیره بشه.':'با این فیلترها چیزی پیدا نشد. چند فیلتر رو بردار و دوباره امتحان کن.';updatePagination(list.length);$('#grid').setAttribute('aria-busy','false');renderDashboard();updateFilterSummary(list.length);renderRank();renderHeroActions();renderCatalogStatus();renderSyncStatus();renderJourneys();syncDock();if(!scrollObserver)checkScrollPosition()}
-function renderCards(visible,changedId){const grid=$('#grid'),current=$$('#grid > .card');if(changedId&&current.length===visible.length&&current.every((card,i)=>card.dataset.id===visible[i].id)){const index=visible.findIndex(a=>a.id===changedId);if(index>=0)current[index].outerHTML=cardMarkup(visible[index]);return}grid.innerHTML=visible.map(cardMarkup).join('')}
+function renderCards(visible,changedId){const grid=$('#grid'),current=$$('#grid > .card');if(changedId&&current.length===visible.length&&current.every((card,i)=>card.dataset.id===visible[i].id)){const index=visible.findIndex(a=>a.id===changedId);if(index>=0)current[index].outerHTML=cardMarkup(visible[index]);return}grid.innerHTML=visible.map(cardMarkup).join('');deferOffscreenPosters(grid)}
+let posterObserver=null;
+function deferOffscreenPosters(grid){
+  if(typeof IntersectionObserver!=='function'||!grid||typeof grid.querySelectorAll!=='function')return;
+  posterObserver&&posterObserver.disconnect();
+  posterObserver=new IntersectionObserver(entries=>{
+    for(const entry of entries){
+      if(!entry.isIntersecting)continue;
+      const img=entry.target,src=img.getAttribute('data-defer');
+      if(src){img.setAttribute('src',src);img.removeAttribute('data-defer')}
+      posterObserver.unobserve(img)
+    }
+  },{rootMargin:'500px 0px'});
+  const images=grid.querySelectorAll('.poster img');
+  images.forEach((img,index)=>{
+    if(index<10)return;
+    const src=img.getAttribute('src');
+    if(!src)return;
+    img.setAttribute('data-defer',src);img.removeAttribute('src');
+    posterObserver.observe(img)
+  })
+}
 function updatePagination(total){const sentinel=$('#scroll-sentinel');sentinel.hidden=limit>=total;$('#page-info').textContent=total?'نمایش '+fa(Math.min(limit,total))+' از '+fa(total)+' عنوان':'';if(scrollObserver){scrollObserver.unobserve(sentinel);if(!sentinel.hidden)scrollObserver.observe(sentinel)}}
 function loadNextPage(){const sentinel=$('#scroll-sentinel');if(loadingMore||sentinel.hidden||isOverlayOpen()||!data.length)return;const list=lastRenderedList,start=Math.min(limit,list.length),version=listVersion;if(start>=list.length){updatePagination(list.length);return}loadingMore=true;$('#grid').setAttribute('aria-busy','true');requestAnimationFrame(()=>{if(version!==listVersion){loadingMore=false;$('#grid').setAttribute('aria-busy','false');updatePagination(lastRenderedList.length);return}limit=Math.min(start+CARD_BATCH_SIZE,list.length);$('#grid').insertAdjacentHTML('beforeend',list.slice(start,limit).map(cardMarkup).join(''));loadingMore=false;$('#grid').setAttribute('aria-busy','false');updatePagination(list.length)})}
 let scrollCheckPending=false;
