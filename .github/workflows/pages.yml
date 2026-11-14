@@ -45,7 +45,7 @@ jobs:
       - name: Build light card thumbnails
         run: |
           python3 -m pip install --quiet --disable-pip-version-check pillow
-          python3 scripts/build_thumbs.py _site/posters _site/posters/thumbs 300 70
+          python3 scripts/build_thumbs.py _site/posters _site/posters/thumbs 240 60
           test "$(find _site/posters/thumbs -name 'tt*.webp' | wc -l)" -eq 500
       - name: Verify local journal behavior
         working-directory: _site

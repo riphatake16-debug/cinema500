@@ -51,8 +51,8 @@ def shrink_backdrops(directory, max_width=1280, quality=75):
 def main():
     source = Path(sys.argv[1] if len(sys.argv) > 1 else 'posters')
     target = Path(sys.argv[2] if len(sys.argv) > 2 else 'posters/thumbs')
-    width = int(sys.argv[3]) if len(sys.argv) > 3 else 300
-    quality = int(sys.argv[4]) if len(sys.argv) > 4 else 72
+    width = int(sys.argv[3]) if len(sys.argv) > 3 else 240
+    quality = int(sys.argv[4]) if len(sys.argv) > 4 else 60
     target.mkdir(parents=True, exist_ok=True)
     build_thumbs(source, target, width, quality)
     shrink_backdrops(source.parent / 'backdrops')
