@@ -74,3 +74,16 @@ test('the motion engine ships spring reveals, parallax, progress and a theme vie
   assert.match(app, /CinemaMotion\.transition\(apply,event\)/);
   assert.ok(!/icon-share|data-share/.test(await readFile('index.html', 'utf8')));
 });
+
+
+test('first screen stays light: card thumbnails and no per-card backdrop blur', async () => {
+  const [app, css, script] = await Promise.all([readFile('app.js', 'utf8'), readFile('mobile.css', 'utf8'), readFile('scripts/build_thumbs.py', 'utf8').catch(() => readFile('../scripts/build_thumbs.py', 'utf8'))]);
+  assert.match(app, /function thumbSrc\(a\)/);
+  assert.match(app, /\/posters\/thumbs\//);
+  assert.match(app, /<div class="poster">\$\{poster\(a,true\)\}/);
+  assert.match(script, /Image\.LANCZOS/);
+  const gridRule = css.match(/#grid > \.card,\.grid > \.card\{[^}]*\}/);
+  assert.ok(gridRule, 'grid card rule exists');
+  assert.ok(!/backdrop-filter/.test(gridRule[0]), 'cards must not composite a blur');
+  assert.ok(!/auroraDrift 24s/.test(css), 'ambient gradient is static');
+});
