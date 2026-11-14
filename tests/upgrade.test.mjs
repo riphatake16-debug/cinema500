@@ -59,15 +59,15 @@ test('search engines get crawlable content, brand schema and a fresh sitemap', a
 });
 
 
-test('the motion engine ships spring reveals, parallax, progress and a theme view transition', async () => {
+test('the motion engine ships spring reveals, parallax, progress and a cheap theme swap', async () => {
   const [motion, css, app] = await Promise.all([readFile('motion.js', 'utf8'), readFile('mobile.css', 'utf8'), readFile('app.js', 'utf8')]);
   assert.match(motion, /cubic-bezier\(\.16,1,\.3,1\)/);
   assert.match(motion, /IntersectionObserver/);
   assert.match(motion, /scroll-progress/);
-  assert.match(motion, /startViewTransition/);
+  assert.ok(!/startViewTransition/.test(motion), 'theme swap must not snapshot the whole page');
   assert.match(motion, /translate3d\(0,' \+ shift/);
   assert.match(motion, /prefers-reduced-motion/);
-  assert.match(css, /@keyframes auroraDrift/);
+  assert.match(css, /\.ambient-layer\{[^}]*filter:blur\(16px\)/, 'ambient layers use a small blur radius');
   assert.match(css, /@keyframes heroSheen/);
   assert.match(css, /@keyframes dialogSpringIn/);
   assert.match(css, /prefers-reduced-motion:reduce/);

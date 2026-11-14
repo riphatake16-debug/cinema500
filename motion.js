@@ -163,24 +163,19 @@
     img.src = url;
   }
 
-  /* Circular reveal for theme changes, with a plain fallback. */
+  /* Theme changes repaint immediately; only the trigger animates.
+     A full-page view transition re-rasterised every card and blur layer. */
   function transition(update, event) {
     if (typeof update !== 'function') return;
-    if (!canMove() || typeof document.startViewTransition !== 'function' || typeof document.documentElement.animate !== 'function') {
-      update();
-      return;
+    update();
+    const trigger = event && event.currentTarget;
+    if (trigger && typeof trigger.animate === 'function' && canMove()) {
+      trigger.animate([
+        { transform: 'rotate(0deg) scale(1)' },
+        { transform: 'rotate(180deg) scale(.9)' },
+        { transform: 'rotate(360deg) scale(1)' }
+      ], { duration: 420, easing: spring });
     }
-    const point = event && typeof event.clientX === 'number'
-      ? { x: event.clientX, y: event.clientY }
-      : { x: innerWidth / 2, y: 80 };
-    const radius = Math.hypot(Math.max(point.x, innerWidth - point.x), Math.max(point.y, innerHeight - point.y));
-    const vt = document.startViewTransition(update);
-    vt.ready.then(() => {
-      document.documentElement.animate([
-        { clipPath: 'circle(0px at ' + point.x + 'px ' + point.y + 'px)' },
-        { clipPath: 'circle(' + radius.toFixed(0) + 'px at ' + point.x + 'px ' + point.y + 'px)' }
-      ], { duration: 620, easing: spring, pseudoElement: '::view-transition-new(root)' });
-    }).catch(() => {});
   }
 
   window.CinemaMotion = {
