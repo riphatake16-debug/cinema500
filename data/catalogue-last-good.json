@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "9914150c8a22af3486cdedc4639bce79655fbc70e879a3b3377e8d774453a663",
+  "version": "02be5d759d3dfea02eec6d862405f9a5fda59347c28e58e98e66bca8a4e5dbcc",
   "status": "ok",
-  "retrievedAt": "2026-11-13T01:29:03+00:00",
-  "checkedAt": "2026-11-13T01:29:03+00:00",
+  "retrievedAt": "2026-11-14T00:31:59+00:00",
+  "checkedAt": "2026-11-14T00:31:59+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -2371,25 +2371,9 @@
       }
     },
     {
-      "id": "tt1832382",
-      "type": "movie",
-      "rank": 113,
-      "title": "A Separation",
-      "year": 2011,
-      "rating": 8.3,
-      "poster": "./posters/tt1832382.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 123,
-      "fa": "جدایی نادر از سیمین",
-      "summary": "زوجی ایرانی در برابر تصمیمی دشوار قرار می‌گیرند: مهاجرت برای آیندهٔ بهتر فرزندشان یا ماندن و مراقبت از پدری که به آلزایمر مبتلاست.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt31514146",
       "type": "movie",
-      "rank": 114,
+      "rank": 113,
       "title": "I Swear",
       "year": 2025,
       "rating": 8.3,
@@ -2406,6 +2390,22 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q135321335"
       }
+    },
+    {
+      "id": "tt1832382",
+      "type": "movie",
+      "rank": 114,
+      "title": "A Separation",
+      "year": 2011,
+      "rating": 8.3,
+      "poster": "./posters/tt1832382.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 123,
+      "fa": "جدایی نادر از سیمین",
+      "summary": "زوجی ایرانی در برابر تصمیمی دشوار قرار می‌گیرند: مهاجرت برای آیندهٔ بهتر فرزندشان یا ماندن و مراقبت از پدری که به آلزایمر مبتلاست.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0095016",
@@ -3780,9 +3780,30 @@
       }
     },
     {
-      "id": "tt1201607",
+      "id": "tt0346336",
       "type": "movie",
       "rank": 178,
+      "title": "The Best of Youth",
+      "year": 2003,
+      "rating": 8.4,
+      "poster": "./posters/tt0346336.jpg",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 374,
+      "fa": "بهترین دوران جوانی",
+      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1217941"
+      }
+    },
+    {
+      "id": "tt1201607",
+      "type": "movie",
+      "rank": 179,
       "title": "Harry Potter and the Deathly Hallows: Part 2",
       "year": 2011,
       "rating": 8.1,
@@ -3805,7 +3826,7 @@
     {
       "id": "tt0117951",
       "type": "movie",
-      "rank": 179,
+      "rank": 180,
       "title": "Trainspotting",
       "year": 1996,
       "rating": 8.1,
@@ -3821,27 +3842,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q109135"
-      }
-    },
-    {
-      "id": "tt0346336",
-      "type": "movie",
-      "rank": 180,
-      "title": "The Best of Youth",
-      "year": 2003,
-      "rating": 8.4,
-      "poster": "./posters/tt0346336.jpg",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 374,
-      "fa": "بهترین دوران جوانی",
-      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1217941"
       }
     },
     {
@@ -4176,31 +4176,9 @@
       }
     },
     {
-      "id": "tt2024544",
-      "type": "movie",
-      "rank": 196,
-      "title": "12 Years a Slave",
-      "year": 2013,
-      "rating": 8.1,
-      "poster": "./posters/tt2024544.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "runtime": 134,
-      "fa": "۱۲ سال بردگی",
-      "summary": "در آمریکای پیش از جنگ داخلی، سولومون نورثاپ، مرد سیاه‌پوست آزادی از نیویورک، ربوده و به بردگی فروخته می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q3023357"
-      }
-    },
-    {
       "id": "tt0892769",
       "type": "movie",
-      "rank": 197,
+      "rank": 196,
       "title": "How to Train Your Dragon",
       "year": 2010,
       "rating": 8.1,
@@ -4219,6 +4197,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q373096"
+      }
+    },
+    {
+      "id": "tt2024544",
+      "type": "movie",
+      "rank": 197,
+      "title": "12 Years a Slave",
+      "year": 2013,
+      "rating": 8.1,
+      "poster": "./posters/tt2024544.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "runtime": 134,
+      "fa": "۱۲ سال بردگی",
+      "summary": "در آمریکای پیش از جنگ داخلی، سولومون نورثاپ، مرد سیاه‌پوست آزادی از نیویورک، ربوده و به بردگی فروخته می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3023357"
       }
     },
     {
@@ -6392,25 +6392,9 @@
       }
     },
     {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 47,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0092337",
       "type": "tv",
-      "rank": 48,
+      "rank": 47,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6426,6 +6410,22 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
+    },
+    {
+      "id": "tt0098904",
+      "type": "tv",
+      "rank": 48,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -7743,53 +7743,9 @@
       }
     },
     {
-      "id": "tt0387764",
-      "type": "tv",
-      "rank": 108,
-      "title": "Peep Show",
-      "year": 2003,
-      "rating": 8.7,
-      "poster": "./posters/tt0387764.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 25,
-      "fa": "نمایش پیپ",
-      "summary": "مارک و جز، دو هم‌خانه با شخصیت‌هایی کاملاً متفاوت، تلاش می‌کنند از پس کار، رابطه‌ها و زندگی روزمره بربیایند؛ اما انتخاب‌هایشان معمولاً اوضاع را بدتر می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0387764/"
-      }
-    },
-    {
-      "id": "tt16026746",
-      "type": "tv",
-      "rank": 109,
-      "title": "X-Men '97",
-      "year": 2024,
-      "rating": 8.7,
-      "poster": "./posters/tt16026746.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Drama",
-        "Sci-Fi"
-      ],
-      "runtime": 22,
-      "fa": "مردان ایکس ۹۷",
-      "summary": "ادامهٔ ماجراهای انیمیشن مردان ایکس در دههٔ ۱۹۹۰؛ گروه از جهانی محافظت می‌کند که از جهش‌یافته‌ها می‌ترسد و هم‌زمان باید با تهدیدهایی تازه روبه‌رو شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q109558622"
-      }
-    },
-    {
       "id": "tt38268282",
       "type": "tv",
-      "rank": 110,
+      "rank": 108,
       "title": "Steel Ball Run: JoJo's Bizarre Adventure",
       "year": 2026,
       "rating": 9.3,
@@ -7809,6 +7765,50 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt38268282/"
+      }
+    },
+    {
+      "id": "tt0387764",
+      "type": "tv",
+      "rank": 109,
+      "title": "Peep Show",
+      "year": 2003,
+      "rating": 8.7,
+      "poster": "./posters/tt0387764.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 25,
+      "fa": "نمایش پیپ",
+      "summary": "مارک و جز، دو هم‌خانه با شخصیت‌هایی کاملاً متفاوت، تلاش می‌کنند از پس کار، رابطه‌ها و زندگی روزمره بربیایند؛ اما انتخاب‌هایشان معمولاً اوضاع را بدتر می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0387764/"
+      }
+    },
+    {
+      "id": "tt16026746",
+      "type": "tv",
+      "rank": 110,
+      "title": "X-Men '97",
+      "year": 2024,
+      "rating": 8.7,
+      "poster": "./posters/tt16026746.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "runtime": 22,
+      "fa": "مردان ایکس ۹۷",
+      "summary": "ادامهٔ ماجراهای انیمیشن مردان ایکس در دههٔ ۱۹۹۰؛ گروه از جهانی محافظت می‌کند که از جهش‌یافته‌ها می‌ترسد و هم‌زمان باید با تهدیدهایی تازه روبه‌رو شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q109558622"
       }
     },
     {
@@ -8283,29 +8283,9 @@
       }
     },
     {
-      "id": "tt14392248",
-      "type": "tv",
-      "rank": 132,
-      "title": "Aspirants",
-      "year": 2021,
-      "rating": 9.1,
-      "poster": "./posters/tt14392248.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 45,
-      "fa": "داوطلبان",
-      "summary": "سه دوست برای آزمون سخت استخدام در مشاغل دولتی هند آماده می‌شوند. رقابت و فشار این مسیر، بر دوستی و انتخاب‌های آینده‌شان هم اثر می‌گذارد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt14392248/"
-      }
-    },
-    {
       "id": "tt0111958",
       "type": "tv",
-      "rank": 133,
+      "rank": 132,
       "title": "Father Ted",
       "year": 1995,
       "rating": 8.6,
@@ -8320,6 +8300,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0111958/"
+      }
+    },
+    {
+      "id": "tt14392248",
+      "type": "tv",
+      "rank": 133,
+      "title": "Aspirants",
+      "year": 2021,
+      "rating": 9.1,
+      "poster": "./posters/tt14392248.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 45,
+      "fa": "داوطلبان",
+      "summary": "سه دوست برای آزمون سخت استخدام در مشاغل دولتی هند آماده می‌شوند. رقابت و فشار این مسیر، بر دوستی و انتخاب‌های آینده‌شان هم اثر می‌گذارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt14392248/"
       }
     },
     {
@@ -8530,31 +8530,9 @@
       }
     },
     {
-      "id": "tt4786824",
-      "type": "tv",
-      "rank": 144,
-      "title": "The Crown",
-      "year": 2016,
-      "rating": 8.6,
-      "poster": "./posters/tt4786824.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "runtime": 60,
-      "fa": "تاج",
-      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q20707362"
-      }
-    },
-    {
       "id": "tt3322312",
       "type": "tv",
-      "rank": 145,
+      "rank": 144,
       "title": "Daredevil",
       "year": 2015,
       "rating": 8.6,
@@ -8573,6 +8551,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16977365"
+      }
+    },
+    {
+      "id": "tt4786824",
+      "type": "tv",
+      "rank": 145,
+      "title": "The Crown",
+      "year": 2016,
+      "rating": 8.6,
+      "poster": "./posters/tt4786824.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "runtime": 60,
+      "fa": "تاج",
+      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q20707362"
       }
     },
     {
@@ -8839,30 +8839,9 @@
       }
     },
     {
-      "id": "tt0229889",
-      "type": "tv",
-      "rank": 158,
-      "title": "El Chavo",
-      "year": 1972,
-      "rating": 8.7,
-      "poster": "./posters/tt0229889.jpg",
-      "genres": [
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 30,
-      "fa": "کودک هشت",
-      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1323981"
-      }
-    },
-    {
       "id": "tt9253284",
       "type": "tv",
-      "rank": 159,
+      "rank": 158,
       "title": "Andor",
       "year": 2022,
       "rating": 8.6,
@@ -8881,6 +8860,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60462338"
+      }
+    },
+    {
+      "id": "tt0229889",
+      "type": "tv",
+      "rank": 159,
+      "title": "El Chavo",
+      "year": 1972,
+      "rating": 8.7,
+      "poster": "./posters/tt0229889.jpg",
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 30,
+      "fa": "کودک هشت",
+      "summary": "ماجراهای پسربچه‌ای فقیر، بی‌خانمان و دست‌وپاچلفتی و دوستانش در محله‌ای ساده روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1323981"
       }
     },
     {
@@ -9664,29 +9664,9 @@
       }
     },
     {
-      "id": "tt0086831",
-      "type": "tv",
-      "rank": 195,
-      "title": "Yes, Prime Minister",
-      "year": 1986,
-      "rating": 8.6,
-      "poster": "./posters/tt0086831.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بله، نخست وزیر.",
-      "summary": "جیمز هکر حالا نخست‌وزیر بریتانیاست، اما رسیدن به این مقام به معنی خلاص‌شدن از بازی‌های سیاسی و مانع‌تراشی اطرافیان نیست.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0086831/"
-      }
-    },
-    {
       "id": "tt7908628",
       "type": "tv",
-      "rank": 196,
+      "rank": 195,
       "title": "What We Do in the Shadows",
       "year": 2019,
       "rating": 8.5,
@@ -9703,6 +9683,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q55637582"
+      }
+    },
+    {
+      "id": "tt0086831",
+      "type": "tv",
+      "rank": 196,
+      "title": "Yes, Prime Minister",
+      "year": 1986,
+      "rating": 8.6,
+      "poster": "./posters/tt0086831.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بله، نخست وزیر.",
+      "summary": "جیمز هکر حالا نخست‌وزیر بریتانیاست، اما رسیدن به این مقام به معنی خلاص‌شدن از بازی‌های سیاسی و مانع‌تراشی اطرافیان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0086831/"
       }
     },
     {
@@ -10552,29 +10552,9 @@
       }
     },
     {
-      "id": "tt0075537",
-      "type": "tv",
-      "rank": 235,
-      "title": "Mind Your Language",
-      "year": 1977,
-      "rating": 8.6,
-      "poster": "./posters/tt0075537.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "حواست به حرفات باشه",
-      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2512029"
-      }
-    },
-    {
       "id": "tt7278862",
       "type": "tv",
-      "rank": 236,
+      "rank": 235,
       "title": "My Brilliant Friend",
       "year": 2018,
       "rating": 8.6,
@@ -10589,6 +10569,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q56411652"
+      }
+    },
+    {
+      "id": "tt0075537",
+      "type": "tv",
+      "rank": 236,
+      "title": "Mind Your Language",
+      "year": 1977,
+      "rating": 8.6,
+      "poster": "./posters/tt0075537.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "حواست به حرفات باشه",
+      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2512029"
       }
     },
     {
@@ -10829,27 +10829,9 @@
       }
     },
     {
-      "id": "tt2244495",
-      "type": "tv",
-      "rank": 248,
-      "title": "The Eric Andre Show",
-      "year": 2012,
-      "rating": 8.5,
-      "poster": "./posters/tt2244495.jpg",
-      "genres": [
-        "Comedy",
-        "Reality-TV",
-        "Talk-Show"
-      ],
-      "runtime": 11,
-      "fa": "",
-      "summary": "اریک آندره در فضایی عجیب تلاش می‌کند یک برنامهٔ گفت‌وگومحور اجرا کند؛ گاهی طراح شوخی‌هاست و گاهی خودش قربانی آن‌ها می‌شود.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt1983079",
       "type": "tv",
-      "rank": 249,
+      "rank": 248,
       "title": "Call the Midwife",
       "year": 2012,
       "rating": 8.6,
@@ -10870,24 +10852,55 @@
       }
     },
     {
-      "id": "tt2575988",
+      "id": "tt2359704",
+      "type": "tv",
+      "rank": 249,
+      "title": "JoJo's Bizarre Adventure",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "./posters/tt2359704.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
+      "runtime": 24,
+      "fa": "ماجراجویی عجیب و غریب جوجو (مجموعه تلویزیونی)",
+      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q28930028"
+      }
+    },
+    {
+      "id": "tt0310455",
       "type": "tv",
       "rank": 250,
-      "title": "Silicon Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "title": "Foyle's War",
+      "year": 2002,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjExMDJlZWUtNzQxMS00ZGI4LTg1N2QtMmU3NTkyN2Q4NzYyXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Comedy"
+        "Crime",
+        "Drama",
+        "Mystery",
+        "War"
       ],
-      "runtime": 30,
-      "fa": "سیلیکون ولی",
-      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "runtime": 90,
+      "fa": "بازرس فویل",
+      "summary": "بازرس فویل (انگلیسی: Foyle's War) یک سریال قسمت-محور در ژانر جنایی – درام محصول انگلستان است. داستان سریال در زمان جنگ دوم جهانی در انگلستان واقع است و در هر قسمت حوادث جنایی رخ می‌دهد که بازرس فویل به بررسی علت وقوع جنایت و دستگیری عاملان می‌پردازد.",
       "summaryLanguage": "fa",
-      "aliases": [
-        "دره سیلیکون",
-        "درهٔ سیلیکون"
-      ]
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2377188",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
+      }
     }
   ],
   "archive": [
@@ -11061,48 +11074,42 @@
       "summarySource": "https://v3-cinemeta.strem.io/meta/movie/tt10431500.json"
     },
     {
-      "id": "tt0310455",
+      "id": "tt2244495",
       "type": "tv",
       "rank": null,
-      "title": "Foyle's War",
-      "year": 2002,
-      "rating": 8.6,
-      "poster": "https://m.media-amazon.com/images/M/MV5BNjExMDJlZWUtNzQxMS00ZGI4LTg1N2QtMmU3NTkyN2Q4NzYyXkEyXkFqcGc@._V1_.jpg",
+      "title": "The Eric Andre Show",
+      "year": 2012,
+      "rating": 8.5,
+      "poster": "./posters/tt2244495.jpg",
       "genres": [
-        "Crime",
-        "Drama",
-        "Mystery",
-        "War"
+        "Comedy",
+        "Reality-TV",
+        "Talk-Show"
       ],
-      "runtime": 90,
-      "fa": "بازرس فویل",
-      "summary": "بازرس فویل (انگلیسی: Foyle's War) یک سریال قسمت-محور در ژانر جنایی – درام محصول انگلستان است. داستان سریال در زمان جنگ دوم جهانی در انگلستان واقع است و در هر قسمت حوادث جنایی رخ می‌دهد که بازرس فویل به بررسی علت وقوع جنایت و دستگیری عاملان می‌پردازد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2377188",
-        "summarySource": "wikipedia-fa",
-        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
-      }
+      "runtime": 11,
+      "fa": "",
+      "summary": "اریک آندره در فضایی عجیب تلاش می‌کند یک برنامهٔ گفت‌وگومحور اجرا کند؛ گاهی طراح شوخی‌هاست و گاهی خودش قربانی آن‌ها می‌شود.",
+      "summaryLanguage": "fa"
     },
     {
-      "id": "tt2359704",
+      "id": "tt2575988",
       "type": "tv",
       "rank": null,
-      "title": "JoJo's Bizarre Adventure",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "./posters/tt2359704.jpg",
+      "title": "Silicon Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Action",
-        "Adventure",
-        "Animation"
+        "Comedy"
       ],
-      "runtime": 24,
-      "fa": "",
-      "summary": "هر بخش، ماجرای یکی از نسل‌های خاندان جوستار را دنبال می‌کند؛ خانواده‌ای که اعضایش با توانایی‌های غیرعادی و دشمنان فراطبیعی روبه‌رو می‌شوند.",
+      "runtime": 30,
+      "fa": "سیلیکون ولی",
+      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
       "summaryLanguage": "fa",
-      "summarySource": "https://v3-cinemeta.strem.io/meta/series/tt2359704.json"
+      "aliases": [
+        "دره سیلیکون",
+        "درهٔ سیلیکون"
+      ]
     }
   ]
 }
