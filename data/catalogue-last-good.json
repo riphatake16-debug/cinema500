@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "02be5d759d3dfea02eec6d862405f9a5fda59347c28e58e98e66bca8a4e5dbcc",
+  "version": "2a49f54a69aba8996a26386f36913e8f411600efb3434d726661bfbe12feffb4",
   "status": "ok",
-  "retrievedAt": "2026-11-14T00:31:59+00:00",
-  "checkedAt": "2026-11-14T00:31:59+00:00",
+  "retrievedAt": "2026-11-15T01:30:04+00:00",
+  "checkedAt": "2026-11-15T01:30:04+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1426,32 +1426,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 70,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.4,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt0090605",
       "type": "movie",
-      "rank": 71,
+      "rank": 70,
       "title": "Aliens",
       "year": 1986,
       "rating": 8.4,
@@ -1470,6 +1447,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q104814"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 71,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.4,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -1636,7 +1636,7 @@
       "rank": 79,
       "title": "Amadeus",
       "year": 1984,
-      "rating": 8.4,
+      "rating": 8.3,
       "poster": "./posters/tt0086879.jpg",
       "genres": [
         "Biography",
@@ -2643,9 +2643,26 @@
       }
     },
     {
-      "id": "tt0017136",
+      "id": "tt8579674",
       "type": "movie",
       "rank": 126,
+      "title": "1917",
+      "year": 2019,
+      "rating": 8.2,
+      "poster": "./posters/tt8579674.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 119,
+      "fa": "",
+      "summary": "در جنگ جهانی اول، دو سرباز باید در زمانی کوتاه پیامی را به خط مقدم برسانند تا ۱۶۰۰ سرباز را از افتادن در تلهٔ دشمن نجات دهند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0017136",
+      "type": "movie",
+      "rank": 127,
       "title": "Metropolis",
       "year": 1927,
       "rating": 8.2,
@@ -2662,23 +2679,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q151599"
       }
-    },
-    {
-      "id": "tt8579674",
-      "type": "movie",
-      "rank": 127,
-      "title": "1917",
-      "year": 2019,
-      "rating": 8.2,
-      "poster": "./posters/tt8579674.jpg",
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "runtime": 119,
-      "fa": "",
-      "summary": "در جنگ جهانی اول، دو سرباز باید در زمانی کوتاه پیامی را به خط مقدم برسانند تا ۱۶۰۰ سرباز را از افتادن در تلهٔ دشمن نجات دهند.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt0208092",
@@ -3780,30 +3780,9 @@
       }
     },
     {
-      "id": "tt0346336",
-      "type": "movie",
-      "rank": 178,
-      "title": "The Best of Youth",
-      "year": 2003,
-      "rating": 8.4,
-      "poster": "./posters/tt0346336.jpg",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 374,
-      "fa": "بهترین دوران جوانی",
-      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1217941"
-      }
-    },
-    {
       "id": "tt1201607",
       "type": "movie",
-      "rank": 179,
+      "rank": 178,
       "title": "Harry Potter and the Deathly Hallows: Part 2",
       "year": 2011,
       "rating": 8.1,
@@ -3821,6 +3800,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q232009"
+      }
+    },
+    {
+      "id": "tt0346336",
+      "type": "movie",
+      "rank": 179,
+      "title": "The Best of Youth",
+      "year": 2003,
+      "rating": 8.4,
+      "poster": "./posters/tt0346336.jpg",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 374,
+      "fa": "بهترین دوران جوانی",
+      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1217941"
       }
     },
     {
@@ -6392,9 +6392,25 @@
       }
     },
     {
-      "id": "tt0092337",
+      "id": "tt0098904",
       "type": "tv",
       "rank": 47,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0092337",
+      "type": "tv",
+      "rank": 48,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6410,22 +6426,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
-    },
-    {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 48,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -7743,34 +7743,9 @@
       }
     },
     {
-      "id": "tt38268282",
-      "type": "tv",
-      "rank": 108,
-      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
-      "year": 2026,
-      "rating": 9.3,
-      "poster": "./posters/tt38268282.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": null,
-      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
-      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt38268282/"
-      }
-    },
-    {
       "id": "tt0387764",
       "type": "tv",
-      "rank": 109,
+      "rank": 108,
       "title": "Peep Show",
       "year": 2003,
       "rating": 8.7,
@@ -7790,7 +7765,7 @@
     {
       "id": "tt16026746",
       "type": "tv",
-      "rank": 110,
+      "rank": 109,
       "title": "X-Men '97",
       "year": 2024,
       "rating": 8.7,
@@ -7809,6 +7784,31 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q109558622"
+      }
+    },
+    {
+      "id": "tt38268282",
+      "type": "tv",
+      "rank": 110,
+      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
+      "year": 2026,
+      "rating": 9.3,
+      "poster": "./posters/tt38268282.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
+      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt38268282/"
       }
     },
     {
@@ -7991,32 +7991,9 @@
       }
     },
     {
-      "id": "tt2303687",
-      "type": "tv",
-      "rank": 119,
-      "title": "Line of Duty",
-      "year": 2012,
-      "rating": 8.7,
-      "poster": "./posters/tt2303687.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "خط وظیفه",
-      "summary": "پس از مرگ یک مرد در عملیاتی ناموفق، استیو آرنات به واحد مبارزه با فساد پلیس منتقل می‌شود و کارش را با بررسی رفتار همکارانش ادامه می‌دهد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt2303687/"
-      }
-    },
-    {
       "id": "tt0481256",
       "type": "tv",
-      "rank": 120,
+      "rank": 119,
       "title": "Fighting Spirit",
       "year": 2000,
       "rating": 8.8,
@@ -8034,6 +8011,29 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0481256/"
+      }
+    },
+    {
+      "id": "tt2303687",
+      "type": "tv",
+      "rank": 120,
+      "title": "Line of Duty",
+      "year": 2012,
+      "rating": 8.7,
+      "poster": "./posters/tt2303687.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "خط وظیفه",
+      "summary": "پس از مرگ یک مرد در عملیاتی ناموفق، استیو آرنات به واحد مبارزه با فساد پلیس منتقل می‌شود و کارش را با بررسی رفتار همکارانش ادامه می‌دهد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt2303687/"
       }
     },
     {
@@ -8507,26 +8507,25 @@
       }
     },
     {
-      "id": "tt0348914",
+      "id": "tt4786824",
       "type": "tv",
       "rank": 143,
-      "title": "Deadwood",
-      "year": 2004,
+      "title": "The Crown",
+      "year": 2016,
       "rating": 8.6,
-      "poster": "./posters/tt0348914.jpg",
+      "poster": "./posters/tt4786824.jpg",
       "genres": [
-        "Crime",
+        "Biography",
         "Drama",
-        "History",
-        "Western"
+        "History"
       ],
       "runtime": 60,
-      "fa": "شاخه خشکیده درخت",
-      "summary": "در اواخر قرن نوزدهم، زندگی اهالی ددوود در داکوتای جنوبی، شهری گرفتار فساد و جنایت، دنبال می‌شود.",
+      "fa": "تاج",
+      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1050603"
+        "faUrl": "https://www.wikidata.org/entity/Q20707362"
       }
     },
     {
@@ -8554,25 +8553,26 @@
       }
     },
     {
-      "id": "tt4786824",
+      "id": "tt0348914",
       "type": "tv",
       "rank": 145,
-      "title": "The Crown",
-      "year": 2016,
+      "title": "Deadwood",
+      "year": 2004,
       "rating": 8.6,
-      "poster": "./posters/tt4786824.jpg",
+      "poster": "./posters/tt0348914.jpg",
       "genres": [
-        "Biography",
+        "Crime",
         "Drama",
-        "History"
+        "History",
+        "Western"
       ],
       "runtime": 60,
-      "fa": "تاج",
-      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
+      "fa": "شاخه خشکیده درخت",
+      "summary": "در اواخر قرن نوزدهم، زندگی اهالی ددوود در داکوتای جنوبی، شهری گرفتار فساد و جنایت، دنبال می‌شود.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q20707362"
+        "faUrl": "https://www.wikidata.org/entity/Q1050603"
       }
     },
     {
@@ -8598,9 +8598,30 @@
       }
     },
     {
-      "id": "tt0096639",
+      "id": "tt0096657",
       "type": "tv",
       "rank": 147,
+      "title": "Mr. Bean",
+      "year": 1990,
+      "rating": 8.6,
+      "poster": "./posters/tt0096657.jpg",
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 25,
+      "fa": "مستر بین",
+      "summary": "مستر بین برای انجام ساده‌ترین کارهای روزمره به دردسر می‌افتد و با راه‌حل‌های عجیبش، معمولاً دردسر بزرگ‌تری درست می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q484020"
+      }
+    },
+    {
+      "id": "tt0096639",
+      "type": "tv",
+      "rank": 148,
       "title": "Lonesome Dove",
       "year": 1989,
       "rating": 8.6,
@@ -8617,27 +8638,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2547946"
-      }
-    },
-    {
-      "id": "tt0096657",
-      "type": "tv",
-      "rank": 148,
-      "title": "Mr. Bean",
-      "year": 1990,
-      "rating": 8.6,
-      "poster": "./posters/tt0096657.jpg",
-      "genres": [
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 25,
-      "fa": "مستر بین",
-      "summary": "مستر بین برای انجام ساده‌ترین کارهای روزمره به دردسر می‌افتد و با راه‌حل‌های عجیبش، معمولاً دردسر بزرگ‌تری درست می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q484020"
       }
     },
     {
@@ -9830,29 +9830,9 @@
       }
     },
     {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 202,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
-      }
-    },
-    {
       "id": "tt9335498",
       "type": "tv",
-      "rank": 203,
+      "rank": 202,
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "rating": 8.5,
@@ -9871,6 +9851,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9335498/"
+      }
+    },
+    {
+      "id": "tt4082744",
+      "type": "tv",
+      "rank": 203,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10157,9 +10157,31 @@
       }
     },
     {
-      "id": "tt20859920",
+      "id": "tt1534360",
       "type": "tv",
       "rank": 217,
+      "title": "Ezel",
+      "year": 2009,
+      "rating": 8.6,
+      "poster": "./posters/tt1534360.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 90,
+      "fa": "ایزل",
+      "summary": "عمر اوچار پس از خیانت دوستان مورد اعتمادش و زنی که دوست داشت، با هویت ازل بازمی‌گردد تا انتقام بگیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q840657"
+      }
+    },
+    {
+      "id": "tt20859920",
+      "type": "tv",
+      "rank": 218,
       "title": "Alchemy of Souls",
       "year": 2022,
       "rating": 8.7,
@@ -10178,28 +10200,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q110890248"
-      }
-    },
-    {
-      "id": "tt1534360",
-      "type": "tv",
-      "rank": 218,
-      "title": "Ezel",
-      "year": 2009,
-      "rating": 8.6,
-      "poster": "./posters/tt1534360.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 90,
-      "fa": "ایزل",
-      "summary": "عمر اوچار پس از خیانت دوستان مورد اعتمادش و زنی که دوست داشت، با هویت ازل بازمی‌گردد تا انتقام بگیرد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q840657"
       }
     },
     {
@@ -10552,29 +10552,9 @@
       }
     },
     {
-      "id": "tt7278862",
-      "type": "tv",
-      "rank": 235,
-      "title": "My Brilliant Friend",
-      "year": 2018,
-      "rating": 8.6,
-      "poster": "./posters/tt7278862.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "دوست نابغه من",
-      "summary": "زنی در مرور خاطراتش، دوستی پیچیده و طولانی با هم‌کلاسی دوران کودکی‌اش در ناپل را روایت می‌کند؛ رابطه‌ای میان صمیمیت، رقابت و تلاش برای ساختن زندگی‌ای متفاوت.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q56411652"
-      }
-    },
-    {
       "id": "tt0075537",
       "type": "tv",
-      "rank": 236,
+      "rank": 235,
       "title": "Mind Your Language",
       "year": 1977,
       "rating": 8.6,
@@ -10589,6 +10569,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2512029"
+      }
+    },
+    {
+      "id": "tt7278862",
+      "type": "tv",
+      "rank": 236,
+      "title": "My Brilliant Friend",
+      "year": 2018,
+      "rating": 8.6,
+      "poster": "./posters/tt7278862.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "دوست نابغه من",
+      "summary": "زنی در مرور خاطراتش، دوستی پیچیده و طولانی با هم‌کلاسی دوران کودکی‌اش در ناپل را روایت می‌کند؛ رابطه‌ای میان صمیمیت، رقابت و تلاش برای ساختن زندگی‌ای متفاوت.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q56411652"
       }
     },
     {
@@ -10675,30 +10675,9 @@
       }
     },
     {
-      "id": "tt4236770",
-      "type": "tv",
-      "rank": 241,
-      "title": "Yellowstone",
-      "year": 2018,
-      "rating": 8.6,
-      "poster": "./posters/tt4236770.jpg",
-      "genres": [
-        "Drama",
-        "Western"
-      ],
-      "runtime": 60,
-      "fa": "یلواستون",
-      "summary": "خانوادهٔ داتن برای حفظ مزرعهٔ بزرگشان در مونتانا، با سازندگان املاک و رقیبان درگیر می‌شوند؛ در حالی که اختلاف‌های سیاسی و خانوادگی هم کارشان را سخت‌تر می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q47452423"
-      }
-    },
-    {
       "id": "tt1877368",
       "type": "tv",
-      "rank": 242,
+      "rank": 241,
       "title": "The Great British Baking Show",
       "year": 2010,
       "rating": 8.6,
@@ -10714,6 +10693,27 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt1877368/"
+      }
+    },
+    {
+      "id": "tt4236770",
+      "type": "tv",
+      "rank": 242,
+      "title": "Yellowstone",
+      "year": 2018,
+      "rating": 8.6,
+      "poster": "./posters/tt4236770.jpg",
+      "genres": [
+        "Drama",
+        "Western"
+      ],
+      "runtime": 60,
+      "fa": "یلواستون",
+      "summary": "خانوادهٔ داتن برای حفظ مزرعهٔ بزرگشان در مونتانا، با سازندگان املاک و رقیبان درگیر می‌شوند؛ در حالی که اختلاف‌های سیاسی و خانوادگی هم کارشان را سخت‌تر می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q47452423"
       }
     },
     {
@@ -10829,32 +10829,9 @@
       }
     },
     {
-      "id": "tt1983079",
-      "type": "tv",
-      "rank": 248,
-      "title": "Call the Midwife",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMjAwNzc1MzVeQTJeQWpwZ15BbWU4MDQzODgzMjEx._V1_.jpg",
-      "genres": [
-        "Drama",
-        "History"
-      ],
-      "runtime": 60,
-      "fa": "با ماما تماس بگیرید",
-      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1983079/",
-        "summarySource": "mymemory",
-        "summaryUrl": "https://www.imdb.com/title/tt1983079/"
-      }
-    },
-    {
       "id": "tt2359704",
       "type": "tv",
-      "rank": 249,
+      "rank": 248,
       "title": "JoJo's Bizarre Adventure",
       "year": 2012,
       "rating": 8.6,
@@ -10878,28 +10855,46 @@
       }
     },
     {
-      "id": "tt0310455",
+      "id": "tt2575988",
+      "type": "tv",
+      "rank": 249,
+      "title": "Silicon Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "سیلیکون ولی",
+      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "دره سیلیکون",
+        "درهٔ سیلیکون"
+      ]
+    },
+    {
+      "id": "tt1983079",
       "type": "tv",
       "rank": 250,
-      "title": "Foyle's War",
-      "year": 2002,
+      "title": "Call the Midwife",
+      "year": 2012,
       "rating": 8.6,
-      "poster": "https://m.media-amazon.com/images/M/MV5BNjExMDJlZWUtNzQxMS00ZGI4LTg1N2QtMmU3NTkyN2Q4NzYyXkEyXkFqcGc@._V1_.jpg",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTAzMjAwNzc1MzVeQTJeQWpwZ15BbWU4MDQzODgzMjEx._V1_.jpg",
       "genres": [
-        "Crime",
         "Drama",
-        "Mystery",
-        "War"
+        "History"
       ],
-      "runtime": 90,
-      "fa": "بازرس فویل",
-      "summary": "بازرس فویل (انگلیسی: Foyle's War) یک سریال قسمت-محور در ژانر جنایی – درام محصول انگلستان است. داستان سریال در زمان جنگ دوم جهانی در انگلستان واقع است و در هر قسمت حوادث جنایی رخ می‌دهد که بازرس فویل به بررسی علت وقوع جنایت و دستگیری عاملان می‌پردازد.",
+      "runtime": 60,
+      "fa": "با ماما تماس بگیرید",
+      "summary": "زندگی گروهی از ماماها را که در اواخر دهه 1950 تا اوایل دهه 1970 در شرق لندن زندگی می کردند، روایت می کند.",
       "summaryLanguage": "fa",
       "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2377188",
-        "summarySource": "wikipedia-fa",
-        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1983079/",
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt1983079/"
       }
     }
   ],
@@ -11092,24 +11087,29 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt2575988",
+      "id": "tt0310455",
       "type": "tv",
       "rank": null,
-      "title": "Silicon Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "title": "Foyle's War",
+      "year": 2002,
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjExMDJlZWUtNzQxMS00ZGI4LTg1N2QtMmU3NTkyN2Q4NzYyXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Comedy"
+        "Crime",
+        "Drama",
+        "Mystery",
+        "War"
       ],
-      "runtime": 30,
-      "fa": "سیلیکون ولی",
-      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "runtime": 90,
+      "fa": "بازرس فویل",
+      "summary": "بازرس فویل (انگلیسی: Foyle's War) یک سریال قسمت-محور در ژانر جنایی – درام محصول انگلستان است. داستان سریال در زمان جنگ دوم جهانی در انگلستان واقع است و در هر قسمت حوادث جنایی رخ می‌دهد که بازرس فویل به بررسی علت وقوع جنایت و دستگیری عاملان می‌پردازد.",
       "summaryLanguage": "fa",
-      "aliases": [
-        "دره سیلیکون",
-        "درهٔ سیلیکون"
-      ]
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2377188",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
+      }
     }
   ]
 }
