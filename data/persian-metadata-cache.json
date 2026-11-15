@@ -4036,6 +4036,17 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt2244495/"
       }
+    },
+    "tt3212600": {
+      "fa": "مهاباراتا",
+      "summary": "مادر همه جنگ‌ها، مظهر همه رقابت‌ها، کانون احساسات، ناامنی‌ها، حسادت‌ها و بازی قدرت - مهاباراتا.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt3212600/",
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt3212600/"
+      }
     }
   },
   "retryAfter": {
@@ -4047,6 +4058,6 @@
   },
   "translationUsage": {
     "date": "2026-11-15",
-    "characters": 63
+    "characters": 207
   }
 }
