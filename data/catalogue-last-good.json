@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "2a49f54a69aba8996a26386f36913e8f411600efb3434d726661bfbe12feffb4",
+  "version": "d57b00061388c138b668c7ba4d693ba59b91d372a936c87fc806386429c94b0f",
   "status": "ok",
-  "retrievedAt": "2026-11-15T01:30:04+00:00",
-  "checkedAt": "2026-11-15T01:30:04+00:00",
+  "retrievedAt": "2026-11-16T01:46:38+00:00",
+  "checkedAt": "2026-11-16T01:46:38+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1450,32 +1450,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 71,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.4,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt0057565",
       "type": "movie",
-      "rank": 72,
+      "rank": 71,
       "title": "High and Low",
       "year": 1963,
       "rating": 8.4,
@@ -1498,10 +1475,10 @@
     {
       "id": "tt23849204",
       "type": "movie",
-      "rank": 73,
+      "rank": 72,
       "title": "12th Fail",
       "year": 2023,
-      "rating": 8.7,
+      "rating": 8.6,
       "poster": "./posters/tt23849204.jpg",
       "genres": [
         "Biography",
@@ -1519,7 +1496,7 @@
     {
       "id": "tt4154796",
       "type": "movie",
-      "rank": 74,
+      "rank": 73,
       "title": "Avengers: Endgame",
       "year": 2019,
       "rating": 8.4,
@@ -1536,6 +1513,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q23781155"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 74,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.4,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -1829,29 +1829,9 @@
       }
     },
     {
-      "id": "tt0169547",
-      "type": "movie",
-      "rank": 88,
-      "title": "American Beauty",
-      "year": 1999,
-      "rating": 8.3,
-      "poster": "./posters/tt0169547.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 122,
-      "fa": "زیبایی آمریکایی",
-      "summary": "پدری ساکن حومهٔ شهر، پس از شیفتگی به دوست صمیمی دخترش، با بحران میانسالی روبه‌رو می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q25139"
-      }
-    },
-    {
       "id": "tt2056785",
       "type": "movie",
-      "rank": 89,
+      "rank": 88,
       "title": "Wildwood",
       "year": 2026,
       "rating": 8.6,
@@ -1870,6 +1850,26 @@
         "faUrl": "https://www.wikidata.org/entity/Q123058740",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt0169547",
+      "type": "movie",
+      "rank": 89,
+      "title": "American Beauty",
+      "year": 1999,
+      "rating": 8.3,
+      "poster": "./posters/tt0169547.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 122,
+      "fa": "زیبایی آمریکایی",
+      "summary": "پدری ساکن حومهٔ شهر، پس از شیفتگی به دوست صمیمی دخترش، با بحران میانسالی روبه‌رو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q25139"
       }
     },
     {
@@ -3803,30 +3803,9 @@
       }
     },
     {
-      "id": "tt0346336",
-      "type": "movie",
-      "rank": 179,
-      "title": "The Best of Youth",
-      "year": 2003,
-      "rating": 8.4,
-      "poster": "./posters/tt0346336.jpg",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 374,
-      "fa": "بهترین دوران جوانی",
-      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1217941"
-      }
-    },
-    {
       "id": "tt0117951",
       "type": "movie",
-      "rank": 180,
+      "rank": 179,
       "title": "Trainspotting",
       "year": 1996,
       "rating": 8.1,
@@ -3842,6 +3821,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q109135"
+      }
+    },
+    {
+      "id": "tt0346336",
+      "type": "movie",
+      "rank": 180,
+      "title": "The Best of Youth",
+      "year": 2003,
+      "rating": 8.4,
+      "poster": "./posters/tt0346336.jpg",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 374,
+      "fa": "بهترین دوران جوانی",
+      "summary": "زندگی دو برادر ایتالیایی از دههٔ ۱۹۶۰ تا آغاز قرن بیست‌ویکم دنبال می‌شود؛ مسیرهایی متفاوت که میان عشق، خانواده و دگرگونی‌های اجتماعی و سیاسی کشورشان بارها به هم می‌رسند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1217941"
       }
     },
     {
@@ -6392,25 +6392,9 @@
       }
     },
     {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 47,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0092337",
       "type": "tv",
-      "rank": 48,
+      "rank": 47,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6426,6 +6410,22 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
+    },
+    {
+      "id": "tt0098904",
+      "type": "tv",
+      "rank": 48,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -7787,34 +7787,9 @@
       }
     },
     {
-      "id": "tt38268282",
-      "type": "tv",
-      "rank": 110,
-      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
-      "year": 2026,
-      "rating": 9.3,
-      "poster": "./posters/tt38268282.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": null,
-      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
-      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt38268282/"
-      }
-    },
-    {
       "id": "tt0281491",
       "type": "tv",
-      "rank": 111,
+      "rank": 110,
       "title": "Still Game",
       "year": 2002,
       "rating": 8.9,
@@ -7834,7 +7809,7 @@
     {
       "id": "tt13309742",
       "type": "tv",
-      "rank": 112,
+      "rank": 111,
       "title": "Blue Eye Samurai",
       "year": 2023,
       "rating": 8.7,
@@ -7853,6 +7828,31 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q122899426"
+      }
+    },
+    {
+      "id": "tt38268282",
+      "type": "tv",
+      "rank": 112,
+      "title": "Steel Ball Run: JoJo's Bizarre Adventure",
+      "year": 2026,
+      "rating": 9.3,
+      "poster": "./posters/tt38268282.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "fa": "دویدن با توپ فولادی: ماجراجویی عجیب جوجو",
+      "summary": "در آمریکای سال ۱۸۹۰، جانی جوستار، سوارکار سابقی که توان راه‌رفتن را از دست داده، با جیرو زپلی همراه می‌شود و در مسابقه‌ای خطرناک و رازآلود برای عبور از قاره شرکت می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt38268282/"
       }
     },
     {
@@ -8303,29 +8303,9 @@
       }
     },
     {
-      "id": "tt14392248",
-      "type": "tv",
-      "rank": 133,
-      "title": "Aspirants",
-      "year": 2021,
-      "rating": 9.1,
-      "poster": "./posters/tt14392248.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 45,
-      "fa": "داوطلبان",
-      "summary": "سه دوست برای آزمون سخت استخدام در مشاغل دولتی هند آماده می‌شوند. رقابت و فشار این مسیر، بر دوستی و انتخاب‌های آینده‌شان هم اثر می‌گذارد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt14392248/"
-      }
-    },
-    {
       "id": "tt1795096",
       "type": "tv",
-      "rank": 134,
+      "rank": 133,
       "title": "Behzat Ç: An Ankara Detective Story",
       "year": 2010,
       "rating": 8.8,
@@ -8344,6 +8324,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4881030"
+      }
+    },
+    {
+      "id": "tt14392248",
+      "type": "tv",
+      "rank": 134,
+      "title": "Aspirants",
+      "year": 2021,
+      "rating": 9.1,
+      "poster": "./posters/tt14392248.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 45,
+      "fa": "داوطلبان",
+      "summary": "سه دوست برای آزمون سخت استخدام در مشاغل دولتی هند آماده می‌شوند. رقابت و فشار این مسیر، بر دوستی و انتخاب‌های آینده‌شان هم اثر می‌گذارد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt14392248/"
       }
     },
     {
@@ -8507,31 +8507,9 @@
       }
     },
     {
-      "id": "tt4786824",
-      "type": "tv",
-      "rank": 143,
-      "title": "The Crown",
-      "year": 2016,
-      "rating": 8.6,
-      "poster": "./posters/tt4786824.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "runtime": 60,
-      "fa": "تاج",
-      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q20707362"
-      }
-    },
-    {
       "id": "tt3322312",
       "type": "tv",
-      "rank": 144,
+      "rank": 143,
       "title": "Daredevil",
       "year": 2015,
       "rating": 8.6,
@@ -8555,7 +8533,7 @@
     {
       "id": "tt0348914",
       "type": "tv",
-      "rank": 145,
+      "rank": 144,
       "title": "Deadwood",
       "year": 2004,
       "rating": 8.6,
@@ -8573,6 +8551,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1050603"
+      }
+    },
+    {
+      "id": "tt4786824",
+      "type": "tv",
+      "rank": 145,
+      "title": "The Crown",
+      "year": 2016,
+      "rating": 8.6,
+      "poster": "./posters/tt4786824.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "runtime": 60,
+      "fa": "تاج",
+      "summary": "زندگی الیزابت دوم و خانوادهٔ سلطنتی بریتانیا در طول سال‌های سلطنتش دنبال می‌شود؛ از روابط خانوادگی تا تصمیم‌های سیاسی و رویدادهای تاریخی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q20707362"
       }
     },
     {
@@ -9037,31 +9037,9 @@
       }
     },
     {
-      "id": "tt0090509",
-      "type": "tv",
-      "rank": 167,
-      "title": "The Return of Sherlock Holmes",
-      "year": 1986,
-      "rating": 8.7,
-      "poster": "./posters/tt0090509.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 60,
-      "fa": "بازگشت شرلوک هولمز",
-      "summary": "شرلوک هولمز و دکتر واتسون برای حل مجموعه‌ای تازه از پرونده‌های مرموز، بار دیگر مشاهده و استدلال را به کار می‌گیرند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0090509/"
-      }
-    },
-    {
       "id": "tt2049116",
       "type": "tv",
-      "rank": 168,
+      "rank": 167,
       "title": "Gomorrah",
       "year": 2014,
       "rating": 8.6,
@@ -9078,6 +9056,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16876411"
+      }
+    },
+    {
+      "id": "tt0090509",
+      "type": "tv",
+      "rank": 168,
+      "title": "The Return of Sherlock Holmes",
+      "year": 1986,
+      "rating": 8.7,
+      "poster": "./posters/tt0090509.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 60,
+      "fa": "بازگشت شرلوک هولمز",
+      "summary": "شرلوک هولمز و دکتر واتسون برای حل مجموعه‌ای تازه از پرونده‌های مرموز، بار دیگر مشاهده و استدلال را به کار می‌گیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0090509/"
       }
     },
     {
@@ -9830,9 +9830,29 @@
       }
     },
     {
-      "id": "tt9335498",
+      "id": "tt4082744",
       "type": "tv",
       "rank": 202,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
+      }
+    },
+    {
+      "id": "tt9335498",
+      "type": "tv",
+      "rank": 203,
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "rating": 8.5,
@@ -9851,26 +9871,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9335498/"
-      }
-    },
-    {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 203,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10552,29 +10552,9 @@
       }
     },
     {
-      "id": "tt0075537",
-      "type": "tv",
-      "rank": 235,
-      "title": "Mind Your Language",
-      "year": 1977,
-      "rating": 8.6,
-      "poster": "./posters/tt0075537.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "حواست به حرفات باشه",
-      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2512029"
-      }
-    },
-    {
       "id": "tt7278862",
       "type": "tv",
-      "rank": 236,
+      "rank": 235,
       "title": "My Brilliant Friend",
       "year": 2018,
       "rating": 8.6,
@@ -10592,30 +10572,29 @@
       }
     },
     {
-      "id": "tt1492966",
+      "id": "tt0075537",
       "type": "tv",
-      "rank": 237,
-      "title": "Louie",
-      "year": 2010,
-      "rating": 8.5,
-      "poster": "./posters/tt1492966.jpg",
+      "rank": 236,
+      "title": "Mind Your Language",
+      "year": 1977,
+      "rating": 8.6,
+      "poster": "./posters/tt0075537.jpg",
       "genres": [
-        "Comedy",
-        "Drama"
+        "Comedy"
       ],
-      "runtime": 22,
-      "fa": "لوئی",
-      "summary": "لوئی، کمدینی که از همسرش جدا شده، در نیویورک میان اجراهای کمدی، بزرگ‌کردن دو دخترش و دردسرهای زندگی شخصی‌اش رفت‌وآمد می‌کند.",
+      "runtime": 30,
+      "fa": "حواست به حرفات باشه",
+      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23536"
+        "faUrl": "https://www.wikidata.org/entity/Q2512029"
       }
     },
     {
       "id": "tt0290988",
       "type": "tv",
-      "rank": 238,
+      "rank": 237,
       "title": "Trailer Park Boys",
       "year": 2001,
       "rating": 8.5,
@@ -10631,6 +10610,27 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0290988/"
+      }
+    },
+    {
+      "id": "tt1492966",
+      "type": "tv",
+      "rank": 238,
+      "title": "Louie",
+      "year": 2010,
+      "rating": 8.5,
+      "poster": "./posters/tt1492966.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 22,
+      "fa": "لوئی",
+      "summary": "لوئی، کمدینی که از همسرش جدا شده، در نیویورک میان اجراهای کمدی، بزرگ‌کردن دو دخترش و دردسرهای زندگی شخصی‌اش رفت‌وآمد می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23536"
       }
     },
     {
@@ -10855,24 +10855,28 @@
       }
     },
     {
-      "id": "tt2575988",
+      "id": "tt3212600",
       "type": "tv",
       "rank": 249,
-      "title": "Silicon Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "title": "Mahabharat",
+      "year": 2013,
+      "rating": 8.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYzM1MmNhMGQtNDliNy00ZDIwLTg1MDQtN2NjZjUyNTg2MGMxXkEyXkFqcGc@._V1_.jpg",
       "genres": [
-        "Comedy"
+        "Drama",
+        "History",
+        "War"
       ],
-      "runtime": 30,
-      "fa": "سیلیکون ولی",
-      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "runtime": 20,
+      "fa": "مهاباراتا",
+      "summary": "مادر همه جنگ‌ها، مظهر همه رقابت‌ها، کانون احساسات، ناامنی‌ها، حسادت‌ها و بازی قدرت - مهاباراتا.",
       "summaryLanguage": "fa",
-      "aliases": [
-        "دره سیلیکون",
-        "درهٔ سیلیکون"
-      ]
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt3212600/",
+        "summarySource": "mymemory",
+        "summaryUrl": "https://www.imdb.com/title/tt3212600/"
+      }
     },
     {
       "id": "tt1983079",
@@ -11110,6 +11114,26 @@
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
       }
+    },
+    {
+      "id": "tt2575988",
+      "type": "tv",
+      "rank": null,
+      "title": "Silicon Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "سیلیکون ولی",
+      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "دره سیلیکون",
+        "درهٔ سیلیکون"
+      ]
     }
   ]
 }
