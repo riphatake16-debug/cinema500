@@ -87,3 +87,24 @@ test('first screen stays light: card thumbnails and no per-card backdrop blur', 
   assert.ok(!/backdrop-filter/.test(gridRule[0]), 'cards must not composite a blur');
   assert.ok(!/auroraDrift 24s/.test(css), 'ambient gradient is static');
 });
+
+test('Google sign-in ships as an optional browser-only module', async () => {
+  const [auth, config, html, sw, app] = await Promise.all([
+    readFile('auth.js', 'utf8'),
+    readFile('auth-config.js', 'utf8'),
+    readFile('index.html', 'utf8'),
+    readFile('sw.js', 'utf8'),
+    readFile('app.js', 'utf8')
+  ]);
+  assert.match(auth, /accounts\.google\.com\/gsi\/client/);
+  assert.match(auth, /window\.CinemaAuth\s*=/);
+  assert.match(auth, /cinema-google-profile/);
+  assert.ok(!/client_secret|clientSecret/.test(auth), 'no client secret in the browser bundle');
+  assert.match(config, /googleClientId/);
+  assert.match(html, /auth-config\.js/);
+  assert.match(html, /"\.\/auth\.js/);
+  assert.ok(html.indexOf('auth.js') < html.indexOf('app.js'), 'auth loads before the app');
+  assert.match(sw, /'\.\/auth\.js'/);
+  assert.match(app, /CinemaAuth\.mount/);
+  assert.match(app, /CinemaAuth\.getProfile/);
+});

@@ -86,8 +86,8 @@ function openQuickSearch(){closeFilters();setDialogMode('quick');$('#details').s
 
 
 
-function loadAccount(){accountReady=true;renderAccount();render();}
-function renderAccount(){$('#account-slot').innerHTML=`<button class="account-button" id="account"><span id="account-avatar" class="account-avatar" aria-hidden="true"></span> حساب من</button>`;$('#account').onclick=()=>openAccount()}
+function loadAccount(){accountReady=true;window.CinemaAuth&&window.CinemaAuth.onChange(()=>renderAccount());renderAccount();render();}
+function renderAccount(){const google=window.CinemaAuth&&window.CinemaAuth.getProfile();$('#account-slot').innerHTML=google?`<button class="account-button" id="account"><img class="account-avatar" src="${esc(google.picture)}" alt="" width="30" height="30" referrerpolicy="no-referrer"> ${esc((google.name||'حساب من').split(' ')[0])}</button>`:`<button class="account-button" id="account"><span id="account-avatar" class="account-avatar" aria-hidden="true"></span> حساب من</button>`;$('#account').onclick=()=>openAccount()}
 /* Keep the four journal keys consistent when storage runs out of space. */
 function writeJournalAtomically(rows){
   const snapshot=rows.map(([key])=>[key,localStorage.getItem(key)]);
@@ -146,7 +146,7 @@ function previewJournal(payload){
 }
 function openAccount(){
   setDialogMode('account');$('#details').setAttribute('aria-label','حساب من');$('#dialog-image').style.backgroundImage='';
-  $('#dialog-content').innerHTML=`<section class="profile-screen"><div class="screen-heading"><span class="screen-kicker">فضای شخصی تو</span><h2>حساب من</h2></div><div id="rank-profile-slot">${rankProfileMarkup()}</div><div class="profile-metrics"><div><b>${fa(seen.size)}</b><span>اثر دیده‌شده</span></div><div><b>${fa(wanted.size)}</b><span>در لیست تماشا</span></div></div><div class="profile-actions"><button id="journal-export" class="profile-action profile-action-primary" type="button"><span>${icon('download')}</span><b>دریافت پشتیبان</b><small>ذخیرهٔ فایل اطلاعات من</small></button><button id="journal-import" class="profile-action" type="button"><span>${icon('refresh')}</span><b>بازیابی پشتیبان</b><small>ادامه با اطلاعات فایل قبلی</small></button><button id="open-journal" class="profile-journal" type="button">${icon('film')}<span>دفتر تماشای من</span>${icon('chevron-left')}</button></div><button id="account-help" class="profile-help" type="button">${icon('info')} ذخیره‌سازی و راهنما ${icon('chevron-left')}</button><input type="file" id="backup-file" accept="application/json,.json" hidden><section id="backup-preview" class="backup-preview" role="region" aria-label="تأیید بازیابی پشتیبان" hidden></section></section>`;
+  $('#dialog-content').innerHTML=`<section class="profile-screen"><div class="screen-heading"><span class="screen-kicker">فضای شخصی تو</span><h2>حساب من</h2></div><div class="auth-card" id="auth-card"></div><div id="rank-profile-slot">${rankProfileMarkup()}</div><div class="profile-metrics"><div><b>${fa(seen.size)}</b><span>اثر دیده‌شده</span></div><div><b>${fa(wanted.size)}</b><span>در لیست تماشا</span></div></div><div class="profile-actions"><button id="journal-export" class="profile-action profile-action-primary" type="button"><span>${icon('download')}</span><b>دریافت پشتیبان</b><small>ذخیرهٔ فایل اطلاعات من</small></button><button id="journal-import" class="profile-action" type="button"><span>${icon('refresh')}</span><b>بازیابی پشتیبان</b><small>ادامه با اطلاعات فایل قبلی</small></button><button id="open-journal" class="profile-journal" type="button">${icon('film')}<span>دفتر تماشای من</span>${icon('chevron-left')}</button></div><button id="account-help" class="profile-help" type="button">${icon('info')} ذخیره‌سازی و راهنما ${icon('chevron-left')}</button><input type="file" id="backup-file" accept="application/json,.json" hidden><section id="backup-preview" class="backup-preview" role="region" aria-label="تأیید بازیابی پشتیبان" hidden></section></section>`;
   $('#open-journal').onclick=openJournal;$('#journal-export').onclick=exportJournal;$('#journal-import').onclick=()=>$('#backup-file').click();
  $('#backup-file').onchange=async e=>{
   const file=e.target.files?.[0],preview=$('#backup-preview');
@@ -169,6 +169,7 @@ function openAccount(){
   }
   $('#backup-file').value='';
  };
+  if(window.CinemaAuth)window.CinemaAuth.mount($('#auth-card'),{onChange:google=>{renderAccount();toast(google?'با حساب گوگل وارد شدی.':'از حساب گوگل خارج شدی.')}});
   $('#account-help').onclick=openAccountHelp;syncDock();if(!$('#details').open)$('#details').showModal();$('#details').scrollTop=0;
 }
 function openAccountHelp(){

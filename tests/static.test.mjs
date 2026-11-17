@@ -146,9 +146,9 @@ test('Roulette draws from the current catalogue without changing private records
  get('#details').open=false;
 });
 
-test('Browser-only profile exposes backup without any sign-in or cloud dependency',async()=>{
- const html=await readFile('index.html','utf8');assert.ok(!/auth-config|auth\.js|cloud-sync|supabase/i.test(html));assert.ok(!/CinemaAuth|cloudSync|queueCloud|authStatus/.test(source));
- api.openAccount();const profile=get('#dialog-content').innerHTML;assert.ok(profile.includes('account-help'));assert.ok(!profile.includes('اطلاعات هر مرورگر'));get('#account-help').onclick();assert.ok(get('#dialog-content').innerHTML.includes('اطلاعات هر مرورگر'));get('#account-guide-back').onclick();assert.ok(profile.includes('journal-export'));assert.ok(profile.includes('journal-import'));assert.ok(!profile.includes('ورود با گوگل'));
+test('Browser-only profile keeps its backup and offers only optional Google sign-in',async()=>{
+ const html=await readFile('index.html','utf8');assert.ok(/auth-config\.js/.test(html));assert.ok(/auth\.js/.test(html));assert.ok(!/cloud-sync|supabase|firebase/i.test(html));assert.ok(!/cloudSync|queueCloud|supabase|firebase/i.test(source));assert.ok(/CinemaAuth\.getProfile/.test(source));
+ api.openAccount();const profile=get('#dialog-content').innerHTML;assert.ok(profile.includes('account-help'));assert.ok(profile.includes('auth-card'));assert.ok(!profile.includes('اطلاعات هر مرورگر'));get('#account-help').onclick();assert.ok(get('#dialog-content').innerHTML.includes('اطلاعات هر مرورگر'));get('#account-guide-back').onclick();assert.ok(profile.includes('journal-export'));assert.ok(profile.includes('journal-import'));
 });
 
 test('Existing browser records survive a fresh initialization with the same storage keys',()=>{

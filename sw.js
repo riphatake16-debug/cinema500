@@ -1,10 +1,11 @@
 /* Cinema500 offline shell. Fresh catalogue stays network-first; artwork is cached on demand. */
-const VERSION = 'cinema500-v10';
+const VERSION = 'cinema500-v11';
 const SHELL = [
   './', './index.html', './privacy.html', './terms.html',
   './app.js', './catalogue.js', './live.js', './discovery.js', './ranks.js',
   './roulette.js', './selects.js', './motion.js', './sw-register.js',
   './style.css', './mobile.css', './favicon.svg', './manifest.webmanifest',
+  './auth.js', './auth-config.js',
   './fonts/Vazirmatn-Variable.woff2',
   './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'
 ];
