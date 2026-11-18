@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "860e8871a53fc9244a4b94f8ecf5a04f3a0f4d4938b3925400e2f79d991e53b8",
+  "version": "8314a51455e4dad52cf7c265f78a10277c2c7d1a8ec312f3ca3eafdd2ade8644",
   "status": "ok",
-  "retrievedAt": "2026-11-17T01:35:18+00:00",
-  "checkedAt": "2026-11-17T01:35:18+00:00",
+  "retrievedAt": "2026-11-18T00:04:37+00:00",
+  "checkedAt": "2026-11-18T00:04:37+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -2429,29 +2429,9 @@
       }
     },
     {
-      "id": "tt0097576",
-      "type": "movie",
-      "rank": 116,
-      "title": "Indiana Jones and the Last Crusade",
-      "year": 1989,
-      "rating": 8.2,
-      "poster": "./posters/tt0097576.jpg",
-      "genres": [
-        "Adventure"
-      ],
-      "runtime": 127,
-      "fa": "ایندیانا جونز و آخرین جنگ صلیبی",
-      "summary": "پس از ناپدیدشدن پدر ایندیانا جونز در جست‌وجوی جام مقدس، او بار دیگر با نازی‌ها روبه‌رو می‌شود تا مانع دستیابی‌شان به قدرت جام شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q185658"
-      }
-    },
-    {
       "id": "tt0022100",
       "type": "movie",
-      "rank": 117,
+      "rank": 116,
       "title": "M",
       "year": 1931,
       "rating": 8.3,
@@ -2468,6 +2448,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q127021"
+      }
+    },
+    {
+      "id": "tt0097576",
+      "type": "movie",
+      "rank": 117,
+      "title": "Indiana Jones and the Last Crusade",
+      "year": 1989,
+      "rating": 8.2,
+      "poster": "./posters/tt0097576.jpg",
+      "genres": [
+        "Adventure"
+      ],
+      "runtime": 127,
+      "fa": "ایندیانا جونز و آخرین جنگ صلیبی",
+      "summary": "پس از ناپدیدشدن پدر ایندیانا جونز در جست‌وجوی جام مقدس، او بار دیگر با نازی‌ها روبه‌رو می‌شود تا مانع دستیابی‌شان به قدرت جام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q185658"
       }
     },
     {
@@ -3508,9 +3508,32 @@
       }
     },
     {
-      "id": "tt32820897",
+      "id": "tt0057115",
       "type": "movie",
       "rank": 166,
+      "title": "The Great Escape",
+      "year": 1963,
+      "rating": 8.2,
+      "poster": "./posters/tt0057115.jpg",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Thriller",
+        "War"
+      ],
+      "runtime": 172,
+      "fa": "فرار بزرگ",
+      "summary": "اسیران متفقین در جنگ جهانی دوم، نقشه‌ای برای فرار چندصد نفر از یک اردوگاه آلمانی طراحی می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q110354"
+      }
+    },
+    {
+      "id": "tt32820897",
+      "type": "movie",
+      "rank": 167,
       "title": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
       "year": 2025,
       "rating": 8.3,
@@ -3530,29 +3553,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q126948105"
-      }
-    },
-    {
-      "id": "tt0057115",
-      "type": "movie",
-      "rank": 167,
-      "title": "The Great Escape",
-      "year": 1963,
-      "rating": 8.2,
-      "poster": "./posters/tt0057115.jpg",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Thriller",
-        "War"
-      ],
-      "runtime": 172,
-      "fa": "فرار بزرگ",
-      "summary": "اسیران متفقین در جنگ جهانی دوم، نقشه‌ای برای فرار چندصد نفر از یک اردوگاه آلمانی طراحی می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q110354"
       }
     },
     {
@@ -6392,9 +6392,25 @@
       }
     },
     {
-      "id": "tt0092337",
+      "id": "tt0098904",
       "type": "tv",
       "rank": 47,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0092337",
+      "type": "tv",
+      "rank": 48,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6410,22 +6426,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
-    },
-    {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 48,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -7656,30 +7656,9 @@
       }
     },
     {
-      "id": "tt5687612",
-      "type": "tv",
-      "rank": 104,
-      "title": "Fleabag",
-      "year": 2016,
-      "rating": 8.7,
-      "poster": "./posters/tt5687612.jpg",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "runtime": 30,
-      "fa": "فلیبگ",
-      "summary": "زنی جوان در لندن پس از یک فقدان تلخ، تلاش می‌کند زندگی، کار و روابطش را دوباره سر و سامان بدهد؛ اما همیشه هم انتخاب‌های درستی نمی‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q16868648"
-      }
-    },
-    {
       "id": "tt0407362",
       "type": "tv",
-      "rank": 105,
+      "rank": 104,
       "title": "Battlestar Galactica",
       "year": 2004,
       "rating": 8.7,
@@ -7697,6 +7676,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q237072"
+      }
+    },
+    {
+      "id": "tt5687612",
+      "type": "tv",
+      "rank": 105,
+      "title": "Fleabag",
+      "year": 2016,
+      "rating": 8.7,
+      "poster": "./posters/tt5687612.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 30,
+      "fa": "فلیبگ",
+      "summary": "زنی جوان در لندن پس از یک فقدان تلخ، تلاش می‌کند زندگی، کار و روابطش را دوباره سر و سامان بدهد؛ اما همیشه هم انتخاب‌های درستی نمی‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16868648"
       }
     },
     {
@@ -8196,9 +8196,31 @@
       }
     },
     {
-      "id": "tt11280740",
+      "id": "tt5555260",
       "type": "tv",
       "rank": 128,
+      "title": "This Is Us",
+      "year": 2016,
+      "rating": 8.7,
+      "poster": "./posters/tt5555260.jpg",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 45,
+      "fa": "این ما هستیم",
+      "summary": "زندگی یک زوج و سه فرزندشان در دوره‌های مختلف دنبال می‌شود؛ از بزرگ‌شدن بچه‌ها تا تأثیر تصمیم‌ها و خاطرات خانوادگی بر زندگی بزرگسالی آن‌ها.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q24068191"
+      }
+    },
+    {
+      "id": "tt11280740",
+      "type": "tv",
+      "rank": 129,
       "title": "Severance",
       "year": 2022,
       "rating": 8.6,
@@ -8216,28 +8238,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q101096725"
-      }
-    },
-    {
-      "id": "tt5555260",
-      "type": "tv",
-      "rank": 129,
-      "title": "This Is Us",
-      "year": 2016,
-      "rating": 8.7,
-      "poster": "./posters/tt5555260.jpg",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 45,
-      "fa": "این ما هستیم",
-      "summary": "زندگی یک زوج و سه فرزندشان در دوره‌های مختلف دنبال می‌شود؛ از بزرگ‌شدن بچه‌ها تا تأثیر تصمیم‌ها و خاطرات خانوادگی بر زندگی بزرگسالی آن‌ها.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q24068191"
       }
     },
     {
@@ -8323,9 +8323,29 @@
       }
     },
     {
-      "id": "tt1795096",
+      "id": "tt0459159",
       "type": "tv",
       "rank": 134,
+      "title": "The Thick of It",
+      "year": 2005,
+      "rating": 8.7,
+      "poster": "./posters/tt0459159.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "ضخامت آن",
+      "summary": "وزیر امور اجتماعی و تیمش باید هم از پس بحران‌های خبری بربیایند و هم دفتر نخست‌وزیر را راضی نگه دارند؛ کاری که با اشتباه‌های پی‌درپی‌شان سخت‌تر می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0459159/"
+      }
+    },
+    {
+      "id": "tt1795096",
+      "type": "tv",
+      "rank": 135,
       "title": "Behzat Ç: An Ankara Detective Story",
       "year": 2010,
       "rating": 8.8,
@@ -8344,26 +8364,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4881030"
-      }
-    },
-    {
-      "id": "tt0459159",
-      "type": "tv",
-      "rank": 135,
-      "title": "The Thick of It",
-      "year": 2005,
-      "rating": 8.7,
-      "poster": "./posters/tt0459159.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "ضخامت آن",
-      "summary": "وزیر امور اجتماعی و تیمش باید هم از پس بحران‌های خبری بربیایند و هم دفتر نخست‌وزیر را راضی نگه دارند؛ کاری که با اشتباه‌های پی‌درپی‌شان سخت‌تر می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0459159/"
       }
     },
     {
@@ -9037,31 +9037,9 @@
       }
     },
     {
-      "id": "tt0090509",
-      "type": "tv",
-      "rank": 167,
-      "title": "The Return of Sherlock Holmes",
-      "year": 1986,
-      "rating": 8.7,
-      "poster": "./posters/tt0090509.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 60,
-      "fa": "بازگشت شرلوک هولمز",
-      "summary": "شرلوک هولمز و دکتر واتسون برای حل مجموعه‌ای تازه از پرونده‌های مرموز، بار دیگر مشاهده و استدلال را به کار می‌گیرند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0090509/"
-      }
-    },
-    {
       "id": "tt2049116",
       "type": "tv",
-      "rank": 168,
+      "rank": 167,
       "title": "Gomorrah",
       "year": 2014,
       "rating": 8.6,
@@ -9078,6 +9056,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16876411"
+      }
+    },
+    {
+      "id": "tt0090509",
+      "type": "tv",
+      "rank": 168,
+      "title": "The Return of Sherlock Holmes",
+      "year": 1986,
+      "rating": 8.7,
+      "poster": "./posters/tt0090509.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 60,
+      "fa": "بازگشت شرلوک هولمز",
+      "summary": "شرلوک هولمز و دکتر واتسون برای حل مجموعه‌ای تازه از پرونده‌های مرموز، بار دیگر مشاهده و استدلال را به کار می‌گیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0090509/"
       }
     },
     {
@@ -9664,9 +9664,29 @@
       }
     },
     {
-      "id": "tt7908628",
+      "id": "tt0086831",
       "type": "tv",
       "rank": 195,
+      "title": "Yes, Prime Minister",
+      "year": 1986,
+      "rating": 8.6,
+      "poster": "./posters/tt0086831.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بله، نخست وزیر.",
+      "summary": "جیمز هکر حالا نخست‌وزیر بریتانیاست، اما رسیدن به این مقام به معنی خلاص‌شدن از بازی‌های سیاسی و مانع‌تراشی اطرافیان نیست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0086831/"
+      }
+    },
+    {
+      "id": "tt7908628",
+      "type": "tv",
+      "rank": 196,
       "title": "What We Do in the Shadows",
       "year": 2019,
       "rating": 8.5,
@@ -9683,26 +9703,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q55637582"
-      }
-    },
-    {
-      "id": "tt0086831",
-      "type": "tv",
-      "rank": 196,
-      "title": "Yes, Prime Minister",
-      "year": 1986,
-      "rating": 8.6,
-      "poster": "./posters/tt0086831.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بله، نخست وزیر.",
-      "summary": "جیمز هکر حالا نخست‌وزیر بریتانیاست، اما رسیدن به این مقام به معنی خلاص‌شدن از بازی‌های سیاسی و مانع‌تراشی اطرافیان نیست.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0086831/"
       }
     },
     {
@@ -9830,9 +9830,29 @@
       }
     },
     {
-      "id": "tt9335498",
+      "id": "tt4082744",
       "type": "tv",
       "rank": 202,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
+      }
+    },
+    {
+      "id": "tt9335498",
+      "type": "tv",
+      "rank": 203,
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "rating": 8.5,
@@ -9851,26 +9871,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt9335498/"
-      }
-    },
-    {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 203,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10654,30 +10654,9 @@
       }
     },
     {
-      "id": "tt0290978",
-      "type": "tv",
-      "rank": 240,
-      "title": "The Office",
-      "year": 2001,
-      "rating": 8.5,
-      "poster": "./posters/tt0290978.jpg",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "runtime": 30,
-      "fa": "اداره",
-      "summary": "وقتی شرکت تصمیم به کوچک‌کردن شعبه‌ها می‌گیرد، یک دفتر با احتمال تعطیلی روبه‌رو می‌شود؛ گروه مستندساز زندگی روزمرهٔ کارکنان و مدیرشان دیوید برنت را دنبال می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23829"
-      }
-    },
-    {
       "id": "tt1877368",
       "type": "tv",
-      "rank": 241,
+      "rank": 240,
       "title": "The Great British Baking Show",
       "year": 2010,
       "rating": 8.6,
@@ -10693,6 +10672,27 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt1877368/"
+      }
+    },
+    {
+      "id": "tt0290978",
+      "type": "tv",
+      "rank": 241,
+      "title": "The Office",
+      "year": 2001,
+      "rating": 8.5,
+      "poster": "./posters/tt0290978.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 30,
+      "fa": "اداره",
+      "summary": "وقتی شرکت تصمیم به کوچک‌کردن شعبه‌ها می‌گیرد، یک دفتر با احتمال تعطیلی روبه‌رو می‌شود؛ گروه مستندساز زندگی روزمرهٔ کارکنان و مدیرشان دیوید برنت را دنبال می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23829"
       }
     },
     {
