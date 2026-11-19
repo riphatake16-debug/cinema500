@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "8314a51455e4dad52cf7c265f78a10277c2c7d1a8ec312f3ca3eafdd2ade8644",
+  "version": "e1ed5828a5131059437666671ab248a50955cddcc6b23e9c883fa1b3f58b1cb3",
   "status": "ok",
-  "retrievedAt": "2026-11-18T00:04:37+00:00",
-  "checkedAt": "2026-11-18T00:04:37+00:00",
+  "retrievedAt": "2026-11-19T01:36:33+00:00",
+  "checkedAt": "2026-11-19T01:36:33+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1537,32 +1537,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 75,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.4,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt2380307",
       "type": "movie",
-      "rank": 76,
+      "rank": 75,
       "title": "Coco",
       "year": 2017,
       "rating": 8.4,
@@ -1583,6 +1560,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q5815826"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 76,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.4,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -1805,33 +1805,9 @@
       }
     },
     {
-      "id": "tt33175825",
-      "type": "movie",
-      "rank": 87,
-      "title": "Attack on Titan: The Last Attack",
-      "year": 2024,
-      "rating": 8.9,
-      "poster": "./posters/tt33175825.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Drama",
-        "Horror"
-      ],
-      "runtime": 144,
-      "fa": "حمله به تایتان: آخرین حمله",
-      "summary": "نسخهٔ سینمایی بخش پایانی «حمله به تایتان»؛ دوستان ارن برای متوقف‌کردن فاجعه‌ای که جهان را تهدید می‌کند، باید در برابر او بایستند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt33175825/"
-      }
-    },
-    {
       "id": "tt2056785",
       "type": "movie",
-      "rank": 88,
+      "rank": 87,
       "title": "Wildwood",
       "year": 2026,
       "rating": 8.6,
@@ -1850,6 +1826,30 @@
         "faUrl": "https://www.wikidata.org/entity/Q123058740",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt33175825",
+      "type": "movie",
+      "rank": 88,
+      "title": "Attack on Titan: The Last Attack",
+      "year": 2024,
+      "rating": 8.9,
+      "poster": "./posters/tt33175825.jpg",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Drama",
+        "Horror"
+      ],
+      "runtime": 144,
+      "fa": "حمله به تایتان: آخرین حمله",
+      "summary": "نسخهٔ سینمایی بخش پایانی «حمله به تایتان»؛ دوستان ارن برای متوقف‌کردن فاجعه‌ای که جهان را تهدید می‌کند، باید در برابر او بایستند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt33175825/"
       }
     },
     {
@@ -4222,31 +4222,9 @@
       }
     },
     {
-      "id": "tt0081398",
-      "type": "movie",
-      "rank": 198,
-      "title": "Raging Bull",
-      "year": 1980,
-      "rating": 8.1,
-      "poster": "./posters/tt0081398.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "Sport"
-      ],
-      "runtime": 129,
-      "fa": "گاو خشمگین",
-      "summary": "زندگی جیک لاموتا، بوکسوری که خشونت و خشم او را در رینگ به اوج می‌رساند، اما زندگی بیرون از رینگش را ویران می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q220780"
-      }
-    },
-    {
       "id": "tt0353969",
       "type": "movie",
-      "rank": 199,
+      "rank": 198,
       "title": "Memories of Murder",
       "year": 2003,
       "rating": 8.1,
@@ -4264,6 +4242,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q488169"
+      }
+    },
+    {
+      "id": "tt0081398",
+      "type": "movie",
+      "rank": 199,
+      "title": "Raging Bull",
+      "year": 1980,
+      "rating": 8.1,
+      "poster": "./posters/tt0081398.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Sport"
+      ],
+      "runtime": 129,
+      "fa": "گاو خشمگین",
+      "summary": "زندگی جیک لاموتا، بوکسوری که خشونت و خشم او را در رینگ به اوج می‌رساند، اما زندگی بیرون از رینگش را ویران می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q220780"
       }
     },
     {
@@ -5372,27 +5372,29 @@
       }
     },
     {
-      "id": "tt1954470",
+      "id": "tt20850406",
       "type": "movie",
       "rank": 250,
-      "title": "Gangs of Wasseypur",
-      "year": 2012,
-      "rating": 8.2,
-      "poster": "./posters/tt1954470.jpg",
+      "title": "Sita Ramam",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTZhYzViMWMtMjNhMi00ZGMwLWJhMGItNzUwYWJlMjJjNGI1XkEyXkFqcGc@._V1_.jpg",
       "genres": [
         "Action",
-        "Comedy",
-        "Crime",
         "Drama",
-        "Thriller"
+        "Musical",
+        "Mystery",
+        "Romance"
       ],
-      "runtime": 321,
-      "fa": "گنگ‌های پلیس، که توسط خبرچینان بی‌شمار هدایت می‌شدند،.",
-      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
+      "runtime": 163,
+      "fa": "سیتا رامام",
+      "summary": "سیتا رامام (به انگلیسی: Sita Ramam) فیلمی هندی محصول سال ۲۰۲۲ و به کارگردانی هانا راغواپودی است. در این فیلم بازیگرانی همچون دولکوئر سلمان، مرونال تاکور، راشمیکا ماندانا، سومانت، ساچین خدکار، پراکاش راج، بومیکا چاولا، تینو آناند و جیشو سنگوپتا ایفای نقش کرده‌اند.",
       "summaryLanguage": "fa",
       "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1954470/"
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q113455828",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B3%DB%8C%D8%AA%D8%A7+%D8%B1%D8%A7%D9%85%D8%A7%D9%85&oldid=43483691"
       }
     },
     {
@@ -6392,25 +6394,9 @@
       }
     },
     {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 47,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0092337",
       "type": "tv",
-      "rank": 48,
+      "rank": 47,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6426,6 +6412,22 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
+    },
+    {
+      "id": "tt0098904",
+      "type": "tv",
+      "rank": 48,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -6845,29 +6847,9 @@
       }
     },
     {
-      "id": "tt0264235",
-      "type": "tv",
-      "rank": 68,
-      "title": "Curb Your Enthusiasm",
-      "year": 2000,
-      "rating": 8.8,
-      "poster": "./posters/tt0264235.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "زیاد ذوقزده نشو",
-      "summary": "زندگی لری دیوید و موقعیت‌های دشواری که در برخورد با دوستان و غریبه‌ها برای خودش ایجاد می‌کند، روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23722"
-      }
-    },
-    {
       "id": "tt12004706",
       "type": "tv",
-      "rank": 69,
+      "rank": 68,
       "title": "Panchayat",
       "year": 2020,
       "rating": 9,
@@ -6883,6 +6865,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt12004706/"
+      }
+    },
+    {
+      "id": "tt0264235",
+      "type": "tv",
+      "rank": 69,
+      "title": "Curb Your Enthusiasm",
+      "year": 2000,
+      "rating": 8.8,
+      "poster": "./posters/tt0264235.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "زیاد ذوقزده نشو",
+      "summary": "زندگی لری دیوید و موقعیت‌های دشواری که در برخورد با دوستان و غریبه‌ها برای خودش ایجاد می‌کند، روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23722"
       }
     },
     {
@@ -8323,29 +8325,9 @@
       }
     },
     {
-      "id": "tt0459159",
-      "type": "tv",
-      "rank": 134,
-      "title": "The Thick of It",
-      "year": 2005,
-      "rating": 8.7,
-      "poster": "./posters/tt0459159.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "ضخامت آن",
-      "summary": "وزیر امور اجتماعی و تیمش باید هم از پس بحران‌های خبری بربیایند و هم دفتر نخست‌وزیر را راضی نگه دارند؛ کاری که با اشتباه‌های پی‌درپی‌شان سخت‌تر می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0459159/"
-      }
-    },
-    {
       "id": "tt1795096",
       "type": "tv",
-      "rank": 135,
+      "rank": 134,
       "title": "Behzat Ç: An Ankara Detective Story",
       "year": 2010,
       "rating": 8.8,
@@ -8364,6 +8346,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4881030"
+      }
+    },
+    {
+      "id": "tt0459159",
+      "type": "tv",
+      "rank": 135,
+      "title": "The Thick of It",
+      "year": 2005,
+      "rating": 8.7,
+      "poster": "./posters/tt0459159.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "ضخامت آن",
+      "summary": "وزیر امور اجتماعی و تیمش باید هم از پس بحران‌های خبری بربیایند و هم دفتر نخست‌وزیر را راضی نگه دارند؛ کاری که با اشتباه‌های پی‌درپی‌شان سخت‌تر می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0459159/"
       }
     },
     {
@@ -8487,9 +8489,32 @@
       }
     },
     {
-      "id": "tt3322312",
+      "id": "tt0348914",
       "type": "tv",
       "rank": 142,
+      "title": "Deadwood",
+      "year": 2004,
+      "rating": 8.6,
+      "poster": "./posters/tt0348914.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "History",
+        "Western"
+      ],
+      "runtime": 60,
+      "fa": "شاخه خشکیده درخت",
+      "summary": "در اواخر قرن نوزدهم، زندگی اهالی ددوود در داکوتای جنوبی، شهری گرفتار فساد و جنایت، دنبال می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1050603"
+      }
+    },
+    {
+      "id": "tt3322312",
+      "type": "tv",
+      "rank": 143,
       "title": "Daredevil",
       "year": 2015,
       "rating": 8.6,
@@ -8508,29 +8533,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16977365"
-      }
-    },
-    {
-      "id": "tt0348914",
-      "type": "tv",
-      "rank": 143,
-      "title": "Deadwood",
-      "year": 2004,
-      "rating": 8.6,
-      "poster": "./posters/tt0348914.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "History",
-        "Western"
-      ],
-      "runtime": 60,
-      "fa": "شاخه خشکیده درخت",
-      "summary": "در اواخر قرن نوزدهم، زندگی اهالی ددوود در داکوتای جنوبی، شهری گرفتار فساد و جنایت، دنبال می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1050603"
       }
     },
     {
@@ -8598,30 +8600,9 @@
       }
     },
     {
-      "id": "tt0096657",
-      "type": "tv",
-      "rank": 147,
-      "title": "Mr. Bean",
-      "year": 1990,
-      "rating": 8.6,
-      "poster": "./posters/tt0096657.jpg",
-      "genres": [
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 25,
-      "fa": "مستر بین",
-      "summary": "مستر بین برای انجام ساده‌ترین کارهای روزمره به دردسر می‌افتد و با راه‌حل‌های عجیبش، معمولاً دردسر بزرگ‌تری درست می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q484020"
-      }
-    },
-    {
       "id": "tt0096639",
       "type": "tv",
-      "rank": 148,
+      "rank": 147,
       "title": "Lonesome Dove",
       "year": 1989,
       "rating": 8.6,
@@ -8638,6 +8619,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2547946"
+      }
+    },
+    {
+      "id": "tt0096657",
+      "type": "tv",
+      "rank": 148,
+      "title": "Mr. Bean",
+      "year": 1990,
+      "rating": 8.6,
+      "poster": "./posters/tt0096657.jpg",
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 25,
+      "fa": "مستر بین",
+      "summary": "مستر بین برای انجام ساده‌ترین کارهای روزمره به دردسر می‌افتد و با راه‌حل‌های عجیبش، معمولاً دردسر بزرگ‌تری درست می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q484020"
       }
     },
     {
@@ -8750,9 +8752,29 @@
       }
     },
     {
-      "id": "tt10332508",
+      "id": "tt0088484",
       "type": "tv",
       "rank": 154,
+      "title": "Blackadder II",
+      "year": 1986,
+      "rating": 8.6,
+      "poster": "./posters/tt0088484.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بلکادر ۲",
+      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2668056"
+      }
+    },
+    {
+      "id": "tt10332508",
+      "type": "tv",
+      "rank": 155,
       "title": "Primal",
       "year": 2019,
       "rating": 8.6,
@@ -8772,26 +8794,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q70106936"
-      }
-    },
-    {
-      "id": "tt0088484",
-      "type": "tv",
-      "rank": 155,
-      "title": "Blackadder II",
-      "year": 1986,
-      "rating": 8.6,
-      "poster": "./posters/tt0088484.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بلکادر ۲",
-      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2668056"
       }
     },
     {
@@ -9141,9 +9143,30 @@
       }
     },
     {
-      "id": "tt4299972",
+      "id": "tt15435876",
       "type": "tv",
       "rank": 172,
+      "title": "The Penguin",
+      "year": 2024,
+      "rating": 8.6,
+      "poster": "./posters/tt15435876.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "پنگوئن",
+      "summary": "پس از رویدادهای «بتمن»، آز کاب، معروف به پنگوئن، تلاش می‌کند قدرت بیشتری در دنیای تبهکاری گاتهام به دست بیاورد؛ اما خاندان‌های رقیب حاضر نیستند به‌آسانی کنار بروند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q111189743"
+      }
+    },
+    {
+      "id": "tt4299972",
+      "type": "tv",
+      "rank": 173,
       "title": "The Jinx: The Life and Deaths of Robert Durst",
       "year": 2015,
       "rating": 8.5,
@@ -9161,27 +9184,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt4299972/"
-      }
-    },
-    {
-      "id": "tt15435876",
-      "type": "tv",
-      "rank": 173,
-      "title": "The Penguin",
-      "year": 2024,
-      "rating": 8.6,
-      "poster": "./posters/tt15435876.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "پنگوئن",
-      "summary": "پس از رویدادهای «بتمن»، آز کاب، معروف به پنگوئن، تلاش می‌کند قدرت بیشتری در دنیای تبهکاری گاتهام به دست بیاورد؛ اما خاندان‌های رقیب حاضر نیستند به‌آسانی کنار بروند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q111189743"
       }
     },
     {
@@ -10509,9 +10511,29 @@
       }
     },
     {
-      "id": "tt1190634",
+      "id": "tt1513168",
       "type": "tv",
       "rank": 233,
+      "title": "Through the Wormhole",
+      "year": 2010,
+      "rating": 8.6,
+      "poster": "./posters/tt1513168.jpg",
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": 60,
+      "fa": "گذر از کرمچاله",
+      "summary": "مورگان فریمن همراه دانشمندان، پرسش‌های بزرگ دربارهٔ جهان را بررسی می‌کند؛ از آغاز هستی تا ماهیت زمان و احتمال وجود زندگی در جایی دیگر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2499084"
+      }
+    },
+    {
+      "id": "tt1190634",
+      "type": "tv",
+      "rank": 234,
       "title": "The Boys",
       "year": 2019,
       "rating": 8.5,
@@ -10529,26 +10551,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q48796994"
-      }
-    },
-    {
-      "id": "tt1513168",
-      "type": "tv",
-      "rank": 234,
-      "title": "Through the Wormhole",
-      "year": 2010,
-      "rating": 8.6,
-      "poster": "./posters/tt1513168.jpg",
-      "genres": [
-        "Documentary"
-      ],
-      "runtime": 60,
-      "fa": "گذر از کرمچاله",
-      "summary": "مورگان فریمن همراه دانشمندان، پرسش‌های بزرگ دربارهٔ جهان را بررسی می‌کند؛ از آغاز هستی تا ماهیت زمان و احتمال وجود زندگی در جایی دیگر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2499084"
       }
     },
     {
@@ -11134,6 +11136,24 @@
         "summarySource": "mymemory",
         "summaryUrl": "https://www.imdb.com/title/tt3212600/"
       }
+    },
+    {
+      "id": "tt1954470",
+      "type": "movie",
+      "rank": null,
+      "title": "Gangs of Wasseypur",
+      "year": 2012,
+      "rating": 8.2,
+      "poster": "./posters/tt1954470.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
+      "runtime": 321,
+      "fa": "",
+      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
+      "summaryLanguage": "fa"
     }
   ]
 }
