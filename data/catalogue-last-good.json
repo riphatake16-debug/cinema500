@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "e1ed5828a5131059437666671ab248a50955cddcc6b23e9c883fa1b3f58b1cb3",
+  "version": "fde76beba3c90adf9bf3879c74fac2dc582546e87567d16cc85a7a60dc42949f",
   "status": "ok",
-  "retrievedAt": "2026-11-19T01:36:33+00:00",
-  "checkedAt": "2026-11-19T01:36:33+00:00",
+  "retrievedAt": "2026-11-20T01:30:17+00:00",
+  "checkedAt": "2026-11-20T01:30:17+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1563,32 +1563,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 76,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.4,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt0114709",
       "type": "movie",
-      "rank": 77,
+      "rank": 76,
       "title": "Toy Story",
       "year": 1995,
       "rating": 8.3,
@@ -1612,7 +1589,7 @@
     {
       "id": "tt1345836",
       "type": "movie",
-      "rank": 78,
+      "rank": 77,
       "title": "The Dark Knight Rises",
       "year": 2012,
       "rating": 8.4,
@@ -1628,6 +1605,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q189330"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 78,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.4,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -1784,30 +1784,9 @@
       }
     },
     {
-      "id": "tt0057012",
-      "type": "movie",
-      "rank": 86,
-      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
-      "year": 1964,
-      "rating": 8.3,
-      "poster": "./posters/tt0057012.jpg",
-      "genres": [
-        "Comedy",
-        "War"
-      ],
-      "runtime": 95,
-      "fa": "دکتر استرنجلاو",
-      "summary": "یک فرماندهٔ سرکش دستور حملهٔ هسته‌ای می‌دهد. سیاست‌مداران و ژنرال‌ها در اتاق جنگ تلاش می‌کنند پیش از وقوع فاجعه، جلوی آن را بگیرند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q105702"
-      }
-    },
-    {
       "id": "tt2056785",
       "type": "movie",
-      "rank": 87,
+      "rank": 86,
       "title": "Wildwood",
       "year": 2026,
       "rating": 8.6,
@@ -1826,6 +1805,27 @@
         "faUrl": "https://www.wikidata.org/entity/Q123058740",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt0057012",
+      "type": "movie",
+      "rank": 87,
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+      "year": 1964,
+      "rating": 8.3,
+      "poster": "./posters/tt0057012.jpg",
+      "genres": [
+        "Comedy",
+        "War"
+      ],
+      "runtime": 95,
+      "fa": "دکتر استرنجلاو",
+      "summary": "یک فرماندهٔ سرکش دستور حملهٔ هسته‌ای می‌دهد. سیاست‌مداران و ژنرال‌ها در اتاق جنگ تلاش می‌کنند پیش از وقوع فاجعه، جلوی آن را بگیرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q105702"
       }
     },
     {
@@ -2429,9 +2429,29 @@
       }
     },
     {
-      "id": "tt0022100",
+      "id": "tt0097576",
       "type": "movie",
       "rank": 116,
+      "title": "Indiana Jones and the Last Crusade",
+      "year": 1989,
+      "rating": 8.2,
+      "poster": "./posters/tt0097576.jpg",
+      "genres": [
+        "Adventure"
+      ],
+      "runtime": 127,
+      "fa": "ایندیانا جونز و آخرین جنگ صلیبی",
+      "summary": "پس از ناپدیدشدن پدر ایندیانا جونز در جست‌وجوی جام مقدس، او بار دیگر با نازی‌ها روبه‌رو می‌شود تا مانع دستیابی‌شان به قدرت جام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q185658"
+      }
+    },
+    {
+      "id": "tt0022100",
+      "type": "movie",
+      "rank": 117,
       "title": "M",
       "year": 1931,
       "rating": 8.3,
@@ -2448,26 +2468,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q127021"
-      }
-    },
-    {
-      "id": "tt0097576",
-      "type": "movie",
-      "rank": 117,
-      "title": "Indiana Jones and the Last Crusade",
-      "year": 1989,
-      "rating": 8.2,
-      "poster": "./posters/tt0097576.jpg",
-      "genres": [
-        "Adventure"
-      ],
-      "runtime": 127,
-      "fa": "ایندیانا جونز و آخرین جنگ صلیبی",
-      "summary": "پس از ناپدیدشدن پدر ایندیانا جونز در جست‌وجوی جام مقدس، او بار دیگر با نازی‌ها روبه‌رو می‌شود تا مانع دستیابی‌شان به قدرت جام شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q185658"
       }
     },
     {
@@ -3396,32 +3396,9 @@
       }
     },
     {
-      "id": "tt0266543",
-      "type": "movie",
-      "rank": 161,
-      "title": "Finding Nemo",
-      "year": 2003,
-      "rating": 8.2,
-      "poster": "./posters/tt0266543.jpg",
-      "genres": [
-        "Animation",
-        "Adventure",
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 100,
-      "fa": "در جستجوی نمو",
-      "summary": "پس از اسیرشدن پسرش و انتقال او به سیدنی، یک دلقک‌ماهی ترسو سفری پرخطر را برای بازگرداندنش به خانه آغاز می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q132863"
-      }
-    },
-    {
       "id": "tt4729430",
       "type": "movie",
-      "rank": 162,
+      "rank": 161,
       "title": "Klaus",
       "year": 2019,
       "rating": 8.2,
@@ -3440,6 +3417,29 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q67208596"
+      }
+    },
+    {
+      "id": "tt0266543",
+      "type": "movie",
+      "rank": 162,
+      "title": "Finding Nemo",
+      "year": 2003,
+      "rating": 8.2,
+      "poster": "./posters/tt0266543.jpg",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 100,
+      "fa": "در جستجوی نمو",
+      "summary": "پس از اسیرشدن پسرش و انتقال او به سیدنی، یک دلقک‌ماهی ترسو سفری پرخطر را برای بازگرداندنش به خانه آغاز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q132863"
       }
     },
     {
@@ -5372,29 +5372,27 @@
       }
     },
     {
-      "id": "tt20850406",
+      "id": "tt1954470",
       "type": "movie",
       "rank": 250,
-      "title": "Sita Ramam",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTZhYzViMWMtMjNhMi00ZGMwLWJhMGItNzUwYWJlMjJjNGI1XkEyXkFqcGc@._V1_.jpg",
+      "title": "Gangs of Wasseypur",
+      "year": 2012,
+      "rating": 8.2,
+      "poster": "./posters/tt1954470.jpg",
       "genres": [
         "Action",
+        "Comedy",
+        "Crime",
         "Drama",
-        "Musical",
-        "Mystery",
-        "Romance"
+        "Thriller"
       ],
-      "runtime": 163,
-      "fa": "سیتا رامام",
-      "summary": "سیتا رامام (به انگلیسی: Sita Ramam) فیلمی هندی محصول سال ۲۰۲۲ و به کارگردانی هانا راغواپودی است. در این فیلم بازیگرانی همچون دولکوئر سلمان، مرونال تاکور، راشمیکا ماندانا، سومانت، ساچین خدکار، پراکاش راج، بومیکا چاولا، تینو آناند و جیشو سنگوپتا ایفای نقش کرده‌اند.",
+      "runtime": 321,
+      "fa": "گنگ‌های پلیس، که توسط خبرچینان بی‌شمار هدایت می‌شدند،.",
+      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
       "summaryLanguage": "fa",
       "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q113455828",
-        "summarySource": "wikipedia-fa",
-        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B3%DB%8C%D8%AA%D8%A7+%D8%B1%D8%A7%D9%85%D8%A7%D9%85&oldid=43483691"
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1954470/"
       }
     },
     {
@@ -6394,9 +6392,25 @@
       }
     },
     {
-      "id": "tt0092337",
+      "id": "tt0098904",
       "type": "tv",
       "rank": 47,
+      "title": "Seinfeld",
+      "year": 1989,
+      "rating": 8.8,
+      "poster": "./posters/tt0098904.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساینفلد",
+      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0092337",
+      "type": "tv",
+      "rank": 48,
       "title": "Dekalog",
       "year": 1989,
       "rating": 8.9,
@@ -6412,22 +6426,6 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q59783"
       }
-    },
-    {
-      "id": "tt0098904",
-      "type": "tv",
-      "rank": 48,
-      "title": "Seinfeld",
-      "year": 1989,
-      "rating": 8.8,
-      "poster": "./posters/tt0098904.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساینفلد",
-      "summary": "جری ساینفلد و سه دوستش در نیویورک، بر سر مسائل کوچک زندگی روزمره وارد بحث‌ها، سوءتفاهم‌ها و دردسرهای خنده‌دار می‌شوند.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -6694,9 +6692,29 @@
       }
     },
     {
-      "id": "tt14986406",
+      "id": "tt0472954",
       "type": "tv",
       "rank": 61,
+      "title": "It's Always Sunny in Philadelphia",
+      "year": 2005,
+      "rating": 8.8,
+      "poster": "./posters/tt0472954.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "فیلادلفیا همیشه آفتابی است",
+      "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23670"
+      }
+    },
+    {
+      "id": "tt14986406",
+      "type": "tv",
+      "rank": 62,
       "title": "Bleach: Thousand-Year Blood War",
       "year": 2022,
       "rating": 9,
@@ -6714,26 +6732,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q112631839"
-      }
-    },
-    {
-      "id": "tt0472954",
-      "type": "tv",
-      "rank": 62,
-      "title": "It's Always Sunny in Philadelphia",
-      "year": 2005,
-      "rating": 8.8,
-      "poster": "./posters/tt0472954.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "فیلادلفیا همیشه آفتابی است",
-      "summary": "پنج دوست خودخواه و پرادعا، یک میخانهٔ ایرلندی در فیلادلفیا را اداره می‌کنند و پی‌درپی دردسر می‌سازند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23670"
       }
     },
     {
@@ -7946,31 +7944,9 @@
       }
     },
     {
-      "id": "tt0086661",
-      "type": "tv",
-      "rank": 117,
-      "title": "The Adventures of Sherlock Holmes",
-      "year": 1984,
-      "rating": 8.7,
-      "poster": "./posters/tt0086661.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 60,
-      "fa": "ماجراهای شرلوک هلمز",
-      "summary": "شرلوک هولمز و دکتر واتسون مجموعه‌ای از معماها و پرونده‌های دشوار را با مشاهده و استدلال حل می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q387306"
-      }
-    },
-    {
       "id": "tt0994314",
       "type": "tv",
-      "rank": 118,
+      "rank": 117,
       "title": "Code Geass: Lelouch of the Rebellion",
       "year": 2006,
       "rating": 8.7,
@@ -7990,6 +7966,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4384067"
+      }
+    },
+    {
+      "id": "tt0086661",
+      "type": "tv",
+      "rank": 118,
+      "title": "The Adventures of Sherlock Holmes",
+      "year": 1984,
+      "rating": 8.7,
+      "poster": "./posters/tt0086661.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 60,
+      "fa": "ماجراهای شرلوک هلمز",
+      "summary": "شرلوک هولمز و دکتر واتسون مجموعه‌ای از معماها و پرونده‌های دشوار را با مشاهده و استدلال حل می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q387306"
       }
     },
     {
@@ -8198,31 +8196,9 @@
       }
     },
     {
-      "id": "tt5555260",
-      "type": "tv",
-      "rank": 128,
-      "title": "This Is Us",
-      "year": 2016,
-      "rating": 8.7,
-      "poster": "./posters/tt5555260.jpg",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ],
-      "runtime": 45,
-      "fa": "این ما هستیم",
-      "summary": "زندگی یک زوج و سه فرزندشان در دوره‌های مختلف دنبال می‌شود؛ از بزرگ‌شدن بچه‌ها تا تأثیر تصمیم‌ها و خاطرات خانوادگی بر زندگی بزرگسالی آن‌ها.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q24068191"
-      }
-    },
-    {
       "id": "tt11280740",
       "type": "tv",
-      "rank": 129,
+      "rank": 128,
       "title": "Severance",
       "year": 2022,
       "rating": 8.6,
@@ -8240,6 +8216,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q101096725"
+      }
+    },
+    {
+      "id": "tt5555260",
+      "type": "tv",
+      "rank": 129,
+      "title": "This Is Us",
+      "year": 2016,
+      "rating": 8.7,
+      "poster": "./posters/tt5555260.jpg",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 45,
+      "fa": "این ما هستیم",
+      "summary": "زندگی یک زوج و سه فرزندشان در دوره‌های مختلف دنبال می‌شود؛ از بزرگ‌شدن بچه‌ها تا تأثیر تصمیم‌ها و خاطرات خانوادگی بر زندگی بزرگسالی آن‌ها.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q24068191"
       }
     },
     {
@@ -8600,9 +8598,30 @@
       }
     },
     {
-      "id": "tt0096639",
+      "id": "tt0096657",
       "type": "tv",
       "rank": 147,
+      "title": "Mr. Bean",
+      "year": 1990,
+      "rating": 8.6,
+      "poster": "./posters/tt0096657.jpg",
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 25,
+      "fa": "مستر بین",
+      "summary": "مستر بین برای انجام ساده‌ترین کارهای روزمره به دردسر می‌افتد و با راه‌حل‌های عجیبش، معمولاً دردسر بزرگ‌تری درست می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q484020"
+      }
+    },
+    {
+      "id": "tt0096639",
+      "type": "tv",
+      "rank": 148,
       "title": "Lonesome Dove",
       "year": 1989,
       "rating": 8.6,
@@ -8619,27 +8638,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2547946"
-      }
-    },
-    {
-      "id": "tt0096657",
-      "type": "tv",
-      "rank": 148,
-      "title": "Mr. Bean",
-      "year": 1990,
-      "rating": 8.6,
-      "poster": "./posters/tt0096657.jpg",
-      "genres": [
-        "Comedy",
-        "Family"
-      ],
-      "runtime": 25,
-      "fa": "مستر بین",
-      "summary": "مستر بین برای انجام ساده‌ترین کارهای روزمره به دردسر می‌افتد و با راه‌حل‌های عجیبش، معمولاً دردسر بزرگ‌تری درست می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q484020"
       }
     },
     {
@@ -8752,29 +8750,9 @@
       }
     },
     {
-      "id": "tt0088484",
-      "type": "tv",
-      "rank": 154,
-      "title": "Blackadder II",
-      "year": 1986,
-      "rating": 8.6,
-      "poster": "./posters/tt0088484.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بلکادر ۲",
-      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2668056"
-      }
-    },
-    {
       "id": "tt10332508",
       "type": "tv",
-      "rank": 155,
+      "rank": 154,
       "title": "Primal",
       "year": 2019,
       "rating": 8.6,
@@ -8794,6 +8772,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q70106936"
+      }
+    },
+    {
+      "id": "tt0088484",
+      "type": "tv",
+      "rank": 155,
+      "title": "Blackadder II",
+      "year": 1986,
+      "rating": 8.6,
+      "poster": "./posters/tt0088484.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بلکادر ۲",
+      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2668056"
       }
     },
     {
@@ -8929,31 +8927,9 @@
       }
     },
     {
-      "id": "tt27497448",
-      "type": "tv",
-      "rank": 162,
-      "title": "A Knight of the Seven Kingdoms",
-      "year": 2026,
-      "rating": 8.6,
-      "poster": "./posters/tt27497448.jpg",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 60,
-      "fa": "شوالیه هفت پادشاهی",
-      "summary": "یک قرن پیش از «بازی تاج‌وتخت»، دانکن، شوالیه‌ای جوان، و همراه زیرکش اگ در وستروس سفر می‌کنند؛ سفری که آن‌ها را با خطرها و آدم‌های قدرتمند روبه‌رو می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q120277524"
-      }
-    },
-    {
       "id": "tt13111040",
       "type": "tv",
-      "rank": 163,
+      "rank": 162,
       "title": "The Offer",
       "year": 2022,
       "rating": 8.6,
@@ -8970,6 +8946,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q107740038"
+      }
+    },
+    {
+      "id": "tt27497448",
+      "type": "tv",
+      "rank": 163,
+      "title": "A Knight of the Seven Kingdoms",
+      "year": 2026,
+      "rating": 8.6,
+      "poster": "./posters/tt27497448.jpg",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 60,
+      "fa": "شوالیه هفت پادشاهی",
+      "summary": "یک قرن پیش از «بازی تاج‌وتخت»، دانکن، شوالیه‌ای جوان، و همراه زیرکش اگ در وستروس سفر می‌کنند؛ سفری که آن‌ها را با خطرها و آدم‌های قدرتمند روبه‌رو می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q120277524"
       }
     },
     {
@@ -9406,9 +9404,30 @@
       }
     },
     {
-      "id": "tt4574334",
+      "id": "tt0053488",
       "type": "tv",
       "rank": 184,
+      "title": "The Bugs Bunny Show",
+      "year": 1960,
+      "rating": 8.5,
+      "poster": "./posters/tt0053488.jpg",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "نمایش باگز بانی",
+      "summary": "باگز بانی، خرگوش مشهور کارتونی، همراه دیگر شخصیت‌های انیمیشن برادران وارنر میزبان مجموعه‌ای هفتگی از ماجراهای طنز است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0053488/"
+      }
+    },
+    {
+      "id": "tt4574334",
+      "type": "tv",
+      "rank": 185,
       "title": "Stranger Things",
       "year": 2016,
       "rating": 8.6,
@@ -9429,27 +9448,6 @@
         "چیزهای عجیب استرنجر تینگز",
         "استرنجر تینگز"
       ]
-    },
-    {
-      "id": "tt0053488",
-      "type": "tv",
-      "rank": 185,
-      "title": "The Bugs Bunny Show",
-      "year": 1960,
-      "rating": 8.5,
-      "poster": "./posters/tt0053488.jpg",
-      "genres": [
-        "Animation",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "نمایش باگز بانی",
-      "summary": "باگز بانی، خرگوش مشهور کارتونی، همراه دیگر شخصیت‌های انیمیشن برادران وارنر میزبان مجموعه‌ای هفتگی از ماجراهای طنز است.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0053488/"
-      }
     },
     {
       "id": "tt1489428",
@@ -9498,31 +9496,9 @@
       }
     },
     {
-      "id": "tt2701582",
-      "type": "tv",
-      "rank": 188,
-      "title": "Endeavour",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "./posters/tt2701582.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 90,
-      "fa": "اندور (سریال تلویزیونی)",
-      "summary": "در دههٔ ۱۹۶۰، اندور مورسِ جوان همراه با همکار باتجربه‌اش فرد ترزدی، در آغاز دوران خدمتش پرونده‌هایی را در آکسفورد بررسی می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2151914"
-      }
-    },
-    {
       "id": "tt0314979",
       "type": "tv",
-      "rank": 189,
+      "rank": 188,
       "title": "Battlestar Galactica",
       "year": 2003,
       "rating": 8.5,
@@ -9540,6 +9516,28 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0314979/"
+      }
+    },
+    {
+      "id": "tt2701582",
+      "type": "tv",
+      "rank": 189,
+      "title": "Endeavour",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "./posters/tt2701582.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 90,
+      "fa": "اندور (سریال تلویزیونی)",
+      "summary": "در دههٔ ۱۹۶۰، اندور مورسِ جوان همراه با همکار باتجربه‌اش فرد ترزدی، در آغاز دوران خدمتش پرونده‌هایی را در آکسفورد بررسی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2151914"
       }
     },
     {
@@ -9619,9 +9617,30 @@
       }
     },
     {
-      "id": "tt0275137",
+      "id": "tt10802170",
       "type": "tv",
       "rank": 193,
+      "title": "The Rehearsal",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "./posters/tt10802170.jpg",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
+    },
+    {
+      "id": "tt0275137",
+      "type": "tv",
+      "rank": 194,
       "title": "Justice League",
       "year": 2001,
       "rating": 8.5,
@@ -9642,27 +9661,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0275137/"
-      }
-    },
-    {
-      "id": "tt10802170",
-      "type": "tv",
-      "rank": 194,
-      "title": "The Rehearsal",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "./posters/tt10802170.jpg",
-      "genres": [
-        "Documentary",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "د ریهرسال",
-      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112915576"
       }
     },
     {
@@ -9832,29 +9830,9 @@
       }
     },
     {
-      "id": "tt4082744",
-      "type": "tv",
-      "rank": 202,
-      "title": "Detectorists",
-      "year": 2014,
-      "rating": 8.6,
-      "poster": "./posters/tt4082744.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "آشکارسازها",
-      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4082744/"
-      }
-    },
-    {
       "id": "tt9335498",
       "type": "tv",
-      "rank": 203,
+      "rank": 202,
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "rating": 8.5,
@@ -9878,7 +9856,7 @@
     {
       "id": "tt13868972",
       "type": "tv",
-      "rank": 204,
+      "rank": 203,
       "title": "Rocket Boys",
       "year": 2022,
       "rating": 8.8,
@@ -9895,6 +9873,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt13868972/"
+      }
+    },
+    {
+      "id": "tt4082744",
+      "type": "tv",
+      "rank": 204,
+      "title": "Detectorists",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "./posters/tt4082744.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "آشکارسازها",
+      "summary": "دو دوست با دستگاه فلزیاب در مزرعه‌ها و دشت‌ها دنبال گنج می‌گردند؛ به امید کشفی بزرگ و فرصتی برای فاصله‌گرفتن از یکنواختی زندگی.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4082744/"
       }
     },
     {
@@ -10113,29 +10111,9 @@
       }
     },
     {
-      "id": "tt0129690",
-      "type": "tv",
-      "rank": 215,
-      "title": "I'm Alan Partridge",
-      "year": 1997,
-      "rating": 8.6,
-      "poster": "./posters/tt0129690.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "من آلن پارتریج هستم.",
-      "summary": "آلن پارتریج پس از شکست در تلویزیون، در رادیوی محلی نوریچ کار می‌کند و با نقشه‌ها و تلاش‌های معمولاً ناموفق، دنبال راهی برای برگشتن به شهرت است.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0129690/"
-      }
-    },
-    {
       "id": "tt5897304",
       "type": "tv",
-      "rank": 216,
+      "rank": 215,
       "title": "Mob Psycho 100",
       "year": 2016,
       "rating": 8.5,
@@ -10156,6 +10134,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt5897304/"
+      }
+    },
+    {
+      "id": "tt0129690",
+      "type": "tv",
+      "rank": 216,
+      "title": "I'm Alan Partridge",
+      "year": 1997,
+      "rating": 8.6,
+      "poster": "./posters/tt0129690.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "من آلن پارتریج هستم.",
+      "summary": "آلن پارتریج پس از شکست در تلویزیون، در رادیوی محلی نوریچ کار می‌کند و با نقشه‌ها و تلاش‌های معمولاً ناموفق، دنبال راهی برای برگشتن به شهرت است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0129690/"
       }
     },
     {
@@ -10857,9 +10855,29 @@
       }
     },
     {
-      "id": "tt1983079",
+      "id": "tt2575988",
       "type": "tv",
       "rank": 249,
+      "title": "Silicon Valley",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "سیلیکون ولی",
+      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "دره سیلیکون",
+        "درهٔ سیلیکون"
+      ]
+    },
+    {
+      "id": "tt1983079",
+      "type": "tv",
+      "rank": 250,
       "title": "Call the Midwife",
       "year": 2012,
       "rating": 8.6,
@@ -10878,26 +10896,6 @@
         "summarySource": "mymemory",
         "summaryUrl": "https://www.imdb.com/title/tt1983079/"
       }
-    },
-    {
-      "id": "tt2575988",
-      "type": "tv",
-      "rank": 250,
-      "title": "Silicon Valley",
-      "year": 2014,
-      "rating": 8.5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "سیلیکون ولی",
-      "summary": "ریچارد، برنامه‌نویسی در سیلیکون ولی، می‌خواهد شرکت خودش را راه بیندازد. او و دوستانش خیلی زود می‌فهمند ادارهٔ یک شرکت فقط به خوب کدزدن بستگی ندارد.",
-      "summaryLanguage": "fa",
-      "aliases": [
-        "دره سیلیکون",
-        "درهٔ سیلیکون"
-      ]
     }
   ],
   "archive": [
@@ -11138,22 +11136,30 @@
       }
     },
     {
-      "id": "tt1954470",
+      "id": "tt20850406",
       "type": "movie",
       "rank": null,
-      "title": "Gangs of Wasseypur",
-      "year": 2012,
-      "rating": 8.2,
-      "poster": "./posters/tt1954470.jpg",
+      "title": "Sita Ramam",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTZhYzViMWMtMjNhMi00ZGMwLWJhMGItNzUwYWJlMjJjNGI1XkEyXkFqcGc@._V1_.jpg",
       "genres": [
         "Action",
-        "Comedy",
-        "Crime"
+        "Drama",
+        "Musical",
+        "Mystery",
+        "Romance"
       ],
-      "runtime": 321,
-      "fa": "",
-      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
-      "summaryLanguage": "fa"
+      "runtime": 163,
+      "fa": "سیتا رامام",
+      "summary": "سیتا رامام (به انگلیسی: Sita Ramam) فیلمی هندی محصول سال ۲۰۲۲ و به کارگردانی هانا راغواپودی است. در این فیلم بازیگرانی همچون دولکوئر سلمان، مرونال تاکور، راشمیکا ماندانا، سومانت، ساچین خدکار، پراکاش راج، بومیکا چاولا، تینو آناند و جیشو سنگوپتا ایفای نقش کرده‌اند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q113455828",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%B3%DB%8C%D8%AA%D8%A7+%D8%B1%D8%A7%D9%85%D8%A7%D9%85&oldid=43483691"
+      }
     }
   ]
 }
