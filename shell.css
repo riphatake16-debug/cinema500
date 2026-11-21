@@ -1,9 +1,122 @@
 /* ===== Cinema500 app shell =====
    One rounded glass panel on a warm backdrop: top bar (search, pills, account),
-   right rail (today + latest), hero banner and genre tiles. Desktop only; the
-   compact mobile layout in mobile.css is untouched. */
+   right rail (today + latest), hero banner and genre tiles.
+   Desktop: panel + rail + pill tabs. Phone: same panel and top search, bottom
+   dock keeps navigation, genre tiles become poster cards. */
 
 .top-search,.app-rail{display:none}
+
+/* phone / tablet: the same panel shell, without the desktop rail */
+@media (max-width:999px){
+  .app-shell{
+    position:relative;z-index:1;
+    width:auto;margin:8px 8px 0;
+    border:1px solid var(--glass-edge,var(--line));
+    border-radius:26px;
+    background:linear-gradient(135deg,var(--glass-glint,transparent),transparent 62%),var(--glass-fill,var(--surface));
+    box-shadow:var(--glass-shadow,0 18px 50px rgba(0,0,0,.28));
+    overflow:clip;
+  }
+  .app-shell > header{background:transparent;border-bottom:1px solid var(--glass-edge,var(--line))}
+  .app-shell .nav{
+    height:auto;flex-wrap:wrap;align-items:center;
+    gap:8px;margin:0;padding:11px 12px 12px;
+    border:0;border-radius:0;background:transparent;box-shadow:none;
+  }
+  .app-shell .brand{font-size:20px;gap:8px;flex-shrink:0}
+  .app-shell .brand-symbol{width:31px;height:31px;border-radius:10px;border:1px solid var(--glass-edge,var(--line));background:var(--ui-panel,var(--surface2))}
+  .app-shell .brand-symbol .icon{width:19px;height:19px}
+  .app-shell .brand-word small{display:none}
+
+  /* navigation lives in the bottom dock on phones */
+  .app-shell .nav-links{display:none}
+
+  /* search moves into the app bar as a full-width pill */
+  .app-shell .top-search{
+    display:flex;align-items:center;gap:9px;
+    order:9;flex:1 1 100%;
+    height:42px;padding:0 14px;border-radius:999px;
+    border:1px solid var(--ui-edge,var(--line));
+    background:var(--ui-panel,var(--surface2));
+  }
+  .app-shell .top-search .icon{width:16px;height:16px;color:var(--muted);flex:0 0 16px}
+  .app-shell .top-search input{
+    flex:1 1 auto;min-width:0;width:100%;height:100%;
+    border:0;background:none;outline:none;
+    font:inherit;font-size:12px;color:var(--text);
+  }
+  .app-shell .top-search input::placeholder{color:var(--muted)}
+  .app-shell .top-search kbd{display:none}
+  .app-shell .account-button,.app-shell .icon-button{border-radius:999px}
+
+  .app-shell > main{padding-bottom:8px}
+
+  /* hero genre chips */
+  .app-shell .hero.cinema-hero{border-radius:24px;border-color:var(--glass-edge,var(--line))}
+  .app-shell .hero-genres{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:11px}
+  .app-shell .hero-genres span{
+    font-size:9px;color:rgba(255,255,255,.82);padding:3px 9px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);
+  }
+
+  /* genre tiles read like the reference poster cards */
+  .app-shell .journey-grid.is-collections{
+    grid-auto-flow:row;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-auto-columns:auto;
+    overflow:visible;scroll-snap-type:none;gap:10px;
+  }
+  .app-shell .journey-grid.is-collections .journey-card{
+    position:relative;display:block;width:auto;min-width:0;
+    aspect-ratio:4/5;border-radius:20px;overflow:hidden;
+    border:1px solid var(--glass-edge,var(--line));background:var(--ui-panel,var(--surface2));
+  }
+  .app-shell .journey-grid.is-collections .journey-art{
+    position:absolute;inset:0;height:100%;padding:0;gap:0;
+    justify-content:stretch;align-items:stretch;
+    background:radial-gradient(ellipse at top,#2a2b33,#141519 75%);
+  }
+  .app-shell .journey-grid.is-collections .journey-art>span:not(.journey-art-shade){
+    flex:0 0 100%;width:100%;height:100%;min-width:0;border-radius:0;overflow:hidden;
+  }
+  .app-shell .journey-grid.is-collections .journey-art>span:not(.journey-art-shade):nth-of-type(n+2){display:none}
+  .app-shell .journey-grid.is-collections .journey-art>span:not(.journey-art-shade) img{
+    width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;
+    filter:saturate(.82) contrast(1.02);
+  }
+  .app-shell .journey-grid.is-collections .journey-art-shade{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(9,10,14,.05) 0%,rgba(9,10,14,.2) 40%,rgba(9,10,14,.82) 74%,rgba(9,10,14,.98) 100%);
+  }
+  .app-shell .journey-grid.is-collections .journey-art>small{
+    position:absolute;top:8px;inset-inline-end:8px;bottom:auto;right:auto;
+    font-size:8px;padding:2px 8px;border-radius:999px;
+    background:rgba(0,0,0,.55);color:#fff;border:1px solid rgba(255,255,255,.22);
+  }
+  .app-shell .journey-grid.is-collections .journey-card-body{
+    position:absolute;inset-inline:0;bottom:0;z-index:2;
+    display:block;padding:10px 11px 11px;background:none;
+  }
+  .app-shell .journey-grid.is-collections .journey-card-heading strong{
+    font-size:13px;font-weight:600;line-height:1.5;color:#fff;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+    text-shadow:0 1px 8px rgba(0,0,0,.55);
+  }
+  .app-shell .journey-grid.is-collections .journey-card-heading .icon{display:none}
+  .app-shell .journey-grid.is-collections .journey-subtitle,
+  .app-shell .journey-grid.is-collections .journey-duration{display:none}
+  .app-shell .journey-grid.is-collections .journey-progress-copy{color:rgba(255,255,255,.66);font-size:9px;gap:4px;margin-top:2px}
+  .app-shell .journey-grid.is-collections .journey-progress-copy>span:last-child{display:none}
+  .app-shell .journey-grid.is-collections .journey-progress{background:rgba(255,255,255,.2);margin-top:5px}
+
+  .app-shell .curated-heading h2{font-size:19px}
+  .app-shell .curated-heading p{font-size:11px}
+  .app-shell .metric-card{border-radius:20px;background:rgba(255,255,255,.045);border-color:var(--glass-edge,var(--line))}
+  .app-shell .mini-ring:before{background:#212228}
+}
+@media (min-width:640px) and (max-width:999px){
+  .app-shell .journey-grid.is-collections{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
 
 @media (min-width:1000px){
   html{background:#171310}
