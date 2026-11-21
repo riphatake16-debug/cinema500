@@ -163,7 +163,9 @@
   .app-shell .hero-copy{padding:40px 42px 118px;max-width:600px}
   .app-shell .cinema-hero #featured-title{font-size:44px;letter-spacing:-1.4px;margin:18px 0 8px}
   .app-shell .hero-fa{font-size:16px}
-  .app-shell .hero-description{max-width:390px;font-size:11.5px!important;line-height:2!important}
+  .app-shell .hero-description{max-width:390px;font-size:11.5px!important;line-height:2!important;color:rgba(255,255,255,.76)!important}
+  .app-shell .featured-meta,.app-shell .hero-fa{color:rgba(255,255,255,.78)!important}
+  .app-shell .featured-meta .icon{color:rgba(255,255,255,.6)}
   .app-shell .hero-eyebrow{
     display:inline-flex;align-self:flex-start;gap:8px;
     padding:5px 12px;border-radius:999px;font-size:10px;
