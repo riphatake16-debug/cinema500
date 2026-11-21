@@ -28,8 +28,20 @@
   .app-shell .brand-symbol .icon{width:19px;height:19px}
   .app-shell .brand-word small{display:none}
 
-  /* navigation lives in the bottom dock on phones */
-  .app-shell .nav-links{display:none}
+  /* nav stays as compact pills; phones use the bottom dock instead */
+  .app-shell .nav-links{
+    display:flex;flex-wrap:nowrap;margin:0;gap:2px;padding:4px;align-items:center;
+    border:1px solid var(--glass-edge,var(--line));border-radius:999px;
+    background:var(--surface2);font-size:11px;max-width:100%;overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .app-shell .nav-links::-webkit-scrollbar{display:none}
+  .app-shell .nav-links a,.app-shell .nav-links button{
+    padding:6px 10px;border-radius:999px;font-size:10px;line-height:1.6;
+    color:var(--muted);white-space:nowrap;
+  }
+  .app-shell .nav-links .active{color:var(--text);background:var(--accent-soft,#ffffff14)}
+  .app-shell .nav-links .active:after{display:none}
 
   /* search moves into the app bar as a full-width pill */
   .app-shell .top-search{
@@ -113,6 +125,9 @@
   .app-shell .curated-heading p{font-size:11px}
   .app-shell .metric-card{border-radius:20px;background:rgba(255,255,255,.045);border-color:var(--glass-edge,var(--line))}
   .app-shell .mini-ring:before{background:#212228}
+}
+@media (max-width:700px){
+  .app-shell .nav-links{display:none}
 }
 @media (min-width:640px) and (max-width:999px){
   .app-shell .journey-grid.is-collections{grid-template-columns:repeat(3,minmax(0,1fr))}
