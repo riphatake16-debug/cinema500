@@ -28,7 +28,7 @@ test('mobile catalogue and hero avoid unnecessary image and animation work', asy
     'app.js': 'shell-1',
     'mobile.css': 'perf-20261114-8',
     'style.css': 'perf-20261114-8',
-    'theme.css': 'theme-1'
+    'shell.css': 'shell-8'
   };
   for (const [file, version] of Object.entries(versions)) {
     assert.ok(html.includes('./' + file + '?v=' + version), file + ' cache key');
