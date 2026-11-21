@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "fde76beba3c90adf9bf3879c74fac2dc582546e87567d16cc85a7a60dc42949f",
+  "version": "dee200b9c07c22b3a1f66599eb4d0327ff30661c083bd73440f032a42d32e088",
   "status": "ok",
-  "retrievedAt": "2026-11-20T01:30:17+00:00",
-  "checkedAt": "2026-11-20T01:30:17+00:00",
+  "retrievedAt": "2026-11-21T01:36:11+00:00",
+  "checkedAt": "2026-11-21T01:36:11+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -589,9 +589,27 @@
       }
     },
     {
-      "id": "tt0245429",
+      "id": "tt0172495",
       "type": "movie",
       "rank": 31,
+      "title": "Gladiator",
+      "year": 2000,
+      "rating": 8.5,
+      "poster": "./posters/tt0172495.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "runtime": 155,
+      "fa": "گلادیاتور",
+      "summary": "یک ژنرال رومی پس از کشته‌شدن خانواده‌اش و افتادن به بردگی، به‌دنبال انتقام از امپراتوری است که زندگی‌اش را نابود کرده.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0245429",
+      "type": "movie",
+      "rank": 32,
       "title": "Spirited Away",
       "year": 2001,
       "rating": 8.6,
@@ -605,24 +623,6 @@
       "runtime": 124,
       "fa": "شهر اشباح",
       "summary": "دختری ده‌ساله وارد دنیای ارواح می‌شود و باید راهی برای نجات پدر و مادرش و بازگشت به دنیای انسان‌ها پیدا کند.",
-      "summaryLanguage": "fa"
-    },
-    {
-      "id": "tt0172495",
-      "type": "movie",
-      "rank": 32,
-      "title": "Gladiator",
-      "year": 2000,
-      "rating": 8.5,
-      "poster": "./posters/tt0172495.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama"
-      ],
-      "runtime": 155,
-      "fa": "گلادیاتور",
-      "summary": "یک ژنرال رومی پس از کشته‌شدن خانواده‌اش و افتادن به بردگی، به‌دنبال انتقام از امپراتوری است که زندگی‌اش را نابود کرده.",
       "summaryLanguage": "fa"
     },
     {
@@ -1473,30 +1473,9 @@
       }
     },
     {
-      "id": "tt23849204",
-      "type": "movie",
-      "rank": 72,
-      "title": "12th Fail",
-      "year": 2023,
-      "rating": 8.6,
-      "poster": "./posters/tt23849204.jpg",
-      "genres": [
-        "Biography",
-        "Drama"
-      ],
-      "runtime": 147,
-      "fa": "شکست دوازدهم",
-      "summary": "مانوج پس از شکست در درس، تصمیم می‌گیرد دوباره شروع کند و پلیس شود. او باید در کنار فقر، از پس آزمونی سخت هم بربیاید؛ بر اساس زندگی مانوج کومار شارما.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q122921105"
-      }
-    },
-    {
       "id": "tt4154796",
       "type": "movie",
-      "rank": 73,
+      "rank": 72,
       "title": "Avengers: Endgame",
       "year": 2019,
       "rating": 8.4,
@@ -1518,7 +1497,7 @@
     {
       "id": "tt0119217",
       "type": "movie",
-      "rank": 74,
+      "rank": 73,
       "title": "Good Will Hunting",
       "year": 1997,
       "rating": 8.4,
@@ -1534,6 +1513,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q193835"
+      }
+    },
+    {
+      "id": "tt23849204",
+      "type": "movie",
+      "rank": 74,
+      "title": "12th Fail",
+      "year": 2023,
+      "rating": 8.6,
+      "poster": "./posters/tt23849204.jpg",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "runtime": 147,
+      "fa": "شکست دوازدهم",
+      "summary": "مانوج پس از شکست در درس، تصمیم می‌گیرد دوباره شروع کند و پلیس شود. او باید در کنار فقر، از پس آزمونی سخت هم بربیاید؛ بر اساس زندگی مانوج کومار شارما.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q122921105"
       }
     },
     {
@@ -1608,9 +1608,31 @@
       }
     },
     {
-      "id": "tt33764258",
+      "id": "tt0086879",
       "type": "movie",
       "rank": 78,
+      "title": "Amadeus",
+      "year": 1984,
+      "rating": 8.4,
+      "poster": "./posters/tt0086879.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Music"
+      ],
+      "runtime": 160,
+      "fa": "آمادئوس",
+      "summary": "آنتونیو سالیری، آهنگ‌سازی که به استعداد موتسارت حسادت می‌کند، از زندگی و موفقیت‌های او می‌گوید و ادعا می‌کند که باعث مرگش شده است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190956"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 79,
       "title": "The Odyssey",
       "year": 2026,
       "rating": 8.4,
@@ -1628,28 +1650,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
-      "id": "tt0086879",
-      "type": "movie",
-      "rank": 79,
-      "title": "Amadeus",
-      "year": 1984,
-      "rating": 8.3,
-      "poster": "./posters/tt0086879.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "Music"
-      ],
-      "runtime": 160,
-      "fa": "آمادئوس",
-      "summary": "آنتونیو سالیری، آهنگ‌سازی که به استعداد موتسارت حسادت می‌کند، از زندگی و موفقیت‌های او می‌گوید و ادعا می‌کند که باعث مرگش شده است.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q190956"
       }
     },
     {
@@ -1761,32 +1761,9 @@
       }
     },
     {
-      "id": "tt0364569",
-      "type": "movie",
-      "rank": 85,
-      "title": "Oldboy",
-      "year": 2003,
-      "rating": 8.3,
-      "poster": "./posters/tt0364569.jpg",
-      "genres": [
-        "Action",
-        "Drama",
-        "Mystery",
-        "Thriller"
-      ],
-      "runtime": 120,
-      "fa": "همکلاسی قدیمی",
-      "summary": "اوه دائه‌سو پس از پانزده سال اسارت آزاد می‌شود، اما می‌فهمد تنها پنج روز فرصت دارد هویت کسی را که زندانی‌اش کرده پیدا کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q475693"
-      }
-    },
-    {
       "id": "tt2056785",
       "type": "movie",
-      "rank": 86,
+      "rank": 85,
       "title": "Wildwood",
       "year": 2026,
       "rating": 8.6,
@@ -1805,6 +1782,29 @@
         "faUrl": "https://www.wikidata.org/entity/Q123058740",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt0364569",
+      "type": "movie",
+      "rank": 86,
+      "title": "Oldboy",
+      "year": 2003,
+      "rating": 8.3,
+      "poster": "./posters/tt0364569.jpg",
+      "genres": [
+        "Action",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "runtime": 120,
+      "fa": "همکلاسی قدیمی",
+      "summary": "اوه دائه‌سو پس از پانزده سال اسارت آزاد می‌شود، اما می‌فهمد تنها پنج روز فرصت دارد هویت کسی را که زندانی‌اش کرده پیدا کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q475693"
       }
     },
     {
@@ -2898,30 +2898,9 @@
       }
     },
     {
-      "id": "tt0058625",
-      "type": "movie",
-      "rank": 138,
-      "title": "Woman in the Dunes",
-      "year": 1964,
-      "rating": 8.4,
-      "poster": "./posters/tt0058625.jpg",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 147,
-      "fa": "زن در ریگ روان",
-      "summary": "پژوهشگری که برای بررسی حشره‌ها سفر کرده، به دست روستاییان در خانهٔ زنی میان تپه‌های ماسه گرفتار می‌شود. آن دو باید هر روز شن‌های اطراف خانه را بیرون بریزند تا زیر آن دفن نشوند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1207936"
-      }
-    },
-    {
       "id": "tt15398776",
       "type": "movie",
-      "rank": 139,
+      "rank": 138,
       "title": "Oppenheimer",
       "year": 2023,
       "rating": 8.2,
@@ -2938,6 +2917,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q108839994"
+      }
+    },
+    {
+      "id": "tt0058625",
+      "type": "movie",
+      "rank": 139,
+      "title": "Woman in the Dunes",
+      "year": 1964,
+      "rating": 8.4,
+      "poster": "./posters/tt0058625.jpg",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 147,
+      "fa": "زن در ریگ روان",
+      "summary": "پژوهشگری که برای بررسی حشره‌ها سفر کرده، به دست روستاییان در خانهٔ زنی میان تپه‌های ماسه گرفتار می‌شود. آن دو باید هر روز شن‌های اطراف خانه را بیرون بریزند تا زیر آن دفن نشوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1207936"
       }
     },
     {
@@ -4089,31 +4089,9 @@
       }
     },
     {
-      "id": "tt0118849",
-      "type": "movie",
-      "rank": 192,
-      "title": "Children of Heaven",
-      "year": 1997,
-      "rating": 8.2,
-      "poster": "./posters/tt0118849.jpg",
-      "genres": [
-        "Drama",
-        "Family",
-        "Sport"
-      ],
-      "runtime": 89,
-      "fa": "بچههای آسمان",
-      "summary": "پسری کفش‌های خواهرش را گم می‌کند و برای پیدا کردنشان همه‌جا را می‌گردد. وقتی جست‌وجویش بی‌نتیجه می‌ماند، راه دیگری برای تهیهٔ یک جفت کفش پیدا می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q339804"
-      }
-    },
-    {
       "id": "tt0116282",
       "type": "movie",
-      "rank": 193,
+      "rank": 192,
       "title": "Fargo",
       "year": 1996,
       "rating": 8.1,
@@ -4130,6 +4108,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q222720"
+      }
+    },
+    {
+      "id": "tt0118849",
+      "type": "movie",
+      "rank": 193,
+      "title": "Children of Heaven",
+      "year": 1997,
+      "rating": 8.2,
+      "poster": "./posters/tt0118849.jpg",
+      "genres": [
+        "Drama",
+        "Family",
+        "Sport"
+      ],
+      "runtime": 89,
+      "fa": "بچههای آسمان",
+      "summary": "پسری کفش‌های خواهرش را گم می‌کند و برای پیدا کردنشان همه‌جا را می‌گردد. وقتی جست‌وجویش بی‌نتیجه می‌ماند، راه دیگری برای تهیهٔ یک جفت کفش پیدا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q339804"
       }
     },
     {
@@ -4607,9 +4607,30 @@
       }
     },
     {
-      "id": "tt0325980",
+      "id": "tt0075148",
       "type": "movie",
       "rank": 215,
+      "title": "Rocky",
+      "year": 1976,
+      "rating": 8.1,
+      "poster": "./posters/tt0075148.jpg",
+      "genres": [
+        "Drama",
+        "Sport"
+      ],
+      "runtime": 120,
+      "fa": "راکی",
+      "summary": "بوکسوری گمنام فرصت مبارزه با قهرمان سنگین‌وزن را پیدا می‌کند. او می‌خواهد تا پایان مسابقه دوام بیاورد و توانایی‌اش را به خودش ثابت کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q188652"
+      }
+    },
+    {
+      "id": "tt0325980",
+      "type": "movie",
+      "rank": 216,
       "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
       "year": 2003,
       "rating": 8.1,
@@ -4626,27 +4647,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q46717"
-      }
-    },
-    {
-      "id": "tt0075148",
-      "type": "movie",
-      "rank": 216,
-      "title": "Rocky",
-      "year": 1976,
-      "rating": 8.1,
-      "poster": "./posters/tt0075148.jpg",
-      "genres": [
-        "Drama",
-        "Sport"
-      ],
-      "runtime": 120,
-      "fa": "راکی",
-      "summary": "بوکسوری گمنام فرصت مبارزه با قهرمان سنگین‌وزن را پیدا می‌کند. او می‌خواهد تا پایان مسابقه دوام بیاورد و توانایی‌اش را به خودش ثابت کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q188652"
       }
     },
     {
@@ -4805,30 +4805,9 @@
       }
     },
     {
-      "id": "tt15097216",
-      "type": "movie",
-      "rank": 224,
-      "title": "Jai Bhim",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt15097216.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 164,
-      "fa": "جای بهیم",
-      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt15097216/"
-      }
-    },
-    {
       "id": "tt0059742",
       "type": "movie",
-      "rank": 225,
+      "rank": 224,
       "title": "The Sound of Music",
       "year": 1965,
       "rating": 8.1,
@@ -4847,6 +4826,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60072"
+      }
+    },
+    {
+      "id": "tt15097216",
+      "type": "movie",
+      "rank": 225,
+      "title": "Jai Bhim",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt15097216.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 164,
+      "fa": "جای بهیم",
+      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt15097216/"
       }
     },
     {
@@ -5199,30 +5199,9 @@
       }
     },
     {
-      "id": "tt0050976",
-      "type": "movie",
-      "rank": 242,
-      "title": "The Seventh Seal",
-      "year": 1957,
-      "rating": 8.1,
-      "poster": "./posters/tt0050976.jpg",
-      "genres": [
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 96,
-      "fa": "مهر هفتم",
-      "summary": "در دوران طاعون سیاه، مردی هنگام بازی شطرنج با مرگ، در جست‌وجوی پاسخ پرسش‌هایی دربارهٔ زندگی، مرگ و وجود خداست.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q217189"
-      }
-    },
-    {
       "id": "tt1979320",
       "type": "movie",
-      "rank": 243,
+      "rank": 242,
       "title": "Rush",
       "year": 2013,
       "rating": 8.1,
@@ -5239,6 +5218,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1768437"
+      }
+    },
+    {
+      "id": "tt0050976",
+      "type": "movie",
+      "rank": 243,
+      "title": "The Seventh Seal",
+      "year": 1957,
+      "rating": 8.1,
+      "poster": "./posters/tt0050976.jpg",
+      "genres": [
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 96,
+      "fa": "مهر هفتم",
+      "summary": "در دوران طاعون سیاه، مردی هنگام بازی شطرنج با مرگ، در جست‌وجوی پاسخ پرسش‌هایی دربارهٔ زندگی، مرگ و وجود خداست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q217189"
       }
     },
     {
@@ -6170,29 +6170,9 @@
       }
     },
     {
-      "id": "tt13675832",
-      "type": "tv",
-      "rank": 37,
-      "title": "As If",
-      "year": 2021,
-      "rating": 9,
-      "poster": "./posters/tt13675832.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "مثل اینکه",
-      "summary": "ییلماز، ایلکان و دوستانشان با اتفاق‌های کوچک و عجیب زندگی روزمره درگیر می‌شوند؛ سوءتفاهم‌ها و بحث‌های پایان‌ناپذیری که هر بار مسئله‌ای ساده را به بحرانی خنده‌دار تبدیل می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt13675832/"
-      }
-    },
-    {
       "id": "tt33043892",
       "type": "tv",
-      "rank": 38,
+      "rank": 37,
       "title": "Dexter: Resurrection",
       "year": 2025,
       "rating": 9,
@@ -6210,6 +6190,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q127919404"
+      }
+    },
+    {
+      "id": "tt13675832",
+      "type": "tv",
+      "rank": 38,
+      "title": "As If",
+      "year": 2021,
+      "rating": 9,
+      "poster": "./posters/tt13675832.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "مثل اینکه",
+      "summary": "ییلماز، ایلکان و دوستانشان با اتفاق‌های کوچک و عجیب زندگی روزمره درگیر می‌شوند؛ سوءتفاهم‌ها و بحث‌های پایان‌ناپذیری که هر بار مسئله‌ای ساده را به بحرانی خنده‌دار تبدیل می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt13675832/"
       }
     },
     {
@@ -6408,24 +6408,23 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0092337",
+      "id": "tt2356777",
       "type": "tv",
       "rank": 48,
-      "title": "Dekalog",
-      "year": 1989,
-      "rating": 8.9,
-      "poster": "./posters/tt0092337.jpg",
+      "title": "True Detective",
+      "year": 2014,
+      "rating": 8.8,
+      "poster": "./posters/tt2356777.jpg",
       "genres": [
-        "Drama"
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
       ],
       "runtime": 60,
-      "fa": "ده فرمان",
-      "summary": "ده فیلم تلویزیونی درام که هرکدام با الهام از یکی از ده فرمان ساخته شده‌اند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q59783"
-      }
+      "fa": "کارآگاه حقیقی",
+      "summary": "هر فصل پروندهٔ جنایی تازه‌ای را دنبال می‌کند. با پیشرفت تحقیقات، رازهای زندگی کارآگاهان و آدم‌های درگیر پرونده هم آشکار می‌شود.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt0213338",
@@ -6453,23 +6452,24 @@
       }
     },
     {
-      "id": "tt2356777",
+      "id": "tt0092337",
       "type": "tv",
       "rank": 50,
-      "title": "True Detective",
-      "year": 2014,
-      "rating": 8.8,
-      "poster": "./posters/tt2356777.jpg",
+      "title": "Dekalog",
+      "year": 1989,
+      "rating": 8.9,
+      "poster": "./posters/tt0092337.jpg",
       "genres": [
-        "Crime",
-        "Drama",
-        "Mystery",
-        "Thriller"
+        "Drama"
       ],
       "runtime": 60,
-      "fa": "کارآگاه حقیقی",
-      "summary": "هر فصل پروندهٔ جنایی تازه‌ای را دنبال می‌کند. با پیشرفت تحقیقات، رازهای زندگی کارآگاهان و آدم‌های درگیر پرونده هم آشکار می‌شود.",
-      "summaryLanguage": "fa"
+      "fa": "ده فرمان",
+      "summary": "ده فیلم تلویزیونی درام که هرکدام با الهام از یکی از ده فرمان ساخته شده‌اند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q59783"
+      }
     },
     {
       "id": "tt1508238",
@@ -6516,30 +6516,9 @@
       }
     },
     {
-      "id": "tt5622316",
-      "type": "tv",
-      "rank": 53,
-      "title": "The Chosen",
-      "year": 2017,
-      "rating": 9.1,
-      "poster": "https://m.media-amazon.com/images/M/MV5BN2I3NjBhYzAtY2RkMC00ZmYwLTkzNTctYzMwODI3YzY0NDJiXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "runtime": 60,
-      "fa": "برگزیدگان",
-      "summary": "زندگی عیسی مسیح از نگاه کسانی دنبال می‌شود که با او آشنا می‌شوند و همراهش می‌مانند؛ در سرزمینی که زیر سلطهٔ امپراتوری روم است.",
-      "summaryLanguage": "fa",
-      "aliases": [
-        "برگزیده"
-      ]
-    },
-    {
       "id": "tt0388629",
       "type": "tv",
-      "rank": 54,
+      "rank": 53,
       "title": "One Piece",
       "year": 1999,
       "rating": 9,
@@ -6564,7 +6543,7 @@
     {
       "id": "tt2571774",
       "type": "tv",
-      "rank": 55,
+      "rank": 54,
       "title": "Africa",
       "year": 2013,
       "rating": 8.9,
@@ -6583,9 +6562,50 @@
       }
     },
     {
-      "id": "tt7920978",
+      "id": "tt5622316",
+      "type": "tv",
+      "rank": 55,
+      "title": "The Chosen",
+      "year": 2017,
+      "rating": 9.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2I3NjBhYzAtY2RkMC00ZmYwLTkzNTctYzMwODI3YzY0NDJiXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "runtime": 60,
+      "fa": "برگزیدگان",
+      "summary": "زندگی عیسی مسیح از نگاه کسانی دنبال می‌شود که با او آشنا می‌شوند و همراهش می‌مانند؛ در سرزمینی که زیر سلطهٔ امپراتوری روم است.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "برگزیده"
+      ]
+    },
+    {
+      "id": "tt0200276",
       "type": "tv",
       "rank": 56,
+      "title": "The West Wing",
+      "year": 1999,
+      "rating": 8.9,
+      "poster": "./posters/tt0200276.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 42,
+      "fa": "بال غربی",
+      "summary": "کارکنان کاخ سفید در کنار رئیس‌جمهور، با تصمیم‌های سیاسی، بحران‌های روز و مشکلات زندگی شخصی‌شان درگیر می‌شوند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q3577037"
+      }
+    },
+    {
+      "id": "tt7920978",
+      "type": "tv",
+      "rank": 57,
       "title": "Persona",
       "year": 2018,
       "rating": 8.9,
@@ -6603,26 +6623,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q52152174"
-      }
-    },
-    {
-      "id": "tt0200276",
-      "type": "tv",
-      "rank": 57,
-      "title": "The West Wing",
-      "year": 1999,
-      "rating": 8.9,
-      "poster": "./posters/tt0200276.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 42,
-      "fa": "بال غربی",
-      "summary": "کارکنان کاخ سفید در کنار رئیس‌جمهور، با تصمیم‌های سیاسی، بحران‌های روز و مشکلات زندگی شخصی‌شان درگیر می‌شوند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q3577037"
       }
     },
     {
@@ -6712,32 +6712,9 @@
       }
     },
     {
-      "id": "tt14986406",
-      "type": "tv",
-      "rank": 62,
-      "title": "Bleach: Thousand-Year Blood War",
-      "year": 2022,
-      "rating": 9,
-      "poster": "./posters/tt14986406.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "runtime": 24,
-      "fa": "بلیچ: جنگ خونین هزار ساله",
-      "summary": "با ناپدیدشدن مرموز ساکنان و نزدیک‌شدن تهدیدی تازه به انجمن ارواح، ایچیگو و همراهانش وارد نبردی گسترده می‌شوند که گذشته و آیندهٔ دنیای آن‌ها را به چالش می‌کشد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112631839"
-      }
-    },
-    {
       "id": "tt10233448",
       "type": "tv",
-      "rank": 63,
+      "rank": 62,
       "title": "Vinland Saga",
       "year": 2019,
       "rating": 8.9,
@@ -6759,30 +6736,32 @@
       }
     },
     {
-      "id": "tt4742876",
+      "id": "tt14986406",
       "type": "tv",
-      "rank": 64,
-      "title": "TVF Pitchers",
-      "year": 2015,
+      "rank": 63,
+      "title": "Bleach: Thousand-Year Blood War",
+      "year": 2022,
       "rating": 9,
-      "poster": "./posters/tt4742876.jpg",
+      "poster": "./posters/tt14986406.jpg",
       "genres": [
-        "Comedy",
-        "Drama"
+        "Animation",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
-      "runtime": 40,
-      "fa": "پرتاب‌کنندگان TVF",
-      "summary": "چهار دوست شغل‌هایشان را رها می‌کنند تا شرکت خودشان را راه بیندازند؛ اما تبدیل یک ایده به کسب‌وکار، سخت‌تر از چیزی است که فکر می‌کردند.",
+      "runtime": 24,
+      "fa": "بلیچ: جنگ خونین هزار ساله",
+      "summary": "با ناپدیدشدن مرموز ساکنان و نزدیک‌شدن تهدیدی تازه به انجمن ارواح، ایچیگو و همراهانش وارد نبردی گسترده می‌شوند که گذشته و آیندهٔ دنیای آن‌ها را به چالش می‌کشد.",
       "summaryLanguage": "fa",
       "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt4742876/"
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112631839"
       }
     },
     {
       "id": "tt7660850",
       "type": "tv",
-      "rank": 65,
+      "rank": 64,
       "title": "Succession",
       "year": 2018,
       "rating": 8.8,
@@ -6798,6 +6777,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q30599007"
+      }
+    },
+    {
+      "id": "tt4742876",
+      "type": "tv",
+      "rank": 65,
+      "title": "TVF Pitchers",
+      "year": 2015,
+      "rating": 9,
+      "poster": "./posters/tt4742876.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 40,
+      "fa": "پرتاب‌کنندگان TVF",
+      "summary": "چهار دوست شغل‌هایشان را رها می‌کنند تا شرکت خودشان را راه بیندازند؛ اما تبدیل یک ایده به کسب‌وکار، سخت‌تر از چیزی است که فکر می‌کردند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt4742876/"
       }
     },
     {
@@ -6845,9 +6845,29 @@
       }
     },
     {
-      "id": "tt12004706",
+      "id": "tt0264235",
       "type": "tv",
       "rank": 68,
+      "title": "Curb Your Enthusiasm",
+      "year": 2000,
+      "rating": 8.8,
+      "poster": "./posters/tt0264235.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "زیاد ذوقزده نشو",
+      "summary": "زندگی لری دیوید و موقعیت‌های دشواری که در برخورد با دوستان و غریبه‌ها برای خودش ایجاد می‌کند، روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23722"
+      }
+    },
+    {
+      "id": "tt12004706",
+      "type": "tv",
+      "rank": 69,
       "title": "Panchayat",
       "year": 2020,
       "rating": 9,
@@ -6863,26 +6883,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt12004706/"
-      }
-    },
-    {
-      "id": "tt0264235",
-      "type": "tv",
-      "rank": 69,
-      "title": "Curb Your Enthusiasm",
-      "year": 2000,
-      "rating": 8.8,
-      "poster": "./posters/tt0264235.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "زیاد ذوقزده نشو",
-      "summary": "زندگی لری دیوید و موقعیت‌های دشواری که در برخورد با دوستان و غریبه‌ها برای خودش ایجاد می‌کند، روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23722"
       }
     },
     {
@@ -6977,7 +6977,7 @@
       "rank": 74,
       "title": "Gullak",
       "year": 2019,
-      "rating": 9.1,
+      "rating": 9,
       "poster": "./posters/tt10530900.jpg",
       "genres": [
         "Comedy",
@@ -7041,34 +7041,9 @@
       }
     },
     {
-      "id": "tt1831164",
-      "type": "tv",
-      "rank": 77,
-      "title": "Leyla and Mecnun",
-      "year": 2011,
-      "rating": 9,
-      "poster": "./posters/tt1831164.jpg",
-      "genres": [
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Mystery",
-        "Romance"
-      ],
-      "runtime": 90,
-      "fa": "لیلا و مکنون",
-      "summary": "لیلا و مجنون در استانبول عاشق هم می‌شوند؛ در داستانی کمدی که اتفاق‌های عجیب و شخصیت‌های غیرمنتظره مدام مسیرش را عوض می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1831164/"
-      }
-    },
-    {
       "id": "tt0353049",
       "type": "tv",
-      "rank": 78,
+      "rank": 77,
       "title": "Chappelle's Show",
       "year": 2003,
       "rating": 8.8,
@@ -7089,7 +7064,7 @@
     {
       "id": "tt0193676",
       "type": "tv",
-      "rank": 79,
+      "rank": 78,
       "title": "Freaks and Geeks",
       "year": 1999,
       "rating": 8.7,
@@ -7110,7 +7085,7 @@
     {
       "id": "tt5182866",
       "type": "tv",
-      "rank": 80,
+      "rank": 79,
       "title": "Reply 1988",
       "year": 2015,
       "rating": 9,
@@ -7128,6 +7103,31 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q19657395"
+      }
+    },
+    {
+      "id": "tt1831164",
+      "type": "tv",
+      "rank": 80,
+      "title": "Leyla and Mecnun",
+      "year": 2011,
+      "rating": 9,
+      "poster": "./posters/tt1831164.jpg",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Romance"
+      ],
+      "runtime": 90,
+      "fa": "لیلا و مکنون",
+      "summary": "لیلا و مجنون در استانبول عاشق هم می‌شوند؛ در داستانی کمدی که اتفاق‌های عجیب و شخصیت‌های غیرمنتظره مدام مسیرش را عوض می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1831164/"
       }
     },
     {
@@ -7220,9 +7220,30 @@
       }
     },
     {
-      "id": "tt0318871",
+      "id": "tt0121955",
       "type": "tv",
       "rank": 85,
+      "title": "South Park",
+      "year": 1997,
+      "rating": 8.7,
+      "poster": "./posters/tt0121955.jpg",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "ساوت پارک",
+      "summary": "چهار دانش‌آموز در ساوت پارکِ کلرادو، با ماجراهای عجیب شهر و رفتارهای بزرگ‌ترها درگیر می‌شوند و معمولاً خودشان هم دردسر درست می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16538"
+      }
+    },
+    {
+      "id": "tt0318871",
+      "type": "tv",
+      "rank": 86,
       "title": "Berserk",
       "year": 1997,
       "rating": 8.8,
@@ -7243,27 +7264,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q18559016"
-      }
-    },
-    {
-      "id": "tt0121955",
-      "type": "tv",
-      "rank": 86,
-      "title": "South Park",
-      "year": 1997,
-      "rating": 8.7,
-      "poster": "./posters/tt0121955.jpg",
-      "genres": [
-        "Animation",
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "ساوت پارک",
-      "summary": "چهار دانش‌آموز در ساوت پارکِ کلرادو، با ماجراهای عجیب شهر و رفتارهای بزرگ‌ترها درگیر می‌شوند و معمولاً خودشان هم دردسر درست می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q16538"
       }
     },
     {
@@ -7656,9 +7656,30 @@
       }
     },
     {
-      "id": "tt0407362",
+      "id": "tt5687612",
       "type": "tv",
       "rank": 104,
+      "title": "Fleabag",
+      "year": 2016,
+      "rating": 8.7,
+      "poster": "./posters/tt5687612.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": 30,
+      "fa": "فلیبگ",
+      "summary": "زنی جوان در لندن پس از یک فقدان تلخ، تلاش می‌کند زندگی، کار و روابطش را دوباره سر و سامان بدهد؛ اما همیشه هم انتخاب‌های درستی نمی‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q16868648"
+      }
+    },
+    {
+      "id": "tt0407362",
+      "type": "tv",
+      "rank": 105,
       "title": "Battlestar Galactica",
       "year": 2004,
       "rating": 8.7,
@@ -7676,27 +7697,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q237072"
-      }
-    },
-    {
-      "id": "tt5687612",
-      "type": "tv",
-      "rank": 105,
-      "title": "Fleabag",
-      "year": 2016,
-      "rating": 8.7,
-      "poster": "./posters/tt5687612.jpg",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "runtime": 30,
-      "fa": "فلیبگ",
-      "summary": "زنی جوان در لندن پس از یک فقدان تلخ، تلاش می‌کند زندگی، کار و روابطش را دوباره سر و سامان بدهد؛ اما همیشه هم انتخاب‌های درستی نمی‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q16868648"
       }
     },
     {
@@ -7787,29 +7787,9 @@
       }
     },
     {
-      "id": "tt0281491",
-      "type": "tv",
-      "rank": 110,
-      "title": "Still Game",
-      "year": 2002,
-      "rating": 8.9,
-      "poster": "./posters/tt0281491.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 29,
-      "fa": "بازی هنوز",
-      "summary": "جک و ویکتور، دو دوست بازنشسته در محله‌ای از گلاسگو، با دردسرهای سالمندی، همسایه‌ها و تغییرات دنیای امروز روبه‌رو می‌شوند و با شوخی و رفاقت، روزگار می‌گذرانند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0281491/"
-      }
-    },
-    {
       "id": "tt38268282",
       "type": "tv",
-      "rank": 111,
+      "rank": 110,
       "title": "Steel Ball Run: JoJo's Bizarre Adventure",
       "year": 2026,
       "rating": 9.3,
@@ -7829,6 +7809,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt38268282/"
+      }
+    },
+    {
+      "id": "tt0281491",
+      "type": "tv",
+      "rank": 111,
+      "title": "Still Game",
+      "year": 2002,
+      "rating": 8.9,
+      "poster": "./posters/tt0281491.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 29,
+      "fa": "بازی هنوز",
+      "summary": "جک و ویکتور، دو دوست بازنشسته در محله‌ای از گلاسگو، با دردسرهای سالمندی، همسایه‌ها و تغییرات دنیای امروز روبه‌رو می‌شوند و با شوخی و رفاقت، روزگار می‌گذرانند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0281491/"
       }
     },
     {
@@ -7856,9 +7856,26 @@
       }
     },
     {
-      "id": "tt0158417",
+      "id": "tt0096697",
       "type": "tv",
       "rank": 113,
+      "title": "The Simpsons",
+      "year": 1989,
+      "rating": 8.6,
+      "poster": "./posters/tt0096697.jpg",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "سیمپسون‌ها",
+      "summary": "ماجراهای طنزآمیز خانواده‌ای از طبقهٔ کارگر در شهر عجیب اسپرینگفیلد روایت می‌شود.",
+      "summaryLanguage": "fa"
+    },
+    {
+      "id": "tt0158417",
+      "type": "tv",
+      "rank": 114,
       "title": "Mahabharat",
       "year": 1988,
       "rating": 8.9,
@@ -7880,23 +7897,6 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0158417/"
       }
-    },
-    {
-      "id": "tt0096697",
-      "type": "tv",
-      "rank": 114,
-      "title": "The Simpsons",
-      "year": 1989,
-      "rating": 8.6,
-      "poster": "./posters/tt0096697.jpg",
-      "genres": [
-        "Animation",
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "سیمپسون‌ها",
-      "summary": "ماجراهای طنزآمیز خانواده‌ای از طبقهٔ کارگر در شهر عجیب اسپرینگفیلد روایت می‌شود.",
-      "summaryLanguage": "fa"
     },
     {
       "id": "tt6025022",
@@ -8148,31 +8148,9 @@
       }
     },
     {
-      "id": "tt7472896",
-      "type": "tv",
-      "rank": 126,
-      "title": "Mr Inbetween",
-      "year": 2018,
-      "rating": 8.7,
-      "poster": "./posters/tt7472896.jpg",
-      "genres": [
-        "Comedy",
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 30,
-      "fa": "آقای میانهرو",
-      "summary": "ری شوسمیت تلاش می‌کند میان پدربودن، دوستی و روابط خانوادگی تعادل برقرار کند؛ کاری دشوارتر از معمول، چون شغل پنهانی او انجام مأموریت‌های خشونت‌آمیز برای تبهکاران است.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q48780195"
-      }
-    },
-    {
       "id": "tt1305826",
       "type": "tv",
-      "rank": 127,
+      "rank": 126,
       "title": "Adventure Time",
       "year": 2010,
       "rating": 8.7,
@@ -8193,6 +8171,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q53093"
+      }
+    },
+    {
+      "id": "tt7472896",
+      "type": "tv",
+      "rank": 127,
+      "title": "Mr Inbetween",
+      "year": 2018,
+      "rating": 8.7,
+      "poster": "./posters/tt7472896.jpg",
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 30,
+      "fa": "آقای میانهرو",
+      "summary": "ری شوسمیت تلاش می‌کند میان پدربودن، دوستی و روابط خانوادگی تعادل برقرار کند؛ کاری دشوارتر از معمول، چون شغل پنهانی او انجام مأموریت‌های خشونت‌آمیز برای تبهکاران است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q48780195"
       }
     },
     {
@@ -8323,9 +8323,29 @@
       }
     },
     {
-      "id": "tt1795096",
+      "id": "tt0459159",
       "type": "tv",
       "rank": 134,
+      "title": "The Thick of It",
+      "year": 2005,
+      "rating": 8.7,
+      "poster": "./posters/tt0459159.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "ضخامت آن",
+      "summary": "وزیر امور اجتماعی و تیمش باید هم از پس بحران‌های خبری بربیایند و هم دفتر نخست‌وزیر را راضی نگه دارند؛ کاری که با اشتباه‌های پی‌درپی‌شان سخت‌تر می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0459159/"
+      }
+    },
+    {
+      "id": "tt1795096",
+      "type": "tv",
+      "rank": 135,
       "title": "Behzat Ç: An Ankara Detective Story",
       "year": 2010,
       "rating": 8.8,
@@ -8344,26 +8364,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q4881030"
-      }
-    },
-    {
-      "id": "tt0459159",
-      "type": "tv",
-      "rank": 135,
-      "title": "The Thick of It",
-      "year": 2005,
-      "rating": 8.7,
-      "poster": "./posters/tt0459159.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "ضخامت آن",
-      "summary": "وزیر امور اجتماعی و تیمش باید هم از پس بحران‌های خبری بربیایند و هم دفتر نخست‌وزیر را راضی نگه دارند؛ کاری که با اشتباه‌های پی‌درپی‌شان سخت‌تر می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0459159/"
       }
     },
     {
@@ -8556,29 +8556,9 @@
       }
     },
     {
-      "id": "tt1518542",
-      "type": "tv",
-      "rank": 145,
-      "title": "Sarabhai V/S Sarabhai",
-      "year": 2004,
-      "rating": 8.8,
-      "poster": "./posters/tt1518542.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "سارابهای در مقابل سارابهای",
-      "summary": "ورود عروسی از خانواده‌ای با درآمد متوسط به یک خانوادهٔ بسیار ثروتمند در بمبئی، اختلاف سلیقه‌ها و عادت‌های آن‌ها را به ماجراهایی خنده‌دار تبدیل می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1518542/"
-      }
-    },
-    {
       "id": "tt4288182",
       "type": "tv",
-      "rank": 146,
+      "rank": 145,
       "title": "Atlanta",
       "year": 2016,
       "rating": 8.6,
@@ -8595,6 +8575,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q23016639"
+      }
+    },
+    {
+      "id": "tt1518542",
+      "type": "tv",
+      "rank": 146,
+      "title": "Sarabhai V/S Sarabhai",
+      "year": 2004,
+      "rating": 8.8,
+      "poster": "./posters/tt1518542.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "سارابهای در مقابل سارابهای",
+      "summary": "ورود عروسی از خانواده‌ای با درآمد متوسط به یک خانوادهٔ بسیار ثروتمند در بمبئی، اختلاف سلیقه‌ها و عادت‌های آن‌ها را به ماجراهایی خنده‌دار تبدیل می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1518542/"
       }
     },
     {
@@ -8750,9 +8750,29 @@
       }
     },
     {
-      "id": "tt10332508",
+      "id": "tt0088484",
       "type": "tv",
       "rank": 154,
+      "title": "Blackadder II",
+      "year": 1986,
+      "rating": 8.6,
+      "poster": "./posters/tt0088484.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "بلکادر ۲",
+      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2668056"
+      }
+    },
+    {
+      "id": "tt10332508",
+      "type": "tv",
+      "rank": 155,
       "title": "Primal",
       "year": 2019,
       "rating": 8.6,
@@ -8772,26 +8792,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q70106936"
-      }
-    },
-    {
-      "id": "tt0088484",
-      "type": "tv",
-      "rank": 155,
-      "title": "Blackadder II",
-      "year": 1986,
-      "rating": 8.6,
-      "poster": "./posters/tt0088484.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "بلکادر ۲",
-      "summary": "ادموند بلک‌ادر در دربار الیزابت اول تلاش می‌کند ملکه را راضی نگه دارد؛ چون می‌داند ناراحت‌کردن او می‌تواند به قیمت جانش تمام شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2668056"
       }
     },
     {
@@ -9250,9 +9250,29 @@
       }
     },
     {
-      "id": "tt4834232",
+      "id": "tt9174558",
       "type": "tv",
       "rank": 177,
+      "title": "Dopesick",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt9174558.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "دوپسیک",
+      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q101420707"
+      }
+    },
+    {
+      "id": "tt4834232",
+      "type": "tv",
+      "rank": 178,
       "title": "Critical Role",
       "year": 2015,
       "rating": 9,
@@ -9271,29 +9291,31 @@
       }
     },
     {
-      "id": "tt9174558",
+      "id": "tt1486217",
       "type": "tv",
-      "rank": 178,
-      "title": "Dopesick",
-      "year": 2021,
+      "rank": 179,
+      "title": "Archer",
+      "year": 2009,
       "rating": 8.6,
-      "poster": "./posters/tt9174558.jpg",
+      "poster": "./posters/tt1486217.jpg",
       "genres": [
-        "Drama"
+        "Animation",
+        "Action",
+        "Comedy"
       ],
-      "runtime": 60,
-      "fa": "دوپسیک",
-      "summary": "بحران اعتیاد به داروهای مخدر در آمریکا از نگاه یک شرکت دارویی، پزشکان، بیماران و مأموران تحقیق دنبال می‌شود؛ از تبلیغ دارو تا تأثیرش بر زندگی مردم.",
+      "runtime": 22,
+      "fa": "آرچر",
+      "summary": "مأموران یک سازمان جاسوسی باید عملیات مخفی انجام دهند، اما دعواها، روابط شخصی و رفتارهای عجیبشان معمولاً خودِ مأموریت را به دردسر می‌اندازد.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q101420707"
+        "faUrl": "https://www.wikidata.org/entity/Q632670"
       }
     },
     {
       "id": "tt8595766",
       "type": "tv",
-      "rank": 179,
+      "rank": 180,
       "title": "Yeh Meri Family",
       "year": 2018,
       "rating": 8.9,
@@ -9312,28 +9334,6 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt8595766/"
-      }
-    },
-    {
-      "id": "tt1486217",
-      "type": "tv",
-      "rank": 180,
-      "title": "Archer",
-      "year": 2009,
-      "rating": 8.6,
-      "poster": "./posters/tt1486217.jpg",
-      "genres": [
-        "Animation",
-        "Action",
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "آرچر",
-      "summary": "مأموران یک سازمان جاسوسی باید عملیات مخفی انجام دهند، اما دعواها، روابط شخصی و رفتارهای عجیبشان معمولاً خودِ مأموریت را به دردسر می‌اندازد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q632670"
       }
     },
     {
@@ -9360,9 +9360,30 @@
       }
     },
     {
-      "id": "tt2063241",
+      "id": "tt0094517",
       "type": "tv",
       "rank": 182,
+      "title": "Mystery Science Theater 3000",
+      "year": 1988,
+      "rating": 8.6,
+      "poster": "./posters/tt0094517.jpg",
+      "genres": [
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "runtime": 90,
+      "fa": "تئاتر علوم اسرارآمیز ۳۰۰۰",
+      "summary": "مردی در یک ایستگاه فضایی اسیر شده و مجبور است فیلم‌های ضعیف تماشا کند. او و دوستان رباتش با شوخی‌کردن دربارهٔ فیلم‌ها، این وضعیت را تحمل می‌کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0094517/"
+      }
+    },
+    {
+      "id": "tt2063241",
+      "type": "tv",
+      "rank": 183,
       "title": "Farouk Omar",
       "year": 2012,
       "rating": 8.9,
@@ -9380,27 +9401,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q3184088"
-      }
-    },
-    {
-      "id": "tt0094517",
-      "type": "tv",
-      "rank": 183,
-      "title": "Mystery Science Theater 3000",
-      "year": 1988,
-      "rating": 8.6,
-      "poster": "./posters/tt0094517.jpg",
-      "genres": [
-        "Comedy",
-        "Sci-Fi"
-      ],
-      "runtime": 90,
-      "fa": "تئاتر علوم اسرارآمیز ۳۰۰۰",
-      "summary": "مردی در یک ایستگاه فضایی اسیر شده و مجبور است فیلم‌های ضعیف تماشا کند. او و دوستان رباتش با شوخی‌کردن دربارهٔ فیلم‌ها، این وضعیت را تحمل می‌کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0094517/"
       }
     },
     {
@@ -9425,34 +9425,9 @@
       }
     },
     {
-      "id": "tt4574334",
-      "type": "tv",
-      "rank": 185,
-      "title": "Stranger Things",
-      "year": 2016,
-      "rating": 8.6,
-      "poster": "./posters/tt4574334.jpg",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Horror",
-        "Mystery",
-        "Sci-Fi",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "چیزهای عجیب",
-      "summary": "پس از ناپدیدشدن پسربچه‌ای، مادرش، رئیس پلیس و دوستان او برای بازگرداندنش با نیروهای فراطبیعی هولناک روبه‌رو می‌شوند.",
-      "summaryLanguage": "fa",
-      "aliases": [
-        "چیزهای عجیب استرنجر تینگز",
-        "استرنجر تینگز"
-      ]
-    },
-    {
       "id": "tt1489428",
       "type": "tv",
-      "rank": 186,
+      "rank": 185,
       "title": "Justified",
       "year": 2010,
       "rating": 8.6,
@@ -9473,6 +9448,31 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1535208"
       }
+    },
+    {
+      "id": "tt4574334",
+      "type": "tv",
+      "rank": 186,
+      "title": "Stranger Things",
+      "year": 2016,
+      "rating": 8.6,
+      "poster": "./posters/tt4574334.jpg",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Horror",
+        "Mystery",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "چیزهای عجیب",
+      "summary": "پس از ناپدیدشدن پسربچه‌ای، مادرش، رئیس پلیس و دوستان او برای بازگرداندنش با نیروهای فراطبیعی هولناک روبه‌رو می‌شوند.",
+      "summaryLanguage": "fa",
+      "aliases": [
+        "چیزهای عجیب استرنجر تینگز",
+        "استرنجر تینگز"
+      ]
     },
     {
       "id": "tt0380136",
@@ -9854,31 +9854,9 @@
       }
     },
     {
-      "id": "tt13868972",
-      "type": "tv",
-      "rank": 203,
-      "title": "Rocket Boys",
-      "year": 2022,
-      "rating": 8.8,
-      "poster": "./posters/tt13868972.jpg",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "runtime": 45,
-      "fa": "پسران موشک",
-      "summary": "زندگی و همکاری هومی بابا و ویکرام سارابهای، دو دانشمند برجستهٔ هند، در مسیر شکل‌گیری برنامه‌های هسته‌ای و فضایی کشورشان و در میان چالش‌های علمی، سیاسی و شخصی روایت می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt13868972/"
-      }
-    },
-    {
       "id": "tt4082744",
       "type": "tv",
-      "rank": 204,
+      "rank": 203,
       "title": "Detectorists",
       "year": 2014,
       "rating": 8.6,
@@ -9898,7 +9876,7 @@
     {
       "id": "tt0487831",
       "type": "tv",
-      "rank": 205,
+      "rank": 204,
       "title": "The IT Crowd",
       "year": 2006,
       "rating": 8.5,
@@ -9913,6 +9891,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q239672"
+      }
+    },
+    {
+      "id": "tt13868972",
+      "type": "tv",
+      "rank": 205,
+      "title": "Rocket Boys",
+      "year": 2022,
+      "rating": 8.8,
+      "poster": "./posters/tt13868972.jpg",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "runtime": 45,
+      "fa": "پسران موشک",
+      "summary": "زندگی و همکاری هومی بابا و ویکرام سارابهای، دو دانشمند برجستهٔ هند، در مسیر شکل‌گیری برنامه‌های هسته‌ای و فضایی کشورشان و در میان چالش‌های علمی، سیاسی و شخصی روایت می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt13868972/"
       }
     },
     {
@@ -9938,31 +9938,9 @@
       }
     },
     {
-      "id": "tt6108262",
-      "type": "tv",
-      "rank": 207,
-      "title": "Black Sun",
-      "year": 2017,
-      "rating": 8.8,
-      "poster": "./posters/tt6108262.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "runtime": 60,
-      "fa": "خورشید سیاه",
-      "summary": "در بالکانِ اواخر دههٔ ۱۹۲۰، چند پروندهٔ جنایی پای سیاست‌مداران، صاحبان پول و گروه‌های تبهکار را به ماجرایی مشترک باز می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt6108262/"
-      }
-    },
-    {
       "id": "tt4158110",
       "type": "tv",
-      "rank": 208,
+      "rank": 207,
       "title": "Mr. Robot",
       "year": 2015,
       "rating": 8.5,
@@ -9979,6 +9957,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q18844729"
+      }
+    },
+    {
+      "id": "tt6108262",
+      "type": "tv",
+      "rank": 208,
+      "title": "Black Sun",
+      "year": 2017,
+      "rating": 8.8,
+      "poster": "./posters/tt6108262.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 60,
+      "fa": "خورشید سیاه",
+      "summary": "در بالکانِ اواخر دههٔ ۱۹۲۰، چند پروندهٔ جنایی پای سیاست‌مداران، صاحبان پول و گروه‌های تبهکار را به ماجرایی مشترک باز می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt6108262/"
       }
     },
     {
@@ -10074,26 +10074,9 @@
       }
     },
     {
-      "id": "tt0237123",
-      "type": "tv",
-      "rank": 213,
-      "title": "Coupling",
-      "year": 2000,
-      "rating": 8.5,
-      "poster": "./posters/tt0237123.jpg",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "runtime": 30,
-      "fa": "",
-      "summary": "شش دوست صمیمی در جست‌وجوی عشق واقعی، دربارهٔ جنبه‌های مختلف روابط و صمیمیت صحبت می‌کنند.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt10048342",
       "type": "tv",
-      "rank": 214,
+      "rank": 213,
       "title": "The Queen's Gambit",
       "year": 2020,
       "rating": 8.5,
@@ -10109,6 +10092,23 @@
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q85808226"
       }
+    },
+    {
+      "id": "tt0237123",
+      "type": "tv",
+      "rank": 214,
+      "title": "Coupling",
+      "year": 2000,
+      "rating": 8.5,
+      "poster": "./posters/tt0237123.jpg",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": 30,
+      "fa": "",
+      "summary": "شش دوست صمیمی در جست‌وجوی عشق واقعی، دربارهٔ جنبه‌های مختلف روابط و صمیمیت صحبت می‌کنند.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt5897304",
@@ -10509,29 +10509,9 @@
       }
     },
     {
-      "id": "tt1513168",
-      "type": "tv",
-      "rank": 233,
-      "title": "Through the Wormhole",
-      "year": 2010,
-      "rating": 8.6,
-      "poster": "./posters/tt1513168.jpg",
-      "genres": [
-        "Documentary"
-      ],
-      "runtime": 60,
-      "fa": "گذر از کرمچاله",
-      "summary": "مورگان فریمن همراه دانشمندان، پرسش‌های بزرگ دربارهٔ جهان را بررسی می‌کند؛ از آغاز هستی تا ماهیت زمان و احتمال وجود زندگی در جایی دیگر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2499084"
-      }
-    },
-    {
       "id": "tt1190634",
       "type": "tv",
-      "rank": 234,
+      "rank": 233,
       "title": "The Boys",
       "year": 2019,
       "rating": 8.5,
@@ -10552,29 +10532,29 @@
       }
     },
     {
-      "id": "tt0075537",
+      "id": "tt1513168",
       "type": "tv",
-      "rank": 235,
-      "title": "Mind Your Language",
-      "year": 1977,
+      "rank": 234,
+      "title": "Through the Wormhole",
+      "year": 2010,
       "rating": 8.6,
-      "poster": "./posters/tt0075537.jpg",
+      "poster": "./posters/tt1513168.jpg",
       "genres": [
-        "Comedy"
+        "Documentary"
       ],
-      "runtime": 30,
-      "fa": "حواست به حرفات باشه",
-      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
+      "runtime": 60,
+      "fa": "گذر از کرمچاله",
+      "summary": "مورگان فریمن همراه دانشمندان، پرسش‌های بزرگ دربارهٔ جهان را بررسی می‌کند؛ از آغاز هستی تا ماهیت زمان و احتمال وجود زندگی در جایی دیگر.",
       "summaryLanguage": "fa",
       "localization": {
         "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2512029"
+        "faUrl": "https://www.wikidata.org/entity/Q2499084"
       }
     },
     {
       "id": "tt7278862",
       "type": "tv",
-      "rank": 236,
+      "rank": 235,
       "title": "My Brilliant Friend",
       "year": 2018,
       "rating": 8.6,
@@ -10589,6 +10569,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q56411652"
+      }
+    },
+    {
+      "id": "tt0075537",
+      "type": "tv",
+      "rank": 236,
+      "title": "Mind Your Language",
+      "year": 1977,
+      "rating": 8.6,
+      "poster": "./posters/tt0075537.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "حواست به حرفات باشه",
+      "summary": "جرمی براون به گروهی از مهاجران انگلیسی یاد می‌دهد. تفاوت زبان‌ها و فرهنگ‌های شاگردان، کلاس او را پر از سوءتفاهم و اتفاق‌های خنده‌دار می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2512029"
       }
     },
     {
