@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "aa17cd698e1cc0c30c033d58ea06ab1b9877fb9d4c02f38bb265df3534116b91",
+  "version": "6016becca78128bd63cdd2378e45a281e6f3a18fd3f0668349383e02583b8a57",
   "status": "ok",
-  "retrievedAt": "2026-11-25T00:02:11+00:00",
-  "checkedAt": "2026-11-25T00:02:11+00:00",
+  "retrievedAt": "2026-11-26T00:05:28+00:00",
+  "checkedAt": "2026-11-26T00:05:28+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1738,32 +1738,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 84,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.4,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt2056785",
       "type": "movie",
-      "rank": 85,
+      "rank": 84,
       "title": "Wildwood",
       "year": 2026,
       "rating": 8.6,
@@ -1782,6 +1759,29 @@
         "faUrl": "https://www.wikidata.org/entity/Q123058740",
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D9%88%D8%A7%DB%8C%D9%84%D8%AF%D9%88%D9%88%D8%AF+%28%D9%81%DB%8C%D9%84%D9%85%29&oldid=44851306"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 85,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.3,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -4089,31 +4089,9 @@
       }
     },
     {
-      "id": "tt0118849",
-      "type": "movie",
-      "rank": 192,
-      "title": "Children of Heaven",
-      "year": 1997,
-      "rating": 8.2,
-      "poster": "./posters/tt0118849.jpg",
-      "genres": [
-        "Drama",
-        "Family",
-        "Sport"
-      ],
-      "runtime": 89,
-      "fa": "بچههای آسمان",
-      "summary": "پسری کفش‌های خواهرش را گم می‌کند و برای پیدا کردنشان همه‌جا را می‌گردد. وقتی جست‌وجویش بی‌نتیجه می‌ماند، راه دیگری برای تهیهٔ یک جفت کفش پیدا می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q339804"
-      }
-    },
-    {
       "id": "tt0116282",
       "type": "movie",
-      "rank": 193,
+      "rank": 192,
       "title": "Fargo",
       "year": 1996,
       "rating": 8.1,
@@ -4130,6 +4108,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q222720"
+      }
+    },
+    {
+      "id": "tt0118849",
+      "type": "movie",
+      "rank": 193,
+      "title": "Children of Heaven",
+      "year": 1997,
+      "rating": 8.2,
+      "poster": "./posters/tt0118849.jpg",
+      "genres": [
+        "Drama",
+        "Family",
+        "Sport"
+      ],
+      "runtime": 89,
+      "fa": "بچههای آسمان",
+      "summary": "پسری کفش‌های خواهرش را گم می‌کند و برای پیدا کردنشان همه‌جا را می‌گردد. وقتی جست‌وجویش بی‌نتیجه می‌ماند، راه دیگری برای تهیهٔ یک جفت کفش پیدا می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q339804"
       }
     },
     {
@@ -4805,9 +4805,30 @@
       }
     },
     {
-      "id": "tt0059742",
+      "id": "tt15097216",
       "type": "movie",
       "rank": 224,
+      "title": "Jai Bhim",
+      "year": 2021,
+      "rating": 8.6,
+      "poster": "./posters/tt15097216.jpg",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 164,
+      "fa": "جای بهیم",
+      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt15097216/"
+      }
+    },
+    {
+      "id": "tt0059742",
+      "type": "movie",
+      "rank": 225,
       "title": "The Sound of Music",
       "year": 1965,
       "rating": 8.1,
@@ -4826,27 +4847,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q60072"
-      }
-    },
-    {
-      "id": "tt15097216",
-      "type": "movie",
-      "rank": 225,
-      "title": "Jai Bhim",
-      "year": 2021,
-      "rating": 8.6,
-      "poster": "./posters/tt15097216.jpg",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 164,
-      "fa": "جای بهیم",
-      "summary": "پس از بازداشت مردی از یک جامعهٔ محروم به اتهام سرقت، همسرش برای روشن‌شدن سرنوشت او و مقابله با بی‌عدالتی از یک وکیل حقوق بشر کمک می‌گیرد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt15097216/"
       }
     },
     {
@@ -5155,9 +5155,30 @@
       }
     },
     {
-      "id": "tt0395169",
+      "id": "tt0091763",
       "type": "movie",
       "rank": 240,
+      "title": "Platoon",
+      "year": 1986,
+      "rating": 8,
+      "poster": "./posters/tt0091763.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 120,
+      "fa": "جوخه",
+      "summary": "سربازی جوان در جنگ ویتنام، هم با خشونت دشمن روبه‌رو می‌شود و هم با اختلاف و رفتارهای هم‌رزمانش؛ تجربه‌ای که باورهایش را زیر سؤال می‌برد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190643"
+      }
+    },
+    {
+      "id": "tt0395169",
+      "type": "movie",
+      "rank": 241,
       "title": "Hotel Rwanda",
       "year": 2004,
       "rating": 8.1,
@@ -5175,27 +5196,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q223884"
-      }
-    },
-    {
-      "id": "tt0091763",
-      "type": "movie",
-      "rank": 241,
-      "title": "Platoon",
-      "year": 1986,
-      "rating": 8,
-      "poster": "./posters/tt0091763.jpg",
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "runtime": 120,
-      "fa": "جوخه",
-      "summary": "سربازی جوان در جنگ ویتنام، هم با خشونت دشمن روبه‌رو می‌شود و هم با اختلاف و رفتارهای هم‌رزمانش؛ تجربه‌ای که باورهایش را زیر سؤال می‌برد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q190643"
       }
     },
     {
@@ -5372,27 +5372,28 @@
       }
     },
     {
-      "id": "tt1954470",
+      "id": "tt0242519",
       "type": "movie",
       "rank": 250,
-      "title": "Gangs of Wasseypur",
-      "year": 2012,
+      "title": "Hera Pheri",
+      "year": 2000,
       "rating": 8.2,
-      "poster": "./posters/tt1954470.jpg",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg",
       "genres": [
         "Action",
         "Comedy",
         "Crime",
-        "Drama",
-        "Thriller"
+        "Drama"
       ],
-      "runtime": 321,
-      "fa": "گنگ‌های پلیس، که توسط خبرچینان بی‌شمار هدایت می‌شدند،.",
-      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
+      "runtime": 156,
+      "fa": "کلک",
+      "summary": "کلک (به هندی: Hera Pheri)فیلمی محصول سال ۲۰۰۰ و به کارگردانی پریادارشان است. در این فیلم بازیگرانی همچون آکشی کومار، سونیل شتی، پارش راوال، تابو، گلشن گروور، کولبوشان کارباندا، اوم پوری، آسرانی، کاشمیرا شاه، نامراتا شیرودکار، موکش خانا، مشتاق خان ایفای نقش کرده‌اند. این فیلم یکی از ۲۵۰ فیلم برتر دنیاست و جزو معروفترین آثار کمدی هندی محسوب می‌شود.",
       "summaryLanguage": "fa",
       "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt1954470/"
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q5732486",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%DA%A9%D9%84%DA%A9+%28%D9%81%DB%8C%D9%84%D9%85+%DB%B2%DB%B0%DB%B0%DB%B0%29&oldid=44720071"
       }
     },
     {
@@ -7723,29 +7724,9 @@
       }
     },
     {
-      "id": "tt0804503",
-      "type": "tv",
-      "rank": 107,
-      "title": "Mad Men",
-      "year": 2007,
-      "rating": 8.7,
-      "poster": "./posters/tt0804503.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 45,
-      "fa": "مد من",
-      "summary": "در آغاز دههٔ ۱۹۶۰، کارکنان یک آژانس تبلیغاتی در نیویورک برای موفقیت رقابت می‌کنند. در مرکز ماجرا دان دریپر است؛ مدیر مرموز بخش خلاقیت که گذشته‌اش را پنهان می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q223977"
-      }
-    },
-    {
       "id": "tt38268282",
       "type": "tv",
-      "rank": 108,
+      "rank": 107,
       "title": "Steel Ball Run: JoJo's Bizarre Adventure",
       "year": 2026,
       "rating": 9.3,
@@ -7765,6 +7746,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt38268282/"
+      }
+    },
+    {
+      "id": "tt0804503",
+      "type": "tv",
+      "rank": 108,
+      "title": "Mad Men",
+      "year": 2007,
+      "rating": 8.7,
+      "poster": "./posters/tt0804503.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 45,
+      "fa": "مد من",
+      "summary": "در آغاز دههٔ ۱۹۶۰، کارکنان یک آژانس تبلیغاتی در نیویورک برای موفقیت رقابت می‌کنند. در مرکز ماجرا دان دریپر است؛ مدیر مرموز بخش خلاقیت که گذشته‌اش را پنهان می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q223977"
       }
     },
     {
@@ -8642,31 +8643,9 @@
       }
     },
     {
-      "id": "tt0096639",
-      "type": "tv",
-      "rank": 149,
-      "title": "Lonesome Dove",
-      "year": 1989,
-      "rating": 8.6,
-      "poster": "./posters/tt0096639.jpg",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Western"
-      ],
-      "runtime": 90,
-      "fa": "کبوتر تنها (مینیسریال)",
-      "summary": "دو تکاور سابق تگزاس تصمیم می‌گیرند گله‌ای را با کمک چند نفر از اهالی شهر به مونتانا ببرند؛ سفری طولانی که دوباره آن‌ها را وارد ماجراجویی می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2547946"
-      }
-    },
-    {
       "id": "tt1733785",
       "type": "tv",
-      "rank": 150,
+      "rank": 149,
       "title": "The Bridge",
       "year": 2011,
       "rating": 8.6,
@@ -8683,6 +8662,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q1211796"
+      }
+    },
+    {
+      "id": "tt0096639",
+      "type": "tv",
+      "rank": 150,
+      "title": "Lonesome Dove",
+      "year": 1989,
+      "rating": 8.6,
+      "poster": "./posters/tt0096639.jpg",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Western"
+      ],
+      "runtime": 90,
+      "fa": "کبوتر تنها (مینیسریال)",
+      "summary": "دو تکاور سابق تگزاس تصمیم می‌گیرند گله‌ای را با کمک چند نفر از اهالی شهر به مونتانا ببرند؛ سفری طولانی که دوباره آن‌ها را وارد ماجراجویی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2547946"
       }
     },
     {
@@ -9496,31 +9497,9 @@
       }
     },
     {
-      "id": "tt2701582",
-      "type": "tv",
-      "rank": 188,
-      "title": "Endeavour",
-      "year": 2012,
-      "rating": 8.6,
-      "poster": "./posters/tt2701582.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 90,
-      "fa": "اندور (سریال تلویزیونی)",
-      "summary": "در دههٔ ۱۹۶۰، اندور مورسِ جوان همراه با همکار باتجربه‌اش فرد ترزدی، در آغاز دوران خدمتش پرونده‌هایی را در آکسفورد بررسی می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q2151914"
-      }
-    },
-    {
       "id": "tt0314979",
       "type": "tv",
-      "rank": 189,
+      "rank": 188,
       "title": "Battlestar Galactica",
       "year": 2003,
       "rating": 8.5,
@@ -9541,9 +9520,52 @@
       }
     },
     {
-      "id": "tt1710308",
+      "id": "tt2701582",
+      "type": "tv",
+      "rank": 189,
+      "title": "Endeavour",
+      "year": 2012,
+      "rating": 8.6,
+      "poster": "./posters/tt2701582.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 90,
+      "fa": "اندور (سریال تلویزیونی)",
+      "summary": "در دههٔ ۱۹۶۰، اندور مورسِ جوان همراه با همکار باتجربه‌اش فرد ترزدی، در آغاز دوران خدمتش پرونده‌هایی را در آکسفورد بررسی می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q2151914"
+      }
+    },
+    {
+      "id": "tt10802170",
       "type": "tv",
       "rank": 190,
+      "title": "The Rehearsal",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "./posters/tt10802170.jpg",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
+    },
+    {
+      "id": "tt1710308",
+      "type": "tv",
+      "rank": 191,
       "title": "Regular Show",
       "year": 2010,
       "rating": 8.6,
@@ -9565,27 +9587,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q82617"
-      }
-    },
-    {
-      "id": "tt10802170",
-      "type": "tv",
-      "rank": 191,
-      "title": "The Rehearsal",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "./posters/tt10802170.jpg",
-      "genres": [
-        "Documentary",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "د ریهرسال",
-      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112915576"
       }
     },
     {
@@ -9785,31 +9786,9 @@
       }
     },
     {
-      "id": "tt35495073",
-      "type": "tv",
-      "rank": 200,
-      "title": "Heated Rivalry",
-      "year": 2025,
-      "rating": 8.7,
-      "poster": "./posters/tt35495073.jpg",
-      "genres": [
-        "Drama",
-        "Romance",
-        "Sport"
-      ],
-      "runtime": 50,
-      "fa": "رقابت داغ",
-      "summary": "دو مرد که ستاره‌های رقیب هاکی هستند، به یکدیگر دل می‌بندند. آن‌ها باید رابطه‌شان را پنهان نگه دارند و هم‌زمان از پس فشار رقابت حرفه‌ای بربیایند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q136813219"
-      }
-    },
-    {
       "id": "tt6763664",
       "type": "tv",
-      "rank": 201,
+      "rank": 200,
       "title": "The Haunting of Hill House",
       "year": 2018,
       "rating": 8.5,
@@ -9827,6 +9806,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q43379503"
+      }
+    },
+    {
+      "id": "tt35495073",
+      "type": "tv",
+      "rank": 201,
+      "title": "Heated Rivalry",
+      "year": 2025,
+      "rating": 8.7,
+      "poster": "./posters/tt35495073.jpg",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Sport"
+      ],
+      "runtime": 50,
+      "fa": "رقابت داغ",
+      "summary": "دو مرد که ستاره‌های رقیب هاکی هستند، به یکدیگر دل می‌بندند. آن‌ها باید رابطه‌شان را پنهان نگه دارند و هم‌زمان از پس فشار رقابت حرفه‌ای بربیایند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q136813219"
       }
     },
     {
@@ -10111,29 +10112,9 @@
       "summaryLanguage": "fa"
     },
     {
-      "id": "tt0129690",
-      "type": "tv",
-      "rank": 215,
-      "title": "I'm Alan Partridge",
-      "year": 1997,
-      "rating": 8.6,
-      "poster": "./posters/tt0129690.jpg",
-      "genres": [
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "من آلن پارتریج هستم.",
-      "summary": "آلن پارتریج پس از شکست در تلویزیون، در رادیوی محلی نوریچ کار می‌کند و با نقشه‌ها و تلاش‌های معمولاً ناموفق، دنبال راهی برای برگشتن به شهرت است.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "mymemory",
-        "faUrl": "https://www.imdb.com/title/tt0129690/"
-      }
-    },
-    {
       "id": "tt5897304",
       "type": "tv",
-      "rank": 216,
+      "rank": 215,
       "title": "Mob Psycho 100",
       "year": 2016,
       "rating": 8.5,
@@ -10154,6 +10135,26 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt5897304/"
+      }
+    },
+    {
+      "id": "tt0129690",
+      "type": "tv",
+      "rank": 216,
+      "title": "I'm Alan Partridge",
+      "year": 1997,
+      "rating": 8.6,
+      "poster": "./posters/tt0129690.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "من آلن پارتریج هستم.",
+      "summary": "آلن پارتریج پس از شکست در تلویزیون، در رادیوی محلی نوریچ کار می‌کند و با نقشه‌ها و تلاش‌های معمولاً ناموفق، دنبال راهی برای برگشتن به شهرت است.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt0129690/"
       }
     },
     {
@@ -10203,30 +10204,9 @@
       }
     },
     {
-      "id": "tt0403778",
-      "type": "tv",
-      "rank": 219,
-      "title": "Long Way Round",
-      "year": 2004,
-      "rating": 8.6,
-      "poster": "./posters/tt0403778.jpg",
-      "genres": [
-        "Documentary",
-        "Adventure"
-      ],
-      "runtime": 45,
-      "fa": "راه طولانی (مجموعه تلویزیونی ۲۰۰۴)",
-      "summary": "ایوان مک‌گرگور و چارلی بورمن، دو بازیگر و دوست، با موتورسیکلت به دور دنیا سفر می‌کنند و از سرزمین‌هایی مانند سیبری و قزاقستان می‌گذرند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q1055793"
-      }
-    },
-    {
       "id": "tt12343534",
       "type": "tv",
-      "rank": 220,
+      "rank": 219,
       "title": "Jujutsu Kaisen",
       "year": 2020,
       "rating": 8.5,
@@ -10245,6 +10225,27 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt12343534/"
+      }
+    },
+    {
+      "id": "tt0403778",
+      "type": "tv",
+      "rank": 220,
+      "title": "Long Way Round",
+      "year": 2004,
+      "rating": 8.6,
+      "poster": "./posters/tt0403778.jpg",
+      "genres": [
+        "Documentary",
+        "Adventure"
+      ],
+      "runtime": 45,
+      "fa": "راه طولانی (مجموعه تلویزیونی ۲۰۰۴)",
+      "summary": "ایوان مک‌گرگور و چارلی بورمن، دو بازیگر و دوست، با موتورسیکلت به دور دنیا سفر می‌کنند و از سرزمین‌هایی مانند سیبری و قزاقستان می‌گذرند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q1055793"
       }
     },
     {
@@ -10957,31 +10958,6 @@
       }
     },
     {
-      "id": "tt0242519",
-      "type": "movie",
-      "rank": null,
-      "title": "Hera Pheri",
-      "year": 2000,
-      "rating": 8.2,
-      "poster": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Crime",
-        "Drama"
-      ],
-      "runtime": 156,
-      "fa": "کلک",
-      "summary": "کلک (به هندی: Hera Pheri)فیلمی محصول سال ۲۰۰۰ و به کارگردانی پریادارشان است. در این فیلم بازیگرانی همچون آکشی کومار، سونیل شتی، پارش راوال، تابو، گلشن گروور، کولبوشان کارباندا، اوم پوری، آسرانی، کاشمیرا شاه، نامراتا شیرودکار، موکش خانا، مشتاق خان ایفای نقش کرده‌اند. این فیلم یکی از ۲۵۰ فیلم برتر دنیاست و جزو معروفترین آثار کمدی هندی محسوب می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q5732486",
-        "summarySource": "wikipedia-fa",
-        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%DA%A9%D9%84%DA%A9+%28%D9%81%DB%8C%D9%84%D9%85+%DB%B2%DB%B0%DB%B0%DB%B0%29&oldid=44720071"
-      }
-    },
-    {
       "id": "tt12361178",
       "type": "movie",
       "rank": null,
@@ -11160,6 +11136,24 @@
         "summarySource": "wikipedia-fa",
         "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3+%D9%81%D9%88%DB%8C%D9%84&oldid=40508712"
       }
+    },
+    {
+      "id": "tt1954470",
+      "type": "movie",
+      "rank": null,
+      "title": "Gangs of Wasseypur",
+      "year": 2012,
+      "rating": 8.2,
+      "poster": "./posters/tt1954470.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
+      "runtime": 321,
+      "fa": "",
+      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
+      "summaryLanguage": "fa"
     }
   ]
 }
