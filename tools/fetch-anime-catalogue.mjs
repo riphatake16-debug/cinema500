@@ -17,6 +17,7 @@ const TARGET = Number(process.env.TARGET || 3000);
 const OUT_JS = new URL('../anime-site/anime-data.js', import.meta.url);
 const FA_SOURCE = new URL('./anime-fa-source.json', import.meta.url);
 const POSTER_MAP = new URL('../anime-site/poster-map.js', import.meta.url);
+const WIKIDATA_FA = new URL('./anime-fa-wikidata.json', import.meta.url);
 const PAUSE = Number(process.env.PAUSE || 2100);
 
 const QUERY = `query($page:Int){
@@ -72,6 +73,14 @@ async function loadPersianSource() {
   return source;
 }
 
+async function loadWikidataPersian() {
+  try {
+    return JSON.parse(await readFile(WIKIDATA_FA, 'utf8'));
+  } catch (error) {
+    return {};
+  }
+}
+
 async function loadLocalPosters() {
   try {
     const code = await readFile(POSTER_MAP, 'utf8');
@@ -104,6 +113,7 @@ async function fetchPage(page, attempt = 1) {
 
 async function main() {
   const persian = await loadPersianSource();
+  const wikidataFa = await loadWikidataPersian();
   const localPosters = await loadLocalPosters();
   const byNorm = new Map();
   persian.forEach(item => {
@@ -147,7 +157,9 @@ async function main() {
     const year = item.seasonYear || (item.startDate && item.startDate.year) || 0;
     const isMovie = item.format === 'MOVIE';
     const genres = Array.from(new Set(item.genres.map(name => genreFa(name))));
-    const summaryFa = match && match.summary ? String(match.summary).trim() : '';
+    const wikidata = wikidataFa[item.id] || null;
+    const curatedSummary = match && match.summary ? String(match.summary).trim() : '';
+    const summaryFa = curatedSummary || (wikidata && wikidata.summary ? String(wikidata.summary).trim() : '');
     const summaryEn = stripHtml(item.description);
     const studio = (item.studios && item.studios.nodes && item.studios.nodes[0] && item.studios.nodes[0].name) || '—';
 
@@ -159,7 +171,7 @@ async function main() {
       status: STATUS[item.status] || 'done',
       title: displayTitle,
       romaji,
-      fa: match && match.fa ? match.fa : '',
+      fa: (match && match.fa) || (wikidata && wikidata.fa) || '',
       jp: (match && match.jp) || item.title.native || '',
       year,
       rating: Math.round(item.averageScore) / 10,

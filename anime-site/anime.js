@@ -19,6 +19,7 @@ const DATA = (window.ANIME_CATALOGUE && window.ANIME_CATALOGUE.titles) || [];
 const POSTERS = window.ANIME_POSTERS || {};
 const GENRES = Array.from(new Set(DATA.flatMap(title => title.genres))).sort((a, b) => a.localeCompare(b, 'fa'));
 const byId = new Map(DATA.map(title => [title.id, title]));
+const byAnilistId = new Map(DATA.filter(title => title.anilistId).map(title => [title.anilistId, title]));
 
 /* ---------- دادهٔ زنده (مستقیم از AniList، در مرورگر) ---------- */
 
@@ -74,7 +75,7 @@ function normalizeLive(media) {
   const cover = media.coverImage || {};
   const next = media.nextAiringEpisode || null;
   const date = media.startDate || {};
-  return {
+  const entry = {
     id: `l${media.id}`,
     anilistId: media.id,
     type: media.format === 'MOVIE' ? 'movie' : 'tv',
@@ -100,6 +101,8 @@ function normalizeLive(media) {
     siteUrl: media.siteUrl || `https://anilist.co/anime/${media.id}`,
     live: true
   };
+  // اگر همین عنوان در کاتالوگ نام/خلاصهٔ فارسی دارد، همان را روی کارت زنده هم بگذار.
+  return applyPersian(entry);
 }
 
 async function fetchAniListLive(signal) {
@@ -144,11 +147,26 @@ const liveMeta = {
   busy: false
 };
 
+function applyPersian(item) {
+  const persian = byAnilistId.get(item.anilistId);
+  if (!persian) return item;
+  if (persian.fa) item.fa = persian.fa;
+  if (persian.summaryLang === 'fa' && persian.summary) {
+    item.summary = persian.summary;
+    item.summaryLang = 'fa';
+  }
+  return item;
+}
+
 function registerLive() {
   liveById.clear();
-  LIVE_KEYS.forEach(key => (live[key] || []).forEach(item => {
-    if (!liveById.has(item.id)) liveById.set(item.id, item);
-  }));
+  LIVE_KEYS.forEach(key => {
+    live[key] = (live[key] || []).map(item => {
+      applyPersian(item);
+      if (!liveById.has(item.id)) liveById.set(item.id, item);
+      return item;
+    });
+  });
 }
 
 const titleOf = id => byId.get(id) || liveById.get(id);
