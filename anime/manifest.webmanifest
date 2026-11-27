@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "انیمه ۵۰۰ — بهترین سریال‌ها و فیلم‌های انیمه",
+  "short_name": "انیمه۵۰۰",
+  "description": "۷۹ انیمهٔ برتر با نام فارسی، استودیو، ژانر و خلاصه؛ جست‌وجو، لیست تماشا و آمار تماشا بدون ثبت‌نام.",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080611",
+  "theme_color": "#080611",
+  "categories": ["entertainment"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
