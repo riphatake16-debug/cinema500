@@ -1,0 +1,32 @@
+{
+  "name": "انیمه ۵۰۰ — ۳۰۰۰ انیمه، در راه‌ها و پخش زنده",
+  "short_name": "انیمه ۵۰۰",
+  "description": "بیش از ۳۰۰۰ عنوان انیمه با پوستر باکیفیت، بخش «در راه» و دادهٔ زندهٔ پخش، جست‌وجو، فهرست تماشا و آمار شخصی.",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07060b",
+  "theme_color": "#07060f",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

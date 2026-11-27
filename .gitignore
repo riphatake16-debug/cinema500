@@ -1,3 +1,5 @@
 /freebuff-sites-build/
 /sites-publish/
 /.venv/
+/sites-anime/
+/.cache-posters/
