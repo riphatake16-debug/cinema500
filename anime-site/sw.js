@@ -1,6 +1,6 @@
 /* انیمه ۵۰۰ — آفلاین‌سازی سبک: پوستهٔ اپ کش می‌شود، پوسترها هنگام دیدن ذخیره می‌شوند */
-const VERSION = 'anime500-v10';
-const SHELL = ['./', './anime.css?v=10', './anime.js?v=10', './anime-data.js', './live-data.js', './poster-map.js', './favicon.svg', './manifest.webmanifest', './fonts/Vazirmatn-Variable.woff2'];
+const VERSION = 'anime500-v13';
+const SHELL = ['./', './anime.css?v=13', './anime.js?v=13', './anime-data.js', './live-data.js', './poster-map.js', './favicon.svg', './manifest.webmanifest', './fonts/Vazirmatn-Variable.woff2'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(VERSION).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));

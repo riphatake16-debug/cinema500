@@ -694,6 +694,8 @@ function renderHero() {
   const wanted = state.wanted.has(title.id);
   const seen = state.seen.has(title.id);
   const alt = altTitle(title);
+  if (title.color) host.style.setProperty('--hero-color', title.color);
+  else host.style.removeProperty('--hero-color');
 
   host.innerHTML = `
   <div class="hero-copy">
