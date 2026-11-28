@@ -1,18 +1,32 @@
 {
-  "id": "./",
-  "name": "انیمه ۵۰۰ — بهترین سریال‌ها و فیلم‌های انیمه",
-  "short_name": "انیمه۵۰۰",
-  "description": "۷۹ انیمهٔ برتر با نام فارسی، استودیو، ژانر و خلاصه؛ جست‌وجو، لیست تماشا و آمار تماشا بدون ثبت‌نام.",
-  "lang": "fa-IR",
+  "name": "انیمه ۵۰۰ — ۳۰۰۰ انیمه، در راه‌ها و پخش زنده",
+  "short_name": "انیمه ۵۰۰",
+  "description": "بیش از ۳۰۰۰ عنوان انیمه با پوستر باکیفیت، بخش «در راه» و دادهٔ زندهٔ پخش، جست‌وجو، فهرست تماشا و آمار شخصی.",
+  "lang": "fa",
   "dir": "rtl",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#080611",
-  "theme_color": "#080611",
-  "categories": ["entertainment"],
-  "prefer_related_applications": false,
+  "background_color": "#07060b",
+  "theme_color": "#07060f",
   "icons": [
-    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
   ]
 }

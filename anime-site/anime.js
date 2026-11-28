@@ -158,11 +158,120 @@ function applyPersian(item) {
   return item;
 }
 
+/* ---------- فارسی‌سازی خودکار عنوان‌های تازه (ترجمهٔ سرور) ---------- */
+
+const FA_LIVE_STORE = 'anime500:fa-live';
+const FA_LIVE = (() => {
+  try { return JSON.parse(localStorage.getItem(FA_LIVE_STORE)) || {}; } catch (error) { return {}; }
+})();
+let faEndpointDown = false;
+let faBusy = false;
+let faLastTry = 0;
+
+function persistFa() {
+  try { localStorage.setItem(FA_LIVE_STORE, JSON.stringify(FA_LIVE)); } catch (error) { /* حافظه پر است */ }
+}
+
+function applyFaTranslations(item) {
+  const hit = FA_LIVE[item.anilistId];
+  if (!hit) return item;
+  if (hit.title && !item.fa) item.fa = hit.title;
+  if (hit.summary && item.summaryLang !== 'fa') {
+    item.summary = hit.summary;
+    item.summaryLang = 'fa';
+  }
+  return item;
+}
+
+/* ترجمه مستقیم در مرورگر (همان‌طور که AniList هم مستقیم خوانده می‌شود). */
+const TRANSLATE_ENDPOINT = 'https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=fa&';
+
+async function translateTexts(list) {
+  const batches = [];
+  let current = [];
+  let chars = 0;
+  for (const text of list) {
+    if (current.length && (chars + text.length > 1500 || current.length >= 8)) {
+      batches.push(current);
+      current = [];
+      chars = 0;
+    }
+    current.push(text);
+    chars += text.length + 8;
+  }
+  if (current.length) batches.push(current);
+
+  const out = [];
+  for (const batch of batches) {
+    const url = TRANSLATE_ENDPOINT + batch.map(text => 'q=' + encodeURIComponent(text)).join('&');
+    const response = await fetch(url, { headers: { Accept: 'application/json' } });
+    if (!response.ok) throw new Error(`translate HTTP ${response.status}`);
+    const data = await response.json();
+    const fa = Array.isArray(data) ? data : [];
+    batch.forEach((text, position) => out.push(typeof fa[position] === 'string' ? fa[position] : ''));
+  }
+  return out;
+}
+
+/* هر عنوان زنده‌ای که هنوز خلاصه/نام فارسی ندارد، یک‌بار ترجمه و در همین مرورگر کش می‌شود. */
+async function localizeLive({ force = false } = {}) {
+  if (faBusy || faEndpointDown) return;
+  if (!force && Date.now() - faLastTry < 8 * 60 * 1000) return;
+  const pending = [];
+  LIVE_KEYS.forEach(key => (live[key] || []).forEach(item => {
+    if (!item.anilistId || !item.summary) return;
+    applyFaTranslations(item);
+    if (item.summaryLang === 'fa') return;
+    const hit = FA_LIVE[item.anilistId];
+    if (hit && hit.summary) return;
+    pending.push(item);
+  }));
+  if (!pending.length) return;
+  faBusy = true;
+  faLastTry = Date.now();
+  try {
+    const summaries = await translateTexts(pending.map(item => item.summary));
+    pending.forEach((item, index) => {
+      const value = summaries[index].trim();
+      if (!value) return;
+      const entry = FA_LIVE[item.anilistId] || (FA_LIVE[item.anilistId] = {});
+      entry.summary = value;
+      item.summary = value;
+      item.summaryLang = 'fa';
+    });
+    const nameless = pending.filter(item => !item.fa);
+    if (nameless.length) {
+      const names = await translateTexts(nameless.map(item => item.romaji || item.title));
+      nameless.forEach((item, index) => {
+        const value = names[index].trim();
+        if (!value) return;
+        const entry = FA_LIVE[item.anilistId] || (FA_LIVE[item.anilistId] = {});
+        entry.title = value;
+        item.fa = value;
+      });
+    }
+    persistFa();
+    renderLiveMeta();
+    renderLiveRail();
+    if (state.view === 'upcoming') renderUpcoming();
+    if (state.view === 'watchlist') renderWatchlist();
+    if ($('#detail').open) {
+      const active = $('#detail [data-act="seen"], #detail [data-act="want"]');
+      if (active && active.dataset.id) openDetail(active.dataset.id);
+    }
+  } catch (error) {
+    faEndpointDown = true;
+  } finally {
+    faBusy = false;
+  }
+}
+
 function registerLive() {
   liveById.clear();
   LIVE_KEYS.forEach(key => {
     live[key] = (live[key] || []).map(item => {
       applyPersian(item);
+      applyFaTranslations(item);
       if (!liveById.has(item.id)) liveById.set(item.id, item);
       return item;
     });
@@ -521,6 +630,7 @@ async function loadLive({ silent = false } = {}) {
     registerLive();
     renderLive();
     renderCounts();
+    localizeLive();
     if (state.view === 'watchlist') renderWatchlist();
     if (document.querySelector('#detail[open] [data-act="seen"]')) {
       const active = document.querySelector('#detail [data-act="seen"]');
@@ -799,7 +909,7 @@ function openDetail(id) {
       </div>
       ${title.airingAt ? `<div class="airing-box"><span class="live-dot" aria-hidden="true"></span><span>قسمت <b>${num(title.nextEp || 0)}</b> — <span data-count="${title.airingAt}" data-ep="${title.nextEp || 0}">${untilText(title.airingAt)}</span></span></div>` : ''}
       ${summaryMarkup(title)}
-      ${title.summaryLang === 'en' ? '<div class="summary-note">خلاصهٔ رسمی AniList به انگلیسی — برگردان فارسی هنوز ندارد</div>' : ''}
+      ${title.summaryLang === 'en' ? '<div class="summary-note">برگردان فارسی این خلاصه در حال آماده‌شدن است — چند لحظه بعد دوباره بازش کن.</div>' : ''}
       <div class="facts">
         <div class="fact"><span>استودیو</span><b>${esc(title.studio || '—')}</b></div>
         <div class="fact"><span>${soon ? 'شروع پخش' : 'سال انتشار'}</span><b>${soon ? esc(releaseShort(title)) : yearNum(title.year)}</b></div>
@@ -949,9 +1059,20 @@ function setTheme(theme) {
 /* ---------- events ---------- */
 
 document.addEventListener('click', event => {
+  if (!event.target.closest('.sort') && isSortOpen()) setSortMenu(false);
   const actionEl = event.target.closest('[data-act]');
   if (actionEl) {
     const { act } = actionEl.dataset;
+    if (act === 'sort-toggle') { setSortMenu(!isSortOpen()); return; }
+    if (act === 'sort-pick') {
+      state.sort = actionEl.dataset.sort;
+      renderSortMenu();
+      setSortMenu(false);
+      renderGrid();
+      const button = $('#sort-btn');
+      if (button) button.focus();
+      return;
+    }
     if (act === 'view') showView(actionEl.dataset.view);
     else if (act === 'type') setType(actionEl.dataset.type);
     else if (act === 'genre') {
@@ -988,6 +1109,12 @@ document.addEventListener('click', event => {
 });
 
 document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && isSortOpen()) {
+    setSortMenu(false);
+    const button = $('#sort-btn');
+    if (button) button.focus();
+    return;
+  }
   if (event.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) {
     event.preventDefault();
     $('#q').focus();
@@ -1003,12 +1130,37 @@ if (search) {
   });
 }
 
-const sortSelect = $('#sort');
-if (sortSelect) {
-  sortSelect.addEventListener('change', () => {
-    state.sort = sortSelect.value;
-    renderGrid();
-  });
+/* ---------- منوی ترتیب ---------- */
+
+const SORTS = [
+  ['popular', 'محبوب‌ترین'],
+  ['score', 'بیشترین امتیاز'],
+  ['new', 'جدیدترین'],
+  ['old', 'قدیمی‌ترین'],
+  ['name', 'الفبایی'],
+  ['year-score', 'سال و امتیاز']
+];
+
+function renderSortMenu() {
+  const list = $('#sort-list');
+  if (!list) return;
+  list.innerHTML = SORTS.map(([value, label]) => `<li role="none"><button type="button" role="option" aria-selected="${state.sort === value}" class="${state.sort === value ? 'on' : ''}" data-act="sort-pick" data-sort="${value}">${label}<span class="radio" aria-hidden="true"></span></button></li>`).join('');
+  const label = $('#sort-label');
+  const current = SORTS.find(entry => entry[0] === state.sort) || SORTS[0];
+  if (label) label.textContent = current[1];
+}
+
+function setSortMenu(open) {
+  const list = $('#sort-list');
+  const button = $('#sort-btn');
+  if (!list || !button) return;
+  list.hidden = !open;
+  button.setAttribute('aria-expanded', String(open));
+}
+
+function isSortOpen() {
+  const button = $('#sort-btn');
+  return !!button && button.getAttribute('aria-expanded') === 'true';
 }
 
 const detailDialog = $('#detail');
@@ -1044,6 +1196,7 @@ if (petals && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion:
 const storedTheme = store.get('theme', document.documentElement.dataset.theme || 'dark');
 setTheme(storedTheme === 'light' ? 'light' : 'dark');
 renderCounts();
+renderSortMenu();
 renderHero();
 renderRail();
 renderGenres();
@@ -1052,6 +1205,7 @@ renderWatchlist();
 renderLive();
 startHeroTimer();
 loadLive({ silent: true });
+localizeLive();
 tickCountdowns();
 
 setInterval(tickCountdowns, 20000);

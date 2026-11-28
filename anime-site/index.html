@@ -18,7 +18,7 @@
 <meta name="apple-mobile-web-app-title" content="انیمه ۵۰۰">
 <link rel="preload" href="./fonts/Vazirmatn-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="./posters/frieren.jpg" as="image">
-<link rel="stylesheet" href="./anime.css?v=13">
+<link rel="stylesheet" href="./anime.css?v=14">
 <script>try{var t=localStorage.getItem('anime500:theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -127,18 +127,14 @@
           <button type="button" role="tab" aria-selected="false" data-act="type" data-type="tv"><svg aria-hidden="true"><use href="#i-tv"/></svg>سریال‌ها<span id="count-tv">۲۶۳۳</span></button>
           <button type="button" role="tab" aria-selected="false" data-act="type" data-type="movie"><svg aria-hidden="true"><use href="#i-film"/></svg>فیلم‌ها<span id="count-movie">۳۷۰</span></button>
         </div>
-        <label class="select">
-          <span class="sr-only">ترتیب نمایش</span>
-          <select id="sort">
-            <option value="popular">محبوب‌ترین</option>
-            <option value="score">بیشترین امتیاز</option>
-            <option value="new">جدیدترین</option>
-            <option value="old">قدیمی‌ترین</option>
-            <option value="name">الفبایی</option>
-            <option value="year-score">سال و امتیاز</option>
-          </select>
-          <svg aria-hidden="true"><use href="#i-chart"/></svg>
-        </label>
+        <div class="sort" id="sort-menu">
+          <button type="button" class="sort-btn" id="sort-btn" data-act="sort-toggle" aria-haspopup="listbox" aria-expanded="false" aria-controls="sort-list" aria-label="ترتیب نمایش">
+            <svg aria-hidden="true"><use href="#i-chart"/></svg>
+            <span id="sort-label">محبوب‌ترین</span>
+            <svg class="caret" aria-hidden="true"><use href="#i-left"/></svg>
+          </button>
+          <ul class="sort-list" id="sort-list" role="listbox" aria-label="ترتیب نمایش" hidden></ul>
+        </div>
         <p class="result-note" id="result-note" role="status" aria-live="polite"></p>
       </div>
 
@@ -218,7 +214,7 @@
     <div class="wrap foot">
       <div>
         <p><strong>انیمه ۵۰۰</strong> — بیش از ۳۰۰۰ سریال، فیلم، ONA و OVA انیمه برای پیدا کردن، ذخیره‌کردن و ثبت تماشا. امتیازها میانگین نمرهٔ کاربران AniList است (از ۱۰)، نه IMDb یا MyAnimeList.</p>
-        <p class="fine">داده و پوسترها از AniList (anilist.co) می‌آیند؛ فهرست «در راه» و «در حال پخش» زنده و با کمی تأخیر همگام می‌شود. نام‌ها و خلاصه‌های فارسی از ویکی‌داده و ویکی‌پدیای فارسی (CC BY-SA) گرفته شده‌اند. نام‌ها و آثار متعلق به صاحبان حقوقشان هستند. خلاصهٔ عنوان‌هایی که برگردان فارسی ندارند به انگلیسی نمایش داده می‌شود. اطلاعات تماشای تو فقط در همین مرورگر می‌ماند.</p>
+        <p class="fine">داده و پوسترها از AniList (anilist.co) می‌آیند؛ فهرست «در راه» و «در حال پخش» زنده و با کمی تأخیر همگام می‌شود. نام‌ها و خلاصه‌های فارسی از ویکی‌داده، ویکی‌پدیای فارسی (CC BY-SA) و برگردان خودکار گرفته شده‌اند؛ عنوان‌های تازه هم خودکار فارسی می‌شوند. نام‌ها و آثار متعلق به صاحبان حقوقشان هستند. اطلاعات تماشای تو فقط در همین مرورگر می‌ماند.</p>
       </div>
       <div class="sep">
         <a href="https://cinema500-90xx24.freebuff.site/">سینما ۵۰۰</a>
@@ -245,7 +241,7 @@
 <script src="./anime-data.js"></script>
 <script src="./live-data.js"></script>
 <script src="./poster-map.js"></script>
-<script src="./anime.js?v=13"></script>
+<script src="./anime.js?v=14"></script>
 <script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}</script>
 </body>
 </html>

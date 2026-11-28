@@ -225,10 +225,25 @@ html[data-theme=light] .hero:after{background-image:url('./sakura-light.svg');op
 .seg button:hover{color:var(--text)}
 .seg button.active{color:var(--on-grad);background:var(--grad);font-weight:700;box-shadow:0 8px 20px rgba(214,60,120,.26)}
 .seg button span{font-size:10px;opacity:.85}
-.select{position:relative;display:flex;align-items:center}
-.select select{appearance:none;height:44px;padding:0 34px 0 15px;border-radius:999px;border:1px solid var(--glass-border);background:var(--glass);font-size:12.5px;cursor:pointer;color:var(--text)}
-.select svg{position:absolute;left:12px;width:14px;height:14px;color:var(--muted);pointer-events:none}
-.select select option{background:var(--bg2);color:var(--text)}
+/* منوی ترتیب — هم‌جنس شیشه‌ای بقیهٔ سایت (جای منوی پیش‌فرض سیستم) */
+.sort{position:relative;display:flex;align-items:center}
+.sort-btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 15px;border-radius:999px;border:1px solid var(--glass-border);background:var(--glass);font-size:12.5px;font-weight:600;color:var(--text);cursor:pointer;transition:.22s;box-shadow:inset 0 1px 0 var(--hl);-webkit-backdrop-filter:blur(var(--blur)) saturate(1.6);backdrop-filter:blur(var(--blur)) saturate(1.6)}
+.sort-btn:hover{border-color:var(--glass-border-2);background:var(--glass-2)}
+.sort-btn[aria-expanded=true]{border-color:color-mix(in srgb,var(--pink) 48%,transparent);box-shadow:0 0 0 4px rgba(255,126,176,.13),inset 0 1px 0 var(--hl);background:var(--glass-2)}
+.sort-btn>svg:first-child{width:15px;height:15px;color:var(--pink);flex:0 0 auto}
+.sort-btn .caret{width:12px;height:12px;color:var(--muted);transform:rotate(-90deg);transition:transform .25s,color .25s;flex:0 0 auto}
+.sort-btn[aria-expanded=true] .caret{transform:rotate(90deg);color:var(--pink)}
+.sort-list{position:absolute;top:calc(100% + 9px);inset-inline-start:0;z-index:70;width:238px;padding:7px;margin:0;list-style:none;border-radius:20px;border:1px solid var(--glass-border-2);background:color-mix(in srgb,var(--bg2) 74%,var(--glass-3));box-shadow:0 24px 60px rgba(12,2,10,.5),inset 0 1px 0 var(--hl);animation:sortIn .18s cubic-bezier(.2,.8,.3,1);-webkit-backdrop-filter:blur(26px) saturate(1.8);backdrop-filter:blur(26px) saturate(1.8)}
+html[data-theme=light] .sort-list{background:color-mix(in srgb,#fff 90%,var(--glass-3));box-shadow:0 24px 50px rgba(150,60,100,.18),inset 0 1px 0 #fff}
+@keyframes sortIn{from{opacity:0;transform:translateY(-7px) scale(.98)}}
+.sort-list li{margin:0;list-style:none}
+.sort-list button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:11px 13px;border-radius:14px;font-size:13px;color:var(--text);cursor:pointer;transition:background .16s,color .16s;text-align:start}
+.sort-list button:hover{background:var(--glass-2)}
+.sort-list button.on{background:color-mix(in srgb,var(--pink) 15%,transparent);color:var(--pink);font-weight:700}
+.sort-list .radio{width:17px;height:17px;border-radius:50%;border:1.6px solid var(--glass-border-2);flex:0 0 auto;position:relative;transition:.18s}
+.sort-list button.on .radio{border-color:var(--pink);background:color-mix(in srgb,var(--pink) 20%,transparent)}
+.sort-list button.on .radio::after{content:'';position:absolute;inset:3px;border-radius:50%;background:var(--pink)}
+@media(max-width:520px){.sort-list{width:min(78vw,238px)}}
 .result-note{margin-inline-start:auto;font-size:12px;color:var(--muted)}
 .result-note b{color:var(--text);font-weight:700}
 

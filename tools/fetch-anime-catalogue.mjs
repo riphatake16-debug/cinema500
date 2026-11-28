@@ -18,6 +18,7 @@ const OUT_JS = new URL('../anime-site/anime-data.js', import.meta.url);
 const FA_SOURCE = new URL('./anime-fa-source.json', import.meta.url);
 const POSTER_MAP = new URL('../anime-site/poster-map.js', import.meta.url);
 const WIKIDATA_FA = new URL('./anime-fa-wikidata.json', import.meta.url);
+const AUTO_FA = new URL('./anime-fa-auto.json', import.meta.url);
 const PAUSE = Number(process.env.PAUSE || 2100);
 
 const QUERY = `query($page:Int){
@@ -48,6 +49,19 @@ const norm = value => String(value || '')
   .toLowerCase()
   .replace(/[^a-z0-9]+/g, '')
   .trim();
+
+async function loadAutoTranslations() {
+  const map = { summaries: new Map(), names: new Map() };
+  try {
+    const raw = JSON.parse(await readFile(AUTO_FA, 'utf8'));
+    Object.values(raw).forEach(entry => {
+      if (!entry) return;
+      if (entry.summarySource && entry.summary) map.summaries.set(entry.summarySource, entry.summary);
+      if (entry.nameSource && entry.title) map.names.set(entry.nameSource, entry.title);
+    });
+  } catch (error) { /* هنوز ترجمه‌ای ساخته نشده است */ }
+  return map;
+}
 
 async function loadPersianSource() {
   if (existsSync(FA_SOURCE)) {
@@ -114,6 +128,7 @@ async function fetchPage(page, attempt = 1) {
 async function main() {
   const persian = await loadPersianSource();
   const wikidataFa = await loadWikidataPersian();
+  const autoFa = await loadAutoTranslations();
   const localPosters = await loadLocalPosters();
   const byNorm = new Map();
   persian.forEach(item => {
@@ -161,6 +176,8 @@ async function main() {
     const curatedSummary = match && match.summary ? String(match.summary).trim() : '';
     const summaryFa = curatedSummary || (wikidata && wikidata.summary ? String(wikidata.summary).trim() : '');
     const summaryEn = stripHtml(item.description);
+    const autoSummary = autoFa.summaries.get(shorten(summaryEn, 280)) || '';
+    const finalSummary = summaryFa || autoSummary;
     const studio = (item.studios && item.studios.nodes && item.studios.nodes[0] && item.studios.nodes[0].name) || '—';
 
     return {
@@ -171,7 +188,7 @@ async function main() {
       status: STATUS[item.status] || 'done',
       title: displayTitle,
       romaji,
-      fa: (match && match.fa) || (wikidata && wikidata.fa) || '',
+      fa: (match && match.fa) || (wikidata && wikidata.fa) || autoFa.names.get(displayTitle) || '',
       jp: (match && match.jp) || item.title.native || '',
       year,
       rating: Math.round(item.averageScore) / 10,
@@ -179,8 +196,8 @@ async function main() {
       episodes: isMovie ? 0 : (item.episodes || 0),
       runtime: item.duration || 0,
       genres,
-      summary: summaryFa || shorten(summaryEn, 280),
-      summaryLang: summaryFa ? 'fa' : 'en',
+      summary: finalSummary || shorten(summaryEn, 280),
+      summaryLang: finalSummary ? 'fa' : 'en',
       poster: item.coverImage.extraLarge,
       color: item.coverImage.color || '',
       popularity: item.popularity || 0,

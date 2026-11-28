@@ -2,4 +2,5 @@
 /sites-publish/
 /.venv/
 /sites-anime/
+/artifacts/
 /.cache-posters/
