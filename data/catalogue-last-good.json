@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "a56be255be60dc3b5058269ae6a20be9609d1e5b62a6ba0d17ec28975b2bbb8d",
+  "version": "6baab4af81452b5770e171ab13cc507592bc600a1da920bde7be8138c4afcc94",
   "status": "ok",
-  "retrievedAt": "2026-11-27T03:13:08+00:00",
-  "checkedAt": "2026-11-27T03:13:08+00:00",
+  "retrievedAt": "2026-11-28T00:27:57+00:00",
+  "checkedAt": "2026-11-28T00:27:57+00:00",
   "refreshMinutes": 60,
   "source": {
     "provider": "imdb-public-chart-cache",
@@ -1785,32 +1785,9 @@
       }
     },
     {
-      "id": "tt33764258",
-      "type": "movie",
-      "rank": 86,
-      "title": "The Odyssey",
-      "year": 2026,
-      "rating": 8.3,
-      "poster": "./posters/tt33764258.jpg",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 172,
-      "fa": "ادیسه",
-      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q131547207"
-      }
-    },
-    {
       "id": "tt0057012",
       "type": "movie",
-      "rank": 87,
+      "rank": 86,
       "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
       "year": 1964,
       "rating": 8.3,
@@ -1831,7 +1808,7 @@
     {
       "id": "tt33175825",
       "type": "movie",
-      "rank": 88,
+      "rank": 87,
       "title": "Attack on Titan: The Last Attack",
       "year": 2024,
       "rating": 8.9,
@@ -1850,6 +1827,29 @@
       "localization": {
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt33175825/"
+      }
+    },
+    {
+      "id": "tt33764258",
+      "type": "movie",
+      "rank": 88,
+      "title": "The Odyssey",
+      "year": 2026,
+      "rating": 8.3,
+      "poster": "./posters/tt33764258.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 172,
+      "fa": "ادیسه",
+      "summary": "اودیسئوس پس از جنگ تروا سفری پرخطر را برای بازگشت به خانه در ایتاکا آغاز می‌کند؛ سفری در میان هیولاها، وسوسه‌ها و نیروهای اساطیری، با الهام از حماسهٔ هومر.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q131547207"
       }
     },
     {
@@ -3889,31 +3889,9 @@
       }
     },
     {
-      "id": "tt0042876",
-      "type": "movie",
-      "rank": 183,
-      "title": "Rashomon",
-      "year": 1950,
-      "rating": 8.1,
-      "poster": "./posters/tt0042876.jpg",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "runtime": 88,
-      "fa": "راشومون",
-      "summary": "ماجرای تعرض به زنی و قتل همسر سامورایی او، از دید یک راهزن، زن، روح سامورایی و یک هیزم‌شکن بازگو می‌شود.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q135465"
-      }
-    },
-    {
       "id": "tt0072684",
       "type": "movie",
-      "rank": 184,
+      "rank": 183,
       "title": "Barry Lyndon",
       "year": 1975,
       "rating": 8.1,
@@ -3930,6 +3908,28 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q471716"
+      }
+    },
+    {
+      "id": "tt0042876",
+      "type": "movie",
+      "rank": 184,
+      "title": "Rashomon",
+      "year": 1950,
+      "rating": 8.1,
+      "poster": "./posters/tt0042876.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "runtime": 88,
+      "fa": "راشومون",
+      "summary": "ماجرای تعرض به زنی و قتل همسر سامورایی او، از دید یک راهزن، زن، روح سامورایی و یک هیزم‌شکن بازگو می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q135465"
       }
     },
     {
@@ -4496,9 +4496,30 @@
       }
     },
     {
-      "id": "tt3011894",
+      "id": "tt5323662",
       "type": "movie",
       "rank": 210,
+      "title": "A Silent Voice: The Movie",
+      "year": 2016,
+      "rating": 8.2,
+      "poster": "./posters/tt5323662.jpg",
+      "genres": [
+        "Animation",
+        "Drama"
+      ],
+      "runtime": 130,
+      "fa": "صدای خاموش",
+      "summary": "پسری که در کودکی هم‌کلاسی ناشنوایش را آزار داده، سال‌ها بعد از کارش پشیمان می‌شود و برای پیدا کردن او و جبران گذشته تلاش می‌کند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q23925035"
+      }
+    },
+    {
+      "id": "tt3011894",
+      "type": "movie",
+      "rank": 211,
       "title": "Wild Tales",
       "year": 2014,
       "rating": 8.1,
@@ -4515,27 +4536,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q16672466"
-      }
-    },
-    {
-      "id": "tt5323662",
-      "type": "movie",
-      "rank": 211,
-      "title": "A Silent Voice: The Movie",
-      "year": 2016,
-      "rating": 8.2,
-      "poster": "./posters/tt5323662.jpg",
-      "genres": [
-        "Animation",
-        "Drama"
-      ],
-      "runtime": 130,
-      "fa": "صدای خاموش",
-      "summary": "پسری که در کودکی هم‌کلاسی ناشنوایش را آزار داده، سال‌ها بعد از کارش پشیمان می‌شود و برای پیدا کردن او و جبران گذشته تلاش می‌کند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q23925035"
       }
     },
     {
@@ -5155,9 +5155,30 @@
       }
     },
     {
-      "id": "tt0395169",
+      "id": "tt0091763",
       "type": "movie",
       "rank": 240,
+      "title": "Platoon",
+      "year": 1986,
+      "rating": 8,
+      "poster": "./posters/tt0091763.jpg",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "runtime": 120,
+      "fa": "جوخه",
+      "summary": "سربازی جوان در جنگ ویتنام، هم با خشونت دشمن روبه‌رو می‌شود و هم با اختلاف و رفتارهای هم‌رزمانش؛ تجربه‌ای که باورهایش را زیر سؤال می‌برد.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q190643"
+      }
+    },
+    {
+      "id": "tt0395169",
+      "type": "movie",
+      "rank": 241,
       "title": "Hotel Rwanda",
       "year": 2004,
       "rating": 8.1,
@@ -5175,27 +5196,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q223884"
-      }
-    },
-    {
-      "id": "tt0091763",
-      "type": "movie",
-      "rank": 241,
-      "title": "Platoon",
-      "year": 1986,
-      "rating": 8,
-      "poster": "./posters/tt0091763.jpg",
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "runtime": 120,
-      "fa": "جوخه",
-      "summary": "سربازی جوان در جنگ ویتنام، هم با خشونت دشمن روبه‌رو می‌شود و هم با اختلاف و رفتارهای هم‌رزمانش؛ تجربه‌ای که باورهایش را زیر سؤال می‌برد.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q190643"
       }
     },
     {
@@ -5221,30 +5221,9 @@
       }
     },
     {
-      "id": "tt0050976",
-      "type": "movie",
-      "rank": 243,
-      "title": "The Seventh Seal",
-      "year": 1957,
-      "rating": 8.1,
-      "poster": "./posters/tt0050976.jpg",
-      "genres": [
-        "Drama",
-        "Fantasy"
-      ],
-      "runtime": 96,
-      "fa": "مهر هفتم",
-      "summary": "در دوران طاعون سیاه، مردی هنگام بازی شطرنج با مرگ، در جست‌وجوی پاسخ پرسش‌هایی دربارهٔ زندگی، مرگ و وجود خداست.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q217189"
-      }
-    },
-    {
       "id": "tt0058946",
       "type": "movie",
-      "rank": 244,
+      "rank": 243,
       "title": "The Battle of Algiers",
       "year": 1966,
       "rating": 8.1,
@@ -5260,6 +5239,27 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q784812"
+      }
+    },
+    {
+      "id": "tt0050976",
+      "type": "movie",
+      "rank": 244,
+      "title": "The Seventh Seal",
+      "year": 1957,
+      "rating": 8.1,
+      "poster": "./posters/tt0050976.jpg",
+      "genres": [
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": 96,
+      "fa": "مهر هفتم",
+      "summary": "در دوران طاعون سیاه، مردی هنگام بازی شطرنج با مرگ، در جست‌وجوی پاسخ پرسش‌هایی دربارهٔ زندگی، مرگ و وجود خداست.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q217189"
       }
     },
     {
@@ -5372,28 +5372,27 @@
       }
     },
     {
-      "id": "tt0242519",
+      "id": "tt1954470",
       "type": "movie",
       "rank": 250,
-      "title": "Hera Pheri",
-      "year": 2000,
+      "title": "Gangs of Wasseypur",
+      "year": 2012,
       "rating": 8.2,
-      "poster": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg",
+      "poster": "./posters/tt1954470.jpg",
       "genres": [
         "Action",
         "Comedy",
         "Crime",
-        "Drama"
+        "Drama",
+        "Thriller"
       ],
-      "runtime": 156,
-      "fa": "کلک",
-      "summary": "کلک (به هندی: Hera Pheri)فیلمی محصول سال ۲۰۰۰ و به کارگردانی پریادارشان است. در این فیلم بازیگرانی همچون آکشی کومار، سونیل شتی، پارش راوال، تابو، گلشن گروور، کولبوشان کارباندا، اوم پوری، آسرانی، کاشمیرا شاه، نامراتا شیرودکار، موکش خانا، مشتاق خان ایفای نقش کرده‌اند. این فیلم یکی از ۲۵۰ فیلم برتر دنیاست و جزو معروفترین آثار کمدی هندی محسوب می‌شود.",
+      "runtime": 321,
+      "fa": "گنگ‌های پلیس، که توسط خبرچینان بی‌شمار هدایت می‌شدند،.",
+      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
       "summaryLanguage": "fa",
       "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q5732486",
-        "summarySource": "wikipedia-fa",
-        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%DA%A9%D9%84%DA%A9+%28%D9%81%DB%8C%D9%84%D9%85+%DB%B2%DB%B0%DB%B0%DB%B0%29&oldid=44720071"
+        "faSource": "mymemory",
+        "faUrl": "https://www.imdb.com/title/tt1954470/"
       }
     },
     {
@@ -7857,26 +7856,9 @@
       }
     },
     {
-      "id": "tt0096697",
-      "type": "tv",
-      "rank": 113,
-      "title": "The Simpsons",
-      "year": 1989,
-      "rating": 8.6,
-      "poster": "./posters/tt0096697.jpg",
-      "genres": [
-        "Animation",
-        "Comedy"
-      ],
-      "runtime": 22,
-      "fa": "سیمپسون‌ها",
-      "summary": "ماجراهای طنزآمیز خانواده‌ای از طبقهٔ کارگر در شهر عجیب اسپرینگفیلد روایت می‌شود.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt0158417",
       "type": "tv",
-      "rank": 114,
+      "rank": 113,
       "title": "Mahabharat",
       "year": 1988,
       "rating": 8.9,
@@ -7898,6 +7880,23 @@
         "faSource": "mymemory",
         "faUrl": "https://www.imdb.com/title/tt0158417/"
       }
+    },
+    {
+      "id": "tt0096697",
+      "type": "tv",
+      "rank": 114,
+      "title": "The Simpsons",
+      "year": 1989,
+      "rating": 8.6,
+      "poster": "./posters/tt0096697.jpg",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "runtime": 22,
+      "fa": "سیمپسون‌ها",
+      "summary": "ماجراهای طنزآمیز خانواده‌ای از طبقهٔ کارگر در شهر عجیب اسپرینگفیلد روایت می‌شود.",
+      "summaryLanguage": "fa"
     },
     {
       "id": "tt6025022",
@@ -9497,9 +9496,30 @@
       }
     },
     {
-      "id": "tt0314979",
+      "id": "tt10802170",
       "type": "tv",
       "rank": 188,
+      "title": "The Rehearsal",
+      "year": 2022,
+      "rating": 8.5,
+      "poster": "./posters/tt10802170.jpg",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "runtime": 30,
+      "fa": "د ریهرسال",
+      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q112915576"
+      }
+    },
+    {
+      "id": "tt0314979",
+      "type": "tv",
+      "rank": 189,
       "title": "Battlestar Galactica",
       "year": 2003,
       "rating": 8.5,
@@ -9522,7 +9542,7 @@
     {
       "id": "tt2701582",
       "type": "tv",
-      "rank": 189,
+      "rank": 190,
       "title": "Endeavour",
       "year": 2012,
       "rating": 8.6,
@@ -9539,27 +9559,6 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2151914"
-      }
-    },
-    {
-      "id": "tt10802170",
-      "type": "tv",
-      "rank": 190,
-      "title": "The Rehearsal",
-      "year": 2022,
-      "rating": 8.5,
-      "poster": "./posters/tt10802170.jpg",
-      "genres": [
-        "Documentary",
-        "Comedy"
-      ],
-      "runtime": 30,
-      "fa": "د ریهرسال",
-      "summary": "نیتن فیلدر فضاها و موقعیت‌های واقعی را با جزئیات بازسازی می‌کند تا آدم‌ها بتوانند اتفاق‌های سخت زندگی‌شان را از قبل تمرین کنند.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q112915576"
       }
     },
     {
@@ -10553,29 +10552,9 @@
       }
     },
     {
-      "id": "tt7278862",
-      "type": "tv",
-      "rank": 235,
-      "title": "My Brilliant Friend",
-      "year": 2018,
-      "rating": 8.6,
-      "poster": "./posters/tt7278862.jpg",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": 60,
-      "fa": "دوست نابغه من",
-      "summary": "زنی در مرور خاطراتش، دوستی پیچیده و طولانی با هم‌کلاسی دوران کودکی‌اش در ناپل را روایت می‌کند؛ رابطه‌ای میان صمیمیت، رقابت و تلاش برای ساختن زندگی‌ای متفاوت.",
-      "summaryLanguage": "fa",
-      "localization": {
-        "faSource": "wikidata",
-        "faUrl": "https://www.wikidata.org/entity/Q56411652"
-      }
-    },
-    {
       "id": "tt0075537",
       "type": "tv",
-      "rank": 236,
+      "rank": 235,
       "title": "Mind Your Language",
       "year": 1977,
       "rating": 8.6,
@@ -10590,6 +10569,26 @@
       "localization": {
         "faSource": "wikidata",
         "faUrl": "https://www.wikidata.org/entity/Q2512029"
+      }
+    },
+    {
+      "id": "tt7278862",
+      "type": "tv",
+      "rank": 236,
+      "title": "My Brilliant Friend",
+      "year": 2018,
+      "rating": 8.6,
+      "poster": "./posters/tt7278862.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "runtime": 60,
+      "fa": "دوست نابغه من",
+      "summary": "زنی در مرور خاطراتش، دوستی پیچیده و طولانی با هم‌کلاسی دوران کودکی‌اش در ناپل را روایت می‌کند؛ رابطه‌ای میان صمیمیت، رقابت و تلاش برای ساختن زندگی‌ای متفاوت.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q56411652"
       }
     },
     {
@@ -11115,24 +11114,6 @@
       }
     },
     {
-      "id": "tt1954470",
-      "type": "movie",
-      "rank": null,
-      "title": "Gangs of Wasseypur",
-      "year": 2012,
-      "rating": 8.2,
-      "poster": "./posters/tt1954470.jpg",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Crime"
-      ],
-      "runtime": 321,
-      "fa": "",
-      "summary": "درگیری سلطان و شاهد خان به اخراج خان از واسپور می‌انجامد و دشمنی خونینی را شعله‌ور می‌کند که سه نسل ادامه می‌یابد.",
-      "summaryLanguage": "fa"
-    },
-    {
       "id": "tt1983079",
       "type": "tv",
       "rank": null,
@@ -11153,6 +11134,31 @@
         "faUrl": "https://www.imdb.com/title/tt1983079/",
         "summarySource": "mymemory",
         "summaryUrl": "https://www.imdb.com/title/tt1983079/"
+      }
+    },
+    {
+      "id": "tt0242519",
+      "type": "movie",
+      "rank": null,
+      "title": "Hera Pheri",
+      "year": 2000,
+      "rating": 8.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 156,
+      "fa": "کلک",
+      "summary": "کلک (به هندی: Hera Pheri)فیلمی محصول سال ۲۰۰۰ و به کارگردانی پریادارشان است. در این فیلم بازیگرانی همچون آکشی کومار، سونیل شتی، پارش راوال، تابو، گلشن گروور، کولبوشان کارباندا، اوم پوری، آسرانی، کاشمیرا شاه، نامراتا شیرودکار، موکش خانا، مشتاق خان ایفای نقش کرده‌اند. این فیلم یکی از ۲۵۰ فیلم برتر دنیاست و جزو معروفترین آثار کمدی هندی محسوب می‌شود.",
+      "summaryLanguage": "fa",
+      "localization": {
+        "faSource": "wikidata",
+        "faUrl": "https://www.wikidata.org/entity/Q5732486",
+        "summarySource": "wikipedia-fa",
+        "summaryUrl": "https://fa.wikipedia.org/w/index.php?title=%DA%A9%D9%84%DA%A9+%28%D9%81%DB%8C%D9%84%D9%85+%DB%B2%DB%B0%DB%B0%DB%B0%29&oldid=44720071"
       }
     }
   ]
